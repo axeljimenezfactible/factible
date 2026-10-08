@@ -105,9 +105,9 @@ No son para ahora, salvo lo que tiene plazos largos (ver abajo). Detalle y fuent
 
 **Antes de construir cada producto,** hay que preguntar por escrito al soporte de 2 o 3 comerciantes de registro si aceptan su categoría. Eso lo preparo yo; tú solo necesitarás enviarlo desde tu cuenta.
 
-## Decisiones que necesito de ti
+## Decisiones
 
-1. **País y tipo de vendedor** (persona o empresa) que cobrará: define qué comerciantes de registro y qué firmas de código son posibles.
-2. **Modelo de licencia:** ¿te sirve "perpetua con 12 meses de actualizaciones y renovación opcional"? Es el patrón que cobran las herramientas que más ingresan en la calibración.
-3. **Presupuesto de anuncios** para las pruebas de puerta falsa, cuando llegue el momento.
-4. **Qué probar primero:** propongo los 4 candidatos de confianza media de la pasada 3.
+1. ✅ **País y tipo de vendedor:** México. Persona física al principio y persona moral después; ya hay una persona moral disponible. Se está verificando qué implica para la firma de Windows, el cobro y Apple (ver [[04 - Fase 2 - Fabrica de Micro-Apps]]).
+2. ⏳ **Modelo de licencia** "perpetua con 12 meses de actualizaciones y renovación opcional": explicado en la sección 5 de la nota 04. Falta tu decisión.
+3. ✅ **Qué probar primero:** los 4 candidatos de confianza media de la pasada 3. El plan está en [[08 - Plan de prueba de los 4 candidatos]].
+4. ⏳ **Presupuesto de anuncios** para las pruebas de puerta falsa: cuando llegue el momento. El plan de prueba trae cifras orientativas.

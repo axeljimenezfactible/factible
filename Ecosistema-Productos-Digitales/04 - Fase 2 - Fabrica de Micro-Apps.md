@@ -108,6 +108,22 @@ Casi ninguna licencia viene del archivo LICENSE ni de la ficha oficial, sino de 
 - **Abierto:** cuál elegir depende del país del vendedor y de la respuesta de cada soporte.
 
 ### 5. Licencia "perpetua con 12 meses de actualizaciones"
+
+**Qué es, en sencillo.** La persona paga una vez (por ejemplo $29). La app es suya para siempre: nunca se apaga ni deja de funcionar. Durante los primeros 12 meses recibe todas las versiones nuevas. Pasado ese año sigue usando la versión que tiene, pero para recibir versiones nuevas renueva por un precio menor (el patrón visto es ~60% del precio, unos $17) o compra la versión siguiente.
+
+**Por qué este modelo y no otro.**
+- *Pago único puro:* es lo más simple y encaja con el "ticket de $20", pero no financia el mantenimiento. Los formatos de bancos, de Office y de los sistemas operativos cambian, y MacUpdater cerró en enero de 2026 por no sostener el pago único.
+- *Suscripción:* financia el mantenimiento, pero "sin suscripción" es el argumento de venta de estas herramientas y la queja más repetida contra las alternativas.
+- *Perpetua con 12 meses:* es el patrón que cobran las herramientas que más ingresan (CleanShot X $29 con un año de actualizaciones, renovación a $19; Xnapper y DevUtils $29 con renovación al 60%).
+
+**Lo que no sabemos.** Cuántos clientes renuevan: no hay ninguna tasa de renovación en la investigación. Por eso no se debe contar con ese ingreso en los números.
+
+**Cómo funciona por dentro.** La clave de licencia no caduca. Guarda una "fecha de actualizaciones hasta". Cada versión de la app tiene su fecha de compilación. La app instala una versión nueva solo si su fecha de compilación es anterior a la fecha de actualizaciones del cliente; la versión que ya tiene sigue corriendo siempre. Renovar mueve esa fecha un año.
+
+**Cómo se ofrece, para evitar reembolsos.** El patrón de reembolso más repetido es el "cobro distinto al anunciado". La oferta debe decir en la página de compra, en una frase, qué incluye ("pago único, 12 meses de actualizaciones incluidos, sin suscripción") y ofrecer una garantía de 30 días.
+
+**Propuesta.** Anunciar así en las pruebas de puerta falsa y decidir el precio de la renovación con datos reales, no antes.
+
 **Ninguna plataforma lo documenta de forma nativa.** Se construye con lógica propia en `core.license`: la clave es perpetua, y un token firmado guarda la fecha hasta la que la persona recibe versiones nuevas; la app compara esa fecha con la de su compilación. La renovación (a ~60% del precio, según el patrón visto) es un producto aparte. La validación sin conexión tampoco está documentada: se usa un token firmado y guardado en el equipo, con un periodo de gracia.
 
 ## Economía por app

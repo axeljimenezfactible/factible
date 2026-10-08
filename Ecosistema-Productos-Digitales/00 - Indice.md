@@ -24,6 +24,7 @@ meta: 1,000,000 de ventas x $20 USD
 
 ## Guías
 - [[07 - Guia - Que debes hacer tu]] — pasos exactos para abrir la red, crear la cuenta de DataForSEO y retomar en una sesión nueva.
+- [[08 - Plan de prueba de los 4 candidatos]] — cómo medir demanda y probar precio de los 4 candidatos de confianza media, con umbrales y presupuesto orientativo.
 
 ## Respaldos
 - **Obsidian / repo:** carpeta `Ecosistema-Productos-Digitales/` en `axeljimenezfactible/factible`, rama `claude/digital-products-ecosystem-1fhahn`.
