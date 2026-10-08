@@ -91,7 +91,19 @@ Se pide en https://developers.google.com/search/apis/trends. Es por solicitud y 
 
 ## Cuentas que prepararás más adelante
 
-_Se completa con la investigación de la Fase 2 (firma de apps para Mac y Windows, comerciante de registro): costos, requisitos de identidad y plazos._
+No son para ahora, salvo lo que tiene plazos largos (ver abajo). Detalle y fuentes en [[04 - Fase 2 - Fabrica de Micro-Apps]]; todas las cifras salen de búsqueda web y hay que confirmarlas en las páginas oficiales.
+
+| Cuenta | Costo | Qué exige | Plazo |
+|---|---|---|---|
+| Apple Developer Program (firmar apps de Mac) | $99/año | Persona física: sin D-U-N-S, y su nombre legal queda como publicador. Organización: entidad legal (no unipersonal), D-U-N-S y dominio propio | Organización: 2–4 semanas según un foro; más de 2 meses reportado en 2026 |
+| Firma de apps de Windows | ≈ $120/año (Microsoft Artifact Signing, plan Basic) o ≈ $116–450/año (certificado OV) | Artifact Signing: organizaciones en 12 regiones listadas; individuos solo en EE.UU. y Canadá; **México y Colombia no aparecen** | No verificado |
+| Comerciante de registro (cobro, impuestos, claves de licencia) | Entre 3.9% + $0.40 y 10% + $0.50 por venta | Depende del país del vendedor; **ninguna confirma aceptar** grabación de pantalla, anonimización, extractos bancarios ni herramientas fiscales | No verificado |
+| Hospedaje de instaladores | $0–5/año | Cuenta en Cloudflare (R2) o GitHub | Inmediato |
+| Dominio | Variable | Lo exige Apple para cuentas de organización; también sirve para la página de venta | Inmediato |
+
+**Lo que sí conviene adelantar si vas a vender como empresa:** el número D-U-N-S y la inscripción de organización en Apple tardan semanas o meses. Antes necesito saber tu país y si cobrarás como persona o como empresa (ver abajo).
+
+**Antes de construir cada producto,** hay que preguntar por escrito al soporte de 2 o 3 comerciantes de registro si aceptan su categoría. Eso lo preparo yo; tú solo necesitarás enviarlo desde tu cuenta.
 
 ## Decisiones que necesito de ti
 

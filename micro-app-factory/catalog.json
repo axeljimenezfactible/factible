@@ -1,28 +1,291 @@
 {
   "version": "0.1",
-  "note": "Catálogo de módulos de la fábrica. Todos están en estado 'planned': aún no se ha construido ninguno. Los campos de licencia se rellenan con la investigación de la Fase 2 y no se asumen.",
+  "note": "Catálogo de módulos de la fábrica. Todos están en estado 'planned': aún no se ha construido ninguno. Las notas de licencia salen de PyPI, agregadores y blogs (investigación de la Fase 2, confianza máxima media): ninguna se verificó contra el archivo LICENSE oficial, así que hay que revisarlas antes de distribuir.",
   "modules": [
-    {"id": "core.shell", "core": true, "name": "Cascarón de la app", "description": "Ventana, ajustes, idioma, tema y pantalla de ayuda. Implícito en toda app.", "platforms": ["windows", "mac", "linux"], "requires_review": false, "status": "planned", "license_notes": null},
-    {"id": "core.license", "core": true, "name": "Licencias", "description": "Activación y validación de la clave de licencia con el comerciante de registro, con modo sin conexión mediante un token firmado. Solo envía la clave y una huella de la máquina, nunca archivos.", "platforms": ["windows", "mac", "linux"], "requires_review": false, "status": "planned", "license_notes": null},
-    {"id": "core.update", "core": true, "name": "Actualizaciones", "description": "Canal de actualizaciones firmadas y aviso de versión nueva.", "platforms": ["windows", "mac", "linux"], "requires_review": false, "status": "planned", "license_notes": null},
-    {"id": "core.privacy_guard", "core": true, "name": "Guardia de privacidad", "description": "Lista blanca de llamadas de red (licencia, actualización, telemetría opcional) y prueba automática en modo avión.", "platforms": ["windows", "mac", "linux"], "requires_review": false, "status": "planned", "license_notes": null},
-    {"id": "io.files", "name": "Archivos", "description": "Lectura y escritura segura de archivos, con copia de seguridad previa y sin tocar el original por defecto.", "platforms": ["windows", "mac", "linux"], "requires_review": false, "status": "planned", "license_notes": null},
-    {"id": "io.watch_folder", "name": "Carpeta vigilada", "description": "Procesa automáticamente lo que aparece en una carpeta.", "platforms": ["windows", "mac", "linux"], "requires_review": false, "status": "planned", "license_notes": null},
-    {"id": "batch.queue", "name": "Cola por lotes", "description": "Cola reanudable con progreso, cancelación y reintentos.", "platforms": ["windows", "mac", "linux"], "requires_review": false, "status": "planned", "license_notes": null},
-    {"id": "doc.pdf", "name": "PDF", "description": "Lectura, renderizado y escritura de PDF.", "platforms": ["windows", "mac", "linux"], "requires_review": false, "status": "planned", "license_notes": null},
-    {"id": "vision.ocr", "name": "OCR local", "description": "Reconocimiento de texto en imágenes y escaneos, sin subir nada.", "platforms": ["windows", "mac", "linux"], "requires_review": true, "status": "planned", "license_notes": null},
-    {"id": "vision.contours", "name": "Contornos y enderezado", "description": "Detección de bordes, recorte y enderezado de imágenes.", "platforms": ["windows", "mac", "linux"], "requires_review": false, "status": "planned", "license_notes": null},
-    {"id": "vision.redact", "name": "Tapado de regiones", "description": "Difuminado o enmascarado de zonas de una imagen o video.", "platforms": ["windows", "mac", "linux"], "requires_review": false, "status": "planned", "license_notes": null},
-    {"id": "audio.io", "name": "Audio", "description": "Decodificar, cortar, silenciar, mezclar un pitido y exportar audio.", "platforms": ["windows", "mac", "linux"], "requires_review": false, "status": "planned", "license_notes": null},
-    {"id": "ai.transcribe_local", "name": "Transcripción local", "description": "Voz a texto con marcas de tiempo, en el equipo.", "platforms": ["windows", "mac"], "requires_review": true, "status": "planned", "license_notes": null},
-    {"id": "ai.ner_local", "name": "Detección local de nombres", "description": "Detecta nombres, teléfonos y lugares en texto, en el equipo. Su acierto es parcial.", "platforms": ["windows", "mac"], "requires_review": true, "status": "planned", "license_notes": null},
-    {"id": "ai.llm_byok", "name": "Modelo de lenguaje propio", "description": "Modelo de lenguaje con la clave del usuario o uno local. Sus respuestas pueden fallar.", "platforms": ["windows", "mac"], "requires_review": true, "status": "planned", "license_notes": null},
-    {"id": "data.tables", "name": "Tablas", "description": "Lectura y escritura de CSV y XLSX.", "platforms": ["windows", "mac", "linux"], "requires_review": false, "status": "planned", "license_notes": null},
-    {"id": "mail.parse", "name": "Correo", "description": "Lectura de .eml, .emlx y .msg con sus adjuntos.", "platforms": ["windows", "mac", "linux"], "requires_review": false, "status": "planned", "license_notes": null},
-    {"id": "meta.docs", "name": "Metadatos", "description": "Lectura y limpieza de metadatos de Office, PDF e imagen.", "platforms": ["windows", "mac", "linux"], "requires_review": false, "status": "planned", "license_notes": null},
-    {"id": "capture.input_win", "name": "Captura de entrada y pantalla (Windows)", "description": "Eventos de clic y teclado más captura de pantalla. Solo Windows; puede provocar alertas de antivirus.", "platforms": ["windows"], "requires_review": false, "status": "planned", "license_notes": null},
-    {"id": "rules.engine", "name": "Motor de reglas", "description": "Reglas declarativas por perfil (por ejemplo, un formato por banco).", "platforms": ["windows", "mac", "linux"], "requires_review": false, "status": "planned", "license_notes": null},
-    {"id": "review.ui", "name": "Pantalla de revisión", "description": "Vista lado a lado del original y del resultado, con aprobación humana antes de guardar.", "platforms": ["windows", "mac", "linux"], "requires_review": false, "status": "planned", "license_notes": null},
-    {"id": "export.formats", "name": "Exportadores", "description": "CSV, XLSX, PDF, DOCX, HTML, XMP e informe de lo realizado.", "platforms": ["windows", "mac", "linux"], "requires_review": false, "status": "planned", "license_notes": null}
+    {
+      "id": "core.shell",
+      "core": true,
+      "name": "Cascarón de la app",
+      "description": "Ventana, ajustes, idioma, tema y pantalla de ayuda. Implícito en toda app.",
+      "platforms": [
+        "windows",
+        "mac",
+        "linux"
+      ],
+      "requires_review": false,
+      "status": "planned",
+      "license_notes": "Tauri 2 como cascarón por defecto; su licencia no se verificó en esta investigación."
+    },
+    {
+      "id": "core.license",
+      "core": true,
+      "name": "Licencias",
+      "description": "Activación y validación de la clave de licencia con el comerciante de registro, con modo sin conexión mediante un token firmado. Solo envía la clave y una huella de la máquina, nunca archivos.",
+      "platforms": [
+        "windows",
+        "mac",
+        "linux"
+      ],
+      "requires_review": false,
+      "status": "planned",
+      "license_notes": "Debe ir detrás de un adaptador de comerciante de registro para poder cambiar de plataforma sin tocar las apps. Ninguna plataforma documenta validación sin conexión: usar un token firmado propio."
+    },
+    {
+      "id": "core.update",
+      "core": true,
+      "name": "Actualizaciones",
+      "description": "Canal de actualizaciones firmadas y aviso de versión nueva.",
+      "platforms": [
+        "windows",
+        "mac",
+        "linux"
+      ],
+      "requires_review": false,
+      "status": "planned",
+      "license_notes": "Sparkle 2 en macOS (gratuito, licencia sin verificar); el actualizador de Tauri exige firma propia con par de claves."
+    },
+    {
+      "id": "core.privacy_guard",
+      "core": true,
+      "name": "Guardia de privacidad",
+      "description": "Lista blanca de llamadas de red (licencia, actualización, telemetría opcional) y prueba automática en modo avión.",
+      "platforms": [
+        "windows",
+        "mac",
+        "linux"
+      ],
+      "requires_review": false,
+      "status": "planned",
+      "license_notes": null
+    },
+    {
+      "id": "io.files",
+      "name": "Archivos",
+      "description": "Lectura y escritura segura de archivos, con copia de seguridad previa y sin tocar el original por defecto.",
+      "platforms": [
+        "windows",
+        "mac",
+        "linux"
+      ],
+      "requires_review": false,
+      "status": "planned",
+      "license_notes": null
+    },
+    {
+      "id": "io.watch_folder",
+      "name": "Carpeta vigilada",
+      "description": "Procesa automáticamente lo que aparece en una carpeta.",
+      "platforms": [
+        "windows",
+        "mac",
+        "linux"
+      ],
+      "requires_review": false,
+      "status": "planned",
+      "license_notes": null
+    },
+    {
+      "id": "batch.queue",
+      "name": "Cola por lotes",
+      "description": "Cola reanudable con progreso, cancelación y reintentos.",
+      "platforms": [
+        "windows",
+        "mac",
+        "linux"
+      ],
+      "requires_review": false,
+      "status": "planned",
+      "license_notes": null
+    },
+    {
+      "id": "doc.pdf",
+      "name": "PDF",
+      "description": "Lectura, renderizado y escritura de PDF.",
+      "platforms": [
+        "windows",
+        "mac",
+        "linux"
+      ],
+      "requires_review": false,
+      "status": "planned",
+      "license_notes": "Usar pypdf (BSD-3), pdfplumber (MIT) o pypdfium2. Evitar PyMuPDF: AGPL o licencia comercial de pago sin precio público."
+    },
+    {
+      "id": "vision.ocr",
+      "name": "OCR local",
+      "description": "Reconocimiento de texto en imágenes y escaneos, sin subir nada.",
+      "platforms": [
+        "windows",
+        "mac",
+        "linux"
+      ],
+      "requires_review": true,
+      "status": "planned",
+      "license_notes": "Tesseract (Apache 2.0) o RapidOCR/PaddleOCR (Apache-2.0). Verificar la licencia de los datos de idioma."
+    },
+    {
+      "id": "vision.contours",
+      "name": "Contornos y enderezado",
+      "description": "Detección de bordes, recorte y enderezado de imágenes.",
+      "platforms": [
+        "windows",
+        "mac",
+        "linux"
+      ],
+      "requires_review": false,
+      "status": "planned",
+      "license_notes": "OpenCV 4.5 o posterior es Apache 2; las ruedas de PyPI incluyen FFmpeg (LGPL): revisar."
+    },
+    {
+      "id": "vision.redact",
+      "name": "Tapado de regiones",
+      "description": "Difuminado o enmascarado de zonas de una imagen o video.",
+      "platforms": [
+        "windows",
+        "mac",
+        "linux"
+      ],
+      "requires_review": false,
+      "status": "planned",
+      "license_notes": null
+    },
+    {
+      "id": "audio.io",
+      "name": "Audio",
+      "description": "Decodificar, cortar, silenciar, mezclar un pitido y exportar audio.",
+      "platforms": [
+        "windows",
+        "mac",
+        "linux"
+      ],
+      "requires_review": false,
+      "status": "planned",
+      "license_notes": "FFmpeg con licencia LGPL: enlace dinámico y distribuir el código de la compilación. Evitar compilaciones con --enable-gpl o --enable-nonfree."
+    },
+    {
+      "id": "ai.transcribe_local",
+      "name": "Transcripción local",
+      "description": "Voz a texto con marcas de tiempo, en el equipo.",
+      "platforms": [
+        "windows",
+        "mac"
+      ],
+      "requires_review": true,
+      "status": "planned",
+      "license_notes": "faster-whisper (MIT). La licencia de los pesos de Whisper no se verificó (confianza baja)."
+    },
+    {
+      "id": "ai.ner_local",
+      "name": "Detección local de nombres",
+      "description": "Detecta nombres, teléfonos y lugares en texto, en el equipo. Su acierto es parcial.",
+      "platforms": [
+        "windows",
+        "mac"
+      ],
+      "requires_review": true,
+      "status": "planned",
+      "license_notes": "GLiNER: usar pesos Apache-2.0 (gliner_multi-v2.1) y evitar gliner_multi (CC BY-NC 4.0). Evitar los modelos es_core_news_* de spaCy (GPL-3.0)."
+    },
+    {
+      "id": "ai.llm_byok",
+      "name": "Modelo de lenguaje propio",
+      "description": "Modelo de lenguaje con la clave del usuario o uno local. Sus respuestas pueden fallar.",
+      "platforms": [
+        "windows",
+        "mac"
+      ],
+      "requires_review": true,
+      "status": "planned",
+      "license_notes": "Phi-3.5 mini (MIT), Qwen3-4B o Qwen2.5-1.5B (Apache-2.0). Evitar Qwen2.5-3B (Qwen Research License). Llama y Gemma tienen términos propios: revisar."
+    },
+    {
+      "id": "data.tables",
+      "name": "Tablas",
+      "description": "Lectura y escritura de CSV y XLSX.",
+      "platforms": [
+        "windows",
+        "mac",
+        "linux"
+      ],
+      "requires_review": false,
+      "status": "planned",
+      "license_notes": null
+    },
+    {
+      "id": "mail.parse",
+      "name": "Correo",
+      "description": "Lectura de .eml, .emlx y .msg con sus adjuntos.",
+      "platforms": [
+        "windows",
+        "mac",
+        "linux"
+      ],
+      "requires_review": false,
+      "status": "planned",
+      "license_notes": "Evitar extract-msg (GPL v3) en software cerrado. Para .eml, la biblioteca estándar de Python (licencia no verificada)."
+    },
+    {
+      "id": "meta.docs",
+      "name": "Metadatos",
+      "description": "Lectura y limpieza de metadatos de Office, PDF e imagen.",
+      "platforms": [
+        "windows",
+        "mac",
+        "linux"
+      ],
+      "requires_review": false,
+      "status": "planned",
+      "license_notes": "ExifTool tiene doble licencia (Artistic o GPL): usarlo como proceso aparte. Pillow, python-docx y openpyxl son permisivas según agregadores."
+    },
+    {
+      "id": "capture.input_win",
+      "name": "Captura de entrada y pantalla (Windows)",
+      "description": "Eventos de clic y teclado más captura de pantalla. Solo Windows; puede provocar alertas de antivirus.",
+      "platforms": [
+        "windows"
+      ],
+      "requires_review": false,
+      "status": "planned",
+      "license_notes": "API de Windows, sin licencia de terceros. Los ganchos de bajo nivel pueden activar alertas de antivirus; cómo puntúan los EDR a UI Automation y a Windows Graphics Capture no se verificó."
+    },
+    {
+      "id": "rules.engine",
+      "name": "Motor de reglas",
+      "description": "Reglas declarativas por perfil (por ejemplo, un formato por banco).",
+      "platforms": [
+        "windows",
+        "mac",
+        "linux"
+      ],
+      "requires_review": false,
+      "status": "planned",
+      "license_notes": null
+    },
+    {
+      "id": "review.ui",
+      "name": "Pantalla de revisión",
+      "description": "Vista lado a lado del original y del resultado, con aprobación humana antes de guardar.",
+      "platforms": [
+        "windows",
+        "mac",
+        "linux"
+      ],
+      "requires_review": false,
+      "status": "planned",
+      "license_notes": null
+    },
+    {
+      "id": "export.formats",
+      "name": "Exportadores",
+      "description": "CSV, XLSX, PDF, DOCX, HTML, XMP e informe de lo realizado.",
+      "platforms": [
+        "windows",
+        "mac",
+        "linux"
+      ],
+      "requires_review": false,
+      "status": "planned",
+      "license_notes": null
+    }
   ]
 }

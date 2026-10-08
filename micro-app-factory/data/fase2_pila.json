@@ -1,0 +1,566 @@
+{
+ "topic": "pila técnica y licencias",
+ "frameworks": [
+  {
+   "name": "Tauri 2 (Rust + webview del SO)",
+   "installer_size": "Fuentes de blogs (no benchmarks controlados): 8.6 MB vs 244 MB Electron (app de 6 ventanas, noqta.tn); 12-18 MB en releases reales de Tabularis (Tauri) vs 201-290 MB de Beekeeper Studio (Electron). Con un sidecar Python/PyInstaller el tamaño final suma el del sidecar (no medido en las fuentes).",
+   "memory": "Fuentes de blog: ~172 MB (Tauri) vs ~409 MB (Electron) en app de 6 ventanas; otra fuente: ~42 MB en reposo (Tauri) vs ~168 MB (Electron 34.x). Cifras direccionales, discrepan entre fuentes.",
+   "maturity": "Artículos de 2026 presentan Tauri 2 como la versión vigente; usa el webview del sistema operativo (no empaqueta Chromium), por lo que el renderizado difiere por plataforma y hay que probar en cada una. Requiere conocimientos de Rust para la capa nativa (tech-insider.org).",
+   "signing_updates": "Plugin updater oficial: exige firma propia del updater (par de claves; la clave pública va en tauri.conf.json; NO se puede desactivar). Si se pierde la clave privada no se pueden publicar más actualizaciones a los usuarios existentes. La firma del SO es una capa aparte: Authenticode en Windows y Developer ID + notarización en macOS (fuente secundaria coreana/japonesa; no se recuperaron las páginas oficiales de firma).",
+   "ai_codegen_fit": "No verificada con fuente. Observaciones de las fuentes: UI en HTML/JS/TS (frontend de web, bien conocido por LLMs) + capa Rust opcional; la curva de Rust se menciona como desventaja. Juicio propio (no fuente): la UI web es fácil de generar por IA; mantener la capa Rust es el punto frágil.",
+   "external_engine_support": "Soporte oficial de 'sidecar' (v2.tauri.app/develop/sidecar): se declara en bundle.externalBin de tauri.conf.json; el binario debe llamarse nombre-<target-triple> (p.ej. my-sidecar-x86_64-unknown-linux-gnu); se invoca desde Rust o JS con tauri-plugin-shell (Command.sidecar) y permisos/capabilities. La documentación cita explícitamente 'Python CLI applications or API servers bundled using pyinstaller'. Incidencia reportada (tauri#15134): en instaladores NSIS el sidecar puede no reemplazarse al reinstalar/recompilar.",
+   "source_urls": [
+    "https://tabularis.dev/blog/why-tabularis-runs-on-tauri",
+    "https://noqta.tn/en/blog/tauri-2-desktop-apps-rust-web-technologies-2026",
+    "https://tech-insider.org/tauri-vs-electron-2026/",
+    "https://v2.tauri.app/de/develop/sidecar/",
+    "https://github.com/tauri-apps/tauri/issues/15134",
+    "https://v2.tauri.app/plugin/updater/",
+    "https://dev.classmethod.jp/articles/shuntaka-tauri-macos-codesign-notarization-updater-github-releases/",
+    "https://dev.to/royce_fabbd83cb268312e928/tauri-vs-electron-vs-neutralino-2026-javascript-desktop-app-decision-guide-2kaf"
+   ],
+   "confidence": "med"
+  },
+  {
+   "name": "Electron",
+   "installer_size": "Fuentes de blog: 201-290 MB (Beekeeper Studio, release real), 244 MB (comparativa noqta.tn); otra guía genérica estima 80-150 MB. Conflicto entre fuentes.",
+   "memory": "~409 MB (app de 6 ventanas) / ~168 MB en reposo (Electron 34.x) según blogs; direccional.",
+   "maturity": "El más maduro del ecosistema (ecosistema y contratación, según tech-insider.org); incluye su propio Chromium, por lo que el renderizado es idéntico entre SO.",
+   "signing_updates": "Docs oficiales (electronjs.org/docs/tutorial/code-signing): Forge usa @electron/packager, @electron/osx-sign y @electron/notarize; Forge recomendado para firmar Squirrel.Windows y MSI. electron-builder + electron-updater (NSIS en Windows; zip obligatorio en macOS para Squirrel.Mac); en macOS la app DEBE estar firmada para actualizar; electron-updater valida firma también en Windows. Azure Trusted Signing (según Electron, oct 2025) disponible solo para organizaciones de EE.UU./Canadá con 3+ años de historial y desarrolladores individuales de EE.UU./Canadá.",
+   "ai_codegen_fit": "No verificada con fuente. Juicio propio (no fuente): stack JS/TS+Node muy extendido, favorable a generación por IA.",
+   "external_engine_support": "Patrón documentado en varios proyectos: compilar el backend con PyInstaller, copiarlo con extraResources de electron-builder y lanzarlo con child_process.spawn desde el proceso main, resolviendo la ruta con process.resourcesPath / app.isPackaged. Trampas: --onefile descomprime a temp (latencia, PID distinto), matar el hijo al salir, chmod +x, firmar/notarizar binarios en macOS, PyInstaller no hace compilación cruzada.",
+   "source_urls": [
+    "https://electronjs.org/docs/tutorial/code-signing",
+    "https://www.electron.build/docs/features/auto-update",
+    "https://til.simonwillison.net/electron/python-inside-electron",
+    "https://github.com/matbloch/electron-flask",
+    "https://tabularis.dev/blog/why-tabularis-runs-on-tauri",
+    "https://noqta.tn/en/blog/tauri-2-desktop-apps-rust-web-technologies-2026",
+    "https://capawesome.io/docs/blog/electron-vs-tauri-for-capacitor-apps/",
+    "https://tech-insider.org/tauri-vs-electron-2026/"
+   ],
+   "confidence": "med"
+  },
+  {
+   "name": "Flutter desktop",
+   "installer_size": null,
+   "memory": null,
+   "maturity": "Docs oficiales (supported-platforms): Windows x64 y Arm64 (Windows 10/11); macOS x64 y Arm64, con aviso de que Flutter está retirando el soporte de macOS Intel (x64). Docs de escritorio: compila apps nativas Windows, macOS y Linux.",
+   "signing_updates": "Sin updater/firma integrados en el SDK según lo recuperado. Empaquetado MSIX mediante el paquete comunitario 'msix' (firma con certificado propio vía certificate_path/certificate_password; la Microsoft Store firma automáticamente).",
+   "ai_codegen_fit": "No verificada con fuente.",
+   "external_engine_support": "No verificada con fuente (no se buscó específicamente; Dart FFI / Process.start son mecanismos generales, sin cita).",
+   "source_urls": [
+    "https://docs.flutter.dev/reference/supported-platforms.html",
+    "https://docs.flutter.dev/platform-integration/desktop",
+    "https://pub.dev/documentation/msix/latest/",
+    "https://github.com/YehudaKremer/msix"
+   ],
+   "confidence": "low"
+  },
+  {
+   "name": ".NET: Avalonia (y .NET MAUI)",
+   "installer_size": "No se encontraron cifras de tamaño específicas de Avalonia en las fuentes. Microsoft indica para MAUI NativeAOT 'typically up to 2.5x smaller' y arranque ~2x más rápido, documentado para iOS y Mac Catalyst (no para escritorio Avalonia).",
+   "memory": null,
+   "maturity": "Avalonia: UI con renderizado propio (Skia), escritorio Windows/macOS/Linux + móvil + WebAssembly; descrito como la opción madura si se necesita Linux. MAUI: plataformas oficiales Android, iOS, Mac Catalyst y Windows (en macOS pasa por Mac Catalyst); no soporta Linux (comparativa mayo 2026). Avalonia anunció backend de MAUI para Linux/WebAssembly (2026), no confirmado como estable.",
+   "signing_updates": "No verificado en esta investigación (no se buscó firma/updater de Avalonia; Velopack/otros no consultados).",
+   "ai_codegen_fit": "No verificada con fuente.",
+   "external_engine_support": "No verificado con fuente (System.Diagnostics.Process es mecanismo estándar de .NET, sin cita).",
+   "source_urls": [
+    "https://dev.to/ironsoftware/avalonia-vs-maui-in-net-10-which-should-you-choose-1bbg",
+    "https://startdebugging.net/pt-br/2026/05/maui-vs-avalonia-vs-uno-in-2026/",
+    "https://www.theregister.com/2025/11/13/dotnet_maui_linux_avalonia/",
+    "https://www.devclass.com/development/2026/03/24/avaloniaui-enhances-net-maui-with-linux-and-webassembly-support/5209515",
+    "https://learn.microsoft.com/dotnet/maui/deployment/nativeaot"
+   ],
+   "confidence": "low"
+  },
+  {
+   "name": "Qt / PySide6 (Qt for Python)",
+   "installer_size": "Sin benchmark de PySide6; estimación para PyQt6 (guía pythonguis): app mínima ~30-80 MB .exe en Windows con PyInstaller y ~50-120 MB .app en macOS; un reporte de cx_Freeze: 240 MB, ~120 MB tras recortar componentes Qt. pyside6-deploy (envoltorio de Nuitka) puede arrastrar módulos pesados como QtWebEngine.",
+   "memory": null,
+   "maturity": "Qt for Python es el binding oficial de Qt; dual: LGPLv3/GPLv3 y comercial.",
+   "signing_updates": "No verificado (sin updater integrado en lo recuperado).",
+   "ai_codegen_fit": "No verificada con fuente. Ventaja estructural: UI y lógica en Python, el mismo lenguaje que los motores de procesamiento (pypdf, spaCy, etc.).",
+   "external_engine_support": "Nativo si el motor es Python (mismo proceso); empaquetado con pyside6-deploy (Nuitka) o PyInstaller.",
+   "source_urls": [
+    "https://www.pythonguis.com/faq/packaged-installer-file-sizes/",
+    "https://doc.qt.io/qtforpython-6/deployment/deployment-pyside6-deploy.html",
+    "https://www.pythonguis.com/faq/licensing-differences-between-pyqt6-and-pyside6/",
+    "https://github.com/Erriez/pyside6-nuitka-test"
+   ],
+   "confidence": "low"
+  }
+ ],
+ "components": [
+  {
+   "area": "capture",
+   "name": "PySide6 / Qt for Python (licencia del framework)",
+   "license": "Open source: LGPLv3/GPLv3; también licencia comercial Qt (según docs/espejo del repo pyside-setup y guías pythonguis). Algunos módulos Qt (QtCharts, Qt Data Visualization) son GPL.",
+   "commercial_closed_source_ok": "conditional",
+   "size_or_perf": null,
+   "notes": "Fuentes terceras describen uso con LGPL como compatible con software cerrado si se enlaza dinámicamente, se incluye la licencia, se permite reemplazar la librería y se ofrece el código LGPL de PySide6 (no el de la app). Un foro advierte que distribuir bajo términos incompatibles con LGPL requeriría licencia comercial Qt. Hay un conflicto interno en commits del repo: uno dice que PyPI es válido para ambos casos, otro que los usuarios comerciales no deberían instalar la edición Community con pip. Fuentes son blogs, no el texto legal de Qt.",
+   "source_urls": [
+    "https://www.pythonguis.com/faq/licensing-differences-between-pyqt6-and-pyside6/",
+    "https://www.pythonguis.com/faq/not-an-open-source-application-which-one-to-use-pyqt5-or-pyside2/",
+    "https://doc-snapshots.qt.io/qtforpython-6.5/commercial/index.html",
+    "https://git.omada.cafe/Nova/pyside-setup/commit/55f4809595ab1e324ca9f4cb8a3c1f65dd4c1935"
+   ],
+   "confidence": "med"
+  },
+  {
+   "area": "pdf",
+   "name": "PyMuPDF / MuPDF (Artifex)",
+   "license": "Doble licencia: AGPL (código abierto) o licencia comercial vendida por Artifex (agente exclusivo de licencias comerciales de MuPDF; PyMuPDF puede sublicenciarse). Texto de la doc: 'available under both, open-source AGPL and commercial license agreements'; 'If you determine you cannot meet the requirements of the AGPL, please contact Artifex for more information regarding a commercial license'.",
+   "commercial_closed_source_ok": "conditional",
+   "size_or_perf": null,
+   "notes": "Para software cerrado y distribuido, la fuente (comparativa de un competidor, tono de advocacy) afirma: si distribuyes software que incluye PyMuPDF debes abrir tu código bajo AGPL o comprar licencia comercial a Artifex; sin excepción 'community/startup'; Artifex no publica precios. La doc de PyMuPDF dice que el acuerdo comercial no afecta usos conformes con AGPL. No se pudo abrir artifex.com (no apareció en resultados); páginas de PyPI/readthedocs son versiones antiguas (2021-2023). No es consejo legal: requiere verificar en artifex.com/licensing y con abogado.",
+   "source_urls": [
+    "https://pypi.org/project/PyMuPDF/1.23.0/",
+    "https://pymupdftest.readthedocs.io/en/stable/intro.html",
+    "https://pdf.oxide.fyi/docs/comparison/vs-pymupdf"
+   ],
+   "confidence": "med"
+  },
+  {
+   "area": "pdf",
+   "name": "pypdf",
+   "license": "BSD-3-Clause (según FAQ oficial de pypdf y archivo LICENSE en repo/paquete Debian)",
+   "commercial_closed_source_ok": "yes",
+   "size_or_perf": null,
+   "notes": "Python puro. Lectura/escritura/unir/dividir/rotar/cifrar PDFs; no es motor de renderizado ni de OCR.",
+   "source_urls": [
+    "https://pypdf.readthedocs.io/en/4.0.0/meta/faq.html",
+    "https://salsa.debian.org/python-team/packages/pypdf/-/blob/debian/unstable/LICENSE"
+   ],
+   "confidence": "high"
+  },
+  {
+   "area": "pdf",
+   "name": "pdfplumber (sobre pdfminer.six)",
+   "license": "pdfplumber: MIT (metadatos de paquete en agregadores, v0.11.9). pdfminer.six: MIT, con excepciones: datos CMap en BSD-3-Clause, módulo saslprep Apache-2.0/MIT, Adobe Glyph List bajo su propia licencia (según notas de empaquetado Fedora).",
+   "commercial_closed_source_ok": "yes",
+   "size_or_perf": null,
+   "notes": "Fuentes son agregadores y paquetes de Linux, no los LICENSE originales; al redistribuir pdfminer.six hay que incluir los archivos de licencia incluidos, no solo la etiqueta MIT.",
+   "source_urls": [
+    "https://t2linux.com/packages/python-pdfplumber",
+    "https://src.fedoraproject.org/rpms/python-pdfminer/raw/epel9/f/python-pdfminer.spec",
+    "https://generalistprogrammer.com/license/pdfminer-six"
+   ],
+   "confidence": "med"
+  },
+  {
+   "area": "pdf",
+   "name": "PDFium / pypdfium2",
+   "license": "pypdfium2 (0.8.1-0.15.0): 'PDFium and PyPDFium2 are available by the terms and conditions of either Apache 2.0 or BSD-3-Clause, at your choice'; doc/ejemplos CC-BY-4.0; componentes de terceros con sus propias licencias (LICENSE-PDFium.txt se distribuye con los binarios). Versiones antiguas (0.1-0.4) decían Apache-2.0 para el código y BSD-3 en el archivo de bindings.",
+   "commercial_closed_source_ok": "yes",
+   "size_or_perf": null,
+   "notes": "Binarios de bblanchon/pdfium-binaries. Un índice de terceros advierte que algunos builds enlazan libgcc: verificar el build concreto. Para renderizar páginas a imagen (motor de Chrome). Alternativa permisiva a PyMuPDF para renderizado.",
+   "source_urls": [
+    "https://pypi.org/project/pypdfium2/0.15.0",
+    "https://pypi.org/project/pypdfium2/0.8.1",
+    "https://openapps.pro/packages/pypdfium2"
+   ],
+   "confidence": "med"
+  },
+  {
+   "area": "ocr",
+   "name": "Tesseract OCR (motor + tessdata)",
+   "license": "Apache 2.0 para el motor; tessdata, tessdata_best y tessdata_fast listados como Apache-2.0 (README espejo: 'all data in the repository are licensed under the Apache-2.0 License'; ebuild de Gentoo LICENSE=\"Apache-2.0\"). No se vio el texto LICENSE de los repos oficiales de GitHub.",
+   "commercial_closed_source_ok": "yes",
+   "size_or_perf": "tessdata_fast = modelos LSTM enteros rápidos (los que suelen incluir las distros); tessdata_best = más lentos, necesarios para entrenar. Tamaños en MB no verificados.",
+   "notes": "Paquetes de terceros pueden poner otra licencia (p.ej. paquete npm @tesseract.js-data lista MIT). Comprobar la licencia del paquete exacto que se redistribuya.",
+   "source_urls": [
+    "https://gitee.com/xingxw/tessdata_best",
+    "https://gpo.zugaina.org/AJAX/Ebuild/56258022",
+    "https://docsearch.algolia.com/mcp/docs/repo/tesseract-ocr/tessdoc"
+   ],
+   "confidence": "med"
+  },
+  {
+   "area": "ocr",
+   "name": "PaddleOCR / RapidOCR (ONNX) y modelos PP-OCR",
+   "license": "PaddleOCR: Apache-2.0 (listados y README antiguo). RapidOCR: Apache-2.0 (agregadores y espejo Gitee). Modelos ONNX convertidos de PaddleOCR redistribuidos como Apache-2.0 (tarjeta Hugging Face de PP-OCRv5 ONNX; RapidOcrNet). Una fuente indica que el copyright de los modelos OCR es de Baidu y los scripts del dueño del repo. onnxruntime: MIT según conocimiento general del agente de búsqueda, NO verificado.",
+   "commercial_closed_source_ok": "yes",
+   "size_or_perf": null,
+   "notes": "Fuentes son espejos/agregadores/model cards, no los LICENSE oficiales de RapidAI/RapidOCR ni PaddlePaddle/PaddleOCR; no se verificó la licencia de los pesos en la página de descarga oficial. Marcar 'Apache-2.0 reportada, verificar pesos'.",
+   "source_urls": [
+    "https://openapps.pro/packages/rapidocr",
+    "https://huggingface.co/monkt/paddleocr-onnx/blob/main/README.md",
+    "https://github.com/BobLd/RapidOcrNet",
+    "https://dev.co/ai/rag/paddleocr",
+    "https://gitee.com/1fen/RapidOCR"
+   ],
+   "confidence": "med"
+  },
+  {
+   "area": "audio",
+   "name": "FFmpeg",
+   "license": "Núcleo LGPL 2.1 o posterior; algunas partes opcionales (libx264, libx265) son GPL v2+ y se activan con --enable-gpl, lo que cambia la licencia del build a GPL v2+. --enable-nonfree produce un binario con mezcla de licencias compleja (el agente de búsqueda indica que en general no se puede redistribuir; no es texto literal de la fuente).",
+   "commercial_closed_source_ok": "conditional",
+   "size_or_perf": null,
+   "notes": "Lista oficial de cumplimiento LGPL (ffmpeg.org/legal.html): compilar sin --enable-gpl ni --enable-nonfree; enlazar dinámicamente (DLL en Windows); distribuir el código fuente de FFmpeg (modificado o no) que coincida exactamente con los binarios; incluir archivo con la configuración de compilación; alojar el código junto al binario; no renombrar las DLL a nombres ofuscados. Las patentes de códecs (H.264, AAC...) son aparte de la licencia de copyright. No se verificó qué licencia tienen los binarios precompilados de terceros: hay que comprobar el build concreto (flags de configure) antes de redistribuirlo.",
+   "source_urls": [
+    "https://www.ffmpeg.org/legal.html",
+    "https://ffmpeg.org/doxygen/8.0/md_LICENSE.html",
+    "https://wip.co/posts/ffmpeg-license-can-we-legally-sell-closed-source-apps-that-use-it-ap32zk"
+   ],
+   "confidence": "high"
+  },
+  {
+   "area": "audio",
+   "name": "whisper.cpp / faster-whisper / OpenAI Whisper (código y pesos)",
+   "license": "faster-whisper: MIT (metadatos del paquete v1.2.1). whisper.cpp: MIT según comparativa secundaria 2026 (no visto en el repo). OpenAI Whisper (código PyTorch): MIT según la misma comparativa; la licencia de los pesos NO se pudo separar del código en los resultados.",
+   "commercial_closed_source_ok": "yes",
+   "size_or_perf": "Comparativa secundaria (codersera): Whisper large ~10 GB VRAM; faster-whisper large-v2 int8 ~2.9 GB VRAM, 'hasta ~4x más rápido' que la referencia; whisper.cpp large ~3.9 GB RAM, rápido en Apple Silicon (Metal/Core ML) y CPU. No hay cifras de portátil sin GPU verificadas.",
+   "notes": "Licencia de los pesos convertidos (ggml, CTranslate2) es lo que importa al redistribuir; verificar tarjeta del modelo (openai/whisper-* en Hugging Face). Marcar licencia de pesos 'reportada MIT, no verificada'.",
+   "source_urls": [
+    "https://codersera.com/blog/faster-whisper-vs-whisper-cpp-speech-to-text-2026/amp/",
+    "https://download.hermesedi.duckdns.org/.cache/uv/archive-v0/GJ4vLZYJENBOlg1L/faster_whisper-1.2.1.dist-info/METADATA",
+    "https://www.linuxlinks.com/faster-whisper-reimplementation-openai-whisper/"
+   ],
+   "confidence": "low"
+  },
+  {
+   "area": "ner",
+   "name": "spaCy (librería) y modelos preentrenados",
+   "license": "Librería spaCy: MIT. Modelo en_core_web_sm: MIT (listados de paquetes; datos de entrenamiento OntoNotes 5, ClearNLP, WordNet 3.0 con términos propios no revisados). Modelo es_core_news_md: GPL-3.0 (ficha de Hugging Face spacy/es_core_news_md y paquete AUR). Modelos sv_core_news_md y da_core_news_md: cc-by-sa-4.0. xx_ent_wiki_sm: no verificada.",
+   "commercial_closed_source_ok": "conditional",
+   "size_or_perf": null,
+   "notes": "La licencia del modelo difiere de la de la librería y depende de los datos de entrenamiento (foro spaCy). Los modelos GPL-3.0 en español (es_core_news_*) son un riesgo para software cerrado: la fuente solo dice que se aplican términos GPL-3.0; revisar con abogado. No se verificaron es_core_news_sm/lg ni es_dep_news_trf (se asume misma fuente de datos pero NO verificado).",
+   "source_urls": [
+    "https://huggingface.co/spacy/es_core_news_md/tree/main/senter",
+    "https://aur.archlinux.org/packages/python-spacy-es_core_news_md",
+    "https://aur.archlinux.org/packages/python-spacy-es_core_news_sm",
+    "https://huggingface.co/spacy/sv_core_news_md/blame/69e1f389bf7f5d77c32116b51dead6d0bc4411e7/tok2vec/cfg",
+    "https://support.prodi.gy/t/general-question-about-patent/3263",
+    "https://www.promptlayer.com/models/encorewebsm"
+   ],
+   "confidence": "med"
+  },
+  {
+   "area": "ner",
+   "name": "GLiNER (código y pesos)",
+   "license": "Pesos urchade/gliner_multi-v2.1: Apache-2.0; urchade/gliner_multi_pii-v1: Apache-2.0 (PyPI, catálogos, tag de Hugging Face; no se abrió la ficha del modelo). Pesos antiguos urchade/gliner_multi y la línea v0/v1 (gliner_base, gliner_small/medium/large v1): CC-BY-NC-4.0 (no comercial).",
+   "commercial_closed_source_ok": "conditional",
+   "size_or_perf": null,
+   "notes": "Riesgo: tutoriales antiguos apuntan a gliner_multi (CC BY-NC 4.0). Usar solo checkpoints v2.1 o posteriores con etiqueta Apache-2.0 y verificar el campo license de cada modelo. La licencia del dataset sintético de entrenamiento (synthetic-pii-ner-mistral-v1) no se verificó. Licencia del código GLiNER no confirmada en las fuentes.",
+   "source_urls": [
+    "https://pypi.org/project/gliner",
+    "https://libraries.io/pypi/gliner",
+    "https://mixpeek.com/model/urchade/gliner_multi-v2.1",
+    "https://www.promptlayer.com/models/glinermultipii-v1",
+    "https://huggingface.co:443/posts/urchade/899044648100689"
+   ],
+   "confidence": "med"
+  },
+  {
+   "area": "llm",
+   "name": "Phi-3.5 mini (3.8B, Microsoft)",
+   "license": "MIT (según comparativa generalcompute / bestllmfor; ficha oficial no abierta)",
+   "commercial_closed_source_ok": "yes",
+   "size_or_perf": "GGUF Q4_K_M ~2.2 GB (fuente secundaria). CPU: benchmark en VM cloud de 4 vCPU Xeon AVX2: Phi-3 Mini 3.8B Q4_K_M = 6.37 tok/s (github nandan2003/edge-cpu-inference); un aficionado reporta ~12 tok/s en portátil. No hay cifras homogéneas verificadas.",
+   "notes": "MIT es la licencia más limpia de la comparativa. Calidad reportada por proveedor (no verificada): MMLU ~69.",
+   "source_urls": [
+    "https://www.generalcompute.com/blog/small-models-showdown-qwen-2-5-3b-llama-3-2-3b-phi-3-5-mini-gemma-2-2b",
+    "https://bestllmfor.com/vs/llama32-3b-vs-phi35-mini/",
+    "https://github.com/nandan2003/edge-cpu-inference"
+   ],
+   "confidence": "med"
+  },
+  {
+   "area": "llm",
+   "name": "Qwen2.5-3B (base/instruct)",
+   "license": "Qwen Research License Agreement (19-sep-2024), NO Apache 2.0: permite uso de investigación/evaluación no comercial; el uso comercial requiere licencia aparte de Alibaba Cloud (según avisos y VentureBeat sobre Qwen2.5-Omni-3B).",
+   "commercial_closed_source_ok": "no",
+   "size_or_perf": "Q4_K_M 1.95 GiB / 3.40 B parámetros (tabla llama-bench comunitaria): pp512 67.33 t/s, tg128 22.72 t/s con 4 hilos en una CPU x86 (modelo no especificado); en Intel i7-6700 (4 hilos, sin GPU) tg128 11.8 t/s (computingforgeeks); en VM 4 vCPU Xeon 8.37 t/s.",
+   "notes": "Trampa: la licencia depende del checkpoint, no de la marca Qwen. Verificar la ficha oficial en Hugging Face (no se abrió).",
+   "source_urls": [
+    "https://huggingface.co/tencent/POINTS-Reader/blob/main/NOTICE.txt",
+    "https://venturebeat.com/ai/qwen-swings-for-a-double-with-2-5-omni-3b-model-that-runs-on-consumer-pcs-laptops",
+    "https://en.immers.cloud/ai/Qwen/qwen2.5-3b",
+    "https://computingforgeeks.com/run-local-llm-llama-cpp/",
+    "https://github.com/nandan2003/edge-cpu-inference"
+   ],
+   "confidence": "med"
+  },
+  {
+   "area": "llm",
+   "name": "Qwen2.5-1.5B y Qwen3-4B",
+   "license": "Qwen2.5-1.5B: Apache-2.0 (varias páginas agregadoras y datalearner). Qwen3-4B: Apache-2.0 (agregadores dev.co, apxml). Ninguna es ficha oficial de Hugging Face.",
+   "commercial_closed_source_ok": "yes",
+   "size_or_perf": "No hay cifras específicas verificadas para estos dos. Referencia general de una guía: modelos de 1-2B superan de forma consistente 15 tok/s en un portátil viejo sin GPU; rango estimado por el buscador para 3-4B Q4_K_M en CPU de portátil: ~8-25 tok/s (es una síntesis del buscador, no una medición única).",
+   "notes": "Opciones permisivas más pequeñas que Phi-3.5. Verificar licencia en la ficha oficial antes de enviar.",
+   "source_urls": [
+    "https://dev.co/ai/llms/qwen3-4b",
+    "https://apxml.com/models/qwen3-4b",
+    "https://www.datalearner.com/en/ai-models/pretrained-models/Qwen2_5-1_5B",
+    "https://thegtmdirectory.com/models/qwen-qwen2/qwen2.5-1.5b-instruct",
+    "https://putty-p.it.com/a/26676.html"
+   ],
+   "confidence": "med"
+  },
+  {
+   "area": "llm",
+   "name": "Llama 3.2 3B (Meta)",
+   "license": "Llama Community License: uso comercial permitido salvo productos con más de 700 millones de usuarios activos mensuales, que requieren licencia aparte de Meta (según comparativa). Una fuente dice Apache 2.0: conflicto, se descarta. El texto de la licencia no se abrió.",
+   "commercial_closed_source_ok": "conditional",
+   "size_or_perf": "GGUF Q4 ~1.7-2.0 GB según la fuente (discrepan). Velocidad en CPU: 'comparable' a Phi-3 mini según un aficionado; estimación de fuente de ~15-20% más rápido que Phi-3.5 mini por menos parámetros.",
+   "notes": "Licencia propia con condiciones (política de uso aceptable y atribución 'Built with Llama' no verificadas aquí). No es OSI.",
+   "source_urls": [
+    "https://www.generalcompute.com/blog/small-models-showdown-qwen-2-5-3b-llama-3-2-3b-phi-3-5-mini-gemma-2-2b",
+    "https://pengupress.duckdns.org/articles/open-source-model-licensing-guide-llama-mistral-qwen-and-gemma-compared/",
+    "https://www.promptquorum.com/local-llms/local-llm-commercial-license-guide-business"
+   ],
+   "confidence": "low"
+  },
+  {
+   "area": "llm",
+   "name": "Gemma (Google)",
+   "license": "Gemma 2 y 3: términos propios de Google con política de uso aceptable y prohibiciones (p.ej. desarrollar modelos competidores) según una guía; otra guía dice que Gemma 4 pasó a Apache 2.0 (no verificado: conflicto/inseguro).",
+   "commercial_closed_source_ok": "conditional",
+   "size_or_perf": null,
+   "notes": "Versión importa. Marcar 'no verificada' para Gemma 4.",
+   "source_urls": [
+    "https://pengupress.duckdns.org/articles/open-source-ai-licensing-2026/",
+    "https://www.promptquorum.com/local-llms/local-llm-commercial-license-guide-business"
+   ],
+   "confidence": "low"
+  },
+  {
+   "area": "vision",
+   "name": "OpenCV / opencv-python (ruedas PyPI)",
+   "license": "OpenCV 4.5.0 y posteriores: Apache 2; 4.4.0 y anteriores (incl. 3.x): BSD de 3 cláusulas (página oficial opencv.org/license). Las ruedas opencv-python redistribuyen FFmpeg bajo LGPLv2.1 (todas las ruedas) y Qt (Linux: Qt 4.8.7 LGPLv2.1; macOS: Qt 5 LGPLv3) según el archivo de licencias de terceros del proyecto.",
+   "commercial_closed_source_ok": "conditional",
+   "size_or_perf": null,
+   "notes": "El código OpenCV es permisivo; las dependencias LGPL de la rueda (FFmpeg, Qt) imponen obligaciones de aviso/reemplazo. opencv-contrib-python puede incluir algoritmos no libres/patentados (restricciones en algunos países). Fuentes de rueda son antiguas (issues/PR de GitHub); revisar LICENSE-3RD-PARTY.txt de la versión exacta. Alternativa: opencv-python-headless (no verificada en esta búsqueda).",
+   "source_urls": [
+    "https://opencv.org/license/",
+    "https://opencv.org/opencv-4-5-0/",
+    "https://github.com/opencv/opencv-python/pull/350/files",
+    "https://github.com/opencv/opencv-python/issues/682"
+   ],
+   "confidence": "med"
+  },
+  {
+   "area": "mail",
+   "name": "extract-msg (lectura de .msg de Outlook)",
+   "license": "GPL v3 (etiqueta en todas las versiones de PyPI)",
+   "commercial_closed_source_ok": "no",
+   "size_or_perf": null,
+   "notes": "Copyleft: evitar en software cerrado distribuido. Alternativas permisivas: python-oxmsg (MIT, v0.0.2, joven y poco activo), aspose-email-foss (MIT según listado; mantenido por proveedor comercial; salud 59/100 en depscope), msg-parser (BSD; convierte MSG a EML). La licencia de outlook-msg no se vio. Verificar LICENSE en cada repo.",
+   "source_urls": [
+    "https://pypi.org/project/extract-msg/0.48.0",
+    "https://pypi.org/project/python-oxmsg",
+    "https://openapps.pro/packages/python-oxmsg",
+    "https://pypi.org/project/msg-parser/1.2.0",
+    "https://mcp.depscope.dev/pkg/pypi/aspose-email-foss"
+   ],
+   "confidence": "med"
+  },
+  {
+   "area": "mail",
+   "name": "Lectura de .eml: módulo 'email' de la biblioteca estándar de Python; eml-parser; mail-parser (Rust, Stalwart)",
+   "license": "stdlib email: licencia PSF NO verificada en esta búsqueda. eml-parser: licencia no mostrada en resultados (no verificada). mail-parser (crate Rust de Stalwart Labs): 'Apache-2.0 or MIT' según metadatos de Debian.",
+   "commercial_closed_source_ok": "unknown",
+   "size_or_perf": null,
+   "notes": "Nota de calidad de eml-parser: un bug del módulo email de la stdlib causaba KeyErrors en cabeceras en Python <=3.7.4. Para .eml la opción de menor riesgo suele ser la stdlib, pero la licencia no se pudo confirmar por búsqueda (marcar 'no verificada').",
+   "source_urls": [
+    "https://eml-parser.readthedocs.io/en/latest/",
+    "https://pypi.org/project/eml-parser/",
+    "https://lore.proxmox.com/pve-devel/20231002080624.198759-2-l.wagner@proxmox.com"
+   ],
+   "confidence": "low"
+  },
+  {
+   "area": "metadata",
+   "name": "ExifTool (Phil Harvey)",
+   "license": "Doble licencia: Artistic License (Perl) o GPL (Alpine: 'Artistic-1.0-Perl GPL-1.0-or-later'; Debian: 'Artistic or GPL-1+'). Según el autor (foro), la Artistic permite incrustarlo en una aplicación comercial sin cargo siempre que 'no overt attempt is made to make this Package's interfaces visible to the end user of the commercial distribution'; bajo GPL basta con mostrar los avisos de copyright y dar enlace al código. El LICENSE de GitHub contiene solo texto GPL mientras el README apunta a la licencia Perl (hilo 2024).",
+   "commercial_closed_source_ok": "conditional",
+   "size_or_perf": null,
+   "notes": "Interpretación informal del autor, no consejo legal. Un wrapper que invoca el binario y parsea la salida lo calificó el autor de 'no GPL', pero un comentarista lo llamó zona gris. Ejecutarlo como proceso hijo aislado (binario sin modificar) es el patrón habitual; verificar con abogado.",
+   "source_urls": [
+    "https://exiftool.org/forum/index.php?msg=85130",
+    "https://exiftool.org/forum/index.php?msg=89707",
+    "https://metadata.ftp-master.debian.org/changelogs/main/libi/libimage-exiftool-perl/stable_copyright",
+    "https://pkgs.alpinelinux.org/package/edge/community/x86/exiftool"
+   ],
+   "confidence": "med"
+  },
+  {
+   "area": "metadata",
+   "name": "Pillow, python-docx, openpyxl, kamadak-exif (Rust)",
+   "license": "Pillow: MIT-CMU en versiones recientes (12.1.x; antes etiquetada HPND), permisiva. python-docx: MIT (v1.2.0, jun 2025). openpyxl: MIT salvo openpyxl/writer/odict.py bajo licencia PSF 2. kamadak-exif (crate Rust, pura-Rust, lectura de EXIF): BSD-2-Clause.",
+   "commercial_closed_source_ok": "yes",
+   "size_or_perf": null,
+   "notes": "Todas permisivas (conservar avisos de copyright). Fuentes son páginas de empaquetado/agregadores; Pillow y kamadak-exif son lectura/escritura básica de EXIF; ExifTool cubre más formatos. No se evaluaron lopdf, pyexiv2 (que por conocimiento general podría ser GPL: NO verificado).",
+   "source_urls": [
+    "https://sources.debian.org/src/pillow/12.1.1-2/PKG-INFO",
+    "https://fossies.org/linux/Pillow/LICENSE",
+    "https://gitlab.istina.msu.ru/dza/python-docx/-/blob/master/LICENSE",
+    "https://qastaging.launchpad.net/ubuntu/jammy/+source/openpyxl/+copyright",
+    "https://www.meterian.io/components/rust/kamadak-exif",
+    "https://oosmetrics.com/repo/kamadak/exif-rs"
+   ],
+   "confidence": "med"
+  },
+  {
+   "area": "capture",
+   "name": "Hooks de bajo nivel (SetWindowsHookEx WH_KEYBOARD_LL / WH_MOUSE_LL) para captura de entrada",
+   "license": "API de Windows (no aplica licencia de terceros)",
+   "commercial_closed_source_ok": "conditional",
+   "size_or_perf": null,
+   "notes": "Riesgo AV/EDR: según Black Hat USA 2022, SetWindowsHookEx es 'históricamente la API más abusada por keyloggers de espacio de usuario'; el hook WH_KEYBOARD_LL se asocia a MITRE T1056.001 y los equipos de respuesta analizan en la telemetría EDR qué proceso llamó a SetWindowsHookEx. Una práctica de laboratorio observó que Windows no bloquea estos programas; el bloqueo queda en manos de productos de seguridad. INFERENCIA del agente de búsqueda (no de las fuentes): una app legítima con el mismo patrón puede disparar heurísticas. Mitigaciones generales NO sourced: firma de código, envío a portales de falsos positivos, limitar hooks. No se encontraron fuentes sobre cómo puntúan los EDR UI Automation, WGC o Desktop Duplication.",
+   "source_urls": [
+    "https://i.blackhat.com/USA-22/Wednesday/US-22-Case-New-Memory-Forensics-Techniques-to-Defeat-Device-Monitoring-Malware.pdf",
+    "https://0x00sec.org/t/malware-writing-python-malware-part-2-keylogging-with-ctypes-and-setwindowshookexa/11858",
+    "https://cynet.com/attack-techniques-hands-on/api-hooking"
+   ],
+   "confidence": "med"
+  },
+  {
+   "area": "capture",
+   "name": "Windows Graphics Capture (WGC) vs Desktop Duplication API (DXGI) para captura de pantalla",
+   "license": "APIs de Windows (no aplica licencia de terceros)",
+   "commercial_closed_source_ok": "yes",
+   "size_or_perf": null,
+   "notes": "WGC: GraphicsCaptureSession requiere Windows 10 versión 1803 (build 17134). IsBorderRequired (quitar el borde amarillo) requiere Windows 10 versión 2104 (10.0.20348.0), el consentimiento del usuario vía GraphicsCaptureAccess.RequestAccessAsync (Borderless) y la capability graphicsCaptureWithoutBorder en el manifiesto; si el usuario lo deniega el valor se ignora y se muestra el borde; otra app puede mantener el borde activo. OBS comprueba ApiInformation.IsPropertyPresent antes de llamarlo; un issue de Codex reporta fallo E_NOINTERFACE en Windows 10 build 19045 al llamarlo sin guarda. Desktop Duplication: E_ACCESSDENIED si la app no tiene acceso al escritorio actual (solo LOCAL_SYSTEM accede al escritorio seguro/UAC); límite de 4 apps concurrentes por defecto (DXGI_ERROR_NOT_CURRENTLY_AVAILABLE); contenido protegido se devuelve en negro (ProtectedContentBlankedOut); 8bpp y modos sin DWM no soportados; las ventanas pueden excluirse con WCA_EXCLUDED_FROM_DDA (Win10 1709+, fuente espejo no oficial) y SetWindowDisplayAffinity WDA_EXCLUDEFROMCAPTURE (Win10 2004+). NO verificado: si WGC captura el escritorio seguro o contenido DRM.",
+   "source_urls": [
+    "https://learn.microsoft.com/en-us/uwp/api/windows.graphics.capture.graphicscapturesession",
+    "https://learn.microsoft.com/en-us/uwp/api/windows.graphics.capture.graphicscapturesession.isborderrequired",
+    "https://learn.microsoft.com/en-us/windows-hardware/drivers/display/desktop-duplication-api",
+    "https://learn.microsoft.com/en-us/windows/win32/api/dxgi1_2/nf-dxgi1_2-idxgioutput1-duplicateoutput",
+    "https://msdn.microsoft.com/en-us/library/dd375340.aspx",
+    "https://upd.dev/openai/codex/issues/25178",
+    "https://gitlab.freedesktop.org/gstreamer/gst-plugins-bad/-/merge_requests/2209"
+   ],
+   "confidence": "high"
+  },
+  {
+   "area": "capture",
+   "name": "Proyectos abiertos comparables a Steps Recorder (X Steps Recorder, BetterStepsRecorder, LICEcap)",
+   "license": "X Steps Recorder (nonnymoose/xsr): MIT, pero descrito como clon de PSR para Linux (alternativeto) o para Windows (AUR): conflicto. BetterStepsRecorder: GPL-3.0 (Windows; un reseñador dice sin actualizaciones recientes). LICEcap: abierto y gratuito, solo graba región a GIF (licencia exacta no verificada). Folge: propietario/freemium.",
+   "commercial_closed_source_ok": "conditional",
+   "size_or_perf": null,
+   "notes": "No se encontró proyecto Windows con MIT que haga captura por clic con capturas. BetterStepsRecorder (GPL-3.0) sirve como referencia funcional, no como código reutilizable en software cerrado. Licencias vistas en alternativeto.net (agregador), no en los repos.",
+   "source_urls": [
+    "https://alternativeto.net/software/x-steps-recorder/about",
+    "https://alternativeto.net/software/betterstepsrecorder",
+    "https://alternativeto.net/software/betterstepsrecorder/about",
+    "https://aur.archlinux.org/pkgbase/xsr",
+    "https://alternativeto.net/software/problem-step-recorder"
+   ],
+   "confidence": "low"
+  },
+  {
+   "area": "packaging",
+   "name": "PyInstaller",
+   "license": "GPL 2.0 con excepción del bootloader (permite incrustar el bootloader compilado en programas distribuidos sin restricción derivada de esos archivos); hooks de ejecución bajo Apache 2.0; algunos archivos Apache 2.0 (ver COPYING.txt). La doc oficial dice que los ejecutables generados pueden distribuirse con la licencia que se quiera, respetando las licencias de las dependencias; las modificaciones a PyInstaller mismo quedan bajo GPL. ScanCode clasifica la excepción como 'Copyleft Limited'.",
+   "commercial_closed_source_ok": "yes",
+   "size_or_perf": "Sin cifras verificadas de PyInstaller solo; ver Nuitka. Modo --onefile descomprime a directorio temporal en cada arranque (latencia; el PID lanzado puede no ser el proceso real).",
+   "notes": "Falsos positivos de antivirus: el bootloader es idéntico en todas las apps de la misma versión y también lo usan creadores de malware; onefile se parece al comportamiento de 'dropper'; sin firma, sin info de versión y con UPX agravan. Mitigaciones que reportan proyectos reales: recompilar el bootloader (equipo Mapillary), firmar el binario (cuesta $200-500/año según una fuente y no garantiza confianza de todos los AV), enviar el archivo a los portales de falsos positivos de cada vendor en cada release (proyecto umo), publicar SHA256, y (práctica general, no establecida por las fuentes) usar modo carpeta y no UPX. No hace compilación cruzada.",
+   "source_urls": [
+    "https://pyinstaller.org/en/v5.3/license.html",
+    "https://scancode-licensedb.aboutcode.org/bootloader-exception.yml",
+    "https://discuss.python.org/t/pyinstaller-false-positive/43171",
+    "https://github.com/markuskiller/vba-edit/issues/24",
+    "https://github.com/microsoft/apm/issues/487",
+    "https://forum.mapillary.com/t/a-trojan-in-mapillary-tools-win32-exe-solved/5185",
+    "https://gitlab.com/modding-openmw/umo/-/issues/49"
+   ],
+   "confidence": "high"
+  },
+  {
+   "area": "packaging",
+   "name": "Nuitka (y Nuitka Commercial)",
+   "license": "Nuitka gratuito: licencia Apache (doc oficial). Nuitka Commercial: repositorio privado de plugins de pago, licencia que prohíbe distribuir su código fuente o usarlo fuera de Nuitka, pero según la doc oficial 'no impacta' cómo se usan los binarios compilados de tu software. Precio €250/año (Full Package €400/año) según manual de terceros pydevtools: no verificado en nuitka.net.",
+   "commercial_closed_source_ok": "yes",
+   "size_or_perf": "CONFLICTO: una guía dice ejecutables de ~80-150 MB, 'la mitad' de PyInstaller; otras dos y la nota de copyparty dicen que son MÁS grandes que PyInstaller. Tiempo de build: 30-60 s PyInstaller vs 5-15 min Nuitka (una comparativa). Requiere compilador C (MSVC en Windows, GCC en Linux). En modo onefile, copyparty observó que Nuitka descomprime en una ruta temporal distinta cada vez y salta el aviso del firewall de Windows en cada arranque.",
+   "notes": "Sin medición independiente de falsos positivos de AV; el 'cero falsos positivos' de un proveedor (BeatSync/Prometheus Shield) es marketing de un producto de pago basado en Nuitka. Un proyecto en GitLab señala que también hay malware empaquetado con Nuitka. pyside6-deploy usa Nuitka.",
+   "source_urls": [
+    "https://nuitka.net/doc/commercial-license.html",
+    "https://nuitka.net/doc/commercial.html",
+    "https://pydevtools.com/handbook/reference/nuitka/",
+    "https://fossies.org/linux/copyparty/docs/nuitka.txt",
+    "https://beatsyncpro.ai/blog/nuitka-vs-pyinstaller",
+    "https://gitlab.com/modding-openmw/umo/-/issues/49",
+    "https://doc.qt.io/qtforpython-6/deployment/deployment-pyside6-deploy.html"
+   ],
+   "confidence": "med"
+  },
+  {
+   "area": "capture",
+   "name": "Contexto de mercado: Steps Recorder (psr.exe) de Microsoft",
+   "license": "No aplica",
+   "commercial_closed_source_ok": "unknown",
+   "size_or_perf": null,
+   "notes": "Según medios secundarios (Thurrott, Winaero, Windows Latest), Steps Recorder fue deprecado/retirado de Windows 11 alrededor de la versión 24H2 (lanzada el 1 de octubre de 2024); Microsoft sugiere Snipping Tool (incluye grabador de pantalla), Clipchamp o Game Bar. Las fuentes discrepan en si está 'eliminado' o solo 'deprecado'. No se consultó la página oficial de Microsoft.",
+   "source_urls": [
+    "https://www.thurrott.com/books/windows-11-field-guide/311102/whats-missing-in-windows-11-24h2",
+    "https://winaero.com/removed-features-in-windows-11-version-24h2",
+    "https://www.windowslatest.com/2024/06/05/windows-11-to-remove-more-old-features-including-driver-verifier-gui-and-psr-exe/amp/"
+   ],
+   "confidence": "med"
+  },
+  {
+   "area": "vision",
+   "name": "Ultralytics YOLO (detección de objetos)",
+   "license": "Doble licencia: AGPL-3.0 (gratuita; 'All software and AI models must be open-source'; 'Projects using AGPL-3.0 components must do the same') o Enterprise License de pago (permite uso privado y distribución). Ultralytics afirma ser el único licenciante exclusivo de la familia YOLO.",
+   "commercial_closed_source_ok": "no",
+   "size_or_perf": null,
+   "notes": "Para software cerrado se requiere la licencia Enterprise; precio no publicado en lo recuperado. Evitar como componente por defecto.",
+   "source_urls": [
+    "https://ultralytics.com/license",
+    "https://www.ultralytics.com/fr/license",
+    "https://docs.ultralytics.com/"
+   ],
+   "confidence": "high"
+  }
+ ],
+ "licenses_to_avoid": [
+  {
+   "license": "AGPL-3.0 (incl. variantes dual AGPL/comercial)",
+   "why": "Copyleft fuerte: si se distribuye software que incluye el componente, hay que abrir el código bajo AGPL o comprar licencia comercial; la doc de Ultralytics lo dice textualmente ('Projects using AGPL-3.0 components must do the same'), y la comparativa sobre PyMuPDF dice que no hay excepción para startups. Las compras comerciales no tienen precio público.",
+   "example": "PyMuPDF/MuPDF (AGPL o comercial vía Artifex); Ultralytics YOLO (AGPL-3.0 o Enterprise License)",
+   "url": "https://pdf.oxide.fyi/docs/comparison/vs-pymupdf | https://ultralytics.com/license"
+  },
+  {
+   "license": "GPL-3.0 / GPL (enlace o incrustación en el producto) en bibliotecas Y en modelos",
+   "why": "Copyleft: la fuente solo dice que se aplican términos GPL; para un binario cerrado que incorpora el componente es el riesgo clásico. Incluye pesos de modelos con licencia GPL.",
+   "example": "extract-msg (GPL v3, lectura de .msg); spaCy es_core_news_md (GPL-3.0, modelo español); BetterStepsRecorder (GPL-3.0); FFmpeg compilado con --enable-gpl (libx264/libx265 cambian la licencia a GPL v2+)",
+   "url": "https://pypi.org/project/extract-msg/0.48.0 | https://huggingface.co/spacy/es_core_news_md/tree/main/senter | https://www.ffmpeg.org/legal.html"
+  },
+  {
+   "license": "Licencias 'non-commercial' (CC-BY-NC, Qwen Research License) en pesos de modelos",
+   "why": "Prohíben el uso comercial salvo licencia aparte; el código del framework puede ser permisivo mientras los pesos no lo son (la licencia depende del checkpoint, no de la marca).",
+   "example": "GLiNER urchade/gliner_multi (CC BY-NC 4.0) y línea v0/v1 vs gliner_multi-v2.1 (Apache-2.0); Qwen2.5-3B (Qwen Research License) vs Qwen2.5-1.5B y Qwen3-4B (Apache-2.0)",
+   "url": "https://pypi.org/project/gliner | https://huggingface.co/tencent/POINTS-Reader/blob/main/NOTICE.txt"
+  },
+  {
+   "license": "LGPL con enlace estático o sin cumplir los requisitos de relinking/código fuente",
+   "why": "FFmpeg exige enlace dinámico, distribuir el código fuente idéntico a los binarios y la configuración de compilación; PySide6 igual (enlace dinámico, poder reemplazar la librería, incluir la licencia). Algunas partes de Qt (QtCharts, Data Visualization) son GPL.",
+   "example": "FFmpeg LGPL build; PySide6 (LGPLv3/GPLv3); ruedas opencv-python (FFmpeg LGPLv2.1)",
+   "url": "https://www.ffmpeg.org/legal.html | https://www.pythonguis.com/faq/licensing-differences-between-pyqt6-and-pyside6/"
+  },
+  {
+   "license": "FFmpeg --enable-nonfree y licencias de uso personalizadas con límites (Llama Community License, Gemma Terms of Use)",
+   "why": "Nonfree: mezcla de licencias compleja, normalmente no redistribuible. Llama: sin límite salvo >700M MAU, que requiere licencia de Meta; Gemma 2/3: política de uso aceptable y prohibición de desarrollar modelos competidores según una guía (Gemma 4 como Apache 2.0: no verificado).",
+   "example": "Llama 3.2 3B; Gemma 2/3",
+   "url": "https://www.ffmpeg.org/legal.html | https://www.generalcompute.com/blog/small-models-showdown-qwen-2-5-3b-llama-3-2-3b-phi-3-5-mini-gemma-2-2b"
+  }
+ ],
+ "recommended_default_stack": "Candidato por defecto (basado SOLO en lo verificado en las fuentes; la elección de marco es juicio propio donde se indica): (1) Shell: Tauri 2 con motor de procesamiento como sidecar (externalBin, doc oficial v2.tauri.app/develop/sidecar cita explícitamente 'Python CLI ... bundled using pyinstaller'); instaladores de 8-18 MB reportados por blogs frente a 200-290 MB de Electron (cifras de blog, no benchmarks); updater con firma obligatoria. Alternativa si el equipo solo domina JS: Electron (patrón extraResources + child_process.spawn documentado, pero instaladores mucho mayores). Alternativa si todo es Python: PySide6 (LGPL; exige enlace dinámico y aviso). Flutter y Avalonia/.NET quedaron con datos insuficientes. (2) Motor: Python empaquetado con PyInstaller (licencia con excepción de bootloader, permite distribución cerrada; modo carpeta mejor que onefile por extracción temporal y falsos positivos de AV) o Nuitka (Apache; builds de 5-15 min; tamaño/AV sin datos independientes). Firmar siempre. (3) Componentes con licencia permisiva verificada o reportada: PDF = pypdf (BSD-3) + pdfplumber (MIT) + pypdfium2 (Apache-2.0/BSD-3, dual); NO PyMuPDF salvo licencia comercial de Artifex. OCR = Tesseract (Apache-2.0, incluidos tessdata) o RapidOCR/PaddleOCR ONNX (Apache-2.0 reportada, verificar pesos). Audio = FFmpeg compilado LGPL sin --enable-gpl/--enable-nonfree y enlazado dinámicamente + faster-whisper/whisper.cpp (MIT; pesos Whisper reportados MIT sin verificar). NER = GLiNER solo checkpoints v2.1 / multi_pii-v1 (Apache-2.0, verificar ficha); spaCy librería MIT pero evitar los modelos es_core_news_* (GPL-3.0). LLM local = Phi-3.5 mini (MIT) o Qwen2.5-1.5B / Qwen3-4B (Apache-2.0 según agregadores); evitar Qwen2.5-3B (Research License). Visión = OpenCV >=4.5 (Apache-2.0; las ruedas traen FFmpeg LGPL). Correo = stdlib email para .eml (licencia sin verificar) y python-oxmsg (MIT) o msg-parser (BSD) para .msg, NO extract-msg (GPL v3). Metadatos = Pillow (MIT-CMU), python-docx/openpyxl (MIT), kamadak-exif (BSD-2) y/o ExifTool como proceso hijo sin modificar (Artistic/GPL dual; el autor permite incrustarlo comercialmente con condiciones). (4) Captura en Windows: Windows Graphics Capture (Win10 1803+; borde amarillo solo desactivable en builds 2104+ con consentimiento) + hooks de bajo nivel/UI Automation; los hooks globales SetWindowsHookEx son la técnica clásica de keyloggers, así que esperar fricción con AV/EDR: firma de código y envío a portales de falsos positivos. No hay proyecto Windows con MIT comparable (BetterStepsRecorder es GPL-3.0). FALTA VERIFICAR: texto oficial de PyMuPDF/Artifex y precio; LICENSE reales de repos de Tesseract/RapidOCR/whisper.cpp/GLiNER y pesos; licencia de stdlib email y eml-parser; licencia de LICENSE-3RD-PARTY de la rueda opencv exacta; fichas HF de Phi/Qwen/Llama/Gemma; firma/updater de Avalonia y Qt; tamaños reales de Flutter/Avalonia; si WGC captura escritorio seguro/DRM; cómo puntúan los EDR a UI Automation/WGC; tamaño real y velocidad en laptops sin GPU (las cifras de tok/s vienen de hardware heterogéneo); soporte del texto legal de Authenticode/EV y notarización (páginas oficiales no recuperadas).",
+ "conflicts": [
+  "Tamaño de Electron: 201-290 MB (releases reales de Beekeeper Studio) / 244 MB (noqta.tn) vs 80-150 MB (capawesome.io, estimación genérica).",
+  "Memoria Tauri vs Electron: 172 vs 409 MB (6 ventanas, noqta.tn) vs 42 vs 168 MB en reposo (tech-insider.org): condiciones de medición distintas, no comparables entre sí.",
+  "PySide6 / pip install: commits del repo pyside-setup se contradicen sobre si los usuarios comerciales deben evitar la edición Community vía pip.",
+  "spaCy es_core_news_md: la consulta sugería CC BY-SA, pero la ficha de Hugging Face y AUR dicen GPL-3.0; CC BY-SA aparece en modelos sueco y danés (no en el español).",
+  "Licencia de pesos GLiNER: urchade/gliner_multi (CC BY-NC 4.0) vs gliner_multi-v2.1 y gliner_multi_pii-v1 (Apache 2.0): son checkpoints distintos, pero tutoriales los confunden.",
+  "Llama 3.2 3B: una fuente dice Apache 2.0; las demás Llama Community License (700M MAU). Se prefiere Llama Community License.",
+  "Velocidad CPU de modelos 3-4B: 6.37 t/s (VM cloud 4 vCPU) a 22.7 t/s (tabla llama-bench con CPU no especificada); hardware y cuantización no homogéneos.",
+  "Tamaño Q4 de Llama 3.2 3B: ~1.7 GB vs ~2.0 GB según la fuente.",
+  "X Steps Recorder (xsr): alternativeto lo describe como clon de PSR para Linux, el listado AUR como clon de PSR para Windows.",
+  "Tamaño Nuitka vs PyInstaller: una guía dice que Nuitka produce ejecutables ~80-150 MB, la mitad de PyInstaller; otras dos fuentes y la nota de copyparty dicen que son más grandes.",
+  "Steps Recorder en Windows 11 24H2: algunas fuentes lo listan como 'eliminado', otras como 'deprecado'/'en retirada'."
+ ],
+ "limitations": "Se usaron ~37 búsquedas WebSearch en modo estándar (sin WebFetch ni curl, bloqueados): no se abrieron los archivos LICENSE ni las fichas oficiales de Hugging Face/GitHub; la mayoría de las licencias provienen de PyPI, paquetes de distros, agregadores, espejos y blogs, por lo que la confianza máxima es 'med' salvo donde la fuente es la documentación oficial (ffmpeg.org, opencv.org, Microsoft Learn, ultralytics.com, pyinstaller.org, nuitka.net). Los resultados de búsqueda son síntesis del motor y pueden contener inferencias (marcadas como tales en las notas). Cifras de tamaño/memoria/velocidad son de blogs o benchmarks heterogéneos, no comparables entre sí. No se cubrió Windows UI Automation en detalle, Avalonia/Flutter/Qt con cifras, ni el texto legal de Qt, MuPDF o Llama. 'Ajuste para generación por IA' de cada marco no tiene fuentes y está marcado como no verificado/juicio propio. Nada de esto es consejo legal; las licencias deben revisarse con abogado antes de vender."
+}

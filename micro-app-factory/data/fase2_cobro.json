@@ -1,0 +1,387 @@
+{
+ "topic": "cobro, licencias y entrega",
+ "platforms": [
+  {
+   "name": "Lemon Squeezy",
+   "still_operating": true,
+   "fee": "Cifra titular reportada por blogs/comparadores: 5% + $0.50 por transaccion, sin cuota mensual. Recargos reportados (blog, no verificado en pagina oficial de precios): +1.5% internacional, +1.5% PayPal, +0.5% suscripciones, +3% afiliados, +5% recuperacion de carrito abandonado; un comparador cita un ejemplo oficial de venta de $20 a Francia = 8.6%. Contracargos: LS los maneja como MoR; normalmente ofrece reembolso total en nombre del vendedor y descuenta del siguiente pago el monto menos la comision de plataforma mas una tarifa de disputa de $15 (docs oficiales). Costo de payout varia por metodo/region (un sitio de terceros cita 2.5% + $2.50 para cuentas bancarias fuera de EE.UU.; sin verificar en doc oficial).",
+   "mor_handles_tax": true,
+   "license_keys": {
+    "supported": true,
+    "activation_limits": "El vendedor define limite de activaciones por producto/variante (ej. 1 = una computadora); al alcanzarse, el endpoint de activacion devuelve error. Se puede cambiar por clave via PATCH /v1/license-keys/:id (activation_limit; null = ilimitado). Estados de clave: inactive, active, expired, disabled; puede tener fecha de expiracion/duracion.",
+    "api": "License API publica (sin API key del vendedor): POST /v1/licenses/activate (license_key + instance_name -> instance.id), /v1/licenses/validate (license_key, instance_id opcional), /v1/licenses/deactivate. Recomienda verificar store_id/product_id/variant_id y customer_email en la respuesta. Limite de tasa reportado: 60 solicitudes/min. Webhooks: license_key_created (siempre junto con order_created) y license_key_updated; reintentos hasta 3 veces con backoff exponencial.",
+    "offline_validation": "No documentado en lo encontrado: la API es de validacion en linea (el tutorial recomienda revalidar periodicamente). No se vio mecanismo de licencia firmada offline; habria que construirlo en la app."
+   },
+   "regional_pricing": "No nativo. Docs oficiales publican un tutorial para usar ParityDeals (servicio de terceros, ~$29-99/mes segun un blog sin verificar) que genera codigos de descuento por pais en el dashboard de LS.",
+   "payout_countries": "Pagos por transferencia bancaria o PayPal. Docs oficiales (Supported Countries) incluyen Argentina, Chile y Colombia en la lista de pagos bancarios; Mexico, Espana y EE.UU. NO se pudieron confirmar en el extracto devuelto (la lista aparecio truncada; EE.UU. es probable pero no verificado). PayPal en 200+ paises. Un blog antiguo de LS habla de 79 paises bancarios + 200+ PayPal. Payouts los dias 1 y 15, retencion de 13 dias, minimo $50, en USD (convertible).",
+   "seller_verification": "No se obtuvieron detalles de KYC persona fisica vs empresa ni tiempos de aprobacion en los resultados; LS hace revision de tienda y puede poner en revision/suspender sin aviso. Sin verificar.",
+   "restricted_categories": "Docs oficiales (Prohibited Products): prohibidos adultos, servicios de cualquier tipo, bienes fisicos, job boards, marketplaces, citas, falsificaciones, NFT/cripto, CBD, juegos de azar, armas, MLM. Regla general: bienes digitales entregados via LS permitidos. No se hallo mencion especifica de grabacion de pantalla, anonimizacion, conversion de extractos bancarios o herramientas fiscales en lo recuperado; ante duda piden contactar soporte.",
+   "update_delivery": "Aloja archivos del producto y permite subir nuevas versiones (para plugins/temas WordPress: nueva version de archivo + clave valida = actualizacion desde el dashboard WP). No se hallo evento webhook ni correo automatico de 'nueva version' para software de escritorio; habria que notificar por cuenta propia (usar license_key_created para guardar emails).",
+   "refunds": "El vendedor fija su politica y puede reembolsar total/parcial desde dashboard/API en cualquier momento (se descuenta del siguiente payout el monto menos la comision de plataforma). LS se reserva el derecho de reembolsar dentro de 60 dias para prevenir contracargos; sin reembolso de periodos de suscripcion no usados. Una garantia de 30 dias se maneja como politica del vendedor (no hay mecanismo automatico de ventana).",
+   "supports_perpetual_plus_updates": "Parcial: variantes de producto con distintas duraciones/limites de activacion y suscripciones con claves que expiran; no se encontro un modelo nativo 'perpetua + updates 12 meses con renovacion a 60%'. Se podria armar con producto de suscripcion de actualizaciones + clave que expira, o descuentos/codigos; requiere logica propia (sin verificar).",
+   "recent_changes_or_risks": "Adquirida por Stripe en julio 2024. Segun blogs (fungies.io, dodopayments.com: ambos competidores con interes comercial), en enero 2026 LS reconocio soporte mas lento y menos actualizaciones, y Stripe Managed Payments (MoR de Stripe, construido por el equipo de LS) entro en vista previa publica en feb 2026; LS seguia como producto independiente en abril 2026. No se encontro anuncio oficial de cierre ni fecha de sunset. Riesgo: ritmo de producto lento y posible migracion futura a Stripe Managed Payments (que no incluye entrega de descargas, afiliados ni claves de licencia segun los blogs).",
+   "source_type": "oficial",
+   "urls": [
+    "https://docs.lemonsqueezy.com/api/license-api",
+    "https://docs.lemonsqueezy.com/help/licensing/generating-license-keys",
+    "https://docs.lemonsqueezy.com/api/license-keys/update-license-key",
+    "https://docs.lemonsqueezy.com/guides/tutorials/license-keys",
+    "https://docs.lemonsqueezy.com/help/getting-started/prohibited-products",
+    "https://docs.lemonsqueezy.com/help/getting-started/supported-countries",
+    "https://docs.lemonsqueezy.com/help/getting-started/getting-paid",
+    "https://docs.lemonsqueezy.com/help/payments/refunds-chargebacks",
+    "https://docs.lemonsqueezy.com/guides/tutorials/ppp-with-paritydeals",
+    "https://docs.lemonsqueezy.com/help/webhooks/event-types",
+    "https://docs.lemonsqueezy.com/help/wordpress/theme-plugin-updates",
+    "https://www.lemonsqueezy.com/buyer-terms",
+    "https://learnwithhasan.com/payment-gateways/lemonsqueezy/",
+    "https://alexcloudstar.com/blog/merchant-of-record-indie-saas-2026/",
+    "https://dodopayments.com/blogs/lemonsqueezy-alternatives",
+    "https://fungies.io/lemon-squeezy-stripe-acquisition-saas-founders-2026/",
+    "https://support.stripe.com/questions/why-is-sold-through-link-llc-the-legal-entity-on-my-invoice-for-stripe-managed-payments-fees"
+   ],
+   "confidence": "med"
+  },
+  {
+   "name": "Stripe Managed Payments (MoR de Stripe, sucesor de facto de LS)",
+   "still_operating": true,
+   "fee": "Segun la ayuda oficial de Stripe (Managed Payments pricing): 3.5% por transaccion exitosa calculado sobre el monto total (incluye IVA/sales tax), ADICIONAL a las tarifas estandar de procesamiento de Stripe (p. ej. 2.9% + $0.30 tarjeta nacional EE.UU.; calculo derivado: ~6.4% + $0.30). Billing para suscripciones y metodos de pago locales se cobran aparte. Blogs de terceros (fungies.io, dodopayments.com) dicen '5% + $0.50 igual que LS': CONFLICTO, prima la fuente oficial. Stripe afirma que otros MoR cuestan 7-9% efectivo (afirmacion propia, no verificada).",
+   "mor_handles_tax": true,
+   "license_keys": {
+    "supported": false,
+    "activation_limits": "No hay generacion de claves de licencia en Stripe Managed Payments (segun blogs: no incluye entrega de descargas, afiliados ni storefront). No confirmado en docs oficiales.",
+    "api": "Funciona solo con Stripe Checkout y Payment Links (blog; no confirmado en doc oficial); suscripciones requieren Stripe Billing.",
+    "offline_validation": null
+   },
+   "regional_pricing": null,
+   "payout_countries": "Docs oficiales (eligibility): ubicaciones soportadas del vendedor incluyen EE.UU., Canada y paises europeos (lista truncada en el resultado); un blog resume: EE.UU., Canada, mayor parte de Europa, Australia, Hong Kong, Japon, Singapur. Docs: vendedores en Japon, Mexico o Singapur manejan por su cuenta el impuesto indirecto domestico. Colombia, Argentina, Chile NO aparecieron (sin verificar). Acceso por revision de elegibilidad / lista de espera (vista previa privada segun docs).",
+   "seller_verification": "Sujeto a revision de elegibilidad de Stripe (tipo de negocio, geografia). Requiere codigos fiscales de producto.",
+   "restricted_categories": "Sin lista especifica recuperada; productos necesitan una categoria fiscal valida (35 categorias de producto segun marketing de Stripe).",
+   "update_delivery": "No incluye alojamiento/entrega de archivos (segun blogs).",
+   "refunds": null,
+   "supports_perpetual_plus_updates": null,
+   "recent_changes_or_risks": "Estado: docs oficiales indicaban vista previa privada con lista de espera; blogs dicen vista previa publica feb 2026. Cobertura fiscal: docs dicen 80+ paises, marketing de Stripe 75+ (conflicto menor). Facturas posteriores al 6-abr-2026 aparecen bajo la entidad 'Sold through Link, LLC' (antes LemonSqueezy LLC), segun soporte de Stripe.",
+   "source_type": "oficial",
+   "urls": [
+    "https://docs.stripe.com/payments/managed-payments",
+    "https://docs.stripe.com/payments/managed-payments/eligibility",
+    "https://docs.stripe.com/payments/managed-payments/tax-coverage",
+    "https://stripe.com/managed-payments",
+    "https://support.stripe.com/questions/why-is-sold-through-link-llc-the-legal-entity-on-my-invoice-for-stripe-managed-payments-fees",
+    "https://freemius.com/blog/stripe-merchant-of-record/",
+    "https://dodopayments.com/blogs/lemonsqueezy-alternatives",
+    "https://support.stripe.com/questions/managed-payments-pricing"
+   ],
+   "confidence": "med"
+  },
+  {
+   "name": "Paddle (Paddle Billing)",
+   "still_operating": true,
+   "fee": "Paddle publica 5% + $0.50 por transaccion, todo incluido (pagos, impuestos, fraude, contracargos, soporte de facturacion); precios personalizados para alto volumen (paginas oficiales de Paddle, marketing). Tarifa por contracargo segun el handbook del vendedor: 20 USD/GBP/EUR o 40 CAD/AUD (no se devuelve aunque se gane la disputa segun help center; una pagina de marketing de Paddle afirma lo contrario: conflicto). Umbral aceptable de contracargos < 0.65%. Paddle Classic ya no acepta nuevos registros.",
+   "mor_handles_tax": true,
+   "license_keys": {
+    "supported": false,
+    "activation_limits": "Paddle Billing no trae generacion/validacion de claves propia en lo encontrado (inferencia: ninguna pagina oficial de Billing lo afirma ni lo niega). Paddle Classic tenia licenciamiento + SDK, pero no esta disponible para nuevos registros. Integradores de terceros (Cryptlex, Glassfy, plugins) crean claves desde webhooks de Billing.",
+    "api": "Webhooks de Billing (transaction.completed, etc.) permiten a un servicio externo de licencias emitir claves; Paddle.js v2 y API de Billing.",
+    "offline_validation": null
+   },
+   "regional_pricing": "Si, nativo: Paddle Billing permite unit_price_overrides por pais en cada precio (aplicado antes de la conversion automatica y del precio base) para ajustar por poder adquisitivo; checkout muestra el precio local segun ubicacion. Fuente oficial (developer.paddle.com).",
+   "payout_countries": "Dos help center de Paddle: uno dice que paga a cualquier parte del mundo salvo paises sancionados; otro (mas estricto) lista paises donde no puede soportar vendedores (Belarus, Cuba, Iran, Iraq, Rusia, Venezuela, entre otros). Ambas paginas con mas de 4 anos de antiguedad. Mexico, Colombia, Argentina, Chile, Espana y EE.UU. NO aparecen como excluidos, pero tampoco hay lista positiva de pago verificada para ellos. Moneda de payout limitada a USD, EUR, GBP, AUD, CAD (no se confirmo ARS/MXN/COP/CLP); metodos: transferencia bancaria o Payoneer; minimo de payout reportado $100. Los paises de compra son 200+ (como compradores).",
+   "seller_verification": "Verificacion en 3 fases: domain review (sitio publico con precios, terminos, privacidad, politica de reembolsos y contacto sin login), business verification (no requerida para individuos/autonomos) e identity verification. Fuente oficial: persona fisica/sole trader es posible. Tiempo: Paddle no publica plazo; un articulo de DEV Community (tercero) dice 1-2 dias con buena preparacion. Estados: in_review, action_required, failed.",
+   "restricted_categories": "AUP del help center (actualizado 13-abr-2026): prohibidos bienes fisicos, servicios humanos no ligados a software, infractores de copyright (descargadores de streaming), spyware/keyloggers, marketplaces, deepfakes/face swaps/voice impersonation, juegos de azar, contenido adulto, reventa (Microsoft/Adobe), tech-support con upsell. Restringidos (debida diligencia reforzada): software de soporte tecnico/optimizacion de dispositivos, VPN y proxies, resolucion de CAPTCHA, limpiadores de sistema y antivirus; IA generativa de imagen con revision extra. No se hallo mencion de grabacion de pantalla, conversion de extractos bancarios ni herramientas fiscales (no verificado). Paddle puede terminar el contrato a su discrecion si un producto queda fuera de la AUP.",
+   "update_delivery": "No se hallo en resultados que Paddle Billing aloje archivos de software ni notifique nuevas versiones; sin verificar (suele requerir alojar instaladores uno mismo).",
+   "refunds": "El handbook recomienda al menos 30 dias de garantia; el vendedor fija la politica. Paddle aprueba automaticamente reembolsos en cuentas verificadas y activas hasta 400 USD. Como MoR, la disputa se levanta contra Paddle y su sistema (Dispute Defense) contesta automaticamente; ventana de contracargo del comprador hasta 120 dias; alerta pre-contracargo con ~48 h para reembolsar (se cobra una tarifa).",
+   "supports_perpetual_plus_updates": "No hay patron nativo de 'perpetua + updates' documentado en los resultados. Con Billing se podria modelar con productos/precios separados (compra unica + suscripcion de actualizaciones) y descuentos, pero la logica de licencia/entitlements es externa (sin verificar).",
+   "recent_changes_or_risks": "Acuerdo con la FTC (confirma prohibicion de soporte tecnico con upsells enganosos). Paddle Classic descontinuado para nuevos registros y migracion a Billing. AUP actualizada abr-2026 con mas reglas para IA generativa. Riesgo: revision de dominio estricta (paginas publicas obligatorias) y terminacion discrecional.",
+   "source_type": "oficial",
+   "urls": [
+    "https://www.paddle.com/paddle-101",
+    "https://www.paddle.com/help/start/intro-to-paddle/what-am-i-not-allowed-to-sell-on-paddle",
+    "https://www.paddle.com/help/start/intro-to-paddle/which-countries-are-supported-by-paddle",
+    "https://developer.paddle.com/build/products/offer-localized-pricing/",
+    "https://developer.paddle.com/concepts/sell/supported-currencies/",
+    "https://www.paddle.com/help/manage/risk-prevention/understanding-chargebacks-with-paddle",
+    "https://www.paddle.com/seller-guides/seller-handbook",
+    "https://www.paddle.com/help/manage/get-paid",
+    "https://paddle.com/support/what-is-account-verification/",
+    "https://dev.to/danteisshipping/2025-how-to-get-your-paddle-account-approved-in-48-hours",
+    "https://mintlify.com/cryptlex/third-party-integrations/integrations/paddle",
+    "https://classic.paddle.com/reference/sdks/",
+    "https://www.paddle.com/ftc-agreement-faq"
+   ],
+   "confidence": "med"
+  },
+  {
+   "name": "Gumroad",
+   "still_operating": true,
+   "fee": "10% + $0.50 por venta directa; segun blogs/comparadores el procesamiento de tarjeta (~2.9% + $0.30 EE.UU.) se anade encima, rondando ~12.9% + $0.80 (no verificado en pagina oficial). Ventas por el marketplace Discover: 30% plano. No hay descuento por volumen. Segun un blog, los reembolsos no devuelven la comision. Reseñas mixtas: Trustpilot 1.4/5 (369 resenas, quejas de suspension y pagos) vs G2 4.2/5 (cifras de una fuente tercera).",
+   "mor_handles_tax": true,
+   "license_keys": {
+    "supported": true,
+    "activation_limits": "No se encontro limite maximo de activaciones por clave. Equivalente: contador de usos (uses) que la app debe comparar con su propio limite y luego llamar a decrement/disable. Claves se pueden deshabilitar/rehabilitar.",
+    "api": "POST /v2/licenses/verify (sin autenticacion; product_id + license_key; increment_uses_count por defecto true, false para verificar sin contar). PUT /licenses/decrement_uses_count, /licenses/disable y /licenses/enable requieren OAuth token con scope edit_products (hacerlo solo desde servidor). Fuente: espejo no oficial de la documentacion (mintlify.com/antiwork/gumroad); verificar contra docs oficiales. Productos anteriores al 9-ene-2023 usaban product_permalink.",
+    "offline_validation": "No documentado; la verificacion es en linea."
+   },
+   "regional_pricing": "Si, nativo (oficial): Purchasing Power Parity en el Help Center; descuentos dinamicos por pais de 20% a 60% (datos del Banco Mundial, actualizados semanalmente), con tope maximo configurable y exclusion de productos; verificacion de pais de tarjeta/IP. Anunciado el 30-ene-2023. Una publicacion de comunidad dice hasta 50% (conflicto; prima el articulo oficial). Tambien hay ParityDeals como alternativa de terceros.",
+   "payout_countries": "Help Center oficial ('Getting paid'): deposito bancario directo en moneda local en la mayoria de paises; PayPal donde no hay deposito bancario; si ninguno aplica, no hay pago posible. La tabla de paises no se recupero. Un blog de Wise (tercero, sin fecha) lista Mexico, Colombia, Argentina y Chile con transferencia bancaria directa; una resena dice que Stripe no soporta vendedores en ~30 paises incluida Argentina (conflicto); usuarios de la comunidad pidieron Colombia y Chile en algun momento. Espana y EE.UU.: no confirmados en los resultados (EE.UU. es el pais base de Gumroad). Retencion minima de 7 dias; frecuencia diaria/semanal/mensual/trimestral segun un blog. PayPal payout requeriria >= $100 en ventas (espejo no oficial).",
+   "seller_verification": "No se recuperaron detalles de KYC ni tiempos de aprobacion en los resultados.",
+   "restricted_categories": "Pagina oficial 'Prohibited Products and Activities': productos que violan ley federal de EE.UU., reglas de redes de tarjetas o restricciones de procesadores (alcohol, tabaco, armas, telemarketing, timeshares, giros, eSIMs, contenido sexual explicito segun Stripe/PayPal, etc.). La version hallada dice 'ultima revision 17-abr-2019' y que puede cambiar sin aviso. No se encontro mencion especifica de grabacion de pantalla, anonimizacion, conversion de extractos o herramientas fiscales.",
+   "update_delivery": "Aloja archivos; el vendedor sube el nuevo archivo (reemplaza el existente) y puede enviar 'updates' por correo a compradores de un producto/variante; los compradores re-descargan desde su biblioteca. Segun blog: sin control de versiones ni changelog y sin soporte de upgrades pagados (un desarrollador hizo una venta de upgrade).",
+   "refunds": "El creador fija su politica (p. ej. garantia de 30 dias o sin reembolsos) y emite los reembolsos; Gumroad puede intervenir si el creador no responde en 30 dias y se reserva reembolsar hasta 90 dias para prevenir contracargos. Una pagina de baja fiabilidad dice 60 dias (conflicto; ignorar).",
+   "supports_perpetual_plus_updates": "Limitado: membresias/suscripciones y variantes existen, pero un blog indica que no hay soporte para upgrades; la clave de licencia no tiene expiracion nativa documentada. Se tendria que modelar con producto de membresia + logica propia (sin verificar).",
+   "recent_changes_or_risks": "Desde el 1-ene-2025 Gumroad opera como Merchant of Record en todas las transacciones (recauda y remite IVA/GST/sales tax). Comisiones mas altas que Paddle/LS y sin escala de volumen desde 2023. Quejas de suspensiones/pagos en resenas.",
+   "source_type": "oficial",
+   "urls": [
+    "https://gumroad.com/help/article/327-purchasing-power-parity",
+    "https://gumroad.com/blog/p/introducing-purchasing-power-parity",
+    "https://gumroad.com/help/article/13-getting-paid",
+    "https://gumroad.com/help/article/335-custom-refund-policy",
+    "https://gumroad.com/help/article/51-what-is-gumroads-refund-policy",
+    "https://gumroad.com/prohibited",
+    "https://www.mintlify.com/antiwork/gumroad/api/licenses/verify",
+    "https://www.mintlify.com/antiwork/gumroad/api/licenses/decrement",
+    "https://wise.com/us/blog/gumroad-fees",
+    "https://conversionproplus.com/blog/gumroad-fees-in-2026-is-there-a-better-alternative",
+    "https://roo.beehiiv.com/p/gumroad-fees-2026",
+    "https://conversionproplus.com/blog/gumroad-digital-product-delivery-features-what-you-need-to-know",
+    "https://gumroad.gumroad.com/p/update-customers-variants-versions-tiers",
+    "https://dodopayments.com/blogs/gumroad-review"
+   ],
+   "confidence": "med"
+  },
+  {
+   "name": "FastSpring",
+   "still_operating": true,
+   "fee": "No hay tarifa publica oficial (cotizacion con ventas). Resenas/comparadores reportan ~5.9% + $0.95 por transaccion para empresas en crecimiento, hasta 8.9% para bajo volumen/alto riesgo (G2, Toolradar, learnwithhasan: fuentes de terceros). Recargos reportados con discrepancia: markup de FX 3.5%-5.5% (Fungies, learnwithhasan) vs 1-3% (Toolradar). Reembolsos: Toolradar dice que se conserva la comision original; doc Classic antigua habla de cargo de reembolso de 3.5% (conflicto). Con ticket de $20-50 el cargo fijo de $0.95 pesa mas.",
+   "mor_handles_tax": true,
+   "license_keys": {
+    "supported": true,
+    "activation_limits": "FastSpring genera/entrega claves como 'fulfillment' (lista predefinida, script PHP/JS, solicitud a servidor remoto, generadores CocoaFob/Aquatic Prime/Software Passport) pero NO maneja activacion ni limites por clave; eso lo hacen plataformas externas integradas (LimeLM, Quick License Manager, Nalpeiron, 10Duke, SoftwareKey, Cryptlex, Cryptolens).",
+    "api": "Webhooks y API REST de FastSpring; validacion/activacion via el proveedor de licencias externo (p. ej. Cryptlex genera y entrega la clave durante el checkout). Cryptolens no bloquea automaticamente claves de pedidos reembolsados.",
+    "offline_validation": "Depende del proveedor externo (no verificado); CocoaFob/Aquatic Prime producen claves/archivos de licencia verificables localmente por firma (segun descripcion en docs; validacion offline no afirmada explicitamente)."
+   },
+   "regional_pricing": "Parcial/nativo: conversion automatica de moneda o precios fijos por moneda; opcion avanzada de precios por pais (ej. Francia vs Espana en EUR) segun doc Classic antigua. No hay calculadora PPP integrada; el vendedor decide los precios. Modo 'gross' incluye impuestos fuera de EE.UU./Canada.",
+   "payout_countries": "Payouts Portal (doc oficial): no soporta vendedores en Cuba, Iran, Irak, Myanmar, Corea del Norte, Rusia, Somalia, Sudan y Siria (un snippet antiguo listaba solo Cuba: conflicto). Fondeo en USD, EUR, GBP, AUD, CAD; metodos: cuenta bancaria o PayPal; pagos usualmente 2 veces/mes; retencion estandar 14 dias; minimo por defecto $100. Mexico, Colombia, Argentina, Chile, Espana, EE.UU. no aparecen como excluidos pero tampoco se hallo lista positiva (sin verificar).",
+   "seller_verification": "No hallado en resultados: requisitos de elegibilidad para vendedores y proceso de onboarding (la pagina de bienvenida solo remite a recursos de onboarding). Modelo orientado a empresas con cotizacion/ventas; para un autonomo es incierto (sin verificar).",
+   "restricted_categories": "No se hallo lista de categorias prohibidas en los resultados. Si documenta restriccion de productos por pais (control de exportacion).",
+   "update_delivery": "Soporta fulfillments de descarga de archivos y entrega al instante tras el pedido; no se hallo un flujo de 'nueva version' con notificacion automatica a compradores existentes de compra unica (la busqueda solo devolvio proration de suscripciones). Sin verificar.",
+   "refunds": "Las solicitudes de reembolso se reenvian al email de soporte del vendedor; FastSpring reembolsa por su cuenta en casos de fraude. Reembolsos de tarjeta hasta 6 meses tras el pedido; PayPal hasta 3 meses. Contracargo: el monto en disputa se retira del payout y se retiene mientras el banco investiga (60-75 dias); FastSpring puede aplicar retenciones por tasa alta de contracargos. 30 dias de garantia = politica del vendedor.",
+   "supports_perpetual_plus_updates": "No hay patron nativo documentado; subscripciones permiten crear un nuevo producto y migrar clientes, auto-renovar a otra suscripcion (docs 'Auto-renew into a different subscription'), proration y cotizaciones interactivas. Se podria modelar 'updates' como suscripcion a otro SKU + licencia externa (sin verificar).",
+   "recent_changes_or_risks": "Operando; changelog de enero 2025 y lanzamientos de suscripciones en verano 2025 (blog). Competidores (Paddle) lo critican por precios opacos y comisiones altas (marketing de la competencia). Riesgo: precio opaco y cargo fijo alto para tickets de $20-50.",
+   "source_type": "oficial",
+   "urls": [
+    "https://developer.fastspring.com/docs/license-key-fulfillments",
+    "https://developer.fastspring.com/docs/license-management-integrations",
+    "https://developer.fastspring.com/docs/receive-payouts",
+    "https://developer.fastspring.com/docs/fastspring-payouts-portal",
+    "https://developer.fastspring.com/docs/currencies-and-conversions",
+    "https://fastspring.com/docs/classic/order-refund-policy-chargebacks-and-return-processing/",
+    "https://developer.fastspring.com/docs/chargebacks-and-disputes",
+    "https://developer.fastspring.com/docs/auto-renew-into-a-different-subscription",
+    "https://learnwithhasan.com/payment-gateways/fastspring/",
+    "https://toolradar.com/tools/fastspring/pricing",
+    "https://fungies.io/fastspring-review-2026.md",
+    "https://developer.fastspring.com/docs/cryptlex"
+   ],
+   "confidence": "med"
+  },
+  {
+   "name": "Polar",
+   "still_operating": true,
+   "fee": "Segun docs oficiales (Fees, mayo 2026): plan Starter gratis 5% + $0.50 por transaccion; Pro ($20/mes) 3.8% + $0.40; Growth ($100/mes) 3.6% + $0.35; Scale ($400/mes) 3.4% + $0.30. Organizaciones creadas antes del 27-may-2026 conservan la tarifa 'Early Member' 4% + $0.40 (+0.5% en suscripciones) hasta que suban a un plan de pago. Recargo de 1.5% por tarjetas no estadounidenses. Disputa: $15 por contracargo sin importar el resultado. Reembolsos: la comision inicial de la transaccion NO se devuelve. Payout (tarifas de Stripe): $2/mes con payout activo + 0.25% + $0.25 por payout; conversion transfronteriza 0.25% en la UE y hasta 1% en otros. Ejemplo oficial: venta de $30 + IVA 25% a tarjeta internacional = $2.94 de comisiones en Starter. NOTA: la home de Polar aun puede mostrar 4% + 40c (desactualizada).",
+   "mor_handles_tax": true,
+   "license_keys": {
+    "supported": true,
+    "activation_limits": "Beneficio nativo de 'license key': claves con formato/prefijo propio, expiracion, limite de activaciones por dispositivo/IP u otras condiciones (cada activacion guarda condiciones y metadatos), limites de uso (cuota) y revocacion al cancelar. Activacion opcional: solo necesaria si el beneficio tiene activaciones habilitadas.",
+    "api": "Endpoints del portal de cliente /activate, /validate y /deactivate SIN autenticacion (aptos para llamarse desde una app de escritorio); para validar en servidor se usan los endpoints core /v1/license-keys/. Validar al inicio de cada sesion; la validacion puede incrementar un contador de uso. Guia oficial para plugins de Figma con claves.",
+    "offline_validation": "No documentado: no se hallo validacion offline ni periodo de gracia; es llamada en linea (habria que cachear el ultimo resultado)."
+   },
+   "regional_pricing": "No hay PPP nativo. Precios multi-moneda por producto (USD, EUR, GBP, etc.; la estructura de precios debe coincidir en todas las monedas). Integracion oficial documentada con ParityDeals (tercero) que crea descuentos por pais en Polar; requiere sitio propio. Visualizacion de impuestos: EE.UU., Canada e India en precio exclusivo; resto inclusivo.",
+   "payout_countries": "Polar usa Stripe Connect Express; lista propia de paises de payout (docs 'Supported countries'), que Polar dice puede exceder la cobertura de Stripe estandar (invite-only en algunos paises) porque los pagos van a Polar (EE.UU.) como MoR. La lista completa NO se recupero: se confirma solo que incluye EE.UU., UK, Canada, Australia, Alemania, India, Singapur 'y la mayor parte de Europa, Americas, Asia, Africa'. Mexico, Colombia, Argentina, Chile, Espana: SIN VERIFICAR. La cuenta bancaria debe estar en el mismo pais del negocio y en moneda local; cuentas multi-moneda/borderless pueden rechazarse. Minimos de payout mas altos en algunos paises ($30 Bahamas/El Salvador, $50 Panama). Compradores: global salvo paises con sanciones de EE.UU. (Cuba, Rusia, Iran, Corea del Norte, Siria).",
+   "seller_verification": "Revision de cuenta (oficial): la primera revision antes del primer payout cubre la AUP y KYC/AML de Polar; revisiones continuas de reembolsos/contracargos/riesgo; si hay violacion se desactiva el procesamiento y se retienen payouts. Retencion de payouts hasta cerrar la ventana de contracargo de 120 dias. No se hallaron plazos de aprobacion ni diferencias persona fisica vs empresa en los resultados.",
+   "restricted_categories": "AUP oficial: prohibidos bienes fisicos, servicios humanos, donaciones/crowdfunding, marketplaces, contenido adulto, juegos de azar, productos regulados, cripto/trading, viajes, telecom/eSIM, consejo medico. Permitidos: software y SaaS, productos digitales, contenido premium. No se hallo mencion de grabacion de pantalla, anonimizacion, conversion de extractos o herramientas fiscales; Polar puede ampliar la lista en cualquier momento.",
+   "update_delivery": "Beneficios automatizados de descarga de archivos (hasta 10 GB con seguimiento de descargas, segun resumen); el comprador accede por portal de cliente. No se confirmo notificacion automatica de 'nueva version' (sin verificar). Tambien beneficios de acceso a repos de GitHub y roles de Discord.",
+   "refunds": "Reembolsos totales/parciales por el vendedor (la comision inicial no se devuelve); Polar puede reembolsar por su cuenta hasta 60 dias despues de la compra para reducir disputas; disputa $15; retencion de payouts hasta 120 dias. La garantia de 30 dias es politica del vendedor.",
+   "supports_perpetual_plus_updates": "Parcial: productos de pago unico y suscripciones, claves con expiracion y beneficios ligados a productos permiten armar 'licencia perpetua + suscripcion de actualizaciones' pero no se hallo un patron nativo documentado de renovacion de updates a ~60% (sin verificar; se necesita logica propia).",
+   "recent_changes_or_risks": "Reestructuracion de precios el 27-may-2026 (Polar Plans): de 4%+$0.40 plano a Starter 5%+$0.50 (mismo nivel que Paddle/LS) con planes de pago; posible traspaso de futuras tarifas de Stripe a vendedores (segun competidor). Plataforma joven (MoR relativamente nuevo): menor historial que Paddle; politicas de revision/AUP pueden endurecerse.",
+   "source_type": "oficial",
+   "urls": [
+    "https://polar.sh/docs/merchant-of-record/fees",
+    "https://polar.sh/blog/introducing-polar-plans",
+    "https://polar.sh/docs/features/benefits/license-keys",
+    "https://polar.sh/docs/api-reference/customer-portal/license-keys/activate",
+    "https://polar.sh/docs/api-reference/customer-portal/license-keys/validate",
+    "https://polar.sh/docs/merchant-of-record/supported-countries",
+    "https://polar.sh/docs/features/finance/accounts",
+    "https://polar.sh/docs/features/finance/payouts",
+    "https://docs.polar.sh/merchant-of-record/acceptable-use",
+    "https://polar.sh/docs/merchant-of-record/account-reviews",
+    "https://polar.sh/docs/features/integrations/paritydeals",
+    "https://polar.sh/docs/features/tax-inclusive-pricing",
+    "https://polar.sh/resources/pricing",
+    "https://fungies.io/?p=40299",
+    "https://dodopayments.com/blogs/polar-sh-review"
+   ],
+   "confidence": "med"
+  },
+  {
+   "name": "Creem",
+   "still_operating": true,
+   "fee": "Oficial (creem.io/pricing y docs): 3.9% + $0.40 por transaccion exitosa, sin cuota mensual ni de alta (un comparador de terceros coincide). Payout bancario: 7 EUR/USD o 1% del payout, lo que sea mayor. Tarifa de disputa no encontrada. Segun los Merchant Terms, el comerciante asume la responsabilidad financiera de los contracargos (monto, comisiones y penalidades) y Creem puede descontarlos de los payouts o retener reservas, aunque el marketing dice que Creem 'se encarga' (conflicto; prima el contrato).",
+   "mor_handles_tax": true,
+   "license_keys": {
+    "supported": true,
+    "activation_limits": "Funcion 'License Keys' (add-on del producto): una clave por feature por unidad comprada; estados inactive/active/expired/disabled; endpoints de activacion con instancias (limite de activaciones por clave: detalles no confirmados en los extractos).",
+    "api": "POST /v1/licenses/activate (clave + nombre de instancia -> instance id), /v1/licenses/validate (clave + instance id), /v1/licenses/deactivate; autenticacion con header x-api-key (ojo: eso implica no embeber la API key en una app de escritorio; revisar la docs sobre llamadas desde cliente). Webhooks incluyen license_keys cuando el pedido emitio claves. Nota: la docs mezcla hosts de test-api.creem.io y api.creem.io.",
+    "offline_validation": "No documentado."
+   },
+   "regional_pricing": "No nativo; integracion documentada con Evendeals (tercero) que detecta pais y crea/gestiona codigos de descuento en Creem.",
+   "payout_countries": "Docs oficiales: merchants en 86/87 paises (la pagina dice 87 y el titulo de la tabla 86); la lista INCLUYE Mexico y Colombia (Colombia con nota de doble asterisco no explicada en el extracto). Argentina, Chile, Espana y EE.UU.: no confirmados en el extracto. Metodos: transferencia bancaria (SEPA/internacional), Alipay (China) y USDC via Polygon; segun FAQ NO soporta PayPal (un blog menciona PayPal: conflicto). Payouts los dias 1 y 15, minimo $50 USD/50 EUR. Compradores: todos salvo lista no soportada; el sitio dice 190+ paises y un blog 100+ (marketing).",
+   "seller_verification": "Hay pagina de 'Account Reviews' en docs; detalles de KYC, plazos y persona fisica vs empresa no recuperados. Productos de IA generativa requieren verificacion adicional (datos de procesador previo y tasas de contracargo/reembolso).",
+   "restricted_categories": "Terms of Service: prohibidos productos falsificados/no autorizados (incl. PLR/MRR), servicios de intercambio de archivos remotos/cyberlockers y descargadores/rippers de contenido de terceros que violen ToS de plataformas; IA generativa (texto-a-imagen/video) restringida. No se hallo mencion de grabacion de pantalla, anonimizacion, conversion de extractos o herramientas fiscales.",
+   "update_delivery": "Segun el blog de Creem los productos digitales incluyen claves, descuentos, pruebas gratis y descargas de archivos; tambien dice 'tu construyes, entregas y das soporte' (la entrega queda a cargo del vendedor). Sin evidencia de notificacion automatica de nuevas versiones.",
+   "refunds": "Los reembolsos y contracargos se procesan exclusivamente por Creem (el vendedor no puede reembolsar fuera de la plataforma, solicita el reembolso desde su cuenta de merchant); derecho de desistimiento de 14 dias para consumidores de la UE. Garantia de 30 dias = politica del vendedor.",
+   "supports_perpetual_plus_updates": null,
+   "recent_changes_or_risks": "Plataforma joven con sitio muy orientado a indie hackers; 'Creem 2.0' en su blog. Documentacion con inconsistencias (86 vs 87 paises, PayPal si/no, hosts de API). Contracargos recaen en el vendedor segun los terminos.",
+   "source_type": "oficial",
+   "urls": [
+    "https://docs.creem.io/merchant-of-record/supported-countries",
+    "https://docs.creem.io/merchant-of-record/finance/payouts",
+    "https://docs.creem.io/guides/faq",
+    "https://docs.creem.io/features/addons/licenses",
+    "https://docs.creem.io/api-reference/endpoint/activate-license",
+    "https://docs.creem.io/api-reference/endpoint/validate-license",
+    "https://docs.creem.io/integrations/evendeals",
+    "https://docs.creem.io/merchant-of-record/account-reviews/account-reviews",
+    "https://www.creem.io/pricing",
+    "https://www.creem.io/terms",
+    "https://www.creem.io/buyer-terms",
+    "https://fungies.io/?p=40538"
+   ],
+   "confidence": "med"
+  },
+  {
+   "name": "Stripe directo (referencia, sin MoR)",
+   "still_operating": true,
+   "fee": "Pagina oficial de precios EE.UU.: 2.9% + $0.30 por tarjeta nacional exitosa; +1.5% tarjetas internacionales; +1% si hay conversion de moneda; +0.5% tarjetas ingresadas manualmente. Disputa recibida: $15 (contestarla: otro $15 reembolsable si se gana). Radar desde $10/mes (Standard). Stripe Tax y Billing cobran aparte. Los precios varian por pais (EUR: 3.15% + 0.25 EUR internacionales y 20 EUR por disputa). Stripe Managed Payments (MoR): +3.5% sobre el monto total transaccionado (incluye impuestos) ENCIMA de las tarifas estandar, segun la ayuda de Stripe.",
+   "mor_handles_tax": false,
+   "license_keys": {
+    "supported": null,
+    "activation_limits": "No verificado en esta ronda; en los resultados solo aparece que servicios de licencias de terceros (p. ej. Cryptlex) se integran por webhooks con plataformas de pago. Stripe directo no se investigo en su doc de producto.",
+    "api": "No verificado (Stripe expone webhooks; no se consulto su documentacion en esta ronda).",
+    "offline_validation": null
+   },
+   "regional_pricing": "No verificado en esta ronda.",
+   "payout_countries": "No verificado en esta ronda para Mexico, Colombia, Argentina, Chile, Espana y EE.UU. Datos tangenciales de resultados: Stripe solo acepta cuentas nuevas de India por invitacion (docs de Lemon Squeezy); una resena de terceros dice que Stripe no soporta vendedores en ~30 paises incluida Argentina; docs de Stripe Managed Payments: vendedores en Japon, Mexico o Singapur manejan por su cuenta el impuesto indirecto domestico.",
+   "seller_verification": null,
+   "restricted_categories": "Stripe tiene su propia lista de negocios prohibidos/restringidos (no consultada en esta ronda).",
+   "update_delivery": "No verificado (no se hallo que Stripe aloje descargas).",
+   "refunds": "Como no hay MoR, el vendedor es el comerciante y asume reembolsos y disputas ($15 por disputa recibida segun la pagina oficial de disputas). Politica de devolucion de tarifas en reembolsos: no leida en detalle.",
+   "supports_perpetual_plus_updates": "No verificado; Stripe Billing (suscripciones) cobra aparte segun la pagina de precios, pero no se investigo el patron de renovacion de updates.",
+   "recent_changes_or_risks": "Stripe lanzo Managed Payments (MoR, 3.5% adicional) como producto propio; adquirio Lemon Squeezy en 2024. El IVA/sales tax sigue siendo responsabilidad del vendedor en Stripe directo.",
+   "source_type": "oficial",
+   "urls": [
+    "https://stripe.com/pricing",
+    "https://support.stripe.com/questions/dispute-fees-faq",
+    "https://support.stripe.com/questions/managed-payments-pricing",
+    "https://support.stripe.com/questions/understanding-stripe-s-fee-structure-for-international-and-refunded-payments",
+    "https://stripe.com/radar/pricing",
+    "https://stripe.com/managed-payments"
+   ],
+   "confidence": "med"
+  },
+  {
+   "name": "Dodo Payments (alternativa adicional)",
+   "still_operating": true,
+   "fee": "Pagina/FAQ de Dodo (fuente propia, con interes comercial; la pagina de precios aparece con ~720 dias de antiguedad): 4% + $0.40 por transaccion nacional EE.UU.; +1.5% tarjetas internacionales y metodos alternativos (la pagina de precios dice 0.7% internacional: conflicto); +0.5% suscripciones; BNPL y PayPal +3%; India nacional 4% + $0.15; reembolso $1; disputa $30. Payouts: gratis (o $5 si < $1000 segun un FAQ; $25 SWIFT para negocios fuera de EE.UU.; cifras inconsistentes entre posts).",
+   "mor_handles_tax": true,
+   "license_keys": {
+    "supported": true,
+    "activation_limits": "Varios posts de Dodo dicen que las claves de licencia estan incluidas; la pagina de precios (posiblemente desactualizada) listaba 'generacion y entrega automatica de claves' como cargo aparte de 5% por transaccion (CONFLICTO). Detalles de limites de activacion/API no investigados.",
+    "api": "No investigado en esta ronda.",
+    "offline_validation": null
+   },
+   "regional_pricing": null,
+   "payout_countries": "Docs oficiales: lista de 'Countries Eligible for Merchant Acceptance' separada de la lista de paises de pago de compradores; algunos paises 'grandfathered' (Bangladesh, Egipto, Nigeria, Marruecos, Ucrania, etc.). Mexico, Colombia, Argentina, Chile, Espana y EE.UU. no verificados en el extracto.",
+   "seller_verification": null,
+   "restricted_categories": null,
+   "update_delivery": null,
+   "refunds": "Reembolso $1 y disputa $30 (blog propio). Dodo se presenta como vendedor de registro con responsabilidad por fraude y contracargos.",
+   "supports_perpetual_plus_updates": null,
+   "recent_changes_or_risks": "Investigado solo superficialmente; casi todo viene de blogs de Dodo que atacan a competidores (interes comercial). Verificar antes de usar.",
+   "source_type": "blog",
+   "urls": [
+    "https://dodopayments.com/pricing",
+    "https://docs.dodopayments.com/miscellaneous/accepted-countries-and-territories",
+    "https://docs.dodopayments.com/api-reference/misc/supported-countries",
+    "https://dodopayments.com/blogs/global-payouts",
+    "https://dodopayments.com/blogs/cheapest-merchant-of-record"
+   ],
+   "confidence": "low"
+  }
+ ],
+ "comparison_table": [
+  {
+   "need": "Licencias de escritorio con limite de activaciones, API de validacion usable desde el cliente, sin construir backend de licencias",
+   "best_fit": "Polar o Lemon Squeezy",
+   "why": "Ambos documentan claves nativas con limite de activaciones, y endpoints de activate/validate/deactivate sin API key del vendedor (aptos para app de escritorio). Polar ademas permite expiracion, cuotas de uso y revocacion. Ninguno documenta validacion offline."
+  },
+  {
+   "need": "Precios regionales (PPP) nativos para vender $20 en LatAm, Sur de Asia y Africa",
+   "best_fit": "Paddle (overrides por pais) y Gumroad (PPP 20-60% nativo)",
+   "why": "Paddle Billing permite precios por pais via unit_price_overrides (oficial). Gumroad tiene PPP nativo con descuentos del Banco Mundial pero comision mas alta y licencias sin limite de activaciones. LS, Polar y Creem dependen de terceros (ParityDeals/Evendeals)."
+  },
+  {
+   "need": "Menor costo con ticket de $20-50",
+   "best_fit": "Polar (plan de pago o tarifa Early Member) o Creem",
+   "why": "Creem 3.9% + $0.40 (oficial); Polar Early Member 4% + $0.40 si la cuenta es anterior al 27-may-2026, de lo contrario Starter 5% + $0.50 igual que Paddle/LS; Stripe Managed Payments ~6.4% + $0.30 derivado de 3.5% + tarifas estandar. FastSpring ~5.9% + $0.95 (no oficial) es el menos favorable en tickets bajos."
+  },
+  {
+   "need": "Aceptar a vendedores en Mexico/Colombia/Argentina/Chile/Espana/EE.UU.",
+   "best_fit": "Lemon Squeezy (AR/CL/CO confirmados) y Creem (MX/CO confirmados); Gumroad probable",
+   "why": "Cada plataforma confirma solo parte de los seis paises: LS lista Argentina, Chile, Colombia (Mexico y Espana no confirmados); Creem lista Mexico y Colombia; Gumroad segun Wise lista MX/CO/AR/CL. Paddle y FastSpring pagan en USD/EUR/GBP/AUD/CAD sin lista positiva por pais. Polar: lista no recuperada. Confirmar en el onboarding real."
+  },
+  {
+   "need": "Riesgo de rechazo por categoria (grabacion de pantalla, anonimizacion, extractos bancarios, herramientas fiscales)",
+   "best_fit": "Ninguna confirmo esas categorias",
+   "why": "Ninguna lista de categorias prohibidas recuperada menciona explicitamente esas categorias. Paddle restringe VPN/proxies y limpiadores/optimizadores de sistema (debida diligencia), prohibe spyware/keyloggers y descargadores de streaming; Creem prohibe rippers de contenido de terceros; Polar/LS listas genericas. Consultar con soporte antes de lanzar cada categoria."
+  },
+  {
+   "need": "Entrega de archivos y avisos de nueva version a compradores",
+   "best_fit": "Gumroad (updates por correo a compradores) / Lemon Squeezy / Polar (alojan archivos)",
+   "why": "Gumroad envia 'updates' por correo y permite re-descarga desde la biblioteca; LS y Polar alojan archivos, pero no se vio notificacion automatica de version en ninguno (LS: usar license_key_created + correo propio). Paddle, Stripe y Creem dejan la entrega al vendedor segun lo hallado."
+  },
+  {
+   "need": "Patron perpetua + 12 meses de updates con renovacion ~60%",
+   "best_fit": "Ninguna lo ofrece de forma nativa documentada; Paddle/Stripe Billing/LS/Polar permiten armarlo con logica propia",
+   "why": "No se hallo un patron documentado en ninguna plataforma. Requiere clave perpetua + producto/suscripcion separado de 'updates' (con clave que expira o fecha de elegibilidad en tu backend) y codigos de descuento de renovacion. Pendiente de validar con cada plataforma."
+  },
+  {
+   "need": "Estabilidad / riesgo de plataforma",
+   "best_fit": "Paddle y Polar (planes claros); precaucion con Lemon Squeezy y Gumroad",
+   "why": "LS fue adquirida por Stripe (jul-2024) y blogs reportan ritmo lento y migracion hacia Stripe Managed Payments (sin fecha de cierre oficial); Gumroad es MoR desde ene-2025 pero con quejas de suspensiones; Polar cambio precios el 27-may-2026."
+  }
+ ],
+ "conflicts": [
+  "Cifras de comision de Lemon Squeezy (5%+$0.50 y recargos) provienen de blogs/comparadores; no se recupero la pagina oficial de precios.",
+  "Conteo de paises de payout de LS: docs dicen PayPal en 200+ paises; un post antiguo del blog de LS habla de 79 paises bancarios; otro blog 279+ en total.",
+  "Estado de Stripe Managed Payments: docs oficiales dicen vista previa privada con lista de espera; blogs dicen vista previa publica desde feb 2026.",
+  "Cobertura fiscal de Managed Payments: docs 80+ paises; marketing de Stripe 75+.",
+  "Paddle: dos help center discrepan sobre paises de vendedor (uno 'cualquier parte salvo sancionados', otro lista exclusiones); ambos antiguos (>4 anos).",
+  "Paddle: help center dice que la tarifa de contracargo no se devuelve al ganar; una pagina de marketing de Paddle dice que se devuelven monto y tarifa.",
+  "Gumroad PPP: articulo oficial dice 20-60%; post de comunidad dice hasta 50%.",
+  "Gumroad payouts: Wise (tercero) lista MX/CO/AR/CL con deposito bancario; una resena dice Stripe no soporta Argentina; usuarios pidieron CO y CL.",
+  "Gumroad ventana de reembolso: oficial 30 dias (politica del creador) / 90 dias discrecional; sitio no fiable dice 60.",
+  "FastSpring: tarifa de ~5.9%+$0.95 solo en terceros; no hay tarifa oficial publica.",
+  "FastSpring: markup FX 3.5-5.5% (Fungies/learnwithhasan) vs 1-3% (Toolradar).",
+  "FastSpring: refund fee 3.5% (doc Classic antigua / learnwithhasan) vs 'se conserva la comision original' (Toolradar).",
+  "FastSpring: paises sin payout: lista actual (9 paises) vs snippet antiguo (solo Cuba).",
+  "Polar: la home puede mostrar 4%+40c; docs oficiales de fees y blog 'Polar Plans' muestran Starter 5%+50c desde 27-may-2026 (los grandfathered conservan 4%+40c).",
+  "Polar: un competidor (Dodo) dice recargo de 0.5% en suscripciones aplicable en general; docs oficiales dicen que solo aplica a cuentas Early Member.",
+  "Stripe Managed Payments: la ayuda oficial de Stripe dice 3.5% por transaccion ADICIONAL a las tarifas de procesamiento estandar (sobre el monto total, incluyendo impuestos), mientras blogs/comparadores (fungies.io, dodopayments.com) dicen 5% + $0.50 igual que LS. Prima la fuente oficial: costo efectivo aprox. 2.9%+0.30 + 3.5% = 6.4% + $0.30 en tarjeta nacional EE.UU. (calculo derivado, no cifra publicada).",
+  "Creem: docs/FAQ dicen que NO hay payouts por PayPal; un blog de Creem menciona PayPal. Docs: 87 paises en el texto vs 86 en el titulo de la tabla; sitio 190+ paises vs blog 100+ (compradores/marketing).",
+  "Creem: marketing dice que Creem maneja los contracargos; los Merchant Terms dicen que el comerciante asume el costo total.",
+  "Dodo Payments: tarifa internacional 1.5% (FAQ/blogs) vs 0.7% (pagina de precios); licencias 'incluidas' (blogs) vs 5% extra por transaccion (pagina de precios, posiblemente antigua); comisiones de payout inconsistentes entre posts."
+ ],
+ "limitations": "Solo WebSearch (~37 consultas, modo standard); sin acceso directo a paginas, por lo que las listas completas de paises de payout (LS, Polar, Gumroad, Paddle, Stripe, FastSpring) llegaron truncadas o resumidas. Los resultados de busqueda son resumenes generados: las cifras de fuentes oficiales vienen de docs y paginas de ayuda citadas, pero no se vio la pagina completa. Pendiente/no verificado: (1) pagina oficial de precios de Lemon Squeezy y sus recargos, (2) existencia de Mexico y Espana en payouts de LS, y de Argentina/Chile/Espana en Creem, (3) listas de paises de Polar y Stripe directo, (4) requisitos KYC y tiempos de aprobacion para persona fisica en LS, Gumroad, FastSpring, Polar, Creem, (5) aceptacion explicita de grabacion de pantalla, anonimizacion, conversion de extractos bancarios y herramientas fiscales en todas las plataformas, (6) validacion offline de licencias, (7) patrones de actualizaciones de 12 meses con renovacion a ~60%, (8) estado actual (oct-2026) de Lemon Squeezy y Stripe Managed Payments mas alla de lo reportado hasta abril-mayo 2026, (9) Stripe directo (solo precios y disputas), Dodo Payments (superficial) y otras opciones como Payhip, Whop o Keygen no investigadas. Fuentes con interes comercial (fungies.io, dodopayments.com, chargepanda, paritydeals) se usaron solo como contexto y marcadas. No es asesoria legal ni fiscal."
+}
