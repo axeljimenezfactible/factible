@@ -25,6 +25,7 @@ meta: 1,000,000 de ventas x $20 USD
 ## Guías
 - [[07 - Guia - Que debes hacer tu]] — pasos exactos para abrir la red, crear la cuenta de DataForSEO y retomar en una sesión nueva.
 - [[08 - Plan de prueba de los 4 candidatos]] — cómo medir demanda y probar precio de los 4 candidatos de confianza media, con umbrales y presupuesto orientativo.
+- [[09 - Preguntas para los comerciantes de registro]] — mensaje listo para enviar y tabla para registrar las respuestas.
 
 ## Respaldos
 - **Obsidian / repo:** carpeta `Ecosistema-Productos-Digitales/` en `axeljimenezfactible/factible`, rama `claude/digital-products-ecosystem-1fhahn`.
@@ -36,3 +37,4 @@ meta: 1,000,000 de ventas x $20 USD
 - **2026-10-08** — Fase 1, pasada 2: 5 agentes verificaron 24 candidatos y reunieron referencias de costo por clic. La competencia gratuita era 5.0 por candidato, no 0.8. Ningún finalista se mantiene; sin respaldo público para un CAC ≤ $9 con anuncios en EE.UU. ni Alemania.
 - **2026-10-08** — Fase 1, pasada 3 (enfoque invertido: partir de lo que ya vende): 5 agentes, 22 sobrevivientes y 53 rechazados. Cuatro de confianza media; ninguna alta. Siguiente: abrir red y credenciales de DataForSEO para medir volúmenes.
 - **2026-10-08** — Fase 2 en paralelo: arquitectura de cuatro capas, catálogo de 22 módulos, validador de recetas con informe de uso, 6 recetas de ejemplo y 18 pruebas. Tres agentes investigaron firma y distribución (≈ $220/año como mínimo por publicador), cobro y licencias, y pila técnica con licencias de componentes. Guía de acciones del usuario en la nota 07.
+- **2026-10-08** — Vendedor en México (persona física primero, persona moral después). Tres agentes verificaron firma de Windows, cobro y Apple desde México (sección 6 de la nota 04). Artifact Signing no es viable desde México; solo Creem tiene México en una lista oficial de pagos; Apple tarda 2 meses o más como organización. Plan de prueba de los 4 candidatos (nota 08) y preguntas para los comerciantes (nota 09).

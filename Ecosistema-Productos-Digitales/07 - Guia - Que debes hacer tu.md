@@ -106,23 +106,27 @@ Se pide en https://developers.google.com/search/apis/trends. Es por solicitud y 
 
 ## Cuentas que prepararás más adelante
 
-No son para ahora, salvo lo que tiene plazos largos (ver abajo). Detalle y fuentes en [[04 - Fase 2 - Fabrica de Micro-Apps]]; todas las cifras salen de búsqueda web y hay que confirmarlas en las páginas oficiales.
+No son para ahora, salvo lo que tiene plazos largos (ver abajo). Detalle y fuentes en [[04 - Fase 2 - Fabrica de Micro-Apps]] (sección 6); todas las cifras salen de búsqueda web y hay que confirmarlas en las páginas oficiales. Datos para México:
 
-| Cuenta | Costo | Qué exige | Plazo |
+| Cuenta | Costo | Qué exige | Plazo reportado |
 |---|---|---|---|
-| Apple Developer Program (firmar apps de Mac) | $99/año | Persona física: sin D-U-N-S, y su nombre legal queda como publicador. Organización: entidad legal (no unipersonal), D-U-N-S y dominio propio | Organización: 2–4 semanas según un foro; más de 2 meses reportado en 2026 |
-| Firma de apps de Windows | ≈ $120/año (Microsoft Artifact Signing, plan Basic) o ≈ $116–450/año (certificado OV) | Artifact Signing: organizaciones en 12 regiones listadas; individuos solo en EE.UU. y Canadá; **México y Colombia no aparecen** | No verificado |
-| Comerciante de registro (cobro, impuestos, claves de licencia) | Entre 3.9% + $0.40 y 10% + $0.50 por venta | Depende del país del vendedor; **ninguna confirma aceptar** grabación de pantalla, anonimización, extractos bancarios ni herramientas fiscales | No verificado |
+| Apple Developer Program, persona física | $99/año | Verificación con foto del documento. La licencia de conducir no se acepta en México; el pasaporte es lo seguro. Su nombre legal queda como vendedor | De unos días a 2–7 semanas o más |
+| Apple Developer Program, persona moral | $99/año | Entidad legal, número D-U-N-S (gratis), dominio con sitio activo, correo del dominio y autoridad de firma | 2 meses o más, con rechazos sin motivo reportados |
+| Cambiar de persona física a moral en Apple | — | Proceso oficial sobre el mismo equipo: ser fundador, D-U-N-S y documentos | De 17 días a 3 meses, con actualizaciones bloqueadas mientras tanto |
+| Firma de apps de Windows | **El servicio de Microsoft no es viable desde México.** Alternativas: certificado de una autoridad certificadora, ≈ $120–440/año; o la Microsoft Store con MSIX, $0 pero solo dentro de la Store | Persona física: validación individual. Persona moral: validación de empresa | No verificado |
+| Comerciante de registro (cobro, impuestos, claves de licencia) | Entre 3.9% + $0.40 y 10% + $0.50 por venta | Solo Creem tiene México en una lista oficial de pagos; las demás, sin confirmar. **Ninguna confirma** aceptar grabación de pantalla, anonimización, extractos bancarios ni herramientas fiscales | Polar: revisión de hasta 14 días antes del primer pago |
 | Hospedaje de instaladores | $0–5/año | Cuenta en Cloudflare (R2) o GitHub | Inmediato |
-| Dominio | Variable | Lo exige Apple para cuentas de organización; también sirve para la página de venta | Inmediato |
+| Dominio | Variable | Lo exige Apple para organizaciones; también sirve para la página de venta | Inmediato |
 
-**Lo que sí conviene adelantar si vas a vender como empresa:** el número D-U-N-S y la inscripción de organización en Apple tardan semanas o meses. Antes necesito saber tu país y si cobrarás como persona o como empresa (ver abajo).
+**Lo que tiene plazo largo y puede adelantarse:** Apple como organización (D-U-N-S, dominio y la espera de 2 meses o más). Si vas a usar la persona moral que ya existe, empezar ya el trámite corre en paralelo a las pruebas de demanda y evita convertir después la cuenta de individuo (hasta 3 meses con actualizaciones bloqueadas). Es una inferencia mía; **coméntalo antes con tu contador**.
 
-**Antes de construir cada producto,** hay que preguntar por escrito al soporte de 2 o 3 comerciantes de registro si aceptan su categoría. Eso lo preparo yo; tú solo necesitarás enviarlo desde tu cuenta.
+**Lo que NO conviene comprar todavía:** el certificado de firma de Windows. Compílalo y pruébalo sin firmar hasta que un candidato pase la prueba de puerta falsa.
+
+**Lo que puedes hacer ya:** enviar las preguntas a los comerciantes de registro. El mensaje está listo en [[09 - Preguntas para los comerciantes de registro]].
 
 ## Decisiones
 
-1. ✅ **País y tipo de vendedor:** México. Persona física al principio y persona moral después; ya hay una persona moral disponible. Se está verificando qué implica para la firma de Windows, el cobro y Apple (ver [[04 - Fase 2 - Fabrica de Micro-Apps]]).
+1. ✅ **País y tipo de vendedor:** México. Persona física al principio y persona moral después; ya hay una persona moral disponible. Lo que implica para Apple, Windows y el cobro está en la sección 6 de [[04 - Fase 2 - Fabrica de Micro-Apps]]. ⏳ **Falta decidir con tu contador** si empezar como persona física o directamente con la persona moral.
 2. ⏳ **Modelo de licencia** "perpetua con 12 meses de actualizaciones y renovación opcional": explicado en la sección 5 de la nota 04. Falta tu decisión.
 3. ✅ **Qué probar primero:** los 4 candidatos de confianza media de la pasada 3. El plan está en [[08 - Plan de prueba de los 4 candidatos]].
 4. ⏳ **Presupuesto de anuncios** para las pruebas de puerta falsa: cuando llegue el momento. El plan de prueba trae cifras orientativas.

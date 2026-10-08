@@ -83,13 +83,13 @@ Casi ninguna licencia viene del archivo LICENSE ni de la ficha oficial, sino de 
 |---|---|---|
 | Apple Developer Program | $99/año | Persona física: sin D-U-N-S, y su nombre legal queda como publicador. Organización: entidad legal (no unipersonal) con D-U-N-S y dominio propio; 2–4 semanas según un foro y más de 2 meses reportado en 2026. La notarización no tiene cargo aparte (no confirmado explícitamente) |
 | Actualizador macOS (Sparkle 2) | $0 | Licencia no verificada |
-| Windows: Microsoft Artifact Signing, plan Basic | $9.99/mes (≈ $120/año) | Organizaciones en 12 regiones listadas (EE.UU., Canadá, UE, Reino Unido, Australia, Nueva Zelanda, Japón, Corea del Sur, Singapur, Suiza, Noruega, Israel). Individuos solo en EE.UU. y Canadá. **México y Colombia no aparecen.** Un resultado sin fuente dice que el alta de individuos estaba pausada en marzo de 2026; hay reportes de validaciones atascadas más de un mes, y un autónomo no constituido de Irlanda no calificó (Microsoft Q&A). Las versiones anteriores de la documentación listaban menos regiones. Si no eres elegible, la ruta que queda es la Microsoft Store con MSIX (la firma Microsoft) |
+| Windows: Microsoft Artifact Signing, plan Basic | $9.99/mes (≈ $120/año) | **Desde México no es viable** (ni persona física ni moral). Organizaciones en 12 regiones listadas (EE.UU., Canadá, UE, Reino Unido, Australia, Nueva Zelanda, Japón, Corea del Sur, Singapur, Suiza, Noruega, Israel). Individuos solo en EE.UU. y Canadá. **México y Colombia no aparecen.** Un resultado sin fuente dice que el alta de individuos estaba pausada en marzo de 2026; hay reportes de validaciones atascadas más de un mes, y un autónomo no constituido de Irlanda no calificó (Microsoft Q&A). Las versiones anteriores de la documentación listaban menos regiones. Si no eres elegible, la ruta que queda es la Microsoft Store con MSIX (la firma Microsoft) |
 | Windows: alternativa de certificado OV | ~$116/año a 3 años (Certum vía revendedor, blog); Sectigo OV $220–450/año | EV $290–650/año, y ya no da reputación SmartScreen inmediata. Llaves en hardware o nube desde junio de 2023; validez máxima ~460 días. No se confirmó si validan individuos fuera de EE.UU. y la UE |
 | Microsoft Store | Cuenta individual gratis; MSIX lo firma Microsoft | Comisión 0% con comercio propio (apps que no son juegos) o 15%. Cuenta de empresa: $0 según un blog de mayo de 2026 y $99 según Learn (conflicto) |
 | Hospedaje de instaladores | $0–5/año | Cloudflare R2: $0.015/GB-mes y descargas gratis. GitHub Releases: gratis con repo público |
 | **Total mínimo** | **≈ $220/año** | Apple individual + Artifact Signing Basic (o certificado Certum). Suma del agente; no incluye comisiones de tienda ni de pagos |
 
-**Abierto:** el país y el tipo de entidad del vendedor, de los que depende la elegibilidad de Artifact Signing y la ruta de Apple.
+**El vendedor está en México** (persona física al principio, persona moral después; ya hay una persona moral disponible): ver la sección 6. **Abierto:** si empezar como persona física o directamente con la persona moral.
 
 ### 4. Cobro y licencias
 
@@ -126,6 +126,53 @@ Casi ninguna licencia viene del archivo LICENSE ni de la ficha oficial, sino de 
 
 **Ninguna plataforma lo documenta de forma nativa.** Se construye con lógica propia en `core.license`: la clave es perpetua, y un token firmado guarda la fecha hasta la que la persona recibe versiones nuevas; la app compara esa fecha con la de su compilación. La renovación (a ~60% del precio, según el patrón visto) es un producto aparte. La validación sin conexión tampoco está documentada: se usa un token firmado y guardado en el equipo, con un periodo de gracia.
 
+### 6. Vendedor en México: persona física primero, persona moral después
+
+Tres rondas más de agentes, con búsqueda web únicamente. Detalle en `micro-app-factory/data/fase2_mx_firma.json`, `fase2_mx_cobro.json` y `fase2_mx_apple.json`.
+
+**Apple (macOS)**
+
+| Vía | Qué exige | Plazo reportado | Notas |
+|---|---|---|---|
+| Persona física (individuo) | $99/año con renovación automática (el monto en MXN y el IVA no salen en ninguna fuente). Verificación con foto del documento desde la app Apple Developer. La licencia de conducir no se acepta en México; el pasaporte es lo seguro (del INE no hay fuente) | De unos días a 2–7 semanas o más, según foros de 2026 | Su nombre legal queda como vendedor |
+| Persona moral (organización) | Entidad legal, número D-U-N-S (gratis), dominio con sitio activo y correo del dominio, y autoridad de firma | El D-U-N-S tarda hasta 5 días hábiles más 2 según Apple y hasta 30 días hábiles según D&B. Los foros reportan 2 meses o más de 100 días, y rechazos sin motivo | Sin confirmación de que acepte S.A.S. o S. de R.L. |
+| Pasar de individuo a organización | Proceso oficial para actualizar el mismo equipo, sin abrir otra cuenta. Hay que ser fundador, tener D-U-N-S y documentos | Relatos de 2026 de 17 días a 3 meses, con beneficios deshabilitados y actualizaciones bloqueadas mientras tanto | El Team ID no cambia. Las apps ya firmadas siguen funcionando. No hay transferencia soportada de apps que solo usan Developer ID. La rotación de claves de Sparkle se liga a una firma Apple coincidente: su independencia no está confirmada |
+
+Ninguna fuente aconseja explícitamente empezar como organización. Una guía de terceros lo sugiere si la empresa se constituirá pronto; un ingeniero de Apple confirma en el foro que empezar como individuo y actualizar después es una vía soportada.
+
+**Windows**
+
+| Vía | Persona física | Persona moral |
+|---|---|---|
+| Artifact Signing (Microsoft) | No viable | No viable. Solo con una entidad en una región elegible (≈ $120/año) |
+| Certificado de una autoridad certificadora | SSL.com IV $249 más eSigner $180/año (≈ $429; la duración del precio no se confirmó), Certum Standard Cloud €109–189/año, o Sectigo IV por revendedor ≈ $220/año con token físico | OV desde ≈ $129 hasta ≈ $440/año según autoridad y revendedor; Microsoft cita $150–300 |
+| Microsoft Store con MSIX | Microsoft firma el paquete: sin certificado propio y sin SmartScreen. Registro $0 (individuos desde septiembre de 2025). Solo cubre distribución dentro de la Store | Igual, registro $0 desde mayo de 2026 |
+
+- **Comisión de la Store:** con comercio propio no hay comisión en apps que no son juegos; con la plataforma de Microsoft es 15%. No se verificó si la Store permite vender licencias propias.
+- **Cambio de física a moral:** probablemente reinicia la reputación de SmartScreen (la documentación oficial solo habla de reputación por archivo). El nombre mostrado pasa del nombre propio a la razón social. Mover apps entre cuentas de la Store solo se logra con un ticket de soporte.
+- **Sin verificar:** qué documentos aceptan las autoridades a mexicanos, si envían tokens a México y la retención del W-8BEN en la Store (el 10% con tratado viene solo de fuentes no oficiales).
+
+**Cobro**
+
+| Plataforma | ¿Paga a México? | Notas |
+|---|---|---|
+| Creem | **Sí**: México aparece en su lista oficial de pagos bancarios locales | Falta confirmar si acepta persona física, en qué moneda llega y la tarifa real del pago (las fuentes dicen "USD 7 o 1%" frente a "sin cargo adicional"). Prohíbe software de vigilancia y servicios regulados de banca o finanzas |
+| Polar | Sin confirmar | Paga vía Stripe Connect Express, con KYC por INE o pasaporte y revisión previa al primer pago de hasta 14 días |
+| Paddle | Sin confirmar | Acepta individuos sin verificación de negocio. Pago por transferencia, probablemente en USD, mínimo $100; comisión SWIFT de $15 por confirmar |
+| Lemon Squeezy | Banco sin confirmar | PayPal en más de 200 países (3% con tope de $30 por pago). Prohíbe software de vigilancia y servicios regulados de banca o finanzas. Fuentes de terceros reportan cuentas congeladas o rechazadas |
+| Gumroad | Sin confirmar | México probablemente con depósito bancario (según Wise, no oficial); mínimo de $100 reportado |
+| Stripe México directo (no es comerciante de registro) | **Sí**, persona física con actividad empresarial y persona moral | RFC y una CLABE en pesos. El vendedor asume los impuestos y el cumplimiento internacional |
+| Stripe Managed Payments | **No**: México no está entre las ubicaciones soportadas | |
+
+- Ninguna plataforma documenta el cambio de persona física a moral.
+- **Para tu contador:** qué documento fiscal (factura, CFDI o formulario W-8BEN) pide cada comerciante, si cuenta como cliente extranjero y cómo se trata el cambio de persona física a moral. Las fuentes no dicen nada de esto.
+
+**Lo que esto sugiere** (inferencias mías, sin verificar con un contador):
+1. **Nada de esto bloquea** la prueba de demanda ni la lista de espera.
+2. **Los plazos largos** están en Apple: la organización tarda 2 meses o más y la conversión de individuo a organización, hasta 3 meses con actualizaciones bloqueadas. Si se va a usar la persona moral que ya existe, empezar directamente como organización evita la conversión, y su espera puede correr en paralelo a las pruebas de demanda. Si no, el individuo con pasaporte es la vía más rápida y se actualiza después.
+3. **Windows:** los rangos de costo de persona física y moral se traslapan, así que ser persona moral no es claramente más barato. Lo que sí evita es el reinicio de la reputación y el cambio del nombre del publicador. **No comprar certificado hasta que un candidato pase la prueba de puerta falsa:** las compilaciones de prueba pueden ir sin firmar.
+4. **Cobro:** solo Creem tiene México en una lista oficial. Hay que preguntar por escrito a varias plataformas (ver [[09 - Preguntas para los comerciantes de registro]]), sobre todo por la categoría: "software de vigilancia" podría afectar a la grabadora de pasos, y "servicios regulados de banca o finanzas" podría rozar a la conversión de extractos bancarios.
+
 ## Economía por app
 
 - **Neto por venta:** $18.50–$18.82 (sección 4), menos reembolsos (5–8%, supuesto mío) y costo variable.
@@ -156,6 +203,6 @@ Casi ninguna licencia viene del archivo LICENSE ni de la ficha oficial, sino de 
 - Investigación: `micro-app-factory/data/fase2_firma.json`, `fase2_cobro.json`, `fase2_pila.json`
 
 ## Siguiente
-- Que me digas el **país y tipo de entidad** del vendedor (ver [[07 - Guia - Que debes hacer tu]]).
-- Preguntar por escrito a 2 o 3 comerciantes de registro si aceptan las categorías sensibles.
+- Decidir si se empieza como persona física o directamente con la persona moral (sección 6), con tu contador.
+- Enviar las preguntas de [[09 - Preguntas para los comerciantes de registro]] a las plataformas de cobro.
 - Fase 3: el motor que convierte una receta en una app (generación de código, pruebas de oro, compilación firmada).
