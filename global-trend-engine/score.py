@@ -15,6 +15,7 @@ from urllib.parse import urlparse
 WEIGHTS = {"evidence": 0.15, "payment": 0.30, "urgency": 0.20, "build": 0.20, "demand": 0.15}
 CONFIDENCE = {"low": 0.6, "med": 0.8, "high": 1.0}
 FLOOR = 0.05  # evita que un 0 anule todo el puntaje; el hueco se reporta aparte
+FREE_PENALTY = 0.25  # descuento máximo cuando hay >=3 alternativas gratuitas (calibración de pago)
 ANCHOR_BOUNDS = {"one-time": (8, 50), "monthly": (2, 12), "annual": (15, 100)}  # USD
 
 
@@ -46,6 +47,18 @@ def price_anchors(candidate):
         if is_price_anchor(alt)
     }
     return {n for n in names if n}
+
+
+def free_alternatives(candidate):
+    """Alternativas gratuitas o freemium citadas: presionan a la baja la disposición a pagar."""
+    names = set()
+    for alt in candidate.get("paid_alternatives") or []:
+        price = alt.get("price_usd")
+        is_zero = isinstance(price, (int, float)) and not isinstance(price, bool) and price == 0
+        if alt.get("model") == "freemium" or is_zero:
+            names.add((alt.get("name") or "").strip().lower())
+    names.discard("")
+    return names
 
 
 def evidence_strength(candidate):
@@ -89,13 +102,16 @@ def score_candidate(candidate):
     total_w = sum(WEIGHTS.values())
     log_mean = sum(WEIGHTS[k] * math.log(max(v, FLOOR)) for k, v in parts.items()) / total_w
     confidence = CONFIDENCE.get(candidate.get("confidence"), CONFIDENCE["low"])
+    free_n = len(free_alternatives(candidate))
+    free_factor = 1 - FREE_PENALTY * min(free_n, 3) / 3
     return {
         "id": candidate.get("id"),
         "region": candidate.get("region"),
         "pain_point": candidate.get("pain_point"),
         "micro_app_idea": candidate.get("micro_app_idea"),
-        "score": round(100 * math.exp(log_mean) * confidence, 1),
+        "score": round(100 * math.exp(log_mean) * confidence * free_factor, 1),
         **{k: round(v, 2) for k, v in parts.items()},
+        "free_alts": free_n,
         "confidence": candidate.get("confidence"),
         "gaps": ";".join(gaps),
     }

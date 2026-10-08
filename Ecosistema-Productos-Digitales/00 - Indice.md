@@ -17,7 +17,7 @@ meta: 1,000,000 de ventas x $20 USD
 | Fase | Nota | Estado |
 |---|---|---|
 | 0 — Diagnóstico y desbloqueo de herramientas | [[02 - Fase 0 - Diagnostico y Herramientas]] | Borrador entregado. Falta tu aprobación de presupuesto y cuentas |
-| 1 — Minería de datos (Global Trend Engine) | [[03 - Fase 1 - Global Trend Engine]] | Pendiente |
+| 1 — Minería de datos (Global Trend Engine) | [[03 - Fase 1 - Global Trend Engine]] | Pasada 1 completa (112 hipótesis, sin volúmenes de búsqueda). Falta: hosts desbloqueados, claves y puertas falsas |
 | 2 — Arquitectura del producto (Fábrica de Micro-Apps) | [[04 - Fase 2 - Fabrica de Micro-Apps]] | Pendiente |
 | 3 — Motor de creación automatizada | [[05 - Fase 3 - Motor de Creacion]] | Pendiente |
 | 4 — Máquina de tráfico y adquisición global | [[06 - Fase 4 - Trafico y Adquisicion]] | Pendiente |
@@ -28,3 +28,4 @@ meta: 1,000,000 de ventas x $20 USD
 
 ## Bitácora
 - **2026-10-08** — Proyecto creado. Brief guardado, Fase 0 redactada, respaldo en Drive.
+- **2026-10-08** — Fase 1, pasada 1: motor de puntuación y calculadora de puerta falsa (14 pruebas), 5 agentes de investigación, 112 candidatos rankeados. Propuesta de 7 finalistas en la nota de la fase.

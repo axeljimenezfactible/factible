@@ -1,0 +1,683 @@
+[
+  {
+    "id": "in-bank-statement-pdf-to-tally",
+    "region": "ASIA",
+    "pain_point": "Contadores y CAs pequeños en India reescriben a mano (o convierten PDF a Excel a Tally) los extractos bancarios de cada cliente para cargarlos en Tally",
+    "segment": "Contadores, CAs y pequeñas oficinas contables en India que usan Tally",
+    "micro_app_idea": "App de escritorio offline que lee PDFs de extractos bancarios, deja revisar y etiquetar transacciones y exporta XML importable a TallyPrime",
+    "evidence": [
+      {"url": "https://m.indiamart.com/proddetail/excel-to-tally-software-23370973188.html", "what": "Resumen de búsqueda sobre listados IndiaMART de herramientas Excel-to-Tally y bank-statement-to-Tally: licencia lifetime offline para Windows a ₹5,400 con demo gratis; otra 'one time cost' a ₹6,000; licencias de 1 año a ₹5,000-6,000; renta de ₹1,000/mes. El mapeo exacto vendedor-URL no está verificado (no pude abrir la página).", "date": null},
+      {"url": "https://pdf2tally-backend.onrender.com/", "what": "PDF2TALLY: app de escritorio que convierte PDFs de extractos bancarios a XML de Tally Prime, procesa en el PC sin nube, parsers para SBI y Bank of Baroda más uno genérico; el sitio anuncia 'TRIAL v1.0.0 IS LIVE'. Precio no visible en el resumen.", "date": null},
+      {"url": "https://www.producthunt.com/products/pdf2tally/reviews", "what": "Ficha de PDF2TALLY en Product Hunt con la etiqueta 'Launched this week' (fecha exacta no visible): un nuevo entrante apuesta por este nicho.", "date": null}
+    ],
+    "paid_alternatives": [
+      {"name": "Offline Excel to Tally Software (Nandini Infosys, lifetime ₹5,400 según resumen)", "price_usd": null, "model": "one-time", "url": "https://m.indiamart.com/proddetail/excel-to-tally-software-23370973188.html"},
+      {"name": "Offline Excel to Tally Bank Statement Tool (Systech Solutions, ₹6,000 one-time según resumen)", "price_usd": null, "model": "one-time", "url": "https://m.indiamart.com/proddetail/excel-to-tally-bank-statement-tool-23184301830.html"},
+      {"name": "PDF2TALLY (trial; precio no visto)", "price_usd": null, "model": "freemium", "url": "https://pdf2tally-backend.onrender.com/"}
+    ],
+    "search_signals": {"queries": ["bank statement PDF to Excel Tally converter India price lifetime license accountants", "Excel to Tally bank statement import", "PDF to Tally XML bank statement"], "volume_note": null},
+    "urgency_1to5": 4,
+    "urgency_basis": "Trabajo recurrente por cliente y por mes (inferencia mía) y varios vendedores ya cobran por resolverlo (IndiaMART más un lanzamiento nuevo); no vi volumen de búsqueda.",
+    "buildability_1to5": 3,
+    "wtp_20_evidence": "Los competidores listan ₹5,400-6,000 por licencia lifetime o one-time (sin impuestos). $20 queda probablemente por debajo (conversión mía, no de la fuente), así que es plausible como precio de entrada; el segmento profesional B2B en India tolera pago único mejor que el consumidor.",
+    "risks": "Mantenimiento por formato de banco; compatibilidad Tally.ERP9 vs TallyPrime; PDFs escaneados requieren OCR; saturación (muchos vendedores IndiaMART más PDF2TALLY); datos bancarios sensibles (ventaja si todo es local).",
+    "confidence": "med"
+  },
+  {
+    "id": "id-coretax-xml-validator",
+    "region": "ASIA",
+    "pain_point": "Contadores y pequeñas empresas en Indonesia pierden horas con errores al importar XML de faktur pajak y bukti potong en Coretax (campos vacíos, formato, 100+ líneas de error)",
+    "segment": "Contadores independientes, consultores fiscales y administrativos de PKP/UMKM en Indonesia",
+    "micro_app_idea": "Validador y convertidor local Excel a XML para Coretax que revisa campos obligatorios y formato antes de subir y explica cada error en lenguaje claro",
+    "evidence": [
+      {"url": "https://news.ddtc.co.id/literasi/tips-trik/1807194/cara-konverter-excel-to-xml-untuk-impor-data-di-aplikasi-coretax", "what": "DDTC (resumen de búsqueda): DJP ofrece dos conversores oficiales gratuitos (plantilla Excel con export XML y app de escritorio 'Converter.Efaktur.Coretax'); un XML admite hasta 1.000 facturas; el estado 'Validating Failed' indica datos a corregir.", "date": null},
+      {"url": "https://news.ddtc.co.id/review/konsultasi-coretax/1808895/faktur-xml-cuma-15-baris-tapi-erornya-100-baris-lebih-apa-yang-salah", "what": "Consulta Coretax en DDTC titulada 'Faktur XML cuma 15 baris tapi erornya 100 baris lebih, apa yang salah?' (solo vi el título).", "date": null},
+      {"url": "https://www.talenta.co/blog/gagal-impor-ebupot-pph-21-coretax/", "what": "Artículo 'gagal impor ebupot pph 21 coretax': según el resumen, el error 'Value cannot be null' en 2026 suele deberse a columnas obligatorias vacías o con formato incorrecto.", "date": null},
+      {"url": "https://ekonomi.bisnis.com/read/20250111/259/1830694/curhatan-warga-soal-coretax-bermasalah-bikin-proses-bisnis-terhambat", "what": "Bisnis.com: 'Curhatan Warga soal Coretax Bermasalah Bikin Proses Bisnis Terhambat'; según el resumen, un asistente de gestión fiscal en Yakarta dijo que no podía subir facturas ni crear bukti potong.", "date": "2025-01"}
+    ],
+    "paid_alternatives": [
+      {"name": "Conversores oficiales DJP (plantilla Excel y Converter.Efaktur.Coretax)", "price_usd": 0, "model": "freemium", "url": "https://news.ddtc.co.id/literasi/tips-trik/1807194/cara-konverter-excel-to-xml-untuk-impor-data-di-aplikasi-coretax"},
+      {"name": "OnlinePajak, guía/servicio de importación de faktur pajak a Coretax (precio no visto; modelo no verificado)", "price_usd": null, "model": "annual", "url": "https://www.online-pajak.com/tentang-ppn-efaktur/impor-faktur-pajak-pada-aplikasi-coretax/"},
+      {"name": "KlikPajak, guía/servicio de archivos de carga Coretax (precio no visto; modelo no verificado)", "price_usd": null, "model": "annual", "url": "https://klikpajak.id/blog/file-upload-coretax/"}
+    ],
+    "search_signals": {"queries": ["cara konverter excel to xml untuk impor data di aplikasi coretax", "impor faktur pajak coretax gagal", "gagal impor ebupot pph 21 coretax", "Coretax XML Validating Failed"], "volume_note": null},
+    "urgency_1to5": 4,
+    "urgency_basis": "Quejas masivas por faktur pajak en el lanzamiento (inicios de 2025) y errores de importación todavía documentados en 2026, incluida una actualización de plantillas el 8-abr-2026; las declaraciones son mensuales.",
+    "buildability_1to5": 3,
+    "wtp_20_evidence": "Hay conversores oficiales gratis, así que el valor está en la validación y en explicar errores. No vi precios de proveedores privados. $20 es plausible para contadores con varios clientes; para UMKM necesitaría precio regional.",
+    "risks": "DJP cambia plantillas y esquemas con frecuencia; competencia gratuita oficial; zona fiscal regulada (no manejar firma digital ni passphrase del usuario); algunas fuentes discrepan sobre fechas de arranque de Coretax.",
+    "confidence": "med"
+  },
+  {
+    "id": "jp-denshichobo-receipt-renamer",
+    "region": "ASIA",
+    "pain_point": "Autónomos y pymes de Japón deben conservar recibos y facturas electrónicas buscables por fecha, monto y proveedor (電子帳簿保存法) y renombran archivos a mano",
+    "segment": "Autónomos (個人事業主) y pequeñas empresas en Japón",
+    "micro_app_idea": "App local que lee PDFs e imágenes de recibos con OCR japonés, propone el nombre 'fecha_proveedor_monto' y genera un índice buscable en CSV sin subir nada a la nube",
+    "evidence": [
+      {"url": "https://www.yayoi-kk.co.jp/lawinfo/scan/requirement.html", "what": "Yayoi (resumen de búsqueda): para el guardado por escáner se exige búsqueda por fecha de transacción, monto y proveedor, 200 dpi o más en color; desde 2022-01 sin aprobación previa y desde 2024-01 sin guardar información de resolución.", "date": null},
+      {"url": "https://www.freee.co.jp/kb/kb-trend/scanner-save/", "what": "freee (resumen de búsqueda): el guardado por escáner es opcional, pero guardar los datos de transacciones electrónicas es obligatorio; el nombre de archivo conecta directamente con el requisito de búsqueda.", "date": null},
+      {"url": "https://renamer.ai/how-to-rename-scanned-invoices", "what": "Renamer.ai (solo inglés) renombra facturas por OCR con plantillas {client}/{date}: hay oferta de renombrado automático, pero no enfocada en Japón.", "date": null}
+    ],
+    "paid_alternatives": [
+      {"name": "PFU PaperStream Capture Pro (software de pago para nombrar y clasificar; casos corporativos; precio y modelo no vistos)", "price_usd": null, "model": "one-time", "url": "https://www.pfu.ricoh.com/fi/digitarakuru/column/column-0011.html"},
+      {"name": "Renamer.ai (precio no visto; modelo no verificado)", "price_usd": null, "model": "freemium", "url": "https://renamer.ai/how-to-rename-scanned-invoices"},
+      {"name": "Funciones de escaneo de freee contabilidad (suscripción; precio no visto)", "price_usd": null, "model": "monthly", "url": "https://www.freee.co.jp/kb/kb-trend/scanner-save/"}
+    ],
+    "search_signals": {"queries": ["電子帳簿保存法 領収書 スキャン 整理 ファイル名 自動 ソフト 個人事業主 面倒", "命名くん 電帳法"], "volume_note": null},
+    "urgency_1to5": 3,
+    "urgency_basis": "Obligación legal vigente para datos de transacciones electrónicas, pero lo vi solo en guías de proveedores y muchos usuarios cumplen con carpetas ordenadas.",
+    "buildability_1to5": 3,
+    "wtp_20_evidence": "Sin precios de competidores directos. Como ancla, software de PC en pago único en Japón se lista en ¥2,650-6,490 (ver ficha de 年賀状), y ¥3,000 es del orden de $20, lo que hace plausible el precio.",
+    "risks": "Interpretación fiscal (no es asesoría); cambios de reglas; freee, Yayoi y Money Forward lo incluyen en sus suscripciones; precisión del OCR japonés en montos y proveedores; fabricantes de escáneres traen software propio.",
+    "confidence": "low"
+  },
+  {
+    "id": "id-marketplace-seller-profit-pph22",
+    "region": "ASIA",
+    "pain_point": "Vendedores de Shopee, Tokopedia y TikTok Shop en Indonesia no conocen su margen real tras las alzas de comisión de 2026 y el nuevo cobro de PPh 22 (0,5%) por el marketplace",
+    "segment": "Vendedores online UMKM en Indonesia",
+    "micro_app_idea": "Calculadora offline por pedido o SKU con tablas de comisión editables y PPh 22, que importa el reporte de ingresos del vendedor y muestra el margen real",
+    "evidence": [
+      {"url": "https://www.bigseller.com/blog/articleDetails/4230/update-biaya-admin-shopee.htm", "what": "BigSeller: 'Update! Perubahan Biaya Admin Shopee 2026 dan Dampaknya untuk Seller'. Según el resumen, tarifas nuevas desde 1-ene-2026 por categoría (p. ej. categoría A 10% y Rp1.250 por pedido); las fuentes discrepan en electrónica (7-7,5% vs 9-9,5%).", "date": "2026-01"},
+      {"url": "https://www.pajak.go.id/sites/default/files/2026-10/SP-23_2026%20Pemungutan%20PPh%20Pasal%2022%20melalui%20marketplace%20mulai%20dilaksanakan%201%20Oktober%202026.pdf", "what": "Comunicado DJP SP-23/2026 titulado 'Pemungutan PPh Pasal 22 melalui marketplace mulai dilaksanakan 1 Oktober 2026'; según el resumen: 0,5% del ingreso bruto, con exención para personas con hasta Rp500 millones al año que presenten declaración.", "date": "2026-10"},
+      {"url": "https://nasional.kontan.co.id/news/resmi-pajak-marketplace-ditunda-1-november-2026-pedagang-minta-kepastian-aturan", "what": "Kontan: 'Resmi pajak marketplace ditunda 1 November 2026, pedagang minta kepastian aturan'. La fecha de inicio es contradictoria entre fuentes (1-oct vs 1-nov-2026) y los vendedores piden claridad.", "date": null},
+      {"url": "https://www.metrotvnews.com/read/k8oCQyP4-komisi-tiktok-shop-dipangkas-maksimal-rp60-ribu-item", "what": "Metro TV: 'Komisi TikTok Shop Dipangkas, Maksimal Rp60 Ribu/Item'; según el resumen, desde 16-sep-2026 el tope de comisión es Rp60 mil por ítem.", "date": "2026-09"}
+    ],
+    "paid_alternatives": [
+      {"name": "BigSeller (ERP multicanal; precio no visto)", "price_usd": null, "model": "freemium", "url": "https://www.bigseller.com/blog/articleDetails/4230/update-biaya-admin-shopee.htm"},
+      {"name": "Calculadoras web de un producto por vez (EchoTik, Delzonic; precio no visto)", "price_usd": null, "model": "freemium", "url": "https://echotik.live/tool/calculator"}
+    ],
+    "search_signals": {"queries": ["kalkulator biaya admin Shopee TikTok Shop 2026 hitung untung rugi seller", "biaya admin shopee 2026", "PPh 22 marketplace 0,5% Oktober 2026"], "volume_note": null},
+    "urgency_1to5": 4,
+    "urgency_basis": "Cambios de comisión en 2026 y un nuevo impuesto retenido por plataformas que arranca entre octubre y noviembre de 2026, con debate público sobre la fecha.",
+    "buildability_1to5": 3,
+    "wtp_20_evidence": "Sin precios de alternativas ERP. $20 es alto para UMKM de Indonesia: requeriría precio regional o enfocarse en vendedores medianos. No hay dato de poder adquisitivo en las fuentes.",
+    "risks": "Fecha de PPh 22 contradictoria; tarifas por categoría cambian y las fuentes discrepan; tema tributario (no es consejo fiscal); BigSeller y Ginee ya ofrecen funciones integradas; TikTok Shop no figura entre los recaudadores según una fuente (verificar).",
+    "confidence": "med"
+  },
+  {
+    "id": "vn-marketplace-fee-profit-tax",
+    "region": "ASIA",
+    "pain_point": "Vendedores de Shopee y TikTok Shop en Vietnam ven subir las comisiones en mayo de 2026 y la plataforma retiene 1,5% (1% IVA + 0,5% IRPF), por lo que calcular la ganancia real es confuso",
+    "segment": "Vendedores online pequeños y medianos en Vietnam (hộ kinh doanh y cá nhân)",
+    "micro_app_idea": "Calculadora offline de ganancia por pedido con comisión por categoría, tarifa de procesamiento COD, retención de 1,5% y exportación a CSV",
+    "evidence": [
+      {"url": "https://vnbusiness.vn/hai-ong-lon-shopee-va-tiktok-shop-cung-day-phi-san-cham-nguong-ky-luc-25-doanh-thu.html", "what": "Titular de VnBusiness: Shopee y TikTok Shop empujan la tarifa de plataforma a un 'récord de 25% del ingreso' (solo vi el título).", "date": null},
+      {"url": "https://www.misaeshop.vn/24423/phi-san-shopee/", "what": "MISA eShop, 'Các loại phí sàn Shopee 2026' (resumen): tarifario ajustado desde 23/05/2026 (moda 13,5-16,5%) y comisión de procesamiento COD de 4,91% a 6% desde 01/05/2026.", "date": "2026-05"},
+      {"url": "https://fptshop.com.vn/tin-tuc/for-gamers/cac-loai-phi-san-tiktok-shop-moi-nhat-2026-199328", "what": "FPT Shop (resumen): comisión de TikTok Shop sube desde 9/5/2026; moda de 14,6% a 16,1% y madre-bebé de 14,5% a 17,8%.", "date": "2026-05"},
+      {"url": "https://ghn.vn/blogs/tip-ban-hang/thue-tiktok-shop", "what": "GHN (resumen): impuesto de 1,5% (1% IVA + 0,5% IRPF) retenido por la plataforma sobre el precio tras descuentos; no se resta la comisión. La búsqueda no encontró un Excel gratuito en vietnamita que cubra esto.", "date": null}
+    ],
+    "paid_alternatives": [
+      {"name": "Libro Excel de Payhip (Order-Level Profit Tracker; orientado a EE. UU., no cubre el 1,5%; precio no visto)", "price_usd": null, "model": "one-time", "url": "https://payhip.com/b/RIB6T"},
+      {"name": "Calculadoras web de un producto por vez (EchoTik, Delzonic)", "price_usd": null, "model": "freemium", "url": "https://echotik.live/tool/calculator"}
+    ],
+    "search_signals": {"queries": ["tính phí sàn Shopee TikTok Shop 2026 tính lợi nhuận file excel", "phí sàn Shopee 2026", "thuế 1.5% sàn khấu trừ TikTok Shop"], "volume_note": null},
+    "urgency_1to5": 4,
+    "urgency_basis": "Tres cambios de tarifa documentados entre mayo y julio de 2026 más una retención fiscal que cambia el cálculo del margen.",
+    "buildability_1to5": 3,
+    "wtp_20_evidence": "No vi precios. En Vietnam $20 es alto para vendedores pequeños; el aprieto de margen (la plataforma se lleva cerca de una cuarta parte, según titular) justifica la herramienta, pero probablemente requiere precio regional.",
+    "risks": "Tarifas cambian cada pocos meses (mantenimiento); tema tributario (verificar con contador); competencia gratuita de calculadoras y ERP; fuentes con intereses comerciales.",
+    "confidence": "med"
+  },
+  {
+    "id": "jp-freelance-act-docs",
+    "region": "ASIA",
+    "pain_point": "Freelancers y quienes les encargan trabajo en Japón deben explicitar por escrito o email las condiciones del encargo (ley de freelancers, vigente desde 2024-11-01) y no tienen un formato oficial fácil",
+    "segment": "Freelancers y pequeños clientes (incluidos unipersonales) en Japón",
+    "micro_app_idea": "Generador local de PDF/email con las condiciones de la ley (trabajo, pago, fecha de pago, inspección, aviso de 30 días en contratos largos) a partir de un formulario",
+    "evidence": [
+      {"url": "https://j-net21.smrj.go.jp/law/20240807.html", "what": "J-Net21 (agosto 2024, resumen): explicación previa a la entrada en vigor de la ley de freelancers; incluye la obligación de explicitar condiciones.", "date": "2024-08"},
+      {"url": "https://www.yasuda-cpa-office.com/post/post-20250127-01", "what": "Despacho contable Yasuda (resumen): la obligación aplica a encargantes aunque sean individuos sin empleados; basta papel o medios electrónicos, no oral; el aviso previo de 30 días aplica a contratos de 6 meses o más.", "date": "2025-01"},
+      {"url": "https://digitalpr.jp/r/87953", "what": "Nota de prensa: freee abre un sitio especial sobre la ley de protección de freelancers; la búsqueda no halló una plantilla oficial de la Agencia de PYMES ni del MHLW.", "date": null}
+    ],
+    "paid_alternatives": [
+      {"name": "MISY, app en LINE que crea documentos conforme a la ley (precio no visto)", "price_usd": null, "model": "freemium", "url": "https://xexeq.jp/blogs/media/topics22191"},
+      {"name": "Servicio de redacción de contratos en coconala (precio no visto)", "price_usd": null, "model": "one-time", "url": "https://coconala.com/services/3522429"},
+      {"name": "freee, diagnóstico gratuito de la ley (4 preguntas)", "price_usd": 0, "model": "freemium", "url": "https://digitalpr.jp/r/87953"}
+    ],
+    "search_signals": {"queries": ["フリーランス新法 取引条件 明示 書面 テンプレート 作成 ツール 個人 困る"], "volume_note": null},
+    "urgency_1to5": 3,
+    "urgency_basis": "Obligación legal con sanciones administrativas, pero la urgencia diaria es baja y ya hay plantillas gratis en blogs y proveedores.",
+    "buildability_1to5": 4,
+    "wtp_20_evidence": "Existen servicios de redacción de pago (coconala) sin precio visible. Japón tolera $20, pero hay plantillas y diagnósticos gratuitos; el valor sería la rapidez y el cumplimiento de campos.",
+    "risks": "Documentos legales: presentarlo como plantilla, no asesoría; la ley cambia o se interpreta; fuentes con publicidad; algunas guías tienen errores (una cita fechas equivocadas).",
+    "confidence": "low"
+  },
+  {
+    "id": "in-gst-billing-offline-onetime",
+    "region": "ASIA",
+    "pain_point": "Pequeños comerciantes de India pagan suscripciones anuales por software de facturación GST y buscan una opción offline de pago único",
+    "segment": "Tiendas pequeñas (kirana) y microempresas con GST en India",
+    "micro_app_idea": "App de facturación GST offline con HSN, GSTIN por estado, catálogo y exportación PDF/WhatsApp, vendida en pago único",
+    "evidence": [
+      {"url": "https://dev.to/jack_green_7b74cb2cdf9e23/gst-invoice-generator-client-side-gst-invoices-no-subscriptions-19-one-time-24f3", "what": "Post de un desarrollador: 'GST Invoice Generator' cliente-side, sin suscripciones, $19 pago único, funciona offline tras la primera carga; la demo trae marca de agua (afirmaciones del propio vendedor).", "date": null},
+      {"url": "https://www.capterra.in/compare/180579/202732/vyapar/vs/flobooks", "what": "Comparativa de Capterra India (actualizada el 1-jul-2026 según el resumen): precio inicial ₹3,399/año para Vyapar y ₹199/mes para myBillBook; Vyapar figura como Windows de escritorio.", "date": "2026-07"},
+      {"url": "https://apps.apple.com/us/app/-/id1499345771", "what": "App 'GST Invoice' en iOS: gratis, sin registro, facturas y clientes ilimitados con datos offline en el dispositivo (según el resumen).", "date": null}
+    ],
+    "paid_alternatives": [
+      {"name": "GST Invoice Generator (vendedor del post, cliente-side)", "price_usd": 19, "model": "one-time", "url": "https://dev.to/jack_green_7b74cb2cdf9e23/gst-invoice-generator-client-side-gst-invoices-no-subscriptions-19-one-time-24f3"},
+      {"name": "Vyapar (precio inicial ₹3,399/año según Capterra)", "price_usd": null, "model": "annual", "url": "https://www.capterra.in/compare/180579/202732/vyapar/vs/flobooks"},
+      {"name": "myBillBook (₹199/mes según Capterra; el sitio dice desde ₹399/año)", "price_usd": null, "model": "monthly", "url": "https://mybillbook.in/s/?p=29974"}
+    ],
+    "search_signals": {"queries": ["GST invoice generator app for small shopkeepers India one time purchase offline", "Vyapar myBillBook lifetime plan price"], "volume_note": null},
+    "urgency_1to5": 3,
+    "urgency_basis": "Facturar es tarea diaria, pero existen apps gratuitas offline y la urgencia depende de la aversión a la suscripción.",
+    "buildability_1to5": 5,
+    "wtp_20_evidence": "Ya hay un competidor a $19 pago único (sin ventas verificadas) y los líderes cobran suscripción de ₹3,399/año o ₹199/mes; $20 único es plausible para quien rehúye suscripciones, pero hay apps gratis. En India probablemente requiere precio en rupias.",
+    "risks": "Alta saturación (apps gratuitas y Vyapar/myBillBook); reglas GST y e-invoicing cambian; no confirmé licencia perpetua en Vyapar ni myBillBook.",
+    "confidence": "med"
+  },
+  {
+    "id": "in-gstr2b-reconciliation-local",
+    "region": "ASIA",
+    "pain_point": "Contadores y CAs pequeños en India concilian a mano GSTR-2B contra el registro de compras, con números de factura abreviados o mal escritos",
+    "segment": "CAs, contadores y empresas pequeñas con GST en India",
+    "micro_app_idea": "Herramienta de escritorio offline que cruza GSTR-2B y registro de compras con coincidencia difusa y reporta las cuatro categorías de diferencias",
+    "evidence": [
+      {"url": "https://ai.icai.org/usecases_details.php?id=152", "what": "Caso de uso del ICAI: aplicación de escritorio independiente para conciliar GSTR-2B; los datos del cliente quedan en el equipo, sin nube; guarda mapeo de columnas por cliente.", "date": null},
+      {"url": "https://www.caclubindia.com/forum/free-gstr-2b-books-invoice-wise-reconciliation-utility-612741.asp", "what": "CA Club India: utilidad Excel gratuita hecha por un estudiante de CA Final para números de factura ingresados en forma abreviada; el adjunto muestra 599 descargas.", "date": null},
+      {"url": "https://peerpush.com/p/gst-reconcile", "what": "GST Reconcile: herramienta web que automatiza conciliación GSTR-2B y 2A; ficha de junio de 2026; gratis mientras esté en beta.", "date": "2026-06"},
+      {"url": "https://taxone.vyapar.com/post/manual-vs-automated-gstr2b-reconciliation", "what": "Artículo de un vendedor: herramientas empresariales (ClearTax, IRIS GST, integraciones de Tally) cuestan ₹10,000-50,000 al año; cifra sin fuente.", "date": null}
+    ],
+    "paid_alternatives": [
+      {"name": "ClearTax / IRIS GST / Tally Prime (suscripción; rango ₹10,000-50,000/año solo por afirmación sin fuente)", "price_usd": null, "model": "annual", "url": "https://taxone.vyapar.com/post/manual-vs-automated-gstr2b-reconciliation"},
+      {"name": "GST Reconcile (gratis en beta; precio futuro desconocido)", "price_usd": 0, "model": "freemium", "url": "https://peerpush.com/p/gst-reconcile"}
+    ],
+    "search_signals": {"queries": ["GSTR-2B reconciliation tool price per year small CA firms Excel purchase register mismatch", "GSTR 2B books invoice wise reconciliation utility"], "volume_note": null},
+    "urgency_1to5": 3,
+    "urgency_basis": "Tarea mensual obligatoria para quien reclama crédito fiscal; la existencia de utilidades gratuitas y casos de uso del ICAI confirma la necesidad, pero no vi volumen.",
+    "buildability_1to5": 4,
+    "wtp_20_evidence": "Un vendedor afirma ₹10,000-50,000 al año (sin fuente) para herramientas empresariales; hay alternativas gratuitas. $20 único es plausible para CAs individuales, pero la evidencia de precio es débil.",
+    "risks": "Cambios de formato de GSTN; coincidencia difusa es compleja; competidores gratuitos y de pago; datos fiscales de clientes (ventaja si todo es local).",
+    "confidence": "low"
+  },
+  {
+    "id": "vn-ho-kinh-doanh-so-ke-toan",
+    "region": "ASIA",
+    "pain_point": "Desde 2026 todos los hộ kinh doanh de Vietnam deben llevar libros contables (Thông tư 152/2025) y no saben qué modelo S1a/S2a aplicar ni cómo llevarlos",
+    "segment": "Hộ kinh doanh y cá nhân kinh doanh en Vietnam (tiendas, comida, servicios)",
+    "micro_app_idea": "App offline que genera y mantiene los libros S1a/S2a/etc. por rubro de actividad, con exportación a Excel/PDF y guardado por 5 años",
+    "evidence": [
+      {"url": "https://thuvienphapluat.vn/phap-luat-nha-dat/mau-excel-mau-so-s2a-hkd-so-doanh-thu-ban-hang-danh-cho-ho-kinh-doanh-ca-nhan-kinh-doanh-theo-thong-13929.html", "what": "Thư Viện Pháp Luật: plantilla Excel 'Mẫu số S2a-HKD, Sổ doanh thu bán hàng' según la Thông tư 152 (la gente busca la plantilla).", "date": null},
+      {"url": "https://amis.misa.vn/63972/mau-so-sach-ke-toan-ho-kinh-doanh-excel/", "what": "MISA AMIS: 'Mẫu sổ sách kế toán hộ kinh doanh Excel theo thông tư 152/2025/TT-BTC'.", "date": null},
+      {"url": "https://einvoice.vn/tin-tuc/ho-tro-mien-phi-phan-mem-ke-toan", "what": "einvoice.vn: apoyo con software contable gratuito para hộ kinh doanh desde 15/01/2026 (Nghị định 20/2026); un resumen de agosto de 2026 indica que la implementación aún se está definiendo y que los umbrales de ingresos (500 millones vs 1.000 millones de VND) difieren entre fuentes.", "date": "2026-08"},
+      {"url": "https://baovanhoa.vn/kinh-te/chinh-phu-nang-nguong-mien-thue-misa-tiep-tuc-mien-phi-phan-mem-tron-doi-cho-ho-kinh-doanh-224911.html", "what": "Báo Văn Hóa: MISA mantiene software gratis de por vida para hộ con menos de 1.000 millones de VND/año.", "date": null}
+    ],
+    "paid_alternatives": [
+      {"name": "MISA eShop (gratis de por vida para hộ <1 mil millones VND; planes de pago 2.388.000-5.988.000 VND/año por tienda según cotización de 21/04/2025)", "price_usd": null, "model": "freemium", "url": "https://www.misaeshop.vn/wp-content/uploads/2025/06/ESHOP23-OL-BG-VI-1.0-Bao-gia-MISA-eShop_21042025.pdf"},
+      {"name": "Plantillas Excel gratuitas (MISA AMIS, Thư Viện Pháp Luật)", "price_usd": 0, "model": "freemium", "url": "https://amis.misa.vn/63972/mau-so-sach-ke-toan-ho-kinh-doanh-excel/"}
+    ],
+    "search_signals": {"queries": ["hộ kinh doanh sổ kế toán Thông tư 152/2025 khó khăn phần mềm lập sổ S2a miễn phí 2026", "Mẫu Excel Mẫu số S2a HKD"], "volume_note": null},
+    "urgency_1to5": 4,
+    "urgency_basis": "Obligación vigente desde 01/01/2026 para todos los hộ según los resúmenes, con plazo de conservación de 5 años; los umbrales no son consistentes entre fuentes.",
+    "buildability_1to5": 4,
+    "wtp_20_evidence": "Competencia gratuita fuerte: MISA gratis de por vida para hộ pequeños, software estatal gratuito en preparación y plantillas Excel gratis. $20 no es plausible para el segmento masivo; solo con precio regional o nicho.",
+    "risks": "Competencia gratuita estatal y privada; la normativa y los umbrales cambian; zona contable/fiscal regulada; ancla de precio muy baja en Vietnam.",
+    "confidence": "med"
+  },
+  {
+    "id": "tw-laobaodan-quote-calculator",
+    "region": "ASIA",
+    "pain_point": "Freelancers de Taiwán no tienen una herramienta específica para generar la 勞報單 y calcular la cotización desde el neto (retención de 10% más prima suplementaria de 2,11%)",
+    "segment": "Freelancers y clientes pequeños en Taiwán",
+    "micro_app_idea": "Calculadora y generador de PDF de 勞報單 y cotización que parte del monto neto deseado, con umbrales y categorías de ingreso editables",
+    "evidence": [
+      {"url": "https://www.etax.nat.gov.tw/etwmain/tax-info/understanding/tax-q-and-a/national/individual-income-tax/withheld-rule/rule/a7BB6R9", "what": "Administración tributaria de Taiwán (actualizado en 115/04 = abril 2026, según el resumen): honorarios de residentes se retienen al 10%, y se exime si el impuesto por pago no pasa de NT$2,000.", "date": "2026-04"},
+      {"url": "https://uptogo.com.tw/商業/報價單-要寫什麼？/", "what": "Uptogo (resumen): ejemplo de cálculo inverso, para recibir NT$35,000 netos el pagador gira unos NT$39,822 (impuesto 10% = 3,982 y prima 2,11% = 840).", "date": null},
+      {"url": "https://uptogo.com.tw/職場/勞報是什麼？/", "what": "Uptogo (resumen): la 勞報單 no tiene formato legal fijo; campos típicos son identidad, empresa, trabajo, categoría, bruto, retención y neto. La búsqueda no halló una herramienta gratuita taiwanesa confiable.", "date": null}
+    ],
+    "paid_alternatives": [
+      {"name": "Plantilla gratuita de recibo freelance en inglés (Template.net; sin campos de Taiwán)", "price_usd": 0, "model": "freemium", "url": "https://www.template.net/editable/49411/sample-freelance-receipt"},
+      {"name": "Plantilla de cotización en chino de monday.com (Excel descargable)", "price_usd": 0, "model": "freemium", "url": "https://monday.com/blog/zh_TW/crm-and-sales-zh/quotation_template_guide/"}
+    ],
+    "search_signals": {"queries": ["接案 勞報單 製作 報價單 收據 免費工具 自由工作者 二代健保 扣繳 2026 台灣"], "volume_note": null},
+    "urgency_1to5": 3,
+    "urgency_basis": "Documento recurrente para cada pago a freelancers, con reglas que confunden (umbrales discrepantes entre artículos); sin datos de volumen.",
+    "buildability_1to5": 5,
+    "wtp_20_evidence": "En Taiwán $20 es un ticket normal, pero las alternativas son plantillas gratuitas genéricas; no vi precios de competidores directos.",
+    "risks": "Cálculo tributario regulado (no es asesoría); fuentes discrepan en umbrales (20,010 vs 20,000; 88,501 vs 90,501); uso moderado; reglas cambian cada año.",
+    "confidence": "low"
+  },
+  {
+    "id": "jp-resale-profit-ledger",
+    "region": "ASIA",
+    "pain_point": "Vendedores de Mercari y reventa en Japón necesitan llevar costo, comisión y ganancia por artículo para saber si superan el umbral de ¥200,000 de renta secundaria",
+    "segment": "Revendedores y vendedores ocasionales de Mercari/Yahoo Auctions en Japón",
+    "micro_app_idea": "Libro de compras y ventas offline con cálculo de ganancia, resumen anual por categoría y exportación CSV para la declaración",
+    "evidence": [
+      {"url": "https://financial-field.com/tax/entry-365879", "what": "Financial Field: 'メルカリの売上が「20万円」を超えたら確定申告が必要?'; según el resumen, para trabajo secundario se mira la renta (ventas menos gastos) y el umbral es ¥200,000 al año.", "date": null},
+      {"url": "https://app-liv.jp/5351362/", "what": "App 'かんたん利益計算' calcula ganancia con precio de compra, venta, envío y comisión, pero no guarda registros ni nombres de productos.", "date": null},
+      {"url": "https://library.libecity.com/articles/01J09P09B4NK90XXHHY4356R4R", "what": "Artículo de Libecity (resumen; mapeo exacto de URL no verificado): herramienta de pago único de ¥3,600 con maestro de productos y enlace a hoja de ventas.", "date": null}
+    ],
+    "paid_alternatives": [
+      {"name": "Herramienta de pago único de Libecity (¥3,600 según resumen)", "price_usd": null, "model": "one-time", "url": "https://library.libecity.com/articles/01J09P09B4NK90XXHHY4356R4R"},
+      {"name": "Seller Book (gratis; gráficos de ventas, costo y utilidad)", "price_usd": 0, "model": "freemium", "url": "https://app-liv.jp/shopping/sell/1496/"},
+      {"name": "せどりすと (iOS gratis; lector de códigos y CSV)", "price_usd": 0, "model": "freemium", "url": "https://appmatch.jp/query-6147/"}
+    ],
+    "search_signals": {"queries": ["メルカリ 売上 利益 管理 確定申告 副業 せどり 仕入れ 台帳 アプリ 無料 有料 おすすめ"], "volume_note": null},
+    "urgency_1to5": 3,
+    "urgency_basis": "Umbral fiscal claro (¥200,000) y necesidad de registros, pero hay varias apps gratuitas; picos estacionales en enero-marzo.",
+    "buildability_1to5": 4,
+    "wtp_20_evidence": "Una herramienta de pago único de ¥3,600 (del orden de $20-25) ya existe según un artículo; apps gratuitas compiten. Plausible en Japón.",
+    "risks": "Tema fiscal y, para reventa con licencia, el 古物台帳 (registro obligatorio) es regulado; saturación de apps gratuitas; no verifiqué si Mercari permite exportar datos.",
+    "confidence": "low"
+  },
+  {
+    "id": "kr-freelancer-33-refund-expense",
+    "region": "ASIA",
+    "pain_point": "Freelancers de Corea no entienden cuánto del 3,3% retenido pueden recuperar y cómo registrar gastos (libro simplificado vs tasa de gastos)",
+    "segment": "Freelancers y trabajadores por proyecto en Corea del Sur",
+    "micro_app_idea": "App local que registra ingresos con retención de 3,3% y gastos, y estima la devolución según tasa simple, tasa estándar o libro simplificado",
+    "evidence": [
+      {"url": "https://www.infogoodman.com/2026/05/freelancer-3-3-tax-refund-2026.html", "what": "Artículo de mayo de 2026 sobre devolución del 3,3% a freelancers: período de declaración y consulta en Hometax.", "date": "2026-05"},
+      {"url": "https://help.3o3.co.kr/hc/ko/articles/57644397575833-%ED%94%84%EB%A6%AC%EB%9E%9C%EC%84%9C-%EC%A2%85%ED%95%A9%EC%86%8C%EB%93%9D%EC%84%B8-%EC%8B%A0%EA%B3%A0-%EB%B0%A9%EB%B2%95-ft-%ED%99%98%EA%B8%89%EA%B8%88-%EC%A1%B0%ED%9A%8C", "what": "Centro de ayuda de 3o3 (삼쩜삼): 'Cómo declarar el impuesto global de freelancers (con consulta de devolución)'; indica que la oferta de pago existe en servicios de declaración.", "date": null},
+      {"url": "https://demoday.co.kr/tools/freelancer-tax", "what": "Herramienta 'freelancer-tax' en Demoday: ya hay calculadoras web para este caso.", "date": null},
+      {"url": "https://thecheck.co.kr/tag/3-3%ed%99%98%ea%b8%89/", "what": "Blog: 'Buscar dinero oculto, consulta de devolución de 5 años [comisión 0 wones]': existen vías gratuitas de consulta.", "date": null}
+    ],
+    "paid_alternatives": [
+      {"name": "Hometax, programa de libro simplificado (gratis)", "price_usd": 0, "model": "freemium", "url": "https://www.infogoodman.com/2026/05/freelancer-3-3-tax-refund-2026.html"},
+      {"name": "삼쩜삼 (servicio de declaración; comisión no vista en las fuentes)", "price_usd": null, "model": "freemium", "url": "https://help.3o3.co.kr/hc/ko/articles/57644397575833-%ED%94%84%EB%A6%AC%EB%9E%9C%EC%84%9C-%EC%A2%85%ED%95%A9%EC%86%8C%EB%93%9D%EC%84%B8-%EC%8B%A0%EA%B3%A0-%EB%B0%A9%EB%B2%95-ft-%ED%99%98%EA%B8%89%EA%B8%88-%EC%A1%B0%ED%9A%8C"}
+    ],
+    "search_signals": {"queries": ["프리랜서 3.3% 종합소득세 환급 계산 어렵다 앱 경비 정리 간편장부 2026", "프리랜서 3.3% 환급 신청", "단순경비율 기준경비율 프리랜서"], "volume_note": null},
+    "urgency_1to5": 3,
+    "urgency_basis": "Pico claro cada mayo (plazo 31-may; una fuente dice 2-jun-2026), pero ahora en octubre solo quedan declaración tardía y reclamos hasta 5 años.",
+    "buildability_1to5": 4,
+    "wtp_20_evidence": "En Corea $20 es normal, pero Hometax, 삼쩜삼 y calculadoras web son gratuitas; la búsqueda indicó que casi todas las apps de gastos son estadounidenses. Poca evidencia de pago único.",
+    "risks": "Cálculo tributario regulado (no es asesoría); las fuentes discrepan en topes (¥24 millones vs 36 millones de wones para tasa simple); competencia gratuita; estacionalidad.",
+    "confidence": "med"
+  },
+  {
+    "id": "jp-invoice-number-bulk-check",
+    "region": "ASIA",
+    "pain_point": "Contabilidad de pymes japonesas debe verificar números de registro (T+13 dígitos) de proveedores, y el sitio oficial solo consulta uno por uno",
+    "segment": "Contables y pequeñas empresas en Japón sin software con verificación masiva",
+    "micro_app_idea": "App que lee una lista de proveedores, valida el formato T+13 dígitos y consulta el Web-API oficial de la NTA en lotes, marcando bajas o fechas fuera de vigencia",
+    "evidence": [
+      {"url": "https://www.invoice-kohyo.nta.go.jp/files/k-web-api-kinou.pdf", "what": "Documento de la NTA (resumen): el Web-API permite consultar varios números separados por comas y exige un ID de aplicación tramitado en el formulario del sitio; el sitio público solo busca por número de registro.", "date": null},
+      {"url": "https://biz.moneyforward.com/support/payable/faq/counterparties-faq/co12.html", "what": "FAQ de Money Forward Cloud Pagos: función de consulta de números de registro que rellena nombre, dirección y tipo de empresa desde el sitio de la NTA; la empresa avisa que no está garantizado por la NTA.", "date": null},
+      {"url": "https://business.ntt-east.co.jp/content/digital-work/column/invoice-qualified-issuers-registration-number/", "what": "Columna de NTT East sobre números de registro de emisores cualificados; la búsqueda no halló una herramienta independiente de pago único.", "date": null}
+    ],
+    "paid_alternatives": [
+      {"name": "Money Forward Cloud Pagos (suscripción; precio no visto)", "price_usd": null, "model": "monthly", "url": "https://biz.moneyforward.com/support/payable/faq/counterparties-faq/co12.html"},
+      {"name": "Sitio público de la NTA y descarga de todos los registros (gratis)", "price_usd": 0, "model": "freemium", "url": "https://www.invoice-kohyo.nta.go.jp/files/k-web-api-kinou.pdf"}
+    ],
+    "search_signals": {"queries": ["適格請求書発行事業者 登録番号 一括 確認 エクセル 取引先 チェック 公表サイト API 手間 経理"], "volume_note": null},
+    "urgency_1to5": 3,
+    "urgency_basis": "Obligación de verificar proveedores para créditos de IVA, pero hay descarga masiva y API gratis más funciones en software contable; sin volumen.",
+    "buildability_1to5": 4,
+    "wtp_20_evidence": "Sin precio de competidores directos; las alternativas oficiales son gratuitas, así que $20 es débil salvo para contables sin sistema integrado.",
+    "risks": "Dependencia del ID de aplicación y límites del API (no verificados); competencia gratuita; funciones ya incluidas en software contable; tema fiscal.",
+    "confidence": "low"
+  },
+  {
+    "id": "jp-nengajo-address-printing",
+    "region": "ASIA",
+    "pain_point": "Gestionar libreta de direcciones e imprimir tarjetas de Año Nuevo (年賀状) cada otoño, con la tendencia de 年賀状じまい",
+    "segment": "Particulares y pequeños negocios en Japón que envían 年賀状",
+    "micro_app_idea": "App local de libreta de direcciones con furigana y títulos de cortesía que imprime direcciones en tarjetas postales japonesas y marca contactos para dejar de enviar",
+    "evidence": [
+      {"url": "https://www.ksdenki.com/shop/g/g4550483688005/", "what": "Ke's Denki (resumen): 筆まめVer.37 sale el 2026-09-02 a ¥6,490 (con diseños del año de la oveja 2027); 筆ぐるめ 33 a ¥4,950; かんたん住所録Pro8 a ¥2,650.", "date": "2026-09"},
+      {"url": "https://www.appbank.net/app-rank/useful/nengajo-addressbook", "what": "AppBank: ranking donde la app oficial de Japan Post es la 1; hay apps gratuitas con impresión de direcciones (el ranking declara enlaces de afiliado).", "date": null},
+      {"url": "https://app-liv.jp/sns/greetingcards/2465/", "what": "App-Liv (resumen): app que ofrece impresión de direcciones y tarifa base gratis; las direcciones se reutilizan al año siguiente.", "date": null}
+    ],
+    "paid_alternatives": [
+      {"name": "筆まめ Ver.37 (¥6,490; paquete, licencia no confirmada en la fuente)", "price_usd": null, "model": "one-time", "url": "https://www.ksdenki.com/shop/g/g4550483688005/"},
+      {"name": "かんたん住所録Pro8 (¥2,650; paquete, licencia no confirmada)", "price_usd": null, "model": "one-time", "url": "https://www.ksdenki.com/shop/g/g4550483688005/"},
+      {"name": "App oficial de Japan Post y apps gratuitas", "price_usd": 0, "model": "freemium", "url": "https://www.appbank.net/app-rank/useful/nengajo-addressbook"}
+    ],
+    "search_signals": {"queries": ["年賀状 2026年 宛名 住所録 管理 ソフト 買い切り 年賀状じまい 面倒 スマホ アプリ 価格"], "volume_note": null},
+    "urgency_1to5": 3,
+    "urgency_basis": "Pico estacional ahora (noviembre-diciembre), pero hay alternativas gratuitas y la tendencia a dejar de enviar reduce el mercado.",
+    "buildability_1to5": 3,
+    "wtp_20_evidence": "Software de PC de ¥2,650-6,490 se vende en Japón (del orden de $20 el extremo bajo), pero las apps móviles gratuitas dominan.",
+    "risks": "Estacionalidad corta; calibración de impresión de postales; saturación y apps oficiales gratis; mercado en declive; los precios son de un minorista de 2026.",
+    "confidence": "med"
+  },
+  {
+    "id": "in-exam-photo-signature-resizer",
+    "region": "ASIA",
+    "pain_point": "Postulantes a exámenes gubernamentales en India ven rechazadas sus fotos y firmas por tamaño en píxeles y KB (p. ej. 200x230 px bajo 50 KB, firma 10-20 KB)",
+    "segment": "Estudiantes y postulantes a exámenes y empleos públicos en India (SSC, IBPS, UPSC, ferrocarriles)",
+    "micro_app_idea": "App con presets por examen que recorta la firma, redimensiona y comprime foto y firma a las dimensiones y KB exactas y verifica ambos límites",
+    "evidence": [
+      {"url": "https://www.sahildubey.com/2026/08/exam-photo-signature-resizer.html", "what": "Herramienta 'Exam Photo & Signature Resizer: Resize Image to 20KB, 50KB, 100KB' publicada en agosto de 2026.", "date": "2026-08"},
+      {"url": "https://odishajobsdesk.in/?p=17887", "what": "Guía 'Photo & Signature Upload Rules in Govt Forms (Size, Format, Errors Explained)': recortar no basta; una foto de 200x230 px puede rechazarse por pesar 300 KB.", "date": null},
+      {"url": "https://truejobs.co.in/blog/government-exam-photo-signature-upload-2026", "what": "Guía de 2026 sobre subida de foto y firma en exámenes gubernamentales.", "date": "2026"},
+      {"url": "https://indianpaycalculator.in/sarkari-result/tools/photo-signature-resizer", "what": "Otra herramienta web de redimensionado para formularios Sarkari: hay muchas copias gratuitas.", "date": null}
+    ],
+    "paid_alternatives": [
+      {"name": "Redimensionadores web gratuitos (Sahil Dubey, IndianPayCalculator, PassportPhotoSnap)", "price_usd": 0, "model": "freemium", "url": "https://www.passportphotosnap.com/tools/signature-resize-20kb"}
+    ],
+    "search_signals": {"queries": ["resize photo signature 20kb 50kb government exam form online application rejected size problem India", "photo signature resizer SSC IBPS"], "volume_note": null},
+    "urgency_1to5": 4,
+    "urgency_basis": "Rechazo de formulario con plazo cerrado y muchas guías y herramientas dedicadas; los límites varían entre examen y ciclo.",
+    "buildability_1to5": 5,
+    "wtp_20_evidence": "Gratis en todas las alternativas vistas; $20 no es plausible para estudiantes en India. Requeriría precio regional muy bajo o venta a cibercafés (hipótesis mía, sin fuente).",
+    "risks": "Disponibilidad gratuita total; los límites cambian por convocatoria; WTP mínimo; saturación SEO.",
+    "confidence": "med"
+  },
+  {
+    "id": "id-sscasn-document-prep",
+    "region": "ASIA",
+    "pain_point": "Postulantes a CPNS/SSCASN en Indonesia ven rechazados archivos por formato y tamaño (foto fondo rojo JPG de unos 200 KB, PDFs con límites por documento)",
+    "segment": "Postulantes a empleo público (CPNS, PPPK) en Indonesia",
+    "micro_app_idea": "App offline que recorta foto 3:4 con fondo rojo, comprime a KB objetivo y reduce PDFs por tipo de documento verificando los límites del portal",
+    "evidence": [
+      {"url": "https://suarapemerintah.id/?p=202602", "what": "Suara Pemerintah: 'Sulit Unggah File Dokumen Tes CPNS? Ini Solusinya'.", "date": null},
+      {"url": "https://kiakrikil.com/?p=23415", "what": "Blog: 'Pas Foto Sepele yang Bikin 10% Pelamar SSCASN TMS' (afirmación del título, no verificada).", "date": null},
+      {"url": "https://journalarta.com/news/2026/08/07/cara-pendaftaran-sscasn-2026-syarat-cpns-tips-lolos/", "what": "Guía de agosto de 2026 sobre el registro SSCASN 2026 y requisitos.", "date": "2026-08"},
+      {"url": "https://economy.okezone.com/read/2023/10/09/622/2897601/5-cara-mengatasi-unggah-berkas-gagal-di-sscasn-2023", "what": "Okezone (oct 2023): 5 formas de resolver fallos de subida en SSCASN; el resumen indica que los límites (foto 200 KB o 300 KB según la fuente) no coinciden entre guías.", "date": "2023-10"}
+    ],
+    "paid_alternatives": [
+      {"name": "ILoveIMG Compress JPG (gratis)", "price_usd": 0, "model": "freemium", "url": "https://kiakrikil.com/?p=23415"},
+      {"name": "Smallpdf y Pixlr (freemium; recomendados en guías)", "price_usd": null, "model": "freemium", "url": "https://tirto.id/syarat-dokumen-daftar-cpns-2021-dan-cara-perkecil-ukuran-pdf-ggpm"}
+    ],
+    "search_signals": {"queries": ["kompres PDF 200 KB pendaftaran CPNS SSCASN ukuran file ditolak foto 3x4 latar merah aplikasi", "kompres foto 200kb sscasn", "cara mengatasi gagal unggah berkas di sscasn"], "volume_note": null},
+    "urgency_1to5": 4,
+    "urgency_basis": "Plazo duro con rechazo automático por tamaño; ciclo anual con muchas guías, pero estacional.",
+    "buildability_1to5": 5,
+    "wtp_20_evidence": "Alternativas gratuitas abundantes; $20 no es plausible para postulantes en Indonesia (requiere precio regional o ser gratis con monetización distinta).",
+    "risks": "Límites inconsistentes entre fuentes y por convocatoria (no hay guía oficial 2026 confirmada); WTP mínimo; estacionalidad; saturación.",
+    "confidence": "med"
+  },
+  {
+    "id": "jp-shift-table-onetime",
+    "region": "ASIA",
+    "pain_point": "Tiendas pequeñas en Japón arman horarios (シフト表) en papel o Excel con errores, y las apps gratuitas limitan empleados o cobran suscripción",
+    "segment": "Dueños de locales pequeños y encargados de tiendas con empleados part-time en Japón",
+    "micro_app_idea": "App de horarios offline de pago único: tabla por persona, validación de dotación mínima y horas, exportación a PDF/imagen",
+    "evidence": [
+      {"url": "https://apps.apple.com/jp/app/%E3%82%B7%E3%83%95%E3%83%88%E8%A1%A8%E4%BD%9C%E6%88%90-%E5%8B%A4%E5%8B%99%E8%A1%A8%E4%BD%9C%E6%88%90%E3%81%8C%E7%B0%A1%E5%8D%98-%E3%81%AA%E3%81%9E%E3%82%8B%E3%81%A0%E3%81%91%E3%81%AE%E3%82%A4%E3%83%BC%E3%82%B8%E3%83%BC%E3%82%B7%E3%83%95%E3%83%88/id6746956589?l=ja", "what": "Ficha iOS de 'シフト表作成' (resumen): la versión gratis admite hasta 3 empleados; PRO (más empleados, PDF/imagen) se anuncia con renovación automática.", "date": null},
+      {"url": "https://apps.apple.com/om/app/shifty-%E3%82%B7%E3%83%95%E3%83%88%E8%A1%A8%E4%BD%9C%E6%88%90%E3%82%A2%E3%83%97%E3%83%AA/id6458593130", "what": "Shifty: app gratuita para crear y compartir horarios y recibir solicitudes del personal.", "date": null},
+      {"url": "https://hcm-jinjer.com/?p=92036", "what": "Artículo de jinjer (resumen): la gestión en papel o Excel genera errores y hay que respetar normas laborales; la búsqueda no halló apps de pago único.", "date": null}
+    ],
+    "paid_alternatives": [
+      {"name": "シフト表作成 PRO (suscripción de renovación automática; precio no visto)", "price_usd": null, "model": "monthly", "url": "https://apps.apple.com/jp/app/%E3%82%B7%E3%83%95%E3%83%88%E8%A1%A8%E4%BD%9C%E6%88%90-%E5%8B%A4%E5%8B%99%E8%A1%A8%E4%BD%9C%E6%88%90%E3%81%8C%E7%B0%A1%E5%8D%98-%E3%81%AA%E3%81%9E%E3%82%8B%E3%81%A0%E3%81%91%E3%81%AE%E3%82%A4%E3%83%BC%E3%82%B8%E3%83%BC%E3%82%B7%E3%83%95%E3%83%88/id6746956589?l=ja"},
+      {"name": "Shifty (gratis)", "price_usd": 0, "model": "freemium", "url": "https://apps.apple.com/om/app/shifty-%E3%82%B7%E3%83%95%E3%83%88%E8%A1%A8%E4%BD%9C%E6%88%90%E3%82%A2%E3%83%97%E3%83%AA/id6458593130"}
+    ],
+    "search_signals": {"queries": ["シフト表 作成 アプリ 小規模 個人店 アルバイト 手作業 エクセル 大変 無料 買い切り"], "volume_note": null},
+    "urgency_1to5": 2,
+    "urgency_basis": "Tarea semanal real, pero abundan opciones gratuitas con límites y no vi señales de búsqueda ni quejas concretas.",
+    "buildability_1to5": 4,
+    "wtp_20_evidence": "No hallé una app de pago único (hueco de mercado), pero tampoco señales de que se pague $20; el límite de 3 empleados gratis sugiere disposición a pagar al crecer.",
+    "risks": "Saturación; cumplimiento laboral (36協定); requiere compartir con el personal (más allá de lo autónomo); sin evidencia de precio.",
+    "confidence": "low"
+  },
+  {
+    "id": "ph-bir-8pct-calculator",
+    "region": "ASIA",
+    "pain_point": "Freelancers filipinos con la opción de 8% no entienden cómo aplicar la exención de ₱250,000 por trimestre en el 1701Q y cuándo vencen las presentaciones",
+    "segment": "Freelancers y profesionales independientes en Filipinas",
+    "micro_app_idea": "Calculadora offline por trimestre del 8% con la exención acumulada, recordatorios de vencimientos (15-may, 15-ago, 15-nov y 15-abr) y registro de ingresos",
+    "evidence": [
+      {"url": "https://www.respicio.ph/commentaries/bir-8-income-tax-rate-vs-percentage-tax-do-you-still-file-quarterly-philippines", "what": "Respicio (resumen): las guías discrepan sobre si el ₱250,000 se aplica acumulado o se concilia en la declaración anual; vencimientos a 45 días del trimestre y 1701A el 15 de abril.", "date": null},
+      {"url": "https://lawshun.com/article/how-to-compute-1701q-applying-train-law", "what": "Lawshun: 'how to compute 1701q applying train law' (guía de cálculo del 1701Q).", "date": null},
+      {"url": "https://finance-freelancer-tools.landing.symph.co/", "what": "Página 'Para sa Filipino freelancers' con un ejemplo de estimación de ₱10,196 sobre ₱127,450 al 8% sin deducir la exención, que no resuelve el método.", "date": null}
+    ],
+    "paid_alternatives": [
+      {"name": "Herramientas de Symph para freelancers filipinos (precio no visto)", "price_usd": null, "model": "freemium", "url": "https://finance-freelancer-tools.landing.symph.co/"}
+    ],
+    "search_signals": {"queries": ["BIR 8% income tax option freelancers Philippines how to compute quarterly 1701Q confusing"], "volume_note": null},
+    "urgency_1to5": 3,
+    "urgency_basis": "Vencimientos trimestrales con dudas de cálculo documentadas, pero sin volumen ni quejas de usuarios.",
+    "buildability_1to5": 4,
+    "wtp_20_evidence": "Sin precios de alternativas. $20 es alto para la mayoría de freelancers filipinos; requeriría precio regional salvo los que cobran en USD (hipótesis mía).",
+    "risks": "Cálculo tributario regulado y fuentes discrepantes (verificar con el BIR); el formulario oficial es gratuito; mercado pequeño.",
+    "confidence": "low"
+  },
+  {
+    "id": "th-fake-slip-check",
+    "region": "ASIA",
+    "pain_point": "Vendedores online en Tailandia reciben comprobantes de transferencia falsos (programas que generan slips con monto y hora a gusto)",
+    "segment": "Vendedores en redes y marketplaces de Tailandia",
+    "micro_app_idea": "App que escanea el QR del slip, compara monto, fecha y beneficiario con lo esperado y alerta de inconsistencias, vinculada a un registro de pedidos",
+    "evidence": [
+      {"url": "https://www.infoquest.co.th/?p=221031", "what": "InfoQuest: el Ministerio de Economía y Sociedad Digital advierte a vendedores online sobre slips falsos; se venden programas que permiten definir nombre, monto y fecha.", "date": null},
+      {"url": "https://www.krungsri.com/th/plearn-plearn/lifestyle/living/how-to-check-fake-slip", "what": "Krungsri: guía para revisar slips falsos; recomienda escanear el QR del e-slip y confirmar el ingreso en la app del banco.", "date": null},
+      {"url": "https://www.thaipbs.or.th/news/content/321536", "what": "Thai PBS: 'Alerta, se propagan los slips falsos, cómo detectarlos'.", "date": null}
+    ],
+    "paid_alternatives": [
+      {"name": "Servicios de verificación de slips (hay varios de pago según la búsqueda; sin precios)", "price_usd": null, "model": "monthly", "url": "https://www.bigseller.com/blog/articleDetails/สลิปปลอม-ต้องเช็คดูยังไง-ผู้ขายห้ามพลาด.737.htm?source=app"},
+      {"name": "Wongnai POS Pay (QR PromptPay con monto bloqueado; sistema POS)", "price_usd": null, "model": "monthly", "url": "https://www.wongnai.com/pos-articles/wongnai-pos-pay"}
+    ],
+    "search_signals": {"queries": ["เช็คสลิปโอนเงินปลอม แม่ค้าออนไลน์ ตรวจสลิป แอป ราคา พร้อมเพย์ QR กำหนดยอด ทำเอง"], "volume_note": null},
+    "urgency_1to5": 4,
+    "urgency_basis": "Múltiples alertas oficiales y de medios sobre fraude con slips y pérdida directa de dinero para vendedores.",
+    "buildability_1to5": 2,
+    "wtp_20_evidence": "No vi precios de verificadores; el valor evita pérdidas directas, pero la verificación fiable exige API bancaria de terceros, no una app autónoma.",
+    "risks": "Dominio de fraude y datos financieros; requiere acuerdos con bancos o API de pago por consulta; la verificación visual no es fiable; riesgo de falsos negativos.",
+    "confidence": "low"
+  },
+  {
+    "id": "my-myinvois-lite",
+    "region": "ASIA",
+    "pain_point": "Pymes de Malasia con ingresos de RM1-5 millones (Fase 4 desde 2026-01-01) deben emitir e-facturas MyInvois y no tienen una opción ligera",
+    "segment": "Pequeños negocios malasios con facturación entre RM1 y RM5 millones",
+    "micro_app_idea": "Generador ligero de e-facturas MyInvois con validación de TIN y descripciones, consolidación y envío por API o portal",
+    "evidence": [
+      {"url": "https://www.vatupdate.com/2026/04/23/malaysia-updates-e-invoicing-framework-specific-guide-v4-7-issued-and-phase-4-relaxation-extended-to-31-december-2027/", "what": "VAT Update (abril 2026, resumen): la Fase 4 (RM1-5 millones) arranca el 1-ene-2026 y el período sin multas se extendió hasta el 31-dic-2027.", "date": "2026-04"},
+      {"url": "https://www.businesstoday.com.my/2026/01/05/clarity-on-phase-4-e-invoice-extension-and-relief-for-building-material-sector/", "what": "Business Today (enero 2026): claridad sobre la extensión de la Fase 4 y alivios.", "date": "2026-01"},
+      {"url": "https://arnifi.com/blog/e-invoicing-phase-4-malaysia-2026-sme-rollout/", "what": "Blog de un proveedor: umbral de exención sube de RM500,000 a RM1 millón desde 2026-01-01; MyInvois portal gratis; sistemas certificados incluyen SQL Account, AutoCount, Bukku y FeedMe POS.", "date": null}
+    ],
+    "paid_alternatives": [
+      {"name": "Portal MyInvois (gratis)", "price_usd": 0, "model": "freemium", "url": "https://www.vatupdate.com/2026/04/23/malaysia-updates-e-invoicing-framework-specific-guide-v4-7-issued-and-phase-4-relaxation-extended-to-31-december-2027/"},
+      {"name": "SQL Account, AutoCount, Bukku, FeedMe POS (precios no vistos)", "price_usd": null, "model": "annual", "url": "https://arnifi.com/blog/e-invoicing-phase-4-malaysia-2026-sme-rollout/"}
+    ],
+    "search_signals": {"queries": ["MyInvois e-invoice small business SME Malaysia difficulty simple invoice software affordable 2026 phase turnover"], "volume_note": null},
+    "urgency_1to5": 2,
+    "urgency_basis": "El mandato rige desde enero de 2026 pero las multas se aplazan al 2028 (fuente de un proveedor) y el portal oficial es gratis.",
+    "buildability_1to5": 2,
+    "wtp_20_evidence": "No vi precios de software certificado. El portal gratuito reduce la disposición a pagar; en Malasia $20 es plausible en abstracto pero sin evidencia concreta.",
+    "risks": "Requiere integración API o middleware acreditado con LHDN (no es micro-app autónoma); regulación fiscal; fuentes de proveedores con interés comercial y fechas que discrepan.",
+    "confidence": "low"
+  },
+  {
+    "id": "in-ecom-label-crop",
+    "region": "ASIA",
+    "pain_point": "Vendedores de Meesho, Flipkart y Amazon recortan y combinan etiquetas de envío PDF a 4x6 o A6 para impresoras térmicas",
+    "segment": "Vendedores de marketplaces en India; posible extensión a Shopee y Lazada en SEA (sin evidencia)",
+    "micro_app_idea": "App local que recorta etiquetas de PDFs de marketplaces, las ordena por SKU y las combina para impresora térmica 100x150",
+    "evidence": [
+      {"url": "https://dolphinvoice.ai/ai-apps/q-crop-label-1051321", "what": "Q Crop Label: herramienta online gratuita para recortar varias etiquetas y unirlas en un PDF, hecha para vendedores de Meesho, Amazon FBA y Flipkart.", "date": null},
+      {"url": "https://aipure.ai/products/labelcrop-io", "what": "LabelCrop.io: recorta etiquetas de PDF a 4x6 o A6 para impresoras térmicas, con procesamiento en el navegador (según el listado de terceros).", "date": null},
+      {"url": "https://www.producthunt.com/@elabelcropper", "what": "eLabelCropper: herramienta de navegador gratuita para recorte masivo de PDFs a etiquetas térmicas 4x6; listada en Product Hunt en agosto de 2026.", "date": "2026-08"},
+      {"url": "https://www.bigseller.com/blog/articleDetails/label-pengiriman-paket.2879.htm", "what": "BigSeller (Indonesia): Shopee tiene modo de impresión térmica en Seller Centre con etiquetas 10x15 cm; ninguna fuente dice que los recortadores soporten PDFs de Shopee.", "date": null}
+    ],
+    "paid_alternatives": [
+      {"name": "Q Crop Label (gratis)", "price_usd": 0, "model": "freemium", "url": "https://dolphinvoice.ai/ai-apps/q-crop-label-1051321"},
+      {"name": "LabelCrop.io (precio no visto)", "price_usd": null, "model": "freemium", "url": "https://aipure.ai/products/labelcrop-io"},
+      {"name": "eLabelCropper (gratis)", "price_usd": 0, "model": "freemium", "url": "https://www.producthunt.com/@elabelcropper"}
+    ],
+    "search_signals": {"queries": ["crop resi Shopee otomatis thermal 100x150 aplikasi cetak resi banyak sekaligus"], "volume_note": null},
+    "urgency_1to5": 3,
+    "urgency_basis": "Tarea diaria de vendedores con volumen y varios entrantes gratuitos, incluido uno de agosto de 2026; sin cifras de uso.",
+    "buildability_1to5": 5,
+    "wtp_20_evidence": "Todas las alternativas vistas son gratuitas, así que $20 es poco plausible salvo funciones de picking por SKU (hipótesis mía). Referencia de costos: papel térmico SPX 100x150 de 250-500 hojas cuesta Rp71.000-243.000 en Tokopedia.",
+    "risks": "Competencia gratuita; formatos de etiqueta cambian por plataforma; privacidad de datos de compradores; Shopee ya tiene modo térmico propio.",
+    "confidence": "low"
+  },
+  {
+    "id": "th-freelancer-wht-annual-tax",
+    "region": "ASIA",
+    "pain_point": "Freelancers tailandeses reciben retención del 3% pero no saben si deberán pagar más o recibirán devolución al cierre del año",
+    "segment": "Freelancers y trabajadores independientes en Tailandia",
+    "micro_app_idea": "Estimador local de impuesto anual a partir de ingresos y retenciones acumuladas, con registro de certificados de retención y gastos",
+    "evidence": [
+      {"url": "https://www.ofm.co.th/blog/%E0%B8%A0%E0%B8%B2%E0%B8%A9%E0%B8%B5-freelance/", "what": "Blog OFM (resumen): la retención del 3% es un anticipo; al cierre el freelancer puede pagar más o recuperar; tramos progresivos con 0-150,000 baht exentos y 5% de 150,001 a 300,000.", "date": null},
+      {"url": "https://www.bangkokbiznews.com/lifestyle/864900", "what": "Bangkok Biz News: artículo sobre impuestos de freelancers (contenido exacto no verificado).", "date": null},
+      {"url": "https://apkcombo.com/th/instant-free-invoice/com.x2dpkstudios.instantinvoice/", "what": "App 'Instant Free Invoice' en tailandés: solución de facturas gratuita para freelancers; ya hay apps gratuitas.", "date": null}
+    ],
+    "paid_alternatives": [
+      {"name": "Instant Free Invoice (gratis)", "price_usd": 0, "model": "freemium", "url": "https://apkcombo.com/th/instant-free-invoice/com.x2dpkstudios.instantinvoice/"},
+      {"name": "Invoice Toro (precio no visto)", "price_usd": null, "model": "freemium", "url": "https://apkcombo.com/th/invoice-toro-invoice-maker/com.invoicetoro/"}
+    ],
+    "search_signals": {"queries": ["ฟรีแลนซ์ ภาษี ใบหักภาษี ณ ที่จ่าย 3% ทำเอกสารเอง โปรแกรม ใบเสนอราคา ใบเสร็จ ฟรี 2026"], "volume_note": null},
+    "urgency_1to5": 2,
+    "urgency_basis": "Existe explicación en blogs de que el 3% es anticipo, pero no vi quejas ni volumen específico.",
+    "buildability_1to5": 5,
+    "wtp_20_evidence": "No hay precios de calculadoras; las apps de facturas vistas son gratuitas. $20 sin evidencia de poder adquisitivo en las fuentes.",
+    "risks": "Cálculo tributario regulado; dudas de que exista dolor claro; competencia gratuita; parte de la evidencia es débil.",
+    "confidence": "low"
+  },
+  {
+    "id": "jp-pdf-tools-lifetime",
+    "region": "ASIA",
+    "pain_point": "Usuarios japoneses buscan combinar y comprimir PDFs sin suscripción y sin subir archivos sensibles a la web",
+    "segment": "Oficinistas, autónomos y estudiantes en Japón",
+    "micro_app_idea": "App de escritorio u offline para unir, dividir y comprimir PDFs con vista previa, en pago único",
+    "evidence": [
+      {"url": "https://apps.apple.com/jp/app/pdf-%E3%82%B3%E3%83%B3%E3%83%90%E3%82%A4%E3%83%8A%E3%83%BC-%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%81%AE%E3%83%9E%E3%83%BC%E3%82%B8/id1529734757", "what": "App Store JP: 'PDF コンバイナー' a ¥300 con compra única para los dispositivos Apple; conserva el índice al combinar; sin compresión mencionada.", "date": null},
+      {"url": "https://apps.apple.com/jp/app/pdf-%E7%B5%90%E5%90%88-pdf-%E6%9B%B8%E3%81%8D%E8%BE%BC%E3%81%BF%E3%81%A8pdf%E7%B7%A8%E9%9B%86/id1585688820", "what": "App Store JP: 'PDF 結合 - PDF 書き込みとPDF編集' con 'Life Time Premium' a ¥3,000 junto con planes semanales, mensuales y anuales.", "date": null},
+      {"url": "https://www.capterra.co.za/alternatives/1075783/Cisdem-PDF-Compressor", "what": "Capterra: Cisdem PDF Compressor listado a $19.99 para Apple y Windows; la licencia (pago único o suscripción) no se confirmó.", "date": null}
+    ],
+    "paid_alternatives": [
+      {"name": "PDF コンバイナー (¥300, compra única)", "price_usd": null, "model": "one-time", "url": "https://apps.apple.com/jp/app/pdf-%E3%82%B3%E3%83%B3%E3%83%90%E3%82%A4%E3%83%8A%E3%83%BC-%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%81%AE%E3%83%9E%E3%83%BC%E3%82%B8/id1529734757"},
+      {"name": "PDF 結合 Life Time Premium (¥3,000, de por vida)", "price_usd": null, "model": "one-time", "url": "https://apps.apple.com/jp/app/pdf-%E7%B5%90%E5%90%88-pdf-%E6%9B%B8%E3%81%8D%E8%BE%BC%E3%81%BF%E3%81%A8pdf%E7%B7%A8%E9%9B%86/id1585688820"},
+      {"name": "Cisdem PDF Compressor ($19.99; licencia no confirmada)", "price_usd": 19.99, "model": "one-time", "url": "https://www.capterra.co.za/alternatives/1075783/Cisdem-PDF-Compressor"}
+    ],
+    "search_signals": {"queries": ["PDF 結合 圧縮 無料 アプリ 有料 買い切り おすすめ 2026"], "volume_note": null},
+    "urgency_1to5": 2,
+    "urgency_basis": "Necesidad recurrente pero resuelta por muchas apps baratas o gratuitas; sin quejas concretas.",
+    "buildability_1to5": 5,
+    "wtp_20_evidence": "Ancla útil: un plan de por vida a ¥3,000 (del orden de $20) y un compresor a $19.99, pero también una app de pago único a ¥300. Precio máximo alcanzable bajo por saturación.",
+    "risks": "Muy saturado con opciones gratuitas y baratas; diferenciación difícil; resultados de búsqueda dominados por fichas de tienda.",
+    "confidence": "med"
+  },
+  {
+    "id": "jp-offline-transcription",
+    "region": "ASIA",
+    "pain_point": "Transcribir reuniones y entrevistas en japonés sin enviar audio a la nube y sin suscripción",
+    "segment": "Oficinistas, periodistas e investigadores en Japón",
+    "micro_app_idea": "App que transcribe audio en japonés localmente con modelos tipo Whisper, con etiquetas de hablante y exportación SRT/TXT",
+    "evidence": [
+      {"url": "https://apps.apple.com/jp/app/whisper-%E3%82%AA%E3%83%95%E3%83%A9%E3%82%A4%E3%83%B3%E9%9F%B3%E5%A3%B0%E6%96%87%E5%AD%97%E8%B5%B7%E3%81%93%E3%81%97-%E3%83%86%E3%82%AD%E3%82%B9%E3%83%88%E5%A4%89%E6%8F%9B/id6447090616", "what": "Whisper Notes en App Store JP: ¥800 sin suscripción, procesa en el dispositivo, etiquetas de hablante, optimizado para japonés (según el resumen).", "date": null},
+      {"url": "https://whispernotes.app/ja/blog", "what": "Blog de Whisper Notes: entradas de marzo de 2026 (distribución del Mac por DMG) y mayo de 2026 (grabar reuniones en Mac y transcribir con Parakeet V3); precio de compra única de $6.99 mencionado.", "date": "2026-05"}
+    ],
+    "paid_alternatives": [
+      {"name": "Whisper Notes (iPhone/iPad/Mac; ¥800)", "price_usd": null, "model": "one-time", "url": "https://apps.apple.com/jp/app/whisper-%E3%82%AA%E3%83%95%E3%83%A9%E3%82%A4%E3%83%B3%E9%9F%B3%E5%A3%B0%E6%96%87%E5%AD%97%E8%B5%B7%E3%81%93%E3%81%97-%E3%83%86%E3%82%AD%E3%82%B9%E3%83%88%E5%A4%89%E6%8F%9B/id6447090616"},
+      {"name": "Whisper Notes en Mac ($6.99, según el blog)", "price_usd": 6.99, "model": "one-time", "url": "https://whispernotes.app/ja/blog"}
+    ],
+    "search_signals": {"queries": ["文字起こし アプリ 買い切り オフライン Whisper 日本語 会議 録音 おすすめ 2026"], "volume_note": null},
+    "urgency_1to5": 3,
+    "urgency_basis": "Necesidad frecuente en reuniones, pero la búsqueda solo mostró un proveedor y sin reseñas independientes.",
+    "buildability_1to5": 3,
+    "wtp_20_evidence": "El competidor directo de pago único cuesta ¥800 y $6.99, muy por debajo de $20: no plausible a menos que ofrezca resúmenes o flujos de actas muy superiores.",
+    "risks": "Precio ancla muy bajo; modelos grandes de distribuir; la precisión en japonés es afirmación del vendedor; competencia de IA gratuita.",
+    "confidence": "med"
+  },
+  {
+    "id": "kr-household-ledger-onetime",
+    "region": "ASIA",
+    "pain_point": "Usuarios coreanos rechazan la suscripción mensual de apps de 가계부 (libro de gastos) y buscan pago único o entrada manual",
+    "segment": "Particulares en Corea del Sur",
+    "micro_app_idea": "Libro de gastos offline en pago único con categorías, presupuesto mensual, importación de CSV de tarjetas y sin conexión bancaria",
+    "evidence": [
+      {"url": "https://dnublog.co.kr/2026/03/27/%EA%B0%80%EA%B3%84%EB%B6%80-%EC%96%B4%ED%94%8C-%EC%B6%94%EC%B2%9C-top-6-%EB%B1%85%ED%81%AC%EC%83%90%EB%9F%AC%EB%93%9C-%ED%8E%B8%ED%95%9C%EA%B0%80%EA%B3%84%EB%B6%80/", "what": "Blog de marzo de 2026: Top 6 de apps de 가계부; 편한가계부 premium cuesta unos ₩2,900 al mes; las funciones básicas son gratis y las de conveniencia se cobran.", "date": "2026-03"},
+      {"url": "https://apps.apple.com/kr/app/%EC%98%88%EC%82%B0-%EC%A7%80%EC%B6%9C-%EA%B3%84%ED%9A%8DPro-%ED%95%98%EB%A3%A8%EC%97%90-%EC%96%BC%EB%A7%88-%EC%98%88%EC%82%B0%EA%B4%80%EB%A6%AC-%EA%B0%80%EA%B3%84%EB%B6%80/id826488967", "what": "App Store KR: '예산 지출 계획Pro' a ₩3,300 solo iPhone; la ficha no confirma si es compra única.", "date": null},
+      {"url": "https://mwm.ai/apps/budgetly-easy/6757957722", "what": "Budgetly Easy: compra única con acceso de por vida, exportación a CSV y gastos recurrentes; app en inglés, sin confirmar disponibilidad en Corea.", "date": null}
+    ],
+    "paid_alternatives": [
+      {"name": "편한가계부 premium (~₩2,900/mes según blog)", "price_usd": null, "model": "monthly", "url": "https://dnublog.co.kr/2026/03/27/%EA%B0%80%EA%B3%84%EB%B6%80-%EC%96%B4%ED%94%8C-%EC%B6%94%EC%B2%9C-top-6-%EB%B1%85%ED%81%AC%EC%83%90%EB%9F%AC%EB%93%9C-%ED%8E%B8%ED%95%9C%EA%B0%80%EA%B3%84%EB%B6%80/"},
+      {"name": "Fudget (presupuesto manual, $3.99 pago único según comparativa)", "price_usd": 3.99, "model": "one-time", "url": "https://www.techedubyte.com/best-budgeting-apps-2026/"},
+      {"name": "모두의 가계부 (gratis, CSV)", "price_usd": 0, "model": "freemium", "url": "https://apps.apple.com/us/app/%EB%AA%A8%EB%91%90%EC%9D%98-%EA%B0%80%EA%B3%84%EB%B6%80-%EB%93%9C%EB%9E%98%EA%B7%B8-%ED%95%9C%EB%B2%88%EC%9C%BC%EB%A1%9C-%EC%9E%85%EB%A0%A5%ED%95%98%EB%8A%94-%EC%86%8C%EB%B9%84%EC%8A%B5%EA%B4%80/id6752123281?l=ko"}
+    ],
+    "search_signals": {"queries": ["어플 추천 가계부 구독 싫다 영구 결제 앱 2026"], "volume_note": null},
+    "urgency_1to5": 2,
+    "urgency_basis": "Interés general en 가계부, pero hay muchas opciones gratuitas y no vi evidencia de queja fuerte sobre la suscripción.",
+    "buildability_1to5": 5,
+    "wtp_20_evidence": "Los competidores de pago único cuestan $3.99 o ₩3,300; $20 no es plausible. La mayoría de las apps tienen funciones básicas gratuitas.",
+    "risks": "Saturación extrema; sin conexión bancaria el valor es bajo; ancla de precio muy baja; blogs con afiliados.",
+    "confidence": "med"
+  },
+  {
+    "id": "in-kruti-dev-unicode",
+    "region": "ASIA",
+    "pain_point": "Oficinas públicas y mecanógrafos en India siguen con textos hindi en Kruti Dev (fuente heredada) que se ven como símbolos sin la fuente y deben convertirse a Unicode",
+    "segment": "Empleados públicos, mecanógrafos y centros de escritura en India",
+    "micro_app_idea": "Conversor offline Kruti Dev a Unicode y viceversa con manejo de matras y conjuntos de consonantes, para documentos completos",
+    "evidence": [
+      {"url": "https://blog.textstudio.com/krutidev-to-unicode-converter/", "what": "Blog sobre conversión de Kruti Dev a Unicode: la conversión es más compleja que reemplazar caracteres y conviene probar matras y conjuntos.", "date": null},
+      {"url": "https://www.goodfirms.co/software/rajtool-krutidev-converter", "what": "Rajtool Krutidev Converter listado en GoodFirms: existe software dedicado a este fin.", "date": null},
+      {"url": "https://en.wikipedia.org/wiki/Kruti_Dev", "what": "Wikipedia: Kruti Dev asigna glifos devanagari a posiciones ASCII, no usa codificación Unicode estándar.", "date": null}
+    ],
+    "paid_alternatives": [
+      {"name": "Rajtool Krutidev Converter (precio no visto)", "price_usd": null, "model": "one-time", "url": "https://www.goodfirms.co/software/rajtool-krutidev-converter"},
+      {"name": "Conversores web gratuitos (textstudio, rajbhasha.net)", "price_usd": 0, "model": "freemium", "url": "https://rajbhasha.net/unicode.html"}
+    ],
+    "search_signals": {"queries": ["Kruti Dev to Unicode converter Hindi typing government office offline software problem"], "volume_note": null},
+    "urgency_1to5": 2,
+    "urgency_basis": "Problema persistente de legado documentado, pero no hallé quejas de usuarios ni volumen; la mayoría de resultados son páginas SEO de proveedores.",
+    "buildability_1to5": 4,
+    "wtp_20_evidence": "Sin precios; abundan conversores web gratuitos. $20 no es plausible para el usuario típico y requeriría precio regional.",
+    "risks": "Competencia gratuita; mercado en declive por migración a Unicode; evidencia de baja calidad (blogs y listados).",
+    "confidence": "low"
+  },
+  {
+    "id": "kr-hwp-to-pdf-mobile",
+    "region": "ASIA",
+    "pain_point": "Abrir y convertir archivos HWP (Hangul) a PDF en Mac o iPhone sin instalar Hancom Office",
+    "segment": "Estudiantes, empleados y ciudadanos en Corea que reciben documentos HWP",
+    "micro_app_idea": "Visor y conversor HWP a PDF offline para Mac, iOS o Android con fidelidad de tablas",
+    "evidence": [
+      {"url": "https://extrememanual.net/54128", "what": "Guía 'Cómo convertir HWP a PDF en Mac, 3 métodos': visor oficial de Hancom, extensiones/visores web y conversores online.", "date": null},
+      {"url": "https://apps.apple.com/kr/app/id416746898", "what": "Visor oficial 'Hancom Office Hangul Viewer' en App Store KR: gratuito y de solo lectura según el resumen.", "date": null},
+      {"url": "https://extscope.org/extension/pgakpjflombjmehnebnbpnalhegaanag", "what": "Extensión de Chrome rhwp (visor/editor HWP de código abierto, Rust+WebAssembly): unos 100K usuarios y 4,9 de calificación según el directorio.", "date": null}
+    ],
+    "paid_alternatives": [
+      {"name": "Hancom Office Hangul Viewer (gratis, solo ver)", "price_usd": 0, "model": "freemium", "url": "https://apps.apple.com/kr/app/id416746898"},
+      {"name": "rhwp (open source, gratis)", "price_usd": 0, "model": "freemium", "url": "https://extscope.org/extension/pgakpjflombjmehnebnbpnalhegaanag"},
+      {"name": "한뷰 (visor HWP basado en rhwp para iOS; precio no visto)", "price_usd": null, "model": "freemium", "url": "https://mwm.ai/apps/app/6762695243"}
+    ],
+    "search_signals": {"queries": ["HWP 파일 맥 열기 PDF 변환 불편 한글 뷰어 앱 추천 2026"], "volume_note": null},
+    "urgency_1to5": 3,
+    "urgency_basis": "Hay muchas guías sobre el tema, pero el visor oficial gratis y el open source cubren la mayor parte de la necesidad.",
+    "buildability_1to5": 2,
+    "wtp_20_evidence": "Alternativas gratuitas y oficiales; $20 no es plausible. El formato HWP es complejo y ya existe una extensión con 100K usuarios.",
+    "risks": "Competencia gratuita y open source; complejidad del formato HWP; privacidad al usar conversores web; guías de proveedores con interés comercial.",
+    "confidence": "med"
+  },
+  {
+    "id": "cn-fapiao-reimbursement-tiling",
+    "region": "ASIA",
+    "pain_point": "Empleados y finanzas en China juntan facturas electrónicas (发票) en A4 para reembolso y suman importes a mano",
+    "segment": "Oficinistas y departamentos de finanzas en China continental",
+    "micro_app_idea": "App local que une PDFs de facturas electrónicas en A4 de dos por página, extrae importes y exporta a Excel",
+    "evidence": [
+      {"url": "https://extscope.org/extension/glpdafnlmilfppahjifhhkgfciedmdfc", "what": "Extensión de Chrome '发票拼版打印 · 本地工具': compone varias facturas en A4 para pegar en el formulario de reembolso, todo en el navegador; la ficha muestra 0 usuarios y 0 calificaciones.", "date": null},
+      {"url": "https://www.skill-gallery.jp/skills/EnjoyWT/pdf-merge", "what": "Habilidad 'pdf-merge' (fechada 2026-01-13): une facturas electrónicas en un PDF A4 de dos por página y extrae importes de forma opcional; requiere línea de comandos.", "date": "2026-01"}
+    ],
+    "paid_alternatives": [
+      {"name": "Extensión 发票拼版打印 (precio no mostrado)", "price_usd": null, "model": "freemium", "url": "https://extscope.org/extension/glpdafnlmilfppahjifhhkgfciedmdfc"}
+    ],
+    "search_signals": {"queries": ["发票 报销 PDF 拼版 打印 提取金额 导出 Excel 工具 财务 烦 免费 付费 2026"], "volume_note": null},
+    "urgency_1to5": 2,
+    "urgency_basis": "Solo vi dos herramientas nicho recientes, una con cero usuarios; no hay datos de volumen y las fuentes chinas accesibles fueron pocas.",
+    "buildability_1to5": 4,
+    "wtp_20_evidence": "Sin precios visibles; la herramienta existente es gratuita o experimental. No hay base para afirmar que $20 es plausible.",
+    "risks": "Evidencia muy débil; en China hay muchas utilidades gratuitas locales no cubiertas; datos de factura sensibles; plataformas de mensajería y oficina integran funciones.",
+    "confidence": "low"
+  },
+  {
+    "id": "sg-invoicenow-small-gst",
+    "region": "ASIA",
+    "pain_point": "Negocios de Singapur con GST deben adoptar InvoiceNow (transmisión a IRAS) con calendario escalonado desde 2026",
+    "segment": "Pymes registradas en GST en Singapur",
+    "micro_app_idea": "Conector ligero que prepara facturas en formato Peppol BIS y las envía vía un Punto de Acceso acreditado",
+    "evidence": [
+      {"url": "https://beancount.io/blog/2026/07/27/singapore-gst-invoicenow-mandate-voluntary-registrants-guide", "what": "Guía de julio de 2026 (resumen): quienes se registren voluntariamente para GST desde el 1-abr-2026 deben adoptar InvoiceNow; los existentes con ventas de hasta S$200,000 desde el 1-abr-2028.", "date": "2026-07"},
+      {"url": "https://www.vatupdate.com/2026/07/09/gst-invoicenow-transition-grants-open-from-1-july-2026/", "what": "VAT Update (julio 2026): las subvenciones de transición abren el 1-jul-2026 (S$1,000 para ventas hasta S$4 millones, con suscripción de 12 meses a un proveedor acreditado).", "date": "2026-07"},
+      {"url": "https://www.iras.gov.sg/who-we-are/what-we-do/annual-reports-and-publications/taxbytes-iras/gst/government-support-to-help-businesses-transition-to-the-gst-invoicenow-requirement", "what": "IRAS: apoyo del gobierno para la transición; según el resumen hay paquetes gratuitos para pymes hasta marzo de 2031.", "date": null}
+    ],
+    "paid_alternatives": [
+      {"name": "Soluciones acreditadas InvoiceNow (precios no publicados; paquetes gratuitos para pymes hasta marzo 2031 según IRAS)", "price_usd": null, "model": "annual", "url": "https://www.iras.gov.sg/who-we-are/what-we-do/annual-reports-and-publications/taxbytes-iras/gst/government-support-to-help-businesses-transition-to-the-gst-invoicenow-requirement"}
+    ],
+    "search_signals": {"queries": ["Singapore InvoiceNow GST registered businesses requirement 2026 small business solution cost freelancers invoice"], "volume_note": null},
+    "urgency_1to5": 2,
+    "urgency_basis": "Mandato legal con fechas, pero escalonado hasta 2031; para los existentes de menor tamaño empieza en 2028.",
+    "buildability_1to5": 1,
+    "wtp_20_evidence": "Hay paquetes gratuitos y subvenciones; $20 es un ticket normal en Singapur, pero la conectividad exige un Punto de Acceso acreditado, por lo que no es una micro-app autónoma.",
+    "risks": "Requiere acreditación de IMDA; paquetes gratuitos y subvenciones reducen WTP; cumplimiento fiscal; no es micro-app.",
+    "confidence": "low"
+  }
+]

@@ -51,6 +51,20 @@ class ScoreTests(unittest.TestCase):
         lo = score.score_candidate(candidate(confidence="low"))["score"]
         self.assertLess(lo, hi)
 
+    def test_free_alternatives_lower_score(self):
+        free = [{"name": f"F{i}", "price_usd": 0, "model": "freemium"} for i in range(3)]
+        base = candidate()
+        crowded = candidate(paid_alternatives=base["paid_alternatives"] + free)
+        self.assertEqual(score.score_candidate(crowded)["free_alts"], 3)
+        self.assertLess(score.score_candidate(crowded)["score"], score.score_candidate(base)["score"])
+
+    def test_free_alternatives_penalty_is_capped(self):
+        many = [{"name": f"F{i}", "price_usd": 0, "model": "freemium"} for i in range(10)]
+        three = many[:3]
+        a = score.score_candidate(candidate(paid_alternatives=three))["score"]
+        b = score.score_candidate(candidate(paid_alternatives=many))["score"]
+        self.assertEqual(a, b)
+
     def test_missing_fields_do_not_crash_and_are_flagged(self):
         r = score.score_candidate({"id": "vacio"})
         self.assertGreaterEqual(r["score"], 0)

@@ -1,0 +1,1786 @@
+[
+  {
+    "id": "ar-freelancer-factura-e-cobro-exterior",
+    "region": "LATAM",
+    "pain_point": "Freelancers argentinos que cobran del exterior no tienen claro qué factura emitir (C o E), si lo cobrado suma al tope del monotributo ni qué ruta de cobro (Payoneer, Wise, Deel, cripto) les deja más neto.",
+    "segment": "Freelancers y monotributistas en Argentina que exportan servicios (software, diseño, traducción) y cobran en USD.",
+    "micro_app_idea": "Asistente que calcula el neto por ruta de cobro, simula el impacto en la categoría del monotributo y arma la ficha de datos para emitir la Factura E en ARCA.",
+    "evidence": [
+      {
+        "url": "https://www.iproup.com/empleo/71195-cuantos-freelancers-argentinos-cobran-en-usdc-y-usdt.amp",
+        "what": "[titulo en resultado de busqueda; pagina no abierta] 'El 93% de los freelancers argentinos cobra en dolares y las stablecoins desplazan al peso'.",
+        "date": null
+      },
+      {
+        "url": "https://yo-facturo.com/blog/como-facturar-al-exterior-monotributo/",
+        "what": "[snippet] Segun el resumen de busqueda esta guia indica Factura C para el monotributista y que lo facturado al exterior cuenta dentro del tope; otras guias de los mismos resultados indican Factura E.",
+        "date": null
+      },
+      {
+        "url": "https://contablix.ar/blog/factura-e-exportacion-servicios-2026",
+        "what": "[snippet] Sostiene lo contrario: el cobro del exterior no suma al limite del monotributo si es exportacion genuina; cita plazo de 30 dias corridos para liquidar divisas, mientras otra fuente cita 20 dias habiles. Las fuentes se contradicen.",
+        "date": null
+      },
+      {
+        "url": "https://contadoresenred.com/exportadores-de-servicios-sin-limite-el-bcra-libera-montos-y-elimina-comisiones-para-personas-humanas/",
+        "what": "[titulo] 'Exportadores de Servicios sin Limite: El BCRA libera montos y elimina comisiones para personas humanas'; el resumen de busqueda menciona que la Com. A 8330 elimino el tope anual de USD 36.000 de la Com. A 8153/2024 (cambio regulatorio reciente).",
+        "date": null
+      }
+    ],
+    "paid_alternatives": [
+      {
+        "name": "Payoneer (segun resumen: 1% por recibir monedas distintas a la local; hasta 3,99% si el cliente paga con tarjeta)",
+        "price_usd": null,
+        "model": "freemium",
+        "url": "https://www.payoneer.com/es/about/fees/"
+      },
+      {
+        "name": "Deel (segun calculadora de hacecuentas: $0 para el freelancer si el cliente ya usa Deel)",
+        "price_usd": 0,
+        "model": "freemium",
+        "url": "https://hacecuentas.com/comparar/deel-vs-payoneer-vs-wise-cobrar-usd"
+      },
+      {
+        "name": "Calculadoras gratuitas para freelancers (hacecuentas)",
+        "price_usd": 0,
+        "model": "freemium",
+        "url": "https://hacecuentas.com/top/freelancers-2026"
+      }
+    ],
+    "search_signals": {
+      "queries": [
+        "como facturar al exterior siendo monotributista",
+        "factura E exportacion de servicios monotributo",
+        "como cobrar del exterior siendo freelancer",
+        "Payoneer Argentina como cobrar y retirar dolares"
+      ],
+      "volume_note": null
+    },
+    "urgency_1to5": 4,
+    "urgency_basis": "Obligacion fiscal y cambiaria recurrente en cada cobro; reglas BCRA/ARCA cambiaron en 2024-2026 y las guias se contradicen, lo que genera dudas constantes.",
+    "buildability_1to5": 3,
+    "wtp_20_evidence": "El segmento ya cobra en dolares (titular: 93% de freelancers argentinos), asi que no depende del peso ni de tarjeta local; sin embargo existen calculadoras comparativas gratuitas (hacecuentas) y no vi precios de herramientas equivalentes de pago unico. $20 plausible pero con competencia gratuita.",
+    "risks": "Zona fiscal/cambiaria regulada (marcar 'no es asesoria'); reglas contradictorias entre fuentes y cambiantes; calculadoras gratuitas ya existen; no genera la factura (eso se hace en ARCA).",
+    "confidence": "med"
+  },
+  {
+    "id": "br-freelancer-dolar-nfse-carneleao",
+    "region": "LATAM",
+    "pain_point": "Freelancers en Brasil que cobran en dolares no tienen claro que nota fiscal emitir (NFS-e de exportacion), a que cotizacion convertir, si hay ISS y como lanzarlo en MEI, Simples o Carne-Leao.",
+    "segment": "Freelancers brasilenos (MEI, PJ en Simples o persona fisica) con clientes en el exterior; portugues.",
+    "micro_app_idea": "Guia interactiva y calculadora que segun el regimen (MEI, Simples, PF) indica que documento emitir, convierte USD a BRL con la fecha/cotizacion elegida y arma el resumen mensual para Relatorio Mensal, PGDAS-D o Carne-Leao.",
+    "evidence": [
+      {
+        "url": "https://www.nomadglobal.com/conteudos/emitir-nota-fiscal-de-servico-para-o-exterior",
+        "what": "[snippet] Guia sobre emitir nota fiscal de servico para o exterior; el resumen de busqueda reporta que la invoice no sustituye la nota fiscal, que la nota sale en reais y que el procedimiento varia por municipio.",
+        "date": null
+      },
+      {
+        "url": "https://www.contabeis.com.br/forum/topicos/204778/a-pergunta-que-ninguem-responde-paypal-e-emissao-de-notas-f/",
+        "what": "[titulo de hilo de foro] 'A pergunta que ninguem responde: PayPal e emissao de notas f...' (senal de duda sin respuesta clara).",
+        "date": null
+      },
+      {
+        "url": "https://www.infomoney.com.br/?p=2471849",
+        "what": "[titulo] '\"Sou freelancer no Brasil e recebo em dolar\": como declarar meu salario no IR?'.",
+        "date": null
+      },
+      {
+        "url": "https://www.contabilidadezen.com.br/blog/nota-fiscal-exportacao-servicos-2026/",
+        "what": "[snippet] El resumen de busqueda indica divergencias entre fuentes: si el ISS queda exento en exportacion (un contador dice que si en Anexo III; otra fuente dice que la regla federal no cubre el ISS municipal) y que cotizacion usar (PTAX vs fecha de recebimento).",
+        "date": null
+      }
+    ],
+    "paid_alternatives": [
+      {
+        "name": "Carne-Leao Web (Receita Federal, gratuito)",
+        "price_usd": 0,
+        "model": "freemium",
+        "url": "https://tecnoblog.net/noticias/carne-leao-web-receita-federal-imposto-renda/"
+      },
+      {
+        "name": "Calculadoras y resumen fiscal gratuitos de FreelaSemCrise",
+        "price_usd": 0,
+        "model": "freemium",
+        "url": "https://www.freelasemcrise.com.br/guias/nota-fiscal-exterior"
+      }
+    ],
+    "search_signals": {
+      "queries": [
+        "como emitir nota fiscal para o exterior",
+        "recebo em dolar como declarar imposto de renda freelancer",
+        "nota fiscal exportacao de servicos MEI",
+        "carne-leao rendimentos do exterior"
+      ],
+      "volume_note": null
+    },
+    "urgency_1to5": 4,
+    "urgency_basis": "Obligacion en cada cobro/mes; las fuentes se contradicen en ISS y cotizacion, lo que apunta a incertidumbre real; el limite MEI de R$ 81.000 (citado en resultados) se agota rapido con ingresos en dolares.",
+    "buildability_1to5": 3,
+    "wtp_20_evidence": "Segmento con ingresos en USD. Para cobrar en Brasil el medio local clave seria Pix: segun Ebanx/PCMI (via infomoney) el Pix tuvo 42% de las compras online en 2025 frente a 41% del credito (https://www.infomoney.com.br/?p=3206581). No vi precios de herramientas de pago unico equivalentes; probable precio regional o menor.",
+    "risks": "Fiscal regulado y variable por municipio (ISS); fuentes contradictorias; calculos de cotizacion PTAX; competencia de contabilidades online y herramientas gratuitas; no emite la nota.",
+    "confidence": "med"
+  },
+  {
+    "id": "mx-freelancer-usd-cfdi-resico",
+    "region": "LATAM",
+    "pain_point": "Freelancers en Mexico que cobran a clientes del extranjero no saben como emitir el CFDI (RFC generico), si aplica IVA 0% o 16% ni como tratar el tipo de cambio dentro de RESICO.",
+    "segment": "Freelancers y profesionistas en Mexico (RESICO) con clientes en el extranjero.",
+    "micro_app_idea": "Asistente que arma los datos del CFDI para cliente extranjero (clave generica, uso, IVA 0% o 16% segun tipo de servicio) y calcula el pago mensual RESICO con ingresos en USD.",
+    "evidence": [
+      {
+        "url": "https://praxiumconsultores.com/blog/puedo-facturar-a-un-cliente-extranjero",
+        "what": "[snippet] Segun el resumen de busqueda: se emite CFDI con la clave generica XEXX010101000 y solo los servicios que la Ley del IVA lista como exportacion tributan a 0%; el resto 16%.",
+        "date": null
+      },
+      {
+        "url": "https://www.elcontribuyente.mx/2025/06/como-afecta-la-ganancia-cambiaria-al-resico-guia-para-declarar-sin-salir-del-regimen/",
+        "what": "[titulo] 'Como afecta la ganancia cambiaria al RESICO: guia para declarar sin salir del regimen'; una sola fuente advierte que tratarla como 'otros ingresos' podria sacar del regimen.",
+        "date": "2025-06"
+      },
+      {
+        "url": "https://dolarapp.com/en-CO/blog/freelancer-tips/como-facturar-CFDI",
+        "what": "[titulo] 'Everything a Freelancer Needs to Know About CFDI 4.0' (contenido de DolarApp/ARQ dirigido a freelancers que cobran en dolares).",
+        "date": null
+      },
+      {
+        "url": "https://yo-facturo.com/blog/como-facturar-como-freelance-en-mexico/",
+        "what": "[titulo] Guia 'Como facturar como freelance en Mexico' (existe contenido SEO dedicado, senal de busquedas).",
+        "date": null
+      }
+    ],
+    "paid_alternatives": [
+      {
+        "name": "Facturama (plan 2023: MXN 110 con 25 facturas al ano; MXN 1,650 al ano ilimitado, segun resumen de busqueda)",
+        "price_usd": null,
+        "model": "annual",
+        "url": "https://facturama.mx/blog/importante-nuevos-planes-en-facturama-para-2023/"
+      },
+      {
+        "name": "EdiFactMx version gratuita (CFDI 4.0, PAC autorizado segun su pagina)",
+        "price_usd": 0,
+        "model": "freemium",
+        "url": "https://www.edifact.com.mx/soluciongratuita"
+      }
+    ],
+    "search_signals": {
+      "queries": [
+        "como facturar a un cliente extranjero",
+        "puedo facturar a un cliente extranjero",
+        "como facturar como freelance en mexico",
+        "RESICO cobro en dolares tipo de cambio"
+      ],
+      "volume_note": null
+    },
+    "urgency_1to5": 4,
+    "urgency_basis": "Cada cobro internacional exige CFDI y declaracion mensual (dia 17); errores de facturacion pueden sacar del RESICO segun las guias.",
+    "buildability_1to5": 3,
+    "wtp_20_evidence": "Segmento cobra en USD, por lo que $20 es plausible. Los timbradores cobran en MXN al ano (MXN 1,650 ilimitado en Facturama, plan 2023) y hay opciones gratuitas (EdiFactMx, portal SAT), asi que el valor esta en la guia/calculo, no en el timbrado. Medio de pago local no visto en fuentes.",
+    "risks": "Fiscal regulado (lista limitativa de IVA 0%); fuentes contradictorias sobre declaracion anual RESICO 2026; la app no timbra (requiere PAC); herramientas gratuitas y contenido abundante.",
+    "confidence": "med"
+  },
+  {
+    "id": "br-cripto-darf-ganho-capital",
+    "region": "LATAM",
+    "pain_point": "Inversionistas cripto en Brasil no saben calcular la ganancia de capital mensual (exencion de R$ 35 mil en ventas), generar el DARF 4600 ni declararlo en el IRPF.",
+    "segment": "Personas fisicas brasilenas que compran y venden criptoactivos en exchanges locales y extranjeros; portugues.",
+    "micro_app_idea": "Calculadora que importa el historial de operaciones (CSV), aplica costo medio y la regla de R$ 35 mil mensuales, y genera el valor del DARF 4600 y el resumen para el IRPF.",
+    "evidence": [
+      {
+        "url": "https://hacecuentas.com/pt/darf-cripto-15-porcento-ganho-35k-mensal",
+        "what": "[snippet] Genera DARF 4600 con calculo en el navegador; la exencion de R$ 35 mil/mes aplica al valor vendido, no al lucro.",
+        "date": null
+      },
+      {
+        "url": "https://sum.money/br/cripto-ir/",
+        "what": "[snippet] Pide el ganho acumulado del ano para aplicar la aliquota progresiva (15% hasta R$ 5 millones; hasta 22,5% sobre R$ 30 millones, segun el resumen).",
+        "date": null
+      },
+      {
+        "url": "https://calculacentro.com/calculadora/imposto-cripto",
+        "what": "[snippet] Calculadora gratuita que estima el IR sobre lucros con Bitcoin y Ethereum y verifica la exencion.",
+        "date": null
+      },
+      {
+        "url": "https://www.idinheiro.com.br/investimentos/criptomoedas/imposto-sobre-criptomoedas/",
+        "what": "[titulo] 'Imposto sobre criptomoedas: como funciona e como declarar'. El resumen de busqueda reporta divergencias entre fuentes sobre exchanges extranjeras (sin exencion mensual, 15% anual) y sobre day trade.",
+        "date": null
+      }
+    ],
+    "paid_alternatives": [
+      {
+        "name": "Koinly (plan gratis solo para seguimiento; informes fiscales requieren plan anual; un listado de terceros muestra $49/$99/$179 por ano fiscal, moneda no confirmada)",
+        "price_usd": null,
+        "model": "annual",
+        "url": "https://partnerkin.com/pt/c/56/koinly"
+      },
+      {
+        "name": "KoinX (informe segun orientacion de la Receita; precio no visto; modelo no confirmado)",
+        "price_usd": null,
+        "model": "freemium",
+        "url": "https://koinx.com/br"
+      },
+      {
+        "name": "GCAP (programa oficial de la Receita Federal, gratuito)",
+        "price_usd": 0,
+        "model": "freemium",
+        "url": "https://rolmyjuncontabilidade.com.br/?p=7164"
+      }
+    ],
+    "search_signals": {
+      "queries": [
+        "calculadora imposto criptomoedas",
+        "DARF 4600 cripto como pagar",
+        "quanto pagar de imposto sobre bitcoin",
+        "imposto de renda criptomoedas 35 mil"
+      ],
+      "volume_note": null
+    },
+    "urgency_1to5": 3,
+    "urgency_basis": "DARF vence el ultimo dia habil del mes siguiente a la venta (segun resultados) y la declaracion anual es recurrente; urgencia estacional.",
+    "buildability_1to5": 4,
+    "wtp_20_evidence": "Koinly aparece con planes de $49 a $179 por ano fiscal en un listado de terceros (moneda no confirmada), por lo que $20 pago unico queda por debajo de la alternativa internacional; pero hay calculadoras gratuitas locales. El segmento suele tener cartera/exchange y acceso a Pix.",
+    "risks": "Zona fiscal regulada (IN RFB 1.888/2019 citada en resultados); reglas con divergencias entre fuentes; requiere importar historial de multiples exchanges; competencia de Koinly/KoinX y calculadoras gratuitas.",
+    "confidence": "med"
+  },
+  {
+    "id": "mx-carta-porte-micro-transportistas",
+    "region": "LATAM",
+    "pain_point": "Pequenos transportistas en Mexico cometen errores al llenar el complemento Carta Porte (clave de producto, fechas, domicilios) y enfrentan multas y cambios de version del SAT.",
+    "segment": "Transportistas y duenos de pocas unidades en Mexico, y negocios que mueven mercancia propia.",
+    "micro_app_idea": "Validador y plantillas de rutas, vehiculos y operadores frecuentes que revisa los datos de la Carta Porte antes de timbrar y entrega un checklist de salida.",
+    "evidence": [
+      {
+        "url": "https://thelogisticsworld.com/actualidad-logistica/sat-lanza-nueva-version-del-complemento-carta-porte",
+        "what": "[titulo] 'SAT lanza nueva version del complemento Carta Porte' (fecha mostrada: 22 de julio de 2026).",
+        "date": "2026-07"
+      },
+      {
+        "url": "https://thelogisticsworld.com/actualidad-logistica/sat-posterga-multas-en-carta-porte",
+        "what": "[titulo] 'SAT posterga multas en Carta Porte' (fecha mostrada: 24 de junio de 2026).",
+        "date": "2026-06"
+      },
+      {
+        "url": "https://www.elcontribuyente.mx/2025/12/la-importancia-de-integrar-el-complemento-carta-porte-en-la-facturacion-de-las-empresas/",
+        "what": "[snippet] Segun el resumen: 'el reto no es timbrar, sino llegar con datos correctos al timbrado'; fallas tipicas: clave de producto erronea, campos mal llenados, fechas y horarios de salida incorrectos.",
+        "date": "2025-12"
+      },
+      {
+        "url": "https://www.elcontribuyente.mx/2022/09/el-sat-incumple-con-app-para-emision-de-carta-porte/",
+        "what": "[titulo] 'El SAT incumple con app para emision de carta porte' (tambien: 2021/12 'Incumple SAT con aplicacion de carta porte para micro transportistas').",
+        "date": "2022-09"
+      }
+    ],
+    "paid_alternatives": [
+      {
+        "name": "Factura SAT Movil 2.0 (gratuita, emite CFDI con complemento Carta Porte desde el celular)",
+        "price_usd": 0,
+        "model": "freemium",
+        "url": "https://expansion.mx/finanzas-personales/2024/01/19/app-sat-facturas-complemento-carta-porte"
+      },
+      {
+        "name": "SenHub (guarda vehiculos, operadores y rutas frecuentes como plantillas; precio no visto; modelo no confirmado)",
+        "price_usd": null,
+        "model": "freemium",
+        "url": "https://senhub.mx/blog/carta-porte-31-guia-completa"
+      }
+    ],
+    "search_signals": {
+      "queries": [
+        "como llenar complemento carta porte",
+        "errores comunes carta porte CFDI",
+        "carta porte multa por mal llenado",
+        "carta porte 3.1 transportistas pequenos"
+      ],
+      "volume_note": null
+    },
+    "urgency_1to5": 4,
+    "urgency_basis": "Cada traslado requiere el complemento; una nota de 2023 citada en resultados menciona multas de 880 a 17,030 pesos por no exhibirlo y hay nueva version en julio de 2026.",
+    "buildability_1to5": 3,
+    "wtp_20_evidence": "El costo de una multa (cifras citadas en MXN, de cientos a decenas de miles de pesos segun la nota) supera ampliamente $20; hay alternativas gratuitas (app del SAT) y de renta mensual, sin precio visible. Medio de pago local no visto.",
+    "risks": "Fiscal regulado; catalogos y version del complemento cambian (nueva version en 2026); no puede timbrar sin PAC; la app gratuita del SAT compite; cifras de multas contradictorias entre notas.",
+    "confidence": "med"
+  },
+  {
+    "id": "br-abnt-tcc-formatador",
+    "region": "LATAM",
+    "pain_point": "Estudiantes en Brasil entregan el TCC con errores de formato ABNT (margenes, espaciado, sumario, referencias) y los generadores de referencias no siempre siguen la nueva NBR 6023:2025.",
+    "segment": "Estudiantes universitarios y de posgrado en Brasil que preparan TCC, monografia o dissertacao; portugues.",
+    "micro_app_idea": "Verificador de archivos .docx que audita margenes, espaciados, titulos y sumario segun ABNT y senala errores a corregir, con modo por institucion.",
+    "evidence": [
+      {
+        "url": "https://doutoranathalia.com.br/blog/erros-mais-comuns-na-formatacao-abnt-e-como-evitar/",
+        "what": "[snippet] Segun el resumen: errores comunes como aplicar espaciado 1,5 a todo el documento, margenes distintas a 3 cm (superior/izquierda) y 2 cm (inferior/derecha), y sumario desactualizado tras cambios.",
+        "date": null
+      },
+      {
+        "url": "https://www.ufsm.br/app/uploads/sites/566/2026/05/6023_2025-Referencia.pdf",
+        "what": "[snippet] Copia del PDF 'ABNT NBR 6023:2025' (tercera edicion, mayo de 2025) alojada por la UFSM.",
+        "date": "2026-05"
+      },
+      {
+        "url": "https://www.grafiati.com/pt/news/2025/08/05/1/",
+        "what": "[titulo] 'New citation style: ABNT NBR 6023:2025'; el resumen indica que varios geradores aun siguen la version de 2018.",
+        "date": "2025-08"
+      },
+      {
+        "url": "https://tesify.pt/gerador-referencias-abnt-melhores-gratuitos-2026/",
+        "what": "[titulo] 'Gerador de Referencias ABNT: Os 6 Melhores Gratuitos de 2026 Comparados' (blog comercial: hay oferta de generadores gratuitos).",
+        "date": null
+      }
+    ],
+    "paid_alternatives": [
+      {
+        "name": "FastFormat (servicio/blog de formatacao ABNT; precio no visto; modelo no confirmado)",
+        "price_usd": null,
+        "model": "one-time",
+        "url": "https://blog.fastformat.co/category/normas-abnt/"
+      },
+      {
+        "name": "Grafiati (gerador ABNT NBR 6023:2025; precio no visto; modelo no confirmado)",
+        "price_usd": null,
+        "model": "freemium",
+        "url": "https://www.grafiati.com/pt/blogs/abnt-nbr-6023-2025-reference-generator/"
+      }
+    ],
+    "search_signals": {
+      "queries": [
+        "gerador de referencias ABNT",
+        "como formatar TCC ABNT no Google Docs",
+        "erros mais comuns formatacao ABNT",
+        "ABNT NBR 6023 2025 mudancas"
+      ],
+      "volume_note": null
+    },
+    "urgency_1to5": 3,
+    "urgency_basis": "Plazos de entrega del TCC y rechazo por la banca; la norma cambio en 2025, lo que genera dudas recientes.",
+    "buildability_1to5": 4,
+    "wtp_20_evidence": "No vi precios de servicios de formatacao ni de generadores de pago; estudiantes brasilenos probablemente requieren precio regional y pago por Pix. Existen alternativas gratuitas (Zotero, USP).",
+    "risks": "Los manuales institucionales (p. ej. USP, UNICAMP) prevalecen sobre ABNT generica; saturacion de generadores gratuitos; el docx es dificil de auditar con precision.",
+    "confidence": "low"
+  },
+  {
+    "id": "latam-reposteria-costeo-es",
+    "region": "LATAM",
+    "pain_point": "Reposteras y emprendedores de comida casera no saben cuanto cobrar: no calculan costo por porcion, empaque ni margen y venden por WhatsApp con precios al ojo.",
+    "segment": "Emprendedoras de repostería y comida en Mexico, Colombia, Chile y Peru que venden por WhatsApp/redes.",
+    "micro_app_idea": "Calculadora de ficha tecnica que obtiene costo por porcion, precio sugerido con margen e impuesto local y genera el mensaje de precio listo para WhatsApp.",
+    "evidence": [
+      {
+        "url": "https://hotmart.com/es/marketplace/productos/mini-calculadora-de-precios-para-reposteria-y-cocina/C102115064I",
+        "what": "[titulo] Producto de pago en Hotmart: 'Mini Calculadora de Precios para Reposteria y Cocina' (herramienta en linea, sin Excel).",
+        "date": null
+      },
+      {
+        "url": "https://hotmart.com/es/marketplace/productos/hagsxd-plantilla-costeo-de-recetas-en-excel-reposteria-w9i4p/M95624414H",
+        "what": "[titulo] 'Plantilla Costeo de Recetas en Excel- Reposteria' (producto de pago en Hotmart).",
+        "date": null
+      },
+      {
+        "url": "https://mhcassist.gumroad.com/l/calculadora-pro",
+        "what": "[snippet] Calculadora HTML de pago unico listada a $5 (moneda no explicitada) que genera fichas tecnicas en PDF y guarda datos en el navegador.",
+        "date": null
+      },
+      {
+        "url": "https://hotmart.com/es/marketplace/productos/cobra-lo-que-vale-tu-trabajo-planilla-de-precios-para-reposteria/V105688000L",
+        "what": "[snippet] Planilla en Google Sheets para reposteras que venden por WhatsApp: precio minimo automatico, generador de mensajes, dice funcionar en MX, CO, CL, PE; pago unico con garantia de 7 dias.",
+        "date": null
+      },
+      {
+        "url": "https://apps.apple.com/mx/app/id6770001554",
+        "what": "[snippet] App 'Recipe & Food Cost - BakeCost' en App Store Mexico (categoria Negocios, iOS 17+); otra app 'Recipe Cost Calculator App' muestra 183 o 400 calificaciones segun la fuente.",
+        "date": null
+      }
+    ],
+    "paid_alternatives": [
+      {
+        "name": "Calculadora HTML de pago unico (Gumroad, listada $5)",
+        "price_usd": 5,
+        "model": "one-time",
+        "url": "https://mhcassist.gumroad.com/l/calculadora-pro"
+      },
+      {
+        "name": "Plantillas/planillas de costeo en Hotmart (precios no vistos; modelo no confirmado)",
+        "price_usd": null,
+        "model": "one-time",
+        "url": "https://hotmart.com/es/marketplace/productos/hagsxd-plantilla-costeo-de-recetas-en-excel-reposteria-w9i4p/M95624414H"
+      },
+      {
+        "name": "Recipe Cost Calculator App (iOS; precio no visto; modelo no confirmado)",
+        "price_usd": null,
+        "model": "freemium",
+        "url": "https://apppricinglab.com/app/apple/6747908579"
+      }
+    ],
+    "search_signals": {
+      "queries": [
+        "como calcular el precio de venta de un pastel",
+        "calculadora costo por porcion receta",
+        "planilla costeo de recetas reposteria Excel",
+        "cuanto cobrar por un pastel casero"
+      ],
+      "volume_note": null
+    },
+    "urgency_1to5": 3,
+    "urgency_basis": "Dolor recurrente al fijar precios; la abundancia de productos de pago indica demanda, pero no vi evidencia de urgencia temporal.",
+    "buildability_1to5": 5,
+    "wtp_20_evidence": "Precio visto de $5 pago unico (Gumroad) y multiples plantillas de pago en Hotmart (precios no vistos): sugiere techo de precio por debajo de $20 en este nicho; probablemente requiere precio regional. Pago via Hotmart/Gumroad.",
+    "risks": "Saturacion alta (plantillas, apps, hojas de calculo); sustituible por Excel; una plantilla menciona IGV (Peru), hay que parametrizar el impuesto por pais; sin datos de volumen.",
+    "confidence": "med"
+  },
+  {
+    "id": "br-confeiteira-precificacao",
+    "region": "LATAM",
+    "pain_point": "Confeiteiras y microempreendedoras en Brasil no sabem calcular o preco de venda (ficha tecnica, embalagem, DAS do MEI, taxa de maquininha) e usam atalhos como multiplicar insumos por tres.",
+    "segment": "Confeiteiras, doceiras e MEIs de alimentos em Brasil; portugues.",
+    "micro_app_idea": "Calculadora de precificacao com ficha tecnica por receita, rateio do DAS do MEI y taxas, que sugiere preco por markup o margen y genera la lista de precios para WhatsApp.",
+    "evidence": [
+      {
+        "url": "https://hotmart.com/pt-br/marketplace/produtos/planilha-de-precificacao-precofacil-5-0/Y95658782A",
+        "what": "[titulo] 'Planilha de Precificacao PreçoFacil 5.0' (producto de pago en Hotmart; la busqueda arrojo ~10 planillas/apps de precificacao para confeitaria).",
+        "date": null
+      },
+      {
+        "url": "https://hotmart.com/pt-br/marketplace/produtos/precifica-facil-confeiteira/P104860205M",
+        "what": "[snippet] 'Precifica Facil Confeitaria': app para celular que ajusta precos para delivery, balcao, encomendas y apps (afirmacion del vendedor).",
+        "date": null
+      },
+      {
+        "url": "https://www.freelasemcrise.com.br/calculadoras/markup-produtos/confeiteiro",
+        "what": "[snippet] Calculadora gratuita de markup para confeiteiro; segun el resumen sugiere margen de 30% como punto de partida y 40-60% para confeitaria artesanal; estima DAS MEI en R$ 82,05 (R$ 87,05 si combina fabricacao y venda), cifra que otro resultado contradice (~R$ 66).",
+        "date": null
+      },
+      {
+        "url": "https://hotmart.com/pt-br/marketplace/produtos/ficha-tecnica-para-confeiteiras/H49241433J",
+        "what": "[titulo] 'Ficha Tecnica para Confeiteiras' (producto de pago en Hotmart).",
+        "date": null
+      }
+    ],
+    "paid_alternatives": [
+      {
+        "name": "Planillas de precificacao en Hotmart (PrecoFacil 5.0 y otras; precios no vistos; modelo no confirmado)",
+        "price_usd": null,
+        "model": "one-time",
+        "url": "https://hotmart.com/pt-br/marketplace/produtos/planilha-de-precificacao-precofacil-5-0/Y95658782A"
+      },
+      {
+        "name": "Precifica Facil Confeitaria (app; precio no visto; modelo no confirmado)",
+        "price_usd": null,
+        "model": "freemium",
+        "url": "https://hotmart.com/pt-br/marketplace/produtos/precifica-facil-confeiteira/P104860205M"
+      },
+      {
+        "name": "Calculadora gratuita de FreelaSemCrise",
+        "price_usd": 0,
+        "model": "freemium",
+        "url": "https://www.freelasemcrise.com.br/calculadoras/markup-produtos"
+      }
+    ],
+    "search_signals": {
+      "queries": [
+        "como calcular preco de venda confeiteira",
+        "planilha de precificacao confeitaria",
+        "ficha tecnica confeitaria",
+        "quanto cobrar por um bolo caseiro MEI"
+      ],
+      "volume_note": null
+    },
+    "urgency_1to5": 3,
+    "urgency_basis": "Decision de precio constante en negocios caseros; no hay senal temporal, pero si muchos vendedores en Hotmart.",
+    "buildability_1to5": 5,
+    "wtp_20_evidence": "Hay multiples planillas/apps de pago en Hotmart (precios no vistos) y alternativas gratuitas, lo que indica mercado pagante pero precio probablemente regional. Medio de pago local clave: Pix (42% de las compras online en 2025 segun Ebanx/PCMI via https://www.infomoney.com.br/?p=3206581).",
+    "risks": "Saturacion fuerte (Hotmart, calculadoras gratuitas); el DAS del MEI varia entre fuentes y cambia cada ano; riesgo de comoditizacion por Excel.",
+    "confidence": "med"
+  },
+  {
+    "id": "br-motorista-app-lucro-real",
+    "region": "LATAM",
+    "pain_point": "Motoristas de aplicativo en Brasil se guian por el total bruto de la pantalla y no saben su lucro real por corrida, por km y por hora tras combustible, depreciacion y comisiones.",
+    "segment": "Motoristas de Uber, 99 e inDrive en Brasil; portugues.",
+    "micro_app_idea": "Calculadora offline que, con km, litros, precio, comision y horas, entrega lucro por corrida, por km y por hora, y compara plataformas/franjas.",
+    "evidence": [
+      {
+        "url": "https://www.guardardinheiro.com.br/motoristas-de-app/custo-real-por-km",
+        "what": "[titulo] 'Custo Real por KM - Motorista de App 2026'; el resumen reporta que el valor bruto del app no es lucro y da ejemplo R$ 400 en corridas, R$ 120 de gastos y 8 horas = R$ 35 liquidos por hora.",
+        "date": null
+      },
+      {
+        "url": "https://www.tabnews.com.br/magnocardozo/como-estruturei-a-modelagem-matematica-para-calcular-lucro-real-de-motoristas-de-app-e-as-armadilhas-de-fluxo-de-caixa",
+        "what": "[titulo] Post de desarrollador: 'Como estruturei a modelagem matematica para calcular lucro real de motoristas de app (e as armadilhas de fluxo de caixa)'.",
+        "date": null
+      },
+      {
+        "url": "https://hotmart.com/pt-br/marketplace/produtos/hagsxd-lucro-no-volante-amys3/L104772060L",
+        "what": "[snippet] App 'Lucro no Volante' vendido en Hotmart: calcula lucro por corrida, por km y metas diarias/semanales/mensuales; la ficha tiene solo una evaluacion.",
+        "date": null
+      },
+      {
+        "url": "https://apps.apple.com/br/app/findriver/id6748662034",
+        "what": "[snippet] App 'FinDriver' en App Store Brasil: calculo automatico del lucro liquido, control de mantenimientos y vencimiento de documentos.",
+        "date": null
+      }
+    ],
+    "paid_alternatives": [
+      {
+        "name": "Lucro no Volante (Hotmart; precio no visto; modelo no confirmado)",
+        "price_usd": null,
+        "model": "one-time",
+        "url": "https://hotmart.com/pt-br/marketplace/produtos/hagsxd-lucro-no-volante-amys3/L104772060L"
+      },
+      {
+        "name": "FinDriver (App Store BR; precio no visto; modelo no confirmado)",
+        "price_usd": null,
+        "model": "freemium",
+        "url": "https://apps.apple.com/br/app/findriver/id6748662034"
+      },
+      {
+        "name": "Tarifago (Hotmart ES; Uber, DiDi, Cabify, inDrive; precio no visto; modelo no confirmado)",
+        "price_usd": null,
+        "model": "one-time",
+        "url": "https://hotmart.com/es/marketplace/productos/tarifago-app/T105881336G"
+      }
+    ],
+    "search_signals": {
+      "queries": [
+        "motorista de aplicativo calcular lucro real por corrida",
+        "custo real por km motorista de app",
+        "quanto sobra por hora motorista Uber",
+        "app controle de ganhos motorista"
+      ],
+      "volume_note": null
+    },
+    "urgency_1to5": 4,
+    "urgency_basis": "Decision diaria sobre rentabilidad (que corridas aceptar); margen estrecho entre ingreso bruto y costos.",
+    "buildability_1to5": 5,
+    "wtp_20_evidence": "Existen apps de pago en Hotmart y App Store, pero no vi precios; segmento de ingresos ajustados: $20 pago unico probablemente requiere precio regional y pago via Pix.",
+    "risks": "Varias apps ya cubren el caso; cifras de costo por km son estimaciones genericas; baja disposicion de pago del segmento; sin integracion con plataformas.",
+    "confidence": "med"
+  },
+  {
+    "id": "ar-courier-impuestos-compras-exterior",
+    "region": "LATAM",
+    "pain_point": "Compradores argentinos de Shein, Temu y Amazon no saben cuanto pagaran de impuestos tras el cambio del regimen courier (franquicia, cantidad de envios, IVA) y ese regimen podria volver a cambiar.",
+    "segment": "Consumidores y revendedores informales en Argentina que compran al exterior por courier.",
+    "micro_app_idea": "Calculadora que, dado el valor FOB, flete y numero de envio del ano, estima derechos, IVA y costo final puesto en Argentina, y compara con el precio local.",
+    "evidence": [
+      {
+        "url": "https://www.iprofesional.com/impuestos/462418-rigen-nuevas-pautas-en-el-regimen-de-courier-arca-para-compras-en-shein-temu-y-amazon",
+        "what": "[titulo] 'Rigen nuevas pautas en el regimen de courier ARCA para compras en Shein, Temu y Amazon'. El resumen de busqueda cita el Decreto 604/2026 vigente desde el 17/07/2026: franquicia de u$s400 FOB por envio, cinco envios por ano, tope u$s3.000, IVA 21%.",
+        "date": null
+      },
+      {
+        "url": "https://www.iprofesional.com/impuestos/461377-tras-los-cambios-que-impuestos-se-pagan-por-compras-en-shein-y-temu",
+        "what": "[titulo] 'Tras los cambios, que impuestos se pagan por compras en Shein y Temu' (fecha mostrada: 3/8/2026).",
+        "date": "2026-08"
+      },
+      {
+        "url": "https://www.iprofesional.com/impuestos/463222-que-pautas-se-deben-respetar-para-compras-en-shein-y-temu-en-el-regimen-de-courier-arca",
+        "what": "[titulo] 'Que pautas se deben respetar para compras en Shein y Temu en el regimen de courier ARCA' (fecha mostrada: 28/8/2026). El resumen agrega que el director de Aduanas anticipo en julio que el esquema 'va a desaparecer'.",
+        "date": "2026-08"
+      },
+      {
+        "url": "https://www.cupomonline.com.br/como-nao-ser-taxado-na-shein/",
+        "what": "[titulo] 'Como Nao Ser Taxado na Shein em 2026: Guia Completo e Atualizado' (el mismo dolor aparece en Brasil; tambien hay guias para Mexico en laverdadnoticias.com).",
+        "date": null
+      }
+    ],
+    "paid_alternatives": [
+      {
+        "name": "No encontre calculadora oficial de ARCA ni herramienta de pago especifica en los resultados",
+        "price_usd": null,
+        "model": "freemium",
+        "url": "https://www.iprofesional.com/impuestos/462418-rigen-nuevas-pautas-en-el-regimen-de-courier-arca-para-compras-en-shein-temu-y-amazon"
+      }
+    ],
+    "search_signals": {
+      "queries": [
+        "calculadora compras al exterior courier Argentina 2026",
+        "cuanto pago de impuestos por comprar en Shein",
+        "como comprar en Shein y Temu antes de la suba de impuestos",
+        "franquicia 400 dolares courier cinco envios"
+      ],
+      "volume_note": "Tendencia de compras (no es volumen de busqueda): titular iProUP 'Shein y Temu no frenan las compras al exterior: ya baten otro record historico' (https://www.iproup.com/finanzas/68259-shein-y-temu-no-frenan-las-compras-al-exterior-ya-baten-otro-record-historico)."
+    },
+    "urgency_1to5": 4,
+    "urgency_basis": "Cambio normativo en vigor desde julio de 2026 y anuncio de otro cambio; cobertura periodistica intensa entre julio y septiembre de 2026.",
+    "buildability_1to5": 4,
+    "wtp_20_evidence": "Consumidor masivo con baja disposicion a pagar por una calculadora; no vi precios de alternativas. $20 pago unico poco plausible, mas probable precio regional bajo o modelo para revendedores.",
+    "risks": "Reglas volatiles (el regimen 'va a desaparecer'); cifras contradictorias entre notas (50% sobre excedente de u$s400 vs u$s50); sin API oficial; el calculo exacto depende de la base imponible aduanera.",
+    "confidence": "med"
+  },
+  {
+    "id": "mx-resico-pago-mensual",
+    "region": "LATAM",
+    "pain_point": "Personas fisicas en RESICO se confunden al declarar el pago mensual: la declaracion viene prellenada con lo facturado, no con lo cobrado, y omitir pagos puede sacarlas del regimen.",
+    "segment": "Personas fisicas en RESICO en Mexico (freelancers, comerciantes, profesionistas).",
+    "micro_app_idea": "Calculadora mensual que, con una lista de lo efectivamente cobrado, aplica la tasa RESICO, avisa del vencimiento del dia 17 y lleva el control de pagos omitidos.",
+    "evidence": [
+      {
+        "url": "https://praxiumconsultores.com/blog/declaracion-mensual-resico",
+        "what": "[snippet] Segun el resumen de busqueda: la base es lo efectivamente cobrado en el mes con tasa de 1.00% a 2.50%, pago a mas tardar el dia 17, y la declaracion prellenada incluye lo facturado (hay que quitar facturas PPD no cobradas).",
+        "date": null
+      },
+      {
+        "url": "https://praxiumconsultores.com/blog/como-presentar-la-declaracion-mensual-de-resico",
+        "what": "[titulo] 'Como presentar la declaracion mensual de RESICO'. El resumen reporta que omitir tres o mas pagos mensuales en un ano saca del regimen.",
+        "date": null
+      },
+      {
+        "url": "https://facturama.mx/blog/declaracion-resico-presentar-sat/",
+        "what": "[titulo] Blog de Facturama sobre como presentar la declaracion RESICO ante el SAT.",
+        "date": null
+      },
+      {
+        "url": "https://hacecuentas.com/mx/calculadora-rfc-cuota-resico-pf-mexico",
+        "what": "[titulo] 'calculadora rfc cuota resico pf mexico' (calculadora gratuita ya existente).",
+        "date": null
+      }
+    ],
+    "paid_alternatives": [
+      {
+        "name": "Calculadora RESICO de hacecuentas (gratuita)",
+        "price_usd": 0,
+        "model": "freemium",
+        "url": "https://hacecuentas.com/mx/calculadora-rfc-cuota-resico-pf-mexico"
+      },
+      {
+        "name": "Facturama (planes MXN 110/25 facturas al ano y MXN 1,650 ilimitado, plan 2023)",
+        "price_usd": null,
+        "model": "annual",
+        "url": "https://facturama.mx/blog/importante-nuevos-planes-en-facturama-para-2023/"
+      }
+    ],
+    "search_signals": {
+      "queries": [
+        "declaracion mensual RESICO como presentar",
+        "RESICO cuanto pago de impuestos",
+        "RESICO factura PPD declaracion mensual",
+        "calculadora RESICO"
+      ],
+      "volume_note": null
+    },
+    "urgency_1to5": 4,
+    "urgency_basis": "Obligacion mensual con vencimiento el dia 17 y riesgo de salida del regimen segun las guias.",
+    "buildability_1to5": 5,
+    "wtp_20_evidence": null,
+    "risks": "Fiscal regulado; las fuentes se contradicen sobre la declaracion anual 2026; calculadoras gratuitas y el propio portal del SAT cubren gran parte; poca diferenciacion.",
+    "confidence": "low"
+  },
+  {
+    "id": "br-mei-limite-das-dasn",
+    "region": "LATAM",
+    "pain_point": "MEIs en Brasil no controlan su facturamento acumulado frente al limite anual ni los plazos del DAS y de la DASN-SIMEI, y la entrega tardia genera multa.",
+    "segment": "Microempreendedores individuais (MEI) en Brasil; portugues.",
+    "micro_app_idea": "Registro simple de ingresos que muestra el acumulado vs. el limite anual del MEI, alerta al acercarse al tope y recuerda DAS y DASN-SIMEI.",
+    "evidence": [
+      {
+        "url": "https://contadores.cnt.br/projetos/34/noticias/empresariais/2026/02/27/mei-onde-consultar-o-faturamento-mensal-e-limite-de-faturamento.html",
+        "what": "[titulo] 'MEI: onde consultar o faturamento mensal e limite de faturamento'; el resumen cita limite de R$ 81.000/ano: hasta 20% de exceso paga impuesto sobre el exceso, mas de 20% desenquadra.",
+        "date": "2026-02"
+      },
+      {
+        "url": "https://www.ledware.com.br/2026/05/22/dasn-simei-2026-prazo-multas-como-entregar/",
+        "what": "[snippet] DASN-SIMEI 2026: plazo hasta 31 de mayo; multa minima R$ 50 o 2% al mes con tope de 20% de los tributos declarados (segun el resumen).",
+        "date": "2026-05"
+      },
+      {
+        "url": "https://agenciagov.ebc.com.br/noticias/202503/baixe-o-app-mei-oficial-da-receita-federal-e-tenha-facilidade-e-seguranca-na-palma-da-sua-mao",
+        "what": "[titulo] 'Baixe o App MEI oficial da Receita Federal'; segun resultados, avisa vencimiento del DAS y plazo de la DASN-Simei, pero no encontre confirmacion de alertas de limite de facturamento.",
+        "date": "2025-03"
+      },
+      {
+        "url": "https://www.planilhadefluxo.com.br/baixar/planilha-controle-financeiro-mei",
+        "what": "[titulo] 'Planilha de controle financeiro MEI' (hojas que comparan acumulado vs limite; el resumen advierte que son ofrecidas por empresas que venden sistemas).",
+        "date": null
+      }
+    ],
+    "paid_alternatives": [
+      {
+        "name": "App MEI oficial de la Receita Federal (gratuito)",
+        "price_usd": 0,
+        "model": "freemium",
+        "url": "https://agenciagov.ebc.com.br/noticias/202503/baixe-o-app-mei-oficial-da-receita-federal-e-tenha-facilidade-e-seguranca-na-palma-da-sua-mao"
+      },
+      {
+        "name": "Planilhas de controle financeiro MEI (precio no visto; modelo no confirmado)",
+        "price_usd": null,
+        "model": "one-time",
+        "url": "https://www.planilhadefluxo.com.br/baixar/livro-caixa-mei"
+      }
+    ],
+    "search_signals": {
+      "queries": [
+        "tem algum aplicativo para controlar limite MEI",
+        "como saber o faturamento do MEI",
+        "DASN-SIMEI atrasada multa",
+        "limite de faturamento MEI 2026"
+      ],
+      "volume_note": null
+    },
+    "urgency_1to5": 3,
+    "urgency_basis": "Limite anual y plazos recurrentes; octubre esta cerca del cierre del ano fiscal.",
+    "buildability_1to5": 5,
+    "wtp_20_evidence": null,
+    "risks": "El app oficial y hojas gratuitas cubren buena parte; el limite y el valor del DAS cambian y varian entre fuentes; poca disposicion de pago de MEIs.",
+    "confidence": "low"
+  },
+  {
+    "id": "co-factura-documento-soporte",
+    "region": "LATAM",
+    "pain_point": "Pequenos comercios y personas naturales en Colombia no saben si estan obligados a facturar electronicamente ni como generar el documento soporte al comprar a proveedores no obligados.",
+    "segment": "Pequenos comerciantes, independientes y personas naturales en Colombia.",
+    "micro_app_idea": "Verificador de obligacion (tope de 3.500 UVT) y generador de documento soporte fisico en PDF con numeracion consecutiva y datos requeridos.",
+    "evidence": [
+      {
+        "url": "https://incp.org.co/publicaciones/infoincp-publicaciones/impuestos/2025/07/dian-recuerda-que-dispone-de-un-sistema-gratuito-de-facturacion-electronica/",
+        "what": "[titulo] 'DIAN recuerda que dispone de un sistema gratuito de facturacion electronica' (julio de 2025).",
+        "date": "2025-07"
+      },
+      {
+        "url": "https://siemprealdia.co/colombia/impuestos/sistema-de-facturacion-electronica-en-colombia/",
+        "what": "[snippet] Segun el resumen: tope de 3.500 UVT para personas naturales (UVT 2026 $52.374, ~COP 183,3 millones), con matices cuando solo venden bienes excluidos.",
+        "date": null
+      },
+      {
+        "url": "https://actualicese.com/modelo-en-excel-del-documento-soporte-para-operaciones-con-no-obligados-a-facturar/",
+        "what": "[titulo] 'Modelo en Excel del documento soporte para operaciones con no obligados a facturar' (existe plantilla gratuita de terceros con macros).",
+        "date": null
+      },
+      {
+        "url": "https://blog.alegra.com/colombia/como-deben-facturar-las-pymes-en-colombia/",
+        "what": "[snippet] Segun el resumen de busqueda, Alegra dice que los pequenos comerciantes deben emitir documento soporte al comprar a empresas que si facturan, lo que choca con la definicion de la DIAN (proveedores no obligados): confusion entre fuentes.",
+        "date": null
+      }
+    ],
+    "paid_alternatives": [
+      {
+        "name": "Facturacion gratuita de la DIAN (modo voluntario tambien para documento soporte)",
+        "price_usd": 0,
+        "model": "freemium",
+        "url": "https://micrositios.dian.gov.co/sistema-de-facturacion-electronica/facturacion-gratuita-dian/"
+      },
+      {
+        "name": "Alegra (software contable colombiano; precio no visto; modelo no confirmado)",
+        "price_usd": null,
+        "model": "monthly",
+        "url": "https://blog.alegra.com/colombia/como-deben-facturar-las-pymes-en-colombia/"
+      }
+    ],
+    "search_signals": {
+      "queries": [
+        "quien debe facturar electronicamente DIAN 2026",
+        "documento soporte en adquisiciones a no obligados a facturar",
+        "facturacion electronica gratuita DIAN celular",
+        "tope 3.500 UVT facturar persona natural"
+      ],
+      "volume_note": null
+    },
+    "urgency_1to5": 3,
+    "urgency_basis": "Obligaciones con sancion (cierre de 1 a 3 dias o multa segun el resumen) y plazos estrictos; un concepto DIAN de 2025 citado indica que generar el documento fuera de plazo invalida su efecto fiscal.",
+    "buildability_1to5": 3,
+    "wtp_20_evidence": null,
+    "risks": "Fiscal regulado; la DIAN ofrece servicio gratuito; la numeracion consecutiva autorizada y el formato exigido pueden haber cambiado (fuentes de 2020-2022); no hay cambios 2026 confirmados.",
+    "confidence": "low"
+  },
+  {
+    "id": "mx-repartidor-ganancia-real",
+    "region": "LATAM",
+    "pain_point": "Repartidores de Rappi, Uber Eats y DiDi Food en Mexico ven ingresos brutos pero no calculan la ganancia neta por hora tras gasolina, mantenimiento y otros costos, y la reforma de plataformas cambia su situacion.",
+    "segment": "Repartidores y conductores de plataformas en Mexico.",
+    "micro_app_idea": "Registro diario (km, litros, ingresos, horas conectadas) que calcula la ganancia neta por hora y compara plataformas y franjas horarias.",
+    "evidence": [
+      {
+        "url": "https://www.mediotiempo.com/otros-mundos/cuanto-gana-un-repartidor-de-uber-o-didi-en-mexico",
+        "what": "[titulo] 'Cuanto gana un repartidor de Uber o DiDi en Mexico'. El resumen de busqueda cita un estudio de Oxfam Mexico (~53 pesos/hora, ~46 h semanales, costos ~490 pesos/semana); no esta claro cual resultado lo cita.",
+        "date": null
+      },
+      {
+        "url": "https://www.sdpnoticias.com/negocios/cuanto-gana-un-repartidor-lo-revelan-en-tiktok-y-resulta-no-ser-como-se-cree/",
+        "what": "[titulo] 'Cuanto gana un repartidor? Lo revelan en TikTok y resulta no ser como se cree'; el resumen cita un consenso de repartidores de ~250 pesos al dia.",
+        "date": null
+      },
+      {
+        "url": "https://thelogisticsworld.com/planeacion-estrategica/ya-hay-fechas-para-la-puesta-en-marcha-de-la-reforma-que-regula-el-trabajo-en-plataformas-digitales",
+        "what": "[titulo] 'Ya hay fechas para la puesta en marcha de la reforma que regula el trabajo en plataformas digitales' (fecha mostrada: 25 de julio de 2026).",
+        "date": "2026-07"
+      },
+      {
+        "url": "https://www.poresto.com/mexico/2025/8/6/mexico-formaliza-el-trabajo-de-repartidores-y-choferes-de-apps-ya-cuentan-con-imss-y-prestaciones.html",
+        "what": "[titulo] 'Mexico formaliza el trabajo de repartidores y choferes de apps: ya cuentan con IMSS y prestaciones'.",
+        "date": "2025-08"
+      }
+    ],
+    "paid_alternatives": [
+      {
+        "name": "Tarifago (Hotmart ES; registra viajes y gastos; precio no visto; modelo no confirmado)",
+        "price_usd": null,
+        "model": "one-time",
+        "url": "https://hotmart.com/es/marketplace/productos/tarifago-app/T105881336G"
+      },
+      {
+        "name": "Appcontrol Gastos (App Store MX; pocas resenas; precio no visto; modelo no confirmado)",
+        "price_usd": null,
+        "model": "freemium",
+        "url": "https://apps.apple.com/mx/app/appcontrol-gastos/id6751860734"
+      },
+      {
+        "name": "Calculadora gratuita de comisiones Uber Eats/Glovo rider (hacecuentas, enfoque Argentina)",
+        "price_usd": 0,
+        "model": "freemium",
+        "url": "https://hacecuentas.com/calculadora-comision-uber-eats-glovo-rider"
+      }
+    ],
+    "search_signals": {
+      "queries": [
+        "cuanto gana un repartidor Rappi Uber Eats DiDi Food",
+        "calcular ganancia real repartidor gasolina",
+        "app control de gastos repartidor",
+        "repartidor IMSS reforma plataformas"
+      ],
+      "volume_note": null
+    },
+    "urgency_1to5": 3,
+    "urgency_basis": "Decision diaria de rentabilidad y reforma laboral de plataformas en curso (IMSS desde julio de 2025; fechas de puesta en marcha anunciadas en julio de 2026).",
+    "buildability_1to5": 5,
+    "wtp_20_evidence": "Ingresos reportados de ~250 pesos/dia en un consenso de repartidores (resumen de busqueda): $20 USD es un gasto alto; requeriria precio regional. Medio local no visto en fuentes.",
+    "risks": "Baja disposicion de pago; cifras de ingresos de fuentes dispares (2021-2023); la reforma cambia deducciones y cuotas; sin integracion con plataformas.",
+    "confidence": "low"
+  },
+  {
+    "id": "mx-descarga-masiva-cfdi",
+    "region": "LATAM",
+    "pain_point": "Contribuyentes y contadores en Mexico necesitan bajar en lote los XML de facturas emitidas y recibidas del SAT, pero el servicio oficial exige e.firma y entrega por solicitudes asincronas.",
+    "segment": "Personas fisicas, pequenos negocios y contadores independientes en Mexico.",
+    "micro_app_idea": "Aplicacion local que solicita y descarga los paquetes del servicio del SAT por mes, separa emitidos/recibidos y vigentes/cancelados, y los exporta a Excel sin enviar credenciales a terceros.",
+    "evidence": [
+      {
+        "url": "https://senhub.mx/blog/como-descargar-facturas-sat-masivamente",
+        "what": "[titulo] 'Como descargar facturas del SAT masivamente en 2026 (gratis)'; el resumen reporta plan gratuito de SenHub con rango de hasta 60 dias.",
+        "date": null
+      },
+      {
+        "url": "https://www.satfacil.com.mx/guias/descarga-masiva-sat",
+        "what": "[titulo] '¿Necesito e.firma para la descarga masiva del SAT?'; el resumen indica que la descarga de SatFacil esta disponible desde el plan Pro Individual (de pago).",
+        "date": null
+      },
+      {
+        "url": "https://www.extscope.org/extension/bnffjlchjndmeolaipdkhnfgiohombli",
+        "what": "[snippet] Extension de Chrome 'Descargador Masivo del SAT' con solo 2 resenas (poca evidencia de confiabilidad).",
+        "date": null
+      },
+      {
+        "url": "https://www.edifact.com.mx/masinfo/descarga-masiva-de-xml-sat",
+        "what": "[titulo] Pagina 'Descarga masiva de XML SAT' de EdiFact; el resumen cita su producto DM1000 para empresas (hasta 200,000 XML por solicitud).",
+        "date": null
+      }
+    ],
+    "paid_alternatives": [
+      {
+        "name": "SatFacil (descarga desde plan Pro Individual; precio no visto; modelo no confirmado)",
+        "price_usd": null,
+        "model": "monthly",
+        "url": "https://www.satfacil.com.mx/descarga-masiva"
+      },
+      {
+        "name": "SenHub (plan gratuito hasta 60 dias de rango; creditos para mas)",
+        "price_usd": 0,
+        "model": "freemium",
+        "url": "https://senhub.mx/herramientas/descarga-masiva"
+      },
+      {
+        "name": "EdiFact DM1000 (orientado a empresas; precio no visto; modelo no confirmado)",
+        "price_usd": null,
+        "model": "one-time",
+        "url": "https://www.edifact.com.mx/masinfo/descarga-masiva-de-xml-sat"
+      }
+    ],
+    "search_signals": {
+      "queries": [
+        "como descargar facturas del SAT masivamente",
+        "descarga masiva CFDI SAT e.firma",
+        "descargar XML recibidos SAT gratis",
+        "descargador masivo SAT"
+      ],
+      "volume_note": null
+    },
+    "urgency_1to5": 3,
+    "urgency_basis": "Necesidad recurrente en cierres mensuales y declaraciones; sin fecha limite especifica.",
+    "buildability_1to5": 3,
+    "wtp_20_evidence": null,
+    "risks": "Manejo de e.firma (barrera de confianza y seguridad); servicio oficial gratuito y SenHub gratis; limites del SAT contradictorios entre fuentes; requiere app de escritorio o local.",
+    "confidence": "low"
+  },
+  {
+    "id": "latam-planificaciones-docentes",
+    "region": "LATAM",
+    "pain_point": "Docentes de Latinoamerica dedican tiempo a redactar planificaciones alineadas a su curriculo nacional y las plantillas genericas no cumplen los formatos oficiales.",
+    "segment": "Docentes de primaria y secundaria en Peru, Chile, Argentina, Ecuador y Uruguay.",
+    "micro_app_idea": "Generador de planificacion anual y por unidad con los campos oficiales de un pais (competencias, desempenos, NAP, bases curriculares) exportable a Word/PDF.",
+    "evidence": [
+      {
+        "url": "https://chromewebstore.google.com/detail/jbkkchmbhcplkpcfkmlpfkapmoknokda",
+        "what": "[titulo] Extension 'Planificacion en 1 clic - Ecuador' (genera planificaciones alineadas al curriculo ecuatoriano; con compras dentro de la app segun el resumen).",
+        "date": null
+      },
+      {
+        "url": "https://payhip.com/b/zlS1K",
+        "what": "[snippet] Planificador mensual en Payhip de pago unico listado a 5.50 USD (pais del vendedor no indicado).",
+        "date": null
+      },
+      {
+        "url": "https://hotmart.com/es/marketplace/productos/plantillas-para-docentes-y-maestra-o/X102409644V",
+        "what": "[titulo] 'Plantillas Para Docentes y Maestra/o' (Hotmart; incluye asistente pedagogico con IA segun el resumen; precio no visto).",
+        "date": null
+      },
+      {
+        "url": "https://repositorio.minedu.gob.pe/handle/20.500.12799/5310",
+        "what": "[titulo] Cartilla de planificacion del Minedu (Peru): la planificacion se organiza en competencias, capacidades, estandares y desempenos de grado.",
+        "date": null
+      }
+    ],
+    "paid_alternatives": [
+      {
+        "name": "Planificador mensual (Payhip)",
+        "price_usd": 5.5,
+        "model": "one-time",
+        "url": "https://payhip.com/b/zlS1K"
+      },
+      {
+        "name": "Complemento de Google Docs/Sheets para docentes de Uruguay (ANEP), de pago segun ficha; precio no visto (modelo no confirmado)",
+        "price_usd": null,
+        "model": "freemium",
+        "url": "https://workspace.google.com/marketplace/app/docente_desplegado_for_docs_sheets/145744464357?hl=es"
+      },
+      {
+        "name": "Slidesgo (3 descargas gratis al mes; Premium ilimitado; precio no visto; modelo no confirmado)",
+        "price_usd": null,
+        "model": "freemium",
+        "url": "https://slidesgo.com/es/tema/planificador-de-profesores"
+      }
+    ],
+    "search_signals": {
+      "queries": [
+        "plantilla planificacion docente",
+        "planificacion curricular anual primaria Peru",
+        "planificaciones docentes con IA",
+        "formato de planificacion por unidad descargar"
+      ],
+      "volume_note": null
+    },
+    "urgency_1to5": 2,
+    "urgency_basis": "Necesidad cada inicio de ciclo escolar; no vi senal de plazos especificos en octubre.",
+    "buildability_1to5": 3,
+    "wtp_20_evidence": "Precio visto de 5.50 USD pago unico para un planificador mensual; docentes con ingresos moderados: $20 probablemente requiere precio regional.",
+    "risks": "Curriculos distintos por pais y que cambian; el contenido oficial es publico pero extenso; las herramientas con IA exigen verificar lo generado; saturacion de plantillas gratuitas.",
+    "confidence": "low"
+  },
+  {
+    "id": "ar-casas-particulares-recibo-sueldo",
+    "region": "LATAM",
+    "pain_point": "Empleadores de personal de casas particulares en Argentina deben liquidar el sueldo mensual con escalas que cambian cada mes y, desde mayo de 2026, emitir un recibo de sueldo electronico obligatorio en ARCA.",
+    "segment": "Hogares empleadores de empleadas domesticas, cuidadores y ninieras en Argentina.",
+    "micro_app_idea": "Calculadora mensual que, segun categoria, horas, retiro y antiguedad, entrega el sueldo, aportes y los datos a cargar en el recibo de ARCA, con alerta cuando cambia la escala.",
+    "evidence": [
+      {
+        "url": "https://www.iprofesional.com/impuestos/455310-arca-establece-que-el-recibo-de-sueldo-web-es-obligatorio-para-empleadas-domesticas",
+        "what": "[titulo] 'ARCA establece que el recibo de sueldo web es obligatorio para empleadas domesticas' (fecha mostrada: 9/7/2026).",
+        "date": "2026-07"
+      },
+      {
+        "url": "https://www.elonce.com/economia/empleadas-domesticas-cuanto-costara-la-hora-de-limpieza-desde-octubre-2026.htm",
+        "what": "[snippet] Segun el resumen: aumento de 1,7% en octubre 2026 y pase de parte de una suma no remunerativa al basico; valores citados de iProfesional: tareas generales $4.064,08/hora con retiro y $498.582,06 mensuales con retiro.",
+        "date": null
+      },
+      {
+        "url": "https://www.iprofesional.com/management/458620-cuanto-esta-la-hora-de-empleada-domestica-en-2026",
+        "what": "[titulo] 'Cuanto esta la hora de empleada domestica en 2026' (fecha mostrada: 4/7/2026).",
+        "date": "2026-07"
+      },
+      {
+        "url": "https://hacecuentas.com/calculadora-sueldo-empleada-domestica-horas-retiro",
+        "what": "[titulo] Calculadora gratuita de sueldo de empleada domestica por horas y retiro (ya existe); el resumen advierte que algunas calculadoras estan desactualizadas (una de abril de 2026).",
+        "date": null
+      }
+    ],
+    "paid_alternatives": [
+      {
+        "name": "Calculadoras gratuitas (hacecuentas, infozona)",
+        "price_usd": 0,
+        "model": "freemium",
+        "url": "https://www.infozona.com.ar/calculadora-sueldo-empleada-domestica/"
+      }
+    ],
+    "search_signals": {
+      "queries": [
+        "cuanto cobra una empleada domestica octubre 2026",
+        "como hacer el recibo de sueldo de empleada domestica en ARCA",
+        "calculadora sueldo empleada domestica por hora",
+        "valor hora casas particulares"
+      ],
+      "volume_note": null
+    },
+    "urgency_1to5": 4,
+    "urgency_basis": "Obligacion mensual con recibo electronico obligatorio desde mayo de 2026 y escala actualizada mes a mes.",
+    "buildability_1to5": 3,
+    "wtp_20_evidence": null,
+    "risks": "Laboral/fiscal regulado; escalas cambian mensualmente y las fuentes difieren (zona desfavorable 30% vs 31%); calculadoras gratuitas abundan; el recibo se emite en ARCA.",
+    "confidence": "med"
+  },
+  {
+    "id": "pe-suspension-cuarta-categoria",
+    "region": "LATAM",
+    "pain_point": "Independientes en Peru que emiten recibos por honorarios no saben si pueden pedir la suspension de cuarta categoria y siguen soportando el descuento del 8% por no entregar la constancia.",
+    "segment": "Trabajadores independientes en Peru (recibos por honorarios).",
+    "micro_app_idea": "Verificador de elegibilidad con los topes 2026 que guia el tramite en SOL y recuerda renovar la constancia cada enero.",
+    "evidence": [
+      {
+        "url": "https://elperuano.pe/noticia/286270-emite-recibos-por-honorarios-si-gana-menos-de-s-4-010-al-mes-podra-suspender-pagos-a-cuenta-en-2026",
+        "what": "[titulo] 'Emite recibos por honorarios? Si gana menos de S/ 4 010 al mes podra suspender pagos a cuenta en 2026'.",
+        "date": null
+      },
+      {
+        "url": "https://www.infobae.com/peru/2026/06/21/suspension-de-cuarta-categoria-quienes-pueden-pedirla-y-como-hacerlo/",
+        "what": "[titulo] 'Suspension de cuarta categoria: quienes pueden pedirla y como hacerlo'; el resumen cita topes 2026 de S/ 4 010 mensuales y S/ 48 125 anuales, y que sin la constancia se sigue descontando 8%.",
+        "date": "2026-06"
+      },
+      {
+        "url": "https://bybconsultores.pe/?p=11196",
+        "what": "[titulo] 'Suspension de pagos a cuenta y retenciones de cuarta categoria para el ejercicio 2026'.",
+        "date": null
+      },
+      {
+        "url": "https://noticierocontable.com/suspension-de-4ta-categoria/",
+        "what": "[titulo] Articulo 'Suspension de 4ta categoria' (existen multiples guias de contadores).",
+        "date": null
+      }
+    ],
+    "paid_alternatives": [
+      {
+        "name": "Tramite gratuito en SUNAT Operaciones en Linea (Formulario Virtual 1609 segun Infobae)",
+        "price_usd": 0,
+        "model": "freemium",
+        "url": "https://www.infobae.com/peru/2026/06/21/suspension-de-cuarta-categoria-quienes-pueden-pedirla-y-como-hacerlo/"
+      }
+    ],
+    "search_signals": {
+      "queries": [
+        "suspension de cuarta categoria 2026",
+        "como solicitar suspension de retenciones recibo por honorarios",
+        "recibo por honorarios electronico SUNAT",
+        "tope suspension cuarta categoria 2026"
+      ],
+      "volume_note": null
+    },
+    "urgency_1to5": 3,
+    "urgency_basis": "Estacional (enero); en octubre una constancia nueva cubre solo hasta el 31 de diciembre segun el resumen.",
+    "buildability_1to5": 4,
+    "wtp_20_evidence": null,
+    "risks": "Fiscal regulado; el tramite oficial es gratis y corto; los topes cambian cada ano; las fuentes son medios y consultoras, no SUNAT.",
+    "confidence": "low"
+  },
+  {
+    "id": "latam-fiados-cobranza-whatsapp",
+    "region": "LATAM",
+    "pain_point": "Tiendas de barrio y pequenos negocios fian a clientes y pierden el control de saldos y recordatorios de cobro.",
+    "segment": "Duenos de tiendas, despensas y negocios pequenos en Mexico y otros paises de la region; tambien Brasil (fiado).",
+    "micro_app_idea": "Libreta de fiados que guarda saldos por cliente y genera con un toque el mensaje de cobro listo para enviar por WhatsApp (enlace wa.me), sin API.",
+    "evidence": [
+      {
+        "url": "https://apps.apple.com/mx/app/mis-fiados/id6739773148",
+        "what": "[snippet] App 'Mis Fiados' en App Store Mexico: gratuita, para almacenes y despensas, anota montos y fechas, avisos de pagos pendientes; sin resenas suficientes para calificacion; requiere iOS 14+.",
+        "date": null
+      },
+      {
+        "url": "https://mwm.ai/apps/deudores/6748152947",
+        "what": "[titulo] App 'Deudores' (App Store): seguimiento de deudas para pequenos negocios y freelancers.",
+        "date": null
+      },
+      {
+        "url": "https://filehippo.com/es/android/download_fiado-zap-vendas-e-cobrancas/download/",
+        "what": "[titulo] 'Fiado Zap - Vendas e Cobrancas' (Android, portugues; gratuita segun resumen).",
+        "date": null
+      },
+      {
+        "url": "https://leadsales.io/blog/mensajes-cobranza-whatsapp-efectivos/",
+        "what": "[titulo] 'Mensajes de cobranza por WhatsApp efectivos' (contenido de un proveedor; hay guias dedicadas a cobrar por WhatsApp).",
+        "date": null
+      }
+    ],
+    "paid_alternatives": [
+      {
+        "name": "Mis Fiados (App Store MX, gratuita)",
+        "price_usd": 0,
+        "model": "freemium",
+        "url": "https://apps.apple.com/mx/app/mis-fiados/id6739773148"
+      },
+      {
+        "name": "Fiado Zap (Android, gratuita segun resumen)",
+        "price_usd": 0,
+        "model": "freemium",
+        "url": "https://filehippo.com/es/android/download_fiado-zap-vendas-e-cobrancas/download/"
+      }
+    ],
+    "search_signals": {
+      "queries": [
+        "libreta de fiados app tienda de barrio",
+        "app para controlar deudas de clientes",
+        "como cobrar por WhatsApp a un cliente que debe",
+        "fiado zap"
+      ],
+      "volume_note": null
+    },
+    "urgency_1to5": 2,
+    "urgency_basis": "Dolor cotidiano sin plazo externo; no vi evidencia de volumen.",
+    "buildability_1to5": 5,
+    "wtp_20_evidence": "Las apps visibles son gratuitas; segmento de ingresos bajos: $20 poco plausible, requeriria precio regional bajo.",
+    "risks": "Alternativas gratuitas; cobranza por mensajeria puede tener reglas locales de horarios/frecuencia (segun el resumen); poca disposicion de pago.",
+    "confidence": "low"
+  },
+  {
+    "id": "co-renta-personas-naturales",
+    "region": "LATAM",
+    "pain_point": "Personas naturales en Colombia dudan si deben declarar renta y como completar el borrador de la DIAN, que puede omitir deducciones.",
+    "segment": "Personas naturales en Colombia (asalariados e independientes) en la temporada de renta 2026.",
+    "micro_app_idea": "Verificador de obligacion a declarar con los topes en UVT y checklist de documentos y deducciones para revisar el borrador de la DIAN.",
+    "evidence": [
+      {
+        "url": "https://actualicese.com/dian-indica-que-siete-millones-de-ciudadanos-deberan-declarar-renta-este-ano/",
+        "what": "[titulo] 'DIAN indica que siete millones de ciudadanos deberan declarar renta este ano'.",
+        "date": null
+      },
+      {
+        "url": "https://incp.org.co/publicaciones/infoincp-publicaciones/impuestos/2026/07/dian-reforzo-sus-herramientas-digitales-para-la-temporada-de-declaracion-de-renta/",
+        "what": "[titulo] 'DIAN reforzo sus herramientas digitales para la temporada de declaracion de renta' (julio de 2026); el resumen menciona Ayuda Renta, declaracion sugerida y avatar Diana.",
+        "date": "2026-07"
+      },
+      {
+        "url": "https://colombiatramita.co/dian-impuestos/como-declarar-renta/",
+        "what": "[snippet] Guia 'Como declarar renta paso a paso 2026': el trabajo es gratuito para ingresos solo laborales; segun otra guia el borrador no incluye deducciones por dependientes, medicina prepagada ni intereses de vivienda.",
+        "date": null
+      },
+      {
+        "url": "https://www.eluniversal.com.co/economica/2026/07/03/este-es-el-calendario-para-declarar-renta-ante-la-dian-en-2026/",
+        "what": "[titulo] Calendario de renta 2026; el resumen cita plazo del 12 de agosto al 26 de octubre de 2026.",
+        "date": "2026-07"
+      }
+    ],
+    "paid_alternatives": [
+      {
+        "name": "Servicios gratuitos de la DIAN (Ayuda Renta, declaracion sugerida)",
+        "price_usd": 0,
+        "model": "freemium",
+        "url": "https://incp.org.co/publicaciones/infoincp-publicaciones/impuestos/2026/07/dian-reforzo-sus-herramientas-digitales-para-la-temporada-de-declaracion-de-renta/"
+      }
+    ],
+    "search_signals": {
+      "queries": [
+        "quien debe declarar renta 2026 Colombia",
+        "como declarar renta paso a paso 2026",
+        "borrador declaracion de renta DIAN",
+        "donde consultar si debo declarar renta"
+      ],
+      "volume_note": null
+    },
+    "urgency_1to5": 4,
+    "urgency_basis": "El plazo vence el 26 de octubre de 2026 (18 dias desde hoy), segun un calendario citado; temporada estacional que termina pronto.",
+    "buildability_1to5": 3,
+    "wtp_20_evidence": null,
+    "risks": "Fiscal regulado (consejo personalizado); herramientas oficiales gratuitas; ventana estacional corta (la temporada de 2026 casi termina); montos en UVT cambian cada ano.",
+    "confidence": "low"
+  },
+  {
+    "id": "latam-whatsapp-envio-masivo",
+    "region": "LATAM",
+    "pain_point": "Negocios pequenos quieren enviar promociones y recordatorios a sus clientes por WhatsApp sin que bloqueen su numero ni violar las reglas de la plataforma.",
+    "segment": "Duenos de negocios pequenos y emprendedores en Mexico, Colombia, Argentina y otros paises hispanohablantes.",
+    "micro_app_idea": "Planificador de difusiones que lleva registro de consentimiento (opt-in), segmenta listas y genera enlaces de mensaje individual con ritmo bajo, sin automatizar el envio.",
+    "evidence": [
+      {
+        "url": "https://leadsales.io/blog/mensajes-masivos-por-whatsapp-sin-bloqueos/",
+        "what": "[titulo] 'Cuantos mensajes masivos puedes enviar por WhatsApp sin que te bloqueen' (articulo de un proveedor de CRM).",
+        "date": null
+      },
+      {
+        "url": "https://aunoa.ai/blog/como-empezar-a-enviar-mensajes-masivos-en-whatsapp-sin-que-bloqueen-tu-cuenta/",
+        "what": "[titulo] 'Como empezar a enviar mensajes masivos en WhatsApp sin que bloqueen tu cuenta'.",
+        "date": null
+      },
+      {
+        "url": "https://wetarseel.ai/whatsapp-broadcast-messaging-removed/",
+        "what": "[titulo] 'WhatsApp broadcast messaging removed': una fuente dice que WhatsApp retiro la funcion de difusion para campanas de marketing en la app Business gratuita; otra sostiene que las listas de difusion siguen documentadas (fuentes en conflicto).",
+        "date": null
+      },
+      {
+        "url": "https://setsmart.io/blog/whatsapp-broadcast",
+        "what": "[titulo] 'WhatsApp Broadcast 2026: Limits, Tools, Templates'; el resumen cita lista de hasta 256 contactos guardados y que en la API las difusiones deben ser plantillas aprobadas por Meta.",
+        "date": null
+      }
+    ],
+    "paid_alternatives": [
+      {
+        "name": "Leadsales (CRM para WhatsApp; precio no visto; modelo no confirmado)",
+        "price_usd": null,
+        "model": "monthly",
+        "url": "https://leadsales.io/blog/mensajes-masivos-por-whatsapp-sin-bloqueos/"
+      }
+    ],
+    "search_signals": {
+      "queries": [
+        "como enviar mensajes masivos WhatsApp sin que me bloqueen",
+        "cuantos mensajes masivos puedo enviar por WhatsApp",
+        "lista de difusion WhatsApp Business limite",
+        "recordatorios de pago por WhatsApp"
+      ],
+      "volume_note": null
+    },
+    "urgency_1to5": 3,
+    "urgency_basis": "Riesgo de perder el numero de negocio, pero sin plazo externo; reglas de Meta cambian y se contradicen entre fuentes.",
+    "buildability_1to5": 2,
+    "wtp_20_evidence": null,
+    "risks": "Alto riesgo de plataforma y de terminos de WhatsApp/Meta; el envio real requiere API oficial (plantillas, costos por mensaje); mercado dominado por CRMs; un resultado menciona un cambio de tarifas desde el 1 de octubre de 2026 que no verifique.",
+    "confidence": "low"
+  },
+  {
+    "id": "latam-presupuestos-pdf-whatsapp",
+    "region": "LATAM",
+    "pain_point": "Prestadores de servicios y trabajadores informales necesitan enviar presupuestos profesionales en PDF por WhatsApp, con validez por inflacion y senas.",
+    "segment": "Autonomos, oficios y microemprendedores (probado en Argentina; tambien aplica a otros paises).",
+    "micro_app_idea": "Generador de presupuestos con logo, validez en dias, sena y enlace de pago, exportable a PDF y listo para enviar por WhatsApp.",
+    "evidence": [
+      {
+        "url": "https://apps.apple.com/ar/app/or%C3%A7afy-presupuestos-en-pdf/id6749516385",
+        "what": "[snippet] App 'Orcafy - Presupuestos en PDF' (App Store Argentina): presupuestos con logo enviados por WhatsApp o correo, dirigida tambien a trabajadores informales.",
+        "date": null
+      },
+      {
+        "url": "https://yo-facturo.com/herramientas/generador-presupuesto-pdf/",
+        "what": "[snippet] Generador de presupuestos PDF gratuito y sin registro; sugiere Mercado Pago como forma de pago.",
+        "date": null
+      },
+      {
+        "url": "https://www.billin.net/aplicacion-para-presupuestos/",
+        "what": "[titulo] App de presupuestos de Billin (Android/iOS) con funciones fiscales de Espana, menos util fuera de ese pais.",
+        "date": null
+      }
+    ],
+    "paid_alternatives": [
+      {
+        "name": "Orcafy (App Store AR; precio no visto; modelo no confirmado)",
+        "price_usd": null,
+        "model": "freemium",
+        "url": "https://apps.apple.com/ar/app/or%C3%A7afy-presupuestos-en-pdf/id6749516385"
+      },
+      {
+        "name": "Generador de presupuestos PDF de YoFacturo (gratuito)",
+        "price_usd": 0,
+        "model": "freemium",
+        "url": "https://yo-facturo.com/herramientas/generador-presupuesto-pdf/"
+      }
+    ],
+    "search_signals": {
+      "queries": [
+        "generador de presupuestos PDF gratis",
+        "app para hacer presupuestos por WhatsApp",
+        "modelo de presupuesto para trabajos",
+        "presupuesto validez 15 dias seña"
+      ],
+      "volume_note": null
+    },
+    "urgency_1to5": 2,
+    "urgency_basis": "Necesidad frecuente pero sin fecha limite; el resumen cita practicas de validez de 15 a 30 dias y sena de 30 a 50% por la inflacion.",
+    "buildability_1to5": 5,
+    "wtp_20_evidence": null,
+    "risks": "Muy saturado (generadores gratuitos, apps); un presupuesto no reemplaza la factura fiscal; diferenciacion baja.",
+    "confidence": "low"
+  },
+  {
+    "id": "cl-boleta-honorarios-retencion",
+    "region": "LATAM",
+    "pain_point": "Trabajadores a honorarios en Chile deben recalcular cada ano la retencion de sus boletas (15,25% en 2026) para saber el liquido y proyectar devolucion en la Operacion Renta.",
+    "segment": "Trabajadores independientes a honorarios en Chile.",
+    "micro_app_idea": "Calculadora bidireccional bruto-liquido con tasa por ano y proyeccion de F22 segun ingresos y cotizaciones.",
+    "evidence": [
+      {
+        "url": "https://www.eldinamo.cl/buen-dato/2025/12/23/trabajas-con-boletas-de-honorarios-sii-aumentara-el-monto-de-retencion-en-2026/",
+        "what": "[titulo] 'Trabajas con boletas de honorarios? SII aumentara el monto de retencion en 2026' (23 de diciembre de 2025).",
+        "date": "2025-12"
+      },
+      {
+        "url": "https://www.redimin.cl/retencion-en-boletas-de-honorarios-sube-a-1525-desde-enero-2026?amp=1",
+        "what": "[titulo] 'Retencion en boletas de honorarios sube a 15,25% desde enero 2026'; el resumen agrega 16% en 2027 y 17% en 2028.",
+        "date": null
+      },
+      {
+        "url": "https://www.lofwork.cl/calculadora-de-honorarios/",
+        "what": "[titulo] 'Calculadora de Honorarios en Chile' (calculadora gratuita bruto-liquido); tambien existen simplo.cl y contable.app.",
+        "date": null
+      }
+    ],
+    "paid_alternatives": [
+      {
+        "name": "Calculadoras gratuitas (Lofwork, Simplo, Contable) y aplicacion del SII",
+        "price_usd": 0,
+        "model": "freemium",
+        "url": "https://simplo.cl/calculadoras/retencion-honorarios/"
+      }
+    ],
+    "search_signals": {
+      "queries": [
+        "retencion boleta de honorarios 2026",
+        "calculadora boleta de honorarios bruto liquido",
+        "devolucion de impuestos honorarios F22",
+        "cuanto me descuentan de una boleta de honorarios"
+      ],
+      "volume_note": null
+    },
+    "urgency_1to5": 2,
+    "urgency_basis": "Cambio de tasa anual conocido; el resumen indica que el SII ofrece su propia calculadora.",
+    "buildability_1to5": 5,
+    "wtp_20_evidence": null,
+    "risks": "Muy saturado con herramientas gratuitas; fiscal regulado; el resumen no pudo confirmar fechas de Operacion Renta 2027.",
+    "confidence": "low"
+  },
+  {
+    "id": "ar-monotributo-simulador",
+    "region": "LATAM",
+    "pain_point": "Monotributistas argentinos no saben en que categoria estan ni cuanto pagaran tras cada actualizacion semestral y muchas calculadoras muestran escalas viejas.",
+    "segment": "Monotributistas en Argentina.",
+    "micro_app_idea": "Simulador de categoria con la escala vigente que proyecta facturacion de 12 meses, alerta cercania al tope y compara servicios vs. bienes.",
+    "evidence": [
+      {
+        "url": "https://www.econoblog.com.ar/157743/nuevas-escalas-del-monotributo-de-agosto-de-2026-a-enero-de-2027/",
+        "what": "[titulo] 'Nuevas escalas del monotributo de agosto de 2026 a enero de 2027'; el resumen cita ajuste de 16,8% y cuota categoria A de $49.527,18.",
+        "date": null
+      },
+      {
+        "url": "https://www.iprofesional.com/impuestos/433285-recategorizacion-monotributo-arca-las-herramientas-online-que-facilitan-el-tramite",
+        "what": "[titulo] 'Recategorizacion monotributo ARCA: las herramientas online que facilitan el tramite' (fecha mostrada: 12/6/2026).",
+        "date": "2026-06"
+      },
+      {
+        "url": "https://hacecuentas.com/calculadora-monotributo-2026",
+        "what": "[titulo] Calculadora de monotributo 2026 gratuita; el resumen advierte que algunas calculadoras muestran tablas anteriores a la escala de agosto.",
+        "date": null
+      },
+      {
+        "url": "https://siap.blogdelcontador.com.ar/herramientas/herramienta-86589-2026/",
+        "what": "[titulo] Simulador de recategorizacion de Blog del Contador con contenido solo para suscriptores.",
+        "date": null
+      }
+    ],
+    "paid_alternatives": [
+      {
+        "name": "Blog del Contador (simulador solo para suscriptores; precio no visto; modelo no confirmado)",
+        "price_usd": null,
+        "model": "monthly",
+        "url": "https://siap.blogdelcontador.com.ar/herramientas/herramienta-86589-2026/"
+      },
+      {
+        "name": "Calculadoras gratuitas (hacecuentas, contablix)",
+        "price_usd": 0,
+        "model": "freemium",
+        "url": "https://contablix.ar/calculadora-monotributo"
+      }
+    ],
+    "search_signals": {
+      "queries": [
+        "calculadora monotributo categoria 2026",
+        "recategorizacion monotributo cuanto pago",
+        "escalas monotributo agosto 2026",
+        "monotributo que categoria me corresponde"
+      ],
+      "volume_note": null
+    },
+    "urgency_1to5": 3,
+    "urgency_basis": "Recategorizacion semestral y escalas que cambian; la proxima fecha oficial no se encontro.",
+    "buildability_1to5": 5,
+    "wtp_20_evidence": null,
+    "risks": "Muy saturado con calculadoras gratuitas; escalas cambian cada semestre (mantenimiento); fiscal regulado.",
+    "confidence": "low"
+  },
+  {
+    "id": "ar-alquiler-ajuste-icl-ipc",
+    "region": "LATAM",
+    "pain_point": "Inquilinos y propietarios argentinos no saben que indice (ICL, IPC u otro) aplica a su contrato y cuanto sube el alquiler en cada ajuste.",
+    "segment": "Inquilinos y propietarios en Argentina.",
+    "micro_app_idea": "Calculadora que detecta el indice segun fecha de firma y clausula, aplica el ajuste y avisa de los proximos aumentos.",
+    "evidence": [
+      {
+        "url": "https://roomix.ai/blog/actualizacion-icl-agosto-2026",
+        "what": "[snippet] Segun el resumen, el ICL acumulo +19,12% entre el 1 de enero y el 1 de agosto de 2026 (valor 35,01).",
+        "date": null
+      },
+      {
+        "url": "https://hacecuentas.com/calculadora-actualizacion-alquiler-icl",
+        "what": "[titulo] Calculadora gratuita de actualizacion de alquiler por ICL (ya existe).",
+        "date": null
+      },
+      {
+        "url": "https://mudafy.com.ar/d/calculadora-actualizacion-alquiler",
+        "what": "[titulo] 'Calculadora de actualizacion de alquileres (ICL e IPC)' de Mudafy (gratuita).",
+        "date": null
+      },
+      {
+        "url": "https://www.infozona.com.ar/calcula-el-aumento-de-tu-alquiler-en-octubre-guia-actualizada-con-la-normativa-vigente-en-argentina/",
+        "what": "[titulo] 'Calcula el aumento de tu alquiler en octubre: guia actualizada con la normativa vigente en Argentina'.",
+        "date": null
+      }
+    ],
+    "paid_alternatives": [
+      {
+        "name": "Calculadoras gratuitas: Hacecuentas, Mudafy, Roomix, Dolarito",
+        "price_usd": 0,
+        "model": "freemium",
+        "url": "https://www.dolarito.ar/utilidades/calculadora-alquiler"
+      }
+    ],
+    "search_signals": {
+      "queries": [
+        "calculadora actualizacion alquiler ICL",
+        "como calcular aumento de alquiler IPC",
+        "cuanto sube mi alquiler octubre 2026",
+        "que indice me corresponde segun mi contrato"
+      ],
+      "volume_note": null
+    },
+    "urgency_1to5": 3,
+    "urgency_basis": "Ajustes periodicos de contrato; reglas por fecha de firma generan confusion (leyes 27.551, 27.737, DNU 70/2023).",
+    "buildability_1to5": 5,
+    "wtp_20_evidence": null,
+    "risks": "Extremadamente saturado con calculadoras gratuitas de inmobiliarias; zona legal (la clausula del contrato manda); numeros de ley contradictorios entre fuentes.",
+    "confidence": "low"
+  },
+  {
+    "id": "mx-finiquito-aguinaldo-calculadora",
+    "region": "LATAM",
+    "pain_point": "Trabajadores en Mexico no saben cuanto les toca de finiquito, liquidacion, aguinaldo proporcional y PTU, y las calculadoras difieren entre si.",
+    "segment": "Trabajadores asalariados en Mexico que renuncian o son despedidos.",
+    "micro_app_idea": "Calculadora paso a paso de finiquito, liquidacion y aguinaldo con explicacion de cada concepto.",
+    "evidence": [
+      {
+        "url": "https://hacecuentas.com/calculadora-finiquito-liquidacion-mexico-2026",
+        "what": "[titulo] Calculadora de finiquito y liquidacion Mexico 2026 (gratuita).",
+        "date": null
+      },
+      {
+        "url": "https://senhub.mx/herramientas/calculadora-finiquito",
+        "what": "[titulo] Calculadora de finiquito de SenHub (gratuita).",
+        "date": null
+      },
+      {
+        "url": "https://finiquitojusto.com/?p=2337",
+        "what": "[titulo] 'Calculadora de Finiquito y Liquidacion Mexico 2026: Ley Federal del Trabajo (LFT)'; el resumen advierte que las fuentes difieren en la exencion de ISR (cifras como $4,182 desactualizadas por el salario minimo).",
+        "date": null
+      }
+    ],
+    "paid_alternatives": [
+      {
+        "name": "Calculadoras gratuitas de finiquito (hacecuentas, senhub, finiquitojusto, calcuris)",
+        "price_usd": 0,
+        "model": "freemium",
+        "url": "https://calcuris.com/es/mexico/laboral/calculo-finiquito/"
+      }
+    ],
+    "search_signals": {
+      "queries": [
+        "calculadora finiquito liquidacion Mexico 2026",
+        "cuanto me toca de aguinaldo proporcional si renuncio",
+        "PTU 2026 calculo",
+        "liquidacion por despido injustificado calculo"
+      ],
+      "volume_note": null
+    },
+    "urgency_1to5": 3,
+    "urgency_basis": "Dolor puntual al terminar una relacion laboral; sin plazo comun; el aguinaldo se paga antes del 20 de diciembre.",
+    "buildability_1to5": 4,
+    "wtp_20_evidence": null,
+    "risks": "Zona laboral/legal regulada (marcar 'no es asesoria'); saturacion total con calculadoras gratuitas; cifras de ISR cambian con UMA y salario minimo.",
+    "confidence": "low"
+  },
+  {
+    "id": "br-enem-redacao-correcao",
+    "region": "LATAM",
+    "pain_point": "Estudiantes brasilenos necesitan feedback rapido y barato sobre su redacao del ENEM.",
+    "segment": "Estudiantes de ensino medio y cursinho en Brasil; portugues.",
+    "micro_app_idea": "Corrector de redacao con rubrica de las cinco competencias del ENEM y seguimiento de progreso.",
+    "evidence": [
+      {
+        "url": "https://meutudo.com.br/blog/noticias/2025/10/17/mec-enem-app-com-ia-corrige-redacoes-e-cria-planos-de-estudo/",
+        "what": "[titulo] 'MEC Enem: app com IA corrige redacoes e cria planos de estudo' (app oficial gratuito con conta gov.br).",
+        "date": "2025-10"
+      },
+      {
+        "url": "https://olhardigital.com.br/2025/11/23/dicas-e-tutoriais/como-corrigir-a-redacao-do-enem-pelo-app-do-mec/",
+        "what": "[titulo] 'Como corrigir a redacao do ENEM pelo app do MEC?'; el resumen indica nota estimada en hasta 60 segundos a partir de una foto.",
+        "date": "2025-11"
+      },
+      {
+        "url": "https://www.descomplica.com.br/redacao",
+        "what": "[snippet] Segun el resumen: 30 correcciones al mes, 6 meses de acceso, 12 cuotas de R$ 39,90.",
+        "date": null
+      },
+      {
+        "url": "https://www.grancursosonline.com.br/redacao-sob-medida/planos",
+        "what": "[snippet] Segun el resumen: plan mensual R$ 99,90 con 4 correcciones; plan anual 12x R$ 69,90 con 48 correcciones.",
+        "date": null
+      }
+    ],
+    "paid_alternatives": [
+      {
+        "name": "Descomplica Redacao (12 cuotas de R$ 39,90 por 6 meses de acceso, segun resumen)",
+        "price_usd": null,
+        "model": "one-time",
+        "url": "https://www.descomplica.com.br/redacao"
+      },
+      {
+        "name": "Gran Cursos Online Redacao sob Medida (R$ 99,90 mensual con 4 correcciones segun resumen)",
+        "price_usd": null,
+        "model": "monthly",
+        "url": "https://www.grancursosonline.com.br/redacao-sob-medida/planos"
+      },
+      {
+        "name": "MEC Enem (app oficial gratuito con IA)",
+        "price_usd": 0,
+        "model": "freemium",
+        "url": "https://meutudo.com.br/blog/noticias/2025/10/17/mec-enem-app-com-ia-corrige-redacoes-e-cria-planos-de-estudo/"
+      }
+    ],
+    "search_signals": {
+      "queries": [
+        "correcao de redacao ENEM com IA",
+        "app para corrigir redacao ENEM gratis",
+        "nota das cinco competencias redacao ENEM",
+        "simulado ENEM 2026 gratis"
+      ],
+      "volume_note": null
+    },
+    "urgency_1to5": 2,
+    "urgency_basis": "Estacional (ENEM) y ya cubierto por un app oficial gratuito.",
+    "buildability_1to5": 3,
+    "wtp_20_evidence": "Hay planes pagos de cursinhos (R$ 39,90 a R$ 99,90 por mes segun el resumen) pero el MEC ofrece correccion gratuita: $20 pago unico poco plausible frente a gratuidad oficial.",
+    "risks": "Saturacion extrema por app oficial gratuito; calidad de correccion con IA dudosa (un usuario reporto fallas); requiere modelo de lenguaje con costo por uso.",
+    "confidence": "low"
+  },
+  {
+    "id": "br-cnh-simulado-prova-teorica",
+    "region": "LATAM",
+    "pain_point": "Candidatos a la CNH en Brasil necesitan practicar la prueba teorica y ahora el proceso puede hacerse sin autoescola.",
+    "segment": "Candidatos a la licencia de conducir (CNH) en Brasil; portugues.",
+    "micro_app_idea": "Simulador offline con banco de preguntas por estado y repaso adaptativo de errores.",
+    "evidence": [
+      {
+        "url": "https://www.tecmundo.com.br/mercado/409173-governo-lanca-app-com-aulas-teoricas-gratuitas-para-tirar-a-cnh.htm",
+        "what": "[titulo] 'Governo lanca app com aulas teoricas gratuitas para tirar a CNH' (app 'CNH do Brasil').",
+        "date": null
+      },
+      {
+        "url": "https://www.vrum.com.br/noticias/2025/12/7312721-passo-a-passo-para-tirar-a-cnh-pelo-app-sem-precisar-da-autoescola.html",
+        "what": "[titulo] 'Passo a passo para tirar a CNH pelo app sem precisar da autoescola' (diciembre de 2025).",
+        "date": "2025-12"
+      },
+      {
+        "url": "https://apps.apple.com/us/app/-/id6749655479",
+        "what": "[snippet] 'Simulado Pratico CNH 2025' declara mas de 700 preguntas y simulados de 30 o 40 preguntas; existen muchos apps de terceros de simulado.",
+        "date": null
+      }
+    ],
+    "paid_alternatives": [
+      {
+        "name": "CNH do Brasil (app oficial del Serpro con simulado, gratuito)",
+        "price_usd": 0,
+        "model": "freemium",
+        "url": "https://www.tecmundo.com.br/mercado/409173-governo-lanca-app-com-aulas-teoricas-gratuitas-para-tirar-a-cnh.htm"
+      },
+      {
+        "name": "Simulado Detran CNH Prova 2026 (iOS; precio no visto; modelo no confirmado)",
+        "price_usd": null,
+        "model": "freemium",
+        "url": "https://apps.apple.com/us/app/-/id6748371039"
+      }
+    ],
+    "search_signals": {
+      "queries": [
+        "simulado prova teorica CNH 2026",
+        "app para treinar prova do Detran",
+        "CNH sem autoescola curso teorico gratuito",
+        "simulado Detran gratis"
+      ],
+      "volume_note": null
+    },
+    "urgency_1to5": 2,
+    "urgency_basis": "Necesidad puntual por candidato; sin plazo comun.",
+    "buildability_1to5": 4,
+    "wtp_20_evidence": null,
+    "risks": "Saturacion alta (app oficial gratuito y decenas de apps con anuncios); bancos de preguntas deben respetar la normativa vigente; baja disposicion de pago.",
+    "confidence": "low"
+  },
+  {
+    "id": "latam-ccse-simulacro-nacionalidad",
+    "region": "LATAM",
+    "pain_point": "Latinoamericanos que solicitan la nacionalidad espanola deben aprobar el CCSE y buscan simulacros actualizados al manual 2026.",
+    "segment": "Mexicanos, argentinos, colombianos y otros latinoamericanos que tramitan la nacionalidad espanola.",
+    "micro_app_idea": "Simulador de examen CCSE con las 25 preguntas por prueba, estadisticas de progreso y repaso de fallos.",
+    "evidence": [
+      {
+        "url": "https://apps.apple.com/app/id1461069757",
+        "what": "[snippet] App oficial del Instituto Cervantes: gratuita, sin publicidad, 300 preguntas del manual y simulacion de examen; la ficha aun menciona el manual 2020.",
+        "date": null
+      },
+      {
+        "url": "https://apps.apple.com/us/app/-/id1055304875",
+        "what": "[snippet] 'Examen Nacionalidad Espanola' (gratuita con compras): 1300 preguntas en 51 tests.",
+        "date": null
+      },
+      {
+        "url": "https://cealm.ujaen.es/print/pdf/node/36154",
+        "what": "[snippet] Tabla de la Universidad de Jaen con convocatoria del 29 de octubre de 2026 y cierre de inscripcion el 8 de octubre.",
+        "date": null
+      },
+      {
+        "url": "https://machelindiaz.com/manual-ccse-2026-descarga-el-pdf-oficial-y-preparate-para-el-examen-de-nacionalidad/",
+        "what": "[titulo] 'Manual CCSE 2026: descarga el PDF oficial y preparate para el examen de nacionalidad'.",
+        "date": null
+      }
+    ],
+    "paid_alternatives": [
+      {
+        "name": "App oficial del Instituto Cervantes (gratuita)",
+        "price_usd": 0,
+        "model": "freemium",
+        "url": "https://apps.apple.com/app/id1461069757"
+      },
+      {
+        "name": "Examen Nacionalidad Espanola (gratis con compras en la app; precio no visto; modelo no confirmado)",
+        "price_usd": null,
+        "model": "freemium",
+        "url": "https://apps.apple.com/us/app/-/id1055304875"
+      }
+    ],
+    "search_signals": {
+      "queries": [
+        "simulacro examen CCSE 2026",
+        "preguntas CCSE nacionalidad espanola app gratis",
+        "manual CCSE 2026 PDF",
+        "CCSE fechas de examen 2026"
+      ],
+      "volume_note": null
+    },
+    "urgency_1to5": 3,
+    "urgency_basis": "Convocatorias con fechas concretas (octubre de 2026) y cambio de manual en 2026.",
+    "buildability_1to5": 4,
+    "wtp_20_evidence": null,
+    "risks": "Existe app oficial gratuita y muchas de terceros; tema de nacionalidad es cercano a zona legal (no dar asesoria sobre exenciones); contenido oficial limitado a 300 preguntas.",
+    "confidence": "low"
+  },
+  {
+    "id": "latam-tandas-organizador",
+    "region": "LATAM",
+    "pain_point": "Grupos de ahorro informal (tandas, pandero, junta) coordinan aportes y turnos por chat sin respaldo y con riesgo de perder el dinero.",
+    "segment": "Participantes y organizadores de tandas en Mexico y otros paises de la region.",
+    "micro_app_idea": "Registro de turnos, aportes y recordatorios por grupo, exportable al chat, sin custodiar dinero.",
+    "evidence": [
+      {
+        "url": "https://wwwhatsnew.com/2018/05/25/yahoo-cierra-tanda-la-aplicacion-de-ahorro-social/",
+        "what": "[titulo] 'Yahoo cierra Tanda, la aplicacion de ahorro social' (mayo de 2018): un intento de app de tandas cerro.",
+        "date": "2018-05"
+      },
+      {
+        "url": "https://chrome-stats.com/d/id6763742265",
+        "what": "[snippet] 'Tandapp: Group Savings Tracker': segun una web de estadisticas, coordina y lleva registros pero no guarda dinero ni procesa pagos.",
+        "date": null
+      },
+      {
+        "url": "https://www.bbva.com/es/mx/salud-financiera/mitos-y-realidades-de-las-tandas-de-ahorro-son-tan-buenas/",
+        "what": "[titulo] 'Mitos y realidades de las tandas de ahorro'; el resumen indica que si alguien abandona el aporte puede perderse sin respaldo legal.",
+        "date": null
+      },
+      {
+        "url": "https://forbes.com.mx/?p=883743",
+        "what": "[snippet] Segun el resumen, Forbes Mexico senala unos 200 nombres para este mecanismo.",
+        "date": null
+      }
+    ],
+    "paid_alternatives": [
+      {
+        "name": "Tandapp (iOS; precio no visto; modelo no confirmado)",
+        "price_usd": null,
+        "model": "freemium",
+        "url": "https://chrome-stats.com/d/id6763742265"
+      },
+      {
+        "name": "Tutanda (sitio web; precio no visto; modelo no confirmado)",
+        "price_usd": null,
+        "model": "freemium",
+        "url": "https://wwwhatsnew.com/?p=154995"
+      }
+    ],
+    "search_signals": {
+      "queries": [
+        "app para tandas de ahorro",
+        "como organizar una tanda por WhatsApp",
+        "pandero grupo de ahorro app",
+        "tanda riesgos"
+      ],
+      "volume_note": null
+    },
+    "urgency_1to5": 2,
+    "urgency_basis": "Dolor recurrente pero informal y sin plazo; el cierre de la app de Yahoo sugiere dificultad de monetizacion.",
+    "buildability_1to5": 4,
+    "wtp_20_evidence": null,
+    "risks": "Solucion sustituible por hoja compartida o chat; sin custodia de dinero no resuelve el riesgo central; zona financiera si se procesan pagos; evidencia de monetizacion debil.",
+    "confidence": "low"
+  },
+  {
+    "id": "latam-remesas-comparador",
+    "region": "LATAM",
+    "pain_point": "Quienes envian o reciben remesas desde Estados Unidos no saben cual servicio entrega mas pesos tras comision y tipo de cambio, y desde 2026 hay un impuesto de 1% a envios en efectivo.",
+    "segment": "Receptores de remesas en Mexico y otros paises; remitentes en Estados Unidos.",
+    "micro_app_idea": "Comparador manual de monto final recibido que incluye margen de cambio y el impuesto de 1% segun metodo de pago.",
+    "evidence": [
+      {
+        "url": "https://cuantomecuesta.com/mx/enviar-dinero/",
+        "what": "[titulo] Comparador 'Precios actualizados: abril 2026' de envio de dinero a Mexico; el resumen advierte que su titular elige a Wise como mejor mientras su tabla muestra que la transferencia bancaria entrega mas pesos (inconsistencia).",
+        "date": "2026-04"
+      },
+      {
+        "url": "https://www.telediario.mx/economia/western-union-opcion-enviar-remesas-profeco",
+        "what": "[titulo] Nota sobre Western Union y Profeco; el resumen cita la calculadora oficial de Profeco que compara comisiones y tipo de cambio.",
+        "date": null
+      },
+      {
+        "url": "https://www.unotv.com/us/como-enviar-dinero-a-mexico-en-2026-la-comparacion-de-las-mejores-apps-y-el-impacto-que-tienen-los-aranceles-de-trump-en-las-remesas/",
+        "what": "[titulo] 'Como enviar dinero a Mexico en 2026: la comparacion de las mejores apps...'; el resumen cita el impuesto de 1% a remesas en efectivo desde el 1 de enero de 2026 (fuente exacta del dato no confirmada).",
+        "date": null
+      }
+    ],
+    "paid_alternatives": [
+      {
+        "name": "Remitly (una comparativa cita tarifa $3.99 mas 1% de margen en la cotizacion; fuente exacta no identificada)",
+        "price_usd": null,
+        "model": "freemium",
+        "url": "https://cuantomecuesta.com/mx/enviar-dinero/"
+      },
+      {
+        "name": "Calculadora oficial de Profeco (gratuita)",
+        "price_usd": 0,
+        "model": "freemium",
+        "url": "https://www.telediario.mx/economia/western-union-opcion-enviar-remesas-profeco"
+      }
+    ],
+    "search_signals": {
+      "queries": [
+        "enviar dinero de Estados Unidos a Mexico barato 2026",
+        "comparar remesas comision tipo de cambio",
+        "calculadora remesas Profeco",
+        "impuesto 1% remesas efectivo"
+      ],
+      "volume_note": null
+    },
+    "urgency_1to5": 2,
+    "urgency_basis": "Dolor recurrente pero ya cubierto por calculadoras oficiales; el cambio fiscal de 2026 es un detonante parcial.",
+    "buildability_1to5": 4,
+    "wtp_20_evidence": null,
+    "risks": "Cubierto por calculadoras oficiales gratuitas (Profeco, CONDUSEF); tarifas cambian a diario; zona financiera; la audiencia que paga esta en Estados Unidos, fuera del alcance de pago regional.",
+    "confidence": "low"
+  }
+]

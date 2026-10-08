@@ -1,0 +1,656 @@
+[
+  {
+    "id": "nebenkosten-check-mieter",
+    "region": "EU",
+    "pain_point": "Los inquilinos en Alemania no saben si su Nebenkostenabrechnung (liquidación anual de gastos) es correcta, y hacerla revisar cuesta entre 15 y 100 EUR o mucho tiempo",
+    "segment": "Inquilinos de vivienda en Alemania (extensible a AT/CH de habla alemana)",
+    "micro_app_idea": "App local que guía al inquilino por una lista de comprobación de la liquidación (superficie, partidas no repercutibles, clave de reparto, lecturas, plazos), marca posibles errores y genera una carta de objeción para el casero",
+    "evidence": [
+      {"url": "https://www.finanztip.de/nebenkostenabrechnung/", "what": "Test de Finanztip (precios a ago-2026): Nebenkostenpro (IA) 14,90 EUR; Mineko 49/69/89 EUR según superficie; Yourxpert 69,90 EUR (99,90 EUR con carta al casero). Mineko afirma que el 86% de las liquidaciones revisadas eran erróneas, con 565 EUR pagados de más de media (dato del proveedor, muestra autoseleccionada)", "date": "2026-08"},
+      {"url": "https://www.finanztip.de/community/forum/thema/35801-mineko-empfehlung-von-finanztip-und-meine-erfahrung/", "what": "Foro Finanztip: un usuario se declara decepcionado con el resultado de una revisión de pago (69 EUR); otro duda de que a ese precio la revise una persona", "date": null},
+      {"url": "https://www.immowelt.de/ratgeber/news/heiz-und-nebenkosten-warum-deine-abrechnung-fast-sicher-fehlerhaft-ist", "what": "Encuesta Immowelt (según resumen de búsqueda): entre inquilinos con disputa, los reproches fueron errores de cálculo/datos (29%), lecturas mal tomadas (26%) y partidas improcedentes (24%)", "date": null},
+      {"url": "https://www.t-online.de/finanzen/aktuelles/immobilien/id_85330072/jede-vierte-mietkostenabrechnung-fehlerhaft.html", "what": "Titular: «Jede vierte Abrechnung der Mietkosten ist fehlerhaft»; las tasas de error citadas varían mucho según la fuente (25% a 86% según proveedor)", "date": null}
+    ],
+    "paid_alternatives": [
+      {"name": "Nebenkostenpro (IA, 14,90 EUR por informe + borrador de carta)", "price_usd": null, "model": "one-time", "url": "https://www.finanztip.de/nebenkostenabrechnung/"},
+      {"name": "Mineko (49-89 EUR por revisión, servicio jurídico)", "price_usd": null, "model": "one-time", "url": "https://www.finanztip.de/nebenkostenabrechnung/"},
+      {"name": "Yourxpert (69,90 EUR; 99,90 EUR con carta al casero)", "price_usd": null, "model": "one-time", "url": "https://www.finanztip.de/nebenkostenabrechnung/"}
+    ],
+    "search_signals": {"queries": ["Nebenkostenabrechnung prüfen", "Nebenkostenabrechnung prüfen lassen", "Betriebskostenabrechnung Mieterverein oder mineko oder yourxpert", "Nebenkostenabrechnung Fehler Widerspruch"], "volume_note": null},
+    "urgency_1to5": 4,
+    "urgency_basis": "Cada liquidación anual abre un plazo de objeción (Finanztip: a menudo 4 semanas indicadas en la propia liquidación) y los proveedores cifran en 565 EUR de media lo pagado de más.",
+    "buildability_1to5": 3,
+    "wtp_20_evidence": "Nebenkostenpro cobra 14,90 EUR por informe más carta (Finanztip, ago-2026); el rango observado de mercado es 14,90-99,90 EUR por revisión, así que ~18 EUR por una app reutilizable cada año es plausible.",
+    "risks": "Zona regulada: una valoración jurídica personalizada puede rozar la Rechtsdienstleistungsgesetz, hay que limitarse a información y listas de comprobación. Competidores con respaldo editorial de Finanztip y servicios con revisión humana; el reparto exacto exige datos del contrato; las tasas de error vienen de proveedores y muestras autoseleccionadas.",
+    "confidence": "med"
+  },
+  {
+    "id": "e-rechnung-reader-offline",
+    "region": "EU",
+    "pain_point": "Autónomos y micropymes de DE/FR/IT/PL deben poder recibir facturas electrónicas estructuradas (XRechnung, ZUGFeRD/Factur-X, FatturaPA, KSeF) que no se leen como un PDF normal",
+    "segment": "Autónomos y micropymes (incluidos Kleinunternehmer y franchise en base) en Alemania, Francia, Italia y Polonia",
+    "micro_app_idea": "App de escritorio offline que abre cualquier factura electrónica (XML o PDF híbrido), la muestra legible, la exporta a PDF/CSV, la archiva con hash y permite emitir una factura mínima en el formato del país",
+    "evidence": [
+      {"url": "https://www.ihk.de/potsdam/ihk-service-und-beratung/e-rechnungen-ab-2025-6223258", "what": "IHK Potsdam: desde 1-ene-2025 todas las empresas, también Kleinunternehmer, deben poder recibir y archivar facturas electrónicas", "date": "2025-01"},
+      {"url": "https://kostenlose-erechnung.de/ratgeber/erechnung-kleinunternehmer-2026/", "what": "Guía: un PDF enviado por e-mail no cuenta como e-factura; la emisión obligatoria llega en 2027 (>800.000 EUR de facturación) y 2028 (resto); los Kleinunternehmer están exentos de emitir (§34a UStDV). Otra guía da como fin del periodo transitorio el 31-12-2026, así que las fuentes discrepan", "date": "2026-01"},
+      {"url": "https://www.avvocatoandreani.it/servizi/visualizzatore-fattura-elettronica.php", "what": "Italia: existe un visor web que convierte XML de fattura elettronica a PDF procesando en el propio equipo; las guías explican que Windows no trae ningún programa para mostrar el XML (turbolab.it, testo-unico-sicurezza.com)", "date": null},
+      {"url": "https://espace-autoentrepreneur.com/blog/facturation-auto-entrepreneur-ce-qui-change-au-1er-septembre-2026", "what": "Francia: guía titulada «ce qui change au 1er septembre 2026»; según resúmenes de búsqueda, la recepción de facturas electrónicas por plataforma agréée es obligatoria desde 1-sep-2026 y la emisión desde sep-2027", "date": "2026-09"},
+      {"url": "https://ksef.podatki.gov.pl/czy-trzeba-miec-platny-program-zeby-wystawiac-faktury-w-ksef", "what": "Polonia: el Ministerio de Finanzas ofrece Aplikacja Podatnika KSeF (web) y app móvil (desde 1-feb-2026) gratis; las microempresas con ventas brutas <=10.000 PLN/mes emiten en KSeF desde 1-ene-2027 según guías", "date": "2026-02"}
+    ],
+    "paid_alternatives": [
+      {"name": "kostenlose-erechnung.de (plan gratis de 3 facturas/mes; exporta ZUGFeRD/XRechnung)", "price_usd": 0, "model": "freemium", "url": "https://kostenlose-erechnung.de/e-rechnung/kleinunternehmer/"},
+      {"name": "Norman Finance generador gratuito de ZUGFeRD (sin registro)", "price_usd": 0, "model": "freemium", "url": "https://norman.finance/de/tools/erechnung"},
+      {"name": "BillingEngine Basic (6 EUR/mes en plan anual, 7,50 EUR mensual, incluye e-factura)", "price_usd": null, "model": "annual", "url": "https://www.fastlancer.org/fastlancer-blog/beste-rechnungssoftware-kleinunternehmer/"},
+      {"name": "Visores italianos gratuitos de fattura elettronica (MIGG VisualizzaFatturaElettronica, AssoInvoice, avvocatoandreani.it)", "price_usd": 0, "model": "freemium", "url": "https://www.avvocatoandreani.it/servizi/visualizzatore-fattura-elettronica.php"}
+    ],
+    "search_signals": {"queries": ["E-Rechnung Kleinunternehmer", "E-Rechnung empfangen XRechnung öffnen", "come aprire file xml fattura elettronica", "facture électronique auto-entrepreneur logiciel gratuit", "darmowy program do faktur KSeF"], "volume_note": null},
+    "urgency_1to5": 4,
+    "urgency_basis": "La obligación de recepción ya está vigente (DE 2025, PL feb-2026, FR sep-2026 según guías) y la de emisión llega en 2027-2028; multas y fechas se contradicen entre fuentes.",
+    "buildability_1to5": 4,
+    "wtp_20_evidence": "Sin evidencia directa de pago único: hay muchas herramientas gratuitas y el único precio visto es BillingEngine a 6 EUR/mes con e-factura. El argumento de venta sería offline/privacidad y multi-país.",
+    "risks": "Saturación de herramientas gratuitas (visores IT, generadores DE, apps oficiales PL); formatos y perfiles cambian (KSeF, Factur-X); la validación fiscal completa exige esquemas oficiales; el PDF generado es solo copia de cortesía en Italia; fuentes comerciales y contradictorias en fechas y sanciones.",
+    "confidence": "med"
+  },
+  {
+    "id": "dac7-ledger-vendedores-segunda-mano",
+    "region": "EU",
+    "pain_point": "Los particulares que venden en Vinted, eBay Kleinanzeigen, Etsy o Wallapop temen cruzar el umbral DAC7 (30 ventas o 2.000 EUR por plataforma) y no saben si deben declarar o pasar a autónomo",
+    "segment": "Vendedores particulares y revendedores ocasionales en FR, DE, IT, ES",
+    "micro_app_idea": "Libro de ventas local por plataforma con contadores de umbral DAC7, margen por artículo (precio de compra vs venta), resumen anual exportable y aviso informativo de 'particular vs actividad comercial'",
+    "evidence": [
+      {"url": "https://info.fr/forum/questions-pratiques/declaration-dac7-sur-vinted-cest-obligatoire/", "what": "Hilo de foro: «Déclaration DAC7 sur Vinted, c'est obligatoire ?»; existe otro hilo «Vinted et la DAC7 vous inquiète aussi ?» (info.fr/forum/questions-pratiques/vinted-et-la-dac7-vous-inquiete-aussi/)", "date": null},
+      {"url": "https://margeoapp.com/blog/seuil-3000-euros-plateformes-declaration", "what": "Umbral DAC7 actual: 2.000 EUR o 30 transacciones al año por plataforma, basta una condición; la plataforma transmite en enero; vender objetos personales a pérdida no es imponible pero hay que conservar justificantes (blog de un proveedor de herramientas)", "date": null},
+      {"url": "https://www.partitaiva.it/vinted-dichiarazione-dac7/", "what": "Italia: guía de partitaiva.it titulada «Vinted e dichiarazione DAC7: come funziona, come si compila e obblighi fiscali»", "date": null},
+      {"url": "https://fripio.app/blog/comparatif-outils-vinted-2026", "what": "Comparativa de 7 herramientas para Vinted (precios, IA, notas); según resumen de búsqueda Vinted no ofrece exportación contable a particulares", "date": null}
+    ],
+    "paid_alternatives": [
+      {"name": "Margeo (gratis al inicio, versión Pro 7,99 EUR/mes)", "price_usd": null, "model": "monthly", "url": "https://margeoapp.com/blog/calculateur-frais-vinted-pro-leboncoin-ebay"},
+      {"name": "Clemz (8,99 EUR/mes)", "price_usd": null, "model": "monthly", "url": "https://fripio.app/blog/comparatif-outils-vinted-2026"},
+      {"name": "DoTB (5,99 EUR/mes)", "price_usd": null, "model": "monthly", "url": "https://fripio.app/blog/comparatif-outils-vinted-2026"}
+    ],
+    "search_signals": {"queries": ["Déclaration DAC7 sur Vinted c'est obligatoire", "Vinted impôts déclarer ventes", "Vinted e dichiarazione DAC7", "Vinted DAC7 Steuer Finanzamt"], "volume_note": null},
+    "urgency_1to5": 3,
+    "urgency_basis": "La plataforma comunica los datos a la hacienda en enero de cada año, lo que dispara dudas en temporada de declaración; sin sanción cuantificada en las fuentes vistas.",
+    "buildability_1to5": 4,
+    "wtp_20_evidence": "Competidores cobran 5,99-8,99 EUR al mes (Margeo Pro, Clemz, DoTB); un pago único de ~18 EUR equivale a 2-3 meses de esas suscripciones (cálculo propio).",
+    "risks": "Zona fiscal: debe presentarse como información, no como asesoría; reglas distintas por país (FR micro-BIC, DE PStTG, IT); entrada de datos manual si la plataforma no exporta; fuentes en su mayoría blogs de proveedores con interés comercial.",
+    "confidence": "med"
+  },
+  {
+    "id": "sepa-xml-desde-excel",
+    "region": "EU",
+    "pain_point": "Pymes, asociaciones y autónomos que pagan o cobran en lote necesitan un fichero SEPA XML (pain.001 / pain.008) para su banca online y no saben generarlo desde Excel o CSV",
+    "segment": "Pequeñas empresas, asociaciones (Vereine) y gestores de comunidades en DE/AT/NL y zona SEPA",
+    "micro_app_idea": "App offline que importa Excel/CSV, valida IBAN/BIC y límites del banco, y genera el XML SEPA de transferencias o domiciliaciones listo para subir",
+    "evidence": [
+      {"url": "https://www.heise.de/download/product/sepamacher-93011", "what": "SEPAmacher: gratis (S), 4,99 EUR (M) y 14,99 EUR (L), versiones por número de cuentas de socios", "date": null},
+      {"url": "https://www.heise.de/download/product/intex-sepa-97276", "what": "INtex SEPA: 79 EUR, crea transferencias y domiciliaciones desde texto, hojas de cálculo y bases de datos; entrada del listado de mayo 2024", "date": "2024-05"},
+      {"url": "https://www.commerzbank.de/service/wie-kann-ich-im-online-banking-eine-sepa-datei-hochladen/", "what": "Commerzbank: máx. 999 transferencias por fichero y 2,5 MB; solo se comprueba la longitud del BIC (un BIC erróneo se acepta pero falla después); no se admiten ficheros con varias cuentas ordenantes", "date": null},
+      {"url": "https://www.jam-software.com/sepa-transfer/excel-import.shtml", "what": "JAM Software SEPA-Transfer importa Excel y CSV; demo gratuita, precio no localizado", "date": null},
+      {"url": "https://vialet.notion.site/Using-the-Helper-Excel-Spreadsheet-with-CSV-Support-1c4418f30ba581b78d90f334899cfd70", "what": "Existe una hoja Excel con macros (requiere Excel 2019+) que genera el SEPA XML, señal de que la gente lo resuelve de forma casera", "date": null}
+    ],
+    "paid_alternatives": [
+      {"name": "SEPAmacher (gratis S; 4,99 EUR M; 14,99 EUR L)", "price_usd": null, "model": "freemium", "url": "https://www.heise.de/download/product/sepamacher-93011"},
+      {"name": "INtex SEPA (79 EUR)", "price_usd": null, "model": "one-time", "url": "https://www.heise.de/download/product/intex-sepa-97276"},
+      {"name": "JAM Software SEPA-Transfer (precio no visto)", "price_usd": null, "model": null, "url": "https://www.jam-software.com/sepa-transfer/excel-import.shtml"},
+      {"name": "Akaunting app SEPA Credit Transfer (licencia de por vida)", "price_usd": 420, "model": "one-time", "url": "https://akaunting.com/apps/sepa"}
+    ],
+    "search_signals": {"queries": ["SEPA XML aus Excel erstellen", "Sammelüberweisung SEPA-Datei erstellen", "pain.001 Datei erstellen", "CSV in SEPA XML umwandeln"], "volume_note": null},
+    "urgency_1to5": 2,
+    "urgency_basis": "Tarea recurrente sin plazo legal; el dolor es de tiempo y de errores (un BIC/IBAN incorrecto se acepta y falla después según Commerzbank).",
+    "buildability_1to5": 5,
+    "wtp_20_evidence": "SEPAmacher cobra 4,99-14,99 EUR y INtex SEPA 79 EUR en listados de heise; ~18 EUR cae dentro del rango observado.",
+    "risks": "Variantes de pain por banco y cambios de versión ISO 20022; confianza al manejar datos bancarios; existen bibliotecas y hojas Excel gratuitas; mercado pequeño y maduro; precios de heise pueden estar desactualizados.",
+    "confidence": "med"
+  },
+  {
+    "id": "telearbeit-tage-grenzgaenger-tracker",
+    "region": "EU",
+    "pain_point": "Los trabajadores transfronterizos (FR/BE/DE residentes que trabajan en LU, DE o CH) deben contar sus días de teletrabajo para no superar umbrales fiscales (34 días FR-LU) y de seguridad social (25% / hasta 49,9%) y no tienen herramienta simple",
+    "segment": "Trabajadores transfronterizos y sus departamentos de RRHH/nóminas en Luxemburgo, Alemania, Francia, Bélgica",
+    "micro_app_idea": "Calendario local que registra lugar de trabajo por día, cuenta días de teletrabajo y porcentaje de jornada por país, avisa al acercarse a los umbrales y exporta el justificante para el empleador",
+    "evidence": [
+      {"url": "https://www.lesfrontaliers.lu/?p=1165814", "what": "Titular: «Les 34 jours de télétravail des frontaliers français (enfin) actés»; según resúmenes de búsqueda el límite fiscal FR-LU pasó de 29 a 34 días (vigente desde 1-ene-2023, ratificado por Francia en feb-2025)", "date": null},
+      {"url": "https://frontaliers-grandest.eu/de/faq-homeoffice-grenzgaenger/", "what": "FAQ de Frontaliers Grand Est sobre teletrabajo de Grenzgänger; según resúmenes: seguridad social en país de empleo por debajo del 25%, acuerdo marco desde 1-jul-2023 eleva a 49,9% con un solo empleador, el empleador declara en SECUline y el CCSS emite el A1 (válido 3 años)", "date": null},
+      {"url": "https://www.pixie.lu/corpus/rh/71-0045/quels-outils-de-suivi-permettent-de-calculer-en-temps-reel-le-seuil-de-jours-de-teletravail-frontalier/", "what": "Pregunta frecuente de RRHH «Quels outils de suivi permettent de calculer en temps réel le seuil de jours de télétravail frontalier ?»: sugiere módulos HR (SAP, Workday), hojas compartidas con macros o plataformas cloud, es decir, no hay herramienta dedicada obvia (fuente débil, con cifras contradictorias 49% vs 49,9%)", "date": null},
+      {"url": "https://tpeactu.fr/2026/05/01/teletravail-luxembourg-frontalier-regles-2026/", "what": "Artículo de mayo 2026: «Télétravail au Luxembourg : ce que les frontaliers français doivent vérifier»", "date": "2026-05"}
+    ],
+    "paid_alternatives": [],
+    "search_signals": {"queries": ["Homeoffice Grenzgänger Tage zählen", "télétravail frontalier 34 jours suivi", "quels outils de suivi télétravail frontalier seuil", "Grenzgänger Homeoffice 25 Prozent Sozialversicherung A1"], "volume_note": null},
+    "urgency_1to5": 4,
+    "urgency_basis": "Superar el umbral puede cambiar el régimen fiscal o la afiliación a la seguridad social (según una fuente, todos los días de teletrabajo pasan a tributar en Francia, no solo el exceso).",
+    "buildability_1to5": 3,
+    "wtp_20_evidence": null,
+    "risks": "No se encontró ningún producto de pago dedicado ni precio de referencia; reglas distintas por pareja de países y cambiantes (las fuentes se contradicen: DE-FR 34 vs 45 días); el empleador, no el trabajador, decide algunas reglas; zona fiscal/laboral regulada, solo información. Fuentes de asesores, no de autoridades.",
+    "confidence": "low"
+  },
+  {
+    "id": "rechnungs-pdf-umbenenner-lokal",
+    "region": "EU",
+    "pain_point": "Autónomos y pymes reciben decenas de facturas PDF con nombres inservibles y pierden tiempo renombrándolas y ordenándolas para la gestoría/Steuerberater, sin querer subirlas a la nube por RGPD",
+    "segment": "Autónomos, pequeños negocios y gestores contables de la UE",
+    "micro_app_idea": "App de escritorio offline que lee cada PDF de factura (texto/OCR local), extrae proveedor, fecha, número e importe y los renombra y archiva en carpetas por mes con una plantilla configurable y CSV resumen",
+    "evidence": [
+      {"url": "https://payhip.com/b/3rs0d", "what": "RenameIQ: renombra PDF de facturas por contenido, procesa en local sin subir archivos, sin suscripción; listado a 39,99 USD (en oferta); prueba limitada a 50 archivos", "date": null},
+      {"url": "https://www.alternativeto.net/software/renameiq-pro/about/", "what": "AlternativeTo lo clasifica como compra única (licencia perpetua), Windows, idiomas EN/FR/ES/DE; sin comentarios ni reseñas todavía", "date": null},
+      {"url": "https://sorto.ca/rename-pdf-invoices/", "what": "Sorto: app de escritorio Windows/Mac para renombrar facturas y recibos; plan gratuito de 100 archivos al mes", "date": null},
+      {"url": "https://www.klippa.com/de/blog/informativ/rechnungen-automatisch-umbenennen/", "what": "Un proveedor de OCR en la nube publica una guía en alemán sobre renombrar facturas automáticamente, señal de demanda de la consulta", "date": null}
+    ],
+    "paid_alternatives": [
+      {"name": "RenameIQ (Windows, local)", "price_usd": 39.99, "model": "one-time", "url": "https://payhip.com/b/3rs0d"},
+      {"name": "Sorto (Windows/Mac; gratis 100 archivos/mes)", "price_usd": null, "model": "freemium", "url": "https://sorto.ca/rename-pdf-invoices/"},
+      {"name": "Renamer.ai (gratis 25 archivos/mes; escalones de 200/1.000/5.000 archivos)", "price_usd": null, "model": "freemium", "url": "https://renamer.ai/rename-pdf-invoices-based-on-content"}
+    ],
+    "search_signals": {"queries": ["Rechnungen automatisch umbenennen", "PDF Rechnungen umbenennen nach Inhalt", "facturen automatisch hernoemen", "renommer factures PDF automatiquement"], "volume_note": null},
+    "urgency_1to5": 2,
+    "urgency_basis": "Molestia recurrente de cierre mensual sin plazo legal; la evidencia de dolor viene sobre todo de páginas de proveedores, no de foros.",
+    "buildability_1to5": 4,
+    "wtp_20_evidence": "RenameIQ se vende como compra única a 39,99 USD (en oferta), unas dos veces el precio objetivo; Sorto y Renamer.ai tienen planes gratuitos limitados por volumen.",
+    "risks": "Sin reseñas independientes de RenameIQ; competencia con niveles gratuitos; la extracción fiable en facturas multilingües es difícil; sin dolor regulatorio que fuerce la compra.",
+    "confidence": "low"
+  },
+  {
+    "id": "rechtstexte-generator-datenschutz-impressum",
+    "region": "EU",
+    "pain_point": "Freelancers y pequeños sitios web en DE/AT necesitan Impressum, Datenschutzerklärung y aviso de cookies correctos y temen avisos legales (Abmahnungen), pero los generadores serios cobran por suscripción",
+    "segment": "Freelancers, tiendas y webs pequeñas de habla alemana; extensible a FR/ES/IT/NL/PL con plantillas locales",
+    "micro_app_idea": "Asistente offline que, con un cuestionario, genera Impressum, política de privacidad y texto de cookies para una web sencilla en el idioma y la ley del país, con aviso de límites y sin actualizaciones por suscripción",
+    "evidence": [
+      {"url": "https://datenschutz-generator.de/impressum", "what": "Generador de Impressum gratis en versión básica; versión Premium para empresas a 19,90 EUR netos con uso ilimitado del documento, un año de actualizaciones y sin costes recurrentes", "date": null},
+      {"url": "https://www.e-recht24.de/mitglieder/tarife-fuer-online-shops/", "what": "eRecht24 Premium: Basic 15 EUR/mes con pago anual (30 EUR mensual), Business 40, Enterprise 90, Ultimate 800 EUR/mes; los generadores de Impressum y Datenschutz básicos son gratis (ecom-tools.de)", "date": null},
+      {"url": "https://www.fastlancer.org/fastlancer-blog/erecht24-review/", "what": "Reseña: para la mayoría de los autónomos con web sencilla basta el alcance gratuito o el plan Basic; AGB y protección frente a Abmahnungen requieren planes superiores", "date": null}
+    ],
+    "paid_alternatives": [
+      {"name": "datenschutz-generator.de Premium Impressum (19,90 EUR netos)", "price_usd": null, "model": "one-time", "url": "https://datenschutz-generator.de/impressum"},
+      {"name": "eRecht24 Premium Basic (15 EUR/mes con pago anual)", "price_usd": null, "model": "annual", "url": "https://www.e-recht24.de/mitglieder/tarife-fuer-online-shops/"}
+    ],
+    "search_signals": {"queries": ["Datenschutzerklärung Generator", "Impressum Generator kostenlos", "Impressum Pflicht Freiberufler Website", "eRecht24 Premium Preis"], "volume_note": null},
+    "urgency_1to5": 3,
+    "urgency_basis": "Impressum y Datenschutz son obligatorios para webs comerciales en Alemania; el riesgo de Abmahnung es el motor, aunque no he visto cifras de multas verificadas.",
+    "buildability_1to5": 3,
+    "wtp_20_evidence": "datenschutz-generator.de ya vende un Impressum Premium de pago único a 19,90 EUR netos y 'sin costes recurrentes', justo en el rango de ~18 EUR.",
+    "risks": "Zona regulada: generar textos legales como producto central implica responsabilidad y necesita plantillas revisadas por abogados y actualizadas ante cambios de ley; generadores gratuitos muy establecidos y eRecht24 como incumbente; diferencias legales por país.",
+    "confidence": "med"
+  },
+  {
+    "id": "nebenkostenabrechnung-kleinvermieter",
+    "region": "EU",
+    "pain_point": "Los pequeños propietarios en Alemania (1-5 viviendas) deben elaborar la Betriebskostenabrechnung conforme a BetrKV, HeizkostenV y reparto de CO2, y las opciones son suscripciones caras o software anticuado",
+    "segment": "Propietarios privados de 1-5 viviendas en alquiler en Alemania",
+    "micro_app_idea": "App offline por ejercicio que calcula el reparto de gastos, calefacción y CO2 entre inquilinos y genera la liquidación en PDF con las partidas permitidas",
+    "evidence": [
+      {"url": "https://www.capterra.com/p/10047832/Nebenkostenabrechnung/", "what": "Nebenkosten-Guru: precio regular 79,90 EUR, oferta de lanzamiento 39,95 EUR hasta 30-09-2026; para propietarios de 1-5 unidades; sin nube, sin cuenta y sin cuotas recurrentes; 0 reseñas (descripción del proveedor)", "date": "2026-06"},
+      {"url": "https://www.softwareabc24.de/nebenkostenabrechnung-software/preise-uebersicht", "what": "Comparador de precios: alquiler de software desde 4,99 EUR/mes (immocloud) hasta 199 EUR/mes (SCALARA); Win-CASA aparece como compra única de 398 EUR", "date": null},
+      {"url": "https://www.steuertipps.de/shop/software/nebenkostenabrechnung", "what": "Producto 'NebenkostenAbrechnung 2026' de steuertipps: versión distinta por año de liquidación con actualizaciones online gratuitas, lo que indica compra recurrente anual", "date": null},
+      {"url": "https://www.finanztip.de/nebenkostenabrechnung/", "what": "Finanztip recoge que el proveedor Mineko cifra en 86% las liquidaciones de vivienda revisadas con errores, lo que sugiere demanda de herramientas que ayuden a hacerlas bien (dato del proveedor)", "date": "2026-08"}
+    ],
+    "paid_alternatives": [
+      {"name": "Nebenkosten-Guru (79,90 EUR regular; 39,95 EUR de lanzamiento hasta 30-09-2026)", "price_usd": null, "model": "one-time", "url": "https://www.capterra.com/p/10047832/Nebenkostenabrechnung/"},
+      {"name": "immocloud (desde 4,99 EUR/mes)", "price_usd": null, "model": "monthly", "url": "https://www.softwareabc24.de/nebenkostenabrechnung-software/preise-uebersicht"},
+      {"name": "Win-CASA (398 EUR, compra única)", "price_usd": null, "model": "one-time", "url": "https://www.softwareabc24.de/nebenkostenabrechnung-software/preise-uebersicht"},
+      {"name": "NebenkostenAbrechnung 2026 de steuertipps.de (precio no visto)", "price_usd": null, "model": null, "url": "https://www.steuertipps.de/shop/software/nebenkostenabrechnung"}
+    ],
+    "search_signals": {"queries": ["Nebenkostenabrechnung erstellen Software Vermieter", "Betriebskostenabrechnung Programm Kleinvermieter", "Nebenkostenabrechnung Software Vergleich Kosten Erfahrungen", "Heizkostenverteilung CO2 Aufteilung Vermieter"], "volume_note": null},
+    "urgency_1to5": 3,
+    "urgency_basis": "Ciclo anual con plazo legal (12 meses tras el periodo, §556 BGB; dato de conocimiento general no verificado en las fuentes) y versiones del software que cambian cada año.",
+    "buildability_1to5": 3,
+    "wtp_20_evidence": "La única opción de compra única reciente es Nebenkosten-Guru a 39,95 EUR de lanzamiento (79,90 EUR regular); un listado antiguo (2016) de CAD-KAS a 20 EUR sugiere que ~18 EUR existió pero con software desactualizado.",
+    "risks": "Cumplimiento pesado (BetrKV, HeizkostenV, CO2KostAufG) y errores jurídicos con consecuencias para el casero; sin reseñas del competidor directo; foros del tema generados en parte por IA según el propio sitio; compite con suites de gestión de alquileres.",
+    "confidence": "low"
+  },
+  {
+    "id": "umsatzgrenzen-tracker-kleinunternehmer-forfettario-pt",
+    "region": "EU",
+    "pain_point": "Los autónomos con régimen simplificado de IVA (DE Kleinunternehmer, IT forfettario, PT art. 53) pueden perder la exención en pleno año al superar un umbral y no llevan un contador fiable de ingresos",
+    "segment": "Autónomos y microempresarios en DE, IT y PT (extensible a FR y ES)",
+    "micro_app_idea": "Contador local de ingresos con umbrales configurables por país (año anterior y año en curso, prorrateo de inicio de actividad), alertas y simulación de qué pasa si se cruza el límite",
+    "evidence": [
+      {"url": "https://www.whk-controlling.de/wissen/kleinunternehmer-grenze-2025", "what": "DE desde 1-ene-2025: 25.000 EUR año anterior y 100.000 EUR año en curso; según resúmenes, al superar los 100.000 EUR el propio ingreso que cruza el límite ya está sujeto a IVA", "date": null},
+      {"url": "https://centrofiscale.com/superamento-soglia-85000-forfettario-2026/", "what": "IT forfettario: entre 85.000 y 100.000 EUR se permanece hasta el 31-dic y se pasa al régimen ordinario el 1-ene; por encima de 100.000 EUR la salida es inmediata; el umbral de 85.000 se prorratea por días si se abre a mitad de año (aprox. 42.500 EUR) y el de 100.000 no", "date": "2026"},
+      {"url": "https://economiafinancas.com/2026/limite-de-isencao-de-iva-em-2026-que-obriga-a-liquidacao-de-imposto/", "what": "PT: la mayoría de fuentes dan 15.000 EUR como límite de exención de IVA en 2026; superar un 25% del límite en el propio año fuerza el régimen normal de inmediato", "date": "2026"},
+      {"url": "https://www.vendus.pt/blog/isento-de-iva-artigo-53/", "what": "Artículo 'Regime especial de isenção de IVA (Artigo 53.º): o que mudou?'; otras fuentes dicen que desde 1-jul-2025 el régimen se amplió a independientes con contabilidad organizada, así que hay desacuerdo entre fuentes", "date": "2025-07"}
+    ],
+    "paid_alternatives": [
+      {"name": "Calcolatore Regime Forfettario 2026 (teamzlab, en navegador)", "price_usd": 0, "model": "freemium", "url": "https://tool.teamzlab.com/it/regime-forfettario-2026-calcolatore/"},
+      {"name": "sum.money calculadora de contribuciones forfettari", "price_usd": null, "model": "freemium", "url": "https://sum.money/it/gestione-separata/"},
+      {"name": "Herramienta Excel 'Flat Tax' de fiscoetasse.com", "price_usd": null, "model": null, "url": "https://www.fiscoetasse.com/regime_forfettario_contribuenti_minimi"}
+    ],
+    "search_signals": {"queries": ["Kleinunternehmer Grenze 2026", "superamento soglia 85000 forfettario 2026", "cosa succede se supero i 100.000 euro forfettario", "limite isenção IVA 2026 recibos verdes"], "volume_note": null},
+    "urgency_1to5": 3,
+    "urgency_basis": "Cruzar el umbral cambia el régimen de forma inmediata (DE, IT >100.000 EUR, PT) con IVA exigible desde el ingreso que lo supera.",
+    "buildability_1to5": 4,
+    "wtp_20_evidence": null,
+    "risks": "Las reglas cambian cada año y difieren por país (fuentes en conflicto en umbral de empleo IT 30.000 vs 35.000 EUR y en PT); muchas calculadoras gratuitas; zona fiscal, solo información; sin evidencia de precio.",
+    "confidence": "low"
+  },
+  {
+    "id": "gpsr-angaben-handmade-generator",
+    "region": "EU",
+    "pain_point": "Los vendedores pequeños y de handmade en Etsy/marketplaces deben dar datos del fabricante y de seguridad por anuncio desde la GPSR (dic-2024) y no saben qué poner ni en qué idioma",
+    "segment": "Vendedores handmade y pequeños comercios online de la UE en Etsy, Amazon Handmade y tiendas propias",
+    "micro_app_idea": "Asistente que decide si se aplica la obligación (fabricante UE o no), genera por producto el bloque de datos de fabricante, advertencias y etiqueta en varios idiomas, listo para pegar en el anuncio o imprimir",
+    "evidence": [
+      {"url": "https://www.haendlerbund.de/de/news/aktuelles/wissenssnack/gpsr-handmade", "what": "Händlerbund: en handmade hay que indicar el fabricante del producto terminado en cada oferta (nombre, dirección postal y e-mail), no los de las materias primas; quien modifica un producto ajeno puede pasar a ser fabricante", "date": null},
+      {"url": "https://easecert.com/de/pages/gpsr-konformitat-fur-etsy-verkaufer-was-sie-wissen-mussen", "what": "Etsy añadió en abril 2025 un área de seguridad del producto con nombre, e-mail y dirección del fabricante; solo hace falta persona responsable en la UE si el fabricante está fuera de UE/EEE (proveedor que vende ese servicio)", "date": "2025-04"},
+      {"url": "https://www.fuer-gruender.de/fileadmin/mediapool/Vorlagen_Checkliste/Checkliste_GPSR.pdf", "what": "Checklist PDF de GPSR para tiendas online publicada por fuer-gruender.de, indicio de que los vendedores piden plantillas", "date": null},
+      {"url": "https://www.ionos.de/hilfe/websites-shops/websites-und-shops-organisieren/produktsicherheitsverordnung-gpsr-und-company-name-shops/", "what": "IONOS publica ayuda específica sobre cómo cumplir la GPSR en sus tiendas", "date": null}
+    ],
+    "paid_alternatives": [
+      {"name": "EaseCert servicio de persona responsable en la UE y plantillas de etiqueta GPSR (precio no visto)", "price_usd": null, "model": null, "url": "https://easecert.com/de/products/eu-responsible-person-service-for-etsy-sellers"}
+    ],
+    "search_signals": {"queries": ["GPSR Handmade Hersteller angeben", "GPSR Etsy Verkäufer Pflichtangaben", "GPSR Etikett Vorlage", "GPSR Checkliste Onlineshop"], "volume_note": null},
+    "urgency_1to5": 3,
+    "urgency_basis": "Vigente desde 13-dic-2024; según las fuentes el incumplimiento puede acarrear Abmahnungen, multas o desactivación de anuncios, sin cifras verificadas.",
+    "buildability_1to5": 4,
+    "wtp_20_evidence": null,
+    "risks": "No encontré hilos de foro de vendedores pidiendo un generador; la mayoría de fuentes son del proveedor EaseCert que vende su propio servicio; zona de cumplimiento regulatorio (el generador no sustituye análisis de riesgo del producto); cambios de campos de Etsy.",
+    "confidence": "low"
+  },
+  {
+    "id": "oss-schwelle-tracker-ecommerce",
+    "region": "EU",
+    "pain_point": "Los vendedores online pequeños que venden a consumidores de otros países de la UE no saben cuándo cruzan el umbral de 10.000 EUR del One-Stop-Shop y qué IVA aplicar por país",
+    "segment": "Vendedores de Etsy, Shopify y eBay con ventas B2C transfronterizas en la UE, incluidos Kleinunternehmer",
+    "micro_app_idea": "Contador local de ventas netas B2C por país de destino con aviso al acercarse a 10.000 EUR (año anterior y en curso), tabla de tipos de IVA 2026 por país y resumen trimestral para el OSS",
+    "evidence": [
+      {"url": "https://www.taxenlight.com/en/vat-limit-oss/", "what": "Explica el umbral común de 10.000 EUR netos por año natural para todas las ventas B2C transfronterizas en la UE, que se comprueba para el año anterior y el actual; por encima se aplica el IVA del país de destino", "date": null},
+      {"url": "https://www.accountable.de/en/wp-json/wp/v2/help_center/10634", "what": "Ayuda de Accountable: si se supera el umbral, un Kleinunternehmer alemán puede registrarse voluntariamente en OSS o registrarse en cada país; renunciar a la regla de Kleinunternehmer vincula cinco años; declaración trimestral (30-abr, 31-jul, 31-oct, 31-ene) incluso a cero", "date": null},
+      {"url": "https://www.taxenlight.com/de/eu-mehrwertsteuersatze-2026/", "what": "Tabla de tipos de IVA de la UE 2026 actualizada el 19-06-2026 (cada Estado miembro fija sus tipos; p. ej. DE 19%, FR 20%, IT 22%, ES 21%, PL 23%, DK/SE 25% según eurofiscalis.com)", "date": "2026-06"},
+      {"url": "https://community.etsy.com/t5/Etsys-deutsche-Community/Neue-steuerliche-Bedingungen-ab-Juli-2021/td-p/134069655", "what": "Hilo de la comunidad alemana de Etsy sobre las nuevas condiciones fiscales desde julio de 2021 y dónde registrar el número OSS", "date": "2021-07"}
+    ],
+    "paid_alternatives": [
+      {"name": "Accountable (contabilidad con soporte OSS; precio no visto)", "price_usd": null, "model": null, "url": "https://www.accountable.de/en/wp-json/wp/v2/help_center/10634"},
+      {"name": "hellotax (servicios de cumplimiento de IVA para e-commerce; precio no visto)", "price_usd": null, "model": null, "url": "https://hellotax.com/blog/wp-json/wp/v2/posts/76433"}
+    ],
+    "search_signals": {"queries": ["OSS Schwelle 10.000 Euro Kleinunternehmer", "One-Stop-Shop Umsatzsteuer Etsy Verkäufer", "OSS-Verfahren einfach erklärt", "Umsatzsteuer EU-Länder Steuersätze Onlinehandel"], "volume_note": null},
+    "urgency_1to5": 3,
+    "urgency_basis": "Al cruzar el umbral cambia el país de tributación y hay declaraciones trimestrales con plazos fijos; sin multas cuantificadas en las fuentes.",
+    "buildability_1to5": 4,
+    "wtp_20_evidence": null,
+    "risks": "Zona fiscal: requiere tabla de tipos al día y reglas de bienes frente a servicios; los marketplaces (Etsy) recaudan IVA en algunos supuestos, lo que complica el contador; sin evidencia de precios; fuentes de proveedores.",
+    "confidence": "low"
+  },
+  {
+    "id": "schengen-90-180-tracker-ees",
+    "region": "EU",
+    "pain_point": "Viajeros no UE, nómadas digitales y expatriados no saben cuántos días Schengen les quedan en la ventana móvil de 90/180 días, con el EES ya registrando entradas biométricamente y el ETIAS aplazado",
+    "segment": "Nacionales de países sin visado (UK, US y otros), nómadas digitales y residentes de larga estancia que viajan por Schengen",
+    "micro_app_idea": "Calendario local de entradas y salidas con cálculo de la ventana móvil (cuenta día de entrada y de salida, incluye viajes dentro de Schengen), simulador de viajes futuros y exportación",
+    "evidence": [
+      {"url": "https://europe-visa.eu/es/blog/schengen-90-180-day-rule-with-etias-tracking-your-days-in-2026/", "what": "Guía de seguimiento 2026: la ventana es móvil, cuentan los días de entrada y salida, los desplazamientos dentro de Schengen no se registran pero el contador sigue; la Comisión Europea ofrece una calculadora gratuita", "date": "2026"},
+      {"url": "https://travel-europe.europa.eu/revised-timeline-ees-and-etias-2025-04-14_en", "what": "Portal oficial de la UE con el calendario revisado de EES y ETIAS (fecha ETIAS aún por anunciar)", "date": "2025-04"},
+      {"url": "https://propakistani.pk/2026/08/12/europe-delays-launch-of-eta-permit-for-visa-exempt-nationals-again/amp/", "what": "Noticia de ago-2026: Europa vuelve a retrasar el lanzamiento del permiso ETIAS para nacionales exentos de visado", "date": "2026-08"},
+      {"url": "https://macalculatriceenligne.com/outils/calculatrice-visa-schengen/", "what": "Calculadora gratuita 'Calculatrice Visa Schengen : Règle 90/180 Jours — Jours Restants 2026', ejemplo de alternativa gratuita", "date": "2026"}
+    ],
+    "paid_alternatives": [
+      {"name": "Calculadora gratuita de la Comisión Europea (travel-europe.europa.eu)", "price_usd": 0, "model": "freemium", "url": "https://travel-europe.europa.eu/revised-timeline-ees-and-etias-2025-04-14_en"},
+      {"name": "macalculatriceenligne.com Calculatrice Visa Schengen", "price_usd": 0, "model": "freemium", "url": "https://macalculatriceenligne.com/outils/calculatrice-visa-schengen/"}
+    ],
+    "search_signals": {"queries": ["Schengen 90/180 Tage Rechner", "Calculatrice Visa Schengen règle 90/180 jours", "regla Schengen 90/180 días calculadora", "ETIAS Start Termin"], "volume_note": null},
+    "urgency_1to5": 3,
+    "urgency_basis": "Con el EES los días se registran automáticamente en las fronteras (según guías) y superar los 90 días tiene consecuencias; las fuentes vistas no cuantifican sanciones.",
+    "buildability_1to5": 5,
+    "wtp_20_evidence": null,
+    "risks": "Hay calculadora oficial gratuita y muchas web gratuitas; sin precios de apps de pago observados; el contenido es de portales de visado comerciales; consejo migratorio personalizado es zona regulada (solo cálculo informativo).",
+    "confidence": "low"
+  },
+  {
+    "id": "kontoauszug-pdf-zu-csv-lokal",
+    "region": "EU",
+    "pain_point": "Autónomos y pymes necesitan convertir extractos bancarios en PDF a CSV/Excel o a formato de importación contable (p. ej. DATEV) y los conversores populares son nubes que suben datos financieros",
+    "segment": "Autónomos, pequeñas empresas y gestores contables en DE/AT y otros países UE",
+    "micro_app_idea": "Conversor offline de extractos PDF de bancos europeos a CSV con perfiles de exportación (CSV estándar, DATEV, Lexware) y validación de saldos",
+    "evidence": [
+      {"url": "https://alternativeto.net/software/kontocsv/about", "what": "KontoCSV: perfiles de exportación Standard-CSV, DATEV Buchungsstapel, Lexware Office y BuchhaltungsButler; facturación por créditos sin suscripción; procesa en la nube con servidores UE y borrado a los 7 días", "date": null},
+      {"url": "https://invoicedataextraction.com/de/kontoauszug-in-excel-umwandeln", "what": "Herramienta de nube con 50 páginas gratis al mes sin suscripción y borrado de archivos a las 24 h", "date": null},
+      {"url": "https://peerlist.io/dangibuilds/project/local-bank-statement-converter", "what": "Proyecto comunitario que convierte extractos a CSV en el navegador con WebAssembly sin subir nada; sin perfiles DATEV ni soporte descrito", "date": null},
+      {"url": "https://smallpdf.com/de/blog/kontoauszug-pdf-in-csv-umwandeln", "what": "Smallpdf publica guía 'Kontoauszug PDF in CSV umwandeln' sin registro, indicio de que la consulta tiene demanda", "date": null}
+    ],
+    "paid_alternatives": [
+      {"name": "KontoCSV (créditos, sin suscripción; precio no visto)", "price_usd": null, "model": null, "url": "https://alternativeto.net/software/kontocsv/about"},
+      {"name": "Parseur (nivel gratuito limitado)", "price_usd": null, "model": "freemium", "url": "https://parseur.com/de/konvertieren/kontoauszuege/zu-csv"},
+      {"name": "Invoice Data Extraction (50 páginas gratis al mes)", "price_usd": null, "model": "freemium", "url": "https://invoicedataextraction.com/de/kontoauszug-in-excel-umwandeln"}
+    ],
+    "search_signals": {"queries": ["Kontoauszug PDF in CSV umwandeln", "Kontoauszug PDF in Excel umwandeln", "Kontoauszug DATEV Import CSV", "relevé bancaire PDF en Excel"], "volume_note": null},
+    "urgency_1to5": 2,
+    "urgency_basis": "Tarea periódica de contabilidad sin plazo; el dolor es de tiempo y de privacidad al subir datos bancarios.",
+    "buildability_1to5": 3,
+    "wtp_20_evidence": null,
+    "risks": "Los diseños de PDF varían por banco y el análisis fiable es difícil; no vi precios de las alternativas de escritorio; hay herramientas gratuitas y de nube; datos bancarios sensibles (RGPD).",
+    "confidence": "low"
+  },
+  {
+    "id": "bfsg-kleinshop-check-erklaerung",
+    "region": "EU",
+    "pain_point": "Las tiendas online y servicios pequeños en Alemania no saben si la ley de accesibilidad BFSG (vigente desde junio 2025) les afecta ni qué mínimo deben cumplir",
+    "segment": "Pequeños comercios online y prestadores de servicios digitales en Alemania",
+    "micro_app_idea": "Asistente que decide si aplica la exención de microempresa (solo servicios) y entrega una lista de comprobación WCAG 2.1 AA y una Barrierefreiheitserklärung (declaración de accesibilidad) prellenada",
+    "evidence": [
+      {"url": "https://ohn.haendlerbund.de/recht/rechtsfragen/kleinstunternehmen-bfsg-ausnahme", "what": "Exención solo para microempresas que prestan servicios (<10 empleados y <=2 M EUR de facturación o balance); no hay exención para productos; sin exención general por tamaño", "date": null},
+      {"url": "https://www.xictron.com/de/blog/bfsg-ausnahmen-kleinstunternehmen-b2b-2026/", "what": "Blog 2026 sobre excepciones del BFSG para microempresas y B2B; un resumen de Görg indica que toda web con posibilidad de contratar debe ser accesible, lo que no encaja del todo con la exención y deja la duda abierta", "date": "2026"},
+      {"url": "https://e-recht24.de/barrierefreiheit.html", "what": "eRecht24 ofrece un test rápido gratuito de accesibilidad y análisis detallado gratuito bajo petición", "date": null},
+      {"url": "https://ug.wordpress.org/plugins/?p=292365", "what": "Plugin de WordPress 'BFSG Accessibility Scanner by CheckBarriere': análisis gratuito de hasta 5 páginas según WCAG 2.1 AA", "date": null}
+    ],
+    "paid_alternatives": [
+      {"name": "eRecht24 test de accesibilidad (gratis)", "price_usd": 0, "model": "freemium", "url": "https://e-recht24.de/barrierefreiheit.html"},
+      {"name": "CheckBarriere (plugin WordPress, escaneo gratis de 5 páginas)", "price_usd": 0, "model": "freemium", "url": "https://ug.wordpress.org/plugins/?p=292365"}
+    ],
+    "search_signals": {"queries": ["BFSG Kleinstunternehmen Ausnahme", "BFSG Checkliste Online-Shop", "Barrierefreiheit Website prüfen Tool", "Barrierefreiheitserklärung Muster"], "volume_note": null},
+    "urgency_1to5": 3,
+    "urgency_basis": "BFSG vigente desde junio 2025; fuentes de agencias hablan de multas hasta 100.000 EUR y Abmahnungen de 8.000-15.000 EUR, cifras de proveedores sin verificar.",
+    "buildability_1to5": 4,
+    "wtp_20_evidence": null,
+    "risks": "Zona regulada y las herramientas automáticas no cubren la accesibilidad completa; opciones gratuitas de eRecht24 y plugins; fuentes de agencias con interés comercial (precios de arreglo desde 1.500 EUR citados por un proveedor).",
+    "confidence": "low"
+  },
+  {
+    "id": "arbeitszeit-nachweis-minijob-kleinbetrieb",
+    "region": "EU",
+    "pain_point": "Los pequeños empleadores alemanes y quienes tienen Minijobbers deben registrar el tiempo de trabajo (BAG 2022 y MiLoG) y no saben qué forma basta",
+    "segment": "Microempresas, hostelería, comercio y hogares con Minijobbers en Alemania",
+    "micro_app_idea": "App local sencilla de hoja de horas con inicio, fin, pausa y duración, aviso de la regla de 7 días y conservación de 2 años, y exportación firmada mensual",
+    "evidence": [
+      {"url": "https://www.ihk.de/limburg/recht/arbeits-und-sozialrecht/entgelt-arbeitszeit-urlaub/aufzeichnungspflichten-3610604", "what": "IHK Limburg: para minijobbers hay que registrar inicio, fin y duración diarios dentro de 7 días y conservar 2 años; la obligación alcanza a todos los empleadores de minijobbers", "date": null},
+      {"url": "https://www.steuerschroeder.de/Steuerrechner/Aufzeichnung-Arbeitszeiten.html", "what": "Rechtsstand 04.07.2026: deber de registro desde la sentencia BAG del 13-sep-2022; el borrador de reforma de la ArbZG prevé registro electrónico, con exención de la forma electrónica para empresas de menos de 10 empleados según el borrador actual (sin confirmar si ya está en vigor)", "date": "2026-07"},
+      {"url": "https://www.taxmaro.com/post/arbeitszeiterfassung-pflicht-2026-arbeitgeber-umsetzen", "what": "Guía 2026: la obligación de registrar el tiempo aplica a todas las empresas con independencia de su tamaño", "date": "2026"},
+      {"url": "https://timebutler.com/blog/time-tracking-obligation-germany/", "what": "Timebutler explica la obligación de registro de tiempo en Alemania en 2026 y para cuántos empleados es obligatoria", "date": "2026"}
+    ],
+    "paid_alternatives": [
+      {"name": "Clockify (gratis, según Capterra)", "price_usd": 0, "model": "freemium", "url": "https://www.capterra.com.de/alternatives/211607/timesheet"},
+      {"name": "Jibble (gratis permanente según Capterra)", "price_usd": 0, "model": "freemium", "url": "https://www.capterra.com.de/alternatives/211607/timesheet"},
+      {"name": "Plantilla oficial gratuita del BMAS para registro de horas", "price_usd": 0, "model": "freemium", "url": "https://www.ihk.de/limburg/recht/arbeits-und-sozialrecht/entgelt-arbeitszeit-urlaub/aufzeichnungspflichten-3610604"}
+    ],
+    "search_signals": {"queries": ["Arbeitszeiterfassung Pflicht kleine Firma", "Minijob Arbeitszeitaufzeichnung Vorlage", "Arbeitszeiterfassung kostenlos App Excel Alternative", "Stundenzettel Minijob"], "volume_note": null},
+    "urgency_1to5": 3,
+    "urgency_basis": "Obligación ya existente; las multas por incumplir la documentación de MiLoG aparecen con cifras contradictorias (hasta 30.000 EUR frente a 30.000-500.000 EUR) en las fuentes vistas.",
+    "buildability_1to5": 5,
+    "wtp_20_evidence": null,
+    "risks": "Mercado muy saturado con opciones gratuitas; la ley electrónica está pendiente y puede cambiar el requisito; riesgo de plataforma baja; poca disposición a pagar por algo que Excel cubre.",
+    "confidence": "med"
+  },
+  {
+    "id": "ztl-zfe-reisecheck-italia-francia",
+    "region": "EU",
+    "pain_point": "Conductores extranjeros reciben multas meses después por entrar en ZTL italianas o en zonas ZFE francesas (Crit'Air) sin saberlo",
+    "segment": "Turistas y conductores en coche propio o de alquiler que viajan a Italia y Francia",
+    "micro_app_idea": "Lista previa al viaje por ciudad con reglas ZTL/ZFE, generador de correo en italiano o francés para registrar la matrícula en el hotel y recordatorio de pedir la Crit'Air",
+    "evidence": [
+      {"url": "https://www.motor16.com/las-ultimas-noticias/conducir-en-italia-ztl-multas/", "what": "Titular: las ZTL multan a turistas con hasta 163 EUR; otro artículo del mismo medio habla de hasta 335 EUR (motor16.com/las-ultimas-noticias/multas-ztl-italia/), cifras contradictorias", "date": null},
+      {"url": "https://www.t-online.de/mobilitaet/recht-und-verkehr/id_101292090/bussgeld-in-italien-strafe-in-verkehrsberuhigter-zone-im-urlaub-droht.html", "what": "t-online: «Hohe Strafen drohen: Dieses Schild muss jeder Italien-Urlauber kennen»", "date": null},
+      {"url": "https://apps.apple.com/app/id1090865062", "what": "App 'ZTL Italy - Limited Traffic Zone' en App Store; según resumen de búsqueda sus datos de pasos se actualizaron por última vez en marzo de 2017, es decir, obsoleta", "date": null},
+      {"url": "https://www.connexionfrance.com/article/Practical/Your-Questions/Everyday-Life/Do-foreign-cars-need-to-obtain-a-Crit-Air-sticker-to-drive-in-France", "what": "Los coches extranjeros también necesitan la pegatina Crit'Air en ZFE; coste aproximado 4,76 EUR por vehículo (3,11 + 1,65 envío)", "date": null},
+      {"url": "https://www.ornikar.com/code/cours/sanctions/infractions/amendes-critair", "what": "Multa forfaitaire de 68 EUR (45 pronto pago, 180 majorada) por turismo sin pegatina; el Consejo Constitucional censuró en mayo 2026 la supresión de las ZFE por motivo de procedimiento, por lo que siguen vigentes", "date": "2026-05"}
+    ],
+    "paid_alternatives": [
+      {"name": "App ZTL Italy (datos de 2017, precio no visto)", "price_usd": null, "model": null, "url": "https://apps.apple.com/app/id1090865062"}
+    ],
+    "search_signals": {"queries": ["ZTL Italien Strafe Urlaub", "multas ZTL Italia turistas", "vignette Crit'Air étranger ZFE", "ZTL hotel targa registrare"], "volume_note": null},
+    "urgency_1to5": 3,
+    "urgency_basis": "Las multas llegan por correo meses después del viaje y se acumulan por cada paso; es estacional (verano).",
+    "buildability_1to5": 3,
+    "wtp_20_evidence": null,
+    "risks": "Mantener datos geográficos y horarios por municipio es costoso y un error genera multas; versión sin mapa (lista y correo al hotel) es viable pero menos valiosa; no hay precios de competidores; datos contradictorios en importes.",
+    "confidence": "low"
+  },
+  {
+    "id": "nl-saldering-2027-simulador-datos-propios",
+    "region": "EU",
+    "pain_point": "Los hogares holandeses con paneles solares deben decidir antes de 2027 (fin de la salderingsregeling el 1-ene-2027) si cambiar de contrato o comprar batería, con calculadoras genéricas que suponen un autoconsumo medio",
+    "segment": "Propietarios de paneles solares en Países Bajos (y calculadoras equivalentes para balcones solares en DE)",
+    "micro_app_idea": "Simulador local que importa el CSV de consumo y producción del propietario y compara contrato fijo frente a dinámico, con y sin batería, con costes de entrega a la red",
+    "evidence": [
+      {"url": "https://www.zonneplan.nl/blog/zijn-zonnepanelen-nu-en-na-2027-rendabel/", "what": "Con 31% de autoconsumo, amortización de 8,4 años con contrato dinámico y 11,3 años con fijo; con 50% sería 6,3 años (cifras del proveedor Zonneplan, estimaciones)", "date": null},
+      {"url": "https://www.consumentenbond.nl/energie-vergelijken/blijft-de-salderingsregeling-toch-bestaan", "what": "Artículo de Consumentenbond sobre si la salderingsregeling realmente se mantiene o no", "date": null},
+      {"url": "https://www.homeandsmart.de/balkonkraftwerkertrag-selbst-ausrechnen-0023-188728", "what": "Explica que algunas calculadoras de balcón solar usan un promedio nacional o un autoconsumo fijo, y que su propio modelo considera cinco factores", "date": null},
+      {"url": "https://www.co2online.de/service/energiesparchecks/balkonkraftwerk-rechner/", "what": "Calculadora independiente gratuita y sin publicidad de co2online para 400 u 800 W, con o sin batería, con coste, ahorro y amortización", "date": null}
+    ],
+    "paid_alternatives": [
+      {"name": "Calculadoras gratuitas de Zonneplan y otros proveedores", "price_usd": 0, "model": "freemium", "url": "https://www.zonneplan.nl/blog/zijn-zonnepanelen-nu-en-na-2027-rendabel/"},
+      {"name": "co2online Balkonkraftwerk-Rechner (gratis)", "price_usd": 0, "model": "freemium", "url": "https://www.co2online.de/service/energiesparchecks/balkonkraftwerk-rechner/"}
+    ],
+    "search_signals": {"queries": ["salderingsregeling stopt 2027 zonnepanelen terugverdientijd", "thuisbatterij terugverdientijd berekenen", "Balkonkraftwerk Rentabilität Rechner", "dynamisch energiecontract zonnepanelen terugleverkosten"], "volume_note": null},
+    "urgency_1to5": 4,
+    "urgency_basis": "Fecha límite cierta: la salderingsregeling termina el 1-ene-2027 y la rentabilidad cambia según el contrato.",
+    "buildability_1to5": 3,
+    "wtp_20_evidence": null,
+    "risks": "Calculadoras gratuitas abundantes y de proveedores que además venden contratos; formatos de datos de contadores y contratos varían; tarifas cambian; sin evidencia de pago único.",
+    "confidence": "low"
+  },
+  {
+    "id": "verpflegungspauschale-ausland-rechner",
+    "region": "EU",
+    "pain_point": "Autónomos y pymes alemanes que viajan al extranjero deben aplicar dietas de manutención por país, y las tablas secundarias dan cifras distintas",
+    "segment": "Autónomos y empleados con viajes de trabajo al extranjero (Alemania)",
+    "micro_app_idea": "Calculadora offline de dietas por viaje con tabla BMF 2026 por país y ciudad, reglas de días de salida y llegada, comidas gratuitas y resumen por viaje",
+    "evidence": [
+      {"url": "https://www.steuerberater-berlin-schuermann.de/steuernews_mandanten/februar_2026/auslandsreisepauschalen_2026/", "what": "Carta del BMF del 5-dic-2025 actualiza las dietas al extranjero desde 1-ene-2026 (cambios en Albania, Bulgaria, Letonia/Estonia/Lituania, Irlanda, Suiza y partes de China); Pakistán nuevo con 41 EUR", "date": "2026-02"},
+      {"url": "https://www.taxmaro.com/post/verpflegungsmehraufwand-2026---gesetzliche-pauschalen-und-lohnabrechnung", "what": "Da para 2026 Suiza 64 EUR, París 62 EUR y Polonia 35 EUR", "date": "2026"},
+      {"url": "https://finom.co/de-de/blog/verpflegungspauschale/", "what": "Da para 2026 Suiza 70 EUR, París 58 EUR y Polonia 34 EUR, es decir, discrepa de Taxmaro", "date": "2026"},
+      {"url": "https://www.bma-worldwide.com/fileadmin/Content/After_Sales/Verpflegungsmehraufwendungen/20251222_Verpflegungsmehraufwendungen_Ausland_2026_Excel.pdf", "what": "Tabla de dietas 2026 en PDF/Excel (p. ej. Hong Kong 83 EUR, Canberra 74 EUR)", "date": "2025-12"}
+    ],
+    "paid_alternatives": [
+      {"name": "Pleo gestión de gastos (B2B; registra dietas automáticamente)", "price_usd": null, "model": null, "url": "https://blog.pleo.io/de/verpflegungsmehraufwand"}
+    ],
+    "search_signals": {"queries": ["Verpflegungsmehraufwand Ausland 2026", "Auslandsreisepauschalen 2026 Tabelle", "Verpflegungspauschale Ausland Rechner", "Spesen Ausland Pauschalen Länder"], "volume_note": null},
+    "urgency_1to5": 2,
+    "urgency_basis": "Cambio anual (BMF, 1-ene) y declaración fiscal; la discrepancia entre fuentes muestra riesgo de error, pero sin plazo urgente.",
+    "buildability_1to5": 4,
+    "wtp_20_evidence": null,
+    "risks": "Hay que actualizar la tabla cada año (modelo de suscripción implícito); alternativas gratuitas en Excel; mercado pequeño; zona fiscal, solo cálculo informativo.",
+    "confidence": "low"
+  },
+  {
+    "id": "reverse-charge-rechnung-helper-eu",
+    "region": "EU",
+    "pain_point": "Los freelancers que facturan a empresas de otros países de la UE no saben qué menciones, idioma y declaración recapitulativa exige una factura con inversión del sujeto pasivo",
+    "segment": "Freelancers y pequeñas agencias con clientes B2B en la UE",
+    "micro_app_idea": "Asistente que decide el tratamiento de IVA (nacional, reverse charge, OSS), valida el número de IVA del cliente y genera la factura con las menciones correctas en el idioma del cliente",
+    "evidence": [
+      {"url": "https://kostenlose-erechnung.de/ratgeber/reverse-charge-rechnung-erstellen/", "what": "Guía 2026: la factura necesita ambos números de IVA, la nota 'Reverse Charge' o 'Steuerschuldnerschaft des Leistungsempfängers', importe neto sin IVA; las operaciones van a la Zusammenfassende Meldung hasta el día 25 del mes o trimestre siguiente", "date": "2026"},
+      {"url": "https://www.ihk.de/bayreuth/hauptnavigation/service/steuern/rechnungen/rechnungshinweise-4570170", "what": "IHK Bayreuth publica una tabla de menciones de factura en lenguas oficiales de la UE, con fecha de octubre de 2019, es decir, antigua", "date": "2019-10"},
+      {"url": "https://www.freelancermap.de/blog/reverse-charge-rechnung-vorlage/", "what": "Plantilla gratuita en Word de factura con reverse charge, señal de demanda y de alternativa gratuita", "date": null}
+    ],
+    "paid_alternatives": [
+      {"name": "Norman Finance (blog y herramientas para freelancers; generador gratuito)", "price_usd": 0, "model": "freemium", "url": "https://norman.finance/de/blog/eu-b2b-rechnung-freelancer"},
+      {"name": "Accountable (software de facturación, prueba gratuita; precio no visto)", "price_usd": null, "model": null, "url": "https://www.accountable.de/blog/rechnungen-ins-ausland-stellen-das-musst-du-beachten"}
+    ],
+    "search_signals": {"queries": ["Reverse Charge Rechnung erstellen", "Rechnung ins EU-Ausland Freiberufler Pflichtangaben", "Rechnung EU-Ausland Hinweis Steuerschuldnerschaft", "Zusammenfassende Meldung Frist"], "volume_note": null},
+    "urgency_1to5": 2,
+    "urgency_basis": "Tarea recurrente con riesgo de error fiscal, pero hay muchos recursos gratuitos y no hay plazo urgente.",
+    "buildability_1to5": 5,
+    "wtp_20_evidence": null,
+    "risks": "No se encontraron hilos de foro reales (solo guías de proveedores); plantillas gratuitas y software de facturación ya incluyen la función; las reglas varían (servicios vs bienes, países no UE); zona fiscal.",
+    "confidence": "low"
+  },
+  {
+    "id": "mieterhoehung-check-mieter",
+    "region": "EU",
+    "pain_point": "Los inquilinos alemanes que reciben una subida de alquiler no saben si es legal (Mietspiegel, Kappungsgrenze, Mietpreisbremse) y los chequeos fiables son de asociaciones con cuota o de abogado",
+    "segment": "Inquilinos en ciudades alemanas con alquileres tensos",
+    "micro_app_idea": "Asistente que pide los datos de la carta de subida y calcula límites (20%/15% en tres años, 10% sobre la renta de referencia) y genera una respuesta tipo con los plazos",
+    "evidence": [
+      {"url": "https://www.ddorf-aktuell.de/?p=13259", "what": "Mieterbund NRW ofrece nueve chequeos online (incluidos Mieterhöhung y Mietpreisbremse) abiertos a no socios, como primera orientación y no asesoría legal", "date": null},
+      {"url": "https://www.berliner-mieterverein.de/aktuell/aktion-mietpreisueberpruefung-2015.htm", "what": "Berliner Mieterverein: revisión gratuita de subidas y rentas contractuales (la página lleva 2015 en su nombre, puede estar caducada)", "date": "2015"},
+      {"url": "https://www.finanztip.de/lp/checkliste-mieterhoehung/", "what": "Finanztip ofrece una checklist de 7 pasos para comprobar si una subida de alquiler es admisible", "date": null},
+      {"url": "https://berlinecho.de/berliner-mieterverein-mitgliedschaft-kosten-leistungen/", "what": "Artículo de mayo 2026: la cuota normal del Berliner Mieterverein es 11 EUR al mes (6,50 EUR reducida) con permanencia mínima de 24 meses", "date": "2026-05"}
+    ],
+    "paid_alternatives": [
+      {"name": "Berliner Mieterverein (11 EUR/mes, mínimo 24 meses)", "price_usd": null, "model": "monthly", "url": "https://berlinecho.de/berliner-mieterverein-mitgliedschaft-kosten-leistungen/"},
+      {"name": "anwaltonline.com revisión de subida a precio fijo (precio no visto)", "price_usd": null, "model": "one-time", "url": "https://www.anwaltonline.com/beratung/mieterhoehung-ueberpruefen"},
+      {"name": "Chequeos online gratuitos de Mieterbund NRW", "price_usd": 0, "model": "freemium", "url": "https://www.ddorf-aktuell.de/?p=13259"}
+    ],
+    "search_signals": {"queries": ["Mieterhöhung prüfen", "Mietpreisbremse Rechner", "Kappungsgrenze Mieterhöhung Rechner", "Mieterhöhung zustimmen Frist"], "volume_note": null},
+    "urgency_1to5": 3,
+    "urgency_basis": "Hay un plazo de respuesta tras recibir la carta (hasta el fin del segundo mes natural según el resumen) tras el cual el casero puede demandar.",
+    "buildability_1to5": 3,
+    "wtp_20_evidence": null,
+    "risks": "Alternativas gratuitas respaldadas por asociaciones; el cálculo depende de Mietspiegel locales cambiantes; riesgo de asesoría jurídica personalizada (zona regulada).",
+    "confidence": "low"
+  },
+  {
+    "id": "urencriterium-tracker-zzp-nl",
+    "region": "EU",
+    "pain_point": "Los zzp'ers holandeses deben demostrar 1.225 horas al año (urencriterium) para sus deducciones, incluidas horas indirectas, y las guías se contradicen en qué aplica",
+    "segment": "Autónomos (zzp) y empresarios individuales en Países Bajos",
+    "micro_app_idea": "Registro local de horas directas e indirectas con avance hacia 1.225 h, nota de evidencia por día y exportación para la Belastingdienst",
+    "evidence": [
+      {"url": "https://www.rabobank.nl/bedrijven/eigen-bedrijf-starten/belasting/het-urencriterium-hoe-zit-dat", "what": "Rabobank explica el urencriterium (1.225 horas en un año natural) y sus implicaciones", "date": null},
+      {"url": "https://www.mijnzzp.nl/Weblogs/Van-de-redactie/Urenadministratie-bijhouden-voor-urencriterium", "what": "Guía: conviene apuntar las horas a diario y conservar pruebas (facturas, correos); cuentan horas indirectas como ofertas, captación y administración", "date": null},
+      {"url": "https://www.mkbservicedesk.nl/belastingen/aftrekposten/urencriterium", "what": "Guía titulada 'Urencriterium: dé 1225 uur voor zelfstandig ondernemers'; según resúmenes de búsqueda hay guías neerlandesas que se contradicen sobre si el urencriterium se exige para la mkb-winstvrijstelling", "date": null}
+    ],
+    "paid_alternatives": [],
+    "search_signals": {"queries": ["urencriterium zzp 1225 uur bijhouden", "urenregistratie urencriterium", "wat telt mee voor het urencriterium", "urencriterium voldoen check"], "volume_note": null},
+    "urgency_1to5": 3,
+    "urgency_basis": "Condiciona el acceso a las deducciones del empresario y se justifica ante la Belastingdienst; sin cifras verificadas de ahorro.",
+    "buildability_1to5": 5,
+    "wtp_20_evidence": null,
+    "risks": "Casi todo software de contabilidad holandés ya incluye registro de horas; temporizadores gratuitos; las fuentes son sitios comerciales; zona fiscal (solo registro).",
+    "confidence": "low"
+  },
+  {
+    "id": "netto-simulator-micro-regimes-es-fr-it",
+    "region": "EU",
+    "pain_point": "Los autónomos con regímenes simplificados (ES cuota por ingresos reales, FR micro-entrepreneur, IT forfettario) no saben cuánto apartar para cotizaciones e impuestos y las fuentes dan tipos distintos",
+    "segment": "Autónomos nuevos y microempresarios en España, Francia e Italia",
+    "micro_app_idea": "Simulador offline que, dado el ingreso mensual esperado, calcula cuota, impuestos y neto, y avisa de cuánto apartar en cada trimestre",
+    "evidence": [
+      {"url": "https://taxdown.es/informacion-autonomos/calculadora-cuota-autonomo", "what": "Calculadora gratuita de cuotas de autónomos; según resúmenes de búsqueda las fuentes discrepan en el tipo de 2026 (31,5% frente a 31,4% o 30,5%) y en el calendario de la regularización", "date": null},
+      {"url": "https://invoo.es/es/blog/guias/regularizacion-cuotas-autonomos-2026/", "what": "Guía de regularización 2026: la cuota provisional se ajusta con los ingresos reales cruzados con el IRPF y el resultado puede ser pago adicional o devolución", "date": "2026"},
+      {"url": "https://toolii.fr/simulateur-urssaf-gratuit/", "what": "Francia: tipos 2026 de 12,3% (venta), 21,2% (servicios BIC) y 25,6% (BNC), mientras Jurixa da 12,8%, 21,2% y 26,1%; el simulador oficial mon-entreprise.urssaf.fr se recomienda como más preciso", "date": "2026"},
+      {"url": "https://jurixa.fr/blog/micro-entreprise-simulation/", "what": "Jurixa: simular los ingresos en micro-empresa se resume en aplicar el tipo URSSAF y recomienda el simulador oficial", "date": "2026"},
+      {"url": "https://tool.teamzlab.com/it/regime-forfettario-2026-calcolatore/", "what": "Italia: calculadora forfettario que da un tope de la Gestione Separata de unos 119.650 EUR, mientras sum.money indica 122.295 EUR; discrepancia entre fuentes", "date": "2026"}
+    ],
+    "paid_alternatives": [
+      {"name": "Simulador oficial mon-entreprise.urssaf.fr (gratis)", "price_usd": 0, "model": "freemium", "url": "https://jurixa.fr/blog/micro-entreprise-simulation/"},
+      {"name": "Calculadora de cuota de autónomos de Taxdown (gratis)", "price_usd": 0, "model": "freemium", "url": "https://taxdown.es/informacion-autonomos/calculadora-cuota-autonomo"}
+    ],
+    "search_signals": {"queries": ["calcular cuota autónomos 2026 ingresos reales", "simulateur cotisations URSSAF micro-entrepreneur 2026", "calcolatore regime forfettario 2026", "cuánto me queda neto autónomo"], "volume_note": null},
+    "urgency_1to5": 3,
+    "urgency_basis": "La regularización o el pago de cotizaciones mal estimado traslada un coste inesperado a los trimestres siguientes.",
+    "buildability_1to5": 3,
+    "wtp_20_evidence": null,
+    "risks": "Hay simuladores oficiales gratuitos y cálculo cambiante cada año; discrepancias entre fuentes comerciales; zona fiscal y laboral, solo información.",
+    "confidence": "low"
+  },
+  {
+    "id": "ksef-begleiter-pl-mikrofirmy",
+    "region": "EU",
+    "pain_point": "Las microempresas polacas deben recibir facturas en KSeF desde feb-2026 y emitirlas desde ene-2027, y se quejan de avisos, correcciones y caídas de acceso en las herramientas oficiales",
+    "segment": "Microempresas y autónomos (JDG) en Polonia",
+    "micro_app_idea": "Compañero ligero que avisa de facturas nuevas o rechazadas, ayuda con borradores y correcciones y guarda copia local legible",
+    "evidence": [
+      {"url": "https://ksiegowosc.infor.pl/ksef/7549129,mial-byc-przelom-jest-frustracja-ksef-paralizuje-biznes.html", "what": "Artículo de INFOR titulado «Miał być przełom, jest frustracja. KSeF paraliżuje biznes»; según resúmenes describe problemas técnicos, esperas largas por el número de factura y fallos de acceso", "date": null},
+      {"url": "https://ksef.podatki.gov.pl/komunikaty-techniczne/utrudnienia-w-funkcjonowaniu-wersji-produkcyjnej-aplikacji-podatnika-ksef-20/", "what": "Comunicado técnico oficial del Ministerio de Finanzas sobre dificultades en la aplicación de producción KSeF 2.0", "date": null},
+      {"url": "https://www.infakt.pl/blog/?p=81685", "what": "Blog de inFakt: 'Utrudnienia w KSeF. Nocna przerwa w Aplikacji Podatnika'", "date": null},
+      {"url": "https://ksef.podatki.gov.pl/czy-trzeba-miec-platny-program-zeby-wystawiac-faktury-w-ksef", "what": "El Ministerio ofrece gratis la Aplikacja Podatnika KSeF (web), la app móvil desde 1-feb-2026 y e-mikrofirma; según guías, los usuarios piden avisos de facturas nuevas/rechazadas y correcciones más sencillas", "date": "2026-02"}
+    ],
+    "paid_alternatives": [
+      {"name": "inFakt programa KSeF (versión gratuita; las gratis de otros limitan 10-25 documentos al mes según una guía)", "price_usd": 0, "model": "freemium", "url": "https://infakt.pl/program-do-ksef/"},
+      {"name": "Fakturowo (versión gratuita limitada)", "price_usd": 0, "model": "freemium", "url": "https://www.fakturowo.pl/blog/darmowy-program-do-faktur-z-ksef"}
+    ],
+    "search_signals": {"queries": ["darmowy program do faktur KSeF", "KSeF jak wystawić fakturę mikrofirma", "KSeF awaria logowanie", "KSeF powiadomienia o nowych fakturach"], "volume_note": null},
+    "urgency_1to5": 4,
+    "urgency_basis": "Obligación de recepción vigente desde feb-2026 y emisión para microempresas desde 1-ene-2027; en las fuentes los plazos de sanciones difieren.",
+    "buildability_1to5": 2,
+    "wtp_20_evidence": null,
+    "risks": "Integración con la API de KSeF y autenticación con certificados o tokens es de cumplimiento pesado; el Ministerio da herramientas gratuitas y hay programas con versión gratuita; sin evidencia de pago único.",
+    "confidence": "low"
+  },
+  {
+    "id": "recibos-verdes-pt-calendario-fiscal",
+    "region": "EU",
+    "pain_point": "Los trabajadores independientes portugueses se confunden al emitir recibos verdes (régimen de IVA, retención) y con las declaraciones trimestrales de Seguridad Social e IVA, cuyas fechas las fuentes dan distintas",
+    "segment": "Trabajadores independientes (categoría B) en Portugal",
+    "micro_app_idea": "Calendario y guía local para emitir la fatura-recibo con los campos correctos, recordatorios de declaraciones trimestrales y contador del límite de exención de IVA",
+    "evidence": [
+      {"url": "https://www.comparaja.pt/blog/como-preencher-recibos-verdes", "what": "Guía 'Recibos Verdes: como preencher e emitir?': hay que definir antes el régimen de IVA, la base de incidencia del IRS y la retención en la fuente", "date": null},
+      {"url": "https://www.comparaja.pt/financas-pessoais/noticias/recibos-verdes-declaracao-trimestral-abril-2026", "what": "Noticia de abril 2026: el plazo de la declaración trimestral de recibos verdes es abril", "date": "2026-04"},
+      {"url": "https://www.e-konomista.pt/prazo-declaracao-periodica-iva", "what": "Plazos de la declaración periódica de IVA; según resúmenes las fuentes difieren (día 15 o día 20 del segundo mes tras el trimestre)", "date": null},
+      {"url": "https://economiafinancas.com/2026/limite-de-isencao-de-iva-em-2026-que-obriga-a-liquidacao-de-imposto/", "what": "Límite de exención de IVA para 2026 en 15.000 EUR según la mayoría de fuentes", "date": "2026"}
+    ],
+    "paid_alternatives": [
+      {"name": "InvoiceXpress (software de facturación; precio no visto)", "price_usd": null, "model": null, "url": "https://invoicexpress.com/blog/como-emitir-recibo-verde-fatura-recibo/"},
+      {"name": "Vendus (software de facturación; precio no visto)", "price_usd": null, "model": null, "url": "https://www.vendus.pt/blog/isento-de-iva-artigo-53/"}
+    ],
+    "search_signals": {"queries": ["como emitir recibo verde", "declaração trimestral segurança social recibos verdes prazo", "declaração periódica IVA trimestral prazo 2026", "isenção IVA artigo 53 limite 2026"], "volume_note": null},
+    "urgency_1to5": 3,
+    "urgency_basis": "Plazos trimestrales fijos con recargos y coimas según las guías, sin cifras verificadas.",
+    "buildability_1to5": 3,
+    "wtp_20_evidence": null,
+    "risks": "El Portal das Finanças es gratuito y hay software comercial asentado; reglas con cambios recientes (1-jul-2025) y fuentes en conflicto; zona fiscal.",
+    "confidence": "low"
+  },
+  {
+    "id": "behoerdenbrief-erklaerer-expats",
+    "region": "EU",
+    "pain_point": "Los expatriados y residentes extranjeros reciben cartas oficiales en alemán (Finanzamt, Ausländerbehörde, Jobcenter) que no entienden y tienen plazos de respuesta",
+    "segment": "Expatriados e inmigrantes en Alemania (extensible a NL, FR)",
+    "micro_app_idea": "Herramienta que explica una carta oficial en lenguaje sencillo, resalta plazos y acciones y produce una respuesta modelo, con procesamiento local para proteger datos",
+    "evidence": [
+      {"url": "https://getmika.de/en/blog/no-more-bureaucratic-german-mikas-bureaucracy-translator-explains-any-official-letter", "what": "Mika: traductor de lenguaje burocrático que explica cartas de Finanzamt y otras autoridades subidas como PDF o foto, con preguntas de seguimiento; acceso gratuito según su sitio", "date": null},
+      {"url": "https://www.accountable.de/en/?p=6160", "what": "Accountable describe una herramienta de IA gratuita que convierte la correspondencia del Finanzamt en lenguaje claro", "date": null},
+      {"url": "https://lexetius.com/AO/87", "what": "§87 AO: la lengua oficial de la administración tributaria alemana es el alemán y puede exigir traducción de documentos presentados en otro idioma", "date": null},
+      {"url": "https://cms.pons.com/files/uploads/wissensecke/wortschatz-to-go/Beamtendeutsch/Beamtendeutsch-Download-EN.pdf", "what": "PONS publica un PDF gratuito de glosario de alemán de oficina con traducciones al inglés", "date": null}
+    ],
+    "paid_alternatives": [
+      {"name": "Mika (acceso gratuito según su web)", "price_usd": 0, "model": "freemium", "url": "https://www.getmika.de/en/behördendeutsch-übersetzer"},
+      {"name": "Accountable herramienta de IA para cartas del Finanzamt (gratis)", "price_usd": 0, "model": "freemium", "url": "https://www.accountable.de/en/?p=6160"}
+    ],
+    "search_signals": {"queries": ["Brief vom Finanzamt verstehen", "Behördendeutsch Übersetzer", "Amtsdeutsch einfach erklärt App", "official German letter translate explain"], "volume_note": null},
+    "urgency_1to5": 3,
+    "urgency_basis": "Las cartas oficiales traen plazos de respuesta (p. ej. objeciones fiscales; cifra de plazo no verificada en las fuentes).",
+    "buildability_1to5": 3,
+    "wtp_20_evidence": null,
+    "risks": "Dos competidores gratuitos y los chatbots generales cubren el uso; precisión de la IA y consejo legal personalizado (zona regulada); subir documentos sensibles a terceros; no se encontraron reseñas independientes.",
+    "confidence": "low"
+  },
+  {
+    "id": "enskild-firma-egenavgifter-planner-se",
+    "region": "EU",
+    "pain_point": "Los autónomos suecos (enskild firma) buscan un programa sencillo y barato para contabilidad, IVA y cálculo de cotizaciones, y las guías explican la base de egenavgifter de formas distintas",
+    "segment": "Autónomos de Suecia con empresa individual",
+    "micro_app_idea": "Planificador local que estima egenavgifter, IVA trimestral y neto, con la base del schablonavdrag explicada, y genera el resumen para la declaración NE",
+    "evidence": [
+      {"url": "https://rikatillsammans.se/forum/t/tips-pa-enkelt-billigt-t-o-m-gratis-bokforingsprogram-for-liten-enskild-firma/85314", "what": "Hilo de foro: 'Tips på enkelt billigt (t.o.m. gratis?) bokföringsprogram för liten enskild firma'; según resúmenes se citan Visma a 179 SEK/mes y Mineko a 49 SEK/mes (informes de usuarios) y avisos de que los programas gratis pueden cerrar", "date": null},
+      {"url": "https://skatteverket.se/foretag/drivaforetag/foretagsformer/enskildnaringsverksamhet/egenavgifter.4.361dc8c15312eff6fd1f678.html", "what": "Skatteverket: egenavgifter del 28,97% (nacidos 1959 o después) con schablonavdrag del 25%; no se cobran si la base es inferior a 1.000 SEK", "date": null},
+      {"url": "https://sparkreceipt.com/sv-se/blogg/egenavgifter-enskild-firma/", "what": "Un blog calcula sobre la base tras el schablonavdrag (aprox. 65.000 SEK sobre 300.000 SEK) mientras que leyendo el texto de Skatteverket sale aprox. 87.000 SEK; el resumen de búsqueda no pudo decidir cuál es correcta", "date": null}
+    ],
+    "paid_alternatives": [
+      {"name": "Visma (179 SEK/mes según un usuario del foro)", "price_usd": null, "model": "monthly", "url": "https://rikatillsammans.se/forum/t/tips-pa-enkelt-billigt-t-o-m-gratis-bokforingsprogram-for-liten-enskild-firma/85314"},
+      {"name": "Mineko Suecia (49 SEK/mes según un usuario del foro)", "price_usd": null, "model": "monthly", "url": "https://rikatillsammans.se/forum/t/tips-pa-enkelt-billigt-t-o-m-gratis-bokforingsprogram-for-liten-enskild-firma/85314"},
+      {"name": "Spiris (6 meses gratis para nuevas empresas, según el proveedor)", "price_usd": null, "model": "freemium", "url": "https://www.spiris.se/ekonomiplattform/bokforing-fakturering/enskild-firma"}
+    ],
+    "search_signals": {"queries": ["bokföringsprogram enskild firma billigt", "egenavgifter enskild firma beräkna", "momsdeklaration enskild firma", "NE-bilaga enskild firma hur"], "volume_note": null},
+    "urgency_1to5": 2,
+    "urgency_basis": "Obligaciones periódicas de IVA y declaración anual, sin urgencia específica ni cifras verificadas.",
+    "buildability_1to5": 3,
+    "wtp_20_evidence": null,
+    "risks": "No se encontró ningún precio de compra única de apps suecas; cobertura nórdica parcial (solo Suecia); programas gratuitos y suites establecidas (Fortnox, Bokio, Spiris); zona fiscal.",
+    "confidence": "low"
+  },
+  {
+    "id": "verifactu-es-lite-facturacion",
+    "region": "EU",
+    "pain_point": "Los autónomos españoles no saben si su forma de facturar cumple VeriFactu y cuándo, con fechas aplazadas a 2027 y fuentes contradictorias sobre si Excel o Word sirven",
+    "segment": "Autónomos y pequeñas empresas en España",
+    "micro_app_idea": "Facturador local sencillo con registro encadenado de facturas y exportación compatible, más una lista de comprobación de la fecha que aplica a cada contribuyente",
+    "evidence": [
+      {"url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/consultas-informaticas/presentacion-declaraciones-ayuda-tecnica/aplicacion-gratuita-verifactu-aeat.html", "what": "La AEAT ofrece una aplicación gratuita VERI*FACTU para autónomos sin software propio; según resúmenes de búsqueda sin límite de facturas pero solo emite facturas completas, no simplificadas", "date": null},
+      {"url": "https://www.merca2.es/2026/06/11/verifactu-app-gratuita-hacienda-facturas-2395017/", "what": "Noticia de junio de 2026: los autónomos ya pueden emitir facturas con la app gratuita de Hacienda", "date": "2026-06"},
+      {"url": "https://www.billin.net/blog/mejores-programas-verifactu/", "what": "Comparativa (julio 2026): cumplir empieza en 0 EUR con la app de la AEAT o Contasimple gratis y en 6,60 EUR al mes con Billin Básico con facturas ilimitadas", "date": "2026-07"},
+      {"url": "https://www.infoautonomos.com/blog/hacienda-retrasa-entrada-vigor-verifactu/", "what": "Hacienda retrasa la entrada en vigor de VeriFactu; según resúmenes la fecha para autónomos es julio de 2027 (sin verificar en BOE)", "date": null}
+    ],
+    "paid_alternatives": [
+      {"name": "Billin Básico (6,60 EUR/mes)", "price_usd": null, "model": "monthly", "url": "https://www.billin.net/blog/mejores-programas-verifactu/"},
+      {"name": "App gratuita VERI*FACTU de la AEAT", "price_usd": 0, "model": "freemium", "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/consultas-informaticas/presentacion-declaraciones-ayuda-tecnica/aplicacion-gratuita-verifactu-aeat.html"},
+      {"name": "Contasimple (versión gratuita)", "price_usd": 0, "model": "freemium", "url": "https://www.billin.net/blog/mejores-programas-verifactu/"}
+    ],
+    "search_signals": {"queries": ["Verifactu autónomos programa barato", "Verifactu Excel Word factura válido", "app gratuita Verifactu AEAT", "Verifactu aplazamiento 2027 autónomos"], "volume_note": null},
+    "urgency_1to5": 2,
+    "urgency_basis": "Los plazos para autónomos se aplazaron a 2027 y existe una app oficial gratuita; las sanciones de hasta 50.000 EUR que citan las guías no se han verificado.",
+    "buildability_1to5": 2,
+    "wtp_20_evidence": null,
+    "risks": "Un software de facturación debe cumplir los requisitos técnicos y la declaración responsable de VeriFactu (cumplimiento pesado); app oficial gratuita y programas desde 6,60 EUR/mes; fechas aplazadas y contradictorias; mercado saturado.",
+    "confidence": "low"
+  }
+]
