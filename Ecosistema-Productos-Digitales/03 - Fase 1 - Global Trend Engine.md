@@ -1,7 +1,7 @@
 ---
 tags: [proyecto, productos-digitales, fase-1]
 creado: 2026-10-08
-estado: pasada-1-completa
+estado: pasada-2-completa
 ---
 
 # Fase 1 — Minería de Datos Exhaustiva (Global Trend Engine)
@@ -17,7 +17,7 @@ Volver al [[00 - Indice]] · Anterior: [[02 - Fase 0 - Diagnostico y Herramienta
 
 ## Límites que condicionan todo
 
-1. **Ningún agente pudo abrir una página.** Todo sale de resúmenes de búsqueda web. `WebFetch` falló con error de DNS y `curl` recibió 403 de la política de red. Algunas URLs son inferidas del título del resultado y los agentes lo marcaron donde lo notaron.
+1. **Ningún agente de las dos pasadas pudo abrir una página.** Todo sale de resúmenes de búsqueda web. `WebFetch` falló con error de DNS y `curl` recibió 403 de la política de red. Algunas URLs son inferidas del título del resultado y los agentes lo marcaron donde lo notaron.
 2. **Presupuesto de búsqueda agotado.** Cada agente alcanzó el tope compartido tras ~35–48 búsquedas, antes de verificar precios o cubrir todos los países que quería.
 3. **Sin volúmenes de búsqueda** en ninguno de los 112 candidatos. El componente de demanda es un proxy débil.
 4. **Precios de referencia vistos** (candidatos con al menos una alternativa de pago con precio en rango): EE.UU. 11 de 25, Europa 1 de 27, Asia 2 de 29, LatAm 0 de 31. Parte de Europa es un artefacto: el agente vio precios en EUR y SEK pero no los convirtió a USD, así que el motor los ignora. En LatAm sí faltan: casi todos los precios quedaron en `null`.
@@ -98,9 +98,9 @@ Clasificación mía por palabras clave del id y el dolor, aproximada. 78 de los 
 
 Los dos temas de impuestos y facturación tienen puntaje promedio bajo (20.7 y 22.8) frente a 28.8 del tema de reemplazo offline, que es casi todo de EE.UU. Es por la falta de precios vistos en esas regiones, no porque haya menos demanda.
 
-### Propuesta de finalistas para prueba de puerta falsa
+### Propuesta de finalistas de la pasada 1 (superada por la pasada 2)
 
-Mi propuesta, no una decisión; pendiente de que apruebes presupuesto de anuncios:
+Se conserva como registro: la pasada 2 la desmontó en buena parte (ver más abajo). Propuesta original:
 
 1. `local-audio-file-transcriber`: la mejor evidencia de pago. Probar $19 contra $29.
 2. `home-inventory-insurance-local`: anclas $9.99–$19.99 y petición explícita de pago único.
@@ -112,12 +112,66 @@ Mi propuesta, no una decisión; pendiente de que apruebes presupuesto de anuncio
 
 Dejo fuera `offline-pdf-toolkit` y `offline-invoice-generator-freelancers`, salvo que tengan un diferenciador que la calibración no contradiga.
 
+## Pasada 2: verificación (2026-10-08)
+
+Cinco agentes: cuatro verificaron 24 candidatos (EE.UU. 7, Europa 5, Asia 6, LatAm 6) y uno reunió referencias de costo por clic. Cada uno hizo entre 34 y 39 búsquedas, sin rechazos. Como en la pasada 1, nadie pudo abrir páginas: **"confirmado" significa que una fuente independiente lo respalda en su resumen de búsqueda**, no que alguien leyó la página. Los veredictos completos, con la razón de cada agente, están en `global-trend-engine/data/verificacion_pasada2.csv`.
+
+### Lo que cambió
+
+- **La pasada 1 subestimó la competencia gratuita.** Registró en promedio **0.8** alternativas gratuitas por candidato (11 de los 24 sin ninguna). La verificación encontró **5.0** en promedio (mínimo 3, máximo 8).
+- **Veredicto de los agentes sobre los 24:** 14 descartar, 9 rehacer, 1 mantener. 23 quedan con confianza baja y 1 con media.
+- **Los finalistas de la pasada 1 (9 candidatos en 7 propuestas):** ninguno se mantiene; 5 pasan a rehacer y 4 a descartar.
+
+| Candidato | Pos. en pasada 1 | Pasada 2 | Por qué |
+|---|---|---|---|
+| `local-audio-file-transcriber` | 3 | Rehacer | Buzz y Vibe, gratuitos, hacen lo mismo. Precios: Whisper Notes entre $6.99 y $14 (las fuentes se contradicen), MacWhisper €59 (no €64). Solo defendible como app sin configuración para usuarios no técnicos en Windows |
+| `home-inventory-insurance-local` | 1 | Descartar | Apps gratuitas (NAIC, Know Your Stuff, Encircle) y rivales de pago único a $5–$10. Under My Roof cuesta ~$25/año, no $40 |
+| `ar-freelancer-factura-e-cobro-exterior` | 33 | Rehacer | El simulador de ARCA y las guías gratuitas cubren cada pieza. Solo vale como flujo único con vigencia fechada, o fusionado con otro país |
+| `br-freelancer-dolar-nfse-carneleao` | 25 | Descartar | Calculadora gratuita casi idéntica (Contabilidade Zen) y Carnê-Leão Web gratuito |
+| `mx-freelancer-usd-cfdi-resico` | 16 | Rehacer | Hueco estrecho rodeado de guías gratuitas. Hay que validar la disposición a pagar con compradores reales |
+| `br-motorista-app-lucro-real` | 6 | Descartar | Drivvo Premium cuesta R$2/mes o R$12/año, FinDriver es gratuita y 99 tiene calculadora oficial |
+| `dac7-ledger-vendedores-segunda-mano` | 9 | Rehacer | Margeo ya tiene contador DAC7, plan gratuito (tope de 30 artículos), Pro a €7,99/mes o €69/año y plantilla Excel gratuita. Hueco: libro local multipaís, sin tope ni suscripción |
+| `nebenkosten-check-mieter` | 11 | Rehacer | Nebenkostenpro cobra €14,90 con carta, Mineko €39–69 y el Mieterbund ofrece checks gratuitos. Solo como checklist offline reutilizable. El plazo legal para objetar es de 12 meses (§556 BGB), no 4 semanas |
+| `in-gst-billing-offline-onetime` | 5 | Descartar | Opciones gratuitas offline y planes de ₹399/año. El ancla de $19 viene solo del post de su propio vendedor |
+| `resume-builder-no-billing-trap` | 10 | **Mantener** (media) | La única. Quejas recientes (Trustpilot, mar–abr 2026), Zety renueva cada 4 semanas, y no se encontró herramienta que combine constructor local y comparación de palabras clave contra la oferta (Jobscan $49.95/mes; Kickresume en la nube). Sigue saturado y dominado por SEO |
+
+**Otros veredictos.** Descartar: `subscription-audit-from-bank-csv`, `offline-pdf-toolkit`, `offline-invoice-generator-freelancers`, `rechtstexte-generator-datenschutz-impressum`, `e-rechnung-reader-offline`, `in-exam-photo-signature-resizer`, `id-sscasn-document-prep`, `jp-pdf-tools-lifetime`, `ar-courier-impuestos-compras-exterior`, `latam-reposteria-costeo-es`. Rehacer: `mileage-log-manual-export` (solo un giro sin validar: reconstruir kilometraje pasado), `sepa-xml-desde-excel` (ventana corta: los formatos viejos valen hasta nov-2026), `id-coretax-xml-validator` (solo como pre-validador por filas para contadores con varios clientes), `vn-marketplace-fee-profit-tax` (calculadora con tarifas editables; el 28-may-2026 el regulador pidió a Shopee no aplicar cargos nuevos y esta difirió el de visibilidad, pero no el aumento del cargo COD de 4,91% a 6%).
+
+### El dato del "93%"
+
+Viene de Deel y cubre solo a sus contratistas argentinos, medido como retiros en dólares (mayo 2025–abril 2026). **No es una encuesta del segmento.** Infobae cita 90% de otro estudio privado. No hay cifras comparables de Brasil ni México; para Colombia hay 34%. La hipótesis de que "quien cobra en dólares puede pagar $20" queda sin respaldo general.
+
+### Costo de adquisición
+
+Todas las cifras salen de blogs y agencias, no de datos de plataforma, y las fuentes discrepan entre sí. Detalle en `data/fase1b_cpc.json`.
+
+| Referencia | Valor |
+|---|---|
+| Google Search EE.UU., CPC medio | $5.26–$5.42 (WordStream 2025–26, vía resúmenes) |
+| "transcribe audio to text", EE.UU. | $5.99 con ~22.2k búsquedas/mes (seodata.dev); otra herramienta reporta $9.89–$11.88 para variantes |
+| "home inventory", EE.UU. | $2.01, ~1.3k búsquedas/mes |
+| Meta, CPC | EE.UU. $1.11–$2.69; México $0.35–$0.80; Argentina $0.15–$0.90 |
+| Google Alemania, por categoría | Software €2–8, finanzas €3–15, seguros €10–50 |
+| Conversión | Landing promedio 2.35%; Meta e-commerce, mediana clic→compra 1.57%. **Ninguna cifra específica de producto digital de $20** |
+| Afiliados | 30–50% en productos digitales de pago único (= $6–$10 por venta de $20); 15–30% en SaaS |
+| Gumroad | 10% + $0.50 en ventas directas; 30% en Discover |
+
+Aritmética del agente (CAC = CPC ÷ conversión). Para un CAC de $9, el CPC máximo es **$0.14, $0.27 o $0.45** con conversión de 1.57%, 3% o 5%. **El 3% es un supuesto: no se midió en ningún nicho.** Con 3%: transcripción en EE.UU. ≈ $130–$400 por venta en Google y $37–$90 en Meta; inventario del hogar ≈ $67; software en Alemania ≈ €67–267. **Ningún nicho tiene respaldo público para un CAC ≤ $9 con anuncios.** EE.UU. y Alemania no son plausibles por esa vía. México, Argentina, Brasil e India quedan sin concluir: los CPC son bajos, pero faltan datos por término y de conversión, y es donde la disposición a pagar $20 es menor.
+
+### Lectura mía
+
+1. **La señal más fuerte no es un nicho, es el criterio.** Un dolor solo es oportunidad si no tiene equivalente gratuito. "Hueco frente a lo gratuito" debe ser el filtro principal, antes que urgencia o volumen.
+2. **Con anuncios, un producto de consumo a $20 no cuadra en EE.UU. ni Alemania** según estos benchmarks. Quedan estas palancas: afiliados (el costo es la comisión, $6–$10), contenido y SEO de cola larga, marketplaces, precios más altos en herramientas profesionales ($29–$69 según la calibración), y nichos profesionales donde el comprador paga por tiempo ahorrado (contadores con varios clientes, conversión SEPA con fecha límite). Son hipótesis a probar, no resultados.
+3. **Los 88 candidatos sin verificar probablemente siguen el patrón** de la pasada 1: omitieron competencia gratuita. Es una inferencia mía, no verificada. No los doy por buenos.
+
 ## Para pasar de hipótesis a datos
 
-1. **Desbloquear los hosts** (HN, Stack Exchange, Google Trends, Reddit) y **aprobar las claves de la Fase 0** (DataForSEO) para tener volúmenes y CPC reales.
-2. **Segunda pasada de agentes** con presupuesto de búsqueda nuevo: verificar las evidencias del top 15, y registrar precios en moneda local más una tabla de cambio fija (campos `price_local` y `currency`), para que Europa deje de quedar subvalorada.
-3. **Puertas falsas** de los finalistas, con la calculadora `faketest.py`. Requieren cuenta publicitaria y presupuesto, que son decisiones tuyas.
+1. **Desbloquear los hosts** (HN, Stack Exchange, Google Trends, Reddit) y **aprobar las claves de la Fase 0** (DataForSEO) para tener volúmenes y CPC por término. Sin cambios: sigue pendiente.
+2. **Pasada 3 con el enfoque invertido (recomendada).** En vez de partir de quejas, partir de lo que ya vende (utilidades de un solo propósito a $10–$20, captura de pantalla a $29, herramientas de desarrollo e IA local a $29–$69, automatización a $24–$42) y buscar el hueco que dejan los gratuitos dentro de esas categorías.
+3. **Puertas falsas** solo para los candidatos "rehacer" y "mantener" que lleguen a definir un diferenciador concreto, con precios de prueba de $19, $29 y $39. Requieren cuenta publicitaria y presupuesto, que son decisiones tuyas.
+4. **Tabla de cambio fija** (`price_local` y `currency`): no la apliqué, porque la verificación reordenó la lista de todos modos. Queda para cuando se vuelva a puntuar.
 
 ## Archivos
 - `global-trend-engine/score.py`, `faketest.py`, `tests/` (14 pruebas)
 - `global-trend-engine/data/`: `fase1_us.json`, `fase1_eu.json`, `fase1_asia.json`, `fase1_latam.json`, `fase1_wtp.json`, `ranking_v0.csv` (antes de la penalización), `ranking.csv` (v0.1)
+- Pasada 2: `fase1b_us.json`, `fase1b_eu.json`, `fase1b_asia.json`, `fase1b_latam.json`, `fase1b_cpc.json`, `verificacion_pasada2.csv`

@@ -5,7 +5,7 @@ Herramientas de la Fase 1 del proyecto de micro-apps a $20 USD. Solo biblioteca 
 | Archivo | Para qué |
 |---|---|
 | `score.py` | Puntúa y ordena candidatos de nicho (JSON) con una media geométrica ponderada, penaliza las alternativas gratuitas (hasta 25%) y marca huecos de datos |
-| `data/` | Evidencia cruda de los agentes (`fase1_*.json`) y rankings (`ranking_v0.csv` antes de la penalización, `ranking.csv` actual) |
+| `data/` | Evidencia cruda de los agentes (`fase1_*.json`), rankings (`ranking_v0.csv` antes de la penalización, `ranking.csv` actual) y la pasada 2 (`fase1b_*.json`, `verificacion_pasada2.csv`) |
 | `faketest.py` | Decide GO / DESCARTAR / CONTINUAR en una prueba de puerta falsa (Beta-Binomial) |
 | `tests/` | Pruebas unitarias. Sus candidatos son fixtures sintéticos, no datos de mercado |
 
