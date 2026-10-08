@@ -1,0 +1,474 @@
+{
+ "category": "herramientas de nicho profesional",
+ "survivors": [
+  {
+   "id": "culling-ia-local-pago-unico",
+   "gap": "El culling asistido por IA (ojos cerrados, desenfoque, duplicados) se vende casi solo por suscripcion (Aftershoot ~$120/ano, Narrative Select ~$10-15/mes facturado anual, FilterPixel ~$180/ano). Las opciones de pago unico (Photo Mechanic, FastRawViewer) no traen deteccion automatica con IA, y no encontre ninguna herramienta gratuita confiable con deteccion automatica de ojos cerrados.",
+   "micro_app_idea": "App de escritorio local que lee las previsualizaciones embebidas del RAW, puntua nitidez y parpadeos, agrupa casi-duplicados y escribe calificaciones/etiquetas en sidecars XMP para Lightroom/Bridge, con licencia de pago unico.",
+   "segment": "Fotografos de bodas y eventos de alto volumen",
+   "platform": "cross",
+   "proven_sellers": [
+    {
+     "name": "Aftershoot (culling + edicion IA)",
+     "price_usd": 120,
+     "currency": "USD",
+     "model": "annual",
+     "traction_evidence": "Pagina de Trustpilot con ~1,590-1,620 resenas y ~4.9 de calificacion (dato de Trustpilot, sin fecha). Una fuente lista un plan 'Selects' a $120/ano y otra cita un plan Max de $480/ano; las fuentes discrepan.",
+     "url": "https://au.trustpilot.com/review/aftershoot.com"
+    },
+    {
+     "name": "FilterPixel",
+     "price_usd": 14.99,
+     "currency": "USD",
+     "model": "monthly",
+     "traction_evidence": "Su propio blog de precios lista $14.99/mes facturado anual ($180/ano) o $19.99/mes mensual (plan Standard); basado en la nube, con tope de 5,500 fotos por shoot en DeepCull. Hubo una oferta 'lifetime' de $399 limitada a 10 usuarios en Gumroad (no confirme si sigue vigente). Sin cifras de ventas.",
+     "url": "https://filterpixel.com/blog/filterpixel-pricing"
+    },
+    {
+     "name": "Narrative Select",
+     "price_usd": 10,
+     "currency": "USD",
+     "model": "monthly",
+     "traction_evidence": "Precio 'desde $10/mes' (facturado anual) en una fuente y $15/mes en otra. Sin cifra de usuarios verificada. Su blog afirma funcionar completamente offline y existe un nivel gratuito segun un competidor.",
+     "url": "https://narrative.so/blog/free-photo-culling-software"
+    },
+    {
+     "name": "Photo Mechanic (culling manual rapido)",
+     "price_usd": 139,
+     "currency": "USD",
+     "model": "one-time",
+     "traction_evidence": "Una fuente lo lista a $139 pago unico o $150/ano; otra a $149/ano o $299 pago unico (fuentes en conflicto). Una guia Mac 2026 lo describe como licencia de pago unico (upgrades de pago) orientada a bodas/eventos de alto volumen. Sin IA.",
+     "url": "https://supasidebar.com/blog/best-mac-apps-for-photographers-2026"
+    },
+    {
+     "name": "FastRawViewer",
+     "price_usd": 25,
+     "currency": "USD",
+     "model": "one-time",
+     "traction_evidence": "Listado a $25 pago unico como alternativa de culling manual rapido; sin cifras de ventas.",
+     "url": null
+    }
+   ],
+   "free_alternatives": [
+    {
+     "name": "Narrative Select (nivel gratuito)",
+     "url": "https://narrative.so/blog/free-photo-culling-software",
+     "what_it_covers": "Culling con funciones basicas; segun su blog funciona offline.",
+     "what_it_lacks": "Segun comparativas de competidores (no verificado de forma independiente) exige culling manual y no hay version Windows; el nivel gratis es limitado."
+    },
+    {
+     "name": "Adobe Bridge",
+     "url": "https://imagen-ai.com/post/photo-culling-software-free/",
+     "what_it_covers": "Culling manual gratuito con un Adobe ID.",
+     "what_it_lacks": "Sin deteccion automatica de ojos cerrados ni desenfoque."
+    },
+    {
+     "name": "digiKam (open source)",
+     "url": "https://imagen-ai.com/post/photo-culling-software-free/",
+     "what_it_covers": "Gestor open source con soporte de ~1,100 formatos RAW.",
+     "what_it_lacks": "No confirme que detecte ojos cerrados; curva de aprendizaje alta."
+    },
+    {
+     "name": "Lightroom Classic (herramientas nativas)",
+     "url": "https://blog.evoto.ai/?p=20611",
+     "what_it_covers": "Marcado y filtrado manual de fotos.",
+     "what_it_lacks": "Segun una comparativa de un competidor (Evoto), le cuesta detectar ojos cerrados y desenfoques sutiles."
+    }
+   ],
+   "gap_evidence": [
+    {
+     "url": "https://fstoppers.com/apps/why-do-photo-apps-keep-going-subscription-model-501489",
+     "what": "Articulo editorial: los fotografos de bodas tienen un cliente casi nunca recurrente; compara $10/mes con $700 de licencia perpetua mas $200 por upgrade. Argumenta que la suscripcion es estrategia de ingresos.",
+     "date": null
+    },
+    {
+     "url": "https://filterpixel.gumroad.com/l/FilterPixel",
+     "what": "El propio vendedor ofrecio un 'Lifetime' de $399 limitado a 10 usuarios: senal de demanda de pago unico (oferta limitada, sin confirmar vigencia).",
+     "date": null
+    },
+    {
+     "url": "https://imagen-ai.com/post/best-ai-photo-culling-software-2026/",
+     "what": "Listado de 8 herramientas de culling con IA en 2026, todas de suscripcion o credito; la herramienta de pago unico citada (Photo Mechanic) es manual. Fuente de un competidor.",
+     "date": null
+    },
+    {
+     "url": "https://au.trustpilot.com/review/aftershoot.com",
+     "what": "Las resenas negativas de Aftershoot se centran en fallos y precision de culling, no en precio: hay hueco de calidad, pero no hallé quejas de precio de usuarios reales.",
+     "date": null
+    }
+   ],
+   "reach_channels": [
+    {
+     "channel": "Beneficios para miembros de una asociacion de fotografos (ASMP)",
+     "evidence": "ASMP lista 'Cradoc fotoSoftware' (suite de precios y gestion) con pago unico en su hub de beneficios para miembros: existe un canal asociativo que distribuye software a fotografos.",
+     "url": "https://www.asmp.org/membership/member-benefits-hub/cradoc-fotosoftware/"
+    },
+    {
+     "channel": "Medios y comparativas de fotografia (Fstoppers, guias 'mejores apps Mac para fotografos')",
+     "evidence": "Hay articulos recurrentes que comparan software de culling y apps de pago unico; no obtuve cifras de trafico ni de costo de adquisicion.",
+     "url": "https://supasidebar.com/blog/best-mac-apps-for-photographers-2026"
+    }
+   ],
+   "differentiator": "Pago unico y 100% local/offline, sin tope por shoot ni dependencia de la nube (FilterPixel es cloud con tope de 5,500 fotos por DeepCull), con salida a XMP para integrarse con el catalogo existente.",
+   "price_evidence": "Los fotografos ya aceptan $120-$180/ano por culling IA (Aftershoot, FilterPixel) y $139-$299 de pago unico por Photo Mechanic (fuentes en conflicto). Un pago unico de ~$79 queda por debajo de un ano de suscripcion. Sin ventas verificadas.",
+   "target_price_usd": 79,
+   "build_complexity_1to5": 2,
+   "risks": "Exige modelos de vision (landmarks faciales, nitidez) y extraccion de previews RAW de muchas camaras; precision frente a competidores con financiamiento; mantenimiento por nuevos formatos de camara; mercado saturado (8+ herramientas); un incumbente podria lanzar un pago unico o un nivel gratis mas generoso.",
+   "confidence": "low",
+   "confidence_basis": "La necesidad de pago unico se infiere de editoriales y de la oferta lifetime de un competidor, no de quejas de usuarios reales (Reddit no accesible). El precio de los competidores esta bien documentado, pero no hay evidencia de costo de adquisicion y la dificultad tecnica es alta."
+  },
+  {
+   "id": "conciliador-payouts-etsy-csv",
+   "gap": "Etsy deposita montos netos que no coinciden con las ventas; el tenedor de libros debe combinar varios CSV (Orders, Payments, Fees, Deposits) y separar ventas brutas, comisiones, reembolsos, envio e impuestos en lineas contables propias. Los conectores baratos son suscripciones ($17-$29/mes por canal) y la via gratis es hoja de calculo o Beancount por linea de comandos.",
+   "micro_app_idea": "App local que lee el CSV Payment Account/Deposits de Etsy y genera por cada deposito un asiento de cuenta puente (ventas brutas, comisiones, reembolsos, envio, impuestos recaudados) en CSV listo para importar a QuickBooks/Xero u hoja de calculo, con verificacion de que el deposito esperado coincide con el del banco.",
+   "segment": "Tenedores de libros independientes que atienden a vendedores de Etsy y vendedores de Etsy que llevan sus propios libros",
+   "platform": "web",
+   "proven_sellers": [
+    {
+     "name": "Link My Books",
+     "price_usd": 21,
+     "currency": "USD",
+     "model": "monthly",
+     "traction_evidence": "Plan de entrada ~$17-$21/mes (200 pedidos, 1 canal); Capterra lista $41 (1,000 pedidos), $60 (5,000), $100 (10,000). Figura en la tienda de apps de Xero (coleccion ecommerce). Sin cifra de usuarios.",
+     "url": "https://www.capterra.com/p/184768/Link-My-Books/pricing/"
+    },
+    {
+     "name": "A2X (Etsy, Amazon, Shopify)",
+     "price_usd": 29,
+     "currency": "USD",
+     "model": "monthly",
+     "traction_evidence": "Varias fuentes listan $29/mes por canal (Etsy incluido); multicanal desde ~$89/mes. Existe una app 'A2X for Etsy' en el mercado de Sage. Sin cifra de usuarios.",
+     "url": "https://www.costbench.com/software/tax-software/a2x/"
+    },
+    {
+     "name": "Plantilla 'Etsy Seller Automatic Bookkeeping' (Excel/Google Sheets)",
+     "price_usd": null,
+     "currency": "USD",
+     "model": null,
+     "traction_evidence": "Producto de hoja de calculo que anuncia importacion de CSV de Etsy; no vi precio ni ventas. Segun la fuente, se centra en ventas y utilidad, no en conciliar depositos.",
+     "url": "https://monsterone.com/google-sheets/etsy-seller-automatic-bookkeeping-in-excel-and-google-sheets-o548301/"
+    }
+   ],
+   "free_alternatives": [
+    {
+     "name": "Beancount (contabilidad en texto plano) con CSV Payment Account de Etsy",
+     "url": "https://beancount.io/blog/2024/07/16/bookkeeping-basics-for-etsy-sellers-with-beancount",
+     "what_it_covers": "Tutorial que divide cada deposito semanal en lineas de ventas brutas y comisiones.",
+     "what_it_lacks": "Requiere linea de comandos y contabilidad en texto plano; sin interfaz ni salida directa a QuickBooks/Xero."
+    },
+    {
+     "name": "Hoja de calculo gratuita de bookkeeping para Etsy (Link My Books)",
+     "url": "https://linkmybooks.com/blog/free-etsy-bookkeeping-spreadsheet",
+     "what_it_covers": "Plantilla gratuita para registrar ventas, comisiones y gastos de Etsy.",
+     "what_it_lacks": "No vi su contenido; es material de captacion de un vendedor de pago, y las guias consultadas describen la conciliacion manual como tediosa."
+    },
+    {
+     "name": "Conector de Etsy de QuickBooks Online",
+     "url": "https://linkmybooks.com/blog/how-accountants-can-reconcile-etsy-payment-account-data-for-clients",
+     "what_it_covers": "Importa pedidos, comisiones e impuestos.",
+     "what_it_lacks": "Segun un competidor (fuente interesada) no concilia los payouts ni mapea IVA en detalle; hay que cruzar a mano con el banco."
+    },
+    {
+     "name": "Guia de Craftybase sobre la cuenta de pagos de Etsy",
+     "url": "https://app.craftybase.com/blog/understanding-your-etsy-payment-account",
+     "what_it_covers": "Explica la estructura de la cuenta de pagos de Etsy.",
+     "what_it_lacks": "Es una guia, no automatiza la conciliacion."
+    }
+   ],
+   "gap_evidence": [
+    {
+     "url": "https://linkmybooks.com/blog/etsy-transactions-reports",
+     "what": "Etsy exporta varios tipos de CSV (Orders, Payments, Fees, Deposits) y 'a menudo hay que combinarlos' para ver el cuadro financiero completo. Fuente de un vendedor competidor.",
+     "date": "2025-11"
+    },
+    {
+     "url": "https://beancount.io/blog/2024/07/16/bookkeeping-basics-for-etsy-sellers-with-beancount",
+     "what": "Tutorial independiente que muestra el trabajo manual de dividir cada deposito semanal en ventas brutas y lineas de comisiones usando el CSV Payment Account.",
+     "date": "2024-07"
+    },
+    {
+     "url": "https://salaccounting.ca/toronto/bookkeeping-for-etsy-sellers-toronto/",
+     "what": "Despacho contable que advierte que se trate la cuenta de pagos de Etsy como registro primario (no el deposito bancario) y que algunos vendedores pagan de mas GST/HST porque Etsy ya lo remitio y sus libros lo registran como recaudado. Es un servicio, no una queja, pero muestra que existe oferta de servicio manual para este flujo.",
+     "date": null
+    },
+    {
+     "url": "https://linkmybooks.com/blog/how-accountants-can-reconcile-etsy-payment-account-data-for-clients",
+     "what": "Guia para contadores sobre conciliar datos de la cuenta de pagos de Etsy para clientes (vendedor competidor).",
+     "date": "2026-08"
+    }
+   ],
+   "reach_channels": [
+    {
+     "channel": "Tienda de apps de Xero (coleccion ecommerce) y mercado de Sage",
+     "evidence": "Link My Books figura en la coleccion ecommerce de Xero y A2X for Etsy en el mercado de Sage: los contadores descubren herramientas de este tipo en los marketplaces de sus plataformas contables.",
+     "url": "https://apps.xero.com/us/collection/ecommerce/app/link-my-books"
+    },
+    {
+     "channel": "Despachos de bookkeeping especializados en vendedores de Etsy",
+     "evidence": "Existen despachos con pagina propia para 'bookkeeping para vendedores de Etsy' (ej. Toronto), lo que indica un nicho de profesionales alcanzable por directorio y busqueda.",
+     "url": "https://salaccounting.ca/toronto/bookkeeping-for-etsy-sellers-toronto/"
+    }
+   ],
+   "differentiator": "Un pago de ~$39 se recupera en menos de dos meses frente a $21-$29/mes; procesa localmente el CSV (sin conectar la cuenta de Etsy ni un feed bancario) y sirve a bookkeepers con varios clientes de bajo volumen sin multiplicar suscripciones por canal.",
+   "price_evidence": "Competidores directos cobran $17-$29/mes por canal (Link My Books desde ~$17-$21, A2X $29). No encontre un producto de pago unico equivalente, lo que sugiere hueco pero tambien podria indicar poca demanda de esa forma de pago.",
+   "target_price_usd": 39,
+   "build_complexity_1to5": 4,
+   "risks": "Etsy cambia el formato de sus CSV; los conectores automaticos (feed + publicacion) ofrecen mas valor que un CSV manual; la clasificacion de IVA/impuestos varia por pais (evitar cualquier asesoria fiscal); el comprador final (bookkeeper) puede preferir un conector aunque cueste suscripcion; no verifique comunidades de vendedores ni quejas de primera mano.",
+   "confidence": "low",
+   "confidence_basis": "El flujo y los precios de competidores estan bien documentados, pero toda la evidencia de la necesidad son guias de vendedores o despachos, sin quejas de usuarios fechadas ni cifras de tracción de los competidores."
+  },
+  {
+   "id": "cotizador-ponderado-traductores",
+   "gap": "Los traductores freelance pasan de un informe de analisis de CAT (Trados) a un conteo ponderado por coincidencias parciales y luego a una cotizacion, con Excel o herramientas online ad hoc; un hilo de la comunidad RWS reporta que una herramienta online de ponderacion dejo de funcionar con exportaciones de Trados Team. El producto integral (TO3000) cuesta EUR 75-260 y AnyCount EUR 49+.",
+   "micro_app_idea": "App local que lee exportaciones de analisis de CAT (Trados Studio/Team, memoQ) y cuenta palabras en varios formatos de archivo, aplica la tabla de descuentos por coincidencia parcial del cliente y genera cotizacion y linea de factura en PDF/CSV.",
+   "segment": "Traductores y linguistas freelance",
+   "platform": "cross",
+   "proven_sellers": [
+    {
+     "name": "TranslationOffice 3000 (TO3000)",
+     "price_usd": null,
+     "currency": "EUR",
+     "model": "one-time",
+     "traction_evidence": "Precios en ProZ (EUR): Starter 75 (lista 115), Standard 120 (185), Professional 207 (319), Advanced 260 (399); miembros de ProZ obtienen 30-35% de descuento. Afirma 5,257 licencias vendidas (dato del propio vendedor). Las paginas no indican explicitamente 'pago unico', solo licencia comprada.",
+     "url": "https://www.proz.com/TO3000"
+    },
+    {
+     "name": "AnyCount (conteo de palabras multi-formato)",
+     "price_usd": null,
+     "currency": "EUR",
+     "model": null,
+     "traction_evidence": "Directorio heise lista EUR 49 (Standard), 79 (Professional), 95 (Enterprise); registro actualizado ago-2024; no indica si es pago unico. Hilos de ProZ (2007-2013) lo mencionan por contar muchos formatos y carpetas completas.",
+     "url": "https://www.heise.de/download/product/anycount-21313"
+    }
+   ],
+   "free_alternatives": [
+    {
+     "name": "Herramienta gratuita en Excel para conteo ponderado (hilo de ProZ)",
+     "url": "https://hrv.proz.com/forum/software_applications/138257-testers_needed_for_excel_progress_report_tool.html",
+     "what_it_covers": "Calcula valores ponderados segun ajustes del usuario con salida CSV de Trados.",
+     "what_it_lacks": "Hilo antiguo de pruebas beta; no confirme que siga disponible ni que soporte los formatos actuales de Trados Team."
+    },
+    {
+     "name": "Plugin 'Target Word Count' de la RWS AppStore",
+     "url": "https://community.rws.com/product-groups/trados-portfolio/trados-studio/f/studio/53929/generating-a-weighted-word-count-from-team-analysis-export",
+     "what_it_covers": "Analisis por conteo de palabras destino o lineas y tablas de tarifas por cliente, dentro de Trados Studio.",
+     "what_it_lacks": "Solo funciona dentro de Trados Studio; no es calculadora independiente ni genera cotizacion/factura."
+    },
+    {
+     "name": "Herramienta online de ponderacion (lsp.net, mencionada en la comunidad RWS)",
+     "url": "https://community.rws.com/product-groups/trados-portfolio/trados-studio/f/studio/53929/generating-a-weighted-word-count-from-team-analysis-export",
+     "what_it_covers": "Convertia el XML de analisis de Studio en conteo ponderado.",
+     "what_it_lacks": "El usuario reporto errores con exportaciones de Trados Team; no confirme si el sitio sigue activo."
+    },
+    {
+     "name": "Calculo manual con tabla de tarifas (guia de Novalo / TradOnline)",
+     "url": "https://novalo.com/how-to-perform-word-counts-and-interpret-them/",
+     "what_it_covers": "Explica como sumar bandas de coincidencia; TradOnline publica una tabla de ejemplo (101%/repeticiones 25%, 95-99% 30%, 85-94% 50%, 75-84% 70%, <75% 100%).",
+     "what_it_lacks": "Es proceso manual en hoja de calculo; la tabla es de un cliente, no estandar."
+    }
+   ],
+   "gap_evidence": [
+    {
+     "url": "https://community.rws.com/product-groups/trados-portfolio/trados-studio/f/studio/53929/generating-a-weighted-word-count-from-team-analysis-export",
+     "what": "Usuario que usaba una herramienta online para convertir el XML de analisis de Studio en conteo ponderado reporta que, tras pasar a Trados Team, las exportaciones causan errores y pide alternativa.",
+     "date": null
+    },
+    {
+     "url": "https://ces.proz.com/forum/business_issues/238804-simultaneous_word_count_on_a_number_of_documents.html",
+     "what": "Hilo de ProZ (segun el resumen, de 2012) sobre contar palabras de muchos documentos a la vez para cotizar.",
+     "date": null
+    },
+    {
+     "url": "https://hrv.proz.com/forum/software_applications/138257-testers_needed_for_excel_progress_report_tool.html",
+     "what": "Traductores construyen y prueban a mano hojas de Excel para ponderar conteos desde CSV de Trados: indicio de trabajo manual repetido.",
+     "date": null
+    }
+   ],
+   "reach_channels": [
+    {
+     "channel": "ProZ.com (programa de descuento para miembros / Translator Buying Group)",
+     "evidence": "ProZ vende TO3000 con 30-35% de descuento para miembros y publica un curso de formacion sobre el producto: el portal ya monetiza software de administracion para traductores. Sin cifras de costo de adquisicion.",
+     "url": "https://www.proz.com/TO3000"
+    },
+    {
+     "channel": "Comunidad y AppStore de RWS (Trados)",
+     "evidence": "La comunidad RWS es donde los usuarios piden herramientas de conteo ponderado y se publican plugins en la RWS AppStore.",
+     "url": "https://community.rws.com/product-groups/trados-portfolio/trados-studio/f/studio/53929/generating-a-weighted-word-count-from-team-analysis-export"
+    }
+   ],
+   "differentiator": "Herramienta de un solo paso (analisis CAT a cotizacion) a ~$39, mas barata que el paquete administrativo completo (EUR 75+), local y con soporte de formatos recientes de Trados Team.",
+   "price_evidence": "Los traductores ya pagan EUR 49-95 por contadores de palabras (AnyCount) y EUR 75-260 por administracion integral (TO3000); la tabla de precios de ProZ es directa. Todos los precios son de listados de terceros y estan en EUR.",
+   "target_price_usd": 39,
+   "build_complexity_1to5": 4,
+   "risks": "Mercado pequeno y con ingresos presionados por traduccion automatica; TO3000 ya incluye el conteo ademas de facturacion; los formatos de analisis de CAT cambian; plugins gratuitos de RWS cubren parte del flujo; mantenimiento por multiples CAT.",
+   "confidence": "low",
+   "confidence_basis": "Hay precios claros de competidores y un canal identificable (ProZ), pero la evidencia de necesidad no cubierta es un hilo de la comunidad RWS sin fecha y hilos antiguos de ProZ; no verifique cuantos traductores usan hoy herramientas gratuitas."
+  },
+  {
+   "id": "takeoff-pdf-oficios-mac-pago-unico",
+   "gap": "Bluebeam es Windows primero; los programas de takeoff por oficio (Square Takeoff, Togal.AI) son nube/suscripcion y el unico takeoff nativo para Mac que halle (Clankoot Studio) cobra $9.99/mes. Las opciones de pago unico en Mac son editores de PDF genericos con medicion (Qoppa PDF Studio $99-$139; PDF Expert ~$79.99).",
+   "micro_app_idea": "App para Mac/web que calibra la escala de un plano en PDF, mide longitudes/areas y cuenta piezas por oficio (pintura, pisos), aplica factor de desperdicio y exporta cantidades a CSV o cotizacion, todo local.",
+   "segment": "Contratistas pequenos y estimadores de oficios (pintores, pisos) que usan Mac",
+   "platform": "mac",
+   "proven_sellers": [
+    {
+     "name": "Qoppa PDF Studio (Standard/Pro, con medicion de precision)",
+     "price_usd": 99,
+     "currency": "USD",
+     "model": "one-time",
+     "traction_evidence": "Setapp lo lista a $99 (Standard) y $139 (Pro) pago unico, con medicion de precision y procesamiento por lotes. Sin cifras de ventas.",
+     "url": "https://setapp.com/app-reviews/bluebeam-alternatives-for-mac"
+    },
+    {
+     "name": "PDF Expert (Readdle)",
+     "price_usd": 79.99,
+     "currency": "USD",
+     "model": "one-time",
+     "traction_evidence": "Una pagina de un competidor (UPDF) cita $79.99 pago unico (verificar). Otra fuente indica que las herramientas de construccion (escala y medicion) de PDF Expert forman parte de su suscripcion de pago (ver soporte de Readdle), asi que el dato no esta confirmado.",
+     "url": "https://updf.com/mac/bluebeam-alternative-for-mac/"
+    },
+    {
+     "name": "Clankoot Studio (takeoff nativo para Mac)",
+     "price_usd": 9.99,
+     "currency": "USD",
+     "model": "monthly",
+     "traction_evidence": "Lanzamiento en Product Hunt con 3 votos y 1 comentario (el del creador); prueba de 10 dias. Afirmaciones sobre Bluebeam son del propio creador.",
+     "url": "https://www.producthunt.com/products/clankoot-studio"
+    },
+    {
+     "name": "Square Takeoff (pintura/pisos)",
+     "price_usd": null,
+     "currency": "USD",
+     "model": null,
+     "traction_evidence": "Prueba gratis de 14 dias; precio no visible en los resultados; sube PDF/imagen y exporta a Excel.",
+     "url": "https://squaretakeoff.com/painting-construction/"
+    }
+   ],
+   "free_alternatives": [
+    {
+     "name": "Calibrador de medicion de PDFgear (web, gratis)",
+     "url": "https://www.pdfgear.com/pdf-editor-reader/how-to-measure-a-pdf.htm",
+     "what_it_covers": "Distancia, perimetro, area, radio y volumen con calibracion; segun el vendedor es gratis, sin registro y sin marca de agua.",
+     "what_it_lacks": "Medicion puntual: no cuenta piezas por oficio, no convierte a cantidades de material ni exporta cotizacion; sube el plano a la web."
+    },
+    {
+     "name": "PDF-XChange Editor (version gratuita, Windows)",
+     "url": "https://forum.pdf-xchange.com/viewtopic.php?p=19671",
+     "what_it_covers": "Herramientas de medicion de perimetro y area incluidas en la version gratuita.",
+     "what_it_lacks": "Solo Windows; pone marca de agua si se usan funciones Pro; hay que fijar unidades antes de medir."
+    },
+    {
+     "name": "Foxit Reader / Foxit PDF Editor",
+     "url": "https://www.foxit.com/blog/tag/pdf-measurements/",
+     "what_it_covers": "Incluyen herramientas de medicion en PDF.",
+     "what_it_lacks": "Su propio blog reconoce que las escalas de medicion de PDF suelen salir incorrectas; sin flujo de cantidades por oficio."
+    },
+    {
+     "name": "Okular (KDE)",
+     "url": "https://bugs.kde.org/show_bug.cgi?id=155737",
+     "what_it_covers": "Visor libre de PDF.",
+     "what_it_lacks": "Sin herramienta de medicion calibrada (solicitud abierta desde 2008)."
+    }
+   ],
+   "gap_evidence": [
+    {
+     "url": "https://setapp.com/app-reviews/bluebeam-alternatives-for-mac",
+     "what": "Articulo 'Las 6 mejores alternativas a Bluebeam que realmente funcionan en Mac (2026)': existe demanda de busqueda; la unica opcion con medicion de precision y pago unico listada es un editor generico.",
+     "date": null
+    },
+    {
+     "url": "https://discuss.kde.org/t/measurement-tool-feature-request/33310",
+     "what": "Usuario escribe que Okular es la mejor alternativa libre a Adobe y Bluebeam pero 'carece de una herramienta de medicion robusta'.",
+     "date": null
+    },
+    {
+     "url": "https://www.producthunt.com/products/clankoot-studio",
+     "what": "El creador (contratista general con licencia) afirma que la version Mac de Bluebeam es mala y que Procore cuesta $375/asiento; es afirmacion del propio vendedor, no independiente, y el lanzamiento solo tiene 3 votos.",
+     "date": null
+    }
+   ],
+   "reach_channels": [
+    {
+     "channel": "Marketplace/suscripcion de apps Mac (Setapp)",
+     "evidence": "Setapp publica comparativas 'alternativas a Bluebeam para Mac' y lista editores de PDF de pago unico: es un canal de descubrimiento de apps Mac profesionales.",
+     "url": "https://setapp.com/app-reviews/bluebeam-alternatives-for-mac"
+    },
+    {
+     "channel": "Product Hunt",
+     "evidence": "El unico competidor Mac nativo lanzo alli con tracción minima (3 votos), asi que el canal no esta probado para este nicho.",
+     "url": "https://www.producthunt.com/products/clankoot-studio"
+    }
+   ],
+   "differentiator": "Pago unico de ~$59 y procesamiento local de planos, con salidas por oficio (cantidades con desperdicio y CSV), frente a $9.99/mes de Clankoot y a editores genericos de $79-$139.",
+   "price_evidence": "Editores PDF con medicion de pago unico en Mac: Qoppa $99/$139 (Setapp), PDF Expert $79.99 (fuente de competidor, con dudas); takeoff Mac dedicado $9.99/mes (Clankoot). Los contratistas ya aceptan suscripciones de decenas de dolares en herramientas de campo, pero no vi precios de takeoff por oficio.",
+   "target_price_usd": 59,
+   "build_complexity_1to5": 3,
+   "risks": "PDFgear gratis cubre la medicion simple y puede bastar a muchos usuarios; mercado Mac de contratistas es minoritario; exactitud de escala y planos escaneados; nicho de baja traccion visible (3 votos); estimadores profesionales prefieren Bluebeam/Windows.",
+   "confidence": "low",
+   "confidence_basis": "Hay precios de referencia y un hueco de plataforma (Mac + pago unico), pero la evidencia de necesidad viene de articulos de comparacion y del propio competidor; no hallé comunidades de pintores/pisos que lo pidan ni traccion de ventas."
+  }
+ ],
+ "rejected": [
+  {
+   "idea": "Conversor local de estados de cuenta bancarios PDF a CSV/QBO para contadores y tenedores de libros",
+   "reason": "Saturado y cubierto: Excel Power Query (Datos > Obtener datos > Desde PDF) es gratis y refrescable para PDFs de texto con diseno estable; Tabula es gratis y open source; PDFgear de escritorio hace conversion por lotes y offline con OCR gratis. Ademas hay muchos productos nuevos 'local-first' (Local Bank Statement Converter, listado mar-2026, procesa en el navegador via WebAssembly; BankConv; FastStatement desde $15/mes; ProperSoft con lifetime listado a $199.99 por un articulo de competidor de 2024). El diferenciador 'privacidad/local' ya lo reclaman varios.",
+   "covering_free_alternative": "Excel Power Query (Get Data > From PDF) + Tabula + PDFgear de escritorio",
+   "url": "https://www.pdfgear.com/pdf-converter/convert-pdf-bank-statements-to-excel.htm"
+  },
+  {
+   "idea": "Verificador de copia de tarjetas de camara con checksum y reporte para videografos y fotografos (DIT ligero)",
+   "reason": "Cubierto por gratis: Stow (gratis, Mac y Windows, jul-2026) copia a dos destinos a la vez, relee y verifica con xxHash (el hash por defecto de OffShoot, ShotPut Pro, Silverstack) y emite un reporte de una pagina por destino para el cliente. Hedge/OffShoot tiene nivel gratis (2 transferencias simultaneas). Ademas existen de pago unico Lastcard (desde $59) y Offload (~$49 segun una resena antigua).",
+   "covering_free_alternative": "Stow (gratis) + nivel gratis de Hedge/OffShoot",
+   "url": "https://www.newsshooter.com/2026/07/15/stow-free-copy-verification-software/"
+  },
+  {
+   "idea": "Planificador de asientos (seating chart) de escritorio para organizadores de bodas y eventos",
+   "reason": "Ya servido por un producto de pago unico con decadas de antiguedad (PerfectTablePlan: Home Edition $29.95, listado en Capterra desde $74.95 pago unico, hasta ~$299 en ediciones profesionales; prueba sin limite de tiempo con tope de 30 invitados; 4.9/5 con solo 7 resenas) y por alternativas gratis (AllSeated gratis, Social Tables con nivel gratis, SeatPlan.io con plantillas gratis e importacion CSV). Una micro-app nueva queda entre ambos sin ventaja clara.",
+   "covering_free_alternative": "AllSeated (gratis) + SeatPlan.io (plantillas gratis, CSV) + prueba de PerfectTablePlan hasta 30 invitados",
+   "url": "https://www.capterra.com/p/74189/PerfectTablePlan/"
+  },
+  {
+   "idea": "Renombrador automatico de PDFs/facturas por contenido (proveedor, fecha, monto) para tenedores de libros",
+   "reason": "Ya existen productos dedicados: Renamer.ai (paginas especificas para QuickBooks/contabilidad, OCR) y Sorto (app de escritorio macOS/Windows, procesamiento local, carpetas vigiladas, apunta a despachos contables). No hallé hilos de contadores pidiendolo sin resolver (solo paginas de vendedores). Saturado para un recien llegado.",
+   "covering_free_alternative": "Sin gratis completo; competidores de pago ya cubren el hueco: Renamer.ai y Sorto",
+   "url": "https://sorto.ca/rename-pdf-invoices/"
+  },
+  {
+   "idea": "Generador de reportes fotograficos (carpeta de fotos a PDF/DOCX con leyendas) para contratistas e inspectores",
+   "reason": "Cubierto por varias vias: existe un escritorio de pago unico (PhotoSheet Reports Pro, solo Windows, $20-$80 segun un directorio, sin resenas) y al menos cinco apps moviles con nivel gratis o gratis con compras (Genba Report, SiteSnap Report, PhotoReport, Capabuild, PHOTO iD) que ya generan PDF; la via DIY en Google Docs/Word con tabla foto-leyenda es gratis. CompanyCam cobra $63-$79/mes, pero el segmento de bajo presupuesto ya tiene alternativas gratuitas moviles. No hallé quejas independientes.",
+   "covering_free_alternative": "Apps moviles con nivel gratis (Genba Report, SiteSnap Report, PhotoReport) + plantilla de tabla en Google Docs/Word",
+   "url": "https://alternativeto.net/software/photosheet-reports-pro/about/"
+  },
+  {
+   "idea": "Optimizador de cortes de tableros (cut list) para carpinteros y ebanistas",
+   "reason": "Hay gratis maduros: MaxCut (gratis, con holgura de sierra, veta y etiquetas, segun usuarios de Sawmill Creek), cutlistlab y CutGo (web, gratis, minimo desperdicio y diagrama imprimible). CutList Plus (~$89 pago unico segun un foro) y OptiCut ($595+) cubren el extremo de pago, y un usuario advierte que CutList Plus parece poco mantenido, pero no hay hueco claro para un cuarto producto.",
+   "covering_free_alternative": "MaxCut + cutlistlab + CutGo",
+   "url": "https://sawmillcreek.org/goto/post?id=2899815"
+  },
+  {
+   "idea": "Limpieza por lotes de audio de podcast (silencios y normalizacion de volumen) de pago unico",
+   "reason": "Cubierto: Auto-Editor (gratis, open source) corta silencios, normaliza a EBU R128 y exporta a Premiere, Resolve, Final Cut, Shotcut y Kdenlive; Auphonic tiene nivel gratis (~2 h/mes, lotes y carpetas vigiladas solo en pago). De pago unico ya existen VoxCut ($42-$45, procesamiento local, Windows/Linux) y TimeBolt ($120). Un nuevo producto no tiene ventaja clara.",
+   "covering_free_alternative": "Auto-Editor + Auphonic (nivel gratis)",
+   "url": "https://github.com/wyattblue/auto-editor"
+  },
+  {
+   "idea": "Generador de solicitudes de pago AIA G702/G703 con retencion para contratistas",
+   "reason": "Hay plantillas gratuitas en Excel (Handson Systems, Mastt con calculo de retencion) y herramientas gratis sin cuenta (PayAppCheck: verificador G702/G703 y calculadora de retencion, gratis durante Early Access). Si el contrato exige los formularios oficiales de AIA, hay que comprarlos a AIA, un limite legal para una micro-app.",
+   "covering_free_alternative": "Plantilla gratuita de Mastt + plantilla de Handson Systems + PayAppCheck",
+   "url": "https://www.mastt.com/glossary/what-is-payapps"
+  },
+  {
+   "idea": "Importador de marcadores desde CSV/hoja de calculo a Premiere, Resolve y Final Cut para editores de video",
+   "reason": "Cubierto: editingtools.io ofrece conversores gratuitos de CSV a EDL de marcadores para Resolve y a XML Final Cut 7 para Premiere (el CSV requiere columnas 'Timecode In', 'Name', 'Comment'), y Marker Toolbox ($19.99 en la Mac App Store) importa CSV de Premiere, Vimeo, Wipster, Frame.io y otros a Final Cut, Resolve y Avid. Precio de la alternativa de pago ya por debajo de $20.",
+   "covering_free_alternative": "Conversores gratuitos de editingtools.io (CSV a EDL/XML de marcadores)",
+   "url": "https://hu.editingtools.io/guides/convert-csv-to-resolve-marker"
+  },
+  {
+   "idea": "Clipper de productos a hoja de especificaciones FF&E para disenadores de interiores pequenos",
+   "reason": "Cubierto por gratis: Gather Web Clipper (Chrome, gratis; guarda hasta 9 imagenes, PDFs de fichas tecnicas, calcula costos y exporta documentos FF&E), IntoDesign Clipper (gratis), KIS List (Firefox, gratis) y clippers ligados a cuenta (StudioHaus, Indema, Fohlio). Houzz Pro ($99/mes un asiento) y Programa ($59/usuario/mes) cobran mas, pero el clipper basico ya es gratis y hay plantillas FF&E de Etsy a ~$10.50.",
+   "covering_free_alternative": "Gather Web Clipper (gratis) + KIS List + IntoDesign Clipper",
+   "url": "https://chrome.google.com/webstore/detail/gather-app/ipagkohmdolaedkefjhfkkmjbibdimbp?hl=en-US"
+  }
+ ],
+ "limitations": "Se agoto el presupuesto de busquedas web del turno (compartido) tras ~39 consultas exitosas, por lo que dos pistas quedaron sin evaluar (las dos busquedas siguientes fueron rechazadas por el limite; ademas un intento con filtro de dominio a reddit.com fue rechazado): (1) generador de hojas de musica (cue sheets) desde lineas de tiempo de edicion y utilidades de pago de fcp.cafe; (2) mas oficios de la lista (agentes inmobiliarios, docentes/tutores, coaches/terapeutas en administracion, pequenos comercios) no se investigaron a fondo. Pistas sin cerrar: complemento de Excel para Mac tipo ASAP Utilities (la FAQ del vendedor reconoce que no hay version Mac y Capterra lista Kutools solo para Windows; no vi precios ni evidencia de demanda) y software de consignacion/arriendo de puestos (SimpleConsign ~$100-$200/mes estandar y $359 plan Pro, ConsignCloud; Square gratis; no halle opcion de pago unico ni 3 alternativas gratis verificadas). Reddit no es accesible para WebSearch, por lo que casi toda la evidencia de necesidad viene de blogs de vendedores, directorios (AlternativeTo, Capterra, heise), foros (ProZ, RWS, KDE, Sawmill Creek) y paginas de producto; hay muy pocas quejas de primera mano con fecha. No obtuve cifras de costo de adquisicion de clientes, de ventas ni de conversion de ningun canal; las 'reach_channels' son indicios (descuentos para miembros de ProZ, beneficios de ASMP, tiendas de apps de Xero/Setapp), no mediciones. Los precios provienen en su mayoria de agregadores de terceros que a veces discrepan entre si (Aftershoot, Photo Mechanic, PDF Expert, Link My Books, A2X); los precios de TO3000 y AnyCount estan en EUR. Los cuatro sobrevivientes son de confianza 'low'."
+}

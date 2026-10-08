@@ -1,0 +1,1090 @@
+[
+ {
+  "id": "local-audio-file-transcriber",
+  "verified": "partly",
+  "checks": [
+   {
+    "claim": "Whisper Notes (Mac) sold at $14 one-time after a free 10,000-word trial",
+    "result": "contradicted",
+    "source_url": "https://whispernotes.app/de",
+    "note": "Search summary: a competitor-written blog (Weesper, 2026-08-21) says $14; the vendor's own pages (de/de-AT/vi locales) list the Mac price as $6.99 one-time after 10,000 free words. The summary is internally ambiguous (it also says $4.99/$6.99 'neither appears on the current pricing page'), so the exact current price is unresolved: $6.99-$14. One-time model + 10,000-word trial + 100% offline confirmed."
+   },
+   {
+    "claim": "Whisperstream (Windows) $29 once for one PC",
+    "result": "confirmed",
+    "source_url": "https://www.toolify.ai/tool/whisperstream/",
+    "note": "Several listing sites (Toolify/Capterra) and the Weesper blog give $29 one-time; blog says $49 for two PCs; 7-day trial and 30-day money-back per one listing. Exact attribution of each datum to this URL comes from the search summary. It is push-to-talk dictation (hold hotkey, paste text) for Windows 10/11, product is young (first version April 2026) - NOT a file-import transcriber, so it is a weak direct competitor."
+   },
+   {
+    "claim": "GoWhisper one-time licence listed between $23 and $50 with limited free version",
+    "result": "confirmed",
+    "source_url": "https://alternativeto.net/software/gowhisper/about",
+    "note": "Same AlternativeTo page as pass 1 (not independent for the price). Extra: premium is $50 with all AI models; the free version has unlimited transcription with tiny/base models. ToolMage (independent) confirms single payment/99 languages but gives no dollar amount. The $23 low end is unexplained."
+   },
+   {
+    "claim": "LipiVoice Pro from $19, batch files, one-time",
+    "result": "not_found",
+    "source_url": "https://zerixastudio.gumroad.com/l/eyrsp",
+    "note": "Only the same Gumroad vendor page re-surfaced: Windows 10/11 only, '$19+' (tier unclear), drag and drop hundreds of files, export SRT/VTT/TXT/JSON, CPU-only OK, one-time. No independent review or developer site found, so no independent confirmation."
+   },
+   {
+    "claim": "MacWhisper Pro EUR64 one-time (per search excerpt)",
+    "result": "contradicted",
+    "source_url": "https://www.getvoibe.com/resources/macwhisper-pricing/",
+    "note": "Most sources list EUR59 (about $69) lifetime direct via Gumroad; a 25% Gumroad deal in Nov 2025 expired. Mac App Store edition per one blog (lumevoice.com): $6.99/mo, $29.99/yr or $99.99 lifetime; another competitor page says $79.99 lifetime. Sources are competitor marketing pages (Voibe, Lumevoice); EUR64 not found anywhere."
+   },
+   {
+    "claim": "Otter billing/cancellation complaints (unexpected charges, hard to cancel)",
+    "result": "confirmed",
+    "source_url": "https://www.pissedconsumer.com/otter-ai/RT-F.html",
+    "note": "Independent source: PissedConsumer reviewer billed twice with no response; Trustpilot (pages 1 and 4, multiple regional domains with ~540 reviews) reviewers report seven months billed without receipts, cancellation not stopping charges, hard same-day trial cancel. No Reddit thread surfaced. Dates not visible."
+   },
+   {
+    "claim": "$20 is within the observed one-time price band ($14-$50)",
+    "result": "confirmed",
+    "source_url": "https://aidictation.com/compare/vs-voiceink",
+    "note": "VoiceInk (Apple Silicon only) described by a comparison site as $19 one-time offline Whisper; LipiVoice from $19; GoWhisper $23-$50; MacWhisper EUR59; Whisper Notes $6.99-$14. $20 sits at the low-middle of the band, but the band is crowded and a free tier of equal capability exists (see free_alternatives)."
+   }
+  ],
+  "alternatives": [
+   {
+    "name": "MacWhisper Pro (Gumroad lifetime; App Store edition is $29.99/yr or $99.99 lifetime per a competitor blog)",
+    "price_local": 59,
+    "currency": "EUR",
+    "model": "one-time",
+    "url": "https://www.getvoibe.com/resources/macwhisper-pricing/",
+    "as_of": null
+   },
+   {
+    "name": "Whisper Notes (Mac) - price disputed: $14 per 2026-08 competitor blog vs $6.99 per vendor pages; 10,000 free words; offline",
+    "price_local": 6.99,
+    "currency": "USD",
+    "price_usd": 6.99,
+    "model": "one-time",
+    "url": "https://whispernotes.app/de",
+    "as_of": "2026-08"
+   },
+   {
+    "name": "Whisperstream (Windows, 1 PC; $49 for 2 PCs; hotkey dictation, not file import)",
+    "price_local": 29,
+    "currency": "USD",
+    "price_usd": 29,
+    "model": "one-time",
+    "url": "https://www.toolify.ai/tool/whisperstream/",
+    "as_of": "2026-09"
+   },
+   {
+    "name": "GoWhisper premium (free tier = tiny/base models unlimited; listed range $23-$50)",
+    "price_local": 50,
+    "currency": "USD",
+    "price_usd": 50,
+    "model": "freemium",
+    "url": "https://alternativeto.net/software/gowhisper/about",
+    "as_of": null
+   },
+   {
+    "name": "LipiVoice Pro (Windows only, '$19+', vendor page only)",
+    "price_local": 19,
+    "currency": "USD",
+    "price_usd": 19,
+    "model": "one-time",
+    "url": "https://zerixastudio.gumroad.com/l/eyrsp",
+    "as_of": null
+   },
+   {
+    "name": "VoiceInk (Apple Silicon only, offline Whisper, per comparison site)",
+    "price_local": 19,
+    "currency": "USD",
+    "price_usd": 19,
+    "model": "one-time",
+    "url": "https://aidictation.com/compare/vs-voiceink",
+    "as_of": null
+   }
+  ],
+  "free_alternatives": [
+   {
+    "name": "Buzz (open source, Windows/Mac/Linux)",
+    "url": "https://www.sourcepulse.org/projects/1139048",
+    "note": "Offline Whisper/whisper.cpp; import audio and video files; export TXT/SRT/VTT/CSV; built-in transcript editor; winget install ChidiWilliams.Buzz; Windows installer unsigned (SmartScreen warning); Mac version separate on App Store. Project is chidiwilliams/buzz on GitHub (repo URL not in the search results)."
+   },
+   {
+    "name": "Vibe (open source, Windows/Mac/Linux)",
+    "url": "https://korben.info/en/vibe-audio-transcription-macos-windows-linux.html",
+    "note": "Free local Whisper app (thewh1teagle/vibe; project site thewh1teagle.github.io/vibe per search summary); batch audio/video, live preview, exports SRT/VTT/TXT etc.; GPU on NVIDIA/AMD/Apple; one commentary says an hour of audio takes very long without a GPU."
+   },
+   {
+    "name": "Apple Voice Memos transcription (macOS 15+, Apple silicon)",
+    "url": "https://support.apple.com/guide/voice-memos/vm4a03609f0d",
+    "note": "Free built-in; transcribes speech in recordings; not available in all countries/regions."
+   },
+   {
+    "name": "Microsoft Word 'Transcribe' (upload audio file)",
+    "url": "https://insider.microsoft365.com/en-us/blog/transcribe-comes-to-word-for-windows",
+    "note": "Requires a Microsoft 365 subscription; a roundup cites 300 min/month of uploads. Not free for non-subscribers."
+   },
+   {
+    "name": "GoWhisper free tier",
+    "url": "https://alternativeto.net/software/gowhisper/about",
+    "note": "Unlimited transcription with tiny/base models only."
+   }
+  ],
+  "pain_evidence": [
+   {
+    "url": "https://www.pissedconsumer.com/otter-ai/RT-F.html",
+    "what": "Reviewer billed twice by Otter.ai, no response to inquiry; 'be prepared to dispute charges' (per search summary).",
+    "date": null
+   },
+   {
+    "url": "https://www.trustpilot.com/review/otter.ai?page=1",
+    "what": "Reviewers: billed seven months with no receipt/notification; cancellation did not stop charges and support went silent; trial card details required and nearly impossible to cancel same day.",
+    "date": null
+   },
+   {
+    "url": "https://orbitmoney.io/cancel/otter-ai",
+    "what": "Third-party cancel guide: Workspace members may not see a Cancel button; unused portion generally not refunded; export transcripts before cancelling or access may be limited.",
+    "date": null
+   }
+  ],
+  "differentiator": "Weak. Free Buzz and Vibe already do the exact job (offline Whisper, import files, export SRT/TXT/VTT, batch) on Windows and Mac, and Apple Voice Memos covers Apple-silicon Macs. The only defensible niche is non-technical users on Windows without a GPU: a signed installer, zero-setup bundled CPU-friendly model (Parakeet-class runs CPU-only per Whisperstream listings), batch queue and DOCX export with timestamps/speaker labels, priced at ~$20 once. It must prove it is faster/easier than Vibe on a plain CPU, which was not evidenced.",
+  "new_confidence": "low",
+  "confidence_basis": "Billing/cancel pain with Otter is corroborated by an independent site, and $19-$50 one-time competitors exist, but two pass-1 prices were contradicted (Whisper Notes, MacWhisper), Whisperstream is not a file transcriber, and strong free equivalents (Buzz, Vibe, Voice Memos) were not registered in pass 1. No dated, first-hand complaint specifically asking for an offline transcriber was found.",
+  "recommendation": "rework",
+  "recommendation_reason": "Only worth building as a zero-setup Windows/CPU-first app with DOCX/diarization-lite output aimed at non-technical users; otherwise free Vibe/Buzz make a $20 sale hard."
+ },
+ {
+  "id": "home-inventory-insurance-local",
+  "verified": "partly",
+  "checks": [
+   {
+    "claim": "Asset Vault (iPhone): free download, one-time $9.99 unlocks unlimited AI, no subscription",
+    "result": "not_found",
+    "source_url": "https://www.producthunt.com/p/asset-vault/asset-vault-2",
+    "note": "Only the same Product Hunt launch page re-surfaced (consistent with pass 1, but not independent and promotional). Not independently confirmed."
+   },
+   {
+    "claim": "Under My Roof is about $40/year (forum-reported)",
+    "result": "contradicted",
+    "source_url": "https://www.imore.com/apps/under-my-roof-home-inventory-iphone-app-makes-listing-your-belongings-a-breeze",
+    "note": "iMore review: $24.99/year or $3.99/month with a 1-week trial; a podcast review (podfeet.com) says $25/yr or $4/mo; free tier capped at 10 items; inventory remains viewable after cancelling. Review dates are not visible (likely older), so the forum's ~$40/year could reflect a later price; could not resolve. Not $40 per the sources found."
+   },
+   {
+    "claim": "Home Inventory (Binary Formations, Mac/Win) lists $9.99; 2013 launch $19.99 one-time",
+    "result": "confirmed",
+    "source_url": "https://techcrunch.com/2013/02/28/home-inventory-updates-its-mac-and-iphone-based-approach-to-keeping-tabs-on-your-worldly-possessions",
+    "note": "TechCrunch and MacTech (2013) confirm a flat one-time $19.99 at v3 launch. The current $9.99 comes only from the aggregator pcmacstore (v3.8.6, page dated 2026-04-13) - not independently confirmed; Softpedia shows v3.8.6 last updated 18 June 2021, so the product looks stagnant. Official site (machomeinventory.com per MacTech) not checked."
+   },
+   {
+    "claim": "Home Inventory: Item Tracker (iOS) puts unlimited items/PDF export/iCloud behind a yearly auto-renewing plan",
+    "result": "not_found",
+    "source_url": null,
+    "note": "Not re-searched (obscure iOS listing; low priority). Unverified, not shown false."
+   },
+   {
+    "claim": "NAIC and other free apps exist (pass 1 risk, per excerpt)",
+    "result": "confirmed",
+    "source_url": "https://oci.wi.gov/Pages/Consumers/NAIC-Home-Inventory-App.aspx",
+    "note": "NAIC Home Inventory is free on iOS and Android (launched April 2021; categories, barcode scan, photos, export, claims tips) and is recommended by state regulators (Wisconsin OCI; Washington OIC wildfire alert 2026). Also free: Know Your Stuff by the Insurance Information Institute (mobile + desktop sync) and Encircle (claims-oriented). This weakens the pain claim that 'good apps lock exports behind subscriptions'."
+   },
+   {
+    "claim": "One-time competitors sell $9.99-$19.99, so $20 is at the top of the band",
+    "result": "contradicted",
+    "source_url": "https://alternativeto.net/software/homevault/about/",
+    "note": "Search found cheaper one-time options: HomeVault (Windows, offline) $5 one-time; ClaimsReady Pro $4.99 one-time (CSV/Excel export, reminders); Nest Egg $4.99-$5; ReadyRecord lifetime option; Home Contents free with one-time IAP. So $20 is above the band, not at its top. Sources: AlternativeTo and App Store listings (apps.apple.com/app/claimsready/id6758244506) as summarized by search."
+   }
+  ],
+  "alternatives": [
+   {
+    "name": "Under My Roof (Apple)",
+    "price_local": 24.99,
+    "currency": "USD",
+    "price_usd": 24.99,
+    "model": "annual",
+    "url": "https://www.imore.com/apps/under-my-roof-home-inventory-iphone-app-makes-listing-your-belongings-a-breeze",
+    "as_of": null
+   },
+   {
+    "name": "Asset Vault (iPhone) unlimited-AI unlock",
+    "price_local": 9.99,
+    "currency": "USD",
+    "price_usd": 9.99,
+    "model": "one-time",
+    "url": "https://www.producthunt.com/p/asset-vault/asset-vault-2",
+    "as_of": null
+   },
+   {
+    "name": "HomeVault (Windows, offline)",
+    "price_local": 5,
+    "currency": "USD",
+    "price_usd": 5,
+    "model": "one-time",
+    "url": "https://alternativeto.net/software/homevault/about/",
+    "as_of": null
+   },
+   {
+    "name": "ClaimsReady Pro (iOS)",
+    "price_local": 4.99,
+    "currency": "USD",
+    "price_usd": 4.99,
+    "model": "one-time",
+    "url": "https://apps.apple.com/app/claimsready/id6758244506",
+    "as_of": null
+   },
+   {
+    "name": "Nest Egg (iOS; sources say $4.99-$5 plus add-ons)",
+    "price_local": 4.99,
+    "currency": "USD",
+    "price_usd": 4.99,
+    "model": "one-time",
+    "url": "https://thetestedhub.com/?p=16990",
+    "as_of": null
+   },
+   {
+    "name": "BluePlum (iOS; 14-day trial; 'bare-bones'; source gives $24 without saying whether one-time or yearly, so model is a guess)",
+    "price_local": 24,
+    "currency": "USD",
+    "price_usd": 24,
+    "model": "annual",
+    "url": "https://thetestedhub.com/?p=16990",
+    "as_of": null
+   },
+   {
+    "name": "Sortly (free tier limited items; paid unlocks more and PDF reports)",
+    "price_local": null,
+    "currency": "USD",
+    "model": "freemium",
+    "url": "https://www.nerdwallet.com/article/insurance/home-inventory-app-template",
+    "as_of": null
+   },
+   {
+    "name": "Home Inventory by Binary Formations (Mac/Win; $9.99 per aggregator, last update 2021)",
+    "price_local": 9.99,
+    "currency": "USD",
+    "price_usd": 9.99,
+    "model": "one-time",
+    "url": "https://pcmacstore.com/en/app/413564952/home-inventory",
+    "as_of": "2026-04"
+   }
+  ],
+  "free_alternatives": [
+   {
+    "name": "NAIC Home Inventory app (iOS/Android)",
+    "url": "https://oci.wi.gov/Pages/Consumers/NAIC-Home-Inventory-App.aspx",
+    "note": "Free, by state insurance regulators; photos, barcode scanning, rooms/categories, export, disaster and claims tips. Regulators recommend it publicly."
+   },
+   {
+    "name": "Know Your Stuff (Insurance Information Institute)",
+    "url": "https://www.iii.org/node/217352",
+    "note": "Free; iOS, Android and desktop with sync; purchase price, replacement cost, serial numbers, receipts and photos per item. Search results are dated (2016 release) so current availability unconfirmed."
+   },
+   {
+    "name": "Encircle (iOS/Android)",
+    "url": "https://www.apartmenttherapy.com/home-inventory-apps-37226627",
+    "note": "Free for personal use; built around claims reports; shares with insurers (per roundups; attribution to this specific URL is approximate)."
+   },
+   {
+    "name": "Sortly free tier / spreadsheet templates (NerdWallet)",
+    "url": "https://www.nerdwallet.com/article/insurance/home-inventory-app-template",
+    "note": "Free limited-item tier; templates cover the basic need; Sortly generates PDF reports for insurers."
+   },
+   {
+    "name": "Phone video walk-through",
+    "url": "https://geneseefoundation.org/wp-content/uploads/2026/04/Homeowners_Insurance_Webinar_PPT_SESSION-3.pdf",
+    "note": "Advice in an April 2026 webinar deck: video each room and keep a copy off-site; zero-cost baseline method."
+   }
+  ],
+  "pain_evidence": [
+   {
+    "url": "https://justuseapp.com/en/app/1524335878/under-my-roof-home-inventory/reviews",
+    "what": "Under My Roof reviewer: app is used heavily up front and seldom after, so a subscription makes no sense - 'would happily pay a one-time $20'. Other reviews report failed data migration and photo-upload bugs after upgrades.",
+    "date": null
+   },
+   {
+    "url": "https://www.imore.com/apps/under-my-roof-home-inventory-iphone-app-makes-listing-your-belongings-a-breeze",
+    "what": "Reviewer: 'Does that warrant $25/year or $4/month. No it does not. Charge me $10 once and move on.'",
+    "date": null
+   },
+   {
+    "url": "https://www.insurance.wa.gov/about-us/news/2026/consumer-alert-wildfire-season-here-and-so-oic",
+    "what": "Washington insurance regulator 2026 wildfire alert: a detailed inventory speeds claims and points people to the free NAIC app (shows need is real but already served free).",
+    "date": "2026"
+   },
+   {
+    "url": "https://apps.apple.com/us/app/peeknest-inventory-tracker/id1435344957",
+    "what": "PeekNest reviewer says they would have paid one-time but found the subscription prompt a bait-and-switch; developer replied subscriptions fund continuous updates (via search summary; exact App Store URL has a tracking parameter).",
+    "date": null
+   }
+  ],
+  "differentiator": "ninguno defendible: free NAIC/Know Your Stuff/Encircle cover claims-ready inventory with export, and one-time paid apps sit at $4.99-$9.99 (HomeVault Windows $5, ClaimsReady $4.99, Asset Vault $9.99). The only open gap is a desktop (Windows/Mac) offline tool with insurer-ready PDF, which HomeVault ($5) and the stagnant Binary Formations app ($9.99) already occupy; a $20 price is two to four times theirs.",
+  "new_confidence": "low",
+  "confidence_basis": "Two reviewers explicitly ask for a $10-$20 one-time price, but free regulator-backed apps cover the main use, cheaper one-time apps ($5-$10) exist, and the Under My Roof price (~$25/yr, not $40) weakens the 'expensive subscription' framing. Pain is episodic (disaster-driven).",
+  "recommendation": "drop",
+  "recommendation_reason": "Free NAIC/III/Encircle apps plus $5-$10 one-time competitors leave no defensible reason to pay $20."
+ },
+ {
+  "id": "subscription-audit-from-bank-csv",
+  "verified": "partly",
+  "checks": [
+   {
+    "claim": "C+R Research: itemized subscription spend about $219/month vs a gut estimate of ~$86",
+    "result": "confirmed",
+    "source_url": "https://www.foxla.com/news/many-underestimate-monthly-subscription-costs-133-survey-2022",
+    "note": "FOX (2022) reports the C+R survey of 1,000 US adults: people misjudged by $133 on average (= 219 - 86, consistent), 54% underestimated by at least $100. The $219/$86 figures themselves appear only in a secondary, vendor-written page (resubs.app). The data is from 2022, i.e. about four years old, not recent."
+   },
+   {
+    "claim": "42% kept paying after they stopped using a service",
+    "result": "confirmed",
+    "source_url": "https://www.foxla.com/news/many-underestimate-monthly-subscription-costs-133-survey-2022",
+    "note": "42% had stopped using a subscription but forgot they were still being charged (C+R Research 2022 survey, via FOX). Definition is 'forgot', slightly different from pass-1 'kept paying'. The '~$205/year wasted' figure was not found in any source."
+   },
+   {
+    "claim": "CNET 2025 (2,440 adults, ~$90/mo), West Monroe $273/month, 70% forgot to cancel a trial",
+    "result": "not_found",
+    "source_url": null,
+    "note": "Not searched (budget); these roundup stats remain unverified secondary claims."
+   },
+   {
+    "claim": "FTC click-to-cancel rule struck down July 2025",
+    "result": "confirmed",
+    "source_url": "https://www.gtlaw.com/de/insights/2025/7/eighth-circuit-vacates-ftcs-click-to-cancel-rule",
+    "note": "Eighth Circuit vacated the rule on 8 July 2025 on procedural grounds (Greenberg Traurig, Cooley, Gunderson law-firm notes). The 1973 Negative Option Rule, ROSCA and state auto-renewal laws still apply. A compliance site claims rulemaking was reopened March 2026 (single source, unverified)."
+   },
+   {
+    "claim": "HN commenter: 'Something that audits all my subscriptions, passwords, cloud accounts...' (Ask HN item 43772295)",
+    "result": "not_found",
+    "source_url": "https://news.ycombinator.com/item?id=43772295",
+    "note": "A search for the Ask HN thread returned no Hacker News results; the comment itself was not verified. Not shown false."
+   },
+   {
+    "claim": "No paid competitor prices observed; many free/freemium trackers likely exist (not verified)",
+    "result": "confirmed",
+    "source_url": "https://www.lowermysubs.com/scan",
+    "note": "Many free or freemium trackers exist, including ones that do exactly this CSV flow with no bank login (LowerMySubs scan, Triimly, StatementDecoder, Renewal Radar). Paid prices found: Rocket Money Premium $7-$14/month (pay-what-you-think-is-fair; company explainer), Renewal Radar $29/month (teams). No one-time-purchase CSV auditor was found. NOTE: lowermysubs.com, the source of the pass-1 stats, is itself a vendor of this product."
+   }
+  ],
+  "alternatives": [
+   {
+    "name": "Rocket Money Premium (bank-linked; bill negotiation takes 35%-60% of first-year savings)",
+    "price_local": 7,
+    "currency": "USD",
+    "price_usd": 7,
+    "model": "monthly",
+    "url": "https://www.rocketmoney.com/learn/personal-finance/how-much-does-rocket-money-cost",
+    "as_of": "2026-09"
+   },
+   {
+    "name": "Renewal Radar (teams, no bank connection; free tier = 3 uploads)",
+    "price_local": 29,
+    "currency": "USD",
+    "price_usd": 29,
+    "model": "monthly",
+    "url": "https://radar.etudes.duckdns.org/",
+    "as_of": null
+   },
+   {
+    "name": "LowerMySubs scan (CSV/PDF, on-device per vendor; pricing not verified)",
+    "price_local": null,
+    "currency": "USD",
+    "model": "free",
+    "url": "https://www.lowermysubs.com/scan",
+    "as_of": null
+   },
+   {
+    "name": "Triimly / Subscription Escape (CSV in browser)",
+    "price_local": null,
+    "currency": "USD",
+    "model": "free",
+    "url": "https://triimly.floot.app/",
+    "as_of": null
+   },
+   {
+    "name": "StatementDecoder (uploads file to server, deleted within 24 h; free tier)",
+    "price_local": null,
+    "currency": "USD",
+    "model": "freemium",
+    "url": "https://statementdecoder-web.onrender.com/",
+    "as_of": null
+   },
+   {
+    "name": "ReSubs (privacy-first manual tracker; premium is recurring)",
+    "price_local": null,
+    "currency": "USD",
+    "model": "freemium",
+    "url": "https://resubs.app/resources/best-subscription-tracker-apps",
+    "as_of": null
+   },
+   {
+    "name": "Subscription Tracker: No Bank (iOS; free with in-app purchases; CSV export)",
+    "price_local": null,
+    "currency": "USD",
+    "model": "freemium",
+    "url": "https://appgoblin.info/apps/6779886234",
+    "as_of": null
+   }
+  ],
+  "free_alternatives": [
+   {
+    "name": "Rocket Money free tier",
+    "url": "https://www.rocketmoney.com/learn/personal-finance/how-much-does-rocket-money-cost",
+    "note": "Account linking plus subscription tracking at no cost; requires bank linking (Plaid)."
+   },
+   {
+    "name": "LowerMySubs scanner",
+    "url": "https://www.lowermysubs.com/scan",
+    "note": "Vendor says it runs on device, matches 179 known services, accepts CSV or PDF, includes Chase/Amex export instructions; shows real monthly total. Effectively the proposed product; pricing not verified."
+   },
+   {
+    "name": "Triimly (Subscription Escape)",
+    "url": "https://triimly.floot.app/",
+    "note": "Upload CSV, data stays in browser until analysis, groups similar charges to find recurring patterns."
+   },
+   {
+    "name": "CheckUrSubs (open-source PWA)",
+    "url": null,
+    "note": "Free manual tracker (React 19), no bank sync, no ads, per a tracker-roundup search summary; its own URL was not in the results."
+   },
+   {
+    "name": "iPhone Settings > [name] > Subscriptions",
+    "url": "https://www.izoate.com/blog/how-to-see-subscriptions-on-iphone-and-stop-unwanted-charges/",
+    "note": "Built-in list of active/expired Apple-billed subscriptions with cancel; does not show card-billed subscriptions or Family Sharing ones bought by others."
+   },
+   {
+    "name": "Google Play > Payments & subscriptions > Manage subscriptions",
+    "url": "https://support.google.com/googleplay/answer/7018481",
+    "note": "Official built-in list and cancel for Google Play subscriptions only."
+   },
+   {
+    "name": "DIY spreadsheet / short script",
+    "url": null,
+    "note": "Group rows by merchant and look for 7/30/365-day gaps with similar amounts, per the first search summary; messy descriptors (APPLE.COM/BILL, SQ *) need manual fixing."
+   }
+  ],
+  "pain_evidence": [
+   {
+    "url": "https://www.foxla.com/news/many-underestimate-monthly-subscription-costs-133-survey-2022",
+    "what": "C+R Research survey (n=1,000 US adults): 54% underestimated monthly subscription spend by at least $100; average misjudgment $133; 42% forgot a subscription they no longer used.",
+    "date": "2022"
+   },
+   {
+    "url": "https://ie.trustpilot.com/review/rocketmoney.com?page=2",
+    "what": "Rocket Money (4,126 Trustpilot reviews, TrustScore 3.2): reviewers say cancelling failed 4 times by email and once by phone; charged after ending subscription; one lost two years of history when Plaid disconnected - evidence that bank-linked tools carry their own pain.",
+    "date": null
+   },
+   {
+    "url": "https://www.complaintsboard.com/rocket-money-b133631",
+    "what": "Reviewer says Rocket charged $130 for a 'decrease' in cable/Internet costs that the provider attributed to cancelling Netflix.",
+    "date": null
+   },
+   {
+    "url": "https://www.producthunt.com/p/butcem-ai-money-companion",
+    "what": "Maker of a budgeting app: audit found an unused $9.99/month cloud plan running 14 months; five friends' forgotten charges totaled $400+/year (vendor anecdote).",
+    "date": null
+   }
+  ],
+  "differentiator": "ninguno defendible. LowerMySubs and Triimly already offer the exact 'upload CSV, nothing leaves the browser, find recurring charges' flow, Rocket Money has a free tier, and iOS/Google Play have built-in subscription lists. A paid $20 app would need to beat free on something beyond detection (persistent history across statements, renewal-date reminders, price-increase flags, PayPal/app-store coverage), and the only evidence for that is a guide's suggestion, not user demand.",
+  "new_confidence": "low",
+  "confidence_basis": "Pain statistics are real but dated (2022) and secondary; free tools that implement the same CSV-local idea were found (including the vendor behind the pass-1 stats); no one-time-priced competitor or buyer asking to pay $20 for this was found; the HN quote could not be verified.",
+  "recommendation": "drop",
+  "recommendation_reason": "Free equivalents (LowerMySubs, Triimly, Rocket Money free, OS subscription lists) cover the core job, leaving no demonstrated reason to pay $20 once."
+ },
+ {
+  "id": "mileage-log-manual-export",
+  "verified": "partly",
+  "checks": [
+   {
+    "claim": "MileIQ Unlimited $13.99/month or $11.66/month billed annually (~$139.92/yr); free plan limited to 40 drives/month",
+    "result": "confirmed",
+    "source_url": "https://pricingsaas.com/companies/mileiq",
+    "note": "Several 2026 sources agree on $13.99/month (PricingSaaS; App Pricing Lab App Store snapshot dated 2026-03-21; Timeero review gives $11.66/mo billed annually; TripLog says $168/yr = 13.99 x 12). Free plan = 40 drives/month confirmed (MileIQ glossary/pricing). Conflicts: a cached mileiq.com/pricing page shows $8.99/mo or $7.50/mo annual (likely pre-increase) and another roundup lists $7.50/mo or $75/yr. MileIQ's support site has an 'Update: MileIQ subscription price increase' article (figures not retrieved). Annual price not confirmed from MileIQ directly."
+   },
+   {
+    "claim": "MileageWise Small lifetime $119.99 (current page); MileIQ has no lifetime option",
+    "result": "contradicted",
+    "source_url": "https://markets.financialcontent.com/franklincredit/article/send2press-2025-1-31-mileagewise-is-the-first-to-offer-lifetime-deals-for-mileage-tracking-solutions-in-the-us",
+    "note": "Sources disagree: MileageWise test page and Jan 2025 press release give Small Biz Lifetime $99.99 (tax included); $119.99 appears in older third-party content and the competitor page. Gold Lifetime $499.99 consistently (adds past-mileage recovery and Google Timeline import). All are one-time, one vehicle at a time. All vendor-sourced. 'MileIQ has no lifetime option' not verified."
+   },
+   {
+    "claim": "Reviewer: MileIQ cancelling must be done on the website, not in-app, and card was charged again (ComplaintsBoard)",
+    "result": "confirmed",
+    "source_url": "https://www.complaintsboard.com/mileiq-b158142",
+    "note": "Same page re-surfaced: 3.6 stars from 20 reviews, 7 complaints; renewal automatic and cannot be stopped in the app; charged again after website cancellation; review date not visible. Single-anecdote evidence, not independent of pass 1. TripLog (competitor) guide corroborates the web/App Store/Google Play cancel routes."
+   },
+   {
+    "claim": "Reviewer: MileIQ stopped tracking for two months, cost $4,500+ in write-offs",
+    "result": "not_found",
+    "source_url": null,
+    "note": "Not independently confirmed. A Trustpilot reviewer (MileIQ page 8) complains about trip detection and a refused prorated refund on an annual purchase; a 2026 review says MileIQ lacks reliable offline mode."
+   },
+   {
+    "claim": "Mileage Tracker - Driver Notes (iOS) $11.99 annual",
+    "result": "not_found",
+    "source_url": null,
+    "note": "Not re-searched; low priority."
+   },
+   {
+    "claim": "$20 once is far below both ($99.99-$119.99 lifetime; $139.92/yr)",
+    "result": "confirmed",
+    "source_url": "https://www.mileagewise.com/mileiq-alternative/",
+    "note": "Price gap is real, but cheaper or free options exist (Stride free, MileIQ free 40 drives/mo, Everlance free ~30 trips/mo, Miles Classic no-subscription log), so $20 is not compared to $140 only."
+   }
+  ],
+  "alternatives": [
+   {
+    "name": "MileIQ Unlimited (monthly)",
+    "price_local": 13.99,
+    "currency": "USD",
+    "price_usd": 13.99,
+    "model": "monthly",
+    "url": "https://pricingsaas.com/companies/mileiq",
+    "as_of": "2026-03"
+   },
+   {
+    "name": "MileIQ Unlimited (annual, $11.66/mo billed yearly)",
+    "price_local": 139.92,
+    "currency": "USD",
+    "price_usd": 139.92,
+    "model": "annual",
+    "url": "https://timeero.com/reviews/mileiq-review",
+    "as_of": "2026-06"
+   },
+   {
+    "name": "MileageWise Small Biz Lifetime (one vehicle; $119.99 in older content)",
+    "price_local": 99.99,
+    "currency": "USD",
+    "price_usd": 99.99,
+    "model": "one-time",
+    "url": "https://www.mileagewise.com/?p=16598",
+    "as_of": "2025-01"
+   },
+   {
+    "name": "MileageWise Gold Lifetime (adds past-mileage recovery, Google Timeline import)",
+    "price_local": 499.99,
+    "currency": "USD",
+    "price_usd": 499.99,
+    "model": "one-time",
+    "url": "https://www.mileagewise.com/?p=16598",
+    "as_of": "2025-01"
+   },
+   {
+    "name": "Everlance (free ~30 trips/mo; Starter $69.99/yr or $8.99/mo; Professional $99.99/yr)",
+    "price_local": 69.99,
+    "currency": "USD",
+    "price_usd": 69.99,
+    "model": "annual",
+    "url": "https://therideshareguy.com/day-5-what-are-the-best-apps-to-track-your-mileage/",
+    "as_of": "2026"
+   },
+   {
+    "name": "Miles Classic Mileage Log XL (iOS; charts + CSV/PDF export, 'no subscription'; price not seen; last updated Feb 2026)",
+    "price_local": null,
+    "currency": "USD",
+    "model": "one-time",
+    "url": "https://chrome-stats.com/d/id628139795",
+    "as_of": "2026-02"
+   },
+   {
+    "name": "Milog (Macworld review; $4 full version, old)",
+    "price_local": 4,
+    "currency": "USD",
+    "price_usd": 4,
+    "model": "one-time",
+    "url": "https://www.macworld.com/article/194952/milog.html",
+    "as_of": null
+   },
+   {
+    "name": "Mileage Logs (iOS in-app subscriptions $2.99 and $29.99)",
+    "price_local": 29.99,
+    "currency": "USD",
+    "price_usd": 29.99,
+    "model": "annual",
+    "url": "https://apps.apple.com/app/id1048373314",
+    "as_of": null
+   }
+  ],
+  "free_alternatives": [
+   {
+    "name": "Stride (free, gig-worker mileage and expense tracker)",
+    "url": "https://therideshareguy.com/day-5-what-are-the-best-apps-to-track-your-mileage/",
+    "note": "Most 2026 roundups say fully free, no trip cap, no premium tier; weaker auto-tracking (one roundup rates it 'Unreliable'); revenue from insurance referrals."
+   },
+   {
+    "name": "MileIQ free plan",
+    "url": "https://pricingsaas.com/companies/mileiq",
+    "note": "40 drives per month, auto tracking and reports included."
+   },
+   {
+    "name": "Everlance free plan",
+    "url": "https://therideshareguy.com/day-5-what-are-the-best-apps-to-track-your-mileage/",
+    "note": "About 30 trips/month; Excel/PDF exports and unlimited trips are Premium."
+   },
+   {
+    "name": "TripLog free tier",
+    "url": "https://therideshareguy.com/day-5-what-are-the-best-apps-to-track-your-mileage/",
+    "note": "Sources conflict (unlimited auto, 40/month, or manual only); verify."
+   },
+   {
+    "name": "Spreadsheet / paper log templates",
+    "url": null,
+    "note": "Not searched in this pass; no source gathered."
+   }
+  ],
+  "pain_evidence": [
+   {
+    "url": "https://www.complaintsboard.com/mileiq-b158142",
+    "what": "Renewal automatic and cannot be stopped in-app; had to cancel on the website then was charged again; no phone/email; only option was cancelling the card.",
+    "date": null
+   },
+   {
+    "url": "https://it.trustpilot.com/review/mileiq.com?page=8",
+    "what": "Reviewer unhappy with trip detection and says prorated refund request on an annual purchase was refused.",
+    "date": null
+   },
+   {
+    "url": "https://www.triplog.net/blog/mileiq-alternatives",
+    "what": "Competitor blog: 'in 2026 MileIQ raised prices again to $13.99/month, costing users $168 per year' - price-increase pain (vendor-written).",
+    "date": "2026"
+   },
+   {
+    "url": "https://chrome-stats.com/d/id723129092",
+    "what": "Mileage Log+ went from a one-time purchase to a yearly subscription; reviews call it abandoned with export failures, crashes and data loss - shows trust risk for one-time loggers and demand for stable local logs.",
+    "date": null
+   }
+  ],
+  "differentiator": "Weak as defined. A manual/odometer log with report export is already served free (Stride, MileIQ 40 drives/mo, Everlance 30 trips/mo) and by no-subscription apps (Miles Classic), and the thing users actually value, automatic tracking, is not feasible. The only angle with a visible price signal is reconstructing past mileage from calendar/Timeline-type data: MileageWise sells that in its Gold lifetime at $499.99. A ~$20 local importer that rebuilds a date/purpose/miles log from exported data would be a distinct, unvalidated pivot.",
+  "new_confidence": "low",
+  "confidence_basis": "MileIQ price and free tier verified with 2026 sources, but pain complaints are two undated anecdotes, free no-cap competitors (Stride) were not registered in pass 1, and nothing showed users asking for a manual-entry log.",
+  "recommendation": "rework",
+  "recommendation_reason": "Manual-log-only has no defensible edge over Stride/free tiers; only a past-mileage reconstruction pivot (priced far below MileageWise) has a price signal and it needs validation."
+ },
+ {
+  "id": "offline-pdf-toolkit",
+  "verified": "partly",
+  "checks": [
+   {
+    "claim": "IndyPDF lifetime deal $19.99 (vs $49.99 list); URL attribution inferred from article title",
+    "result": "confirmed",
+    "source_url": "https://www.popsci.com/sponsored-content/stop-stressing-over-pdfs-the-indypdf-editor-converter-lifetime-access-on-sale-sponsored-deal/",
+    "note": "Several deal listings (PopSci sponsored, New Atlas deals, StackSocial, Cult of Mac) put IndyPDF Editor & Converter lifetime at $19.99 vs $49.99 list. Local processing, merge/split/rearrange/compress/annotate/sign/OCR/convert, Windows+macOS+iOS+Android. Terms: new users only, internet needed to activate licence, redeem within 30 days. All are sponsored/affiliate deal pages; the $19.99 is a promo price, list $49.99."
+   },
+   {
+    "claim": "Systweak PDF Editor Pro one-time $39.99 (sale) vs $99.99 list",
+    "result": "not_found",
+    "source_url": "https://www.popsci.com/sponsored-content/edit-sensitive-pdfs-without-putting-them-on-the-cloud-for-a-one-time-payment-sponsored-deal/",
+    "note": "Not re-searched; only the sponsored PopSci copy from pass 1. A separate vendor-claimed $29.99 offline merger/splitter app also surfaced (unverified)."
+   },
+   {
+    "claim": "MorphPDF perpetual licence from $5",
+    "result": "confirmed",
+    "source_url": "https://alternativeto.net/software/morphpdf/about",
+    "note": "AlternativeTo (same source as pass 1) says one-time perpetual from $5; the product page download button shows $4.99, 15 tools that run on-device, 30-day money-back. Official site not seen."
+   },
+   {
+    "claim": "PDF Candy Pro user-reported $99 one-time",
+    "result": "confirmed",
+    "source_url": "https://www.capterra.ca/software/1082145/PDF-Candy",
+    "note": "Listings put 'Desktop + Web Lifetime' at $99 one-time; web-only plans are $6/month or $4/month billed yearly ($48/yr). Free web use reported as 1 task per hour (sources conflict). A 2026 competitor-written review claims the lifetime licence is version-locked and breaks after a major version bump; unverified."
+   },
+   {
+    "claim": "Free web PDF tools cap daily use and push subscriptions",
+    "result": "confirmed",
+    "source_url": "https://frontdeskreview.com/software/pdf-tools/smallpdf/",
+    "note": "Smallpdf free: about 2 tasks per day, ~5 MB per file, ads, web only; Pro roughly $9/mo billed annually or $15/mo monthly. iLovePDF Premium $4/mo billed annually ($48/yr) or $7/mo; iOS $5.49/mo or $44.99/yr as of April 2026. These are third-party aggregators; the '$288/year' subscription in the dev.to title was not found in any listing (actual prices are $48-$180/yr)."
+   },
+   {
+    "claim": "dev.to post: '$19 forever, zero uploads' browser tool",
+    "result": "not_found",
+    "source_url": "https://dev.to/jack_green_7b74cb2cdf9e23/tired-of-288year-pdf-subscriptions-try-19-forever-zero-uploads-3dh9",
+    "note": "Not independently confirmed; looks like a maker's self-promo post."
+   },
+   {
+    "claim": "Highly saturated (free client-side tools exist)",
+    "result": "confirmed",
+    "source_url": "https://www.opensourcealternatives.to/item/pdfsam-basic",
+    "note": "PDFsam Basic (free, open source, offline on Windows/macOS/Linux, merge/split/extract/mix/rotate, no watermark or size limits), Stirling-PDF (open source, 50+ functions, runs locally, Windows .exe), PDF24 Creator (free Windows), macOS Preview (merge, reorder, rotate, delete pages, export; compress option not verified here) all exist."
+   }
+  ],
+  "alternatives": [
+   {
+    "name": "IndyPDF Editor & Converter (lifetime deal; list $49.99; Win/Mac/iOS/Android)",
+    "price_local": 19.99,
+    "currency": "USD",
+    "price_usd": 19.99,
+    "model": "one-time",
+    "url": "https://newatlas.com/deals/this-lifetime-pdf-editor-processes-documents-entirely-offline-for-20/",
+    "as_of": null
+   },
+   {
+    "name": "MorphPDF (15 on-device tools, from $5)",
+    "price_local": 4.99,
+    "currency": "USD",
+    "price_usd": 4.99,
+    "model": "one-time",
+    "url": "https://alternativeto.net/software/morphpdf/about",
+    "as_of": null
+   },
+   {
+    "name": "PDF Candy Desktop + Web Lifetime",
+    "price_local": 99,
+    "currency": "USD",
+    "price_usd": 99,
+    "model": "one-time",
+    "url": "https://www.capterra.ca/software/1082145/PDF-Candy",
+    "as_of": null
+   },
+   {
+    "name": "Systweak PDF Editor Pro (sponsored sale price; list $99.99)",
+    "price_local": 39.99,
+    "currency": "USD",
+    "price_usd": 39.99,
+    "model": "one-time",
+    "url": "https://www.popsci.com/sponsored-content/edit-sensitive-pdfs-without-putting-them-on-the-cloud-for-a-one-time-payment-sponsored-deal/",
+    "as_of": null
+   },
+   {
+    "name": "Smallpdf Pro (free = ~2 tasks/day; Desktop app is paid, offline)",
+    "price_local": 9,
+    "currency": "USD",
+    "price_usd": 9,
+    "model": "monthly",
+    "url": "https://frontdeskreview.com/software/pdf-tools/smallpdf/",
+    "as_of": "2026-06"
+   },
+   {
+    "name": "iLovePDF Premium ($4/mo billed annually; $7/mo monthly)",
+    "price_local": 48,
+    "currency": "USD",
+    "price_usd": 48,
+    "model": "annual",
+    "url": "https://tekpon.com/software/ilovepdf/pricing/",
+    "as_of": "2026"
+   }
+  ],
+  "free_alternatives": [
+   {
+    "name": "PDFsam Basic (open source)",
+    "url": "https://www.opensourcealternatives.to/item/pdfsam-basic",
+    "note": "Offline on Windows/Mac/Linux; extract, split, merge, mix, rotate; no watermark or size limit; no OCR; narrower scope; AGPL v3."
+   },
+   {
+    "name": "Stirling-PDF (open source)",
+    "url": "https://alternativeto.net/software/stirling-pdf/?origin=eu",
+    "note": "50+ functions incl. compression/OCR-style tools; local .exe for Windows; heavier, web-app style setup."
+   },
+   {
+    "name": "PDF24 Creator (free, Windows)",
+    "url": "https://www.blogspan.net/?p=100007",
+    "note": "Free assemble/merge/convert/edit with drag and drop; fully-offline behavior not confirmed by the sources."
+   },
+   {
+    "name": "macOS Preview",
+    "url": "https://www.switchingtomac.com/how-to-merge-pdfs-in-macos-with-preview/",
+    "note": "Built in: merge by dragging thumbnails, reorder, delete, rotate (Cmd+R), Export as PDF. File-size reduction via Quartz filter was not verified in the results."
+   },
+   {
+    "name": "Microsoft Edge PDF viewer",
+    "url": "https://blogs.windows.com/windowsexperience/2019/05/13/windows-10-tip-microsoft-edge-pdf-improvements/",
+    "note": "Viewing, highlights, notes, form fill, signature; no merge/reorder/compress shown in results, so it does not cover the toolkit."
+   }
+  ],
+  "pain_evidence": [
+   {
+    "url": "https://frontdeskreview.com/software/pdf-tools/smallpdf/",
+    "what": "Smallpdf free plan caps at ~2 tasks/day and ~5 MB/file with ads; AI and desktop tools need Pro - structural cap that drives upgrade prompts (aggregator data, not a complaint).",
+    "date": "2026-06"
+   },
+   {
+    "url": "https://pdf.wps.com/blog/pdfcandy-pro-free-trial-detail-and-pricing-news-post1250/",
+    "what": "Free PDF Candy web use reported at 1 task per hour; a 2026 competitor-written review says the $99 lifetime key is version-locked and stops after major updates (unverified; echoes the pass-1 Tom's Guide anecdote).",
+    "date": "2026"
+   },
+   {
+    "url": "https://www.producthunt.com/p/only-pdf-editor/what-s-the-one-thing-you-hate-most-about-free-pdf-tools",
+    "what": "Pass-1 maker thread (uploads to servers, watermarks, daily caps); not re-opened here. No new first-hand complaint threads about upload privacy were found in this pass.",
+    "date": null
+   }
+  ],
+  "differentiator": "ninguno defendible for merge/split/rotate/reorder: PDFsam Basic, Stirling-PDF, PDF24 and macOS Preview are free and offline, MorphPDF sells 15 on-device tools for about $5, and IndyPDF offers a broader offline toolkit (OCR, sign, convert, 4 platforms) at the same $19.99 promo price. The only untested gap is verified true redaction and good compression with a clearly auditable no-network guarantee.",
+  "new_confidence": "low",
+  "confidence_basis": "One-time offline PDF toolkits at $5-$40 are confirmed, so willingness to pay exists, but strong free offline tools and an equally priced, broader competitor (IndyPDF) were not registered in pass 1, and no new first-hand complaint evidence was found.",
+  "recommendation": "drop",
+  "recommendation_reason": "Free offline tools (PDFsam, Stirling-PDF, Preview) and $5-$20 one-time competitors leave no defensible edge for a $20 merge/split/compress app."
+ },
+ {
+  "id": "offline-invoice-generator-freelancers",
+  "verified": "partly",
+  "checks": [
+   {
+    "claim": "Merci Invoice Generator (Windows) $19.99 single payment, offline",
+    "result": "not_found",
+    "source_url": "https://merciacademy.gumroad.com/l/enhdc",
+    "note": "Only the same Gumroad vendor page re-surfaced, consistent with pass 1: $19.99 USD, 'one-time payment - no subscriptions', works offline. No independent review or developer site found."
+   },
+   {
+    "claim": "Simple Invoice Generator (Gumroad HTML package) $10 one-time",
+    "result": "not_found",
+    "source_url": "https://kajdigitals.gumroad.com/l/simpleinvoicegenerator",
+    "note": "Not re-searched. Other cheap offline Windows invoice makers surfaced on itch.io (MistQuote, Invoicify, another 'Simple Invoice Generator'), prices not seen."
+   },
+   {
+    "claim": "InvoiceOffline (macOS perpetual) $59",
+    "result": "not_found",
+    "source_url": "https://alternativeto.net/software/invoiceoffline/about/",
+    "note": "Only the same AlternativeTo page: one-time perpetual licence about $59 plus a free limited version; developer store page not found."
+   },
+   {
+    "claim": "FreshBooks from $17/month",
+    "result": "contradicted",
+    "source_url": "https://frontdeskreview.com/software/accounting-software/freshbooks/",
+    "note": "Most 2026 sources: Lite $19/month monthly billing or $17.10/month billed annually; most recent listings (updated June and September 2026) show Lite at $23. Lite is limited to 5 billable clients. No permanent free plan; 30-day trial. So $17 is only the old/annual-billing figure."
+   },
+   {
+    "claim": "Harvest $12/user/month",
+    "result": "not_found",
+    "source_url": null,
+    "note": "Not searched."
+   },
+   {
+    "claim": "On a $2,000 card payment with Wave you hand back about $58.60",
+    "result": "confirmed",
+    "source_url": "https://www.merchantmaverick.com/what-is-wave-payments/",
+    "note": "Wave fee footnote is 2.9% + $0.60 per Visa/Mastercard/Discover transaction (3.4% + $0.60 Amex, ACH 1% min $1): 2.9% x 2,000 + 0.60 = $58.60. Wave's own materials also show 2.9% + 30 cents in one place; Pro waives the fixed fee on the first 10 transactions per month."
+   },
+   {
+    "claim": "Free tools (Wave, Invoice Ninja) already satisfy many",
+    "result": "confirmed",
+    "source_url": "https://www.nerdwallet.com/business/software/best/invoicing-software",
+    "note": "Wave: free invoicing and accounting (U.S.), payments fees apply. Zoho Invoice: free plan (5 clients most often reported; 1,000 invoices/yr) with automatic reminders. Invoice Ninja: free hosted tier (limits inconsistent: 5 clients / 100 invoices / 20 clients) and free self-hosted without limits. Square Invoices: free plan, unlimited invoices. Third-party blogs disagree on caps."
+   }
+  ],
+  "alternatives": [
+   {
+    "name": "Merci Invoice Generator (Windows, offline)",
+    "price_local": 19.99,
+    "currency": "USD",
+    "price_usd": 19.99,
+    "model": "one-time",
+    "url": "https://merciacademy.gumroad.com/l/enhdc",
+    "as_of": null
+   },
+   {
+    "name": "InvoiceOffline (macOS; free limited version)",
+    "price_local": 59,
+    "currency": "USD",
+    "price_usd": 59,
+    "model": "one-time",
+    "url": "https://alternativeto.net/software/invoiceoffline/about/",
+    "as_of": null
+   },
+   {
+    "name": "FreshBooks Lite (5 billable clients; $19/mo monthly, $17.10/mo annual billing in older guides)",
+    "price_local": 23,
+    "currency": "USD",
+    "price_usd": 23,
+    "model": "monthly",
+    "url": "https://frontdeskreview.com/software/accounting-software/freshbooks/",
+    "as_of": "2026-09"
+   },
+   {
+    "name": "Zoho Invoice paid tier (per CostBench: $9/month for 500 customers)",
+    "price_local": 9,
+    "currency": "USD",
+    "price_usd": 9,
+    "model": "monthly",
+    "url": "https://costbench.com/best/best-invoicing-software-for-freelancers-2026/",
+    "as_of": "2026"
+   },
+   {
+    "name": "Wave (free invoicing; card fees 2.9% + $0.60, Amex 3.4% + $0.60)",
+    "price_local": 0,
+    "currency": "USD",
+    "price_usd": 0,
+    "model": "freemium",
+    "url": "https://www.nerdwallet.com/business/software/best/invoicing-software",
+    "as_of": "2026"
+   }
+  ],
+  "free_alternatives": [
+   {
+    "name": "Wave Invoicing (U.S.)",
+    "url": "https://www.nerdwallet.com/business/software/best/invoicing-software",
+    "note": "Free invoicing and basic accounting; monetizes payment processing; cloud service."
+   },
+   {
+    "name": "Zoho Invoice free plan",
+    "url": "https://www.frihet.io/en/blog/best-invoicing-software-for-freelancers-2026-comparison",
+    "note": "About 5 clients (conflicting reports), up to 1,000 invoices/yr, automatic reminders and time tracking; no accounting."
+   },
+   {
+    "name": "Invoice Ninja (hosted free tier or self-hosted)",
+    "url": "https://www.indiehackers.com/post/10-best-free-invoice-generators-in-2026-h6KRZyda2NHrkJ5n8QYM",
+    "note": "Self-hosted is free with no limits; hosted free plan limits vary by source; recurring billing, client portal, gateways."
+   },
+   {
+    "name": "Square Invoices free plan",
+    "url": "https://www.nerdwallet.com/business/software/best/invoicing-software",
+    "note": "Unlimited invoices/clients on a free plan; best if already using Square payments."
+   },
+   {
+    "name": "Excel / Apple Numbers invoice template",
+    "url": "https://wiki.proz.com/forum/apple_mac_operating_systems/327508-non_subscription_based_invoicing_software_macos.html",
+    "note": "Suggested by a ProZ forum reply to someone wanting a non-subscription local invoicing app; Word/Google Docs templates not searched."
+   }
+  ],
+  "pain_evidence": [
+   {
+    "url": "https://wiki.proz.com/forum/apple_mac_operating_systems/327508-non_subscription_based_invoicing_software_macos.html",
+    "what": "ProZ translator wants a macOS invoicing app that stores invoices locally for a one-time fee, no subscription or cloud; replies: use a free web service or 'What's wrong with Excel or Numbers'. Shows demand but also the free-spreadsheet counter.",
+    "date": "2018"
+   },
+   {
+    "url": "https://guj.proz.com/forum/business_issues/367346-recommendation_for_invoicing_tool.html",
+    "what": "Translator wants to replace ProZ's own simple invoicing tool; tried TO3000 (too complex) and Zoho Invoice (multi-currency set-up per customer).",
+    "date": "2024"
+   },
+   {
+    "url": "https://www.merchantmaverick.com/what-is-wave-payments/",
+    "what": "Wave payment fees (2.9% + $0.60, Amex 3.4% + $0.60) make a $2,000 card payment cost about $58.60 - the cost-of-getting-paid pain is real but belongs to payment processing, which an offline app cannot remove.",
+    "date": null
+   }
+  ],
+  "differentiator": "ninguno defendible. Free cloud tools (Wave, Zoho Invoice, Invoice Ninja, Square) and spreadsheet templates already cover invoice creation and reminders; offline $19.99 (Merci) and $10 packages exist; FreshBooks' $23/month is irrelevant to people who already use free tiers. A possible niche is multi-currency freelancers who dislike per-customer setup, but it rests on one 2024 forum post.",
+  "new_confidence": "low",
+  "confidence_basis": "Price points for offline invoice makers ($10-$59) are plausible, but pain evidence is listicles and two forum posts (2018, 2024) that were answered with free tools or spreadsheets; free competitors are numerous and capable.",
+  "recommendation": "drop",
+  "recommendation_reason": "Invoice creation is a solved, free problem (Wave, Zoho, Invoice Ninja, spreadsheets) and there is no first-hand evidence people will pay $20 for it."
+ },
+ {
+  "id": "resume-builder-no-billing-trap",
+  "verified": "partly",
+  "checks": [
+   {
+    "claim": "Zety: $23 charge every four weeks after trial, no billing email",
+    "result": "confirmed",
+    "source_url": "https://www.trustpilot.com/review/zety.com?page=7",
+    "note": "Independent Trustpilot reviews (March-April 2026, several regional domains) report unauthorized recurring charges (GBP 20.95 x3; $1.70 trial then 23.95) and 'call the same day for a full refund'; Zety's own replies confirm the model: after the initial fee, if not cancelled within 14 days it auto-renews to a paid plan. Review sites put the trial at $1.95-$2.95 and the renewal at $23.95-$25.95 every four weeks (about $337/yr); annual plan $71.40/yr ($5.95/mo) per one review. Exact amounts vary by source. Page-level attribution of each quote is approximate."
+   },
+   {
+    "claim": "Resume.io: $2.95 trial followed by $29.95 charge, or EUR21.95 every four weeks (Trustpilot reviewers)",
+    "result": "contradicted",
+    "source_url": "https://bestjobsearchapps.com/articles/en/resumeio-vs-zety-vs-novoresume-the-ultimate-2026-comparison-to-pick-the-best-resume-builder",
+    "note": "Price lists disagree with the reviewer figures: one comparison lists Resume.io at $24/month and $96/year with a TXT-only free trial; another describes $2.95/week after a 7-day trial. Could not resolve; the reviewer anecdotes were not re-confirmed and no 2026 Resume.io complaint data surfaced (a ResuFit guide calls its cancellation the simplest of the group - competitor opinion)."
+   },
+   {
+    "claim": "Resume.io Product Hunt page averages 1.3 from 38 reviews",
+    "result": "not_found",
+    "source_url": "https://www.producthunt.com/products/resume-io/reviews",
+    "note": "Not re-searched."
+   },
+   {
+    "claim": "Sikayetvar complaint 'Zety Charged Subscription Fees Without Consent After One-Time Payment'",
+    "result": "not_found",
+    "source_url": "https://www.sikayetvar.com/en/zety-us/zety-charged-subscription-fees-without-consent-after-one-time-payment",
+    "note": "Not re-searched; the pattern itself is corroborated by 2026 Trustpilot reviews."
+   },
+   {
+    "claim": "Kickresume tailoring tool, price not seen",
+    "result": "confirmed",
+    "source_url": "https://www.kickresume.com/resume-tailoring/",
+    "note": "Kickresume's own page: AI rewrite of the resume to a pasted job description, using only content already in the CV. Free-plan scope for tailoring not shown; one review lists Kickresume premium at $19/month (single mention, unverified)."
+   },
+   {
+    "claim": "Free builders exist; the market is saturated",
+    "result": "confirmed",
+    "source_url": "https://resufit.com/blog/the-ultimate-guide-to-truly-free-resume-builders-no-hidden-costs-or-paywalls/index.md",
+    "note": "ResuFit (a competitor, June 2026, 13 builders reviewed) lists free PDF download at Google Docs, ResuFit free plan, OpenResume, Indeed (Resume.com), FlowCV (1 resume), Jobscan and LinkedIn; CvResumeNest and FreeCV claim no-account/no-paywall. Zety's own free tier only downloads plain text."
+   },
+   {
+    "claim": "Incumbents charge ~$23-$30 per billing cycle, so a single $20 payment is cheaper than one cycle",
+    "result": "confirmed",
+    "source_url": "https://resufit.com/blog/zety-review-pricing-is-it-worth-it/",
+    "note": "True for monthly/4-week renewals ($23.95-$25.95). But Zety's annual plan is $71.40/yr and Resume.io $96/yr in one comparison, and free PDF builders exist. Related paid keyword matching: Jobscan Premium $49.95/month or $89.95 per quarter, free tier about 5 scans/month (competitor blogs, unconfirmed on Jobscan's site)."
+   }
+  ],
+  "alternatives": [
+   {
+    "name": "Zety (renews every 4 weeks after trial; annual plan $71.40/yr per one review)",
+    "price_local": 25.95,
+    "currency": "USD",
+    "price_usd": 25.95,
+    "model": "monthly",
+    "url": "https://resufit.com/blog/zety-review-pricing-is-it-worth-it/",
+    "as_of": "2026"
+   },
+   {
+    "name": "Resume.io (sources conflict: $24/mo and $96/yr vs $2.95/week after trial)",
+    "price_local": 24,
+    "currency": "USD",
+    "price_usd": 24,
+    "model": "monthly",
+    "url": "https://bestjobsearchapps.com/articles/en/resumeio-vs-zety-vs-novoresume-the-ultimate-2026-comparison-to-pick-the-best-resume-builder",
+    "as_of": "2026"
+   },
+   {
+    "name": "Jobscan Premium (JD keyword match; quarterly $89.95; free ~5 scans/mo)",
+    "price_local": 49.95,
+    "currency": "USD",
+    "price_usd": 49.95,
+    "model": "monthly",
+    "url": "https://resumly.ai/answers/is-jobscan-worth-it",
+    "as_of": "2026"
+   },
+   {
+    "name": "Kickresume premium (single-review figure)",
+    "price_local": 19,
+    "currency": "USD",
+    "price_usd": 19,
+    "model": "monthly",
+    "url": "https://www.kickresume.com/resume-tailoring/",
+    "as_of": "2026"
+   }
+  ],
+  "free_alternatives": [
+   {
+    "name": "OpenResume (open source, runs locally in the browser, no signup)",
+    "url": "https://cdn.jsdelivr.net/gh/xitanggg/open-resume@main/README.md",
+    "note": "Builder + ATS-readability parser, data never leaves the browser, self-hostable via Docker, AGPL-3.0; no job-description matching or tailoring."
+   },
+   {
+    "name": "Google Docs templates",
+    "url": "https://resufit.com/blog/the-ultimate-guide-to-truly-free-resume-builders-no-hidden-costs-or-paywalls/index.md",
+    "note": "Free PDF export; limited templates and basic formatting."
+   },
+   {
+    "name": "FlowCV (1 resume free), Indeed/Resume.com, LinkedIn, Jobscan free tier",
+    "url": "https://resufit.com/blog/the-ultimate-guide-to-truly-free-resume-builders-no-hidden-costs-or-paywalls/index.md",
+    "note": "Listed by ResuFit (competitor) as free PDF downloads; Jobscan free = about 5 match scans per month."
+   },
+   {
+    "name": "CvResumeNest / FreeCV",
+    "url": "https://peerpush.com/p/cvresumenest",
+    "note": "Vendor claims: no account, no paywall, PDF download; unverified."
+   },
+   {
+    "name": "Kickresume resume tailoring",
+    "url": "https://www.kickresume.com/resume-tailoring/",
+    "note": "AI rewrite against a pasted job description; free-plan scope unclear."
+   }
+  ],
+  "pain_evidence": [
+   {
+    "url": "https://www.trustpilot.com/review/zety.com?page=7",
+    "what": "Zety reviewers: 'Scammed me for 2 extra payments of GBP 20.95 I did NOT authorize' (stopped only by blocking via bank); paid 1.70 for a resume without knowing it was a subscription, then charged 23.95 and told to call the same day for a full refund. Zety replied with goodwill refunds. Overall TrustScore 4.5 from ~12K reviews, so complaints are a minority.",
+    "date": "2026-03"
+   },
+   {
+    "url": "https://resufit.com/blog/how-to-cancel-resume-builder-subscriptions-a-complete-guide/index.md",
+    "what": "Cancel-guide (competitor-written, updated March 2026) exists for resume builders, evidence of search demand for cancelling; claims Resume.io cancellation needs no login.",
+    "date": "2026-03"
+   },
+   {
+    "url": "https://bestjobsearchapps.com/articles/en/zety-resume-builder-review-2026-features-pricing-and-is-it-worth-it-for-job-seekers",
+    "what": "2026 review: $1.95 trial auto-renews to $25.95 every four weeks (~$337/yr if forgotten); free tier downloads plain text only.",
+    "date": "2026"
+   }
+  ],
+  "differentiator": "Thin but real: no tool found combines (a) a local, no-account builder with ATS-safe PDF/DOCX and (b) a rule-based job-description keyword-gap check. OpenResume is local but has no JD matching; Jobscan and Kickresume match against job descriptions but are cloud and subscription ($49.95/mo and ~$19/mo, per blogs); the others are free builders. A $20 one-time local tool could own 'tailor per application without a billing trap', but the builder half is free, so the keyword-gap plus per-job version tracking must carry the sale.",
+  "new_confidence": "med",
+  "confidence_basis": "Best-evidenced of the seven: fresh (March-April 2026) first-hand billing complaints on Trustpilot, the 4-week renewal pattern confirmed by Zety's own replies, incumbent and Jobscan prices confirmed (approximately) and a plausible gap against OpenResume. Held at med because free PDF builders are plentiful, distribution is SEO-dominated, Zety's TrustScore is high, and the 'no free tool combines both' claim is based on limited searches.",
+  "recommendation": "keep",
+  "recommendation_reason": "Strong dated pain evidence and verified incumbent pricing; build it as local tailoring (keyword gap + job versions) rather than a plain builder."
+ }
+]

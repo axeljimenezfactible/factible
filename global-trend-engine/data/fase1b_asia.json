@@ -1,0 +1,823 @@
+[
+ {
+  "id": "in-gst-billing-offline-onetime",
+  "verified": "partly",
+  "checks": [
+   {
+    "claim": "GST Invoice Generator (cliente-side) a $19 pago unico, sin suscripcion, offline tras primera carga",
+    "result": "not_found",
+    "source_url": "https://dev.to/jack_green_7b74cb2cdf9e23/gst-invoice-generator-client-side-gst-invoices-no-subscriptions-19-one-time-24f3",
+    "note": "Solo existe el post del propio vendedor (titulo con $19 one-time); el extracto de busqueda corto el apartado de precios, asi que el $19 no se confirmo en fuente independiente ni hay ventas/resenas. Existe otro post del mismo estilo (dev.to/manja316) y una herramienta gratis equivalente (GSTInvoiceFree)."
+   },
+   {
+    "claim": "Vyapar desde INR 3,399/anio (escritorio)",
+    "result": "confirmed",
+    "source_url": "https://www.capterra.com/p/180579/Vyapar/pricing/",
+    "note": "Capterra: Desktop Gold 1 anio INR 3,399/anio; plan Desktop Gold 3 anios INR 8,848. ITforSME (reseller) tambien dice ~INR 3,399/anio solo escritorio y ~INR 4,010 escritorio+movil, mas 18% GST. La pagina oficial de Vyapar muestra precios promocionales distintos (ver alternatives) y una version en USD; no hay precio unico estable."
+   },
+   {
+    "claim": "myBillBook INR 199/mes segun Capterra; el sitio dice desde INR 399/anio",
+    "result": "contradicted",
+    "source_url": "https://mybillbook.in/blog/?p=738",
+    "note": "Fuentes discrepan: FAQ oficial = planes solo por suscripcion anual, basico desde INR 399/anio; GoodFirms/Capterra/SoftwareAdvice = desde INR 199/mes (Silver), Diamond INR 291/mes, Platinum INR 333/mes; SaaSworthy = Diamond desde INR 142/mes facturado anual. Ambas coinciden en que es solo suscripcion (no hay pago unico)."
+   },
+   {
+    "claim": "No se confirmo licencia perpetua en Vyapar ni myBillBook",
+    "result": "confirmed",
+    "source_url": "https://www.capterra.com/p/180579/Vyapar/pricing/",
+    "note": "Vyapar: solo planes 1 y 3 anios; 'Lifetime Updates' aparece solo como caracteristica del plan Platinum 3 anios, no como pago unico. myBillBook: FAQ oficial dice suscripcion anual. Un listado de GetApp menciona un pago 'one-time' para Enterprise de myBillBook, no corroborado."
+   },
+   {
+    "claim": "App 'GST Invoice' en iOS gratis, sin registro, offline",
+    "result": "not_found",
+    "source_url": null,
+    "note": "No volvio a aparecer en mis busquedas; no pude verificar la ficha de App Store. Pero si hay alternativas gratis offline fuertes confirmadas por busqueda (Sleek Bill, BharatBills, GitHub open source, Zoho Invoice)."
+   }
+  ],
+  "alternatives": [
+   {
+    "name": "GST Invoice Generator (post dev.to, cliente-side)",
+    "price_local": null,
+    "currency": "USD",
+    "price_usd": 19,
+    "model": "one-time",
+    "url": "https://dev.to/jack_green_7b74cb2cdf9e23/gst-invoice-generator-client-side-gst-invoices-no-subscriptions-19-one-time-24f3",
+    "as_of": null
+   },
+   {
+    "name": "Vyapar Desktop Gold 1 anio (lista Capterra)",
+    "price_local": 3399,
+    "currency": "INR",
+    "model": "annual",
+    "url": "https://www.capterra.com/p/180579/Vyapar/pricing/",
+    "as_of": null
+   },
+   {
+    "name": "Vyapar Desktop Gold 3 anios (lista Capterra)",
+    "price_local": 8848,
+    "currency": "INR",
+    "model": "annual",
+    "url": "https://www.capterra.com/p/180579/Vyapar/pricing/",
+    "as_of": null
+   },
+   {
+    "name": "Vyapar Gold (escritorio+movil) 1 anio, precio promocional del sitio de Vyapar (lista tachada INR 8,299)",
+    "price_local": 3654,
+    "currency": "INR",
+    "model": "annual",
+    "url": "https://vyaparapp.in/offers/discount-on-app-at-canopy",
+    "as_of": null
+   },
+   {
+    "name": "Vyapar Platinum 3 anios, promocional (tachado INR 52,999), incluye 'Lifetime Updates'",
+    "price_local": 19499,
+    "currency": "INR",
+    "model": "annual",
+    "url": "https://vyaparapp.in/offers/discount-on-app-at-canopy",
+    "as_of": null
+   },
+   {
+    "name": "myBillBook plan basico (FAQ oficial)",
+    "price_local": 399,
+    "currency": "INR",
+    "model": "annual",
+    "url": "https://mybillbook.in/blog/?p=738",
+    "as_of": null
+   },
+   {
+    "name": "myBillBook Silver (listados terceros)",
+    "price_local": 199,
+    "currency": "INR",
+    "model": "monthly",
+    "url": "https://www.goodfirms.co/software/mybillbook",
+    "as_of": null
+   },
+   {
+    "name": "TallyPrime Silver (1 usuario, licencia perpetua; +18% GST; incluye 1 anio de TSS)",
+    "price_local": 22500,
+    "currency": "INR",
+    "model": "one-time",
+    "url": "https://awsstgpreprod.tallysolutions.com/business-guides/tallyprime-total-cost-of-ownership-india/",
+    "as_of": null
+   },
+   {
+    "name": "TallyPrime Silver renta 12 meses (incluye TSS)",
+    "price_local": 8100,
+    "currency": "INR",
+    "model": "annual",
+    "url": "https://awsstgpreprod.tallysolutions.com/business-guides/tallyprime-total-cost-of-ownership-india/",
+    "as_of": null
+   },
+   {
+    "name": "Selvam Software, billing offline Windows (listado IndiaMART, licencia no aclarada)",
+    "price_local": 18000,
+    "currency": "INR",
+    "model": "one-time",
+    "url": "https://m.indiamart.com/selvam-software",
+    "as_of": null
+   }
+  ],
+  "free_alternatives": [
+   {
+    "name": "Sleek Bill (Windows, offline)",
+    "url": "https://sleekbill.in/lifetime-free-gst-billing-software/",
+    "note": "Version basica gratis 'de por vida' offline; CGST/SGST/IGST, codigo de barras y POS termico (afirmacion del vendedor; limites de la version gratis no vistos)."
+   },
+   {
+    "name": "BharatBills (Windows/Android)",
+    "url": "https://alternativeto.net/software/bharatbills/about",
+    "note": "Listado gratis, GST offline; licencia propietaria; limites no vistos."
+   },
+   {
+    "name": "Free-GST-Billing-Software (GitHub, MIT)",
+    "url": "https://github.com/IamRamgarhia/Free-GST-Billing-Software",
+    "note": "Open source offline-first, exporta JSON GSTR-1/3B e inventario; requiere cierto conocimiento tecnico."
+   },
+   {
+    "name": "Zoho Invoice India",
+    "url": "https://www.zoho.com/in/invoice/pricing",
+    "note": "Gratis permanente para facturacion GST, pero en la nube (necesita internet)."
+   },
+   {
+    "name": "GSTInvoiceFree (herramienta web client-side)",
+    "url": "https://hunted.space/product/gstinvoicefree",
+    "note": "Gratis, sin registro, procesa en el navegador."
+   }
+  ],
+  "pain_evidence": [
+   {
+    "url": "https://www.capterra.in/software/180579/vyapar",
+    "what": "Capterra India: Vyapar 4.3/5 con 181 resenas; 'Value for money' 4.4/5 (el dolor de precio NO aparece como queja en resenas).",
+    "date": null
+   },
+   {
+    "url": "https://dev.to/jack_green_7b74cb2cdf9e23/gst-invoice-generator-client-side-gst-invoices-no-subscriptions-19-one-time-24f3",
+    "what": "El vendedor mismo se posiciona contra suscripciones (FreshBooks/QuickBooks/Xero) - evidencia de oferta, no de demanda.",
+    "date": null
+   }
+  ],
+  "regional_price_note": "Ancla regional en INR: Vyapar escritorio ~INR 3,399/anio (+18% GST), myBillBook desde INR 399/anio (FAQ oficial) o INR 199/mes (listados), TallyPrime perpetuo INR 22,500 (+GST) o renta INR 8,100/anio. $20 (~INR 1,700) pago unico queda por debajo de 1 anio de Vyapar y es muy superior a myBillBook anual basico (INR 399), y lejos del perpetuo de Tally; puede percibirse caro frente a las opciones gratis. Precio regional en INR (p. ej. INR 999-1,499) probable; no hay evidencia de que la gente pague pago unico por apps pequenas.",
+  "regulatory_note": "Facturacion GST/e-invoicing cambia (umbral e-invoice segun un blog 'INR 40 lakh en 2026', no verificado con fuente oficial). Mantener HSN/GSTIN/reglas actualizadas es costo recurrente que choca con el 'pago unico'.",
+  "differentiator": "Ninguno defendible con la evidencia actual: ya hay opciones gratis offline (Sleek Bill, BharatBills, open source, Zoho Invoice gratis), planes baratos (myBillBook INR 399/anio) y la unica oferta a pago unico similar ($19) es un post no verificado. Solo seria defendible un nicho muy concreto (p. ej. idioma local + impresora termica + actualizaciones de reglas GST incluidas) que no probe.",
+  "new_confidence": "low",
+  "confidence_basis": "No se hallo evidencia independiente de dolor por suscripcion (Capterra da 4.4/5 en valor), el precio del competidor a $19 no se confirmo, y las alternativas gratis offline y baratas son abundantes. Precios de Vyapar/myBillBook confirmados pero inconsistentes entre fuentes.",
+  "recommendation": "drop",
+  "recommendation_reason": "Mercado saturado de opciones gratis y suscripciones de INR 399-3,399/anio sin evidencia de demanda por pago unico; el $20 no se sostiene frente a lo gratuito."
+ },
+ {
+  "id": "in-exam-photo-signature-resizer",
+  "verified": "confirmed",
+  "checks": [
+   {
+    "claim": "Existen herramientas dedicadas de redimensionado foto/firma para formularios de examenes (p. ej. Sahil Dubey, ago 2026)",
+    "result": "confirmed",
+    "source_url": "https://www.sahildubey.com/2026/08/exam-photo-signature-resizer.html",
+    "note": "Aparece de nuevo en mi busqueda junto a otras 8+ herramientas web y apps Android (ver free_alternatives); la saturacion esta confirmada."
+   },
+   {
+    "claim": "Limites de ejemplo 200x230 px bajo 50 KB, firma 10-20 KB",
+    "result": "contradicted",
+    "source_url": "https://www.pw.live/ssc/exams/ssc-cgl-photo-and-signature-size-2026",
+    "note": "Los limites varian por examen y por guia. Para SSC CGL 2026 los resumenes dan foto 275x354 px o 280x340 px, 20-50 KB, firma 10-20 KB (236x79 px, 140x60 px o 6x2 cm segun la guia); no vi la cifra 200x230 px en estas busquedas. Una guia dice que dos notificaciones de la misma organizacion pueden pedir valores distintos."
+   },
+   {
+    "claim": "Recortar no basta: una foto de 200x230 px puede rechazarse por pesar 300 KB",
+    "result": "not_found",
+    "source_url": "https://www.careers360.com/question-are-pixels-important-for-the-photo-and-signature-in-ssc-gd-form-or-just-the-size-should-be-20kb-to-50kb-size-my-photo-is-413513-pixels-and-size-284kb-is-it-ok-or-my-form-will-get-rejected-if-i-upload-it-please-reply-and-help-me-clear-this-doubt-i-am-very-confused/amp",
+    "note": "No abri la guia de odishajobsdesk; pero existe una pregunta en Careers360 de un postulante confundido porque su foto de 284 KB (413x513 px) podria hacer rechazar el formulario SSC GD, lo que respalda el tipo de dolor (fecha no vista)."
+   },
+   {
+    "claim": "Hay muchas copias gratuitas; WTP minimo a $20",
+    "result": "confirmed",
+    "source_url": "https://chrome-stats.com/d/com.zentools.formfit",
+    "note": "Apps Android (FormFit, Photo Resizer for Govt Forms, ExamScan) y webs en navegador, todas con presets por examen; FormFit afirma procesar offline en el dispositivo. No pude ver su modelo de precio en Play Store (los datos vienen de un espejo)."
+   }
+  ],
+  "alternatives": [
+   {
+    "name": "FormFit Photo & Signature 20kb (Android, Zentools)",
+    "price_local": null,
+    "currency": "INR",
+    "model": "freemium",
+    "url": "https://chrome-stats.com/d/com.zentools.formfit",
+    "as_of": null
+   },
+   {
+    "name": "Photo Resizer for Govt Forms (Android, HanuApps)",
+    "price_local": null,
+    "currency": "INR",
+    "model": "freemium",
+    "url": "https://chrome-stats.com/d/com.hanuapps.imageresizeformfit",
+    "as_of": null
+   },
+   {
+    "name": "ExamScan: Photo & Sign Editor (Android, marsman; deteccion de rostro con IA)",
+    "price_local": null,
+    "currency": "INR",
+    "model": "freemium",
+    "url": "https://chrome-stats.com/d/mm.marsman.examscan",
+    "as_of": null
+   }
+  ],
+  "free_alternatives": [
+   {
+    "name": "Sahil Dubey Exam Photo & Signature Resizer",
+    "url": "https://www.sahildubey.com/2026/08/exam-photo-signature-resizer.html",
+    "note": "Web; 20/50/100 KB."
+   },
+   {
+    "name": "IndianPayCalculator Photo & Signature Resizer",
+    "url": "https://www.indianpaycalculator.in/sarkari-result/tools/photo-signature-resizer",
+    "note": "Web; se procesa 100% en el navegador, sin subir el archivo."
+   },
+   {
+    "name": "Sarkari Photo & Signature Resizer",
+    "url": "https://sarkarinaukari.it.com/photo-resizer/",
+    "note": "Web; objetivo 20-50/300 KB, en navegador."
+   },
+   {
+    "name": "Photo Signature Resizer (GlobalDrishti)",
+    "url": "https://globaldrishti.in/tools/photo-signature-resizer/",
+    "note": "Web gratuita."
+   },
+   {
+    "name": "Passport Photo Maker & Signature Resizer (freetool.odoo.com)",
+    "url": "https://freetool.odoo.com/img-master",
+    "note": "Web; comprime a 20/50 KB y arma hoja A4 de impresion."
+   },
+   {
+    "name": "Photo & Signature Resizer (IndiaJobAlerts / TechnicalStudies)",
+    "url": "https://www.indiajobalerts.com/?p=6448",
+    "note": "Mas herramientas web gratuitas para SSC/UPSC/bancos/ferrocarriles."
+   }
+  ],
+  "pain_evidence": [
+   {
+    "url": "https://www.careers360.com/question-are-pixels-important-for-the-photo-and-signature-in-ssc-gd-form-or-just-the-size-should-be-20kb-to-50kb-size-my-photo-is-413513-pixels-and-size-284kb-is-it-ok-or-my-form-will-get-rejected-if-i-upload-it-please-reply-and-help-me-clear-this-doubt-i-am-very-confused/amp",
+    "what": "Postulante a SSC GD pregunta si su foto de 284 KB (413x513 px) hara rechazar el formulario con limite 20-50 KB: 'I am very confused'.",
+    "date": null
+   },
+   {
+    "url": "https://www.careers360.com/question-while-filling-ssc-cgl-form-part-2-after-clicking-on-submit-button-the-previous-page-open-without-photograph-and-signature-my-form-is-not-submitting-i-have-tried-numerous-times-but-it-always-create-same-type-of-problem",
+    "what": "Postulante SSC CGL: al enviar la parte 2 la pagina vuelve sin foto ni firma; el formulario no se envia pese a varios intentos.",
+    "date": null
+   },
+   {
+    "url": "https://www.pw.live/ssc/exams/ssc-cgl-photo-and-signature-size-2026",
+    "what": "Guias de 2026 listan valores distintos de foto/firma para SSC CGL (275x354 vs 280x340 px; firma 236x79, 140x60 o 6x2 cm): el desacuerdo entre fuentes alimenta el dolor.",
+    "date": "2026"
+   }
+  ],
+  "regional_price_note": "Ancla: la tasa de inscripcion de SSC CGL es INR 100 para General/OBC/EWS hombres (mujeres y SC/ST exentos); correcciones de formulario cuestan INR 200 la primera y INR 500 la segunda (pw.live ssc-cgl-form-fees-2026 / guia relacionada). $20 (~INR 1,700) equivale a varias veces la tasa de inscripcion; no es plausible como pago unico para estudiantes. Si se vende, seria a cibercafes o a un precio simbolico (hipotesis, sin fuente).",
+  "regulatory_note": null,
+  "differentiator": "Ninguno defendible: presets por examen, recorte, compresion a KB exactos y procesamiento offline ya existen gratis en web y apps Android. Un cibercafe podria pagar por un lote de formularios, pero no hay fuente que lo respalde.",
+  "new_confidence": "low",
+  "confidence_basis": "Dolor real y recurrente (rechazos, guias en conflicto), pero 100% cubierto por herramientas gratuitas y WTP para estudiantes cercano a cero frente a tasas de INR 100.",
+  "recommendation": "drop",
+  "recommendation_reason": "Dolor real pero resuelto gratis por decenas de herramientas y con WTP muy inferior a $20."
+ },
+ {
+  "id": "id-sscasn-document-prep",
+  "verified": "partly",
+  "checks": [
+   {
+    "claim": "Foto 3:4 fondo rojo JPG de unos 200 KB; PDFs con limites por documento",
+    "result": "contradicted",
+    "source_url": "https://kiakrikil.com/?p=23415",
+    "note": "Las fuentes no coinciden. kiakrikil: 3:4, min 400x533 px, JPG, max 200 KB, fondo rojo (admite que BKN no ha publicado el manual 2026 y usa SE BKN No. 9/2024). masoemuniversity: foto roja max 300 KB, KTP 500 KB, ijazah/transkrip PDF ~800 KB-1 MB. Bisnis.com (CPNS 2024): foto/selfie/KTP max 200 KB; ijazah max 800 KB; transkrip max 500 KB. Sitio de seleccion de kedinasan 2026 (BKN via pdiperjuanganbali): foto 4x6 cm fondo rojo; KTP ~500 KB; PDF 1.000 KB."
+   },
+   {
+    "claim": "Existe guia oficial 2026 / convocatoria CPNS 2026 abierta",
+    "result": "not_found",
+    "source_url": "https://journalarta.com/news/2026/08/02/jadwal-cara-daftar-sscasn-2026/",
+    "note": "Hasta el 2-ago-2026 BKN no habia publicado calendario oficial; Dealls (17-jun-2026) y el Kepala BKN (mar-2026) dijeron que el calendario no estaba definido; el Ministro PANRB (8-ago-2026) dijo que dependia de formacion/presupuesto. Prediccion de blogs: formasi en sep-2026 y registro sep-oct 2026 (no oficial). No encontre confirmacion de apertura a oct-2026."
+   },
+   {
+    "claim": "Blog: 'Pas Foto Sepele yang Bikin 10% Pelamar SSCASN TMS'",
+    "result": "not_found",
+    "source_url": "https://kiakrikil.com/?p=23415",
+    "note": "Solo el titulo (afirmacion del blog, sin cifra respaldada por BKN). Otro articulo (pixpretty/tenorshare, sitio de venta de software) advierte que un fondo equivocado puede dar estado TMS, pero no da porcentaje."
+   },
+   {
+    "claim": "Hay muchas alternativas gratis (ILoveIMG, Smallpdf, Pixlr)",
+    "result": "confirmed",
+    "source_url": "https://kabar24.bisnis.com/read/20240827/243/1794607/cara-kompres-foto-dan-dokumen-pakai-hp-tanpa-aplikasi-untuk-daftar-cpns",
+    "note": "Bisnis.com (ago-2024) incluso publica 'Cara compress foto y documentos con HP SIN aplicacion'; Tirto/Teknologi.id/Suara Pemerintah recomiendan TinyPNG, ILovePDF, SmallPDF, Image Size. Cambiar fondo rojo tambien es gratis (remove.bg, Canva, insMind)."
+   }
+  ],
+  "alternatives": [
+   {
+    "name": "iLovePDF Premium (anual)",
+    "price_local": 60,
+    "currency": "USD",
+    "price_usd": 60,
+    "model": "annual",
+    "url": "https://www.ilovepdf.com/id/biaya",
+    "as_of": null
+   },
+   {
+    "name": "iLovePDF Premium (mensual)",
+    "price_local": 9,
+    "currency": "USD",
+    "price_usd": 9,
+    "model": "monthly",
+    "url": "https://www.ilovepdf.com/id/biaya",
+    "as_of": null
+   },
+   {
+    "name": "Smallpdf Pro (cifras de terceros discrepan: $6/mes en una, $15/mes o $120/anio en otra; la pagina oficial no mostro el monto)",
+    "price_local": null,
+    "currency": "USD",
+    "model": "monthly",
+    "url": "https://smallpdf.com/id/pricing",
+    "as_of": null
+   }
+  ],
+  "free_alternatives": [
+   {
+    "name": "ILovePDF / SmallPDF / TinyPNG / Image Size (plan gratis)",
+    "url": "https://teknologi.id/tips-and-trick/cara-kompres-foto-ktp-jadi-200-kb-untuk-pendaftaran-sscasn-atau-cpns-2024",
+    "note": "Guias para comprimir foto/KTP a 200 KB y PDFs para SSCASN."
+   },
+   {
+    "name": "Compresion en el celular sin app (guia de Bisnis.com)",
+    "url": "https://kabar24.bisnis.com/read/20240827/243/1794607/cara-kompres-foto-dan-dokumen-pakai-hp-tanpa-aplikasi-untuk-daftar-cpns",
+    "note": "Metodos nativos del telefono para foto y documentos de CPNS."
+   },
+   {
+    "name": "Canva / insMind / remove.bg (cambio de fondo a rojo)",
+    "url": "https://www.insmind.com/id-id/alat-gambar/latar-belakang-merah",
+    "note": "Cambio de fondo rojo con IA gratis (tambien Canva y remove.bg segun la busqueda)."
+   }
+  ],
+  "pain_evidence": [
+   {
+    "url": "https://suarapemerintah.id/2024/08/cara-mengecilkan-ukuran-foto-dan-dokumen-sebelum-daftar-cpns-2024/",
+    "what": "'Cara Mengecilkan Ukuran Foto dan Dokumen Sebelum Daftar CPNS 2024': guia anual recurrente (tambien 2019, 2021, 2024 en Tirto/Teknologi.id) - el tema reaparece cada ciclo.",
+    "date": "2024-08"
+   },
+   {
+    "url": "https://kabar24.bisnis.com/read/20240827/243/1794607/cara-kompres-foto-dan-dokumen-pakai-hp-tanpa-aplikasi-untuk-daftar-cpns",
+    "what": "Bisnis.com (ago-2024): limites foto/KTP 200 KB, ijazah 800 KB, transkrip 500 KB en CPNS 2024.",
+    "date": "2024-08"
+   },
+   {
+    "url": "https://economy.okezone.com/read/2023/10/09/622/2897601/5-cara-mengatasi-unggah-berkas-gagal-di-sscasn-2023",
+    "what": "Okezone (oct-2023): '5 cara mengatasi unggah berkas gagal di SSCASN 2023'.",
+    "date": "2023-10"
+   }
+  ],
+  "regional_price_note": "El registro CPNS en el portal oficial es gratuito (aviso de no pagar a terceros: sscasn.bkn.go.id). No encontre en busquedas tarifas en rupias de servicios de edicion/compresion (la busqueda de tarifas de warnet/fotocopia no devolvio precios), asi que no hay ancla local en IDR. Referencia internacional: iLovePDF Premium USD 60/anio o USD 9/mes (pagina en indonesio, en USD). $20 pago unico para un postulante es dificil de justificar con herramientas gratis.",
+  "regulatory_note": null,
+  "differentiator": "Ninguno defendible: limites inconsistentes y sin guia oficial 2026; todo (compresion de foto/PDF, cambio de fondo) existe gratis en web y en el propio telefono; demanda estacional y aun sin convocatoria confirmada a oct-2026.",
+  "new_confidence": "low",
+  "confidence_basis": "Dolor recurrente documentado por anos (guias 2019-2024), pero sin evidencia de pago, sin convocatoria 2026 confirmada, limites contradictorios y soluciones gratuitas dominantes.",
+  "recommendation": "drop",
+  "recommendation_reason": "Estacional, resuelto gratis y sin disposicion a pagar $20 en Indonesia."
+ },
+ {
+  "id": "id-coretax-xml-validator",
+  "verified": "partly",
+  "checks": [
+   {
+    "claim": "DJP ofrece dos conversores oficiales gratuitos (plantilla Excel con export XML y app de escritorio Converter.Efaktur.Coretax)",
+    "result": "confirmed",
+    "source_url": "https://news.ddtc.co.id/literasi/tips-trik/1807194/cara-konverter-excel-to-xml-untuk-impor-data-di-aplikasi-coretax",
+    "note": "Reconfirmado en 3 busquedas (DDTC, Ortax, iuwashtangguh): DJP publica 31 plantillas/conversores gratis en pajak.go.id/id/reformdjp/coretax; el converter app cubre faktur de salida, Lampiran C PPN digunggung y retur de entrada. El tope de 1.000 facturas por XML no lo volvi a ver en los resumenes."
+   },
+   {
+    "claim": "El estado 'Validating Failed' indica datos a corregir",
+    "result": "confirmed",
+    "source_url": "https://www.online-pajak.com/tentang-ppn-efaktur/impor-faktur-pajak-pada-aplikasi-coretax/",
+    "note": "OnlinePajak: aparece en la pestana 'XML Monitoring' tras subir el archivo; no es fallo tecnico general. Es decir, Coretax solo avisa DESPUES de subir, lo que sustenta un pre-validador."
+   },
+   {
+    "claim": "'Value cannot be null' en e-Bupot PPh 21 en 2026 por columnas obligatorias vacias o formato incorrecto",
+    "result": "confirmed",
+    "source_url": "https://www.talenta.co/blog/gagal-impor-ebupot-pph-21-coretax/",
+    "note": "Segun el resumen (Kring Pajak, abril 2026): causa tipica = columnas obligatorias vacias o fuera de formato; simbolos/caracteres especiales tambien provocan fallo. DDTC (jun-2026) titula 'Impor bukti potong XML di Coretax gagal, coba cek kolom yang kosong'."
+   },
+   {
+    "claim": "'Faktur XML cuma 15 baris tapi erornya 100 baris lebih'",
+    "result": "confirmed",
+    "source_url": "https://news.ddtc.co.id/review/konsultasi-coretax/1808895/faktur-xml-cuma-15-baris-tapi-erornya-100-baris-lebih-apa-yang-salah",
+    "note": "Contenido visto ahora en el resumen: aviso 'Invoices have errors!' con 'NITKU pembeli tidak valid' en la linea 100 y muchas mas, y el consultante pregunta si XML sirve para muchas facturas. Fecha exacta no visible."
+   },
+   {
+    "claim": "Actualizacion de plantillas el 8-abr-2026 (impacta importacion de facturas)",
+    "result": "contradicted",
+    "source_url": "https://ortax.org/kendala-impor-data-aset-di-spt-pph-badan-coretax-cek-hal-hal-berikut-ini",
+    "note": "Ortax dice que al 8-abr-2026 DJP actualizo plantilla y converter XML de los ANEXOS de SPT Tahunan PPh Badan (error 'Object reference not set...'), no de faktur pajak. Aparte, DDTC reporta un cambio de plantilla de faktur de salida para transaccion codigo 07 con keterangan tambahan 02 (sin fecha confirmada)."
+   },
+   {
+    "claim": "Fuentes discrepan sobre fechas de arranque de Coretax",
+    "result": "confirmed",
+    "source_url": "https://news.ddtc.co.id/berita/nasional/1806618/isi-bab-ketentuan-teknis-pelaksanaan-coretax-djp-dalam-pmk-812024",
+    "note": "Que fecha sostiene cada fuente: (a) PMK 81/2024 en vigor 1-ene-2025 (Pasal 484; DDTC/Kontan/Pajak.com) y Coretax operativo desde 1-ene-2025; (b) PMK firmado 14-oct-2024 (una fuente) vs 18-oct-2024 (otra, como fecha de emision); (c) DJP se disculpo por fallas el 24-ene-2025 (InvestorTrust); (d) e-Faktur Client Desktop se reabrio como via alterna desde 12-feb-2025 (Pajak.com) y para todos los PKP segun noticias del 19-mar-2025; (e) e-Faktur 3.2 dejo de poder emitir facturas desde 20-jul-2024. No encontre fecha oficial de fin del periodo de transicion."
+   }
+  ],
+  "alternatives": [
+   {
+    "name": "Accurate Online, plan basico (1 usuario, 1 base; incluye PPN 11%; exporta XML para Coretax segun release notes)",
+    "price_local": 333000,
+    "currency": "IDR",
+    "model": "monthly",
+    "url": "https://accurate.id/informasi/pengguna/harga-data-usaha-2026/",
+    "as_of": "2026-01"
+   },
+   {
+    "name": "Accurate Online, plan basico anual (12 x 333.000)",
+    "price_local": 3996000,
+    "currency": "IDR",
+    "model": "annual",
+    "url": "https://accurate.id/informasi/pengguna/harga-data-usaha-2026/",
+    "as_of": "2026-01"
+   },
+   {
+    "name": "Accurate Online, promo primer anio (2 usuarios)",
+    "price_local": 3219000,
+    "currency": "IDR",
+    "model": "annual",
+    "url": "https://accurate.id/informasi/pengguna/harga-data-usaha-2026/",
+    "as_of": "2026-01"
+   },
+   {
+    "name": "OnlinePajak (guia/servicio de importacion a Coretax; PJAP)",
+    "price_local": null,
+    "currency": "IDR",
+    "model": "annual",
+    "url": "https://www.online-pajak.com/tentang-ppn-efaktur/impor-faktur-pajak-pada-aplikasi-coretax/",
+    "as_of": null
+   },
+   {
+    "name": "KlikPajak (PJAP certificado; guia de archivos de carga Coretax)",
+    "price_local": null,
+    "currency": "IDR",
+    "model": "annual",
+    "url": "https://klikpajak.id/blog/file-upload-coretax/",
+    "as_of": null
+   },
+   {
+    "name": "Modulo Odoo 'coretax' (genera XML Coretax desde facturas sin faktur pajak)",
+    "price_local": null,
+    "currency": "IDR",
+    "model": "one-time",
+    "url": "https://apps.odoo.com/apps/modules/18.0/coretax",
+    "as_of": null
+   }
+  ],
+  "free_alternatives": [
+   {
+    "name": "Plantillas y converter oficiales DJP (31 archivos, Converter.Efaktur.Coretax)",
+    "url": "https://news.ddtc.co.id/literasi/tips-trik/1807194/cara-konverter-excel-to-xml-untuk-impor-data-di-aplikasi-coretax",
+    "note": "Excel a XML para faktur de salida, retur de entrada, Lampiran C y bupot/SPT. Fallo conocido segun una fuente: al convertir, dos decimales pueden redondearse a cero decimales. Las guias piden validar a mano NPWP/NITKU/objeto de impuesto/tarifa antes de convertir, y el error solo aparece en 'XML Monitoring' tras subir (no vi que el converter valide por fila; inferencia)."
+   },
+   {
+    "name": "Guias de Ortax/MUC/AgusPajak/Pajakku sobre impor XML",
+    "url": "https://ortax.org/cara-membuat-file-xml-untuk-impor-data-di-coretax",
+    "note": "Recomiendan validar manualmente NPWP, NITKU (retenedor y contraparte), codigo de objeto de impuesto y tarifa antes de convertir."
+   },
+   {
+    "name": "e-Faktur Client Desktop / Host-to-Host (via alterna para PKP)",
+    "url": "https://www.pajak.com/pajak/djp-lapor-spt-ppn-masa-tetap-melalui-core-tax/",
+    "note": "DJP reabrio estas apps en feb/mar-2025; los datos pasan a Coretax en H+2. Retur y anulaciones deben hacerse en Coretax."
+   }
+  ],
+  "pain_evidence": [
+   {
+    "url": "https://news.ddtc.co.id/review/konsultasi-coretax/1808895/faktur-xml-cuma-15-baris-tapi-erornya-100-baris-lebih-apa-yang-salah",
+    "what": "Consulta de un staff contable: XML de 15 lineas devuelve 100+ errores 'NITKU pembeli tidak valid'.",
+    "date": null
+   },
+   {
+    "url": "https://news.ddtc.co.id/berita/nasional/1809539/wp-kesulitan-impor-faktur-pajak-keluaran-coretax-diminta-coba-berkala",
+    "what": "DDTC: 'WP kesulitan impor faktur pajak keluaran Coretax, diminta coba berkala' (DJP reconoce el menu de importacion en mejora).",
+    "date": null
+   },
+   {
+    "url": "https://news.ddtc.co.id/berita/nasional/1818523/impor-bukti-potong-xml-di-coretax-gagal-coba-cek-kolom-yang-kosong",
+    "what": "DDTC: 'Impor bukti potong XML di Coretax gagal, coba cek kolom yang kosong'.",
+    "date": "2026-06"
+   },
+   {
+    "url": "https://www.talenta.co/blog/gagal-impor-ebupot-pph-21-coretax/",
+    "what": "'Submitting eBupot failed: Value cannot be null' por columnas obligatorias vacias o simbolos especiales (Kring Pajak).",
+    "date": "2026-04"
+   },
+   {
+    "url": "https://nasional.kontan.co.id/news/setelah-2-bulan-beroperasi-coretax-masih-banjir-keluhan-wajib-pajak",
+    "what": "Kontan: tras 2 meses de operacion Coretax seguia con quejas masivas; empresarios haciendo horas extra de madrugada para declarar.",
+    "date": "2025-03"
+   },
+   {
+    "url": "https://community.mekari.com/forums/topic/keluar-error-invoice-should-be-returned-on-coretax-xml-upload",
+    "what": "Foro Mekari: usuarios reportando error 'Invoice should be returned' al subir XML a Coretax.",
+    "date": null
+   }
+  ],
+  "regional_price_note": "Ancla en IDR: Accurate Online basico IDR 333.000/mes (IDR 3.996.000/anio, PPN incluido; subio el 1-ene-2026 de IDR 250.000 a 300.000 antes de PPN); usuario adicional IDR 22.200/mes. Los contadores ya pagan millones de IDR al anio por software contable que exporta XML, de modo que un pago unico de USD 20 es plausible para contadores/consultores con varios clientes, no para UMKM sueltas. No vi precios de OnlinePajak/KlikPajak/Jurnal/Kledo (no_found).",
+  "regulatory_note": "Zona fiscal regulada: DJP es el unico que valida (Coretax) y pide en sus guias verificar NPWP/NITKU, objeto de impuesto y tarifa; DJP certifica PJAP (OnlinePajak, KlikPajak). No vi en las fuentes un encuadre explicito herramienta vs asesoria. Cuidado de producto (inferencia mia): una herramienta local solo puede validar formato, no si un NPWP/NITKU existe en la base de DJP; no manejar firma digital ni passphrase.",
+  "differentiator": "Pre-validador local (sin subir datos) que revisa en lote columnas obligatorias, caracteres especiales, formato de NPWP/NIK/NITKU, redondeo de decimales y explica cada error por fila antes de subir; no vi que el converter oficial valide por fila (las guias piden validar a mano) y Coretax solo avisa despues con 'Validating Failed'. Defendible solo para contadores multicliente y mientras se mantengan las plantillas al dia (DJP las cambia); no hay evidencia de que alguien pague por esto aparte del software contable.",
+  "new_confidence": "low",
+  "confidence_basis": "Dolor independiente y reciente confirmado (DDTC, Talenta/Kring Pajak abr-2026, Kontan 2025), pero la solucion oficial es gratis, el software contable ya exporta XML, y no hay evidencia de pago por un validador independiente; mantenimiento de plantillas costoso.",
+  "recommendation": "rework",
+  "recommendation_reason": "Pain real y vigente en 2026 pero solo defendible como pre-validador por filas para contadores multicliente, con riesgo de mantenimiento por cambios de plantillas de DJP."
+ },
+ {
+  "id": "vn-marketplace-fee-profit-tax",
+  "verified": "partly",
+  "checks": [
+   {
+    "claim": "Shopee ajusto tarifario desde 23/05/2026 y la comision de procesamiento COD sube de 4,91% a 6% desde 01/05/2026 (MISA eShop)",
+    "result": "contradicted",
+    "source_url": "https://www.misaeshop.vn/24423/phi-san-shopee/",
+    "note": "Procesamiento COD 4,91% a 6% (IVA incluido) desde 01/05/2026 segun MISA eShop; otra fuente dice 6% desde 08/05/2026 para todos los metodos de pago; Shopee renombro 'Phi Thanh Toan' a 'Phi Xu Ly Giao Dich' el 24/04/2026. La fecha 23/05/2026 no la reconfirme: Viettimes dice que para vendedores no-Mall el periodo 01/05-01/07/2026 trae cargo fijo ~8,8-11,7% en moda/FMCG/hogar, y que para Shopee Mall el cargo fijo se actualiza desde 29/05/2026 (2% a >10% segun rubro). Las fuentes no coinciden en fecha ni en direccion para Mall (BigSeller: titulo 'Shopee Mall tang phi 6% tu 08/05/2026' y a la vez rebaja de 1% en alimentos; Sapo describe reduccion)."
+   },
+   {
+    "claim": "Tres cambios de tarifa entre mayo y julio de 2026 (urgencia)",
+    "result": "contradicted",
+    "source_url": "https://nhadautu.vn/co-quan-canh-tranh-vao-cuoc-shopee-hoan-ap-dung-phi-moi-d105301.html",
+    "note": "Correccion importante: la Comision Nacional de Competencia (Bo Cong Thuong) pidio el 28/05/2026 que Shopee no aplicara los nuevos cargos; Shopee el 27/05/2026 propuso diferir la nueva politica (el cargo nuevo diferido es el 'Chuong trinh Duy tri hien thi', 1% de ingreso del pedido exitoso, ajustable 1%-50%). La Comision sigue vigilando cargo fijo, procesamiento e infraestructura. El 29/05/2026 pidio detalles a TikTok Shop sobre sus ajustes de tarifa y entrevista a vendedores; no vi que TikTok los retirara. No encontre el desenlace despues de 30/05/2026."
+   },
+   {
+    "claim": "TikTok Shop sube comision desde 9/5/2026 (moda 14,6-16,1%, madre-bebe 14,5-17,8%)",
+    "result": "not_found",
+    "source_url": "https://fptshop.com.vn/tin-tuc/for-gamers/cac-loai-phi-san-tiktok-shop-moi-nhat-2026-199328",
+    "note": "No reabri el articulo de FPT Shop en esta pasada; solo vi que otra fuente describe que TikTok Shop subio la comision de ciertas categorias desde mayo 2026. Los porcentajes exactos siguen sin verificarse de forma independiente."
+   },
+   {
+    "claim": "Retencion de 1,5% (1% IVA + 0,5% IRPF) por la plataforma",
+    "result": "confirmed",
+    "source_url": "https://thuvienphapluat.vn/hoi-dap-phap-luat/toan-van-nghi-dinh-117-2025-nd-cp-co-hieu-luc-khi-nao-138053223.html",
+    "note": "Decreto 117/2025/ND-CP, emitido 09/06/2025, en vigor 01/07/2025: para bienes, tasa IVA 1% + IRPF 0,5% = 1,5% del ingreso (residentes); servicios 5% IVA + 2% IRPF; la plataforma con funcion de pago retiene y paga; si ya se retuvo, el vendedor no declara de nuevo (art. 11 apdo. 4). Las fuentes son portales de noticias/software contable, no el texto original."
+   },
+   {
+    "claim": "La busqueda no encontro un Excel gratuito en vietnamita que cubra esto",
+    "result": "confirmed",
+    "source_url": "https://echotik.live/tool/calculator",
+    "note": "En mi busqueda tampoco: solo calculadoras en ingles de un producto a la vez con tarifas de vendedores extranjeros (EchoTik, Delzonic, tlinky), una calculadora gratuita de Malasia en MYR (BRP) y BigSeller (estimacion de ganancia por pedido dentro de su software; precio no verificado)."
+   },
+   {
+    "claim": "Titular VnBusiness: plataformas empujan la tarifa a un 'record de 25% del ingreso'",
+    "result": "not_found",
+    "source_url": null,
+    "note": "No volvio a aparecer en mis busquedas; no sirve como dato citable."
+   },
+   {
+    "claim": "Libro Excel de Payhip (Order-Level Profit Tracker) como competidor",
+    "result": "not_found",
+    "source_url": null,
+    "note": "No volvio a aparecer; ademas es orientado a EE. UU."
+   }
+  ],
+  "alternatives": [
+   {
+    "name": "Sapo Start Up (software de gestion de ventas)",
+    "price_local": 170000,
+    "currency": "VND",
+    "model": "monthly",
+    "url": "https://www.sapo.vn/bang-gia-sapo-omni.html",
+    "as_of": null
+   },
+   {
+    "name": "Sapo Pro",
+    "price_local": 249000,
+    "currency": "VND",
+    "model": "monthly",
+    "url": "https://www.sapo.vn/bang-gia-sapo-omni.html",
+    "as_of": null
+   },
+   {
+    "name": "Sapo Omni (multicanal, hasta 4 canales)",
+    "price_local": 600000,
+    "currency": "VND",
+    "model": "monthly",
+    "url": "https://www.sapo.vn/bang-gia-sapo-omni.html",
+    "as_of": null
+   },
+   {
+    "name": "KiotViet (desde; solo una fuente de terceros, sin tabla oficial)",
+    "price_local": 200000,
+    "currency": "VND",
+    "model": "monthly",
+    "url": "https://www.sapo.vn/blog/phan-mem-quan-ly-ban-hang-da-kenh-tot-nhat",
+    "as_of": null
+   },
+   {
+    "name": "BigSeller (estima ganancia por pedido Shopee/Lazada/TikTok; precio/plan gratis no verificado)",
+    "price_local": null,
+    "currency": "VND",
+    "model": "freemium",
+    "url": "https://help.bigseller.pro/en_US/detail/4113",
+    "as_of": null
+   },
+   {
+    "name": "MISA eShop (multicanal para hogares de negocio; precio no obtenido)",
+    "price_local": null,
+    "currency": "VND",
+    "model": "annual",
+    "url": "https://www.misaeshop.vn/?p=24283",
+    "as_of": null
+   }
+  ],
+  "free_alternatives": [
+   {
+    "name": "EchoTik TikTok Shop calculator",
+    "url": "https://echotik.live/tool/calculator",
+    "note": "Gratis, sin cuenta, un producto a la vez; tarifas de vendedores extranjeros, sin retencion vietnamita."
+   },
+   {
+    "name": "Marketplace fee calculator (GoLocad)",
+    "url": "https://golocad.com/tools/marketplace-fee-calculator/",
+    "note": "Calculadora generica gratuita; sin evidencia de cubrir Shopee/TikTok Vietnam."
+   },
+   {
+    "name": "BRP True Profit Calculator (Malasia)",
+    "url": "https://brp.com.my/wp-content/uploads/tools/brp-true-profit-calculator.html",
+    "note": "Gratis, web, un pedido, en MYR, con tarifas junio 2026 de Malasia; no sirve directo para Vietnam."
+   },
+   {
+    "name": "Calculo manual en hoja de calculo",
+    "url": null,
+    "note": "Formula sencilla (precio - comision - 1,5% - costo - envio); las tarifas hay que sacarlas de Seller Center. No es una fuente citada sino lo que sugiere el resumen de busqueda."
+   }
+  ],
+  "pain_evidence": [
+   {
+    "url": "https://daibieunhandan.vn/shopee-bi-co-quan-chuc-nang-tuyt-coi-hoan-ap-dung-phi-moi-voi-hang-tram-nghin-nha-ban-hang-10418463.html",
+    "what": "Titular: Shopee recibe llamado de atencion de las autoridades ('tuyt coi') y difiere nuevos cargos para 'cientos de miles' de vendedores.",
+    "date": "2026-05"
+   },
+   {
+    "url": "https://moit.gov.vn/tin-tuc/uy-ban-canh-tranh-quoc-gia-yeu-cau-shopee-khong-ap-dung-cac-loai-phi-moi-doi-voi-nguoi-ban-hang.html",
+    "what": "Bo Cong Thuong (28/05/2026): en mayo la Comision recibio muchas quejas de vendedores sobre nuevos cargos, que elevan costos operativos y precios.",
+    "date": "2026-05"
+   },
+   {
+    "url": "https://digitalpolicyalert.org/event/40402-competition-commission-requested-tiktok-shop-to-provide-details-on-planned-fee-adjustments",
+    "what": "Digital Policy Alert: la Comision pidio a TikTok Shop detalles de los ajustes de tarifa previstos y entrevista vendedores.",
+    "date": "2026-05"
+   },
+   {
+    "url": "https://tuoitre.vn/tiktok-shop-tang-phi-300-san-thanh-loc-nhieu-nguoi-ban-hang-lao-dao-20250805230653437.htm",
+    "what": "Tuoi Tre: 'TikTok Shop tang phi 300%: san thanh loc, nhieu nguoi ban hang lao dao' (episodio previo de aumento).",
+    "date": "2025-08"
+   }
+  ],
+  "regional_price_note": "Ancla en VND: Sapo Start Up 170.000 VND/mes, Pro 249.000, Omni 600.000, Growth 999.000 VND/mes (la pagina oficial; los resultados son inconsistentes); KiotViet desde ~200.000 VND/mes segun una fuente de terceros. Quien ya paga 170.000-600.000 VND/mes por software multicanal puede ver un pago unico de USD 20 como razonable solo si no necesita inventario; para vendedores muy pequenos sin ese software es probablemente caro y requeriria precio regional en VND. No converti a USD.",
+  "regulatory_note": "Tema tributario: la retencion de 1,5% (Decreto 117/2025, vigente 01/07/2025) es una tasa sobre ingreso; fuentes que la explican son medios y software contable. No verifique cambios del regimen de hogares de negocio en 2026. Encuadre: es una calculadora de estimacion, conviene aviso de 'verifique con su contador'; no vi un encuadre herramienta vs asesoria en las fuentes. Ademas el regulador (Comision Nacional de Competencia) esta interviniendo en tarifas de plataformas.",
+  "differentiator": "Calculadora offline por pedido con tabla de tarifas editable por el usuario (porque las tarifas cambian y estan bajo escrutinio), con retencion 1,5%, costo de COD/procesamiento y exportacion CSV; el hueco es la ausencia de una opcion gratuita en vietnamita con ese calculo exacto. Debil frente a Sapo/MISA/BigSeller, que ya estiman ganancia dentro de su suscripcion; la defensa seria 'sin suscripcion, sin cuenta, tus datos locales'.",
+  "new_confidence": "low",
+  "confidence_basis": "Dolor y atencion regulatoria reales y recientes (mayo 2026), pero el desenlace de tarifas es incierto (Shopee difirio el cargo nuevo), no hay evidencia de WTP para una herramienta puntual, y software multicanal suscripcion cubre el calculo.",
+  "recommendation": "rework",
+  "recommendation_reason": "El dolor es real pero la clave es una calculadora de tarifas editable y sin suscripcion en VND, no una tabla fija, con riesgo alto de mantenimiento y sin WTP demostrado."
+ },
+ {
+  "id": "jp-pdf-tools-lifetime",
+  "verified": "partly",
+  "checks": [
+   {
+    "claim": "App Store JP: 'PDF コンバイナー' a JPY 300 con compra unica; conserva el indice al combinar",
+    "result": "confirmed",
+    "source_url": "https://apps.apple.com/jp/app/pdf-%E3%82%B3%E3%83%B3%E3%83%90%E3%82%A4%E3%83%8A%E3%83%BC-%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%81%AE%E3%83%9E%E3%83%BC%E3%82%B8/id1529734757",
+    "note": "La ficha muestra JPY 300, descripcion 'una vez comprado funciona en cualquier lugar' y conserva el outline (indice). No pude confirmar que no tenga compras internas adicionales."
+   },
+   {
+    "claim": "App Store JP: 'PDF 結合 - PDF 書き込みとPDF編集' con 'Life Time Premium' a JPY 3,000 junto con planes semanales, mensuales y anuales",
+    "result": "confirmed",
+    "source_url": "https://apps.apple.com/jp/app/pdf-%E7%B5%90%E5%90%88-pdf-%E6%9B%B8%E3%81%8D%E8%BE%BC%E3%81%BF%E3%81%A8pdf%E7%B7%A8%E9%9B%86/id1585688820",
+    "note": "App gratuita (desarrollador Mobileappstudio) con compras internas: Life Time Premium JPY 3,000 mas planes semanal/mensual/anual. Es un embudo freemium, no una app de pago unico puro."
+   },
+   {
+    "claim": "Cisdem PDF Compressor listado a $19.99 para Apple y Windows; licencia (unico o suscripcion) no confirmada",
+    "result": "contradicted",
+    "source_url": "https://www.getapp.com/all-software/a/cisdem-pdf-compressor/",
+    "note": "Los agregadores (GetApp/Capterra/SoftwareSuggest) listan USD 19.99 POR ANO para 1 Mac/PC (USD 27.99 para 2, USD 49.99 para 5, tambien por ano). Es decir, no es un ancla de pago unico. No vi la tienda oficial de Cisdem, asi que queda como 'segun agregadores'."
+   },
+   {
+    "claim": "Resultados de busqueda dominados por fichas de tienda; sin quejas concretas",
+    "result": "confirmed",
+    "source_url": "https://www.itreview.jp/products/foxit-editor/reviews/111913",
+    "note": "La unica senal independiente de preferencia por licencia perpetua que vi: resenas de usuarios en ITreview de Foxit PDF Editor valoran que sea licencia perpetua y no suscripcion. Resto de lo encontrado: notas de prensa de vendedores (p. ej. dreamnews: 'cansado de editores PDF por suscripcion mensual?'), que son marketing, no dolor independiente."
+   }
+  ],
+  "alternatives": [
+   {
+    "name": "PDF コンバイナー - ファイルのマージ (iOS/Mac, solo unir)",
+    "price_local": 300,
+    "currency": "JPY",
+    "model": "one-time",
+    "url": "https://apps.apple.com/jp/app/pdf-%E3%82%B3%E3%83%B3%E3%83%90%E3%82%A4%E3%83%8A%E3%83%BC-%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%81%AE%E3%83%9E%E3%83%BC%E3%82%B8/id1529734757",
+    "as_of": null
+   },
+   {
+    "name": "PDF 結合 - PDF 書き込みとPDF編集, Life Time Premium (IAP)",
+    "price_local": 3000,
+    "currency": "JPY",
+    "model": "one-time",
+    "url": "https://apps.apple.com/jp/app/pdf-%E7%B5%90%E5%90%88-pdf-%E6%9B%B8%E3%81%8D%E8%BE%BC%E3%81%BF%E3%81%A8pdf%E7%B7%A8%E9%9B%86/id1585688820",
+    "as_of": null
+   },
+   {
+    "name": "PDF Combiner - Merge Files, suscripcion anual (IAP; tambien JPY 150/semana y JPY 500/mes)",
+    "price_local": 2500,
+    "currency": "JPY",
+    "model": "annual",
+    "url": "https://apps.apple.com/jp/app/pdf-combiner-merge-files/id6751934461",
+    "as_of": null
+   },
+   {
+    "name": "Cisdem PDF Compressor, 1 Mac o PC (segun agregadores)",
+    "price_local": 19.99,
+    "currency": "USD",
+    "price_usd": 19.99,
+    "model": "annual",
+    "url": "https://www.getapp.com/all-software/a/cisdem-pdf-compressor/",
+    "as_of": null
+   },
+   {
+    "name": "Adobe Acrobat Standard individual, plan mensual (tras alza del 1-abr-2026; antes JPY 2,480)",
+    "price_local": 3300,
+    "currency": "JPY",
+    "model": "monthly",
+    "url": "https://saas.imitsu.jp/cate-document-management/service/3500/price",
+    "as_of": "2026-04"
+   },
+   {
+    "name": "Adobe Acrobat Pro individual, pago anual por adelantado (tras alza; antes JPY 23,760)",
+    "price_local": 30360,
+    "currency": "JPY",
+    "model": "annual",
+    "url": "https://saas.imitsu.jp/cate-document-management/service/3500/price",
+    "as_of": "2026-04"
+   },
+   {
+    "name": "Wondershare PDFelement (licencia perpetua para Windows/Mac; precio en JPY no visto)",
+    "price_local": null,
+    "currency": "JPY",
+    "model": "one-time",
+    "url": "https://pdf.wondershare.jp/upgrade-pdfelement13-with-discount.html",
+    "as_of": null
+   },
+   {
+    "name": "Foxit PDF Editor (licencia perpetua; precio en JPY de consumidor no visto; una fuente cita mantenimiento ~USD 42/usuario/anio)",
+    "price_local": null,
+    "currency": "JPY",
+    "model": "one-time",
+    "url": "https://costbench.com/software/document-management/foxit-pdf-editor",
+    "as_of": null
+   }
+  ],
+  "free_alternatives": [
+   {
+    "name": "PDF24 Creator (escritorio, Windows)",
+    "url": "https://dev.to/xidiri4522/merge-pdf-files-without-internet-free-offline-tools-that-work-in-2025-30d3",
+    "note": "Gratis, sin marca de agua, une/divide/comprime; version de escritorio se recomienda para documentos sensibles (la URL citada es un articulo que lo lista; no vi la pagina oficial)."
+   },
+   {
+    "name": "PDFsam (union por lotes, offline)",
+    "url": "https://dev.to/xidiri4522/merge-pdf-files-without-internet-free-offline-tools-that-work-in-2025-30d3",
+    "note": "Recomendado para unir muchos archivos; offline."
+   },
+   {
+    "name": "Vista Previa de macOS",
+    "url": "https://smallppt.com/ja/blog/ai-tools/best-pdf-merge-tool-ja",
+    "note": "Unir PDFs arrastrando miniaturas; ya viene instalado."
+   },
+   {
+    "name": "CubePDF (gratis, offline, Japon)",
+    "url": "https://www.itreview.jp/products/cubepdf-page/reviews/23140",
+    "note": "Listado en ITreview como software offline; limites no vistos."
+   },
+   {
+    "name": "Smallpdf Merge (web, en japones)",
+    "url": "https://smallpdf.com/jp/merge-pdf",
+    "note": "Online; sube el archivo (el dolor de privacidad que cita la idea)."
+   },
+   {
+    "name": "PDNob (version gratuita parece de prueba)",
+    "url": "https://www.pdnob.com/jp/merge-and-split/free-pdf-merging-software.html",
+    "note": "Offline; la version gratis seria demo; hay opcion de compra unica (precio no visto)."
+   }
+  ],
+  "pain_evidence": [
+   {
+    "url": "https://www.itreview.jp/products/foxit-editor/reviews/111913",
+    "what": "Resena de usuario de Foxit PDF Editor en ITreview: valora que sea licencia perpetua y no suscripcion.",
+    "date": null
+   },
+   {
+    "url": "https://www.dreamnews.jp/press/0000351771",
+    "what": "Nota de prensa de un vendedor: 'Cansado de editores PDF por suscripcion mensual? No lo uso casi nunca; quiero comprar una vez' (marketing, no dolor independiente).",
+    "date": null
+   }
+  ],
+  "regional_price_note": "Anclas en JPY: utilidad de unir PDFs JPY 300 pago unico; app freemium con Life Time Premium JPY 3,000 y suscripciones (JPY 150/semana, JPY 500/mes, JPY 2,500/anio en otra app); Acrobat Standard individual JPY 3,300/mes y Acrobat Pro JPY 30,360/anio tras alza del 1-abr-2026 por el yen; Acrobat no ofrece licencia perpetua. Un precio local de ~JPY 3,000 ya existe como 'vitalicio' en iOS, pero compite con gratis (PDF24, PDFsam, Vista Previa) y con una utilidad de JPY 300. No convierto a USD.",
+  "regulatory_note": null,
+  "differentiator": "ninguno defendible: unir/dividir/comprimir offline ya lo cubren PDF24 Creator, PDFsam y la Vista Previa de macOS gratis, y hay apps de pago unico a JPY 300. Solo habria hueco en un flujo muy especifico (no investigado).",
+  "new_confidence": "low",
+  "confidence_basis": "Precios de competidores confirmados en JPY, pero no hay dolor independiente, las alternativas gratuitas offline son fuertes y el unico ancla USD 19.99 resulto ser anual.",
+  "recommendation": "drop",
+  "recommendation_reason": "Mercado saturado de herramientas gratuitas y utilidades de JPY 300, sin dolor documentado ni diferenciador."
+ }
+]

@@ -1,0 +1,317 @@
+{
+  "meta": {
+    "generated": "2026-10-08",
+    "method": "48 consultas WebSearch exitosas (presupuesto compartido agotado). WebFetch fallo en todos los dominios probados (getaddrinfo ENOTFOUND) y curl por el proxy devolvio 403 (politica de la organizacion), asi que NINGUNA pagina fue leida directamente. Todo numero viene del texto resumido que devolvio WebSearch (fuente secundaria); las URLs son las que devolvio esa busqueda. Donde la asociacion numero-URL es aproximada se indica.",
+    "note_on_rating": "Rating/numero de valoraciones = lo que el resumen de busqueda atribuye a la pagina; pueden estar desactualizados."
+  },
+  "categories_that_sell": [
+    {
+      "category": "Utilidades de nicho para Mac de un solo proposito, $10-$20 (disco, PDF, conversion)",
+      "products": [
+        {
+          "name": "DaisyDisk (analizador de espacio en disco, Mac)",
+          "price_usd": 9.99,
+          "model": "one-time",
+          "url": "https://daisydiskapp.com/support/pricing",
+          "traction_evidence": "Sitio oficial muestra 4.7/5 con 2,676 valoraciones (dato del propio vendedor, sin fecha). Licencia para 5 Macs, garantia 30 dias. Prueba gratis con borrado bloqueado (reporte aleman ene-2024). Ratings: https://daisydiskapp.com/"
+        },
+        {
+          "name": "PDF Squeezer 4 (compresor de PDF, Mac)",
+          "price_usd": 19.99,
+          "model": "one-time",
+          "url": "https://apps.apple.com/us/app/pdf-squeezer-4/id1502111349",
+          "traction_evidence": "Mac App Store: 4.9/5 con ~1.8K valoraciones segun el resumen de busqueda. Una resena en la pagina de la v3 dice que le cobraron mas de lo anunciado (https://apps.apple.com/za/app/pdf-squeezer/id504700302?mt=12)."
+        },
+        {
+          "name": "Permute 4 (conversor de audio/video/imagen, Mac)",
+          "price_usd": 14.99,
+          "model": "one-time",
+          "url": "https://site2021.charliemonroe.net/permute",
+          "traction_evidence": "Licencia permanente sin suscripcion; Permute 3 sigue a $14.99 en Mac App Store (https://apps.apple.com/app/id1444998321). Permute 4 exige macOS 26+ y Apple Silicon. No encontre numero de valoraciones ni ventas."
+        },
+        {
+          "name": "Disk Space Analyzer: Inspector (Nektony)",
+          "price_usd": 19.99,
+          "model": "one-time",
+          "url": "https://apps.apple.com/us/app/disk-space-analyzer-inspector/id446243721?mt=12",
+          "traction_evidence": "Gratis con compra in-app: licencia vitalicia Pro $19.99 vs $9.99/ano o $4.99/mes. No vi numero de valoraciones. Util como evidencia de que el desarrollador ofrece el vitalicio a $19.99 junto a suscripcion."
+        }
+      ],
+      "why_it_sells": "Resuelven un dolor concreto que el SO no cubre bien (ver que ocupa disco, comprimir PDF con control de calidad, convertir medios). La mejor evidencia de traccion de toda la investigacion esta aqui (DaisyDisk 2,676 y PDF Squeezer ~1.8K valoraciones a 4.7-4.9). OJO: el precio observado es $10-$20; $20 es el techo, no el piso, para utilidades de un solo proposito."
+    },
+    {
+      "category": "Capturas/anotaciones de pantalla para Mac",
+      "products": [
+        {
+          "name": "CleanShot X",
+          "price_usd": 29,
+          "model": "one-time",
+          "url": "https://trustradius.com/products/cleanshot-x/pricing",
+          "traction_evidence": "Licencia perpetua por Mac con 1 ano de actualizaciones; renovar updates $19/ano; app sigue funcionando sin renovar. Garantia 30 dias segun una resena. Confirmado tambien en https://toolradar.com/tools/cleanshot/pricing. No encontre numero de valoraciones. Fuentes en conflicto sobre si hay prueba gratis."
+        },
+        {
+          "name": "Xnapper",
+          "price_usd": 29.99,
+          "model": "one-time",
+          "url": "https://xnapper.com/pricing",
+          "traction_evidence": "Pago unico con 1 ano de updates, renovacion al 60% del precio, garantia 30 dias (pagina oficial, aunque el resumen no mostro los precios finales; $29.99 viene de https://gappsy.com/tools/xnapper/, actualizado 19-jul-2026; otras fuentes dan tiers $54.99 y $79.99). Lanzamiento 2022: precio normal $29, early bird $20 (https://tonydinh.gumroad.com/l/xnapper-license-key/early-bird). Ingresos: ~$6k/mes segun https://startupsemail.substack.com/p/100000-revenue-with-a-simple-mac; otro resumen no mapeado a URL dice MRR promedio ~$4,000 y venta del producto por $150,000 (no verificado)."
+        }
+      ],
+      "why_it_sells": "Herramienta de uso diario para quien trabaja en pantalla (soporte, redes, docs); el patron repetido es $29 + 1 ano de updates, y hay ingresos autodeclarados de miles de dolares al mes en Xnapper."
+    },
+    {
+      "category": "Utilidades para desarrolladores y herramientas con IA local (Mac)",
+      "products": [
+        {
+          "name": "DevUtils",
+          "price_usd": 29,
+          "model": "one-time",
+          "url": "https://devutils.com/pricing/",
+          "traction_evidence": "Basic $29 por dispositivo macOS, licencia perpetua, 1 ano de updates, renovacion al 60%, garantia 30 dias, funciona offline. Tambien en Setapp. No vi cifras de ventas."
+        },
+        {
+          "name": "TypingMind (cliente de chat IA, licencia individual Standard)",
+          "price_usd": 39,
+          "model": "one-time",
+          "url": "https://store.typingmind.com",
+          "traction_evidence": "Standard $39 / Extended $79 / Premium $99 (Premium puede ser promo 50%), garantia 14 dias. Ingresos: el titulo de https://starterstory.com/typingmind-breakdown dice $500K en un ano; otro resumen dice $1M anual en 20 meses (autodeclarado; secundario). Precio por encima del rango $10-$40 en tiers altos."
+        },
+        {
+          "name": "MacWhisper Pro (transcripcion local)",
+          "price_usd": 69,
+          "model": "one-time",
+          "url": "https://www.getvoibe.com/resources/macwhisper-pricing/",
+          "traction_evidence": "EUR 59 vitalicio en Gumroad (~$69, conversion aproximada del resumen). 57,574 descargas y ~$100,000 en ingresos segun https://startupsemail.substack.com/p/100000-revenue-with-a-simple-mac (newsletter, 2023). Version Mac App Store: $6.99/mes, $29.99/ano o $99.99 unico. Fuera del rango $10-$40."
+        }
+      ],
+      "why_it_sells": "Comprador profesional con presupuesto de herramientas; precios $29-$69 con licencia perpetua + ventana de updates de 1 ano. Es la categoria con mas ingresos declarados, pero los productos mas exitosos cobran mas de $20."
+    },
+    {
+      "category": "Automatizacion y herramientas de escritorio para power users (Mac)",
+      "products": [
+        {
+          "name": "Keyboard Maestro 11",
+          "price_usd": 36,
+          "model": "one-time",
+          "url": "https://www.keyboardmaestro.com/main/store",
+          "traction_evidence": "$36 viene de agregador (https://atsoho.com/apps/p/keyboard-maestro) citando precio oficial a 28-jul-2026; la pagina de tienda no mostro precio al resumen. Hasta 5 Macs por usuario, upgrade $25 entre versiones mayores. Resena de 2021 ya citaba $36 para v10 (estabilidad del precio)."
+        },
+        {
+          "name": "Hazel 6",
+          "price_usd": 42,
+          "model": "one-time",
+          "url": "https://www.noodlesoft.com/manual/hazel/installation-setup/purchase-a-hazel-license",
+          "traction_evidence": "$42 usuario unico (2 maquinas), $65 familiar, upgrade $20 desde versiones previas. Promo de 20 aniversario al 35% ($27.30) segun https://www.mydealz.de/deals/macos-hazel-6-35-2835091. Traccion = longevidad (~20 anos y 6 versiones mayores); sin cifras de ventas."
+        },
+        {
+          "name": "BetterTouchTool",
+          "price_usd": 24,
+          "model": "one-time",
+          "url": "https://tech.yahoo.com/general/articles/why-think-bettertouchtool-mac-essential-173012620.html",
+          "traction_evidence": "Licencia Standard $12 (2 anos de updates) y Lifetime $24 (el doble) segun un articulo de How-To Geek de 2025 citado en el resumen (asociacion de URL aproximada). En 2018 el vitalicio costaba $20 (https://forum.keyboardmaestro.com/t/bettertouchtool-upgrade-2018/9476): subio con el tiempo. Tambien en Setapp (https://atsoho.com/apps/p/bettertouchtool)."
+        }
+      ],
+      "why_it_sells": "Usuarios avanzados pagan $24-$42 por herramientas que automatizan su flujo; precios han subido con los anos (BTT $20->$24, versiones mayores cobradas aparte). Traccion es de longevidad, no de ratings."
+    },
+    {
+      "category": "Extensiones de navegador con licencia vitalicia para nichos profesionales",
+      "products": [
+        {
+          "name": "CSS Scan",
+          "price_usd": 80,
+          "model": "one-time",
+          "url": "https://www.indiehackers.com/post/i-made-over-100-000-with-a-browser-extension-css-scan-ama-04f2bde465",
+          "traction_evidence": "Fundador autodeclara >$70,000 en ventas (9 meses para los primeros $10k, ~9 meses mas para $60k; ~$4,000/mes) en https://www.indiehackers.com/product/css-scan/70-000-in-revenue-with-css-scan-browser-extension--Lz3GwbeelZSzaT8Vkgt y luego >$100,000 acumulados con usuarios de 116 paises. Precio vitalicio $80 en el AMA (una resena en Chrome Web Store menciona $67; otros resumenes dicen $69: conflicto)."
+        },
+        {
+          "name": "Night Eye (modo oscuro)",
+          "price_usd": 40,
+          "model": "one-time",
+          "url": "https://alternativeto.net/software/night-eye/about/",
+          "traction_evidence": "Vitalicio $40 (AlternativeTo); oferta StackSocial a $19.99 (50% off) https://stacksocial.com/sales/lifetime-of-night-eye-pro-protect-your-eyes-enable-dark-mode-on-any-website; codigos canjeados son venta final. Sin cifras de usuarios vistas."
+        },
+        {
+          "name": "Amazon Data Scraper",
+          "price_usd": 29,
+          "model": "one-time",
+          "url": "https://chromewebstore.google.com/detail/amazon-data-scraper/eknchphddjiibifimapmpjkkbgcgiajk",
+          "traction_evidence": "Planes desde $3.99/mes o upgrade vitalicio $29 (texto del propio listado). Sin cifras de traccion vistas."
+        },
+        {
+          "name": "superagent (cookie consent automatico)",
+          "price_usd": 29.99,
+          "model": "one-time",
+          "url": "https://chromewebstore.google.com/detail/superagent-automatic-cook/neooppigbkahgfdhbpbhcccgpimeaafi",
+          "traction_evidence": "Mensual, anual y vitalicio; precio vitalicio ~$29.99 (notacion de moneda confusa en el listado). Sin traccion vista."
+        }
+      ],
+      "why_it_sells": "Funciona para herramientas de trabajo con ROI claro (diseno/dev, scraping). Pero el panorama general es duro: ver categories_that_dont y limitations; solo CSS Scan tiene ingresos publicados."
+    },
+    {
+      "category": "Plantillas/sistemas de productividad (Notion, hojas de calculo) en Gumroad, $5-$21",
+      "products": [
+        {
+          "name": "Ultimate Brain (Notion)",
+          "price_usd": 12.91,
+          "model": "one-time",
+          "url": "https://insightraider.com/en/answers/can-you-sell-notion-templates-on-gumroad",
+          "traction_evidence": "Tabla de InsightRaider: ~15,093 ventas a $12.91 (estimacion del sitio = ventas x precio, margen +-15-20% declarado; sitio con interes comercial)."
+        },
+        {
+          "name": "Ultimate Annual Budget Spreadsheet",
+          "price_usd": 21,
+          "model": "one-time",
+          "url": "https://marketsy.ai/tools/gumroad-trends/category/Budget%20planner",
+          "traction_evidence": "Marketsy estima ingresos minimos $1,323+ (implica al menos ~63 ventas; aritmetica mia). Monthly Budget Spreadsheet $9 con $216+ en la misma pagina. Estimaciones de terceros."
+        },
+        {
+          "name": "Annual Budget Spreadsheet (HBA Sheets)",
+          "price_usd": 14.99,
+          "model": "one-time",
+          "url": "https://hbasheets.gumroad.com/l/annual-budget",
+          "traction_evidence": "20 pestanas, solo Google Sheets; sin ratings vistos. Categoria de Gumroad lista >151 productos de presupuesto (https://gumroad.com/business-and-money/personal-finance?tags=budget)."
+        }
+      ],
+      "why_it_sells": "Compra de impulso a precio bajo con entrega inmediata; un unico best seller (~15K ventas) a ~$13. Pero la competencia es enorme y casi todo vive entre $4 y $15 (ver categories_that_dont)."
+    },
+    {
+      "category": "Herramientas de estudio (solo 1 dato verificado)",
+      "products": [
+        {
+          "name": "AnkiMobile (iOS)",
+          "price_usd": 24.99,
+          "model": "one-time",
+          "url": "https://forums.ankiweb.net/t/why-is-this-app-this-expensive-in-app-store/67593",
+          "traction_evidence": "Pago unico $24.99 sin prueba ni suscripcion; las compras financian el desarrollo del Anki gratuito. Opiniones mixtas en foros (un usuario dice que si lo usas todo el dia no es tanto; otro en Turquia lo ve inasequible a ~$31). Alternativas gratis: AnkiWeb en Safari, AnkiDroid en Android. Sin numero de ventas."
+        }
+      ],
+      "why_it_sells": "Hay disposicion a pagar ~$25 una vez cuando el producto es la herramienta de referencia de un habito frecuente (estudio diario) y la version gratuita de otras plataformas es parte del ecosistema. Un solo caso: no generalizar."
+    }
+  ],
+  "categories_that_dont": [
+    {
+      "category": "PDF basico (unir, dividir, comprimir rapido, lector/editor generico)",
+      "evidence_url": "https://apps.apple.com/us/app/pdfgear-pdf-editor-reader/id6469021132",
+      "why": "PDFgear es gratis en Mac con 4.7/5 y 788 valoraciones; un usuario dijo que aceptaria un precio justo pero no suscripcion. Preview de macOS une y comprime PDF gratis (https://support.apple.com/guide/preview/prvw1509); Smallpdf admite que Preview reduce calidad de imagen de forma agresiva (https://smallpdf.com/blog/reduce-pdf-file-size-mac-preview), asi que el hueco pagable es calidad/control (como PDF Squeezer a $19.99), no la funcion basica. Los editores completos se mueven a suscripcion: PDF Expert vitalicio Mac $139.99 (4.7, 16.6K valoraciones) pero la version nueva es gratis + suscripcion Premium (https://apps.apple.com/us/app/pdf-expert-edit-and-sign-pdf/id1055273043?mt=12)."
+    },
+    {
+      "category": "Gestores de ventanas / snapping",
+      "evidence_url": "https://sites.google.com/view/rectangle-app/rectangle-vs-magnet-mac-window-manager",
+      "why": "Rectangle es gratis y open source (MIT); en Windows PowerToys FancyZones es gratis (https://www.hanselman.com/blog/windows-powertoys-fancyzones-is-the-essential-window-manager-for-windows-10). Magnet tiene 4.9/5 con 167K valoraciones (https://apps.apple.com/us/app/magnet/id441258766?mt=12&see-all=reviews&platform=mac) pero a precio bajo: $4.99 segun la comparativa de Rectangle (fuente de terceros) y 9.99 EUR segun prensa alemana (https://www.appgefahren.de/magnet-der-beste-fenster-manager-fuer-den-mac-jetzt-in-version-3-367430.html). Mucho volumen, precio sub-$10."
+    },
+    {
+      "category": "Gestor de portapapeles (historial)",
+      "evidence_url": "https://toolradar.com/tools/maccy/pricing",
+      "why": "Maccy es gratis y MIT (donacion opcional desde $4.99 en Gumroad: https://p0deje.gumroad.com/l/Apsra). Pastebot lanzo en 2016 a ~20 EUR/$19.99 (https://www.appgefahren.de/?p=189426) y Tapbots bajo el precio a $9.99 en pocos dias (https://9to5mac.com/?p=458734). Pastebot 3 (jul-2026) hoy cuesta $39 directo o $2.99/mes / $24.99/ano en App Store (https://macrumors.com/guide/pastebot; asociacion de URL aproximada): solo el producto premium con reglas sobrevive, y sube de precio."
+    },
+    {
+      "category": "Facturacion basica y control de tiempo para freelancers",
+      "evidence_url": "https://www.blog.darwinapps.com/blog/13-best-free-invoice-generators-for-freelancers-and-small-businesses",
+      "why": "Wave, Zoho Invoice, Invoice Ninja (self-host gratis), InvoiceSimple y PayPal Invoicing cubren facturacion basica gratis; se paga por conciliacion bancaria, volumen o personalizacion (https://invoicequickly.com/blog/best-wave-alternatives). En tiempo, Clockify tiene plan gratis ilimitado; Toggl $9.99 y Harvest $12 por usuario/mes (resumen de busqueda; URL no mapeada con certeza). Existen opciones de pago unico ($19.99 Merci Invoice Generator https://merciacademy.gumroad.com/l/enhdc; AI Invoice Maker vitalicio $19.99 con precio lista $39.99 https://www.cultofmac.com/deals/ai-invoice-maker-deal; UctoX $19.99 antes $49 https://www.macworld.com/article/615556/manage-invoices-finances-and-more-with-this-20-app.html; Chronoid $40 https://toolradar.com/tools/chronoid; OfficeTime $69 https://officetime.net/dev/?p=6457; InvoiceQuick $47 https://subscribed.fyi/?p=85792) pero NO encontre ninguna senal de traccion (ratings, ventas, ingresos) para ninguna: precio existe, demanda no verificada."
+    },
+    {
+      "category": "Hojas/plantillas de finanzas personales y presupuesto a $20 o mas",
+      "evidence_url": "https://gumroad.com/business-and-money/personal-finance?tags=budget",
+      "why": "Gumroad lista >151 productos de presupuesto; precios vistos $3.99-$15 (Easy Budget Planner $3.99, MyBudgeting $5.90 https://mybudgeting.gumroad.com/l/template, Monthly Money Tracker $8, HBA Sheets $14.99+) y conteos de resenas de 1 a 7 (5.0 con 3 resenas, etc.). Solo vi un producto a $21 (estimacion de $1,323+ en Marketsy). En apps: Budgets Pro iOS $4.99, Nudget 3.49 EUR (pagos unicos baratos), YNAB y Quicken por suscripcion (https://pocketclear.app/blog/free-budget-app-no-subscription.html)."
+    },
+    {
+      "category": "Extensiones de navegador en general (como negocio de pago)",
+      "evidence_url": "https://bigideasdb.com/how-to-monetize-a-chrome-extension",
+      "why": "BigIdeasDB (n=112, sept-2026): 57.1% de las extensiones gana $0, solo 6.3% supera $1,000/mes, promedio ~$295/mes. Desarrollador de 5 extensiones reporta conversion gratis-a-pago 0.8% (0.5-2% 'realista') https://dev.to/_350df62777eb55e1/real-numbers-freemium-chrome-extension-monetization-after-6-months-5hga. Datos 2019-2020: ~8.9% de extensiones de pago pero <2.6% de instalaciones; 89% de los precios unicos eran $0.99 (https://debugbear.com/blog/counting-chrome-extensions). Google elimino los pagos del Chrome Web Store en 2020 (https://developer.chrome.com/webstore/cws-payments-deprecation): hay que cobrar por fuera. ExtensionPay reporto solo ~$240/mes en feb-2022, parte de ventas unicas que decaen (https://www.indiehackers.com/product/extensionpay/-MfDRWYFJYm5SfeA9MgQ)."
+    },
+    {
+      "category": "Utilidades Windows (renombrado de archivos, conversores) y utilidades Android de pago unico",
+      "evidence_url": "https://apps.microsoft.com/detail/9nw34mlpcvjs?hl=en-US&gl=US",
+      "why": "Microsoft Store: File Renamer X $14.99 (4.6, solo 22 valoraciones), File Sorcerer $4.99, File Rename Batch $4.99 (https://apps.microsoft.com/detail/9p894vl76mgv?hl=en-US&gl=US), Mass Renamer $9.49, mientras Advanced Renamer es gratis (4.2, 23 valoraciones, https://apps.microsoft.com/detail/xp9md3s1kfcph1?hl=en-US&gl=US) y Convertify gratis (3.8, 11). No aparecio ningun conversor de pago unico. Android: Tasker ~$3 de pago unico con updates de por vida segun su desarrollador en 2019 (https://axebps-redlib.hf.space/r/tasker/comments/da49u2); Poweramp $4.99 en 2012, rebajas a $2.49 (https://www.androidpolice.com/2012/03/02/poweramp-has-a-good-year-goes-half-price-2-50-for-48-hours-to-celebrate/). Techo observado muy por debajo de $20 (datos antiguos en Android)."
+    }
+  ],
+  "price_point_findings": [
+    {
+      "finding": "Tabulacion propia (muestra NO aleatoria, sesgada a apps indie de Mac que surgieron en las busquedas) de 13 utilidades de pago unico con precio visto: $9.99 DaisyDisk; $14.99 Permute; $19.99 PDF Squeezer 4 y Disk Analyzer vitalicio; ~$24 BetterTouchTool vitalicio; $24.99 Anki iOS; $29 CleanShot X y DevUtils; $29.99 Xnapper; $36 Keyboard Maestro; $39 Pastebot 3 y TypingMind Standard; $42 Hazel. Es decir: 2 productos <=$15, 4 entre $19.99 y $24.99, 3 en $29-$29.99, 4 en $36-$42. Los de un solo proposito se agrupan en $10-$25; los 'power tools' en $29-$42.",
+      "url": "https://daisydiskapp.com/support/pricing"
+    },
+    {
+      "finding": "Patron de licencia que se repite en los indie apps que mas cobran: $29-$29.99 con 1 ano de actualizaciones incluido, la app sigue funcionando sin renovar, renovacion de updates ~60% del precio (Xnapper, DevUtils) o $19/ano (CleanShot X, Pastebot 3). Versiones mayores cobradas aparte (Hazel upgrade $20, Keyboard Maestro $25, Pastebot 2->3 $12.99).",
+      "url": "https://devutils.com/pricing/"
+    },
+    {
+      "finding": "NO encontre evidencia directa de que $19/$20/$29 convierta mejor que $9 o $49 (ningun A/B test ni cohorte). Lo mas cercano: (a) Jeff Vogel (juegos, no utilidades) subio de $25 a $28 y dice que sus ingresos aumentaron, sin cifras; (b) un resumen de entrevista dice que una utilidad de Windows paso de $4 a $20 y las descargas siguieron planas (resumen parcial, no fuente primaria).",
+      "url": "https://www.gamebanshee.com/news/92458-jeff-vogel-indie-games-should-cost-more-part-one.html"
+    },
+    {
+      "finding": "Datos de Gumroad (InsightRaider, 146,271 productos, ingresos estimados = ventas x precio, sitio con interes comercial): productos de $30-$49 promedian 268 ventas vs 313 los de <$5, pero facturan ~$15M en total vs $1.7M; productos <$10 son ~35% de los productos y solo 0.8% de los ingresos; afirma 28% mas conversion en $30-$49 que en <$10. Para plantillas Notion: individuales $9-$29, bundles $30-$47. El mismo sitio, con 10,177 vendedores, llama 'zona muerta' al rango $9-$49 como precio del primer producto (medicion distinta). Conclusion prudente: bajo $10 casi no genera ingresos en Gumroad; $20 queda en medio y no hay dato especifico de $19-$29.",
+      "url": "https://insightraider.com/en/answers/can-you-set-your-own-prices-on-gumroad"
+    },
+    {
+      "finding": "Gumroad global (profitable.app, ~3.8M productos activos segun el resumen): precio mediano de un producto de pago es $7 y ~2/3 de los productos cuestan <$10. Es decir, $20 esta bien por encima de la mediana de la plataforma.",
+      "url": "https://profitable.app/gumroad/stats"
+    },
+    {
+      "finding": "Hilo de Hacker News 'Would you pay $19 for this Mac menubar app?' (TotalsApp, tablero de ingresos en la barra de menu, pago unico $19): comentarios escepticos, uno dice que nadie dice que no cuando no pone dinero, y que los dashboards son 'vanity metric'; otros pagarian si fuera realmente util. Es opinion hipotetica, no ventas: el escepticismo recae en la necesidad, no en los $19.",
+      "url": "https://hn.svelte.dev/item/42482286"
+    },
+    {
+      "finding": "AppSumo: el Tier 1 de ofertas recientes ronda $59 (ejemplos 2026; $49 en datos de 2017; muestra pequena y no aleatoria), y una app de captura como Xnapper llego a venderse a $5 con codigo limitado. Los precios de AppSumo son de descuento y no son comparables con precio de lista.",
+      "url": "https://daveswift.com/appsumo-sumo-day-2026/"
+    },
+    {
+      "finding": "Alternativa de suscripcion que compite con el pago unico: Setapp cobra ~$9.99/mes (Mac) por ~250 apps (otras fuentes dan $8.99-$14.99; datos en conflicto); BetterTouchTool, Permute, DevUtils y Xnapper tambien estan en Setapp.",
+      "url": "https://setapp.com/app-reviews/setapp-pricing-explained"
+    },
+    {
+      "finding": "Extensiones: precios unicos tipicos $4.99-$29.99 segun una guia de vendedor sin metodologia (https://extensionbooster.net/blog/how-to-monetize-browser-extension-payment-integration-guide/); en 2020 el 89% de los precios unicos del Chrome Web Store era $0.99 (DebugBear). Vitalicios observados en listados de extensiones: $4.99 (SplitPay), $29 (Amazon Data Scraper), ~$29.99 (superagent), $39.99 planeado (Article to PDF), $40 (Night Eye), $80 (CSS Scan).",
+      "url": "https://debugbear.com/blog/counting-chrome-extensions"
+    },
+    {
+      "finding": "Dato historico de lanzamiento (2011, Mac App Store): Pixelmator vendio a $29.99 por tiempo limitado (precio normal $59) y paso $1M en 20 dias; evidencia vieja de que $29.99 vende, no extrapolable a hoy.",
+      "url": "https://www.macstories.net/news/pixelmator-and-mac-app-store-1-million-in-20-days/"
+    }
+  ],
+  "refund_patterns": [
+    {
+      "pattern": "'Peor de lo esperado' / no funciona como se anuncio sin posibilidad de probar: los compradores de Mac App Store no tienen pruebas gratis en muchas apps y los reembolsos pasan por Apple (el desarrollador no ve los registros). Un comentarista de HN dice que reportar la compra como accidental le dio reembolso siempre, normalmente por apps simplemente peores de lo esperado; un usuario de Apple Discussions pidio reembolso de una utilidad de $10.99.",
+      "url": "https://news.ycombinator.com/item?id=3324486"
+    },
+    {
+      "pattern": "Reembolso gestionado por Apple, no por el desarrollador: 1Password y 2Do dicen que no pueden reembolsar compras de Mac App Store; el desarrollador JibApps recomienda probar la demo antes de comprar. Apple evalua caso por caso y recomienda pedir rapido (primeras dos semanas).",
+      "url": "https://www.jibapps.com/?p=3410"
+    },
+    {
+      "pattern": "El reembolso hace de prueba gratuita: AppSumo responde a quejas que los socios no ofrecen pruebas y que su politica de reembolso (60 dias desde la compra, no desde el primer login) permite probar el producto. Reembolsos negados fuera de ventana, incluso cuando la herramienta desaparecio; algunos acuerdos cambiaron sin aviso y no dejaron tiempo de pedir reembolso. Una fuente anonima dice que solo 2.4% pidio reembolso en una venta (sin fuente, anecdotico).",
+      "url": "https://ie.trustpilot.com/review/appsumo.com"
+    },
+    {
+      "pattern": "Ventana de reembolso AppSumo: 60 dias contados desde el pago; ciertas ofertas (descargas digitales, cursos) estan excluidas; hay que leer los Deal Terms.",
+      "url": "https://technicalstudies.in/appsumo-refund-policy-explained/"
+    },
+    {
+      "pattern": "Disputa por el significado de 'vitalicio': (a) la herramienta deja de funcionar o el vendor desaparece (Closely dejo de funcionar en mayo-2026 a menos de 2 anos de la compra, sin respuesta tras 3 escalaciones; Retune abandonado sin soporte); (b) el 'vitalicio' pasa a exigir suscripcion (Adilo, comprador pago $229 y ahora le piden suscripcion; Listnr pidio suscribirse para recibir soporte); (c) un comprador cuenta su tercer vitalicio cancelado en tres anos (Spiritme).",
+      "url": "https://appsumo.com/products/adilo/questions/who-will-refund-customers-for-the-cancel-1533825/"
+    },
+    {
+      "pattern": "Mismo patron en otras resenas de AppSumo: Closely https://appsumo.com/products/closely/reviews/bought-the-lifetime-deal-stopped-workin-386143/ ; Retune https://appsumo.com/products/retune/reviews/lifetime-deal-abandoned-and-no-support-372327/ ; Spiritme https://appsumo.com/products/spiritme/reviews/the-lifetime-deal-was-less-than-2-years-358810/ ; Listnr https://appsumo.com/products/listnr/reviews",
+      "url": "https://appsumo.com/products/retune/reviews/lifetime-deal-abandoned-and-no-support-372327/"
+    },
+    {
+      "pattern": "Desarrollador y tienda se echan la pelota: un comprador de membresia vitalicia de Opal pasó dos meses intentando reembolso con el desarrollador remitiendolo a Apple y Apple de vuelta al desarrollador.",
+      "url": "https://community.opal.so/t/enquiry-about-lifetime-membership/2571"
+    },
+    {
+      "pattern": "Cobro distinto al anunciado / cargos sorpresa: una resena de PDF Squeezer 3 dice que le cobraron mas de lo anunciado; un comentarista de HN dice ver a diario gente pidiendo reembolso cuando la prueba gratuita de una suscripcion cobra. Tambien pagar de nuevo por una version mayor molesta si no se aclaro (version mayor de Hazel/Keyboard Maestro/Pastebot se cobra aparte).",
+      "url": "https://apps.apple.com/za/app/pdf-squeezer/id504700302?mt=12"
+    },
+    {
+      "pattern": "Plantillas/descargas digitales en Gumroad: las politicas de vendedores suelen excluir reclamos genericos ('no funciono', 'no era lo que esperaba') sin detalles, cambio de opinion e incompatibilidad con el software/dispositivo del comprador; Gumroad permite politicas propias, puede reembolsar a su discrecion dentro de 90 dias y el contracargo sigue siendo posible. No encontre ranking de motivos de reembolso.",
+      "url": "https://gumroad.com/help/article/335-custom-refund-policy"
+    },
+    {
+      "pattern": "Compatibilidad y dependencia del servicio del vendedor: el vitalicio de la extension Household Unblocker no promete compatibilidad futura y requiere verificacion online periodica; Permute 4 exige macOS 26+ y Apple Silicon; un articulo advierte que 'pagar una vez' incluye al menos cinco tipos de licencia y define si la app abre en macOS futuros.",
+      "url": "https://gauravtiwari.org/best-one-time-purchase-mac-apps/"
+    },
+    {
+      "pattern": "Mitigacion visible en los vendedores que si cobran $29+: garantia de 30 dias sin preguntas (CleanShot X, Xnapper, DevUtils, DaisyDisk), 14 dias (TypingMind, Watch Later Tidy de Chrome Web Store), prueba de 14 dias (Pastebot 3).",
+      "url": "https://devutils.com/pricing/"
+    }
+  ],
+  "limitations": "(1) NO pude leer ninguna pagina directamente: WebFetch fallo con 'getaddrinfo ENOTFOUND' en todos los dominios probados (gauravtiwari.org, extensionpay.com, marketsy.ai, indiehackers.com, producthunt.com, wikipedia, appsumo.com, apps.apple.com) y un curl de prueba por el proxy devolvio 403 por politica de la organizacion; no intente evadirlo. Todo viene de resumenes de WebSearch (secundarios, generados por un modelo), por lo que cada cifra es 'segun el resumen de busqueda' y la asociacion de una cifra con su URL exacta puede ser aproximada (lo indico donde lo se). (2) El presupuesto compartido de WebSearch se agoto tras 48 busquedas exitosas; quedaron sin cubrir: utilidades Windows de pago (Stardock, WinRAR, etc.), precios actuales de Google Play, plantillas de contratos para freelancers, herramientas de estudio distintas de Anki, encuestas de preferencia pago-unico vs suscripcion, y paginas de Product Hunt/AppSumo/Setapp por producto. (3) No encontre cifras de ventas por unidad para casi ningun producto; la 'traccion' son valoraciones de tienda (DaisyDisk 2,676; PDF Squeezer ~1.8K; Magnet 167K), ingresos autodeclarados (CSS Scan, MacWhisper, TypingMind, Xnapper) o estimaciones de terceros (InsightRaider, Marketsy). (4) Muestra sesgada a apps indie de Mac y a quienes publican ingresos (sesgo de supervivencia); Windows, Android y web estan sub-representados. (5) Muchos datos son viejos (2011-2022) o regionales (EUR); varios precios estan en conflicto entre fuentes (Magnet $4.99 vs 9.99 EUR; Xnapper tiers; CSS Scan $67/$69/$80; Gemini 2 pasó de $19.95 a suscripcion; PDF Expert vitalicio quiza ya no se vende). (6) No hay ninguna evidencia directa de que $19/$20/$29 convierta mejor que $9 o $49: el filtro '¿pagarian $20?' no puede validarse con estos datos; solo muestra que utilidades de un solo proposito se cotizan $10-$25 y las herramientas profesionales $29-$42 con 1 ano de updates. (7) Los precios vistos son de lista, no de conversion: no sabemos cuantos compran a ese precio. (8) Varias fuentes de tracción provienen de sitios con interes comercial (InsightRaider, listados de ofertas, guias de monetizacion)."
+}

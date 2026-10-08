@@ -1,0 +1,1505 @@
+[
+  {
+    "id": "offline-pdf-toolkit",
+    "region": "US",
+    "pain_point": "Free web PDF tools upload sensitive files to unknown servers, watermark output, cap daily use and push subscriptions, so people hesitate to merge/compress/sign contracts, IDs and statements.",
+    "segment": "Freelancers, small-business owners, job applicants, renters and students who handle sensitive PDFs occasionally",
+    "micro_app_idea": "A local-only (nothing uploaded) PDF toolkit: merge, split, reorder, rotate, compress and redact, sold once and usable offline.",
+    "evidence": [
+      {
+        "url": "https://www.producthunt.com/p/only-pdf-editor/what-s-the-one-thing-you-hate-most-about-free-pdf-tools",
+        "what": "Maker thread lists three hates about free PDF tools: 'They upload your files to their servers (not great for contracts, IDs, statements)', watermarked outputs, and daily caps that lead to subscription prompts (seen via search excerpt; page not opened).",
+        "date": null
+      },
+      {
+        "url": "https://dev.to/jack_green_7b74cb2cdf9e23/tired-of-288year-pdf-subscriptions-try-19-forever-zero-uploads-3dh9",
+        "what": "Post titled 'Tired of $288/year PDF subscriptions? Try $19 forever, zero uploads'; describes a $19 single-payment browser tool for merge/split/compress that works offline (search excerpt).",
+        "date": null
+      },
+      {
+        "url": "https://www.popsci.com/sponsored-content/edit-sensitive-pdfs-without-putting-them-on-the-cloud-for-a-one-time-payment-sponsored-deal/",
+        "what": "Sponsored deal copy: 'Uploading a signed contract or a client invoice to some random cloud-based PDF tool always feels a little risky'; offline editor at one-time $39.99 vs $99.99 list.",
+        "date": null
+      },
+      {
+        "url": "https://forums.tomsguide.com/threads/best-free-pdf-editors.461690/post-1942277",
+        "what": "Forum user reports paying $99 for PDF Candy Pro, key then stopped working after reinstall; another commenter says client-side online editors give 'the same level of privacy as a desktop tool'.",
+        "date": null
+      }
+    ],
+    "paid_alternatives": [
+      {
+        "name": "Systweak PDF Editor Pro (sale price)",
+        "price_usd": 39.99,
+        "model": "one-time",
+        "url": "https://www.popsci.com/sponsored-content/edit-sensitive-pdfs-without-putting-them-on-the-cloud-for-a-one-time-payment-sponsored-deal/"
+      },
+      {
+        "name": "IndyPDF lifetime (deal price vs $49.99 list; URL attribution inferred from article title about a ~$20 offline lifetime PDF editor)",
+        "price_usd": 19.99,
+        "model": "one-time",
+        "url": "https://newatlas.com/deals/this-lifetime-pdf-editor-processes-documents-entirely-offline-for-20/"
+      },
+      {
+        "name": "MorphPDF (perpetual license from $5)",
+        "price_usd": 5,
+        "model": "one-time",
+        "url": "https://alternativeto.net/software/morphpdf/about"
+      },
+      {
+        "name": "PDF Candy Pro (user-reported $99 key purchase)",
+        "price_usd": 99,
+        "model": "one-time",
+        "url": "https://forums.tomsguide.com/threads/best-free-pdf-editors.461690/post-1942277"
+      }
+    ],
+    "search_signals": {
+      "queries": [
+        "offline pdf editor one time purchase",
+        "merge pdf without uploading",
+        "free pdf tools watermark limit",
+        "pdf editor no subscription"
+      ],
+      "volume_note": null
+    },
+    "urgency_1to5": 3,
+    "urgency_basis": "Recurring, widely shared annoyance (privacy + caps + watermarks) but rarely a crisis; tone is 'feels risky/annoying', not 'losing money'.",
+    "buildability_1to5": 4,
+    "wtp_20_evidence": "Competitors already sell one-time offline PDF editors at $19.99-$39.99 and a $19 one-time tool is marketed against a $288/year subscription, so $20 sits at the low end of proven price points.",
+    "risks": "Highly saturated (free client-side tools exist); 'no upload' claim must be verifiable; refund/licence-key friction is a reported complaint; user-reported anecdotes only. Buildability note: Merge/split/rotate/sign are feasible client-side; high-quality compression and OCR are harder.",
+    "confidence": "med"
+  },
+  {
+    "id": "offline-batch-file-converter",
+    "region": "US",
+    "pain_point": "Free online converters (HEIC, PDF, images) cap batches/day, paywall the download, or trap users into hidden recurring charges after a tiny first payment.",
+    "segment": "Everyday phone/PC users (iPhone photos on Windows, office workers, students) converting files occasionally",
+    "micro_app_idea": "An offline drag-and-drop batch converter (HEIC/WebP/PNG/JPG/PDF images) with no daily limits, no account and no upsell.",
+    "evidence": [
+      {
+        "url": "https://www.trustpilot.com/review/online-file-converter.com",
+        "what": "Reviewers report a EUR0.50 conversion followed by a monthly debit of about EUR47.90 they say they did not authorize; terms described as buried (Trustpilot, unverified self-selected reviews).",
+        "date": null
+      },
+      {
+        "url": "https://www.trustpilot.com/review/converter.space",
+        "what": "Reviewer describes a $0 'free trial' that turned into a $19.99 weekly charge; refunds refused.",
+        "date": null
+      },
+      {
+        "url": "https://wallpapers.com/tools/image-conversion/heic-to-jpg/",
+        "what": "Vendor page states HEIC to JPG limits: 1 conversion/day anonymous, 15/day signed in, 150/day premium; 100-file batches only on premium.",
+        "date": null
+      },
+      {
+        "url": "https://softpicker.com/how-to-convert-heic-to-jpg-free/",
+        "what": "Comparison table (single article) lists per-batch caps such as 30 files (iLoveIMG), 10 (Convertio), 5 (FreeConvert) and 25/day (CloudConvert); macOS Preview and some desktop tools listed as unlimited.",
+        "date": null
+      },
+      {
+        "url": "https://ca.trustpilot.com/review/convertio.co?page=3",
+        "what": "Convertio reviewers complain of download errors and a paywall that appears only when pressing download; one cites about EUR9/month.",
+        "date": null
+      }
+    ],
+    "paid_alternatives": [
+      {
+        "name": "Wallpapers.com HEIC converter premium (price not seen)",
+        "price_usd": null,
+        "model": "freemium",
+        "url": "https://wallpapers.com/tools/image-conversion/heic-to-jpg/"
+      },
+      {
+        "name": "Convertio (reviewer cites ~EUR9/month)",
+        "price_usd": null,
+        "model": "monthly",
+        "url": "https://ca.trustpilot.com/review/convertio.co?page=3"
+      },
+      {
+        "name": "FreeConvert (free tier 10 conversions/day, subscription beyond)",
+        "price_usd": null,
+        "model": "freemium",
+        "url": "https://ie.trustpilot.com/review/freeconvert.com?page=6"
+      }
+    ],
+    "search_signals": {
+      "queries": [
+        "heic to jpg converter free",
+        "convert heic to jpg bulk no limit",
+        "free file converter charged subscription",
+        "online converter cancel subscription"
+      ],
+      "volume_note": null
+    },
+    "urgency_1to5": 3,
+    "urgency_basis": "Complaints about unexpected recurring charges are angry in tone, but the underlying need is occasional and free offline options (macOS Preview, free desktop tools) exist.",
+    "buildability_1to5": 5,
+    "wtp_20_evidence": "People are already being charged EUR0.50-then-~EUR48/month or $19.99/week by converter traps and ~EUR9/month for Convertio; a one-time $20 'no tricks' app undercuts a single month of those.",
+    "risks": "Free built-ins (macOS Preview, Windows HEIC extension) cover the HEIC case; Windows HEVC extension friction; review evidence is self-selected; low differentiation unless it bundles many formats. Buildability note: Fully local image conversion; no proprietary data or compliance.",
+    "confidence": "med"
+  },
+  {
+    "id": "resume-builder-no-billing-trap",
+    "region": "US",
+    "pain_point": "Resume builders advertise cheap trials/one-time downloads, then bill every ~4 weeks and make cancelling or refunds hard.",
+    "segment": "Job seekers (entry-level to mid-career) who need a clean ATS-friendly resume and a quick tailoring pass per application",
+    "micro_app_idea": "A local resume builder with ATS-safe templates, PDF/DOCX export and a rule-based keyword-gap check against a pasted job posting; pay once, no account.",
+    "evidence": [
+      {
+        "url": "https://www.complaintsboard.com/zety-b144124",
+        "what": "Reviewer says a $23 charge hit every four weeks (not monthly) with no billing email; another says a failed cancellation after trial led to months of charges and refund refusal (unverified complaints).",
+        "date": null
+      },
+      {
+        "url": "https://www.trustpilot.com/review/resume.io?page=6",
+        "what": "Reviewers describe a $2.95 trial followed by a $29.95 charge, and a trial turning into EUR21.95 every four weeks; Trustpilot summary flags surprise renewals and hard cancellations.",
+        "date": null
+      },
+      {
+        "url": "https://www.producthunt.com/products/resume-io/reviews",
+        "what": "Resume.io Product Hunt page averages 1.3 from 38 reviews, mostly about billing and cancellation (as reported in search excerpt).",
+        "date": null
+      },
+      {
+        "url": "https://www.sikayetvar.com/en/zety-us/zety-charged-subscription-fees-without-consent-after-one-time-payment",
+        "what": "Complaint titled 'Zety Charged Subscription Fees Without Consent After One-Time Payment'.",
+        "date": null
+      }
+    ],
+    "paid_alternatives": [
+      {
+        "name": "Zety (user-reported $23 every 4 weeks after trial)",
+        "price_usd": 23,
+        "model": "monthly",
+        "url": "https://www.complaintsboard.com/zety-b144124"
+      },
+      {
+        "name": "Resume.io (reviewer: $29.95 charge after $2.95 trial)",
+        "price_usd": 29.95,
+        "model": "monthly",
+        "url": "https://www.trustpilot.com/review/resume.io?page=6"
+      },
+      {
+        "name": "Kickresume tailoring tool (price not seen)",
+        "price_usd": null,
+        "model": "freemium",
+        "url": "https://www.kickresume.com/resume-tailoring/"
+      }
+    ],
+    "search_signals": {
+      "queries": [
+        "zety cancel subscription",
+        "resume.io unauthorized charge",
+        "tailor resume to job description",
+        "ATS resume keywords"
+      ],
+      "volume_note": null
+    },
+    "urgency_1to5": 3,
+    "urgency_basis": "Job-search stress plus angry billing complaints across multiple sites; need is episodic but time-boxed and high stakes.",
+    "buildability_1to5": 5,
+    "wtp_20_evidence": "Incumbents charge about $23-$30 per billing cycle (repeating every ~4 weeks per reviewers), so a single $20 payment is cheaper than one cycle.",
+    "risks": "Extremely saturated and SEO-dominated; free builders exist; complaint data is self-selected; keyword-matching claims should not promise interviews (one source notes 'tailoring doesn't guarantee interviews'). Buildability note: Template rendering plus literal keyword matching is straightforward; no AI required for MVP.",
+    "confidence": "med"
+  },
+  {
+    "id": "local-audio-file-transcriber",
+    "region": "US",
+    "pain_point": "Transcription subscriptions cap uploads/minutes, auto-renew in surprising ways and are hard to cancel; people with recorded interviews/meetings want a pay-once, offline option.",
+    "segment": "Students, journalists/podcasters, researchers, consultants with recorded audio",
+    "micro_app_idea": "Drag-and-drop offline transcription of audio/video files (Whisper-class model bundled) exporting TXT/SRT/DOCX, one-time purchase, Windows and Mac.",
+    "evidence": [
+      {
+        "url": "https://www.trustpilot.com/review/otter.ai?page=2",
+        "what": "Otter Trustpilot reviews (incl. early Aug 2026): charged $240 while trying to cancel; 'Cost ridiculous as limited by # files not duration... about $2-3 per transcription'; cannot open old transcripts because 'You've hit the transcription limit'; one regional page shows ~34% one-star.",
+        "date": "2026-08"
+      },
+      {
+        "url": "https://www.whispernotes.app/",
+        "what": "Mac app sold at $14 one-time after a free 10,000-word trial; iPhone/iPad version $7.99 one-time (per search excerpt).",
+        "date": null
+      },
+      {
+        "url": "https://weesperneonflow.ai/en/blog/2026-09-26-whisperstream-review-windows-offline-dictation-2026/",
+        "what": "Whisperstream (Windows) priced $29 once for one PC; hotkey dictation, not clearly meeting-file import (vendor-competitor blog).",
+        "date": "2026-09"
+      },
+      {
+        "url": "https://alternativeto.net/software/gowhisper/about",
+        "what": "GoWhisper: Whisper front end for Windows/macOS/Linux, one-time licence listed between $23 and $50 with limited free version.",
+        "date": null
+      }
+    ],
+    "paid_alternatives": [
+      {
+        "name": "Whisper Notes (Mac)",
+        "price_usd": 14,
+        "model": "one-time",
+        "url": "https://www.whispernotes.app/"
+      },
+      {
+        "name": "Whisperstream (Windows, 1 PC)",
+        "price_usd": 29,
+        "model": "one-time",
+        "url": "https://weesperneonflow.ai/en/blog/2026-09-26-whisperstream-review-windows-offline-dictation-2026/"
+      },
+      {
+        "name": "GoWhisper (listed $23-$50)",
+        "price_usd": null,
+        "model": "one-time",
+        "url": "https://alternativeto.net/software/gowhisper/about"
+      },
+      {
+        "name": "LipiVoice Pro (from $19, batch files, vendor page)",
+        "price_usd": 19,
+        "model": "one-time",
+        "url": "https://zerixastudio.gumroad.com/l/eyrsp"
+      },
+      {
+        "name": "MacWhisper Pro (EUR64 per search excerpt)",
+        "price_usd": null,
+        "model": "one-time",
+        "url": "https://alternativeto.net/software/macwhisper/about"
+      }
+    ],
+    "search_signals": {
+      "queries": [
+        "otter.ai alternative one time purchase",
+        "offline transcription app lifetime license",
+        "whisper app windows file transcription",
+        "otter cancel subscription"
+      ],
+      "volume_note": null
+    },
+    "urgency_1to5": 3,
+    "urgency_basis": "Billing/cap complaints are heated (unexpected $180-$240 charges), but many users only transcribe occasionally and free tiers exist.",
+    "buildability_1to5": 3,
+    "wtp_20_evidence": "Existing one-time offline transcribers sell at $14-$50, so $20 is within the observed band.",
+    "risks": "Crowded with indie one-time apps; accuracy with overlapping speakers is a known weakness; diarization hard offline; large downloads; some comparison sources are written by competitors. Buildability note: Wrapping whisper.cpp is doable but model size, hardware variance and GPU/CPU speed make it heavier than a typical micro-app.",
+    "confidence": "med"
+  },
+  {
+    "id": "mileage-log-manual-export",
+    "region": "US",
+    "pain_point": "Auto mileage trackers (MileIQ) cost over $100/year, auto-renew, miss trips and are hard to cancel; many only need a simple compliant log.",
+    "segment": "Freelancers, gig drivers, sales reps and small-business owners who keep a business mileage log",
+    "micro_app_idea": "A private mileage log (manual or odometer-based entry, saved places, purpose templates) that exports a clean date/purpose/miles report; one-time purchase, data stays on device.",
+    "evidence": [
+      {
+        "url": "https://www.complaintsboard.com/mileiq-b158142",
+        "what": "Reviewer says cancelling had to be done on the website, not in-app, and the card was charged again; another claims the app stopped tracking for two months and cost them $4,500+ in write-offs (single anecdotes).",
+        "date": null
+      },
+      {
+        "url": "https://frontdeskreview.com/software/mileage-tracking/mileiq/",
+        "what": "June 2026 pricing review: MileIQ Unlimited $13.99/month or $11.66/month billed annually (~$139.92/yr); free plan limited to 40 drives/month.",
+        "date": "2026-06"
+      },
+      {
+        "url": "https://www.mileagewise.com/mileiq-alternative/",
+        "what": "Competitor page offers lifetime plan (current page $119.99 for Small lifetime per search excerpt); states MileIQ has no lifetime option.",
+        "date": null
+      },
+      {
+        "url": "https://markets.financialcontent.com/franklincredit/article/send2press-2025-1-31-mileagewise-is-the-first-to-offer-lifetime-deals-for-mileage-tracking-solutions-in-the-us",
+        "what": "Jan 2025 press release: MileageWise Small Lifetime $99.99, Gold Lifetime $499.99 (vendor's own figures).",
+        "date": "2025-01"
+      }
+    ],
+    "paid_alternatives": [
+      {
+        "name": "MileIQ Unlimited (monthly)",
+        "price_usd": 13.99,
+        "model": "monthly",
+        "url": "https://frontdeskreview.com/software/mileage-tracking/mileiq/"
+      },
+      {
+        "name": "MileIQ Unlimited (annual, ~$11.66/mo billed yearly)",
+        "price_usd": 139.92,
+        "model": "annual",
+        "url": "https://frontdeskreview.com/software/mileage-tracking/mileiq/"
+      },
+      {
+        "name": "MileageWise lifetime (Small plan)",
+        "price_usd": 119.99,
+        "model": "one-time",
+        "url": "https://www.mileagewise.com/mileiq-alternative/"
+      },
+      {
+        "name": "Mileage Tracker - Driver Notes (iOS)",
+        "price_usd": 11.99,
+        "model": "annual",
+        "url": "https://appshunter.io/ios/app/mileage-tracker-driver-notes/id6754842476"
+      }
+    ],
+    "search_signals": {
+      "queries": [
+        "mileiq alternative no subscription",
+        "mileage log app one time purchase",
+        "business mileage log template irs",
+        "mileiq cancel subscription"
+      ],
+      "volume_note": null
+    },
+    "urgency_1to5": 3,
+    "urgency_basis": "Money is on the line (missed write-offs, ~$140/year) and complaints mention surprise renewals; but pain is seasonal around tax filing.",
+    "buildability_1to5": 3,
+    "wtp_20_evidence": "MileIQ is ~$139.92/year and the cheapest lifetime competitor is ~$99.99-$119.99; $20 once is far below both.",
+    "risks": "Tax-record zone: do not give tax advice or claim IRS compliance beyond a generic log format; auto-tracking is the main value and is not feasible in a lightweight app; price figures conflict across sources. Buildability note: Manual/odometer log and report export are easy; background GPS auto-tracking (what users actually like) needs a native mobile app.",
+    "confidence": "med"
+  },
+  {
+    "id": "subscription-audit-from-bank-csv",
+    "region": "US",
+    "pain_point": "People badly underestimate and forget recurring charges (trials never cancelled, services no longer used) and cancellation is often hard.",
+    "segment": "Households and freelancers with many app/streaming/SaaS subscriptions",
+    "micro_app_idea": "Import a bank/credit-card CSV or PDF statement locally, auto-detect recurring charges, show monthly/annual totals, and generate a cancel/renewal-date checklist; no bank login.",
+    "evidence": [
+      {
+        "url": "https://www.lowermysubs.com/blog/subscription-statistics",
+        "what": "Secondary repost of C+R Research: itemized subscription spend about $219/month vs a gut estimate of ~$86; 42% kept paying after they stopped using a service; ~$205/year wasted (original report not opened).",
+        "date": null
+      },
+      {
+        "url": "https://walnutinvest.com/stats/subscription-spending-statistics",
+        "what": "Roundup repeating CNET 2025 (2,440 adults, ~$90/month typical), West Monroe ($273/month per household) and that 70% forgot to cancel a free trial; also notes FTC click-to-cancel rule struck down July 2025.",
+        "date": null
+      },
+      {
+        "url": "https://www.readless.app/blog/subscription-fatigue-statistics-2026",
+        "what": "'Subscription Fatigue Statistics 2026 (35+ Sourced Stats)' - blog compilation of the same studies.",
+        "date": null
+      },
+      {
+        "url": "https://news.ycombinator.com/item?id=43772295",
+        "what": "HN commenter wants 'Something that audits all my subscriptions, passwords, cloud accounts... flags forgotten paid services' (Ask HN: non-existent app you would pay for).",
+        "date": null
+      }
+    ],
+    "paid_alternatives": [],
+    "search_signals": {
+      "queries": [
+        "find forgotten subscriptions",
+        "subscription tracker app",
+        "how to cancel subscriptions",
+        "audit my subscriptions"
+      ],
+      "volume_note": null
+    },
+    "urgency_1to5": 3,
+    "urgency_basis": "Real recurring money leak (~$205/year unused per secondary stats) and steady consumer annoyance, but low immediacy; stats come from reposts.",
+    "buildability_1to5": 4,
+    "wtp_20_evidence": "If secondary stats hold (~$205/year wasted on unused subscriptions), one cancelled service repays $20; no paid competitor prices were observed in my sources.",
+    "risks": "Financial data handling (keep fully local); many free/freemium trackers likely exist (not verified in my searches); bank CSV formats vary; stats are secondary and some sources sell subscription services; avoid personalized financial advice. Buildability note: Recurring-charge detection from CSV is local and tractable; PDF statements and messy merchant names add work.",
+    "confidence": "med"
+  },
+  {
+    "id": "qr-code-permanent-static-kit",
+    "region": "US",
+    "pain_point": "Printed dynamic QR codes stop working when a free trial/subscription ends or scan limits are reached, stranding menus, flyers and signage.",
+    "segment": "Small-business owners (restaurants, salons), event organizers, landlords/hosts printing QR codes",
+    "micro_app_idea": "Offline QR kit that creates permanent static codes (URL, Wi-Fi, vCard, text) with print-ready SVG/PNG/PDF export, batch-from-CSV and scan-contrast check.",
+    "evidence": [
+      {
+        "url": "https://support.qr-code-generator.com/hc/en-us/articles/7665013224205",
+        "what": "Vendor support page: only Dynamic QR codes are deactivated when the free trial ends; static codes keep working; scanning a deactivated code lands on a service page; cannot convert dynamic to static.",
+        "date": null
+      },
+      {
+        "url": "https://api.getqr.com/help/qr-code-not-working",
+        "what": "GetQR help: free accounts limited to 30 total scans, after which codes stop working until upgrade; failed renewal also disables dynamic codes.",
+        "date": null
+      },
+      {
+        "url": "https://markets.financialcontent.com/pennwell.cabling/article/businesnewswire-2026-3-28-the-subscription-trap-how-qr-code-platforms-weaponize-your-printed-materials",
+        "what": "Promotional press-style article (third-party disclaimer) 'The Subscription Trap': says QRFY has a 7-day trial with a $120 minimum subscription and QR Tiger free codes deactivate after 500 scans; cites a 1.5 TrustScore for QR Code Generator (unverified).",
+        "date": "2026-03"
+      },
+      {
+        "url": "https://getfinny.app/blog/qr-code-stopped-working",
+        "what": "Article 'QR Code Stopped Working? Why It Happens and the Free Fix' (competitor blog) explaining dynamic redirect dependency.",
+        "date": null
+      }
+    ],
+    "paid_alternatives": [
+      {
+        "name": "QRFY (promo article: $120 minimum subscription; billing period not stated)",
+        "price_usd": 120,
+        "model": "annual",
+        "url": "https://markets.financialcontent.com/pennwell.cabling/article/businesnewswire-2026-3-28-the-subscription-trap-how-qr-code-platforms-weaponize-your-printed-materials"
+      },
+      {
+        "name": "QR Code Generator (dynamic codes need paid plan; price not seen)",
+        "price_usd": null,
+        "model": "freemium",
+        "url": "https://support.qr-code-generator.com/hc/en-us/articles/7665013224205"
+      },
+      {
+        "name": "GetQR (free tier 30-scan cap; price not seen)",
+        "price_usd": null,
+        "model": "freemium",
+        "url": "https://api.getqr.com/help/qr-code-not-working"
+      }
+    ],
+    "search_signals": {
+      "queries": [
+        "qr code stopped working",
+        "qr code expired free trial",
+        "static qr code generator free no expiration",
+        "do qr codes expire"
+      ],
+      "volume_note": null
+    },
+    "urgency_1to5": 3,
+    "urgency_basis": "When it happens it is costly (printed materials already distributed), but only affects those who chose dynamic codes; fix guidance ('use static') is free.",
+    "buildability_1to5": 5,
+    "wtp_20_evidence": "Subscription alternatives ask ~$120+/year; $20 once is a fraction, though free static generators exist.",
+    "risks": "Free static QR generators are abundant, so value must come from print-ready batch/branding workflow; the key promo article is a paid-placement style source; no dynamic/tracking features without a server. Buildability note: Static QR generation is purely client-side; extras are layout/export features.",
+    "confidence": "med"
+  },
+  {
+    "id": "local-ai-file-renamer",
+    "region": "US",
+    "pain_point": "Downloads folders and scans are full of names like scan001.pdf; renaming by content (date, vendor, amount) is manual, and the AI renamer tools are monthly-only or Mac-centric.",
+    "segment": "Freelancers, small-office admins, and households filing receipts, invoices and statements",
+    "micro_app_idea": "Local app that reads text-layer PDFs/images (OCR optional) and proposes consistent filenames like 2026-09-14_Vendor_Invoice-Total.pdf, with preview and undo; one-time price, nothing uploaded.",
+    "evidence": [
+      {
+        "url": "https://aisotools.com/pricing/renamer-ai",
+        "what": "Renamer.ai pricing as reported: free 25 renames/month; Pro $9.95/month for 200 files; Power User $29.95/month for 1,000; Ultimate $99.95/month for 5,000; monthly billing only.",
+        "date": null
+      },
+      {
+        "url": "https://www.noodlesoft.com/manual/hazel/installation-setup/purchase-a-hazel-license",
+        "what": "Hazel (Mac) is a $42 one-time single-user licence with free updates within the major version - evidence people pay once for file-automation.",
+        "date": null
+      },
+      {
+        "url": "https://renamer.ai/how-to-rename-scanned-pdf-files",
+        "what": "Vendor how-to page indicates demand to rename scanned PDF files from their content (vendor marketing, not a user complaint).",
+        "date": null
+      },
+      {
+        "url": "https://apps.apple.com/app/id6746876116",
+        "what": "'PDF AI Renamer' Mac app claims on-device AI models and OCR for scans (free with in-app purchases; price not seen).",
+        "date": null
+      }
+    ],
+    "paid_alternatives": [
+      {
+        "name": "Hazel 6 (Mac)",
+        "price_usd": 42,
+        "model": "one-time",
+        "url": "https://www.noodlesoft.com/manual/hazel/installation-setup/purchase-a-hazel-license"
+      },
+      {
+        "name": "Renamer.ai Pro (200 files/month)",
+        "price_usd": 9.95,
+        "model": "monthly",
+        "url": "https://aisotools.com/pricing/renamer-ai"
+      },
+      {
+        "name": "AI Renamer (credit bundles $5-$20; $10 local-model add-on per aggregator)",
+        "price_usd": null,
+        "model": "freemium",
+        "url": "https://www.toolify.ai/tool/ai-renamer"
+      },
+      {
+        "name": "PDF AI Renamer (Mac)",
+        "price_usd": null,
+        "model": "freemium",
+        "url": "https://apps.apple.com/app/id6746876116"
+      }
+    ],
+    "search_signals": {
+      "queries": [
+        "rename scanned pdf files based on content",
+        "auto rename pdf invoices",
+        "hazel alternative windows",
+        "bulk rename files ai"
+      ],
+      "volume_note": null
+    },
+    "urgency_1to5": 2,
+    "urgency_basis": "Chronic low-grade annoyance; no angry-tone complaints observed, only vendor pages and tool listings.",
+    "buildability_1to5": 4,
+    "wtp_20_evidence": "Hazel at $42 one-time and Renamer.ai at $9.95-$99.95 per month bracket a $20 one-time price.",
+    "risks": "Pain evidence is mostly vendor marketing; Renamer.ai desktop apps exist; privacy terms differ between listings; wrong renames need undo safety. Buildability note: Regex/heuristic extraction on text-layer PDFs is feasible locally; scanned images need bundled OCR and are heavier.",
+    "confidence": "low"
+  },
+  {
+    "id": "phone-scan-to-clean-pdf",
+    "region": "US",
+    "pain_point": "Scanner apps hide behind weekly/annual subscriptions, watermark exports ('Scanned by CamScanner'), and charge users who say they cancelled.",
+    "segment": "Anyone scanning receipts, forms and contracts from a phone for email/upload",
+    "micro_app_idea": "Pay-once tool that turns phone photos/images into cropped, de-skewed, high-contrast multipage PDFs with no watermark or account (desktop or installable web app).",
+    "evidence": [
+      {
+        "url": "https://www.sikayetvar.com/en/camscanner-us",
+        "what": "Complaint listing for CamScanner: 21 complaints, mostly charges after free trials; one user says a ~14 cent weekly plan was followed by a $7 annual fee after cancelling.",
+        "date": null
+      },
+      {
+        "url": "https://www.sikayetvar.com/en/camscanner-us/camscanner-added-the-scanned-by-camscanner-watermark-to-my-documents-even-though-i-paid-for-the-premium-version-can-it-be-removed-q-34003",
+        "what": "Question titled 'CamScanner added the scanned by CamScanner watermark to my documents even though I paid for the premium version'; a Feb 2026 complaint is also described.",
+        "date": "2026-02"
+      },
+      {
+        "url": "https://justuseapp.com/en/app/1040149161/scanguru-pdf-scanner/contact",
+        "what": "ScanGuru reviewer says anything to scan requires paying $6.99 a week or a bundle.",
+        "date": null
+      },
+      {
+        "url": "https://justuseapp.com/en/app/6463742895/docscan-pdf-document-scanner/reviews",
+        "what": "DocScan reviewers say they cancelled within days but kept being billed.",
+        "date": null
+      }
+    ],
+    "paid_alternatives": [
+      {
+        "name": "Readdle Scanner Pro (free app with optional Scanner PLUS subscription for new users)",
+        "price_usd": null,
+        "model": "freemium",
+        "url": "https://support.readdle.com/scannerpro/billing-subscription"
+      },
+      {
+        "name": "iScanner (sponsored posts offer lifetime ~$39.99-$42)",
+        "price_usd": null,
+        "model": "one-time",
+        "url": "https://www.aol.com/keep-scanner-pocket-life-42-090000505.html"
+      },
+      {
+        "name": "ScanGuru (reviewer: $6.99/week)",
+        "price_usd": null,
+        "model": "freemium",
+        "url": "https://justuseapp.com/en/app/1040149161/scanguru-pdf-scanner/contact"
+      }
+    ],
+    "search_signals": {
+      "queries": [
+        "remove scanned by camscanner watermark",
+        "scanner app no subscription",
+        "scan document to pdf free no watermark",
+        "camscanner cancel subscription"
+      ],
+      "volume_note": null
+    },
+    "urgency_1to5": 3,
+    "urgency_basis": "Complaints are about unauthorized charges and watermarks on documents people need right now; frequent need, but free options (Adobe Scan, built-in phone scanners) exist.",
+    "buildability_1to5": 3,
+    "wtp_20_evidence": "Lifetime scanner offers are promoted around $39.99-$42 and weekly plans around $6.99, so $20 once is plausible but sits below competing lifetime promos.",
+    "risks": "Phones and Adobe Scan already scan for free; quality expectations high; sponsored 'lifetime' posts are commercial; mostly self-selected complaints. Buildability note: Image cleanup (crop, deskew, contrast, multi-page PDF) is feasible in a PWA/desktop tool; native camera-quality edge detection is better in a mobile app.",
+    "confidence": "med"
+  },
+  {
+    "id": "home-inventory-insurance-local",
+    "region": "US",
+    "pain_point": "Documenting belongings, receipts and warranties for an insurance claim is tedious, and the good apps lock exports behind yearly subscriptions or are iPhone-only.",
+    "segment": "Homeowners and renters (especially in storm/wildfire-prone areas) preparing for or filing insurance claims",
+    "micro_app_idea": "Local-first home inventory: add items by photo, attach receipts/serials/warranty dates, set expiry reminders, export an insurer-ready PDF/CSV; Windows/Mac/Android-friendly, one-time purchase.",
+    "evidence": [
+      {
+        "url": "https://www.producthunt.com/p/asset-vault/asset-vault-2",
+        "what": "Asset Vault launch: 'Photo-first home inventory for iPhone - no subscription', free download with one-time $9.99 to unlock unlimited AI; a commenter asked if the payment is for life; iPhone-only for now.",
+        "date": null
+      },
+      {
+        "url": "https://talk.macpowerusers.com/t/inventory-app-for-home/43514",
+        "what": "Forum thread: Under My Roof cited at about $40/year and a member asked for a one-time-payment alternative; another flagged risk of depending on software staying compatible.",
+        "date": null
+      },
+      {
+        "url": "https://appshunter.io/ios/app/home-inventory-item-tracker/id6776318147",
+        "what": "Listing: unlimited items, PDF export, iCloud backup and warranty tracking sit behind a yearly auto-renewing plan.",
+        "date": null
+      },
+      {
+        "url": "https://appshunter.io/ios/app/master-of-inventory-warranty/id1523538855",
+        "what": "Free tier up to 50 items; Pro removes limit and adds insurance-ready exports, or a one-time Lifetime unlock; warranty/return-window reminders.",
+        "date": null
+      }
+    ],
+    "paid_alternatives": [
+      {
+        "name": "Asset Vault (iPhone) unlimited AI unlock",
+        "price_usd": 9.99,
+        "model": "one-time",
+        "url": "https://www.producthunt.com/p/asset-vault/asset-vault-2"
+      },
+      {
+        "name": "Under My Roof (forum-reported ~$40/year)",
+        "price_usd": 40,
+        "model": "annual",
+        "url": "https://talk.macpowerusers.com/t/inventory-app-for-home/43514"
+      },
+      {
+        "name": "Home Inventory by Binary Formations (Mac/Win; directory lists $9.99, 2013 launch $19.99)",
+        "price_usd": 9.99,
+        "model": "one-time",
+        "url": "https://pcmacstore.com/en/app/413564952/home-inventory"
+      },
+      {
+        "name": "Home Inventory: Item Tracker (iOS yearly plan)",
+        "price_usd": null,
+        "model": "annual",
+        "url": "https://appshunter.io/ios/app/home-inventory-item-tracker/id6776318147"
+      }
+    ],
+    "search_signals": {
+      "queries": [
+        "home inventory app for insurance",
+        "home inventory no subscription",
+        "warranty tracker app",
+        "document belongings for insurance claim"
+      ],
+      "volume_note": null
+    },
+    "urgency_1to5": 3,
+    "urgency_basis": "High cost when a loss happens, but most people procrastinate; complaints are mild (price, platform) rather than urgent.",
+    "buildability_1to5": 4,
+    "wtp_20_evidence": "Under My Roof reported ~$40/year and a user explicitly asked for a one-time alternative; one-time competitors sell $9.99-$19.99, so $20 is at the top of that band.",
+    "risks": "NAIC and other free apps exist (per search excerpt); insurers have their own formats; data durability (users must back up); a one-time price must not imply claim guarantees. Buildability note: Photo + fields + PDF export is standard; AI item recognition would add cost, so leave optional.",
+    "confidence": "med"
+  },
+  {
+    "id": "bank-statement-pdf-to-csv-local",
+    "region": "US",
+    "pain_point": "Turning PDF bank/credit statements into clean CSV/Excel/QBO for bookkeeping is manual or requires uploading financial statements to web converters.",
+    "segment": "Bookkeepers, accountants with small clients, freelancers reconciling accounts",
+    "micro_app_idea": "Local converter that parses text-layer bank statement PDFs into normalized CSV (date, description, amount, balance) with a review screen, exporting CSV/XLSX/QBO; no upload.",
+    "evidence": [
+      {
+        "url": "https://alternativeto.net/software/bank-statement-converter/about",
+        "what": "Listing pitches a web app for accountants 'managing multiple client PDF bank statements' to convert to CSV; AlternativeTo shows it as a monthly subscription (vendor listing).",
+        "date": null
+      },
+      {
+        "url": "https://www.producthunt.com/@qa_tester4",
+        "what": "Maker profile for 'Bank Statement Convertor' - web app converting PDF statements to .xlsx, .csv and QuickBooks .qbo; maker asking for feedback.",
+        "date": null
+      },
+      {
+        "url": "https://www.cleverence.com/amp/articles/quickbooks-documentation/convert-pdf-bank-statements-into-csv-format-for-quickbooks-8049/",
+        "what": "How-to notes scanned statements need OCR, password-protected PDFs need the password, and converters may be inaccurate so review output before importing.",
+        "date": null
+      },
+      {
+        "url": "https://peerpush.com/p/bank-statement-converter-cdsc",
+        "what": "Another converter listing claiming files and data are deleted after conversion (vendor claim).",
+        "date": null
+      }
+    ],
+    "paid_alternatives": [
+      {
+        "name": "Bank Statement Converter web app (AlternativeTo lists monthly subscription; price not seen)",
+        "price_usd": null,
+        "model": "monthly",
+        "url": "https://alternativeto.net/software/bank-statement-converter/about"
+      },
+      {
+        "name": "Adobe Acrobat Pro PDF-to-Excel export (price not seen)",
+        "price_usd": null,
+        "model": "monthly",
+        "url": "https://www.cleverence.com/amp/articles/quickbooks-documentation/convert-pdf-bank-statements-into-csv-format-for-quickbooks-8049/"
+      }
+    ],
+    "search_signals": {
+      "queries": [
+        "bank statement pdf to csv",
+        "convert bank statement to quickbooks qbo",
+        "pdf bank statement to excel"
+      ],
+      "volume_note": null
+    },
+    "urgency_1to5": 3,
+    "urgency_basis": "Recurring chore with real time cost for bookkeepers; no angry-tone complaints observed in my sources, only product listings.",
+    "buildability_1to5": 3,
+    "wtp_20_evidence": "Existing converters appear to be monthly subscriptions (prices not seen); the cost of manual retyping for a bookkeeper plausibly exceeds $20 but I have no direct price evidence.",
+    "risks": "Sensitive financial data (local-only is a selling point); accuracy errors could cause bookkeeping mistakes; weak direct-pain evidence; many converter products exist. Buildability note: Layouts differ per bank; text-layer parsing is doable but robust coverage and scanned-PDF OCR make it a long tail.",
+    "confidence": "low"
+  },
+  {
+    "id": "offline-invoice-generator-freelancers",
+    "region": "US",
+    "pain_point": "Freelancers want to send a professional invoice in minutes and chase late payments without paying a monthly invoicing subscription or card-processing fees.",
+    "segment": "Solo freelancers and tiny service businesses",
+    "micro_app_idea": "Offline invoice maker with client list, numbering, tax/discount lines, PDF export and ready-made overdue-reminder email templates; one-time price.",
+    "evidence": [
+      {
+        "url": "https://venture-lab.org/2026/best-invoicing-app-freelancers-2026/",
+        "what": "2026 roundup: sending an invoice should take 90 seconds and 'your invoicing tool should not cost more per month than the late fees you are trying to avoid'; lists FreshBooks from $17/month and Harvest $12/user/month.",
+        "date": null
+      },
+      {
+        "url": "https://www.wearefounders.uk/best-invoicing-apps-for-freelancers-in-2026-free-and-paid/",
+        "what": "Roundup flags card fees: on a $2,000 card payment with Wave you hand back about $58.60.",
+        "date": null
+      },
+      {
+        "url": "https://impressivemagazine.com/best-invoicing-apps-freelancers-2026/",
+        "what": "Roundup says late payments are the biggest cash-flow problem for freelancers and that rewriting reminder emails is a recurring chore (listicle; unverifiable embedded Reddit quote).",
+        "date": null
+      },
+      {
+        "url": "https://merciacademy.gumroad.com/l/enhdc",
+        "what": "Existing offline Windows invoice app listed at $19.99 single payment.",
+        "date": null
+      }
+    ],
+    "paid_alternatives": [
+      {
+        "name": "Merci Invoice Generator (Windows)",
+        "price_usd": 19.99,
+        "model": "one-time",
+        "url": "https://merciacademy.gumroad.com/l/enhdc"
+      },
+      {
+        "name": "Simple Invoice Generator (Gumroad HTML package)",
+        "price_usd": 10,
+        "model": "one-time",
+        "url": "https://kajdigitals.gumroad.com/l/simpleinvoicegenerator"
+      },
+      {
+        "name": "InvoiceOffline (macOS perpetual)",
+        "price_usd": 59,
+        "model": "one-time",
+        "url": "https://alternativeto.net/software/invoiceoffline/about/"
+      },
+      {
+        "name": "FreshBooks (starting)",
+        "price_usd": 17,
+        "model": "monthly",
+        "url": "https://venture-lab.org/2026/best-invoicing-app-freelancers-2026/"
+      },
+      {
+        "name": "Harvest (per user)",
+        "price_usd": 12,
+        "model": "monthly",
+        "url": "https://venture-lab.org/2026/best-invoicing-app-freelancers-2026/"
+      }
+    ],
+    "search_signals": {
+      "queries": [
+        "freelance invoice generator no subscription",
+        "offline invoice app one time payment",
+        "invoice template pdf generator",
+        "late payment reminder email"
+      ],
+      "volume_note": null
+    },
+    "urgency_1to5": 2,
+    "urgency_basis": "Late-payment pain is real but the evidence is listicles, not complaints; free tools (Wave, Invoice Ninja per roundups) already satisfy many.",
+    "buildability_1to5": 5,
+    "wtp_20_evidence": "At least one competitor is already sold at $19.99 one-time and others at $10-$59, confirming the price point.",
+    "risks": "Very saturated, race to the bottom ($5-$10 options); free Wave/Invoice Ninja; payment links need a processor; tax-line formats vary by jurisdiction. Buildability note: Local document generation with no proprietary data.",
+    "confidence": "med"
+  },
+  {
+    "id": "landlord-rent-ledger-receipts",
+    "region": "US",
+    "pain_point": "Small landlords track rent, deposits, expenses and receipts in spreadsheets that break down, while full property-management software costs more than 1-10 units justify.",
+    "segment": "Self-managing landlords with 1-15 units",
+    "micro_app_idea": "Local rent ledger with per-tenant balances, one-click payment receipts as PDFs, expense log and year-end CSV export; one-time purchase.",
+    "evidence": [
+      {
+        "url": "https://selar.com/6483673473",
+        "what": "'Landlord Pro' rental management spreadsheet system for 1 to 15 units sold at $39 (seller listing; zero ratings seen).",
+        "date": null
+      },
+      {
+        "url": "https://www.getly.store/product/landlord-property-rent-tracker-spreadsheet-mueis2x9",
+        "what": "'Rental Property Command Center' Excel workbook (rent log, deposit status, expenses, reminders) at $7.90, publish date Sept 2026.",
+        "date": "2026-09"
+      },
+      {
+        "url": "https://www.rentometer.com/articles/no-more-spreadsheets-landlords-can-track-income-and-expenses-in-the-cloud",
+        "what": "2017 article argues spreadsheets run out of usefulness quickly while full property software can cost more than a small landlord needs (dated).",
+        "date": null
+      },
+      {
+        "url": "https://alternativeto.net/software/landlord-tracker/about/",
+        "what": "Free open-source offline 'Landlord Tracker' with monthly rent ledger, Linux only.",
+        "date": null
+      }
+    ],
+    "paid_alternatives": [
+      {
+        "name": "Landlord Pro spreadsheet system",
+        "price_usd": 39,
+        "model": "one-time",
+        "url": "https://selar.com/6483673473"
+      },
+      {
+        "name": "Rental Property Command Center (Excel)",
+        "price_usd": 7.9,
+        "model": "one-time",
+        "url": "https://www.getly.store/product/landlord-property-rent-tracker-spreadsheet-mueis2x9"
+      },
+      {
+        "name": "Landlord Tracker (free, GPL-3, Linux)",
+        "price_usd": 0,
+        "model": "freemium",
+        "url": "https://alternativeto.net/software/landlord-tracker/about/"
+      }
+    ],
+    "search_signals": {
+      "queries": [
+        "landlord rent tracker spreadsheet",
+        "rent receipt generator",
+        "small landlord software no subscription"
+      ],
+      "volume_note": null
+    },
+    "urgency_1to5": 2,
+    "urgency_basis": "Template sales show steady demand but no complaint threads were observed; monthly cadence makes it routine rather than urgent.",
+    "buildability_1to5": 4,
+    "wtp_20_evidence": "Landlord spreadsheet systems sell at $7.90-$39 one-time, bracketing a $20 price.",
+    "risks": "Landlord-tenant law varies by state (late fees, deposit handling, receipt requirements); do not give legal advice; direct pain evidence is weak and many template sellers compete. Buildability note: Ledger + PDF receipt generation is simple; Windows/Mac packaging needed.",
+    "confidence": "low"
+  },
+  {
+    "id": "whatsapp-imessage-chat-to-pdf",
+    "region": "US",
+    "pain_point": "Saving a long text/WhatsApp conversation as a clean, dated PDF 'for records' requires a Mac print trick, screenshots, or paid desktop tools.",
+    "segment": "People documenting conversations for landlords, employers, customer disputes or personal archives",
+    "micro_app_idea": "Local converter that turns exported WhatsApp chat files (and, where permitted, iMessage backups) into paginated PDFs with timestamps, names and embedded images.",
+    "evidence": [
+      {
+        "url": "https://macmost.com/?p=10691",
+        "what": "Page titled 'I asked this question at the Apple Store and they said \"You have to use an APP. Google which one to get\"' (about exporting messages).",
+        "date": null
+      },
+      {
+        "url": "https://www.adobe.com/acrobat/hub/export-iphone-text-messages-to-pdf",
+        "what": "Adobe guide describes screenshotting each message and building a PDF; notes screenshots are slow for many chats.",
+        "date": null
+      },
+      {
+        "url": "https://www.wideanglesoftware.com/touchcopy/help/messagePDF.php",
+        "what": "TouchCopy (paid desktop tool) documents exporting iPhone messages to PDF over USB/Wi-Fi; embedded images included, video/audio not.",
+        "date": null
+      },
+      {
+        "url": "https://deciphertools.com/support/knowledge-base/how-to-export-iphone-text-messages-as-a-pdf-with-decipher-textmessage",
+        "what": "Decipher TextMessage requires a computer backup because Apple does not let users save Messages data directly from iCloud.",
+        "date": null
+      }
+    ],
+    "paid_alternatives": [
+      {
+        "name": "TouchCopy (price not seen)",
+        "price_usd": null,
+        "model": "one-time",
+        "url": "https://www.wideanglesoftware.com/touchcopy/help/messagePDF.php"
+      },
+      {
+        "name": "Decipher TextMessage (price not seen)",
+        "price_usd": null,
+        "model": "one-time",
+        "url": "https://deciphertools.com/support/knowledge-base/how-to-export-iphone-text-messages-as-a-pdf-with-decipher-textmessage"
+      }
+    ],
+    "search_signals": {
+      "queries": [
+        "export iphone text messages to pdf",
+        "whatsapp chat to pdf",
+        "save text conversation as pdf for court"
+      ],
+      "volume_note": null
+    },
+    "urgency_1to5": 3,
+    "urgency_basis": "Often tied to disputes or deadlines (landlord, work, custody) so people feel pressure, but how often they pay is unclear.",
+    "buildability_1to5": 3,
+    "wtp_20_evidence": "Paid desktop tools exist for this niche, but I did not see their prices, so $20 WTP is unconfirmed.",
+    "risks": "Legal-evidence zone: a PDF is a copy, authenticity requirements vary, so avoid claiming it is court-admissible; privacy of third-party messages; iOS/WhatsApp format changes; free Mac print-to-PDF workaround exists. Buildability note: WhatsApp .txt/.zip export parsing is easy; iMessage needs a local backup and OS permissions, and thread formats vary.",
+    "confidence": "low"
+  },
+  {
+    "id": "pdf-sign-and-fill-offline",
+    "region": "US",
+    "pain_point": "Signing or filling a PDF yourself hits e-signature free-plan limits, signups or ambiguity about what is free.",
+    "segment": "Individuals and small-business owners signing leases, forms, NDAs and onboarding paperwork",
+    "micro_app_idea": "Offline tool to place a drawn/typed signature and fill text fields on any PDF, save reusable signature/initials, no account and no upload.",
+    "evidence": [
+      {
+        "url": "https://community.docusign.com/esignature-111/help-understanding-the-free-account-21372",
+        "what": "DocuSign community: free account allows 3 envelopes sent in total (not per month); a moderator said uploading your own document to sign requires a paid plan (forum statement, not published policy).",
+        "date": null
+      },
+      {
+        "url": "https://signeasy.com/blog/business/is-docusign-free",
+        "what": "Competitor blog: DocuSign free plan lets you sign unlimited documents but only send three envelopes, a lifetime total.",
+        "date": null
+      },
+      {
+        "url": "https://www.complaintsboard.com/docusign-b135248",
+        "what": "ComplaintsBoard shows DocuSign 2.6 stars from 14 reviews and 23 complaints; one complains of being logged out repeatedly while trying to cancel.",
+        "date": null
+      },
+      {
+        "url": "https://boldsign.com/sign-pdf-online",
+        "what": "BoldSign offers a free browser signing tool with no sign-up and no watermarks (lead-gen for its paid product).",
+        "date": null
+      }
+    ],
+    "paid_alternatives": [
+      {
+        "name": "BoldSign free PDF signer (no sign-up)",
+        "price_usd": 0,
+        "model": "freemium",
+        "url": "https://boldsign.com/sign-pdf-online"
+      },
+      {
+        "name": "DocuSeal free plan (unlimited signing, 10 sends/month per FAQ)",
+        "price_usd": 0,
+        "model": "freemium",
+        "url": "https://www.docuseal.com/faq/can-i-send-an-unlimited-number-of-documents-for-signing"
+      }
+    ],
+    "search_signals": {
+      "queries": [
+        "sign pdf no signup",
+        "is docusign free",
+        "sign pdf yourself free no account",
+        "fill and sign pdf offline"
+      ],
+      "volume_note": null
+    },
+    "urgency_1to5": 2,
+    "urgency_basis": "Common small friction; abundant free no-signup tools reduce urgency.",
+    "buildability_1to5": 5,
+    "wtp_20_evidence": null,
+    "risks": "Free no-signup signers exist, so WTP is weak as a standalone; best bundled into the PDF toolkit; electronic signature legality varies by document type - do not promise legal validity. Buildability note: Client-side signature placement and field filling is straightforward.",
+    "confidence": "low"
+  },
+  {
+    "id": "offline-voice-noise-cleaner",
+    "region": "US",
+    "pain_point": "Cleaning background noise from voice recordings means a manual Audacity workflow or a cloud tool with daily caps and subscriptions.",
+    "segment": "Podcasters, course creators, interviewers, and people cleaning voice memos",
+    "micro_app_idea": "Drop in a voice recording/video, get an offline AI-denoised file with one strength slider; batch support; one-time purchase.",
+    "evidence": [
+      {
+        "url": "https://gauravtiwari.org/adobe-podcast-review/",
+        "what": "Review of Adobe Podcast Enhance free-plan limits: up to 30 minutes and 500 MB per file and 1 hour per day; paid raises limits and adds bulk upload; Premium from $9.99/month (per search excerpt).",
+        "date": null
+      },
+      {
+        "url": "https://podcast.adobe.com/en/plans",
+        "what": "Adobe Podcast plans page lists the paid Premium tier that unlocks more than the free tier.",
+        "date": null
+      },
+      {
+        "url": "https://cleanvoice.ai/blog/remove-background-noise-in-audacity/",
+        "what": "Audacity noise reduction requires capturing a noise profile and pushing it too far can make audio sound robotic (vendor blog promoting an alternative).",
+        "date": null
+      },
+      {
+        "url": "https://apps.apple.com/py/app/noise-reducer-audio-enhancer/id6752214311?l=en-GB",
+        "what": "iPad app Noise Reducer & Audio Enhancer: lifetime one-time $19.99 or weekly $3.99; no internet required (Paraguay store listing).",
+        "date": null
+      }
+    ],
+    "paid_alternatives": [
+      {
+        "name": "Adobe Podcast Premium (from)",
+        "price_usd": 9.99,
+        "model": "monthly",
+        "url": "https://gauravtiwari.org/adobe-podcast-review/"
+      },
+      {
+        "name": "Noise Reducer & Audio Enhancer (iPad lifetime)",
+        "price_usd": 19.99,
+        "model": "one-time",
+        "url": "https://apps.apple.com/py/app/noise-reducer-audio-enhancer/id6752214311?l=en-GB"
+      }
+    ],
+    "search_signals": {
+      "queries": [
+        "remove background noise from audio",
+        "adobe podcast enhance free limit",
+        "noise reduction audio offline"
+      ],
+      "volume_note": null
+    },
+    "urgency_1to5": 2,
+    "urgency_basis": "Quality annoyance rather than a blocker; free Audacity exists; no angry-tone complaints observed.",
+    "buildability_1to5": 3,
+    "wtp_20_evidence": "An existing offline lifetime noise-reduction app is priced at exactly $19.99 versus Adobe's $9.99/month.",
+    "risks": "Quality bar set by Adobe's free tier; Audacity free; model-licensing and file-size concerns; evidence is mostly vendor reviews. Buildability note: Open models like RNNoise can be bundled, but quality parity with Adobe's Enhance is uncertain.",
+    "confidence": "low"
+  },
+  {
+    "id": "schedule-photo-to-calendar-ics",
+    "region": "US",
+    "pain_point": "Parents and coaches receive game/practice schedules as PDFs or photos and must retype every event into their calendar.",
+    "segment": "Parents, coaches and team managers with youth sports or school schedules",
+    "micro_app_idea": "Import a schedule PDF/table or paste CSV text, preview events, and export a single .ics file for Google/Apple/Outlook; local parsing for text PDFs.",
+    "evidence": [
+      {
+        "url": "https://apps.apple.com/us/app/-/id6746355733",
+        "what": "'PDF to Calendar Converter' iPhone app needs a subscription to download the ICS and is rated 2.6/5 from 5 ratings (App Store listing via search excerpt).",
+        "date": null
+      },
+      {
+        "url": "https://aitoolsrecap.com/Product/image-to-calendar",
+        "what": "'Image to Calendar' web tool extracts events from photos/flyers/PDFs to ICS; pay-per-use credit packs from $9.90, credits do not expire, no subscription; no user reviews yet.",
+        "date": null
+      },
+      {
+        "url": "https://www.lakefentonschools.org/o/lake-fenton-high-school/documents/athletics/athletic-calendar-tip-sheets/42622",
+        "what": "School athletics publishes tip sheets for saving calendar views to phones, indicating families need help importing schedules.",
+        "date": null
+      }
+    ],
+    "paid_alternatives": [
+      {
+        "name": "Image to Calendar (credit packs from $9.90)",
+        "price_usd": 9.9,
+        "model": "one-time",
+        "url": "https://aitoolsrecap.com/Product/image-to-calendar"
+      },
+      {
+        "name": "PDF to Calendar Converter (iPhone, subscription to download ICS)",
+        "price_usd": null,
+        "model": "monthly",
+        "url": "https://apps.apple.com/us/app/-/id6746355733"
+      }
+    ],
+    "search_signals": {
+      "queries": [
+        "convert pdf schedule to calendar",
+        "sports schedule to google calendar ics",
+        "photo of schedule to calendar events"
+      ],
+      "volume_note": null
+    },
+    "urgency_1to5": 2,
+    "urgency_basis": "Seasonal annoyance (start of sports/school season); no strong complaint voices observed.",
+    "buildability_1to5": 3,
+    "wtp_20_evidence": "A pay-per-use competitor starts at $9.90 in credits and another charges a subscription; a $20 one-time is plausible but not confirmed.",
+    "risks": "AI/OCR can misread dates and time zones; children's schedule data is sensitive; many schools already offer calendar feeds (rSchoolToday, DynaCal). Buildability note: Text/table PDFs and CSV are easy; photos/flyers require OCR or a vision model (cost, accuracy).",
+    "confidence": "low"
+  },
+  {
+    "id": "split-expenses-no-daily-cap",
+    "region": "US",
+    "pain_point": "Splitwise's free tier limits daily expense entries and shows ads/upsells, frustrating occasional users who want an unlimited one-time option.",
+    "segment": "Roommates, travel groups and couples splitting shared costs",
+    "micro_app_idea": "Single-device trip/roommate expense splitter with unlimited entries, settle-up suggestions and shareable summary; one-time purchase.",
+    "evidence": [
+      {
+        "url": "https://au.trustpilot.com/review/splitwise.com",
+        "what": "Late-2023 reviews: 'from one day to the next the app limits free users to three expenses per day - this renders the app useless for occasional users'; others complain of 10-second ads and Pro nag screens; one wrote it 'wouldn't be so bad as a one off cost'.",
+        "date": null
+      },
+      {
+        "url": "https://getfinny.app/blog/splitwise-pricing-2026",
+        "what": "Competitor pricing guide: Pro about $4.99/month or $39.99/year; another source cited $49.99/year as of February 2026; free-plan limits not officially published.",
+        "date": "2026-02"
+      },
+      {
+        "url": "https://www.itvoice.in/splitwise-has-introduced-restrictions-on-the-number-of-free-expenses-users-can-add",
+        "what": "News item: 'Splitwise has introduced restrictions on the number of free expenses users can add'.",
+        "date": null
+      }
+    ],
+    "paid_alternatives": [
+      {
+        "name": "Splitwise Pro (annual, per competitor guide)",
+        "price_usd": 39.99,
+        "model": "annual",
+        "url": "https://getfinny.app/blog/splitwise-pricing-2026"
+      },
+      {
+        "name": "Spliit (free, open source)",
+        "price_usd": 0,
+        "model": "freemium",
+        "url": "https://alternativeto.net/software/splitwise/?p=12"
+      }
+    ],
+    "search_signals": {
+      "queries": [
+        "splitwise alternative",
+        "splitwise limit 3 expenses per day",
+        "split bills app no limit"
+      ],
+      "volume_note": null
+    },
+    "urgency_1to5": 2,
+    "urgency_basis": "Clear grievance but several free/open-source alternatives (Spliit, Tricount, SplitPro) already solve it.",
+    "buildability_1to5": 3,
+    "wtp_20_evidence": "Splitwise Pro ~$39.99-$49.99/year and reviewers asking for a one-off cost suggest some WTP, but free open-source alternatives cap it.",
+    "risks": "Free alternatives abundant; sync/backend costs; Splitwise limits change and sources disagree on caps. Buildability note: Single-device splitter is trivial; multi-user sync needs a backend, which conflicts with a pay-once model.",
+    "confidence": "low"
+  },
+  {
+    "id": "passport-photo-maker-offline",
+    "region": "US",
+    "pain_point": "Store passport photos cost about $17 for two prints and DIY photos get rejected for size/background/head-height errors; photo apps nickel-and-dime with unlock fees.",
+    "segment": "US travelers and families renewing or applying for passports and visas",
+    "micro_app_idea": "Offline tool to crop to 2x2 inch spec, check head-height/background guides, and output a 4x6 print sheet (plus common visa sizes).",
+    "evidence": [
+      {
+        "url": "https://passport-photo.online/blog/walgreens-or-cvs/",
+        "what": "Vendor blog: Walgreens and CVS charge about $16.99 for two prints; Walmart about $7.44; DIY via 4x6 print can cost roughly $1-$6.",
+        "date": null
+      },
+      {
+        "url": "https://www.thepricer.org/how-much-does-a-passport-photo-cost-at-walgreens/",
+        "what": "Price guide for Walgreens passport photos (estimates $14.99-$16.99 across sources).",
+        "date": null
+      },
+      {
+        "url": "https://justuseapp.com/en/app/917389447/passport-photo-id-photo/reviews",
+        "what": "App reviews describe a $2.99 fee for a colour photo, ads needing another $1.99 to remove, and prints coming out 2.5x2.5 instead of 2x2 (anecdotes).",
+        "date": null
+      },
+      {
+        "url": "https://thepointsguy.com/news/the-problem-with-taking-your-own-passport-photos",
+        "what": "Article titled 'The problem with taking your own passport photos'.",
+        "date": null
+      }
+    ],
+    "paid_alternatives": [
+      {
+        "name": "Walgreens/CVS two-print passport photos",
+        "price_usd": 16.99,
+        "model": "one-time",
+        "url": "https://passport-photo.online/blog/walgreens-or-cvs/"
+      },
+      {
+        "name": "Passport Photo - ID Photo app (reviewer-reported $2.99 unlock)",
+        "price_usd": 2.99,
+        "model": "freemium",
+        "url": "https://justuseapp.com/en/app/917389447/passport-photo-id-photo/reviews"
+      }
+    ],
+    "search_signals": {
+      "queries": [
+        "passport photo at home 2x2",
+        "how much is a passport photo at walgreens",
+        "passport photo requirements background"
+      ],
+      "volume_note": null
+    },
+    "urgency_1to5": 2,
+    "urgency_basis": "High stakes when needed (rejection delays travel) but infrequent, and apps already charge only a few dollars.",
+    "buildability_1to5": 4,
+    "wtp_20_evidence": "Stores charge $16.99 per set, but existing apps charge $2.99 and the need is rare, so $20 is only plausible for families or heavy users.",
+    "risks": "Government spec accuracy (I could not open the travel.state.gov page; details are from secondary sources); rejection liability; official requirements may change; low frequency of use. Buildability note: Cropping/layout is easy; reliable automatic compliance checks (head size, shadows) are harder.",
+    "confidence": "low"
+  },
+  {
+    "id": "exif-gps-photo-privacy-stripper",
+    "region": "US",
+    "pain_point": "People sharing photos online or with buyers want to strip GPS and camera metadata in bulk, but web tools handle one file at a time and miss sidecar data.",
+    "segment": "Marketplace sellers, parents, realtors and creators sharing photos publicly",
+    "micro_app_idea": "Offline batch EXIF/GPS stripper with a before/after report of what metadata was found and selective keep options (e.g. keep camera settings, drop GPS).",
+    "evidence": [
+      {
+        "url": "https://apps.apple.com/ca/app/exifstrip/id6760243108",
+        "what": "ExifStrip iOS: free with in-app purchases, up to 50 photos per batch, works offline, share-sheet extension.",
+        "date": null
+      },
+      {
+        "url": "https://freetoolonline.com/guides/image-metadata-exif-remover-vs-alternatives.html",
+        "what": "Guide notes the browser remover does not batch whole folders and does not detect Lightroom edit data stored in separate XMP files.",
+        "date": null
+      },
+      {
+        "url": "https://wallpapers.com/tools/metadata-accessibility/exif-stripper/",
+        "what": "Free-to-try browser stripper; paid tier lets you choose which fields to keep, e.g., strip GPS but keep camera settings.",
+        "date": null
+      }
+    ],
+    "paid_alternatives": [
+      {
+        "name": "ExifStrip (iOS, free + in-app purchases)",
+        "price_usd": null,
+        "model": "freemium",
+        "url": "https://apps.apple.com/ca/app/exifstrip/id6760243108"
+      },
+      {
+        "name": "Wallpapers.com EXIF Stripper paid tier (price not seen)",
+        "price_usd": null,
+        "model": "freemium",
+        "url": "https://wallpapers.com/tools/metadata-accessibility/exif-stripper/"
+      }
+    ],
+    "search_signals": {
+      "queries": [
+        "remove exif data from photos",
+        "strip gps from photos before sharing",
+        "batch exif remover"
+      ],
+      "volume_note": null
+    },
+    "urgency_1to5": 2,
+    "urgency_basis": "Privacy-aware but low-urgency; no complaint threads found, only tool listings.",
+    "buildability_1to5": 5,
+    "wtp_20_evidence": null,
+    "risks": "Free command-line (ExifTool) and many free web tools exist; no WTP evidence; evidence is vendor listings only. Buildability note: Local metadata parsing/removal is simple; XMP sidecar support adds a little.",
+    "confidence": "low"
+  },
+  {
+    "id": "video-compress-to-size-limit",
+    "region": "US",
+    "pain_point": "Videos exceed chat/email upload limits (Discord free reportedly lowered to 10 MB; Gmail counts attachments up to 25 MB) and trimming/compressing is fiddly.",
+    "segment": "Casual users, gamers, remote workers sharing screen clips",
+    "micro_app_idea": "Pick a target size (10 MB / 25 MB), auto-trim and compress to hit it with one click, offline.",
+    "evidence": [
+      {
+        "url": "https://gigazine.net/gsc_news/en/20240906-discord-file-size-upload-limit",
+        "what": "Sept 2024 report that Discord's support page announced lowering the free-user file limit to 10 MB (previously 25 MB).",
+        "date": "2024-09"
+      },
+      {
+        "url": "https://tools.now.to/blog/how-to-compress-video-for-discord",
+        "what": "Feb 2026 guide still says free users can only upload files up to 25 MB, so sources disagree on the current cap.",
+        "date": "2026-02"
+      },
+      {
+        "url": "https://www.tella.com/tools/video-compressor-for-discord",
+        "what": "Free browser tool 'Under 10 MB - No upload' for Discord, showing competition is free.",
+        "date": null
+      }
+    ],
+    "paid_alternatives": [
+      {
+        "name": "Tella free video compressor (browser)",
+        "price_usd": 0,
+        "model": "freemium",
+        "url": "https://www.tella.com/tools/video-compressor-for-discord"
+      },
+      {
+        "name": "HandBrake (free desktop)",
+        "price_usd": 0,
+        "model": "freemium",
+        "url": "https://www.tourboxtech.com/en/news/free-video-compression-handbrake.html"
+      }
+    ],
+    "search_signals": {
+      "queries": [
+        "compress video for discord",
+        "video under 25mb for email",
+        "how to compress video to 10mb"
+      ],
+      "volume_note": null
+    },
+    "urgency_1to5": 2,
+    "urgency_basis": "Frequent minor annoyance but multiple free tools solve it.",
+    "buildability_1to5": 4,
+    "wtp_20_evidence": null,
+    "risks": "Free competitors abundant; platform limits change; no WTP evidence. Buildability note: ffmpeg.wasm/ffmpeg wrapper with target-size presets is feasible.",
+    "confidence": "low"
+  },
+  {
+    "id": "screen-recorder-no-limits",
+    "region": "US",
+    "pain_point": "Loom's free plan limits recordings to 25 videos and 5 minutes, pushing users to $12.50-$18/creator/month plans.",
+    "segment": "Solo workers, teachers, support staff making quick screen walkthroughs",
+    "micro_app_idea": "Local screen+mic recorder with trimming and instant MP4 export, no time or count caps and no cloud; one-time purchase.",
+    "evidence": [
+      {
+        "url": "https://www.costbench.com/software/communication/loom/free-plan/",
+        "what": "Loom free plan: 25 videos per person, 5-minute recordings, 720p; delete or upgrade after 25.",
+        "date": null
+      },
+      {
+        "url": "https://www.creatorstackclub.com/software/loom/pricing",
+        "what": "Loom pricing page review: paid plans billed annually; per-creator monthly costs differ by source ($12.50, $15, $18).",
+        "date": null
+      },
+      {
+        "url": "https://www.movavi.com/screen-recorder-win/personal/buynow-2.html",
+        "what": "Movavi lifetime licence for one PC listed at $74.95 (page titled 2023, may be outdated).",
+        "date": null
+      }
+    ],
+    "paid_alternatives": [
+      {
+        "name": "Loom Business (per creator, sources vary $12.50-$18)",
+        "price_usd": 12.5,
+        "model": "monthly",
+        "url": "https://www.creatorstackclub.com/software/loom/pricing"
+      },
+      {
+        "name": "Movavi Screen Recorder lifetime (1 PC, 2023 page)",
+        "price_usd": 74.95,
+        "model": "one-time",
+        "url": "https://www.movavi.com/screen-recorder-win/personal/buynow-2.html"
+      },
+      {
+        "name": "1001 Record (Mac) lifetime option",
+        "price_usd": 39.99,
+        "model": "one-time",
+        "url": "https://alternativeto.net/software/1001-record-screen-recorder/about"
+      }
+    ],
+    "search_signals": {
+      "queries": [
+        "loom alternative unlimited",
+        "loom free plan limit",
+        "screen recorder no time limit"
+      ],
+      "volume_note": null
+    },
+    "urgency_1to5": 2,
+    "urgency_basis": "Limit-driven annoyance; OBS and OS built-in recorders are free.",
+    "buildability_1to5": 4,
+    "wtp_20_evidence": "Lifetime recorders are listed at $39.99-$74.95 and Loom costs $12.50+/month, so $20 undercuts comparables, though free OBS competes.",
+    "risks": "OBS and OS-level recorders are free; Loom's value is sharing links (needs hosting); heavily crowded. Buildability note: Browser getDisplayMedia/MediaRecorder or Electron is feasible; polish and trimming take effort.",
+    "confidence": "low"
+  },
+  {
+    "id": "photographer-batch-resize-watermark",
+    "region": "US",
+    "pain_point": "Photographers and sellers need quick batch resize + watermark + export presets for client delivery without paying a creative-cloud subscription.",
+    "segment": "Hobbyist photographers, small studios and online sellers",
+    "micro_app_idea": "Drag a folder, apply saved resize/watermark/sharpen presets, and export web and proof versions in one pass.",
+    "evidence": [
+      {
+        "url": "https://apps.apple.com/app/image-bucket-pro/id451406712",
+        "what": "PhotoBatcher Pro Mac app at $6.99 resizes, watermarks, crops and bulk-exports.",
+        "date": null
+      },
+      {
+        "url": "https://cuttheclock.gumroad.com/l/resizewatermarkpro",
+        "what": "Resize & Watermark Pro (Photoshop script) at $4.99+ one-time; no recurring fees; sales final.",
+        "date": null
+      },
+      {
+        "url": "https://community.adobe.com/questions-617/price-increase-unacceptable-565811",
+        "what": "Adobe community thread titled 'price increase unacceptable' about Lightroom/Photography plan pricing.",
+        "date": null
+      }
+    ],
+    "paid_alternatives": [
+      {
+        "name": "PhotoBatcher Pro (Mac)",
+        "price_usd": 6.99,
+        "model": "one-time",
+        "url": "https://apps.apple.com/app/image-bucket-pro/id451406712"
+      },
+      {
+        "name": "Resize & Watermark Pro (Photoshop script)",
+        "price_usd": 4.99,
+        "model": "one-time",
+        "url": "https://cuttheclock.gumroad.com/l/resizewatermarkpro"
+      }
+    ],
+    "search_signals": {
+      "queries": [
+        "batch watermark photos",
+        "bulk resize and watermark images",
+        "lightroom export preset watermark"
+      ],
+      "volume_note": null
+    },
+    "urgency_1to5": 2,
+    "urgency_basis": "Workflow convenience; Lightroom already supports export presets and watermarks.",
+    "buildability_1to5": 5,
+    "wtp_20_evidence": null,
+    "risks": "Comparable tools sell at $4.99-$6.99 so $20 is above market anchors; Lightroom covers it for subscribers; commodity feature set. Buildability note: Local image processing only.",
+    "confidence": "low"
+  },
+  {
+    "id": "chatgpt-chat-export-clean-pdf",
+    "region": "US",
+    "pain_point": "Exporting a long AI chat to Word/PDF without losing tables, code blocks, headings and formulas is clumsy; browser print includes site chrome.",
+    "segment": "Students, consultants and analysts reusing AI-assisted research in documents",
+    "micro_app_idea": "Local tool that turns a saved/exported chat file into a clean, styled DOCX/PDF with tables and code preserved.",
+    "evidence": [
+      {
+        "url": "https://forum.level1techs.com/t/how-can-i-convert-chatgpt-to-word-or-pdf/252222",
+        "what": "Forum request to convert a long ChatGPT chat to Word/PDF without losing headings, tables, code blocks, images or formulas; one user says Chrome print-to-PDF works but captures the website interface.",
+        "date": null
+      },
+      {
+        "url": "https://backrun.co/chatgpt-to-word-or-pdf-chrome-extension",
+        "what": "Free Chrome extension covering PDF, Word, Google Docs and Notion export.",
+        "date": null
+      },
+      {
+        "url": "https://chromewebstore.google.com/detail/ecpdekefgdnkfnejnmlpongihbobfail",
+        "what": "'ChatGPT Share to PDF' extension claims local processing and preserved code blocks/tables.",
+        "date": null
+      }
+    ],
+    "paid_alternatives": [
+      {
+        "name": "ChatGPT Exporter (Backrun, free extension)",
+        "price_usd": 0,
+        "model": "freemium",
+        "url": "https://backrun.co/chatgpt-to-word-or-pdf-chrome-extension"
+      }
+    ],
+    "search_signals": {
+      "queries": [
+        "export chatgpt conversation to pdf",
+        "chatgpt to word",
+        "save chatgpt chat as pdf with tables"
+      ],
+      "volume_note": null
+    },
+    "urgency_1to5": 1,
+    "urgency_basis": "Low-urgency convenience; many free extensions.",
+    "buildability_1to5": 4,
+    "wtp_20_evidence": null,
+    "risks": "Free extensions dominate; OpenAI/other vendors may add native export (not verified); platform terms and DOM changes; no WTP evidence. Buildability note: Formatting conversion is easy; browser-extension DOM scraping breaks when UIs change.",
+    "confidence": "low"
+  },
+  {
+    "id": "etsy-listing-tag-title-kit",
+    "region": "US",
+    "pain_point": "Etsy sellers spend 20-40 minutes per listing on titles, descriptions and the 13 tags, and keyword tools are subscriptions.",
+    "segment": "Small Etsy sellers (handmade, print-on-demand, digital downloads)",
+    "micro_app_idea": "Offline tag/title builder that expands a seed phrase into buyer-language variants, checks character limits and fills all 13 tags; one-time price.",
+    "evidence": [
+      {
+        "url": "https://listybox.com/blog/etsy-mistakes-killing-sales-automated-solutions/",
+        "what": "Seller-tool vendor blog: unused tag slots reduce visibility; shoppers search 'gift for dad' not technical terms; listing copy takes 20-40 minutes per listing (vendor estimate, unverified).",
+        "date": null
+      },
+      {
+        "url": "https://marmalead.com/pricing",
+        "what": "Marmalead lists a lifetime plan at $300 (per search excerpt), showing sellers will pay for keyword tools.",
+        "date": null
+      },
+      {
+        "url": "https://hunted.space/product/etsys-in",
+        "what": "etsys.in offers 11 free tools with no signup, evidence of free competition.",
+        "date": null
+      }
+    ],
+    "paid_alternatives": [
+      {
+        "name": "Marmalead lifetime plan",
+        "price_usd": 300,
+        "model": "one-time",
+        "url": "https://marmalead.com/pricing"
+      },
+      {
+        "name": "etsys.in free tools",
+        "price_usd": 0,
+        "model": "freemium",
+        "url": "https://hunted.space/product/etsys-in"
+      }
+    ],
+    "search_signals": {
+      "queries": [
+        "etsy seo tags generator",
+        "etsy title keywords tool",
+        "etsy 13 tags"
+      ],
+      "volume_note": null
+    },
+    "urgency_1to5": 2,
+    "urgency_basis": "Time-saver for sellers; evidence is vendor claims, not seller complaints.",
+    "buildability_1to5": 3,
+    "wtp_20_evidence": "Marmalead's $300 lifetime plan shows sellers pay for keyword data, but a data-less $20 tool is a weaker offer.",
+    "risks": "Etsy platform and policy changes; no proprietary keyword data; free tools abound; evidence is vendor-sourced. Buildability note: Without live search-volume data the tool is only a formatter/idea expander; real keyword data requires a data source.",
+    "confidence": "low"
+  }
+]

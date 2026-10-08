@@ -1,0 +1,574 @@
+{
+ "category": "IA local y herramientas para desarrolladores/creadores",
+ "survivors": [
+  {
+   "id": "audio-anonimizador-entrevistas",
+   "gap": "Quien debe compartir o archivar grabaciones de entrevistas (tesistas e investigadores cualitativos, periodistas, RR.HH., docentes) tiene que silenciar a mano nombres, telefonos y lugares en un editor de audio. El software que lo automatiza (CaseGuard) es forense/enterprise (~$299/usuario/mes segun listados de terceros) y la alternativa gratuita automatizada es un prototipo de investigacion (arXiv) sin interfaz.",
+   "micro_app_idea": "App local que transcribe el audio con Whisper, detecta nombres, telefonos, direcciones y organizaciones, deja aprobar cada hallazgo y exporta el audio con esos tramos silenciados o con pitido, mas la transcripcion seudonimizada ([Participante 1]).",
+   "segment": "Investigadores cualitativos y tesistas (requisitos de etica/datos), periodistas con fuentes protegidas, podcasters con invitados sensibles, RR.HH. y docentes que archivan entrevistas propias con consentimiento",
+   "platform": "cross",
+   "proven_sellers": [
+    {
+     "name": "CaseGuard (Media Suite, redaccion de audio)",
+     "price_usd": 299,
+     "currency": "USD",
+     "model": "monthly",
+     "traction_evidence": "Listados de terceros (spendbase) dan $299/usuario/mes facturado anual para la suite que incluye audio; Capterra lista desde US$379/usuario. Es producto forense/legal (no es el comprador objetivo) pero prueba que el trabajo se paga. No verifique la pagina oficial de precios.",
+     "url": "https://caseguard.com/audio-redaction-software/"
+    },
+    {
+     "name": "MacWhisper Pro (transcripcion local, referencia de precio)",
+     "price_usd": 69,
+     "currency": "USD",
+     "model": "one-time",
+     "traction_evidence": "Guias 2026 lo ubican en EUR 59 (~$69) de pago unico por Gumroad, con descuento a periodistas/estudiantes. La cifra de ~57.5K descargas viene del brief, no la verifique yo.",
+     "url": "https://www.getvoibe.com/resources/macwhisper-pricing/"
+    },
+    {
+     "name": "Servicio manual de redaccion de audio (gig en Fiverr)",
+     "price_usd": null,
+     "currency": "USD",
+     "model": "one-time",
+     "traction_evidence": "Existe oferta de pago por quitar nombres/informacion sensible de audios a mano; no vi precio ni ventas.",
+     "url": "https://www.fiverr.com/joshlive01/do-audio-redaction-to-remove-names-and-sensitive-info"
+    }
+   ],
+   "free_alternatives": [
+    {
+     "name": "Audacity (edicion manual: silenciar tramos, cambiar tono)",
+     "url": "https://datalab.socialsciences.ku.dk/guides/Audacity_for_Voice_Distortion_Guide.pdf",
+     "what_it_covers": "Silenciar o distorsionar tramos y voz; la guia universitaria de Copenhague lo presenta como opcion accesible.",
+     "what_it_lacks": "No detecta nombres: todo es manual por grabacion. Un foro advierte que el cambio de tono es reversible (https://forum.audacityteam.org/t/unrecognizable-voice-altering-my-voice-post-production-or-real-time/145754)."
+    },
+    {
+     "name": "Pipeline de investigacion: alineador forzado + reconocimiento de entidades (arXiv 2204.12622)",
+     "url": "https://www.arxiv.org/abs/2204.12622",
+     "what_it_covers": "Automatiza deteccion de nombres y silencia los segmentos; F1 0.769 en un conjunto pequeno anotado a mano.",
+     "what_it_lacks": "Es codigo de investigacion sin interfaz, requiere Python; sin flujo de revision humana empaquetado."
+    },
+    {
+     "name": "Transcriptores locales gratuitos (OpenWhispr, Vibe, Buzz)",
+     "url": "https://openwhispr.com/use-cases/journalists",
+     "what_it_covers": "Transcripcion local con marcas de tiempo, base para localizar nombres.",
+     "what_it_lacks": "No redactan ni editan el audio; el usuario sigue cortando a mano."
+    }
+   ],
+   "gap_evidence": [
+    {
+     "url": "https://www.arxiv.org/abs/2204.12622",
+     "what": "Paper: la anonimizacion automatica de audio via transcripcion + NER + silencio es factible (F1 0.769) pero solo como prototipo; recomiendan revision humana.",
+     "date": "2022-04"
+    },
+    {
+     "url": "https://www.ideals.illinois.edu/items/119587/bitstreams/392699/data.pdf",
+     "what": "Articulo de archivo linguistico: bipear nombres es metodo comun, las grabaciones nunca quedan 100% anonimas y el exceso de bipeo quita datos utiles.",
+     "date": null
+    },
+    {
+     "url": "https://www.eur.nl/en/research/research-services/research-data-management/anonymisation-research-data/qualitative-data",
+     "what": "Guia de gestion de datos de la Erasmus Univ.: la eliminacion excesiva en audio/transcripciones distorsiona los datos; recomienda planificar desde el consentimiento.",
+     "date": null
+    },
+    {
+     "url": "https://qualitative-research.net/index.php/fqs/article/view/512",
+     "what": "Paetzold, FQS vol. 6 no. 1 (ene-2005): los metodos antiguos de anonimizar audio eran demasiado caros por requerir tecnica y herramientas; la edicion por software es la alternativa.",
+     "date": "2005-01"
+    },
+    {
+     "url": "https://www.fiverr.com/joshlive01/do-audio-redaction-to-remove-names-and-sensitive-info",
+     "what": "Hay gente que contrata el trabajo manual de quitar nombres de audios, senal de que no hay herramienta barata y automatica.",
+     "date": null
+    }
+   ],
+   "differentiator": "Todo corre en el equipo (no sube audio), une deteccion + revision humana + exportacion en un flujo y es pago unico; Audacity exige trabajo manual por grabacion y las suites forenses cuestan miles al ano.",
+   "price_evidence": "CaseGuard Media Suite ~$299/usuario/mes (terceros) y Capterra desde US$379/usuario; MacWhisper Pro ~EUR 59 (~$69) pago unico. No encontre una herramienta de redaccion de audio a precio de consumidor para comparar directamente.",
+   "target_price_usd": 39,
+   "build_complexity_1to5": 3,
+   "risks": "El recall de deteccion de nombres es limitado (F1 0.77 en el prototipo): hace falta revision obligatoria y no prometer anonimato; la voz sigue siendo identificable; modelos Whisper + NER pesan cientos de MB y el NER en espanol hay que validarlo; comites de etica pueden exigir procesos propios. Posicionarlo solo para material propio con consentimiento, no para vigilancia ni policia.",
+   "confidence": "med",
+   "confidence_basis": "La necesidad esta documentada en 4 fuentes independientes (paper, guia universitaria, articulo de archivo, servicio manual) y hay precios de referencia, pero no encontre un comparable de pago unico ni hilos de intencion de compra; la disposicion a pagar a $39 es inferida."
+  },
+  {
+   "id": "extractos-bancarios-local-csv",
+   "gap": "Convertir extractos bancarios PDF (incluidos escaneados y con descripciones multilinea) a CSV/Excel sin subirlos a la nube: los gratuitos locales (Tabula, pdfplumber) solo manejan PDFs con capa de texto y fallan con filas multilinea; los SaaS suben los archivos y cobran suscripcion o por pagina; el unico local de pago unico que vi cuesta $129.",
+   "micro_app_idea": "App de escritorio que lee extractos PDF (con OCR local si son escaneados), detecta fecha/descripcion/importe incluso con descripciones de varias lineas, permite corregir y exporta CSV/XLSX/OFX con perfiles guardados por banco.",
+   "segment": "Contadores y tenedores de libros independientes, pequenas empresas y personas que preparan sus propios registros; formatos de bancos de Latinoamerica como nicho",
+   "platform": "cross",
+   "proven_sellers": [
+    {
+     "name": "LedgerSprout (conversor local de extractos)",
+     "price_usd": 129,
+     "currency": "USD",
+     "model": "one-time",
+     "traction_evidence": "AlternativeTo lo lista con pago unico $129, suscripcion $349/ano y version gratis limitada; procesa en el equipo (Windows/Linux/Mac). Sin cifras de ventas.",
+     "url": "https://alternativeto.net/software/ledgersprout/about/"
+    },
+    {
+     "name": "Bank Statement Converter Pro (SaaS)",
+     "price_usd": null,
+     "currency": "USD",
+     "model": "monthly",
+     "traction_evidence": "Listado TrustMRR con ingresos verificados via Polar: MRR $2.3k en un snapshot ($3.9k ingresos 30 dias); otro snapshot muestra $9.1k en 30 dias y $187k total.",
+     "url": "https://trustmrr.com/startup/bank-statement-converter-pro"
+    },
+    {
+     "name": "BankConv (SaaS)",
+     "price_usd": null,
+     "currency": "USD",
+     "model": "monthly",
+     "traction_evidence": "TrustMRR: 19 suscripciones activas verificadas via Stripe (21 en un snapshot posterior); el fundador autoinforma $600 MRR (no verificado).",
+     "url": "https://trustmrr.com/startup/bankconv"
+    }
+   ],
+   "free_alternatives": [
+    {
+     "name": "Tabula (open source)",
+     "url": "https://source.opennews.org/articles/introducing-tabula/",
+     "what_it_covers": "Extraccion de tablas de PDFs con texto, local, gratis, sin limite de archivos (requiere Java).",
+     "what_it_lacks": "No lee PDFs escaneados y segun una guia de School of Data no maneja filas multilinea ni celdas combinadas (https://schoolofdata.org/courses/a-gentle-introduction-into-extracting-data/lessons/the-tabula-way/)."
+    },
+    {
+     "name": "pdfplumber (libreria Python)",
+     "url": null,
+     "what_it_covers": "Extraccion local de tablas en PDFs con capa de texto.",
+     "what_it_lacks": "Sin OCR y exige escribir codigo (segun el resumen de busqueda; no abri su pagina)."
+    },
+    {
+     "name": "Conversor local en navegador (WebAssembly, proyecto nuevo)",
+     "url": "https://peerlist.io/dangibuilds/project/local-bank-statement-converter",
+     "what_it_covers": "Gratis, procesa en el navegador y funciona sin conexion tras cargar.",
+     "what_it_lacks": "Proyecto nuevo con poca historia de resenas; es web, no app instalada."
+    }
+   ],
+   "gap_evidence": [
+    {
+     "url": "https://schoolofdata.org/courses/a-gentle-introduction-into-extracting-data/lessons/the-tabula-way/",
+     "what": "Tabula no funciona con filas multilinea ni celdas combinadas, justo el caso tipico de descripciones de movimientos bancarios.",
+     "date": null
+    },
+    {
+     "url": "https://www.lido.app/blog/tabula-alternative",
+     "what": "Comparativa (blog de un vendedor): Tabula no cubre escaneos; las alternativas que si los cubren son nube/pago.",
+     "date": null
+    },
+    {
+     "url": "https://apps.apple.com/app/bank-statement-pdf-converter/id6746816390",
+     "what": "App Mac de extractos: dice que el PDF original no sale del Mac pero el texto cifrado se formatea en su nube; muestra que el requisito 100% local aun no esta cubierto por todos.",
+     "date": null
+    },
+    {
+     "url": "https://alternativeto.net/software/ledgersprout/about/",
+     "what": "El unico producto local de pago unico visto, a $129, indica hueco entre gratis-tecnico y pago-alto.",
+     "date": null
+    }
+   ],
+   "differentiator": "Pago unico y 100% local con OCR; los SaaS cobran suscripcion/por pagina y suben datos financieros de clientes; Tabula no resuelve multilinea ni escaneos.",
+   "price_evidence": "LedgerSprout $129 pago unico / $349 ano (AlternativeTo); multiples SaaS con suscripcion verificada en TrustMRR (ingresos pequenos: $0.6k-$2.3k MRR en los listados claros). No hay precio verificado de un local en el rango $29-$69.",
+   "target_price_usd": 49,
+   "build_complexity_1to5": 3,
+   "risks": "Cada banco tiene su formato (heuristicas o LLM local); los errores en importes son criticos, exigir revision lado a lado; saturacion alta (muchos SaaS en TrustMRR y App Store); es conversion de datos, no asesoria financiera; OCR en espanol por validar.",
+   "confidence": "med",
+   "confidence_basis": "Demanda de pago visible en varios SaaS verificados y un local de pago unico a $129; la carencia de los gratuitos esta documentada. Pero las cifras de ingresos son pequenas y no hay hilos de usuarios pidiendo una version local de pago unico."
+  },
+  {
+   "id": "ia-por-lotes-tabla",
+   "gap": "Ejecutar el mismo prompt sobre cientos o miles de filas de un CSV/Excel (descripciones de producto, clasificacion, limpieza, traduccion) o extraer campos definidos por el usuario de una carpeta de PDFs, con clave propia o modelo local, sin subir el archivo a Google/Microsoft y con reanudacion y estimado de costo. Hoy se resuelve con =AI()/=COPILOT() con topes, complementos de creditos prepago, apps web o scripts Python.",
+   "micro_app_idea": "App de escritorio donde cargas un CSV/XLSX o una carpeta de PDFs, escribes un prompt con {columnas} o defines los campos a extraer, eliges tu clave (OpenAI/Anthropic/Gemini) u Ollama local, ves estimado de costo y vista previa de 5 filas, corres por lotes con reanudacion y exportas columnas nuevas.",
+   "segment": "Vendedores de e-commerce y marketers/SEO que procesan catalogos; consultores y analistas con datos de clientes; investigadores en revisiones de literatura y personal administrativo que procesan lotes de documentos propios",
+   "platform": "cross",
+   "proven_sellers": [
+    {
+     "name": "TypingMind (cliente de IA con claves propias)",
+     "price_usd": 39,
+     "currency": "USD",
+     "model": "one-time",
+     "traction_evidence": "Checkout oficial: Standard $39 / Extended $79 / Premium $99, pago unico, claves propias. Estimaciones de terceros: Latka $817.3K de ingresos en 2024; StarterStory ~$500K en el primer ano; el propio sitio afirma 20,641+ clientes (cifra de marketing). Prueba que BYOK de pago unico vende, aunque no es la misma funcion.",
+     "url": "https://checkout.typingmind.com/buy"
+    },
+    {
+     "name": "Bulk Image Studio Pro (lotes de prompts con tu clave OpenAI, Windows)",
+     "price_usd": 79,
+     "currency": "USD",
+     "model": "one-time",
+     "traction_evidence": "Listado GetApp: $79 precio plano; oferta vitalicia en AppSumo de $29; el uso de OpenAI se factura aparte. Genera imagenes, no texto, pero es el mismo patron de lotes + clave propia.",
+     "url": "https://www.getapp.co.nz/software/2103141/bulk-image-studio-pro"
+    },
+    {
+     "name": "ImageTagz (lotes con clave propia Gemini/OpenAI)",
+     "price_usd": null,
+     "currency": "USD",
+     "model": "one-time",
+     "traction_evidence": "Gumroad, pago unico con clave propia; precio y ventas no vistos.",
+     "url": "https://kolbasra.gumroad.com/l/imagetagz"
+    },
+    {
+     "name": "HyperMink AI (PDF/CSV locales, Mac y Windows, sin GPU)",
+     "price_usd": null,
+     "currency": "USD",
+     "model": "one-time",
+     "traction_evidence": "Listado de agregador dice sin suscripcion ni GPU y con actualizaciones de por vida; no hay precio ni cifras. Ficha en Toolify, no la oficial.",
+     "url": "https://www.toolify.ai/pt/tool/hypermink"
+    }
+   ],
+   "free_alternatives": [
+    {
+     "name": "Google Sheets =AI()",
+     "url": "https://support.google.com/docs/answer/15877199",
+     "what_it_covers": "Prompt por celda dentro de Sheets, sin salir de la hoja.",
+     "what_it_lacks": "Solo las primeras 350 celdas seleccionadas por tanda, limites cortos y largos de generacion, requiere un plan elegible, solo texto y los datos viven en Google."
+    },
+    {
+     "name": "Excel =COPILOT()",
+     "url": "https://support.microsoft.com/en-us/excel/copilot-function",
+     "what_it_covers": "Prompt por celda con resultados que se derraman por la hoja.",
+     "what_it_lacks": "Requiere suscripcion a Copilot, tope de 100 llamadas cada 10 min y no calcula en libros etiquetados Confidential/Highly Confidential."
+    },
+    {
+     "name": "Datablist (web, clave propia)",
+     "url": "https://www.datablist.com/how-to/run-chatgpt-prompt-on-excel-csv-rows",
+     "what_it_covers": "Prompt por fila con marcadores de columna y clave OpenAI propia, CSV y Excel.",
+     "what_it_lacks": "Es herramienta web (hay que cargar el archivo); no verifique limites del plan gratis."
+    },
+    {
+     "name": "csvai (Python, gratis)",
+     "url": "https://pypi.org/project/csvai/0.1.0/",
+     "what_it_covers": "Prompt por fila, reanuda filas ya escritas, UI Streamlit opcional.",
+     "what_it_lacks": "Requiere instalar Python y pip; sin estimado de costo."
+    },
+    {
+     "name": "FeedForge (open source, web)",
+     "url": "https://github.com/laysa66/feedforge",
+     "what_it_covers": "Descripciones de producto en lote desde CSV con clave propia.",
+     "what_it_lacks": "App web Next.js que hay que desplegar; no es instalador de escritorio."
+    },
+    {
+     "name": "GPT for Sheets (complemento, claves propias o creditos)",
+     "url": "https://gptforwork.com/help/billing/sheets",
+     "what_it_covers": "Prompts masivos dentro de Google Sheets; admite clave propia.",
+     "what_it_lacks": "Creditos prepago (paquete de $29 por 29M tokens segun una resena de 2024, puede estar desactualizada); no se puede fijar un limite de gasto arbitrario; solo funciona dentro de Sheets."
+    }
+   ],
+   "gap_evidence": [
+    {
+     "url": "https://support.google.com/docs/answer/15877199",
+     "what": "Documentacion oficial: solo se generan las primeras 350 celdas seleccionadas con funciones de IA; hay que esperar y seleccionar la siguiente tanda.",
+     "date": null
+    },
+    {
+     "url": "https://support.microsoft.com/en-us/excel/copilot-function",
+     "what": "Documentacion oficial: hasta 100 funciones COPILOT cada 10 min; no calcula en libros Confidential.",
+     "date": null
+    },
+    {
+     "url": "https://gptforwork.com/help/billing/sheets",
+     "what": "FAQ del vendedor: no es posible fijar un limite de gasto arbitrario; el saldo actua como limite.",
+     "date": null
+    },
+    {
+     "url": "https://redlib.ssps.io/r/LocalLLM/comments/1l5vgyt/llm_for_table_extraction",
+     "what": "Hilo r/LocalLLM (espejo redlib): la solucion comun para llevar PDFs a Excel con LLM local es armar pdfplumber + Tesseract + LLM local + openpyxl a mano; las tablas son un punto debil conocido.",
+     "date": null
+    },
+    {
+     "url": "https://arxiv.org/pdf/2604.00003",
+     "what": "Estudio de confiabilidad de extraccion de PDFs tabulares con LLMs locales y parsing con layout: los metodos clasicos son fragiles ante variaciones de estructura.",
+     "date": "2026-04"
+    }
+   ],
+   "differentiator": "Los datos se quedan en el equipo (o van directo a tu proveedor), con reanudacion, estimado de costo antes de gastar y pago unico; frente a =AI()/COPILOT con topes y complementos con creditos, y a scripts Python que el publico no tecnico no instala.",
+   "price_evidence": "TypingMind $39/$79/$99 pago unico (checkout oficial); Bulk Image Studio Pro $79 (AppSumo $29); comparables adyacentes, no la misma funcion.",
+   "target_price_usd": 29,
+   "build_complexity_1to5": 4,
+   "risks": "Saturacion (Datablist, GPT for Sheets, plugins y repos open source); depende de claves API de terceros (friccion para no tecnicos); Google y Microsoft pueden subir sus topes; costos de API a cargo del usuario; el modo PDF/tablas es fragil con LLM locales pequenos; HyperMink y similares ya ofrecen PDF/CSV locales (sin precio visible). Idea combinada de dos modos que puede separarse.",
+   "confidence": "low",
+   "confidence_basis": "Los topes de Google/Microsoft estan documentados y TypingMind prueba que BYOK de pago unico vende, pero no encontre hilos de usuarios pidiendo exactamente esto, y los vendedores adyacentes (Bulk Image Studio, ImageTagz, HyperMink) no tienen traccion verificable."
+  },
+  {
+   "id": "libro-a-audio-local",
+   "gap": "Convertir EPUB/PDF/DOCX propios en audiolibro (MP3/M4B con capitulos) con voces neuronales locales sin instalar Python ni ffmpeg: Audiblez pide entorno virtual + pip + ffmpeg, Narrapy pide Python 3.10-3.12 + ffmpeg + espeak-ng, ebook2audiobook es pesado, y el producto de pago unico que vi (TextAloud) usa voces de Windows con las premium aparte.",
+   "micro_app_idea": "Instalador de un clic: arrastras EPUB/PDF/DOCX, eliges una voz neuronal local (Kokoro/Piper), editas capitulos y exportas MP3/M4B con capitulos, reanudable y en CPU, sin tocar la linea de comandos.",
+   "segment": "Lectores que quieren escuchar sus PDFs y articulos, estudiantes, autores independientes que quieren borradores de audio, personas con dislexia o baja vision, docentes",
+   "platform": "windows",
+   "proven_sellers": [
+    {
+     "name": "TextAloud 4 (NextUp, Windows)",
+     "price_usd": 34.95,
+     "currency": "USD",
+     "model": "one-time",
+     "traction_evidence": "Tienda de NextUp lista TextAloud 4 Single User en $34.95 con garantia de 30 dias; AlternativeTo lo lista como licencia perpetua para Windows; voces premium se venden aparte (ejemplo de paquete: $40). Sin cifras de ventas.",
+     "url": "https://sites.fastspring.com/nextup/product/textaloud4"
+    }
+   ],
+   "free_alternatives": [
+    {
+     "name": "Audiblez (Kokoro, open source)",
+     "url": "https://cdn.jsdelivr.net/gh/santinic/audiblez@main/README.md",
+     "what_it_covers": "EPUB a M4B con voces Kokoro, varios idiomas, v4 con interfaz grafica y local en CPU.",
+     "what_it_lacks": "En Windows se instala por consola: venv, pip install audiblez pillow wxpython y ffmpeg para el M4B; no vi soporte de PDF."
+    },
+    {
+     "name": "Narrapy (open source)",
+     "url": "https://pypi.org/project/narrapy/",
+     "what_it_covers": "PDF con texto a M4B con capitulos, offline, Kokoro o Piper, reanudable.",
+     "what_it_lacks": "Requiere Python 3.10-3.12, ffmpeg y espeak-ng; los PDFs escaneados necesitan OCR previo; solo linea de comandos."
+    },
+    {
+     "name": "ebook2audiobook (open source)",
+     "url": "https://sourceforge.net/projects/ebook2audiobook.mirror/",
+     "what_it_covers": "Interfaz web, CLI y Docker; muchos motores de voz e idiomas; capitulos y metadatos.",
+     "what_it_lacks": "Pesado (recomienda 8GB de RAM y 4GB de VRAM); no confirme un instalador de Windows de un clic."
+    },
+    {
+     "name": "AudioBookMaker (gratis, Windows)",
+     "url": "https://ghacks.net/2017/05/08/turn-books-into-audiobooks-with-audiobookmaker",
+     "what_it_covers": "Convierte texto, Word y HTML a audio con voces de Windows.",
+     "what_it_lacks": "Articulo de 2017; voces del sistema (no neuronales) y sin EPUB."
+    }
+   ],
+   "gap_evidence": [
+    {
+     "url": "https://cdn.jsdelivr.net/gh/santinic/audiblez@main/README.md",
+     "what": "README de Audiblez: instalacion en Windows con venv + pip + wxpython y ffmpeg obligatorio para M4B; no es doble clic.",
+     "date": null
+    },
+    {
+     "url": "https://libraries.io/pypi/kokoro-tts",
+     "what": "Ficha de kokoro-tts: 'Add PDF support' y 'Add GUI' figuran como pendientes en su hoja de ruta.",
+     "date": null
+    },
+    {
+     "url": "https://pasqualepillitteri.it/en/news/5478/audiblez-convert-ebooks-audiobooks-free-ai",
+     "what": "Guia 2026: Audiblez con 7,726 estrellas al escribirse; indica demanda de la conversion pero la instalacion sigue siendo tecnica.",
+     "date": null
+    },
+    {
+     "url": "https://gigazine.net/gsc_news/en/20260516-ebook2audiobook",
+     "what": "Gigazine cubre ebook2audiobook (mayo 2026): interes de prensa en el tema.",
+     "date": "2026-05"
+    }
+   ],
+   "differentiator": "Empaquetado de un clic con voces neuronales locales y capitulos, sin consola; TextAloud cobra voces premium aparte y los gratuitos neuronales exigen Python/ffmpeg.",
+   "price_evidence": "TextAloud 4 $34.95 pago unico (tienda NextUp); voces premium en paquete de ejemplo $40. Es el unico comparable de pago unico que verifique.",
+   "target_price_usd": 29,
+   "build_complexity_1to5": 3,
+   "risks": "Los proyectos gratuitos pueden publicar instaladores; el TTS en CPU puede tardar horas por libro; licencias de los modelos de voz sin verificar; solo contenido propio (derechos de autor); lectores integrados de los sistemas y navegadores no los evalue.",
+   "confidence": "low",
+   "confidence_basis": "Hay demanda visible (estrellas, prensa) y friccion de instalacion documentada, pero solo un comparable de pago unico (TextAloud, sin ventas) y ninguna resena ni hilo que pida un instalador."
+  },
+  {
+   "id": "etiquetado-fotos-ia-local",
+   "gap": "Generar titulos, descripciones, palabras clave y alt text para carpetas de fotos con un modelo de vision local (sin clave API ni suscripcion) y escribirlos en IPTC/XMP o CSV por agencia de stock. Las herramientas baratas de stock dependen de la nube o de tu clave (StockUp, ImageTagz, AutoKeyWorder) y las locales son caras ($199 Excire Foto) o gestores de fotos complejos.",
+   "micro_app_idea": "App de escritorio que procesa una carpeta de fotos con un modelo de vision local, propone titulo/descripcion/keywords/alt text editables y los escribe en los metadatos o los exporta en CSV para Adobe Stock/Shutterstock.",
+   "segment": "Contribuyentes de fotografia de stock, fotografos y bloggers que publican muchas imagenes, equipos de contenido que necesitan alt text por accesibilidad",
+   "platform": "cross",
+   "proven_sellers": [
+    {
+     "name": "Excire Foto 2025 (IA local, offline)",
+     "price_usd": 199,
+     "currency": "USD",
+     "model": "one-time",
+     "traction_evidence": "Blog del vendedor: $199 licencia de por vida (oferta de lanzamiento $169), prueba de 14 dias; resenas de terceros dicen que corre sin internet tras instalar. Sin cifras de ventas.",
+     "url": "https://excire.com/en/excire-foto-2025-release/"
+    },
+    {
+     "name": "AutoKeyWorder (extension para Adobe Stock/Shutterstock)",
+     "price_usd": null,
+     "currency": "USD",
+     "model": "one-time",
+     "traction_evidence": "AlternativeTo muestra compra unica entre $5 y $50 y/o suscripcion; nube, no offline.",
+     "url": "https://alternativeto.net/software/autokeyworder/about"
+    },
+    {
+     "name": "ImageTagz (clave propia Gemini/OpenAI)",
+     "price_usd": null,
+     "currency": "USD",
+     "model": "one-time",
+     "traction_evidence": "Gumroad, pago unico mas costos de API a tu cargo; precio no visto.",
+     "url": "https://kolbasra.gumroad.com/l/imagetagz"
+    },
+    {
+     "name": "StockUp (app Mac para metadatos de stock)",
+     "price_usd": null,
+     "currency": "EUR",
+     "model": "one-time",
+     "traction_evidence": "Precio EUR 10.99 (no convertido). El resumen de busqueda lo lista como pago unico desde EUR 10.99; no pude mapear la URL con certeza ni vi si la IA es local.",
+     "url": null
+    }
+   ],
+   "free_alternatives": [
+    {
+     "name": "Google AI Edge Gallery en Mac (Gemma multimodal)",
+     "url": "https://www.photoworkout.com/google-ai-edge-gallery-mac/",
+     "what_it_covers": "Describe imagenes sin internet ni suscripcion; util para captions.",
+     "what_it_lacks": "No es herramienta por lotes ni escribe metadatos; el propio articulo aclara que no es un editor."
+    },
+    {
+     "name": "Extension de Chrome SEO Alt Text Generator (IA local, modelo ~75 MB)",
+     "url": "https://chromewebstore.google.com/detail/nghbeepnhflhlpeaphnhikaghkhdkfmc",
+     "what_it_covers": "Alt text con IA local para paginas web.",
+     "what_it_lacks": "Pensada para paginas, no para una carpeta de fotos (asociacion de URL aproximada)."
+    },
+    {
+     "name": "Photo Supreme (IDimager) con IA local",
+     "url": "https://www.idimager.com/using-ai",
+     "what_it_covers": "Metadatos con IA local, sin costo por uso tras la configuracion y sin conexion.",
+     "what_it_lacks": "Gestor de fotos completo y de pago; el vendedor admite que la configuracion local puede ser exigente y la precision varia segun el modelo."
+    },
+    {
+     "name": "ArtushVision AI (Ollama local o nube)",
+     "url": "https://www.producthunt.com/p/artushvision-ai",
+     "what_it_covers": "Etiquetado con modelos locales via Ollama.",
+     "what_it_lacks": "Proyecto muy nuevo con pocas resenas."
+    }
+   ],
+   "gap_evidence": [
+    {
+     "url": "https://www.idimager.com/using-ai",
+     "what": "Pagina del vendedor: la IA local evita costos por uso pero la configuracion puede ser exigente y la precision de idioma/conceptos varia por modelo.",
+     "date": null
+    },
+    {
+     "url": "https://photodeck.com/blog/ai-keyword-caption-metadata",
+     "what": "PhotoDeck envia imagenes a Amazon Rekognition o Azure y reserva la IA para planes superiores: la opcion habitual es nube y de pago recurrente.",
+     "date": null
+    },
+    {
+     "url": "https://www.photoworkout.com/google-ai-edge-gallery-mac/",
+     "what": "Articulo para fotografos sobre correr Gemma localmente para captions/keywords: hay interes, pero la solucion es manual y no por lotes.",
+     "date": null
+    }
+   ],
+   "differentiator": "Sin clave API, sin suscripcion y sin subir fotos; salida directa a metadatos/CSV por agencia; mucho mas barato que Excire ($199).",
+   "price_evidence": "Excire Foto $199 pago unico; AutoKeyWorder $5-$50; StockUp desde EUR 10.99 (resumen de busqueda); ImageTagz de pago unico mas API propia.",
+   "target_price_usd": 29,
+   "build_complexity_1to5": 3,
+   "risks": "Un modelo de vision local en CPU es lento y sus keywords suelen ser menos precisos que los de la nube; mercado con varias opciones baratas; las reglas de las agencias sobre metadatos generados por IA no las verifique.",
+   "confidence": "low",
+   "confidence_basis": "Hay varios compradores de pago unico en el espacio, pero no encontre hilos de fotografos pidiendo etiquetado local ni resenas que nombren la carencia; la evidencia de brecha es indirecta (paginas de vendedores)."
+  },
+  {
+   "id": "traductor-pdf-local-formato",
+   "gap": "Traducir PDFs conservando el diseno, 100% local y sin terminal. PDFMathTranslate/BabelDOC (gratis) usan por defecto servicios en linea y la ruta offline pasa por Ollama (tecnica); Argos Translate es offline pero trabaja con texto, no conserva el PDF y su instalacion en Windows es dificil.",
+   "micro_app_idea": "App de escritorio que traduce un PDF o DOCX conservando maquetacion, imagenes y tablas con un modelo de traduccion local (EN-ES y otros pares), con glosario editable y sin enviar el archivo a ningun servidor.",
+   "segment": "Investigadores y estudiantes hispanohablantes que leen papers y manuales en ingles, periodistas y administrativos con documentos confidenciales",
+   "platform": "windows",
+   "proven_sellers": [
+    {
+     "name": "SwifDoo PDF Pro (suite PDF con traduccion, oferta vitalicia)",
+     "price_usd": 29.97,
+     "currency": "USD",
+     "model": "one-time",
+     "traction_evidence": "Oferta vitalicia de $29.97 (PVP $129) con titular de 'traducciones instantaneas'; no confirme si traduce offline ni conserva el formato. Es un comparable adyacente, no un traductor dedicado. Asociacion de URL aproximada.",
+     "url": "https://deals.newatlas.com/articles/draft-title-32423"
+    }
+   ],
+   "free_alternatives": [
+    {
+     "name": "PDFMathTranslate / pdf2zh-next (open source)",
+     "url": "https://pypi.org/p/pdf2zh-next",
+     "what_it_covers": "Traduccion de PDF que conserva formulas, graficos, indice y anotaciones; version 2.0 con zip/exe para Windows; servicio publico gratuito (1000 paginas/mes segun un listado).",
+     "what_it_lacks": "La ruta facil es en linea; offline requiere Ollama (tecnico), descarga de modelo y a veces vc_redist; el propio listado marca soporte experimental con algunos PDFs."
+    },
+    {
+     "name": "BabelDOC (motor de capa de maquetacion)",
+     "url": "https://aclanthology.org/2026.acl-demo.25/",
+     "what_it_covers": "Marco basado en representacion intermedia para traducir PDFs conservando el diseno (articulo de demostracion ACL 2026).",
+     "what_it_lacks": "Es motor/investigacion; se usa a traves de PDFMathTranslate y no es una app para no tecnicos."
+    },
+    {
+     "name": "Argos Translate (open source, offline)",
+     "url": "https://pypi.org/project/argostranslate/1.4.0/",
+     "what_it_covers": "Traduccion de texto totalmente offline.",
+     "what_it_lacks": "No conserva la maquetacion del PDF; el listado de PyPI de esa version dice que CTranslate2 solo distribuia binarios para Linux y macOS (puede estar desactualizado), lo que complica Windows."
+    }
+   ],
+   "gap_evidence": [
+    {
+     "url": "https://community.libretranslate.com/t/windows-launcher-for-argos-translate/1489",
+     "what": "Hilo de la comunidad LibreTranslate sobre un lanzador de Windows para Argos Translate: hay quien intenta resolver la instalacion para no tecnicos (un mensaje habla de un instalador vendido via Patreon, no verificado).",
+     "date": null
+    },
+    {
+     "url": "https://aclanthology.org/2026.acl-demo.25/",
+     "what": "BabelDOC se presento como demo en ACL 2026: la traduccion de PDF con layout conservado es un problema activo y aun no resuelto en forma empaquetada.",
+     "date": "2026"
+    },
+    {
+     "url": "https://pypi.org/p/pdf2zh-next",
+     "what": "Listado de pdf2zh-next: soporte experimental de BabelDOC y de PDFs no PDF/A, sugiere resultados desiguales.",
+     "date": null
+    }
+   ],
+   "differentiator": "Todo offline en una app instalable, con layout conservado y glosario; los gratuitos son en linea por defecto o requieren Ollama/Python, y Argos pierde el formato.",
+   "price_evidence": "Solo comparables adyacentes: SwifDoo PDF Pro vitalicio $29.97 (oferta; PVP $129). No encontre un traductor de PDF dedicado de pago unico con precio o traccion verificables.",
+   "target_price_usd": 39,
+   "build_complexity_1to5": 2,
+   "risks": "Conservar el layout es dificil; la calidad de traduccion local (Argos/NLLB/Opus) es inferior a DeepL/Google; PDFMathTranslate puede empaquetar un modo offline pronto; modelos de traduccion pesados y licencias por verificar; sin vendedores de pago unico verificados.",
+   "confidence": "low",
+   "confidence_basis": "La carencia del flujo offline sencillo se deduce de las paginas de los propios proyectos gratuitos y de un hilo comunitario, pero no hay comparables de venta ni resenas que la nombren."
+  }
+ ],
+ "rejected": [
+  {
+   "idea": "Anonimizador reversible de prompts/portapapeles (enmascarar datos sensibles antes de pegarlos en ChatGPT y restaurarlos en la respuesta)",
+   "reason": "Saturado en 2026: al menos 8 herramientas ya hacen marcadores reversibles (promptShield, PromptSafe, PISIGuard, Vero y CodeMask en navegador/Docker; RedactCast en Mac via Raycast; Velum Privacy y SafePrompt como apps de escritorio, la de Windows de Velum aun en desarrollo). No vi evidencia de precios de pago unico ni de traccion; los precios de varias no los verifique.",
+   "covering_free_alternative": "promptShield (extension Chrome, anonimizador de documentos offline), PromptSafe, CodeMask, RedactCast",
+   "url": "https://chromewebstore.google.com/detail/ejggiamchcpeapghlejglmhgajbghihj"
+  },
+  {
+   "idea": "Equivalente a MacWhisper para Windows con etiquetas de hablante, offline",
+   "reason": "Ya cubierto gratis: Spokenly (gratis en Windows 10/11, modelos Whisper/Parakeet locales, etiquetas de hablante y exportacion SRT/VTT; AlternativeTo lo marca freemium), Vibe (MIT, local, por lotes) y Lyra. Es justo la transcripcion generica que el brief pidio no repetir.",
+   "covering_free_alternative": "Spokenly, Vibe Transcribe, Lyra",
+   "url": "https://spokenly.app/blog/macwhisper-for-windows"
+  },
+  {
+   "idea": "Chat con tus documentos 100% local en Windows sin GPU (resumen y preguntas sobre PDFs propios)",
+   "reason": "Cubierto gratis: GPT4All con LocalDocs indexa PDF/Markdown/texto y corre en CPU en Windows; LM Studio ofrece chat con documentos (gratis para uso personal); Jan es cliente local gratis. Los de pago (HyperMink, Pansophy) no mostraron precio ni traccion verificables. Falta solo rapidez en CPU, que no se arregla con una micro-app.",
+   "covering_free_alternative": "GPT4All (LocalDocs), LM Studio, Jan",
+   "url": "https://www.unite.ai/best-llm-tools-to-run-models-locally/"
+  },
+  {
+   "idea": "Codificacion cualitativa asistida por IA de transcripciones de entrevistas, local",
+   "reason": "Cubierto gratis y local: QualCoder (open source, texto/imagen/audio/video, codificacion automatica, fiabilidad entre codificadores, comparable a NVivo/MAXQDA segun un taller de la Univ. de Illinois) y Taguette (mas simple); ReQual es nueva. Una guia universitaria los lista como instalables con datos locales. Que las funciones de IA de QualCoder salgan o no a servicios externos no lo verifique.",
+   "covering_free_alternative": "QualCoder, Taguette",
+   "url": "https://researchguides.uoregon.edu/How-to-Choose-Data-Analysis-Software/free-qualitative"
+  },
+  {
+   "idea": "Dictado por voz global (hablar y que el texto aparezca en cualquier app) local, como Superwhisper",
+   "reason": "Saturado y gratuito: Handy (MIT, local, Windows/Mac/Linux, atajo y texto en el cursor), OpenWhispr (MIT, freemium, offline), Amical (plan gratis con dictado local ilimitado); VoiceInk es Mac, de pago unico y con codigo abierto; Whisperstream (Windows) cuesta $29 pago unico. No hay hueco claro ni diferenciador que el brief no pidiera evitar.",
+   "covering_free_alternative": "Handy, OpenWhispr, Amical",
+   "url": "https://openalternative.co/alternatives/superwhisper"
+  },
+  {
+   "idea": "Cliente de IA con claves propias (competir con TypingMind a $39)",
+   "reason": "Cubierto gratis: Msty (escritorio, nivel gratis, local + OpenAI/Anthropic/Google, chat dividido para comparar modelos), Open WebUI y LibreChat (MIT, multi-proveedor, comparacion lado a lado). TypingMind mismo tiene nivel gratis y, segun una fuente, segun una fuente de terceros el pago unico es ya solo ~50% de su ingreso mensual porque empuja suscripciones de equipo: el pago unico de un cliente generico no es defendible.",
+   "covering_free_alternative": "Msty, Open WebUI, LibreChat",
+   "url": "https://docs.openwebui.com/alternatives/msty"
+  },
+  {
+   "idea": "Caja de herramientas para desarrolladores (JSON, Base64, JWT, regex, diff) estilo DevUtils a $29",
+   "reason": "DevToys es gratis, de codigo abierto, multiplataforma (Windows/macOS/Linux segun su sitio y AlternativeTo) y trae ~30 herramientas offline (JSON-YAML, Base64, JWT, comparacion de texto, hashes), extensible; Open Dev es otra opcion abierta multiplataforma. DevUtils es solo macOS segun una comparativa, asi que el hueco de plataforma ya esta cubierto gratis.",
+   "covering_free_alternative": "DevToys, Open Dev",
+   "url": "https://devtoys.app/"
+  },
+  {
+   "idea": "Notas de reuniones 100% locales (grabar Zoom/Teams, transcribir y resumir en el equipo)",
+   "reason": "Cubierto: Meetily es gratis, MIT, corre en macOS y Windows, transcribe con Parakeet o Whisper y resume con Ollama, guardando todo en SQLite local; Hyprnote (Granola local) cubre Mac. Meetily reserva exportar PDF/DOCX y plantillas para un plan PRO de $10/mes, lo que muestra que el hueco ya lo explota alguien con modelo recurrente.",
+   "covering_free_alternative": "Meetily, Hyprnote",
+   "url": "https://dev.to/andrew-ooo/meetily-review-2026-privacy-first-ai-meeting-assistant-29h3"
+  },
+  {
+   "idea": "Eliminacion de fondo y ampliacion de imagenes por lotes, offline (Windows sin GPU)",
+   "reason": "Windows 11 Paint ya trae boton de quitar fondo; rembg es gratis y por lotes (con CLI) y un hilo de Microsoft recomienda ademas una app gratuita sin linea de comandos (Plain Remover, no verificada); Upscayl es gratis, open source, por lotes y offline en Windows/macOS/Linux (mejor con GPU Vulkan). Sin diferenciador defendible.",
+   "covering_free_alternative": "Paint de Windows 11, rembg, Upscayl",
+   "url": "https://pureinfotech.com/remove-image-background-paint-windows-11/"
+  },
+  {
+   "idea": "Difuminar rostros en video automaticamente, offline (periodistas, creadores)",
+   "reason": "Ya hay opciones locales: Blurwise (Windows, sin subir nada ni cuenta, detecta y desenfoca en todos los cuadros), BlurTool (Windows, personas y matriculas) y Deface (gratis, open source, CLI) ademas de AVCLabs Video Blur AI (freemium). La deteccion automatica falla en multitudes, y la revision manual es obligatoria para fuentes protegidas.",
+   "covering_free_alternative": "Blurwise, Deface, BlurTool",
+   "url": "https://www.producthunt.com/products/blurwise-offline-face-blur"
+  }
+ ],
+ "limitations": "Se hicieron ~37 busquedas con WebSearch en modo estandar; el buscador devuelve resumenes, no paginas completas, asi que muchas cifras son lo que dice el resumen sobre cada URL (paginas de vendedores, agregadores como AlternativeTo/TrustMRR y blogs), no verificado en la pagina primaria. No obtuve hilos reales de Reddit/foros con peticiones de compra (la busqueda dirigida devolvio paginas de producto), por eso la evidencia de brecha es sobre todo indirecta (limites documentados, papers, guias, listados) y las confianzas son med/low; ningun sobreviviente tiene confianza high. Las fechas casi siempre son null porque los resultados no las mostraron. Precios de terceros: CaseGuard ($299/usuario/mes) viene de listados de reventa, no de su pagina oficial; las cifras de ingresos de TypingMind son estimaciones de Latka/StarterStory; los MRR de TrustMRR para conversores de extractos son pequenos y uno es autoinformado; la cifra de ~57.5K descargas de MacWhisper viene del brief, no la verifique. Cosas que menciono sin URL visto: pdfplumber y Audacity como alternativas (conocimiento general, solo respaldado por resumenes), el listado exacto de la extension SEO Alt Text Generator y de SwifDoo (asociacion de URL aproximada), StockUp (sin URL) y el proyecto conviertetuestado.com en TrustMRR (el resumen lo asocia a bancos mexicanos pero no lo confirme, por eso no lo uso como evidencia). No evalue: edicion de video por transcripcion offline de pago unico tipo Descript (el unico resultado util dijo que no hay equivalente, pero construirlo es de complejidad 1), OCR de manuscritos local, mejora de audio sin GPU, ni utilidades de desarrollo mas alla de DevToys/BYOK (las utilidades dev revisadas ya estan cubiertas gratis, por eso no hay sobreviviente de desarrollo). Los sobrevivientes ia-por-lotes-tabla y los demas con confianza low requieren validacion de disposicion a pagar antes de construir."
+}

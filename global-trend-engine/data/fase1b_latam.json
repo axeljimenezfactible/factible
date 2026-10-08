@@ -1,0 +1,961 @@
+[
+ {
+  "id": "ar-freelancer-factura-e-cobro-exterior",
+  "verified": "partly",
+  "checks": [
+   {
+    "claim": "Titular iProUP: 'El 93% de los freelancers argentinos cobra en dolares' (cifra existe)",
+    "result": "confirmed",
+    "source_url": "https://www.iproup.com/empleo/71195-cuantos-freelancers-argentinos-cobran-en-usdc-y-usdt",
+    "note": "La cifra existe, pero el resumen de busqueda la atribuye a datos internos de Deel (plataforma de contratacion/pagos): entre mayo 2025 y abril 2026 el 93% de los contratistas argentinos de Deel retiro en dolares, ~6% (5,8% en otra nota) en stablecoins y 4,2% en pesos. Replicada en Forbes Argentina y Merca2 (merca2.es/2026/06/07/freelancers-cobran-stablecoins-argentina-2392199/). Pagina original no abierta (solo resumen de busqueda)."
+   },
+   {
+    "claim": "'93% de los freelancers argentinos cobra en USD' como dato general del segmento",
+    "result": "contradicted",
+    "source_url": "https://www.forbesargentina.com/innovacion/stablecoins-opcion-preferida-freelancers-cobrar-exterior-n91914",
+    "note": "No es encuesta ni muestra representativa: es dato interno de Deel sobre retiros de sus propios contratistas argentinos (sesgo de seleccion: gente que ya cobra del exterior via Deel; mide moneda de retiro, no de cobro). Infobae (2026-03-16) cita otro estudio privado con 90% que prefiere cobrar en dolares: https://www.infobae.com/economia/2026/03/16/crecio-25-la-contratacion-de-argentinos-desde-el-exterior-y-el-pais-lidera-en-el-uso-de-criptomonedas-como-forma-de-pago/ (muestra no verificada). Generalizar a 'todos los freelancers argentinos' no se sostiene."
+   },
+   {
+    "claim": "Guias contradictorias: Factura C vs Factura E para monotributista que exporta servicios",
+    "result": "confirmed",
+    "source_url": "https://www.iprofesional.com/impuestos/387600-como-facturar-al-exterior-siendo-monotributista-2023",
+    "note": "La mayoria de las fuentes (tributosimple.com, yo-facturo.com, iProfesional citando a Errepar, evemuriel.com) indican Factura E (IVA 0%, no se usa la C) y que el monotributista no necesita ser Responsable Inscripto ni inscribirse en el Registro de Exportadores de Servicios. Una fuente de los resultados dice 'E si RI, C si monotributo' (no identificada con URL exacta); queda como la excepcion. Advertencia: iProfesional muestra URL de 2023 con fecha 26/6/2026, fechas inconsistentes."
+   },
+   {
+    "claim": "Contablix: el cobro del exterior no suma al limite del monotributo",
+    "result": "contradicted",
+    "source_url": "https://siap.blogdelcontador.com.ar/rubro_normativa/exportacion-de-servicios/",
+    "note": "Segun el resumen de busqueda, una consulta tecnica en +blogdelcontador (Consulta 73035/2025) indica que los montos se suman al resto para verificar los topes, sin beneficio por exportar; yo-facturo e iProfesional/Errepar tambien dicen que cuenta para el tope. Contablix (https://contablix.ar/blog/factura-e-exportacion-servicios-2026) queda como excepcion sin norma citada. Pagina de la consulta no abierta; confirmar en ARCA."
+   },
+   {
+    "claim": "Com. A 8330 elimino el tope anual de USD 36.000 de la Com. A 8153/2024",
+    "result": "confirmed",
+    "source_url": "https://contadoresenred.com/exportadores-de-servicios-sin-limite-el-bcra-libera-montos-y-elimina-comisiones-para-personas-humanas/",
+    "note": "Confirmada tambien por estudio O'Farrell (https://www.estudio-ofarrell.com/el-banco-central-de-la-republica-argentina-flexibiliza-el-regimen-cambiario-para-cobros-de-servicios-y-exportaciones-para-personas-humanas/). A 8330 fechada 2025-09-18; las entidades dejaron de cobrar comision por ingreso de divisas a personas humanas. Ademas la Com. A 8417 (2026-04-09; https://www.bcra.gob.ar/archivos/Pdfs/comytexord/A8417.pdf) extendio la excepcion de liquidacion a todos los conceptos de servicios: cambio regulatorio reciente que respalda la urgencia."
+   },
+   {
+    "claim": "Plazo para liquidar divisas: 30 dias corridos (Contablix) vs 20 dias habiles (otra fuente)",
+    "result": "contradicted",
+    "source_url": "https://aduananews.com/?p=82935",
+    "note": "Segun el resumen de busqueda, los 30 dias corridos de la A 8330 se refieren a exportacion de BIENES; un medio especializado cita 20 dias habiles desde que se perciben los fondos en el exterior (bajo A 8417). No pude confirmar el plazo exacto para servicios; el texto ordenado Exterior y Cambios (punto 2.2.2.1) no fue leido. Dato inestable: no debe codificarse sin revision por contador."
+   },
+   {
+    "claim": "Payoneer: 1% por recibir moneda distinta a la local; hasta 3,99% con tarjeta del cliente",
+    "result": "not_found",
+    "source_url": "https://www.payoneer.com/es/resources/estrategias-para-usar-y-mover-tus-fondos-en-argentina/",
+    "note": "No aparecieron esas cifras. Resultados dan otras tarifas: pagina oficial de Payoneer Argentina dice retiro a cuenta en pesos 'hasta 2%'; guias de terceros dicen 0,5% a 0,75% de conversion y 3% en pesos; tarjeta Payoneer: retiro cajero USD 3,15 y mantenimiento USD 29,95 anual (comparalatam.com, tercero). Cifras discrepan entre fuentes; comisiones son volatiles, un calculo fijo envejece rapido."
+   },
+   {
+    "claim": "Deel: $0 para el freelancer si el cliente usa Deel",
+    "result": "not_found",
+    "source_url": "https://www.deel.com/de/hiring/contractors/argentina/",
+    "note": "La pagina de Deel que aparece esta orientada a empresas que contratan; no encontre tarifas de retiro para el contratista argentino en estos resultados."
+   }
+  ],
+  "alternatives": [
+   {
+    "name": "Payoneer (retiro a cuenta bancaria en pesos, comision 'hasta 2%' segun pagina oficial; terceros dicen 0,5-0,75% conversion y 3% en pesos)",
+    "price_local": null,
+    "currency": "ARS",
+    "model": "freemium",
+    "url": "https://www.payoneer.com/es/resources/estrategias-para-usar-y-mover-tus-fondos-en-argentina/",
+    "as_of": "2026-10"
+   },
+   {
+    "name": "Tarjeta Payoneer: mantenimiento anual USD 29,95 y retiro en cajero USD 3,15 (segun comparalatam.com, tercero)",
+    "price_local": null,
+    "currency": "USD",
+    "price_usd": 29.95,
+    "model": "annual",
+    "url": "https://comparalatam.com/ar/transferencia/payoneer.html",
+    "as_of": "2026-10"
+   },
+   {
+    "name": "Contador, servicio mensual recurrente en Misiones (guia de honorarios cuantomecuesta.com; rango $107.186 a $140.000 al mes)",
+    "price_local": 107186,
+    "currency": "ARS",
+    "model": "monthly",
+    "url": "https://cuantomecuesta.com/ar/contador/",
+    "as_of": "2026-10"
+   },
+   {
+    "name": "Contador, recategorizacion de monotributo en CABA (honorario sugerido CPCE julio 2025: baja $66.774 / media $89.032 / alta $111.290; dato de 2025, desactualizado)",
+    "price_local": 66774,
+    "currency": "ARS",
+    "model": "one-time",
+    "url": "https://www.iprofesional.com/impuestos/434157-honorarios-de-contadores-por-recategorizacion-monotributo",
+    "as_of": "2025-07"
+   },
+   {
+    "name": "Contablix (estudio contable online, plan monotributo; precio no publicado, 'el mas economico', cotiza en reunion; sin contrato anual)",
+    "price_local": null,
+    "currency": "ARS",
+    "model": "monthly",
+    "url": "https://contablix.ar/monotributo",
+    "as_of": "2026-10"
+   },
+   {
+    "name": "Wise (desde ~0,41% por transferencia segun comparalatam.com, tercero)",
+    "price_local": null,
+    "currency": "USD",
+    "model": "freemium",
+    "url": "https://comparalatam.com/ar/transferencia/wise.html",
+    "as_of": "2026-10"
+   }
+  ],
+  "free_alternatives": [
+   {
+    "name": "Simulador de categoria del Monotributo de ARCA",
+    "url": "https://www.c5n.com/economia/como-es-el-simulador-arca-conocer-tu-categoria-del-monotributo-n215972",
+    "note": "Gratis y anonimo: con ingreso bruto anual estimado da categoria y cuota mensual; cubre el 'impacto en categoria' (URL es una nota de prensa sobre el simulador, no el micrositio ARCA). Notas de 2025; verificar escalas vigentes."
+   },
+   {
+    "name": "Guias gratuitas de Factura E (yo-facturo.com, tributosimple.com, evemuriel.com, iProfesional)",
+    "url": "https://yo-facturo.com/blog/como-exportar-servicios-desde-argentina/",
+    "note": "Explican paso a paso punto de venta para exportacion, Factura E, moneda y tipo de cambio del dia habil anterior (segun iProUP 35531). Cubren la parte 'ficha para emitir'."
+   },
+   {
+    "name": "hacecuentas.com (comparador Deel/Payoneer/Wise y calculadoras gratuitas)",
+    "url": "https://hacecuentas.com/comparar/deel-vs-payoneer-vs-wise-cobrar-usd",
+    "note": "Citado en pasada 1 como calculadora gratuita de neto por ruta de cobro; la pagina no fue abierta en esta pasada (solo se vio que hacecuentas.com tiene calculadoras gratuitas de impuestos, p.ej. percepcion tarjeta)."
+   },
+   {
+    "name": "Calculadora de percepcion dolar tarjeta (hacecuentas)",
+    "url": "https://hacecuentas.com/calculadora-percepcion-dolar-tarjeta-impuesto-pais",
+    "note": "Calculadora gratuita de percepciones sobre pagos con tarjeta al exterior."
+   }
+  ],
+  "pain_evidence": [
+   {
+    "url": "https://www.infobae.com/economia/2026/03/16/crecio-25-la-contratacion-de-argentinos-desde-el-exterior-y-el-pais-lidera-en-el-uso-de-criptomonedas-como-forma-de-pago/",
+    "what": "Segun el resumen de busqueda, crecio 25% la contratacion de argentinos desde el exterior y Argentina lidera en uso de cripto como forma de pago (tamano/crecimiento del segmento, no dolor directo).",
+    "date": "2026-03"
+   },
+   {
+    "url": "https://contadoresenred.com/exportadores-de-servicios-sin-limite-el-bcra-libera-montos-y-elimina-comisiones-para-personas-humanas/",
+    "what": "Cambio regulatorio BCRA para exportadores de servicios personas humanas (A 8330, 2025-09-18; luego A 8417, 2026-04-09): reglas cambian cada pocos meses, origen de la confusion.",
+    "date": "2025-09"
+   },
+   {
+    "url": "https://yo-facturo.com/blog/como-cobrar-del-exterior-siendo-freelancer/",
+    "what": "Guia 2026 dedicada a cobrar del exterior siendo freelancer; yo-facturo advierte que la norma cambia y recomienda revisar con contador si conviene seguir en Monotributo o pasar a RI (existe contenido SEO competitivo = demanda de busqueda; sin volumen).",
+    "date": "2026"
+   },
+   {
+    "url": "https://www.iprofesional.com/impuestos/387600-como-facturar-al-exterior-siendo-monotributista-2023",
+    "what": "Guias independientes se contradicen entre si sobre si lo exportado suma al tope y sobre Factura C vs E (senal indirecta de incertidumbre). No se encontraron hilos de Reddit/foros con testimonios directos en esta pasada.",
+    "date": null
+   }
+  ],
+  "payment_methods": [
+   {
+    "method": "Tarjeta internacional del comprador argentino (percepcion 30% a cuenta de Ganancias)",
+    "note": "Fuentes discrepan sobre 2026: una dice que el Impuesto PAIS dejo de aplicarse desde enero 2026 quedando solo la percepcion del 30%; otras (guia de julio 2026, Global66) dicen que el PAIS/percepcion siguen. Un cobro de USD 20 con tarjeta local puede salir mas caro para el comprador; el segmento (cobra en USD) puede pagar con tarjeta/cuenta en USD o Payoneer.",
+    "url": "https://www.global66.com/blog/como-afectan-los-impuestos-a-tus-gastos-digitales/"
+   },
+   {
+    "method": "Mercado Pago",
+    "note": "No hallado en las fuentes de esta pasada para este caso.",
+    "url": null
+   },
+   {
+    "method": "Cuenta en dolares / Payoneer-Santander Argentina",
+    "note": "Segun una guia, Payoneer tiene convenio con Banco Santander Argentina para cuentas en dolares 100% online.",
+    "url": "https://www.jonatanalmeira.com/?p=24849"
+   }
+  ],
+  "regulatory_note": "Zona fiscal y cambiaria regulada. Las propias fuentes recomiendan confirmar con contador/ARCA y las reglas BCRA cambiaron en 2025-09 (A 8330) y 2026-04 (A 8417). No vi en fuentes como se encuadra legitimamente una herramienta; practica comun: calculadora/simulador informativo con aviso 'no es asesoria fiscal' y escalas/topes parametrizables con fecha de vigencia visible. Hallazgo clave: no codificar topes, comisiones ni plazos fijos.",
+  "differentiator": "ninguno defendible solo: el simulador de ARCA, hacecuentas y las guias de Factura E cubren cada pieza gratis. Unica ventaja posible: flujo unico offline que combine neto por ruta + impacto en categoria + ficha de datos para Factura E, pero las comisiones y escalas cambian y exigen mantenimiento (choca con pago unico).",
+  "new_confidence": "low",
+  "confidence_basis": "El 93% no es del segmento general sino de usuarios de Deel; la contradiccion principal de la pasada 1 (si suma al tope) se resuelve en contra de Contablix, lo que reduce la incertidumbre que justificaba el producto; hay alternativas gratuitas fuertes; no se hallaron precios de herramientas equivalentes de pago unico; fuentes son resumenes de busqueda sin abrir paginas.",
+  "recommendation": "rework",
+  "recommendation_reason": "La duda fiscal es real pero ya la cubren guias y simuladores gratis, y las comisiones/reglas cambian demasiado para un pago unico de USD 20; solo vale si se reenfoca (p.ej. ficha de Factura E + checklist con vigencia fechada) o se fusiona con el candidato de otro pais."
+ },
+ {
+  "id": "br-freelancer-dolar-nfse-carneleao",
+  "verified": "partly",
+  "checks": [
+   {
+    "claim": "La invoice no sustituye la nota fiscal; la nota sale en reais y el procedimiento varia por municipio (Nomad)",
+    "result": "confirmed",
+    "source_url": "https://wise.com/br/blog/mei-prestacao-servicos-exterior",
+    "note": "Wise confirma que el MEI emite NFS-e (padron nacional obligatorio desde 2023-09) a clientes del exterior y que las reglas pueden variar por municipio. La pagina de Nomad no aparecio en esta pasada. Wise es proveedor interesado (fuente no independiente del todo)."
+   },
+   {
+    "claim": "Fuentes divergen si el ISS queda exento en exportacion de servicios",
+    "result": "confirmed",
+    "source_url": "https://contabilidade.com/blog/iss-na-exportacao-de-servicos/",
+    "note": "Segun el resumen de busqueda, la LC 116/2003 (art. 2, I) dispone no incidencia del ISS cuando el resultado del servicio se verifica en el exterior; es 'no incidencia', no 'isencion'. Algunas leyes municipales conflictuan y servicios cuyo resultado se verifica en Brasil no encajan aunque pague un residente en el exterior. La divergencia entre fuentes se sostiene; Contabilidade Zen (https://www.contabilidadezen.com.br/conteudo/calculadora-recebimento-exterior/) habla de 'isenta'. Paginas no abiertas."
+   },
+   {
+    "claim": "Divergencia sobre que cotizacion usar (PTAX vs fecha de recebimento)",
+    "result": "confirmed",
+    "source_url": "https://www.infomoney.com.br/?p=2471849",
+    "note": "La divergencia se explica en parte por regimen: Carne-Leao (persona fisica) usa el 'dolar compra' del Banco Central del ultimo dia util de la primera quincena del mes anterior al recebimento (InfoMoney); en Simples Nacional una fuente (contabilidadezen) dice cotizacion del dia del recebimento declarada en PGDAS-D; en contabilidad general, tipo de cambio spot de la fecha de la transaccion y PTAX solo como referencia. Esta variacion por regimen es un dato util para el producto. Paginas no abiertas."
+   },
+   {
+    "claim": "Limite MEI de R$ 81.000 se agota rapido con ingresos en dolares",
+    "result": "confirmed",
+    "source_url": "https://www.freelasemcrise.com.br/blog/receber-pagamento-internacional-mei",
+    "note": "Un guia de 2026 (atribucion exacta de URL aproximada; entre los resultados estaban freelasemcrise y Wise) dice que el limite de R$ 81 mil anuales incluye receita domestica e internacional convertida y que cerca del tope conviene migrar a Simples. IOF de cambio de 0,38% mencionado por Wise."
+   },
+   {
+    "claim": "Pix tuvo 42% de las compras online en 2025 vs 41% del credito (Ebanx/PCMI via InfoMoney)",
+    "result": "confirmed",
+    "source_url": "https://www.poder360.com.br/poder-economia/pix-chega-a-42-dos-pagamentos-on-line-no-brasil/",
+    "note": "Confirmado por Poder360 y Gironews (dato Ebanx: 42% Pix vs 41% credito, proyeccion 45% fin de 2026 y 50% en 2028). Matiz de metrica: el Global Payments Report 2026 (Worldpay) da Pix 42% del VALOR transaccionado en e-commerce pero tarjeta de credito 40% del valor y el Pix lidera en numero de transacciones con 38% segun LetsMoney (https://www.letsmoney.com.br/pagamentos/pix-ecommerce-38-global-payments-report/); el credito se sostiene por el parcelamento."
+   },
+   {
+    "claim": "Carne-Leao Web (Receita Federal) es gratuito",
+    "result": "confirmed",
+    "source_url": "https://www.rotajuridica.com.br/?p=10152",
+    "note": "Receita ofrece Carne-Leao Web y app (Apple/Google) gratuitos: registra rendimientos del exterior, deducciones y genera el DARF; vencimiento ultimo dia util del mes siguiente. Nota antigua; confirmar en tienda. Conflicto sobre el limite de isencion: una guia 2026 dice R$ 5.000/mes (Lei 15.270/2025) y un articulo mas viejo R$ 1.903,98 (fuente: resultado de busqueda sobre carne-leao, sin URL exacta)."
+   },
+   {
+    "claim": "Calculadoras y resumen fiscal gratuitos de FreelaSemCrise",
+    "result": "not_found",
+    "source_url": "https://www.freelasemcrise.com.br/impostos/carne-leao-autonomos",
+    "note": "Se confirma que freelasemcrise.com.br publica guias gratuitas (carne-leao-autonomos, receber-pagamento-internacional-mei, contabilidade-mensal-empresa); las 'calculadoras' no se vieron en esta pasada."
+   },
+   {
+    "claim": "Existencia de precios de herramientas de pago unico equivalentes",
+    "result": "not_found",
+    "source_url": null,
+    "note": "En tres busquedas no apareció ninguna app/curso de pago especifico para notas fiscais de exportacion / dolar para freelancers. Lo mas cercano: planillas MEI genericas en Hotmart (Kit Finanças MEI 2026, precio no visto; planilla para terapeutas R$ 59,90) y contabilidad online desde R$ 189/mes."
+   }
+  ],
+  "alternatives": [
+   {
+    "name": "Contabilidade.com, plan de contabilidad online para prestador de servicios en Simples Nacional (a partir de)",
+    "price_local": 189,
+    "currency": "BRL",
+    "model": "monthly",
+    "url": "https://contabilidade.com/planos-e-precos/",
+    "as_of": "2026-10"
+   },
+   {
+    "name": "Contabilidad para MEI (rango de mercado segun contabilidade.com / monitordomercado)",
+    "price_local": 50,
+    "currency": "BRL",
+    "model": "monthly",
+    "url": "https://monitordomercado.com.br/noticias/399236-quanto-um-contador-cobra-para-cuidar-de-um-mei-em-2026-e-o-que-esta-incluso-no-preco-do-servico/",
+    "as_of": "2026-10"
+   },
+   {
+    "name": "Planilha para terapeutas/consultorios (Hotmart, generica para autonomos; con aula en vivo)",
+    "price_local": 59.9,
+    "currency": "BRL",
+    "model": "one-time",
+    "url": "https://hotmart.com/pt-br/marketplace/produtos/planilha-para-iniciantes-para-negocio-de-terapia-consultorios/O73506186W",
+    "as_of": "2026-10"
+   },
+   {
+    "name": "Kit Finanças MEI 2026 (Hotmart, e-book + planilla: DAS, limite anual MEI, formacion de precio; precio no visto)",
+    "price_local": null,
+    "currency": "BRL",
+    "model": "one-time",
+    "url": "https://hotmart.com/pt-br/marketplace/produtos/kit-financas-mei-2026-e-book-planilha-de-controle-financeiro/C105973886Q",
+    "as_of": "2026-10"
+   },
+   {
+    "name": "Financial Aha, plantilla freelancer version Essentials (USD, pago unico segun resumen)",
+    "price_local": 12,
+    "currency": "USD",
+    "price_usd": 12,
+    "model": "one-time",
+    "url": "https://www.financialaha.com/pt/free-spreadsheet-templates/business-finance/freelancer-finance-tracker/",
+    "as_of": "2026-10"
+   },
+   {
+    "name": "PayPal para recibir del exterior: 6,40% + 3,50% de conversion + tarifa fija (guia de marzo 2025, dato antiguo)",
+    "price_local": null,
+    "currency": "BRL",
+    "model": "freemium",
+    "url": "https://exiap.com.br/guias/receber-dinheiro-do-exterior-pelo-paypal",
+    "as_of": "2025-03"
+   }
+  ],
+  "free_alternatives": [
+   {
+    "name": "Calculadora de recebimento do exterior de Contabilidade Zen",
+    "url": "https://www.contabilidadezen.com.br/conteudo/calculadora-recebimento-exterior/",
+    "note": "Gratis. Estima neto tras cambio, IOF e imposto en USD/EUR/GBP y compara recibir como persona fisica (carne-leao) vs PJ; aplica no incidencia de ISS/PIS/COFINS en escenarios PJ. Competidor directo de la mitad 'calculadora' de la idea. No quedo claro si modela PGDAS-D."
+   },
+   {
+    "name": "Carne-Leao Web / app de la Receita Federal",
+    "url": "https://www.rotajuridica.com.br/?p=10152",
+    "note": "Gratis y oficial: registra rendimientos del exterior, deducciones y genera DARF."
+   },
+   {
+    "name": "Guias gratuitas de Wise, FreelaSemCrise, Contabilidade Zen, Senhor Contabil sobre MEI/exterior/NFS-e",
+    "url": "https://wise.com/br/blog/emitir-nota-fiscal-exterior",
+    "note": "Cubren que nota emitir (NFS-e con marca de exportacion; en MEI campo 'Exportacao, imunidade ou nao incidencia do ISSQN'), documentos y cambio."
+   }
+  ],
+  "pain_evidence": [
+   {
+    "url": "https://www.contabeis.com.br/forum/tributos-estaduais-municipais/373049/iss-nota-fiscal-para-o-exterior/",
+    "what": "Hilo de foro de contadores 'ISS nota fiscal para o exterior' (duda de ISS en nota al exterior; fecha y contenido no vistos).",
+    "date": null
+   },
+   {
+    "url": "https://www.tabnews.com.br/Floobert/paypal-vs-inter-vs-c6",
+    "what": "Hilo en TabNews 'paypal vs inter vs c6' sobre como recibir pagos (de una LTDA, no de MEI) — senal de duda de desarrolladores sobre rutas de cobro.",
+    "date": null
+   },
+   {
+    "url": "https://www.infomoney.com.br/?p=2471849",
+    "what": "InfoMoney: '\"Sou freelancer no Brasil e recebo em dolar\": como declarar meu salario no IR?' (explica la cotizacion 'dolar compra' BC y compensacion por bitributacion).",
+    "date": null
+   },
+   {
+    "url": "https://www.contabilidadezen.com.br/blog/dev-receber-exterior-wise-payoneer-2026/",
+    "what": "Varios articulos 2026 de contadurias online (Contabilidade Zen, Senhor Contabil) dedicados a 'receber do exterior' para devs PJ: abundancia de contenido SEO; sin volumen de busqueda. No se hallaron hilos Reddit/foro con testimonios directos en esta pasada.",
+    "date": "2026"
+   }
+  ],
+  "payment_methods": [
+   {
+    "method": "Pix",
+    "note": "Pix = 42% de compras online en 2025 (Ebanx/PCMI) frente a 41% credito; el Global Payments Report 2026 matiza: 42% del valor e-commerce vs 40% credito, y el credito se sostiene por el parcelamento. Pix Automatico lanzado en 2025. 'Pix parcelado' no confirmado.",
+    "url": "https://www.poder360.com.br/poder-economia/pix-chega-a-42-dos-pagamentos-on-line-no-brasil/"
+   },
+   {
+    "method": "Tarjeta de credito con parcelamento",
+    "note": "Segun Global Payments Report 2026 sigue liderando en valor en e-commerce (40%) por el parcelamento.",
+    "url": "https://economicnewsbrasil.com.br/2026/05/07/pix-pressiona-cartoes-mas-parcelamento-segura-credito/"
+   }
+  ],
+  "regulatory_note": "Zona fiscal regulada y variable por municipio (ISS), por regimen (MEI/Simples/PF) y en el tiempo (limite de isencion del IR pasaria de R$ 1.903,98 a R$ 5.000/mes segun una guia 2026 — fuentes discrepan). Casi todas las guias terminan con 'consulte um contador'. No vi como se encuadra legitimamente una herramienta; practica comun: calculadora/guia informativa con aviso 'nao e consultoria contabil' y fecha de vigencia visible de reglas.",
+  "differentiator": "ninguno defendible a USD 20 solo: Contabilidade Zen ya ofrece gratis una calculadora de neto PF vs PJ, y Carne-Leao Web y las guias cubren el resto. Posible nicho: diario mensual offline que aplique la regla de cotizacion por regimen (Simples vs Carne-Leao) + contador de limite MEI + checklist de NFS-e, pero exige mantener reglas municipales y de IR que cambian.",
+  "new_confidence": "low",
+  "confidence_basis": "Dolor real y regulatorio (reglas distintas por regimen/municipio, cambios de limites), pero alternativa gratuita directa encontrada (calculadora Zen + Carne-Leao Web), ningun precio de herramienta de pago equivalente hallado, sin cifra de freelancers brasilenos pagados en USD, sin testimonios directos; todo basado en resumenes de busqueda sin abrir paginas.",
+  "recommendation": "drop",
+  "recommendation_reason": "Existe una calculadora gratuita casi identica y la herramienta oficial es gratis; sin diferenciador defendible ni precios de referencia que sostengan USD 20."
+ },
+ {
+  "id": "mx-freelancer-usd-cfdi-resico",
+  "verified": "partly",
+  "checks": [
+   {
+    "claim": "CFDI a cliente extranjero con clave generica XEXX010101000; solo los servicios listados en la Ley del IVA como exportacion tributan a 0%, el resto 16%",
+    "result": "confirmed",
+    "source_url": "https://praxiumconsultores.com/blog/puedo-facturar-a-un-cliente-extranjero",
+    "note": "Confirmado por varias fuentes de despachos (praxiumconsultores.com/blog/art-29-liva-exportacion-de-servicios-al-0, contadormx.com/iva-exportacion-de-servicios-mexico-aplica-la-tasa-cero-liva, siemprealdia.co): lista limitativa del art. 29 fr. IV LIVA (incluye servicios de TI/desarrollo de software bajo el inciso i, con condiciones como que el pago venga de cuenta en el extranjero); consultoria de negocio, diseno grafico o coaching no entran segun la misma fuente. 0% no es exento (se acredita IVA). Son blogs de consultoria, no la guia oficial SAT."
+   },
+   {
+    "claim": "Tipo de cambio dentro de RESICO: una sola fuente advierte que tratar la ganancia cambiaria como 'otros ingresos' podria sacar del regimen (elcontribuyente.mx, 2025-06)",
+    "result": "not_found",
+    "source_url": null,
+    "note": "No encontre una segunda fuente que respalde la advertencia. Un resumen de busqueda indica lectura contraria: la persona fisica con actividad profesional acumula el ingreso al cobro ya convertido a pesos y no reconoce ganancia o perdida cambiaria (arts. 102 LISR y 20 CFF); fuente exacta no identificada. Las dos lecturas no se pudieron conciliar. Tambien las fuentes difieren sobre el tipo de cambio del CFDI (DOF del dia vs FIX de Banxico segun Anexo 20); para impuestos el art. 20 CFF usa el publicado en el DOF el dia habil anterior."
+   },
+   {
+    "claim": "Facturama plan 2023: MXN 110 con 25 facturas al ano",
+    "result": "confirmed",
+    "source_url": "https://facturama.mx/planes-facturacion",
+    "note": "La pagina de planes lista paquetes de folios con vigencia anual: 10 folios MXN 55, 25 folios MXN 110, 40 folios MXN 165 (IVA incluido); pagina sin fecha visible, confirmar vigencia. Facturama tambien ajusto precios en 2022-2023."
+   },
+   {
+    "claim": "Facturama MXN 1,650 al ano ilimitado",
+    "result": "not_found",
+    "source_url": "https://facturama.mx/blog/importante-nuevos-planes-en-facturama-para-2023/",
+    "note": "No aparecio el plan ilimitado de MXN 1,650 en los resultados de esta pasada (solo paquetes de folios). Un freelancer con pocas facturas al mes paga del orden de MXN 55-165 al ano por timbrado."
+   },
+   {
+    "claim": "EdiFactMx ofrece version gratuita CFDI 4.0 (PAC autorizado)",
+    "result": "not_found",
+    "source_url": "https://www.edifact.com.mx/soluciongratuita",
+    "note": "En esta pasada solo aparecieron paquetes de pago de EdiFactMx (1.000 timbres por MXN 450 + IVA, pago unico sin caducidad, segun resumen); la version gratuita no se vio en resultados. Existe segun la pasada 1; no reconfirmada."
+   },
+   {
+    "claim": "Portal gratuito del SAT como alternativa de facturacion",
+    "result": "confirmed",
+    "source_url": "https://portalerp.com/latam/noticia/los-cambios-normativos-en-latinoamerica-para-este-2026",
+    "note": "Una guia 2026 indica que se puede timbrar con el portal gratuito del SAT o con un PAC; un articulo de Portal ERP dice que un cambio redefine el esquema para quienes usaban el facturador gratuito, pero el resumen se corto y no pude confirmar los requisitos de elegibilidad 2026."
+   },
+   {
+    "claim": "Segmento cobra en USD (el $20 es plausible)",
+    "result": "not_found",
+    "source_url": "https://www.larepublica.co/finanzas/alrededor-de-34-de-los-freelancers-prefiere-cobrar-su-trabajo-en-dolares-y-no-en-pesos-4408708",
+    "note": "No encontre cifra para Mexico del porcentaje de freelancers que cobra en dolares. Lo mas cercano: Deel dice que para Colombia pasaron de 20% a 34% (La Republica; dato de otro pais y de una empresa con interes comercial). Para Mexico solo hay estudios viejos (PayPal 2018, Expansion) sin ese dato."
+   }
+  ],
+  "alternatives": [
+   {
+    "name": "Facturama, paquete de 25 folios (vigencia anual, IVA incluido; tambien 10 folios MXN 55 y 40 folios MXN 165)",
+    "price_local": 110,
+    "currency": "MXN",
+    "model": "annual",
+    "url": "https://facturama.mx/planes-facturacion",
+    "as_of": "2026-10"
+   },
+   {
+    "name": "Facturoporti plan Basico (100 timbres al mes, 1 RFC)",
+    "price_local": 199,
+    "currency": "MXN",
+    "model": "monthly",
+    "url": "https://facturoporti.com.mx/paquetes-facturacion-electronica/",
+    "as_of": "2026-10"
+   },
+   {
+    "name": "EdiFactMx paquete de 1.000 timbres (+IVA, pago unico, sin caducidad)",
+    "price_local": 450,
+    "currency": "MXN",
+    "model": "one-time",
+    "url": "https://www.edifact.com.mx/masinfo/timbres-para-facturas",
+    "as_of": "2026-10"
+   },
+   {
+    "name": "Contador para persona fisica RESICO (rango de mercado segun un despacho, MXN 500 a 800 al mes; cifra de marketing, no verificada)",
+    "price_local": 500,
+    "currency": "MXN",
+    "model": "monthly",
+    "url": "https://praxiumconsultores.com/blog/cuanto-cobra-un-contador-por-llevar-la-contabilidad-de-un-resico",
+    "as_of": "2026-10"
+   },
+   {
+    "name": "Calculadoras ISR RESICO con version profesional de pago (Calculo Seguro, Cotizador Hipotecario; precio no visto)",
+    "price_local": null,
+    "currency": "MXN",
+    "model": "freemium",
+    "url": "https://calculoseguro.mx/calculadora-isr-resico/",
+    "as_of": "2026-10"
+   },
+   {
+    "name": "DolarApp (cuenta/cobro en USD para freelancers; contenido de marketing sobre CFDI 4.0; precio no visto)",
+    "price_local": null,
+    "currency": "USD",
+    "model": "freemium",
+    "url": "https://dolarapp.com/en-CO/blog/freelancer-tips/como-facturar-CFDI",
+    "as_of": "2026-10"
+   }
+  ],
+  "free_alternatives": [
+   {
+    "name": "Calculadora de cuota RESICO PF (hacecuentas)",
+    "url": "https://hacecuentas.com/mx/calculadora-rfc-cuota-resico-pf-mexico",
+    "note": "Gratis y privada; usa la tabla RESICO PF 2026 del SAT (art. 113-E LISR). Cubre el pago mensual, no el CFDI ni IVA 0%."
+   },
+   {
+    "name": "Calculadoras ISR RESICO gratuitas (Praxium, Calculo Seguro, Cotizador Hipotecario)",
+    "url": "https://praxiumconsultores.com/herramientas/calculadora-impuestos-resico",
+    "note": "Gratis; segun el resumen los tramos difieren entre calculadoras (Calculo Seguro usa tramos distintos; Cotizador Hipotecario muestra un tramo de 3% que otras no): calidad inconsistente."
+   },
+   {
+    "name": "Guias gratuitas de facturacion a extranjeros (Praxium, ContadorMX, Yo Facturo, Facturama blog, DolarApp)",
+    "url": "https://contadormx.com/como-facturar-al-extranjero-desde-mexico-sat/",
+    "note": "Cubren RFC generico, IVA 0%/16%, moneda y tipo de cambio en CFDI 4.0."
+   },
+   {
+    "name": "Portal gratuito de facturacion del SAT",
+    "url": null,
+    "note": "Mencionado por una guia 2026 como opcion para timbrar sin costo; elegibilidad y cambios 2026 no confirmados."
+   }
+  ],
+  "pain_evidence": [
+   {
+    "url": "https://praxiumconsultores.com/blog/puedo-facturar-en-dolares",
+    "what": "Varios despachos publican articulos especificos sobre facturar en dolares / a extranjeros y tipo de cambio (Praxium, ContadorMX, Elconta, Facturama): demanda de busqueda de contenido, sin volumen medido. No se hallaron hilos de foros ni testimonios directos de freelancers en esta pasada.",
+    "date": null
+   },
+   {
+    "url": "https://praxiumconsultores.com/blog/declaracion-mensual-resico",
+    "what": "Riesgo real de salir de RESICO: tres omisiones de declaracion mensual en el ejercicio sacan del regimen (art. 113-I LISR); pago antes del dia 17.",
+    "date": "2026"
+   },
+   {
+    "url": "https://www.unotv.com/negocios/asi-te-afectan-los-cambios-fiscales-que-implementa-el-sat-en-2026/",
+    "what": "Cobertura de prensa de los cambios fiscales del SAT en 2026 y mayor fiscalizacion (contexto, no dolor de freelancers especificamente).",
+    "date": "2026"
+   },
+   {
+    "url": "https://www.eluniversal.com.mx/cartera/uno-de-cada-cuatro-trabajadores-en-mexico-es-freelancer/",
+    "what": "El Universal: uno de cada cuatro trabajadores en Mexico es freelancer (tamano del segmento general; fecha no vista; no mide cobro en dolares).",
+    "date": null
+   }
+  ],
+  "payment_methods": [
+   {
+    "method": "Tarjetas (credito/debito/prepago)",
+    "note": "57% del valor del e-commerce mexicano en 2025 segun el Global Payments Report 2026; muchas tarjetas de debito mexicanas no estan habilitadas por el banco para compras en linea/transfronterizas y pueden rechazarse.",
+    "url": "https://www.publimetro.com.mx/noticias/2026/06/02/mexico-avanza-hacia-pagos-digitales-aunque-el-efectivo-concentra-40-de-transacciones/"
+   },
+   {
+    "method": "OXXO Pay (efectivo)",
+    "note": "Segun Antom, ~6% de las transacciones de e-commerce; el efectivo en e-commerce es 9% del valor en 2025 (Global Payments Report 2026). Poco relevante para freelancers que cobran en USD.",
+    "url": "https://www.antom.com/markets/mexico"
+   },
+   {
+    "method": "Mercado Pago / billeteras",
+    "note": "Billeteras digitales 26% del e-commerce segun Antom; Mercado Pago con penetracion de 56% entre sus usuarios segun la misma fuente (metodologias de Antom y Global Payments no comparables).",
+    "url": "https://www.antom.com/markets/mexico"
+   },
+   {
+    "method": "SPEI",
+    "note": "Transferencias interbancarias instantaneas ~6% del e-commerce segun Antom.",
+    "url": "https://www.antom.com/markets/mexico"
+   }
+  ],
+  "regulatory_note": "Zona fiscal regulada: lista limitativa del art. 29 fr. IV LIVA, tipo de cambio con criterios distintos (CFDI vs art. 20 CFF) y riesgo de salida de RESICO. Las fuentes son blogs de despachos que recomiendan confirmar con contador y con el Anexo 20. No vi como se encuadra legitimamente una herramienta; practica comun: asistente/calculadora informativa con aviso 'no es asesoria fiscal'.",
+  "differentiator": "ninguno claramente defendible. Posible hueco: no vi una herramienta gratuita que combine 'tipo de servicio -> IVA 0% o 16%' + campos del CFDI para extranjero + pago mensual RESICO con ingresos en USD (cada pieza existe en guias/calculadoras gratuitas), pero es una zona regulada con tramos que difieren entre calculadoras, y el timbrado cuesta solo MXN 55-165 al ano, lo que fija la expectativa de precio local muy por debajo de USD 20.",
+  "new_confidence": "low",
+  "confidence_basis": "Reglas de IVA 0% y RFC generico confirmadas por varias fuentes, pero hay muchas guias y calculadoras gratuitas, los precios locales de referencia son bajos (timbres MXN 55-199) y no hay cifra de freelancers mexicanos pagados en USD ni testimonios directos; todo basado en resumenes de busqueda.",
+  "recommendation": "rework",
+  "recommendation_reason": "Hueco estrecho (asistente IVA 0%/16% + CFDI para extranjero + RESICO en USD) rodeado de guias y calculadoras gratis; solo vale si se valida disposicion a pagar USD 20 con compradores reales."
+ },
+ {
+  "id": "br-motorista-app-lucro-real",
+  "verified": "partly",
+  "checks": [
+   {
+    "claim": "guardardinheiro.com.br 'Custo Real por KM - Motorista de App 2026': el bruto del app no es lucro (ej. R$ 400 de corridas, R$ 120 de gastos, 8 h = R$ 35 liquidos/hora)",
+    "result": "confirmed",
+    "source_url": "https://www.guardardinheiro.com.br/motoristas-de-app/custo-real-por-km",
+    "note": "La pagina existe y el mismo sitio ofrece una calculadora gratuita 'Taxa por Corrida Uber/99/InDriver' (https://www.guardardinheiro.com.br/motoristas-de-app/taxa-por-corrida): es contenido-herramienta gratis, no una referencia de pago. Pagina no abierta; el ejemplo numerico viene de pasada 1. Otra fuente de los resultados estima que tras tasa del app (~25%), combustible (20-25%), mantenimiento, seguro e IPVA el liquido real queda en 27-40% del bruto (fuente exacta no identificada; estimacion generica)."
+   },
+   {
+    "claim": "App 'Lucro no Volante' vendida en Hotmart (calcula lucro por corrida, por km y metas)",
+    "result": "confirmed",
+    "source_url": "https://hotmart.com/pt-br/marketplace/produtos/hagsxd-lucro-no-volante-amys3/L104772060L",
+    "note": "Existe y su descripcion coincide (Uber, 99 y otras plataformas). La ficha muestra calificacion 1,0 con una sola evaluacion (senal de traccion casi nula). PRECIO Y MODELO NO VISIBLES en dos busquedas: el resumen solo trae descripcion. Hotmart comisiona 9,9% + USD 0,50 por venta mayor a USD 5 segun su centro de ayuda (https://help.hotmart.com/es/article/208298448/)."
+   },
+   {
+    "claim": "FinDriver en App Store BR: calculo automatico de lucro liquido, mantenimiento y vencimiento de documentos (modelo freemium)",
+    "result": "contradicted",
+    "source_url": "https://apps.apple.com/br/app/findriver/id6748662034",
+    "note": "El listado lo describe como GRATUITO para iPhone/iPad (registro de ganancias, gastos y metas para Uber, 99 e inDrive). Si tiene compras dentro de la app no quedo visible; la pasada 1 lo marcaba freemium sin precio. Descripcion de la propia app."
+   },
+   {
+    "claim": "Tarifago (Hotmart ES; Uber, DiDi, Cabify, inDrive)",
+    "result": "not_found",
+    "source_url": null,
+    "note": "Una busqueda dedicada no devolvio ningun 'Tarifago' ni precio; no pude confirmar que exista."
+   },
+   {
+    "claim": "Segmento de ingresos ajustados con margen estrecho entre bruto y costos",
+    "result": "confirmed",
+    "source_url": "https://www.band.com.br/economia/noticias/renda-media-de-motorista-por-app-e-de-r-139-por-hora-diz-ibge-motociclista-alcanca-r-108-202510171039",
+    "note": "IBGE (Pnad Continua, via Band 2025-10): ingreso medio del motorista por app R$ 13,90 por hora (2024) y motociclista R$ 10,80. Un resumen de busqueda cita una edicion posterior (2025) con R$ 16,20 por hora vs R$ 18,40 de otros trabajadores y jornada media de 44,7 h semanales (URL exacta no identificada). Estas cifras son BRUTAS (sin combustible ni mantenimiento): no hay dato oficial de liquido por hora."
+   },
+   {
+    "claim": "Precio de pago unico viable de USD 20 en Hotmart/App Store",
+    "result": "contradicted",
+    "source_url": "https://canaltech.com.br/apps/aplicativos-para-calcular-combustivel/",
+    "note": "El unico precio en reales hallado para una app comparable es Drivvo Premium a R$ 2 al mes o R$ 12 al ano (Canaltech, sin fecha; Drivvo base es gratis). No hallamos precio para Lucro no Volante ni FinDriver. El ancla visible esta muy por debajo de USD 20. Nota: atribucion exacta de URL a Canaltech es aproximada (aparecio en la busqueda de Drivvo)."
+   }
+  ],
+  "alternatives": [
+   {
+    "name": "Drivvo Premium (control de gastos de vehiculo; version base gratis)",
+    "price_local": 2,
+    "currency": "BRL",
+    "model": "monthly",
+    "url": "https://canaltech.com.br/apps/aplicativos-para-calcular-combustivel/",
+    "as_of": null
+   },
+   {
+    "name": "Drivvo Premium, plan anual",
+    "price_local": 12,
+    "currency": "BRL",
+    "model": "annual",
+    "url": "https://canaltech.com.br/apps/aplicativos-para-calcular-combustivel/",
+    "as_of": null
+   },
+   {
+    "name": "Lucro no Volante (Hotmart; precio no visible; modelo no confirmado)",
+    "price_local": null,
+    "currency": "BRL",
+    "model": "one-time",
+    "url": "https://hotmart.com/pt-br/marketplace/produtos/hagsxd-lucro-no-volante-amys3/L104772060L",
+    "as_of": "2026-10"
+   },
+   {
+    "name": "Manual Profissional do Motorista de App (Hotmart; metodo para calcular lucro por km y ganho por hora; precio no visible)",
+    "price_local": null,
+    "currency": "BRL",
+    "model": "one-time",
+    "url": "https://hotmart.com/pt-br/marketplace/produtos/manual-profissional-do-motorista-de-app-metodo-completo-de-lucro-e-decisao/P104474677U",
+    "as_of": "2026-10"
+   },
+   {
+    "name": "Everlance (rastreo automatico de km/gastos; precio no visto)",
+    "price_local": null,
+    "currency": "USD",
+    "model": "freemium",
+    "url": null,
+    "as_of": "2026-10"
+   }
+  ],
+  "free_alternatives": [
+   {
+    "name": "FinDriver (App Store BR)",
+    "url": "https://apps.apple.com/br/app/findriver/id6748662034",
+    "note": "Gratis segun el listado: ganancias, gastos y metas para motoristas Uber/99/inDrive."
+   },
+   {
+    "name": "Calculadora de ganhos 99 (blog oficial de 99)",
+    "url": "https://99app.com/blog/motorista/calculadora-de-ganhos-99-descubra-como-calcular-seus-ganhos/",
+    "note": "Calculadora de la propia plataforma 99 para estimar ganancias; no confirmado si descuenta combustible y depreciacion."
+   },
+   {
+    "name": "Calculadora de Rendimento Uber/99 (sum.money)",
+    "url": "https://sum.money/br/uber-99-rendimento/",
+    "note": "Gratis; descuenta tasa del app (Uber 25-30%, 99 20-28% segun la pagina, abril 2026), combustible, mantenimiento e IPVA."
+   },
+   {
+    "name": "Calculadoras gratuitas de guardardinheiro.com.br y digitei.com",
+    "url": "https://www.guardardinheiro.com.br/motoristas-de-app/taxa-por-corrida",
+    "note": "Calculadoras web de tasa por corrida y ganancias Uber/99/inDrive."
+   },
+   {
+    "name": "Drivvo (version gratuita)",
+    "url": "https://seucreditodigital.com.br/drivvo-aplicativo-permite-controlar-gastos-com-carro/",
+    "note": "App gratuito de control de gastos y abastecimiento del vehiculo con opcion paga barata."
+   }
+  ],
+  "pain_evidence": [
+   {
+    "url": "https://www.band.com.br/economia/noticias/renda-media-de-motorista-por-app-e-de-r-139-por-hora-diz-ibge-motociclista-alcanca-r-108-202510171039",
+    "what": "IBGE: renta media de motorista por app R$ 13,90 por hora (bruta) y motociclista R$ 10,80.",
+    "date": "2025-10"
+   },
+   {
+    "url": "https://www.uai.com.br/economia/2026/01/31/motorista-de-aplicativo-em-2026-sera-que-os-ganhos-ainda-compensam/",
+    "what": "'Motorista de aplicativo em 2026: sera que os ganhos ainda compensam?' — estima lucro liquido de R$ 2 mil a R$ 4 mil al mes (sin metodologia publica).",
+    "date": "2026-01"
+   },
+   {
+    "url": "https://garagem360.com.br/?p=302019",
+    "what": "Titulo: 'Inflacao de 56% nas corridas de app afeta motoristas: veja lucro real em 2026' (pagina no abierta; cifra no verificada).",
+    "date": "2026"
+   },
+   {
+    "url": "https://seucreditodigital.com.br/uber-sistema-assinatura-motoristas/",
+    "what": "Uber lanzo en Brasil el 'Passe para Motoristas' (tarifa fija de R$ 19 a R$ 97 por pase en vez de comision por viaje, segun nota de julio 2026): cambia el modelo de costos y complica la cuenta de lucro real.",
+    "date": "2026-07"
+   }
+  ],
+  "payment_methods": [
+   {
+    "method": "Pix",
+    "note": "42% del valor del e-commerce brasileno en 2025 (Ebanx/PCMI y Global Payments Report 2026); credito sigue fuerte por parcelamento. Para un pago de ~R$ 100+ de un segmento de ingresos ajustados Pix es el medio natural.",
+    "url": "https://www.poder360.com.br/poder-economia/pix-chega-a-42-dos-pagamentos-on-line-no-brasil/"
+   },
+   {
+    "method": "Hotmart (checkout y comisiones)",
+    "note": "Comision 9,9% + USD 0,50 por venta mayor a USD 5 segun su centro de ayuda; metodos de pago locales no verificados en esta pasada.",
+    "url": "https://help.hotmart.com/es/article/208298448/"
+   }
+  ],
+  "regulatory_note": "No es zona fiscal regulada; el riesgo es de exactitud: las tasas de las plataformas varian por ciudad y modelo (Uber 1-40% segun una fuente, Passe de tarifa fija) y las estimaciones de costo por km son genericas. Debe dejar editables comision, consumo y costos.",
+  "differentiator": "ninguno defendible a USD 20: existen calculadoras gratuitas (incluida la oficial de 99), una app gratuita (FinDriver) y Drivvo Premium a R$ 12 al ano. Solo un angulo estrecho: decision en tiempo real por corrida (aceptar/rechazar) y soporte del Passe de tarifa fija, pero igual choca con el ancla de precio.",
+  "new_confidence": "low",
+  "confidence_basis": "Dolor real (ingresos brutos por hora de R$ 13,90-16,20 y margen estrecho), pero el unico precio hallado en reales es R$ 2/mes o R$ 12/ano (Drivvo), hay calculadoras gratis incluida la de 99, FinDriver es gratis y el producto de Hotmart tiene una sola evaluacion de 1,0; segmento con baja disposicion a pagar. Precio de Lucro no Volante no se pudo ver.",
+  "recommendation": "drop",
+  "recommendation_reason": "Alternativas gratuitas y suscripciones de R$ 2/mes o R$ 12/ano hacen inviable un pago unico de USD 20 en este segmento."
+ },
+ {
+  "id": "ar-courier-impuestos-compras-exterior",
+  "verified": "partly",
+  "checks": [
+   {
+    "claim": "Decreto 604/2026 vigente desde el 17/07/2026: franquicia de u$s400 FOB por envio y cinco envios por ano",
+    "result": "confirmed",
+    "source_url": "https://www.consejosalta.org.ar/wp-content/uploads/decreto-604.pdf",
+    "note": "Copia del decreto (Consejo Salta) y resumenes (iProfesional, Perfil, MDZ, KPMG: https://kpmg.com/us/en/taxnewsflash/news/2026/07/argentina-updated-postal-shipment-rules-courier-regime.html) coinciden: publicado en el Boletin Oficial el 2026-07-17 y vigente ese dia; hasta 5 envios por ano por persona y hasta USD 400 FOB por envio, exentos de derechos de importacion y tasa de estadistica, sin finalidad comercial. ARCA lo reglamento con la RG 5884/2026 (publicada 2026-07-30). Texto completo del decreto no leido; solo resumenes de busqueda."
+   },
+   {
+    "claim": "Tope de u$s3.000 e IVA 21%",
+    "result": "not_found",
+    "source_url": "https://kpmg.com/us/en/taxnewsflash/news/2026/07/argentina-updated-postal-shipment-rules-courier-regime.html",
+    "note": "Segun KPMG, la RG 5884/2026 fija procedimientos para envios postales de hasta USD 3.000 FOB, hasta 3 unidades del mismo articulo, uso personal (limite del procedimiento, no una exencion). La alicuota de IVA bajo las normas 2026 NO se pudo confirmar: un analisis dice que la exencion no comprende necesariamente IVA ni percepciones; un articulo de 2024 (Decreto 1065/2024) decia que dentro de la franquicia solo se pagaba IVA, pero es anterior y no debe tomarse como vigente."
+   },
+   {
+    "claim": "Cifras contradictorias entre notas: 50% sobre excedente de u$s400 vs u$s50",
+    "result": "confirmed",
+    "source_url": "https://www.perfil.com/noticias/canal-e/cambios-en-el-regimen-de-compras-al-exterior-el-gobierno-modifico-las-condiciones-para-los-envios-realizados-por-correo-argentino.phtml",
+    "note": "La contradiccion se explica: el regimen anterior tenia franquicia de USD 50 por envio con hasta 12 operaciones anuales y alicuota unica de 50% sobre excedentes (art. 8 Decreto 161/1999); el Decreto 604/2026 deroga ese art. 8. Segun Perfil, el excedente sobre USD 400 queda en el regimen general de importacion (derechos segun posicion arancelaria + tasa de estadistica), sin formula unica. Las notas viejas siguen circulando con las cifras anteriores."
+   },
+   {
+    "claim": "El director de Aduanas anticipo en julio que el esquema 'va a desaparecer'",
+    "result": "not_found",
+    "source_url": "https://www.iprofesional.com/impuestos/463222-que-pautas-se-deben-respetar-para-compras-en-shein-y-temu-en-el-regimen-de-courier-arca",
+    "note": "No aparecio en esta pasada (esa URL de iProfesional no salio en los resultados). Si hay una nota de BAE Negocios con titulo en pregunta sobre si se eliminan los 5 envios anuales de USD 400 libres de impuestos, lo que indica debate; no abierta."
+   },
+   {
+    "claim": "No hay calculadora oficial de ARCA ni herramienta especifica en los resultados",
+    "result": "contradicted",
+    "source_url": "https://hacecuentas.com/calculadora-impuestos-courier-temu-shein-argentina",
+    "note": "Existe una calculadora gratuita especifica para Temu, Shein y Amazon en Argentina (hacecuentas.com) y otra de costo de envio de compra al exterior (https://hacecuentas.com/calculadora-costo-envio-compra-exterior). Segun el resumen, sus valores por defecto eran franquicia USD 50 y impuesto 50%, es decir los del regimen derogado, y la pagina ofrece avisar cuando ARCA publique el dato nuevo: estaba desactualizada. Aerobox tambien ofrece calculadora orientativa. No se vio calculadora oficial de ARCA."
+   },
+   {
+    "claim": "Tendencia: las compras al exterior por courier baten records (iProUP)",
+    "result": "confirmed",
+    "source_url": "https://www.iprofesional.com/comex/457785-compras-en-el-exterior-el-courier-sigue-en-auge-y-ya-mueve-mas-de-us500-millones-en-2026",
+    "note": "Fuentes de 2026: iProfesional (2026-07-30) 'el courier ya mueve mas de US$500 millones en 2026'; Canal 26 (2026-06-21) 'las compras online al exterior crecieron 84% en mayo y marcan un record'; Ambito: las importaciones via courier se duplicaron en lo que va de 2026. Es volumen de compras, no de busquedas ni de disposicion a pagar."
+   }
+  ],
+  "alternatives": [
+   {
+    "name": "Aerobox (casillero USA-Argentina): cargo documental por paquete; incluye calculadora orientativa gratis",
+    "price_local": null,
+    "currency": "USD",
+    "price_usd": 10,
+    "model": "one-time",
+    "url": "https://aerobox.com.ar/?p=20043",
+    "as_of": "2026-10"
+   },
+   {
+    "name": "Aerobox, entrega a domicilio (CABA USD 15, Provincia de Buenos Aires USD 25, interior USD 30)",
+    "price_local": null,
+    "currency": "USD",
+    "price_usd": 15,
+    "model": "one-time",
+    "url": "https://aerobox.com.ar/?p=20043",
+    "as_of": "2026-10"
+   }
+  ],
+  "free_alternatives": [
+   {
+    "name": "Calculadora de impuestos para compras en Temu, Shein y Amazon (hacecuentas)",
+    "url": "https://hacecuentas.com/calculadora-impuestos-courier-temu-shein-argentina",
+    "note": "Gratis; segun el resumen sus valores por defecto (USD 50 / 50%) eran del regimen derogado y pedia avisar cuando ARCA publique el dato; competidor directo que puede actualizarse en cualquier momento."
+   },
+   {
+    "name": "Calculadora de costo de envio de compra al exterior (hacecuentas)",
+    "url": "https://hacecuentas.com/calculadora-costo-envio-compra-exterior",
+    "note": "Estima costo total con envio, impuestos y aduana."
+   },
+   {
+    "name": "Calculadora de Aerobox",
+    "url": "https://aerobox.com.ar/?p=20043",
+    "note": "Orientativa para costo de envio de casillero; declara que puede cambiar precios o tasas sin aviso."
+   },
+   {
+    "name": "Notas explicativas gratuitas (iProfesional, Perfil, MDZ, KPMG, ARCA ayuda sobre envios internacionales)",
+    "url": "https://www.iprofesional.com/impuestos/463474-las-pautas-de-arca-para-hacer-compras-con-el-nuevo-regimen-postal",
+    "note": "Explican franquicia, 5 envios, excedente y pasos del destinatario para validar datos antes de la presentacion aduanera (RG 5884)."
+   }
+  ],
+  "pain_evidence": [
+   {
+    "url": "https://www.iprofesional.com/comex/457785-compras-en-el-exterior-el-courier-sigue-en-auge-y-ya-mueve-mas-de-us500-millones-en-2026",
+    "what": "Courier mueve mas de US$ 500 millones en 2026 (mercado grande y creciente).",
+    "date": "2026-07"
+   },
+   {
+    "url": "https://www.canal26.com/economia/2026/06/21/boom-del-courier-las-compras-online-al-exterior-crecieron-84-en-mayo-y-marcan-un-record-en-argentina/",
+    "what": "Las compras online al exterior crecieron 84% en mayo (interanual segun titular) y marcan un record.",
+    "date": "2026-06"
+   },
+   {
+    "url": "https://www.iprofesional.com/impuestos/463474-las-pautas-de-arca-para-hacer-compras-con-el-nuevo-regimen-postal",
+    "what": "Cobertura continua del nuevo regimen y pautas de ARCA (titulo; fecha mostrada 1/9/2026).",
+    "date": "2026-09"
+   },
+   {
+    "url": "https://www.ambito.com/economia/boom-compras-al-exterior-las-importaciones-via-courier-se-duplicaron-lo-que-va-2026-n6290560/amp",
+    "what": "Las importaciones via courier se duplicaron en lo que va de 2026 (titulo). No se hallaron testimonios de usuarios confundidos ni volumen de busqueda.",
+    "date": "2026"
+   }
+  ],
+  "payment_methods": [
+   {
+    "method": "Pago de derechos/impuestos a ARCA",
+    "note": "Los pagos a ARCA se cobran en pesos, no en dolares (segun un resumen sobre el decreto).",
+    "url": "https://www.perfil.com/noticias/canal-e/cambios-en-el-regimen-de-compras-al-exterior-el-gobierno-modifico-las-condiciones-para-los-envios-realizados-por-correo-argentino.phtml"
+   },
+   {
+    "method": "Tarjeta internacional del comprador / dolar tarjeta (cepo y percepcion 30% a cuenta de Ganancias)",
+    "note": "Fuentes discrepan sobre 2026 (una dice que el Impuesto PAIS dejo de aplicarse en enero 2026 quedando la percepcion del 30%; otras dicen que PAIS/percepcion siguen). Para un cobro de USD 20 a un consumidor argentino esto encarece el precio efectivo.",
+    "url": "https://www.global66.com/blog/como-afectan-los-impuestos-a-tus-gastos-digitales/"
+   },
+   {
+    "method": "Mercado Pago",
+    "note": "No hallado en las fuentes de esta pasada.",
+    "url": null
+   }
+  ],
+  "regulatory_note": "Normativa aduanera muy volatil: Decreto 604/2026 (2026-07-17), RG 5884/2026 (2026-07-30), RG 5883/2026 y debate sobre posibles cambios. El IVA aplicable no esta confirmado y los derechos del excedente dependen de la posicion arancelaria. Practica comun: estimador informativo con fecha de vigencia y aviso de que el calculo oficial lo hace Aduana/ARCA.",
+  "differentiator": "ninguno defendible: ya hay calculadoras gratuitas especificas (hacecuentas, Aerobox) y el IVA/derechos del excedente no estan claros ni son estables; un producto de pago unico quedaria obsoleto con el siguiente cambio normativo. Unico angulo posible: revendedores que necesiten contar sus 5 envios anuales y costo puesto en destino, sin evidencia de demanda.",
+  "new_confidence": "low",
+  "confidence_basis": "El cambio normativo y el crecimiento del courier estan bien documentados, pero el consumidor masivo tiene calculadoras gratis, no hay precios de herramientas de pago, el IVA no esta confirmado y el regimen puede cambiar otra vez; no hay evidencia de disposicion a pagar. Fuentes son resumenes de busqueda.",
+  "recommendation": "drop",
+  "recommendation_reason": "Consumidor masivo con calculadoras gratuitas, reglas inestables (IVA sin confirmar) y ninguna evidencia de disposicion a pagar USD 20."
+ },
+ {
+  "id": "latam-reposteria-costeo-es",
+  "verified": "partly",
+  "checks": [
+   {
+    "claim": "Producto de pago en Hotmart: 'Mini Calculadora de Precios para Reposteria y Cocina' (herramienta en linea, sin Excel)",
+    "result": "confirmed",
+    "source_url": "https://hotmart.com/es/marketplace/productos/mini-calculadora-de-precios-para-reposteria-y-cocina/C102115064I",
+    "note": "Existe y la descripcion coincide (producto digital para calcular el precio de cada receta; 100% en linea, sin Excel). PRECIO NO VISIBLE en el resumen de busqueda (dos intentos)."
+   },
+   {
+    "claim": "'Plantilla Costeo de Recetas en Excel- Reposteria' (producto de pago en Hotmart)",
+    "result": "confirmed",
+    "source_url": "https://hotmart.com/es/marketplace/productos/hagsxd-plantilla-costeo-de-recetas-en-excel-reposteria-w9i4p/M95624414H",
+    "note": "Existe: dos metodos de calculo, video tutorial, requiere Excel. Precio no visible. Hay mas productos similares en Hotmart en el mismo resultado (p.ej. 'Plantilla costeo de productos de pasteleria - Fabi Pasteleria' https://hotmart.com/es/marketplace/productos/plantilla-costeo-de-productos-de-pasteleria-fabi-pasteleria/X98720176D y '¿Y cuanto cobro? Guia practica...' https://hotmart.com/es/marketplace/productos/y-cuanto-cobro-guia-practica-para-ponerle-precio-a-lo-que-haces-sin-miedo-ni-culpa/X102772313B): saturacion confirmada."
+   },
+   {
+    "claim": "Calculadora HTML de pago unico en Gumroad (mhcassist) listada a $5, PDF de fichas tecnicas",
+    "result": "not_found",
+    "source_url": "https://mhcassist.gumroad.com/l/calculadora-pro",
+    "note": "En esta pasada ningun resultado menciono mhcassist/'calculadora-pro'; no pude reconfirmar la existencia ni el precio de $5. En cambio aparecio otro listado de Gumroad (magnifiquereposteria) con una plantilla de costos a $3 (ver alternatives)."
+   },
+   {
+    "claim": "Planilla en Google Sheets para reposteras que venden por WhatsApp: precio minimo automatico, generador de mensajes, MX/CO/CL/PE, pago unico con garantia de 7 dias",
+    "result": "confirmed",
+    "source_url": "https://hotmart.com/es/marketplace/productos/cobra-lo-que-vale-tu-trabajo-planilla-de-precios-para-reposteria/V105688000L",
+    "note": "Confirmado: Google Sheets de 8 pestanas, precio minimo automatico, generador de mensajes de WhatsApp, moneda elegible para MX, CO, CL y PE, acceso inmediato, pago unico y garantia de 7 dias. Es decir, YA existe el diferenciador propuesto (mensaje de WhatsApp + multi-pais). Precio no visible."
+   },
+   {
+    "claim": "Apps 'Recipe & Food Cost - BakeCost' y 'Recipe Cost Calculator App' en App Store (183 o 400 calificaciones)",
+    "result": "not_found",
+    "source_url": "https://apppricinglab.com/app/apple/6747908579",
+    "note": "No reconfirmadas las calificaciones. Si aparecieron otras apps de costeo: Control Receta (App Store MX, gratis, 2.0/5 con 5 resenas, calcula costo, utilidad e IVA, exporta PDF), Chef Cost (gratis, App Store US, lanzada 2026-05), Recipe Costing Calculator (iPhone, USD 1,99) y Plated: Recipe Costing (pago unico, precio no visto)."
+   },
+   {
+    "claim": "Techo de precio por debajo de USD 20 en este nicho",
+    "result": "confirmed",
+    "source_url": "https://magnifiquereposteria.gumroad.com/l/Plantilla",
+    "note": "Unicos precios visibles: plantilla de costos en Gumroad a $3 (USD segun el resumen; la pagina no dice 'pago unico', boton 'Pay') y Recipe Costing Calculator iOS a USD 1,99. Precios de Hotmart no visibles. El pass 1 cito $5 en otro Gumroad (no reconfirmado). Ningun precio hallado se acerca a USD 20."
+   }
+  ],
+  "alternatives": [
+   {
+    "name": "Plantilla de costos de repostería (Gumroad magnifiquereposteria: gastos fijos/variables, empaques, resumen, IVA segun pais)",
+    "price_local": 3,
+    "currency": "USD",
+    "price_usd": 3,
+    "model": "one-time",
+    "url": "https://magnifiquereposteria.gumroad.com/l/Plantilla",
+    "as_of": "2026-10"
+   },
+   {
+    "name": "Calculadora HTML pago unico Gumroad (mhcassist) listada $5 segun pasada 1; no reconfirmada",
+    "price_local": 5,
+    "currency": "USD",
+    "price_usd": 5,
+    "model": "one-time",
+    "url": "https://mhcassist.gumroad.com/l/calculadora-pro",
+    "as_of": null
+   },
+   {
+    "name": "Recipe Costing Calculator (App Store, iPhone)",
+    "price_local": 1.99,
+    "currency": "USD",
+    "price_usd": 1.99,
+    "model": "one-time",
+    "url": "https://apps.apple.com/app/id646877156",
+    "as_of": "2026-10"
+   },
+   {
+    "name": "Planilla 'Cobra lo que vale tu trabajo' (Hotmart; Google Sheets, WhatsApp, MX/CO/CL/PE; precio no visible)",
+    "price_local": null,
+    "currency": "MXN",
+    "model": "one-time",
+    "url": "https://hotmart.com/es/marketplace/productos/cobra-lo-que-vale-tu-trabajo-planilla-de-precios-para-reposteria/V105688000L",
+    "as_of": "2026-10"
+   },
+   {
+    "name": "Mini Calculadora de Precios para Reposteria y Cocina (Hotmart, en linea; precio no visible)",
+    "price_local": null,
+    "currency": "MXN",
+    "model": "one-time",
+    "url": "https://hotmart.com/es/marketplace/productos/mini-calculadora-de-precios-para-reposteria-y-cocina/C102115064I",
+    "as_of": "2026-10"
+   },
+   {
+    "name": "Plantilla Costeo de Recetas en Excel- Repostería (Hotmart; precio no visible)",
+    "price_local": null,
+    "currency": "MXN",
+    "model": "one-time",
+    "url": "https://hotmart.com/es/marketplace/productos/hagsxd-plantilla-costeo-de-recetas-en-excel-reposteria-w9i4p/M95624414H",
+    "as_of": "2026-10"
+   },
+   {
+    "name": "Foodlabelmaker (costeo de recetas profesional, de pago; precio no visto)",
+    "price_local": null,
+    "currency": "USD",
+    "model": "monthly",
+    "url": "https://foodlabelmaker.com/es-mx/costo-recetas/",
+    "as_of": "2026-10"
+   }
+  ],
+  "free_alternatives": [
+   {
+    "name": "Control Receta (App Store Mexico)",
+    "url": "https://apps.apple.com/mx/app/control-receta/id6504501491",
+    "note": "Gratis; costo base de receta, porcentajes de utilidad e IVA, exporta PDF; calificacion baja (2.0/5, 5 resenas)."
+   },
+   {
+    "name": "Chef Cost (App Store)",
+    "url": "https://mwm.ai/apps/chef-cost/6744418797",
+    "note": "Gratis; costo por porcion y catalogo de insumos; lanzada 2026-05, poco historial."
+   },
+   {
+    "name": "Planilla de precificacao gratis para doces (Tabata Romero, portugues)",
+    "url": "https://videohighlight.com/v/cPhWhacpl9o",
+    "note": "Plantilla gratuita en portugues (Brasil); no es el mercado hispano pero muestra oferta gratis."
+   },
+   {
+    "name": "Hoja de calculo propia (Excel/Google Sheets)",
+    "url": null,
+    "note": "Formula basica: costo por porcion = costo total / porciones; precio = costo / (1 - margen). Sustituto trivial, cubre el 80% del caso."
+   }
+  ],
+  "pain_evidence": [
+   {
+    "url": "https://hotmart.com/es/marketplace/productos/y-cuanto-cobro-guia-practica-para-ponerle-precio-a-lo-que-haces-sin-miedo-ni-culpa/X102772313B",
+    "what": "Guia en venta que plantea que el problema es 'no saber cobrar' y menciona cobrar 'a ojo' como error comun (material comercial, no estadistica).",
+    "date": null
+   },
+   {
+    "url": "https://lanotaeconomica.com.co/?p=52435",
+    "what": "La Nota Economica: en 2025 se crearon ~106.000 empresas lideradas por mujeres en Colombia, la mayoria microempresas con ingresos hasta 40% menores que no consolidan utilidades sostenibles (contexto, no mide fijacion de precios en reposteria).",
+    "date": "2025"
+   },
+   {
+    "url": "https://www.larepublica.co/globoeconomia/costos-ocultos-pueden-generar-perdidas-de-hasta-15-en-restaurantes-en-peru-3425480",
+    "what": "Le Cordon Bleu Peru estima impacto negativo de 10% a 15% por costos ocultos no registrados en restaurantes (restaurantes, no reposteria; 2022).",
+    "date": "2022"
+   },
+   {
+    "url": "https://hotmart.com/es/marketplace/productos/la-receta-magica-del-emprendedor-dulce-guia-completa-para-convertir-tu-emprendimiento-en-un-negocio-exitoso/X105258312F",
+    "what": "Otra guia comercial advierte que luz, gas, agua y empaque que no se suman al costo los termina pagando la emprendedora. No se hallo encuesta ni testimonios directos de reposteras; Chile y Mexico no aparecieron.",
+    "date": null
+   }
+  ],
+  "payment_methods": [
+   {
+    "method": "Hotmart (checkout multi-moneda)",
+    "note": "Hotmart indica que su checkout acepta 22 monedas locales y mas de 44 metodos de pago (dato del propio proveedor); resuelve cobrar en MX/CO/CL/PE sin integrar pasarelas propias.",
+    "url": "https://hotmart.com/es/herramientas/internacionalizacion"
+   },
+   {
+    "method": "Efectivo y tarjetas en Mexico",
+    "note": "Global Payments Report 2026: efectivo = 9% del valor del e-commerce en Mexico 2025, tarjetas 57%; en puntos de venta el efectivo pesa 40% en Mexico, 32% en Colombia y 30% en Peru.",
+    "url": "https://www.publimetro.com.mx/noticias/2026/06/02/mexico-avanza-hacia-pagos-digitales-aunque-el-efectivo-concentra-40-de-transacciones/"
+   },
+   {
+    "method": "OXXO Pay / Mercado Pago / SPEI (Mexico)",
+    "note": "Segun Antom: OXXO ~6% de transacciones de e-commerce; billeteras 26%; Mercado Pago 56% de penetracion entre sus usuarios; muchas tarjetas de debito mexicanas no estan habilitadas para compras en linea.",
+    "url": "https://www.antom.com/markets/mexico"
+   },
+   {
+    "method": "Yape / Nequi / Webpay (Peru / Colombia / Chile)",
+    "note": "No aparecieron en las fuentes de esta pasada.",
+    "url": null
+   }
+  ],
+  "regulatory_note": "No es zona regulada fuerte; solo parametrizar IVA/IGV por pais (una plantilla de Gumroad ya permite agregar impuestos segun el pais). Un calculo de precio sugerido no constituye asesoria tributaria.",
+  "differentiator": "ninguno defendible: la planilla 'Cobra lo que vale tu trabajo' ya ofrece precio minimo automatico, generador de mensajes de WhatsApp y MX/CO/CL/PE con pago unico y garantia; hay apps gratuitas (Control Receta, Chef Cost) y una hoja propia lo sustituye. El unico precio visible ($3, USD 1,99) esta muy por debajo de USD 20.",
+  "new_confidence": "low",
+  "confidence_basis": "Demanda inferida solo de la oferta (muchos productos en Hotmart/Gumroad/Etsy), sin encuesta de dolor ni cifras de ventas; precios visibles de $3 a $5 y USD 1,99, y los de Hotmart no pudieron verse; diferenciador propuesto ya existe en un producto de pago unico; apps gratuitas disponibles.",
+  "recommendation": "drop",
+  "recommendation_reason": "Saturado, con techo de precio visible de USD 2-5 y el diferenciador (WhatsApp + multi-pais) ya vendido en Hotmart: USD 20 no es defendible."
+ }
+]

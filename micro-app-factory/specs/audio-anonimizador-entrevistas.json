@@ -1,0 +1,38 @@
+{
+  "id": "audio-anonimizador-entrevistas",
+  "name": "Anonimizador de audio de entrevistas (nombre provisional, sin revisión de marca)",
+  "source_candidate": "audio-anonimizador-entrevistas",
+  "phase1_confidence": "med",
+  "platforms": ["windows", "mac"],
+  "price_usd": 39,
+  "license_model": "perpetual+12m-updates",
+  "privacy": {"processes_locally": true, "network_calls": ["license", "update"]},
+  "modules": [
+    {"id": "audio.io", "config": {"mask": ["silence", "beep"]}},
+    {"id": "ai.transcribe_local"},
+    {"id": "ai.ner_local", "config": {"entities": ["person", "phone", "place"]}},
+    {"id": "review.ui"},
+    {"id": "batch.queue"},
+    {"id": "export.formats", "config": {"formats": ["audio", "txt", "report"]}},
+    {"id": "io.files"}
+  ],
+  "flow": [
+    "Importar una o varias grabaciones",
+    "Transcribir en el equipo con marcas de tiempo",
+    "Detectar nombres, teléfonos y lugares y proponer los tramos a tapar",
+    "Revisar cada tramo propuesto y aprobar, quitar o añadir a mano",
+    "Exportar el audio con silencios o pitidos y un informe de lo tapado"
+  ],
+  "review_required": true,
+  "golden_tests": [
+    {"name": "tramos-propuestos", "description": "Una grabación de prueba con nombres y teléfonos sintéticos produce una lista de tramos con sus tiempos."},
+    {"name": "audio-sin-el-dato", "description": "En el audio exportado, el tramo aprobado queda en silencio o con pitido y el resto no cambia."},
+    {"name": "sin-promesa-de-anonimato", "description": "La app muestra siempre que la voz sigue siendo identificable y que la revisión humana es obligatoria."}
+  ],
+  "risks": [
+    "La detección automática de nombres falla en parte: la revisión humana es obligatoria.",
+    "No hay comparable a precio de consumidor: el precio de $39 no está probado.",
+    "Los modelos de transcripción y detección pesan cientos de megabytes."
+  ],
+  "validation": {"fake_door_prices_usd": [29, 39, 49], "status": "pendiente"}
+}

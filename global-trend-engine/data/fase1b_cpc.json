@@ -1,0 +1,1043 @@
+{
+ "platform_benchmarks": [
+  {
+   "platform": "google_search",
+   "country": "US",
+   "metric": "cpc",
+   "value_low": 5.26,
+   "value_high": 5.26,
+   "currency": "USD",
+   "year": "2025",
+   "scope": "general (promedio todas las industrias, WordStream/LocaliQ vía resumen secundario)",
+   "source_type": "benchmark de agencia/vendedor de software de anuncios (WordStream by LocaliQ), citado por agregador secundario",
+   "url": "https://owlclaw.com/benchmarks/google-ads-benchmarks/",
+   "note": "El buscador no atribuyó la cifra a una URL exacta entre los resultados owlclaw/webfx/uproas/rudys; cita secundaria, no verificada contra el informe original."
+  },
+  {
+   "platform": "google_search",
+   "country": "US",
+   "metric": "cpc",
+   "value_low": 5.42,
+   "value_high": 5.42,
+   "currency": "USD",
+   "year": "2026",
+   "scope": "general (todas las industrias, abr 2025-mar 2026, WordStream 2026 según una reseña)",
+   "source_type": "benchmark de agencia (WordStream/LocaliQ), vía reseña secundaria",
+   "url": "https://www.webfx.com/blog/marketing/google-ads-cost/",
+   "note": "Atribución de URL aproximada; cifra reportada por un resumen de búsqueda, no vista en la página original."
+  },
+  {
+   "platform": "google_search",
+   "country": "US",
+   "metric": "cpc",
+   "value_low": 5.37,
+   "value_high": 5.37,
+   "currency": "USD",
+   "year": "2025",
+   "scope": "categoría: Business Services",
+   "source_type": "benchmark de agencia (WordStream), vía agregador",
+   "url": "https://owlclaw.com/benchmarks/google-ads-benchmarks/",
+   "note": "Atribución de URL aproximada."
+  },
+  {
+   "platform": "google_search",
+   "country": "US",
+   "metric": "cpc",
+   "value_low": 5.16,
+   "value_high": 5.16,
+   "currency": "USD",
+   "year": "2025",
+   "scope": "categoría: Finance & Insurance (otra fuente da 3.46: discrepancia)",
+   "source_type": "benchmark de agencia (WordStream), vía agregador",
+   "url": "https://owlclaw.com/benchmarks/google-ads-benchmarks/",
+   "note": "Discrepancia entre fuentes secundarias (5.16 vs 3.46); relevante para nichos 2 (seguro) y 3 (impuestos)."
+  },
+  {
+   "platform": "google_search",
+   "country": "US",
+   "metric": "cpc",
+   "value_low": 7.85,
+   "value_high": 7.85,
+   "currency": "USD",
+   "year": "2025",
+   "scope": "categoría: Home & Home Improvement",
+   "source_type": "benchmark de agencia (WordStream), vía agregador",
+   "url": "https://owlclaw.com/benchmarks/google-ads-benchmarks/",
+   "note": "Categoría amplia; muy distinta de 'home inventory app'."
+  },
+  {
+   "platform": "google_search",
+   "country": "BR",
+   "metric": "cpc",
+   "value_low": 1.76,
+   "value_high": 1.76,
+   "currency": "USD",
+   "year": "2024",
+   "scope": "general (promedio país, Statista/Semrush dic 2024 según compilación)",
+   "source_type": "compilación de datos Statista/Semrush (herramienta SEO), vía artículo secundario",
+   "url": "https://www.merca20.com/ranking-of-countries-with-the-most-expensive-cpc-how-much-does-it-cost-to-appear-on-google-ads/",
+   "note": "Atribución de URL aproximada."
+  },
+  {
+   "platform": "google_search",
+   "country": "MX",
+   "metric": "cpc",
+   "value_low": 0.66,
+   "value_high": 0.66,
+   "currency": "USD",
+   "year": "2024",
+   "scope": "general (promedio país, dic 2024 según compilación)",
+   "source_type": "compilación Statista/Semrush, vía artículo secundario",
+   "url": "https://www.merca20.com/ranking-of-countries-with-the-most-expensive-cpc-how-much-does-it-cost-to-appear-on-google-ads/",
+   "note": "Otra instantánea de mayo 2023 (Statista/Semrush) da 0.49 USD para México; no hay tendencia limpia."
+  },
+  {
+   "platform": "google_search",
+   "country": "MX",
+   "metric": "cpc",
+   "value_low": 0.49,
+   "value_high": 0.49,
+   "currency": "USD",
+   "year": "2023",
+   "scope": "general (mayo 2023)",
+   "source_type": "dato Statista/Semrush",
+   "url": "https://statista.com/statistics/1262495/search-advertising-cpc-latin-america",
+   "note": "Página con paywall parcial; cifra reportada por resumen de búsqueda."
+  },
+  {
+   "platform": "google_search",
+   "country": "DE",
+   "metric": "cpc",
+   "value_low": 1.04,
+   "value_high": 1.04,
+   "currency": "USD",
+   "year": "2024",
+   "scope": "general (promedio país, dic 2024 según compilación)",
+   "source_type": "compilación Statista/Semrush, vía artículo secundario",
+   "url": "https://www.merca20.com/ranking-of-countries-with-the-most-expensive-cpc-how-much-does-it-cost-to-appear-on-google-ads/",
+   "note": "Atribución de URL aproximada."
+  },
+  {
+   "platform": "google_search",
+   "country": "DE",
+   "metric": "cpc",
+   "value_low": 1.32,
+   "value_high": 1.32,
+   "currency": "EUR",
+   "year": "2026",
+   "scope": "general (Q1 2026, metodología no descrita; 'subió 18% desde Q1 2024')",
+   "source_type": "blog de agencia/proveedor alemán (Bravery Technology), interés comercial",
+   "url": "https://braverytechnology.com/de/google-ads-statistiken/",
+   "note": "Metodología no descrita en el extracto."
+  },
+  {
+   "platform": "meta",
+   "country": "US",
+   "metric": "cpm",
+   "value_low": 16.0,
+   "value_high": 21.0,
+   "currency": "USD",
+   "year": "2026",
+   "scope": "general, Facebook (Instagram 20-28)",
+   "source_type": "blog de proveedor de software de anuncios (Adamigo), estimación",
+   "url": "https://www.adamigo.ai/blog/meta-ads-cpm-cpc-benchmarks-by-country-2026",
+   "note": "Otra fuente da CPM US 23.00 (máximo) y otra 10-15 para campañas de alcance: rango muy dispar entre fuentes (10 a 23)."
+  },
+  {
+   "platform": "meta",
+   "country": "US",
+   "metric": "cpc",
+   "value_low": 2.69,
+   "value_high": 2.69,
+   "currency": "USD",
+   "year": "2026",
+   "scope": "general",
+   "source_type": "blog de proveedor/agencia (benchmark por país), interés comercial",
+   "url": "https://www.adamigo.ai/blog/meta-ads-cpm-cpc-benchmarks-by-country-2026",
+   "note": "Atribución de URL aproximada entre adamigo/adligator/vaizle."
+  },
+  {
+   "platform": "meta",
+   "country": "DE",
+   "metric": "cpm",
+   "value_low": 6.5,
+   "value_high": 12.0,
+   "currency": "USD",
+   "year": "2026",
+   "scope": "general (mercado 'Tier 2')",
+   "source_type": "blog de proveedor de software de anuncios, estimación",
+   "url": "https://www.adamigo.ai/blog/meta-ads-cpm-cpc-benchmarks-by-country-2026",
+   "note": "Sin CPC para Alemania en la fuente."
+  },
+  {
+   "platform": "meta",
+   "country": "IN",
+   "metric": "cpm",
+   "value_low": 1.5,
+   "value_high": 4.0,
+   "currency": "USD",
+   "year": "2026",
+   "scope": "general (mercado 'Tier 3')",
+   "source_type": "blog de proveedor de software de anuncios, estimación",
+   "url": "https://www.adamigo.ai/blog/meta-ads-cpm-cpc-benchmarks-by-country-2026",
+   "note": "Sin CPC para India en la fuente."
+  },
+  {
+   "platform": "meta",
+   "country": "BR",
+   "metric": "cpm",
+   "value_low": 2.5,
+   "value_high": 4.0,
+   "currency": "USD",
+   "year": "2026",
+   "scope": "general, Facebook",
+   "source_type": "blog de proveedor de inteligencia publicitaria (Adligator), estimación; interés comercial",
+   "url": "https://adligator.com/pt/blog/cpm-facebook-por-pais-2026",
+   "note": "No se encontró CPC confiable para Brasil."
+  },
+  {
+   "platform": "meta",
+   "country": "MX",
+   "metric": "cpm",
+   "value_low": 2.0,
+   "value_high": 3.5,
+   "currency": "USD",
+   "year": "2026",
+   "scope": "general, Facebook",
+   "source_type": "blog de proveedor (Adligator), estimación",
+   "url": "https://adligator.com/es/blog/cpm-facebook-por-pais-2026",
+   "note": "Adamigo da otro promedio: 4.50 USD para México."
+  },
+  {
+   "platform": "meta",
+   "country": "AR",
+   "metric": "cpm",
+   "value_low": 1.5,
+   "value_high": 3.0,
+   "currency": "USD",
+   "year": "2026",
+   "scope": "general, Facebook",
+   "source_type": "blog de proveedor (Adligator), estimación",
+   "url": "https://adligator.com/es/blog/cpm-facebook-por-pais-2026",
+   "note": "Adamigo da otro promedio: 3.80 USD para Argentina."
+  },
+  {
+   "platform": "meta",
+   "country": "MX",
+   "metric": "cpm",
+   "value_low": 4.5,
+   "value_high": 4.5,
+   "currency": "USD",
+   "year": "2026",
+   "scope": "general (promedio)",
+   "source_type": "blog de proveedor de software de anuncios (Adamigo)",
+   "url": "https://www.adamigo.ai/blog/meta-ads-cpm-cpc-benchmarks-by-country-2026",
+   "note": "El encabezado de la tabla no estaba claro en el extracto."
+  },
+  {
+   "platform": "meta",
+   "country": "AR",
+   "metric": "cpm",
+   "value_low": 3.8,
+   "value_high": 3.8,
+   "currency": "USD",
+   "year": "2026",
+   "scope": "general (promedio)",
+   "source_type": "blog de proveedor de software de anuncios (Adamigo)",
+   "url": "https://www.adamigo.ai/blog/meta-ads-cpm-cpc-benchmarks-by-country-2026",
+   "note": "Encabezado de tabla poco claro."
+  },
+  {
+   "platform": "meta",
+   "country": "MX",
+   "metric": "cpc",
+   "value_low": 0.35,
+   "value_high": 0.8,
+   "currency": "USD",
+   "year": "2026",
+   "scope": "categorías: e-commerce (0.35) y servicios financieros (0.80)",
+   "source_type": "blog de proveedor de software de anuncios (Novoads)",
+   "url": "https://novoads.ai/es/blog/cuanto-cuesta-publicidad-en-meta",
+   "note": "Adamigo da CPC promedio 0.45 para México (encabezado poco claro)."
+  },
+  {
+   "platform": "meta",
+   "country": "AR",
+   "metric": "cpc",
+   "value_low": 0.15,
+   "value_high": 0.9,
+   "currency": "USD",
+   "year": "2026",
+   "scope": "general (fluctúa por volatilidad cambiaria)",
+   "source_type": "blog de proveedor (Novoads)",
+   "url": "https://novoads.ai/es/blog/cuanto-cuesta-publicidad-en-meta",
+   "note": "Adamigo da 0.38 para Argentina (encabezado poco claro)."
+  },
+  {
+   "platform": "meta",
+   "country": "LATAM",
+   "metric": "cpm",
+   "value_low": 3.0,
+   "value_high": 12.0,
+   "currency": "USD",
+   "year": "2026",
+   "scope": "general, Latinoamérica",
+   "source_type": "blog de proveedor (Novoads)",
+   "url": "https://novoads.ai/es/blog/cuanto-cuesta-publicidad-en-meta",
+   "note": "Afirma 40-60% por debajo de mercados angloparlantes; CPM sube 30-60% en Q4 según la misma fuente."
+  },
+  {
+   "platform": "google_search",
+   "country": "IN",
+   "metric": "cpc",
+   "value_low": 20,
+   "value_high": 150,
+   "currency": "INR",
+   "year": "2026",
+   "scope": "general, Search Ads (display 10-50 INR)",
+   "source_type": "blog de agencia india (estimación, no dato de Google)",
+   "url": "https://megadigital.ai/en/blog/google-ads-cost-in-india/",
+   "note": "Atribución de URL aproximada entre megadigital/upgrowth/themediaant. Otra guía da INR 5-50 consumo masivo y INR 100-600+ para finanzas/seguros/SaaS B2B (abril 2026). Fuentes discrepan."
+  },
+  {
+   "platform": "google_search",
+   "country": "IN",
+   "metric": "cpc",
+   "value_low": 5,
+   "value_high": 50,
+   "currency": "INR",
+   "year": "2026",
+   "scope": "general: sectores de consumo",
+   "source_type": "blog de agencia india (estimación)",
+   "url": "https://upgrowth.in/google-ads-pricing-india-2026/",
+   "note": "Atribución aproximada; mismo texto reporta INR 100-600+ para alta intención (finanzas/seguros/legal/SaaS B2B)."
+  },
+  {
+   "platform": "google_search",
+   "country": "IN",
+   "metric": "cpc",
+   "value_low": 15,
+   "value_high": 50,
+   "currency": "INR",
+   "year": "2026",
+   "scope": "categoría: e-commerce",
+   "source_type": "blog de agencia india (estimación)",
+   "url": "https://megadigital.ai/en/blog/google-ads-cost-in-india/",
+   "note": "Atribución aproximada. Tecnología ~INR 30 (otro artículo)."
+  },
+  {
+   "platform": "google_search",
+   "country": "DE",
+   "metric": "cpc",
+   "value_low": 2.0,
+   "value_high": 8.0,
+   "currency": "EUR",
+   "year": "2025",
+   "scope": "categoría: B2B/Software (promedio 4 EUR); fuentes citadas: WordStream, Databox y datos propios de la agencia",
+   "source_type": "blog de agencia alemana (Ostend Digital), tabla sin metodología verificable; interés comercial",
+   "url": "https://ostend.digital/?p=32359",
+   "note": "Misma tabla: Versicherung 10-50 EUR (prom. 25); Rechtsberatung 5-20 (prom. 12); Finanzdienstleistungen 3-15 (prom. 8). Sin fila para 'Steuern'."
+  },
+  {
+   "platform": "google_search",
+   "country": "DE",
+   "metric": "cpc",
+   "value_low": 10.0,
+   "value_high": 50.0,
+   "currency": "EUR",
+   "year": "2025",
+   "scope": "categoría: seguros (prom. 25 EUR)",
+   "source_type": "blog de agencia alemana (Ostend Digital)",
+   "url": "https://ostend.digital/?p=32359",
+   "note": "Categoría amplia; proxy para nichos adyacentes a seguros, no para Nebenkostenabrechnung."
+  },
+  {
+   "platform": "google_search",
+   "country": "DE",
+   "metric": "cpc",
+   "value_low": 3.0,
+   "value_high": 15.0,
+   "currency": "EUR",
+   "year": "2025",
+   "scope": "categoría: servicios financieros (prom. 8 EUR)",
+   "source_type": "blog de agencia alemana (Ostend Digital)",
+   "url": "https://ostend.digital/?p=32359",
+   "note": "No se sabe si incluye asesoría fiscal."
+  },
+  {
+   "platform": "google_search",
+   "country": "DE",
+   "metric": "cpc",
+   "value_low": 0.5,
+   "value_high": 4.0,
+   "currency": "EUR",
+   "year": "2025",
+   "scope": "general: rango de CPC medios en Alemania",
+   "source_type": "medio especializado alemán (t3n), sin metodología",
+   "url": "https://t3n.de/news/google-ads-kostenoptimierung-1707853/",
+   "note": "selbststaendigkeit.de da ~1-2 EUR de promedio intersectorial (sin metodología): https://selbststaendigkeit.de/marketing/online-marketing/google-ads-kosten/. Las fuentes discrepan por ~1-2 EUR."
+  },
+  {
+   "platform": "google_search",
+   "country": "BR",
+   "metric": "cpc",
+   "value_low": 20,
+   "value_high": 50,
+   "currency": "BRL",
+   "year": "2025",
+   "scope": "categoría: seguros (R$20 a R$50+); advocacia R$15-30",
+   "source_type": "artículo brasileño que atribuye a 'benchmarks de agencias brasileñas 2024/2025', metodología no verificable",
+   "url": "https://novoads.ai/pt-br/blog/cpc-medio-por-industria-latam",
+   "note": "Atribución de URL aproximada. Statista tiene CPC Google Ads Brasil por industria (dic 2024) detrás de paywall: https://www.statista.com/statistics/1115426/brazil-search-advertising-cpc. El mismo blog afirma CPC en LatAm 40-55% menor que EE.UU. para las mismas industrias."
+  },
+  {
+   "platform": "meta",
+   "country": "BR",
+   "metric": "cpc",
+   "value_low": 2.0,
+   "value_high": 5.0,
+   "currency": "BRL",
+   "year": "2026",
+   "scope": "categoría: SaaS/software (finanzas e inversiones R$2.50-6.00)",
+   "source_type": "blog brasileño de tráfico pago (Trafius), estimación; interés comercial",
+   "url": "https://trafius.com.br/blog/cpc-medio-meta-ads-brasil-2026",
+   "note": "Atribución de URL aproximada. Únicas cifras de CPC de Meta para Brasil halladas."
+  },
+  {
+   "platform": "google_search",
+   "country": "US",
+   "metric": "cpc",
+   "value_low": 2.0,
+   "value_high": 8.0,
+   "currency": "USD",
+   "year": "2026",
+   "scope": "general: 'la mayoría de industrias' en Search; legal competitivo >50",
+   "source_type": "blog de proveedor de benchmarks (groas.com)",
+   "url": "https://www.groas.com/post/google-ads-cpc-cpa-benchmarks-by-industry-2026-7e112",
+   "note": "No desglosa seguros ni software."
+  },
+  {
+   "platform": "reddit",
+   "country": "global",
+   "metric": "cpc",
+   "value_low": 2.0,
+   "value_high": 4.0,
+   "currency": "USD",
+   "year": "2025",
+   "scope": "general (promedio; mínimo 0.20-0.75, máximo 4-8)",
+   "source_type": "blog de agencia (Affect Group), benchmark",
+   "url": "https://affectgroup.com/blog/reddit-ads-average-cpc-2025/",
+   "note": "Otros blogs reportan mucho menos: consumo 0.10-0.80 y B2B/SaaS 0.50-2.00; guía 2026 con CPC mediano ~1.25 (rango 0.50-4). Fuentes dispares; atribución de URL a las otras cifras no verificada (omidsaffari.com/blog/reddit-ads-cost-2026, keywordseverywhere.com/tools/reddit-ads-cost-calculator)."
+  },
+  {
+   "platform": "reddit",
+   "country": "global",
+   "metric": "cpc",
+   "value_low": 0.5,
+   "value_high": 2.0,
+   "currency": "USD",
+   "year": "2026",
+   "scope": "categoría: B2B/SaaS (consumo 0.10-0.80)",
+   "source_type": "blog de proveedor/agencia, estimación",
+   "url": "https://omidsaffari.com/blog/reddit-ads-cost-2026",
+   "note": "Atribución de URL aproximada."
+  },
+  {
+   "platform": "reddit",
+   "country": "global",
+   "metric": "cpm",
+   "value_low": 2.0,
+   "value_high": 8.0,
+   "currency": "USD",
+   "year": "2026",
+   "scope": "general (consumo 2-6; tech/SaaS 3-10; guía 2026 da 3-15)",
+   "source_type": "blogs de agencias/proveedores, estimación",
+   "url": "https://www.conbersa.ai/learn/reddit-cpm",
+   "note": "Atribución de URL aproximada. Gasto mínimo diario ~5 USD según un resumen."
+  },
+  {
+   "platform": "tiktok",
+   "country": "global",
+   "metric": "cpm",
+   "value_low": 4.0,
+   "value_high": 10.0,
+   "currency": "USD",
+   "year": "2026",
+   "scope": "general (mediana 8.00; subió desde 6.50 a inicios de 2025); finanzas 13.50, seguros 14.00",
+   "source_type": "blog de proveedor/agencia (Stackmatix y otros), benchmark",
+   "url": "https://stackmatix.com/blog/tiktok-ads-cost-benchmarks",
+   "note": "Atribución de URL aproximada entre stackmatix/agrowth/ttcalculator/unanswered."
+  },
+  {
+   "platform": "tiktok",
+   "country": "global",
+   "metric": "cpc",
+   "value_low": 0.17,
+   "value_high": 2.5,
+   "currency": "USD",
+   "year": "2026",
+   "scope": "general (promedio 0.80 en rango 0.30-2.50 según un análisis; otro da 0.17-1.00)",
+   "source_type": "blogs de agencias/proveedores, estimación",
+   "url": "https://stackmatix.com/blog/tiktok-ads-cost-benchmarks",
+   "note": "Atribución aproximada."
+  },
+  {
+   "platform": "meta",
+   "country": "US",
+   "metric": "cpc",
+   "value_low": 1.11,
+   "value_high": 1.11,
+   "currency": "USD",
+   "year": "2026",
+   "scope": "categoría: e-commerce (mediana ene 2025-ene 2026); CPM 14.19; CPA 38.19",
+   "source_type": "benchmark de proveedor de analítica de anuncios (Triple Whale), datos de sus clientes; interés comercial",
+   "url": "https://triplewhale.com/blog/facebook-ads-benchmarks",
+   "note": "Contrasta con el CPC US de 2.69 de otro blog (categoría/metodología distintas)."
+  },
+  {
+   "platform": "meta",
+   "country": "US",
+   "metric": "ctr",
+   "value_low": 1.51,
+   "value_high": 2.46,
+   "currency": null,
+   "year": "2026",
+   "scope": "general/e-commerce (1.51% global agrowth 1H 2026; 2.19% ecommerce Triple Whale; 2.46% promedio Vaizle 2025; top 25% 3.06%)",
+   "source_type": "blogs de proveedores/agencias",
+   "url": "https://insights.vaizle.com/facebook-ad-benchmarks/",
+   "note": "Valores en porcentaje (%), no en moneda."
+  },
+  {
+   "platform": "meta",
+   "country": "BR",
+   "metric": "cpc",
+   "value_low": 2.0,
+   "value_high": 4.5,
+   "currency": "BRL",
+   "year": "2026",
+   "scope": "categoría: financiero (R$2.00-4.50); SaaS B2B R$1.50-4.00; e-commerce/retail R$0.50-1.50 (artículo de marzo 2026)",
+   "source_type": "blog de herramienta de tráfego pago (Trafius), estimación; interés comercial",
+   "url": "https://trafius.com.br/blog/cpc-medio-no-meta-ads-em-2026-por-segmento",
+   "note": "El mismo blog es inconsistente sobre el promedio general (R$0.80-2.50 en un artículo de marzo vs R$2.50-8.00 en uno de mayo). Una fuente latinoamericana sugiere 0.25-1.20 USD para Brasil. Meta no publica CPC por nicho."
+  },
+  {
+   "platform": "meta",
+   "country": "BR",
+   "metric": "cpm",
+   "value_low": 30,
+   "value_high": 60,
+   "currency": "BRL",
+   "year": "2026",
+   "scope": "categorías: finanzas/inversiones R$35-60 en Feed; SaaS/Software B2B R$30-55",
+   "source_type": "blog de herramienta de tráfego pago (Trafius)",
+   "url": "https://trafius.com.br/blog/benchmark-de-cpm-no-brasil-em-2026-por-nicho",
+   "note": "Atribución de URL aproximada. Contrasta con CPM de 2.50-4.00 USD (Adligator) para Brasil general."
+  }
+ ],
+ "niche_keyword_cpc": [
+  {
+   "niche_number": 1,
+   "term": "transcription software",
+   "market": "no especificado (iSpionage; páginas US/UK/CA de competidores)",
+   "cpc_low": 6.43,
+   "cpc_high": 6.43,
+   "currency": "USD",
+   "scope": "término",
+   "year": null,
+   "source_type": "herramienta de inteligencia competitiva (iSpionage), estimación sin fecha; interés comercial",
+   "url": "https://www.ispionage.com/Competitive_Intelligence_directory/UK/w/156/wreally_com_777265616C6C792E636F6D",
+   "note": "~2,900 búsquedas/mes según la misma fuente. Atribución exacta entre varias páginas ispionage no verificable."
+  },
+  {
+   "niche_number": 1,
+   "term": "transcription program",
+   "market": "no especificado",
+   "cpc_low": 0.96,
+   "cpc_high": 0.96,
+   "currency": "USD",
+   "scope": "término",
+   "year": null,
+   "source_type": "herramienta de inteligencia competitiva (iSpionage), sin fecha",
+   "url": "https://www.ispionage.com/Competitive_Intelligence_directory/UK/w/156/wreally_com_777265616C6C792E636F6D"
+  },
+  {
+   "niche_number": 1,
+   "term": "transcribe audio to text",
+   "market": "no especificado",
+   "cpc_low": 9.89,
+   "cpc_high": 9.89,
+   "currency": "USD",
+   "scope": "término",
+   "year": null,
+   "source_type": "iSpionage, sin fecha",
+   "url": "https://www.ispionage.com/Competitive_Intelligence_directory/t/287/transcribe_wreally_com_7472616E7363726962652E777265616C6C792E636F6D"
+  },
+  {
+   "niche_number": 1,
+   "term": "transcription audio to text",
+   "market": "no especificado",
+   "cpc_low": 11.33,
+   "cpc_high": 11.33,
+   "currency": "USD",
+   "scope": "término",
+   "year": null,
+   "source_type": "iSpionage, sin fecha",
+   "url": "https://www.ispionage.com/Competitive_Intelligence_directory/t/287/transcribe_wreally_com_7472616E7363726962652E777265616C6C792E636F6D"
+  },
+  {
+   "niche_number": 1,
+   "term": "transcribe audio",
+   "market": "no especificado",
+   "cpc_low": 11.88,
+   "cpc_high": 11.88,
+   "currency": "USD",
+   "scope": "término",
+   "year": null,
+   "source_type": "iSpionage, sin fecha",
+   "url": "https://ispionage.com/Competitive_Intelligence_directory/UK/t/363/transcribe_wreally_com_7472616E7363726962652E777265616C6C792E636F6D"
+  },
+  {
+   "niche_number": 3,
+   "term": "invoice software / invoicing software",
+   "market": "US (no es el mercado objetivo AR/BR/MX; solo referencia de categoría SaaS de facturación)",
+   "cpc_low": 50.04,
+   "cpc_high": 50.04,
+   "currency": "USD",
+   "scope": "categoría amplia (término genérico US de SaaS de facturación; no freelancer ni LATAM)",
+   "year": "2026",
+   "source_type": "herramienta de datos de palabras clave (seodata.dev), estimación vía supuesta Google Ads API, no verificado",
+   "url": "https://www.seodata.dev/keyword/what-is-the-best-invoice-software",
+   "note": "~27,100 búsquedas/mes. Variantes: 'software for invoices' 48.29; 'invoicing software for small business' 56.39. No hay CPC para términos en español/portugués."
+  },
+  {
+   "niche_number": 2,
+   "term": "software for home inspections (término ADYACENTE, no 'home inventory')",
+   "market": "US",
+   "cpc_low": 11.54,
+   "cpc_high": 30.0,
+   "currency": "USD",
+   "scope": "categoría amplia (término adyacente; NO es 'home inventory app')",
+   "year": null,
+   "source_type": "herramienta de datos de palabras clave (seodata.dev), sin fecha",
+   "url": "https://www.seodata.dev/keyword/top-home-inspection-software",
+   "note": "$30 para 'software for home inspections' (1,300 búsq./mes) y $11.54 para 'software for home inspectors' (170 búsq./mes). Solo indica orden de magnitud de software de nicho para hogar. No se halló CPC para 'home inventory app'."
+  },
+  {
+   "niche_number": 7,
+   "term": "GST billing software",
+   "market": "IN",
+   "cpc_low": null,
+   "cpc_high": null,
+   "currency": "INR",
+   "scope": "término",
+   "year": null,
+   "source_type": "ninguna: sin dato público hallado",
+   "url": null,
+   "note": "Se encontraron solo precios de producto (INR 999-2,999/año en listados Techjockey/IndiaMART), no CPC."
+  },
+  {
+   "niche_number": 4,
+   "term": "lucro motorista de aplicativo calculadora",
+   "market": "BR",
+   "cpc_low": null,
+   "cpc_high": null,
+   "currency": "BRL",
+   "scope": "término",
+   "year": null,
+   "source_type": "ninguna: sin dato público hallado",
+   "url": null,
+   "note": "Sin CPC público. Competencia gratuita observada: la propia 99 ofrece una Calculadora de Ganhos oficial (https://99app.com/motorista/quanto-ganha-um-motorista/) y hay calculadoras de terceros (https://sum.money/br/uber-99-rendimento/). Tamaño de mercado citado: 1,4 millones de inscritos de Uber en Brasil (GigU 2025, vía https://autopapo.com.br/curta/brasil-mais-motoristas-uber-mundo/)."
+  },
+  {
+   "niche_number": 3,
+   "term": "factura E monotributo cobro exterior / nota fiscal exportação serviços freelancer / CFDI cliente extranjero RESICO",
+   "market": "AR/BR/MX",
+   "cpc_low": null,
+   "cpc_high": null,
+   "currency": "USD",
+   "scope": "término",
+   "year": null,
+   "source_type": "ninguna: sin dato público hallado",
+   "url": null,
+   "note": "Los resultados solo traen contenido informativo de despachos contables (competidores en SEO), sin CPC. Ver CPC de categoría 'invoice software' US como referencia sin trasladabilidad a LATAM."
+  },
+  {
+   "niche_number": 5,
+   "term": "DAC7 Vinted Schwelle / DAC7 revente seuil",
+   "market": "DE/FR/IT",
+   "cpc_low": null,
+   "cpc_high": null,
+   "currency": "EUR",
+   "scope": "término",
+   "year": null,
+   "source_type": "ninguna: sin dato público hallado",
+   "url": null,
+   "note": "Los resultados traen guías en FR/IT (partitaiva.it, margeoapp.com, friptadium.com) que ya compiten en SEO por el tema, sin CPC."
+  },
+  {
+   "niche_number": 6,
+   "term": "Nebenkostenabrechnung prüfen",
+   "market": "DE",
+   "cpc_low": null,
+   "cpc_high": null,
+   "currency": "EUR",
+   "scope": "término",
+   "year": null,
+   "source_type": "ninguna: sin dato público hallado",
+   "url": null,
+   "note": "Resultados SERP dominados por ImmoScout24, Verbraucherzentrale/anwaltonline, prensa regional: competencia SEO fuerte; sin CPC."
+  },
+  {
+   "niche_number": 1,
+   "term": "transcribe audio to text",
+   "market": "US",
+   "cpc_low": 5.99,
+   "cpc_high": 5.99,
+   "currency": "USD",
+   "scope": "término",
+   "year": "2026",
+   "source_type": "sitio agregador de datos de palabras clave (seodata.dev), snapshot 2026-03-31, dice usar Google Ads API (no verificado); competencia 0.81",
+   "url": "https://www.seodata.dev/keyword/transcribe-audio-to-text",
+   "note": "~22,200 búsquedas/mes. Cifras del mismo sitio para términos relacionados (volumen/CPC): 'audio to text transcription' 18,100 / 6.90; 'audio to text' 9,900 / 3.95; 'audio to text converter' 8,100 / 4.44; 'audio converter text' 6,600 / 4.54; 'convert sound to text' 6,600 / 5.65. Atribución de URL exacta de los términos relacionados no verificada."
+  },
+  {
+   "niche_number": 1,
+   "term": "audio to text (cabeza de familia: 'audio to text' / 'audio to text converter')",
+   "market": "US",
+   "cpc_low": 3.95,
+   "cpc_high": 4.44,
+   "currency": "USD",
+   "scope": "término",
+   "year": "2026",
+   "source_type": "seodata.dev (agregador), snapshots mar-jun 2026",
+   "url": "https://www.seodata.dev/keyword/transcribe-audio-to-text",
+   "note": "3.95 = 'audio to text' (9,900/mes); 4.44 = 'audio to text converter' (8,100/mes). Es el término más cercano a 'audio to text offline' (sin dato propio)."
+  },
+  {
+   "niche_number": 1,
+   "term": "transcriber audio to text free",
+   "market": "US",
+   "cpc_low": 5.79,
+   "cpc_high": 5.79,
+   "currency": "USD",
+   "scope": "término",
+   "year": "2026",
+   "source_type": "seodata.dev (agregador)",
+   "url": "https://www.seodata.dev/keyword/transcriber-audio-to-text-free",
+   "note": "~6,600 búsquedas/mes, competencia 0.63. Intención 'gratis': menor disposición a pagar $20."
+  },
+  {
+   "niche_number": 1,
+   "term": "whisper app / audio to text offline",
+   "market": "US",
+   "cpc_low": null,
+   "cpc_high": null,
+   "currency": "USD",
+   "scope": "término",
+   "year": null,
+   "source_type": "ninguna: sin dato hallado",
+   "url": null,
+   "note": "No se encontró volumen ni CPC para 'whisper app' ni 'audio to text offline'; resultados de 'whisper' remiten a apps de código abierto (Whispering) y 'whisper mode', no a la intención de compra."
+  },
+  {
+   "niche_number": 2,
+   "term": "home inventory",
+   "market": "US",
+   "cpc_low": 2.01,
+   "cpc_high": 2.01,
+   "currency": "USD",
+   "scope": "término (cabeza genérica, no 'home inventory app' ni 'document belongings for insurance')",
+   "year": "2026",
+   "source_type": "sitio agregador de palabras clave (RankHero), actualizado 2026-04-10; la página parece vinculada a datos de Etsy, proxy débil",
+   "url": "https://www.rankhero.com/keywords/home-inventory",
+   "note": "~1,300 búsquedas/mes (1,900 en mayo 2025, ~1,000 a fines de 2025, 1,300 en mar 2026); dificultad 36/100. Volumen muy bajo. No hay dato para 'home inventory app' ni 'document belongings for insurance'."
+  },
+  {
+   "niche_number": 3,
+   "term": "categoría: seguros/finanzas en México (proxy muy débil)",
+   "market": "MX",
+   "cpc_low": 0.77,
+   "cpc_high": 0.77,
+   "currency": "USD",
+   "scope": "categoría amplia: seguros (mayo 2023); la cifra de dic 2024 está oculta tras paywall",
+   "year": "2023",
+   "source_type": "dato Statista/Semrush (cifra vista por el buscador en una versión anterior)",
+   "url": "https://www.statista.com/statistics/1114826/mexico-search-advertising-cpc",
+   "note": "Solo ilustra que el CPC mexicano de la categoría más cara de seguros era ~0.77 USD en 2023; no es un término de facturación/RESICO."
+  }
+ ],
+ "conversion_benchmarks": [
+  {
+   "context": "Landing page promedio, todas las industrias (WordStream), cifra citada por guía de vendedor para productos digitales; NO específica de $20",
+   "rate_low": 2.35,
+   "rate_high": 2.35,
+   "unit": "porcentaje",
+   "year": null,
+   "source_type": "blog de vendedor de software (abmatic), cita secundaria de WordStream",
+   "url": "https://blog.abmatic.ai/landing-pages-to-sell-digital-products",
+   "note": "Atribución de URL aproximada entre los resultados; la misma guía dice que el promedio mezclado es poco útil para vendedores digitales."
+  },
+  {
+   "context": "Landing page del 10% superior (todas las industrias)",
+   "rate_low": 11.45,
+   "rate_high": 11.45,
+   "unit": "porcentaje",
+   "year": null,
+   "source_type": "blog de vendedor (cita secundaria)",
+   "url": "https://blog.abmatic.ai/landing-pages-to-sell-digital-products",
+   "note": "Atribución aproximada."
+  },
+  {
+   "context": "Cursos online de $197+ (producto de ticket alto, proxy débil para $20); 3-6%, extremo alto con video sales letter",
+   "rate_low": 3.0,
+   "rate_high": 6.0,
+   "unit": "porcentaje",
+   "year": null,
+   "source_type": "blog de vendedor (guía de landing pages para productos digitales)",
+   "url": "https://blog.abmatic.ai/landing-pages-to-sell-digital-products",
+   "note": "Ticket 10x mayor que el del proyecto."
+  },
+  {
+   "context": "E-commerce en EE.UU., por tipo de producto (no desglosa digital ni bajo precio)",
+   "rate_low": 1.3,
+   "rate_high": 3.4,
+   "unit": "porcentaje",
+   "year": "2026",
+   "source_type": "blog de proveedor de software (involve.me, en alemán)",
+   "url": "https://www.involve.me/de/blog/was-ist-eine-gute-landingpage-conversion-rate-2026",
+   "note": "No es específico de utilidades de $20."
+  },
+  {
+   "context": "Puerta falsa / painted door: CTR sobre el CTA principal; 5-10% 'prometedor', >10% 'demanda fuerte', <3% 'interés débil' (umbrales heurísticos de un blog, no un benchmark empírico)",
+   "rate_low": 3.0,
+   "rate_high": 10.0,
+   "unit": "porcentaje",
+   "year": null,
+   "source_type": "blog de consultoría/proveedor de producto; heurística, sin muestra declarada",
+   "url": "https://www.koji.so/docs/fake-door-testing-guide",
+   "note": "Atribución exacta entre koji.so/painonsocial/preuve no verificada. Mide clic a CTA, no compra. La búsqueda concluyó que no existe benchmark riguroso e independiente."
+  },
+  {
+   "context": "SaaS por suscripción: visitante a prueba gratuita, prueba opt-out (pide tarjeta) 2.5% vs opt-in 8.5%; visitante a pago 2.2% en opt-out. Proxy débil: NO es compra única",
+   "rate_low": 2.2,
+   "rate_high": 8.5,
+   "unit": "porcentaje",
+   "year": "2025",
+   "source_type": "análisis de consultora de marketing SaaS (First Page Sage), interés comercial",
+   "url": "https://firstpagesage.com/seo-blog/saas-free-trial-conversion-rate-benchmarks/",
+   "note": "Métricas distintas mezcladas (visitante-a-prueba 2.5/8.5; visitante-a-pago opt-out 2.2). No aplica directo a pago único de $20."
+  },
+  {
+   "context": "Freemium a pago en SaaS (usuarios gratuitos que pagan)",
+   "rate_low": 2.0,
+   "rate_high": 5.0,
+   "unit": "porcentaje",
+   "year": "2026",
+   "source_type": "blog de comparación de modelos de precios (fungies/artisangrowth/monetizely), cita secundaria",
+   "url": "https://www.getmonetizely.com/articles/freemium-vs-free-trial-choosing-the-right-customer-acquisition-model-for-saas-success",
+   "note": "Atribución aproximada entre las tres fuentes listadas. No hay dato de lifetime deals/Gumroad."
+  },
+  {
+   "context": "Google Ads (búsqueda), tasa de conversión promedio todas las industrias (clic a conversión/lead, NO compra de producto de $20)",
+   "rate_low": 7.52,
+   "rate_high": 8.18,
+   "unit": "porcentaje",
+   "year": "2026",
+   "source_type": "benchmark de agencia/vendedor de software de anuncios (WordStream by LocaliQ: 7.52% en su guía; 8.18% edición 2026 según resumen secundario)",
+   "url": "https://www.wordstream.com/blog/conversion-rate-benchmarks",
+   "note": "8.18% proviene de https://www.shopifreaks.com/google-ads-cpcs-rose-to-5-42-in-2025-with-87-of-industries-seeing-increases-but-conversion-rates-climbed-to-8-18-as-automation-improves/. Incluye leads/formularios; sobreestima respecto de ventas de checkout."
+  },
+  {
+   "context": "Google Ads: tecnología/SaaS (IT & Services 3.57%, Technology 3.55%, SaaS 2.96%); conjunto de datos no declarado",
+   "rate_low": 2.96,
+   "rate_high": 3.57,
+   "unit": "porcentaje",
+   "year": "2025",
+   "source_type": "página de benchmarks de tercero sin metodología (no verificado)",
+   "url": "https://megadigital.ai/en/blog/google-ads-benchmarks/",
+   "note": "Atribución de URL aproximada (el buscador no nombró la página exacta)."
+  },
+  {
+   "context": "Google Ads, sector finanzas (Brasil/global, 2025): 2.55%, el más bajo entre sectores citados",
+   "rate_low": 2.55,
+   "rate_high": 2.55,
+   "unit": "porcentaje",
+   "year": "2025",
+   "source_type": "levantamiento citado por artículo secundario; fuente original no identificada",
+   "url": "https://thestacc.com/pt-br/blog/ppc-statistics/",
+   "note": "Atribución aproximada y mercado ambiguo."
+  },
+  {
+   "context": "Meta Ads e-commerce (compra en sitio tras clic), mediana de cuentas: CVR 1.57%, CPA 38.19 USD (Triple Whale); MHI (1,247 cuentas, 87M USD gasto 2025): CVR 2.7% promedio, 4.1% en el cuartil superior, CPA 32.22 USD",
+   "rate_low": 1.57,
+   "rate_high": 4.1,
+   "unit": "porcentaje",
+   "year": "2026",
+   "source_type": "benchmarks de proveedor de analítica (Triple Whale) y agencia (MHI Growth Engine), interés comercial",
+   "url": "https://triplewhale.com/blog/facebook-ads-benchmarks",
+   "note": "MHI: https://mhigrowthengine.com/blog/meta-ads-benchmarks-ecommerce-2026/. Son tickets físicos de e-commerce mayores que 20 USD; el CPA de ~32-38 USD no es comparable con la meta de CAC<=9."
+  }
+ ],
+ "seasonality": [
+  {
+   "niche_number": 3,
+   "note": "Argentina: la recategorización del monotributo es semestral (febrero y agosto, con base en los últimos 12 meses); en 2026 los plazos fueron 5 de febrero y 5 de agosto. Concentra consultas sobre cuánto se facturó/cuál es el tope, incl. facturas E de exportación (que según AFIP cuentan para el tope de categoría; una guía contable afirma lo contrario: discrepancia). Fechas de febrero 2027 no confirmadas.",
+   "url": "https://www.ambito.com/informacion-general/arca-recordo-las-fechas-limite-la-primera-recategorizacion-del-monotributo-2026-n6234657/amp"
+  },
+  {
+   "niche_number": 3,
+   "note": "Argentina: reglas de factura E para exportación de servicios (punto de venta de exportación en 'Comprobantes en línea', tipo de cambio BNA comprador del día anterior). Contenido normativo, no estacionalidad por sí mismo.",
+   "url": "https://www.afip.gob.ar/monotributo/exportacion-servicios"
+  },
+  {
+   "niche_number": 5,
+   "note": "DAC7: umbral de reporte de plataformas (Vinted y similares) en 30 ventas O más de 2.000 EUR de ingresos en un año calendario; la plataforma envía los datos a la autoridad fiscal en enero del año siguiente (confirmado solo indirectamente; una fuente italiana da fechas contradictorias: 31 dic / 15 feb). La demanda de 'mi cuenta fue notificada' probablemente se concentra en el periodo de aviso/formulario de Vinted y en la temporada de declaración, pero no hay dato de volumen de búsquedas que lo respalde.",
+   "url": "https://www.partitaiva.it/vinted-dichiarazione-dac7/"
+  },
+  {
+   "niche_number": 6,
+   "note": "Alemania: el arrendador debe entregar la Nebenkostenabrechnung a más tardar 12 meses después del fin del periodo de liquidación (§ 556 Abs. 3 BGB); el inquilino tiene 12 meses desde que la recibe para objetar. Esto crea una ventana legal de revisión por documento, pero no hay en las fuentes un pico estacional de búsquedas ni volúmenes. Una fuente menciona un plazo de 4 semanas que contradice la ley y las demás fuentes (descartada). Para periodos de liquidación calendario (ene-dic), el plazo del arrendador cierra el 31 de diciembre del año siguiente.",
+   "url": "https://www.immobilienscout24.de/wissen/vermieten/frist-nebenkostenabrechnung.html"
+  },
+  {
+   "niche_number": 3,
+   "note": "México: la declaración anual de personas físicas se presenta en abril; para RESICO, guías de despachos (con interés comercial) indican que según la regla 3.13.7 RMF 2026 puede estar relevada si cumplió pagos mensuales y no tuvo otros ingresos, por lo que el pico de abril puede ser menor para RESICO. Facturar a cliente extranjero se hace con CFDI al RFC genérico XEXX010101000; IVA 0% solo en exportación de servicios que cumplan el art. 29/31 LIVA. Fuentes no coinciden en el tope RESICO 2026 (3,652,000 vs 3.5M MXN).",
+   "url": "https://siemprealdia.co/mexico/fiscal/declaracion-anual-resico-para-personas-fisicas/"
+  },
+  {
+   "niche_number": 2,
+   "note": "EE.UU.: el pico de temporada de huracanes es ~10 de septiembre (NOAA, citado por la NAIC) y septiembre es National Preparedness Month, con campañas de 'home inventory' de reguladores estatales (ejemplo: Oregon DFR #HomeInventoryWeek, 2018). Demanda concentrada en jun-nov es una inferencia; no hay datos de búsquedas. IMPORTANTE (competencia): la NAIC lanzó en 2021 una app gratuita de Home Inventory.",
+   "url": "https://content.naic.org/consumer/home-inventory"
+  },
+  {
+   "niche_number": 2,
+   "note": "Dato de adopción: 'el 59% de los propietarios no tiene inventario del hogar' (HomeZada, vendedor de software de hogar con interés comercial; sin encuesta citada, no verificado).",
+   "url": "https://zen.homezada.com/tag/home-inventory-2/page/15"
+  },
+  {
+   "niche_number": 5,
+   "note": "DAC7 Francia: umbrales de 2.000 EUR o 30 transacciones por año y por plataforma (basta uno); el umbral antiguo de 3.000 EUR / 20 ventas es obsoleto; los datos de ingresos 2023 se transmitieron en enero 2024 y los de 2024 en enero 2025 (ciclo anual en enero). No hay total oficial de vendedores declarados; la cifra de 3,3 millones de vendedores terceros (1,7 millones en ropa) corresponde al régimen Écollab anterior, no a DAC7. Ya existen apps/blogs que cubren el tema (margeoapp.com, fripio.app): competencia SEO.",
+   "url": "https://margeoapp.com/blog/statistiques-dac7-france-2025-bilan"
+  },
+  {
+   "niche_number": 7,
+   "note": "India: ciclo MENSUAL, no estacional: GSTR-1 el día 11 y GSTR-3B el día 20 del mes siguiente (filiales QRMP trimestrales con otras fechas, sin verificar); el gobierno amplía plazos caso a caso (GSTR-3B de marzo 2026 extendido al 21 de abril de 2026). Mercado con muchas herramientas gratis (Vyapar, Zoho, ClearTax según un artículo de 2021) y paquetes de pago desde ~INR 500-3,000 al mes o INR 999-2,999 al año.",
+   "url": "https://abcaus.in/gst/due-date-furnishing-form-gstr-3b-march-2026-extended-to-21-04-2026.html"
+  }
+ ],
+ "low_cost_channels": [
+  {
+   "niche_number": null,
+   "channel": "Programas de afiliados para SaaS/software (comisión sobre la venta)",
+   "evidence": "Pago típico de afiliados SaaS 15-30% del precio, programas top 20-50%, y suele cubrir solo el primer pago. Otro artículo (dic 2025): rango global SaaS 5-30%, mayoría de programas maduros 15-25%. Productos baratos tienden a pagar % más alto. No hay benchmark específico de software de pago único.",
+   "affiliate_commission": "15-30% típico; hasta 20-50% en programas top (SaaS por suscripción; fuentes de proveedores de software de afiliados, interés comercial)",
+   "url": "https://cdn.qualityunit.com/blog/saas-affiliate-commission-rates"
+  },
+  {
+   "niche_number": 1,
+   "channel": "Venta directa de licencia de app de transcripción local (precedente: MacWhisper vía Gumroad)",
+   "evidence": "Perfil de newsletter (2023) reporta ~100,000 USD de ingresos y 57,574 descargas de MacWhisper, vendida por Gumroad y basada en Whisper/whisper.cpp. El texto NO explica cómo captó clientes ni el CAC, y la cifra es una instantánea de 2023. Sirve solo como precedente de que existe demanda de pago único, no como evidencia de canal barato.",
+   "affiliate_commission": null,
+   "url": "https://startupsemail.substack.com/p/100000-revenue-with-a-simple-mac"
+  },
+  {
+   "niche_number": null,
+   "channel": "Marketplace / checkout de productos digitales (Gumroad) como canal de distribución con comisión",
+   "evidence": "Ayuda de Gumroad: ventas directas desde tu propio sitio cobran 10% + 0.50 USD más procesamiento de tarjeta (2.9% + 0.30) y PayPal aparte; ventas vía su marketplace Discover cobran 30% plano que incluye procesamiento; en ventas con afiliado las comisiones de la plataforma se reparten proporcionalmente. Gumroad opera como merchant of record desde enero 2025. Una fuente aislada (InsightRaider) afirma que el recargo de Discover ya no existe (contradice la ayuda oficial). Sobre un precio de 20 USD, 10% + 0.50 = 2.50 USD de comisión de plataforma antes de procesamiento, lo que reduce el margen neto.",
+   "affiliate_commission": "Configurable por el creador; la plataforma reparte sus comisiones en proporción al % del afiliado (ejemplo oficial con 30%)",
+   "url": "https://gumroad.com/help/article/66-gumroads-fees.html"
+  },
+  {
+   "niche_number": null,
+   "channel": "Alcance directo, comunidades (Reddit, Product Hunt, IH, HN) y outreach en frío para primeros clientes; SEO como inversión posterior",
+   "evidence": "Roundup de Indie Hackers (anecdótico, no controlado): los primeros ~10 clientes llegaron por outreach en frío/red personal; ~100 por redes sociales y boca a boca; SEO se cita hacia los ~1,000 clientes. Un fundador reportó que SEO, anuncios y ferias 'no llevaron a nada'. Reddit se cita como canal secundario recurrente (100k+ comunidades). Sin cifras de CAC.",
+   "affiliate_commission": null,
+   "url": "https://www.indiehackers.com/post/indie-hackers-share-how-they-got-their-first-10-100-and-1-000-customers-620ce768ba"
+  },
+  {
+   "niche_number": null,
+   "channel": "Afiliados para productos digitales de pago único (licencias, descargas)",
+   "evidence": "Guías de plataformas de venta de productos digitales: 30-50% es la comisión normal para productos digitales; 30-40% la banda más común para precios medios (25-150 USD); 40-50% 'para destacar'; otro benchmark da 20-40% para software/SaaS (a veces recurrente); algún sitio cita hasta 75% (atípico). Fuentes con interés comercial. Sobre un precio de 20 USD, una comisión de 30-50% son 6-10 USD por venta, es decir, ya consume o excede la meta de CAC <= 9 USD si el afiliado fuera el único canal y se paga solo por venta.",
+   "affiliate_commission": "30-50% (productos digitales, pago único); 20-40% (software/SaaS); fuentes: SendOwl y Fungies (vendedores de plataformas)",
+   "url": "https://www.sendowl.com/blog/tips-and-advice/affiliate-program-digital-products"
+  }
+ ],
+ "limitations": "1) No se hallo ningun CPC publico para los terminos exactos de los nichos 3 (AR/BR/MX), 4, 5, 6 y 7, ni para 'whisper app', 'audio to text offline' o 'home inventory app'/'document belongings for insurance'; se dejaron en null. Solo hay CPC de terminos en EE.UU. para los nichos 1 y 2 (agregadores como seodata.dev e iSpionage, que dicen usar la API de Google Ads pero no se pudo verificar; iSpionage sin fecha). 2) Casi todas las cifras provienen de blogs de agencias y proveedores de software de anuncios/SEO con interes comercial; muchas son resumenes secundarios de WordStream/LocaliQ o Statista/Semrush (Statista tiene paywall) y no se pudo contrastar con el informe original. El buscador devolvio resumenes sin atribuir cada cifra a una URL concreta, por lo que muchas URLs estan marcadas 'Atribucion de URL aproximada' en el campo note: la cifra salio del resultado de busqueda pero la pagina exacta puede ser otra de la lista. 3) Hay discrepancias grandes entre fuentes: CPM Meta US 10-23 USD; Finance&Insurance US 5.16 vs 3.46; Reddit CPC 0.10-4 USD; Meta BR CPC desde 0.25 USD hasta R$8; CPC Alemania 0.50-4 EUR vs 1-2 EUR. 4) No hay CPC de Meta para Alemania ni India, ni CPC de Google/Meta para Argentina (solo rangos de blog). Brasil: sin CPC de Google por termino ni por industria visible (Statista tras paywall). 5) Conversiones: no se hallo ningun benchmark de visitante a compra para productos digitales o utilidades de pago unico de ~$20, ni para 'puerta falsa'/pre-venta con tasa de compra; los umbrales de 'fake door' (CTR 3-10% al CTA) son heuristicas de un blog, no datos empiricos y miden clic, no compra. Los CVR hallados son de Google Ads (leads, 7.52-8.18%), tecnologia/SaaS (2.96-3.57%, sin metodologia), e-commerce Meta (1.57-4.1%) y SaaS por suscripcion; proxies debiles. 6) Estacionalidad: solo plazos legales/fiscales con fuentes (monotributo feb/ago, DAC7 enero, Nebenkostenabrechnung 12 meses, GST mensual 11/20, temporada de huracanes y septiembre para home inventory); NO hay datos de volumen de busqueda por mes (Google Trends) que confirmen picos. Fechas de febrero 2027 de monotributo no confirmadas; para Mexico, RESICO puede estar relevado de declaracion anual segun guias de despachos (con interes comercial). 7) Canales de bajo costo: solo evidencia anecdotica (Indie Hackers) y de proveedores de afiliados; sin CAC medido. La comision de afiliados de software de pago unico (30-50%) viene de vendedores de plataformas con interes en tasas altas; el rango SaaS 15-30% es de suscripcion. Gumroad: la ayuda oficial cobra 10%+0.50 USD directo y 30% en Discover; una fuente aislada afirma que Discover ya no cobra recargo (sin confirmar). 8) Cifras de mercado y competencia (MacWhisper ~100k USD, 57,574 descargas, 2023; 59% de propietarios sin inventario de HomeZada; 1,4 millones de conductores Uber en Brasil) son de fuentes secundarias sin metodologia y no sirven como CAC. 9) El 'derived_cac_check' es aritmetica con supuestos de conversion no medidos para estos nichos. Conclusion honesta: con lo hallado, ningun nicho tiene respaldo publico de CAC <= 9 USD por publicidad de pago; la validacion exige medir CPC y CVR reales (Keyword Planner / puerta falsa) o canales organicos. 10) Tipo de cambio: no se convirtio ninguna moneda local a USD porque no se obtuvo una fuente de tipo de cambio; todas las cifras se dejan en su moneda original. 11) Se usaron 37 busquedas WebSearch en modo standard; ninguna fue rechazada. No se uso WebFetch ni red directa; el texto de /home/user/factible/global-trend-engine/data/fase1_*.json no fue leido (no hacia falta para esta tarea).",
+ "competition_context": [
+  {
+   "niche_number": 6,
+   "note": "Competencia de pago ya presente en DE: Mineko cobra 39 EUR (pauschal, según un sitio de reseñas) o 69 EUR ('Wohnung Pro', informe en 10 días, según test.de); ImmoScout24 incluye un 'Nebenkosten-Check' en su membresía Premium; advocado y anwaltonline ofrecen revisión por abogados. Finanztip advierte que las cifras de error (93% de las cuentas revisadas; ahorro medio 221 EUR) provienen de los proveedores y no son representativas.",
+   "url": "https://www.erfahrungen.com/mit/mineko/kosten-kostenlos-nebenkosten/"
+  },
+  {
+   "niche_number": 2,
+   "note": "La NAIC (reguladores de seguros de EE.UU.) distribuye una app gratuita de Home Inventory desde 2021; HomeZada y otras apps de inventario ya compiten.",
+   "url": "https://content.naic.org/consumer/home-inventory"
+  },
+  {
+   "niche_number": 4,
+   "note": "La propia 99 ofrece una calculadora de ganancias gratuita para conductores y existen calculadoras de terceros gratuitas (sum.money). Tamaño: 1,4 millones de inscritos de Uber en Brasil (GigU 2025, vía autopapo.com.br); para 99, cifras de 600 mil a 1 millón sin fuente oficial.",
+   "url": "https://99app.com/motorista/quanto-ganha-um-motorista/"
+  },
+  {
+   "niche_number": 7,
+   "note": "Muchas herramientas de facturación GST gratuitas o baratas (Vyapar, Zoho, ClearTax según artículo de 2021; paquetes desde INR 999-2,999 al año y planes de INR 500-3,000 al mes).",
+   "url": "https://www.techjockey.com/alternatives/invny"
+  }
+ ],
+ "derived_cac_check": {
+  "disclaimer": "ARITMETICA propia, NO cifra de fuente. CAC = CPC / tasa de conversion (clic a compra). Las tasas de conversion usadas (1.57%, 3%, 5%, 7.52%) provienen de benchmarks citados en conversion_benchmarks y NO son especificas de un producto de pago unico de $20; ninguna fue medida para estos nichos.",
+  "target_cac_usd": 9,
+  "max_cpc_usd_for_cac_9": {
+   "cvr_1.57pct_meta_ecommerce_median": 0.14,
+   "cvr_3pct": 0.27,
+   "cvr_5pct": 0.45,
+   "cvr_7.52pct_google_ads_all_industry_lead_cvr_optimistic": 0.68
+  },
+  "found_cpc_vs_threshold": [
+   {
+    "niche_number": 1,
+    "found": "Google US 3.95-11.88 USD por termino; Meta US 1.11-2.69 USD (categoria/general)",
+    "cac_at_3pct_cvr_usd": "~130-400 (Google); ~37-90 (Meta)",
+    "verdict": "no plausible por pago; solo organico/afiliados"
+   },
+   {
+    "niche_number": 2,
+    "found": "'home inventory' 2.01 USD (1,300 busq./mes, proxy debil)",
+    "cac_at_3pct_cvr_usd": "~67",
+    "verdict": "no plausible por pago; volumen minimo y competencia gratuita (NAIC)"
+   },
+   {
+    "niche_number": 3,
+    "found": "Meta MX 0.35-0.80 USD (categorias), AR 0.15-0.90 USD; Google MX 0.49-0.66 USD promedio pais; sin CPC de terminos",
+    "cac_at_3pct_cvr_usd": "MX ~12-27; AR ~5-30",
+    "verdict": "inconcluso/limite: solo con CPC en el extremo bajo y CVR >=3-5%; sin dato de CVR de LATAM para $20"
+   },
+   {
+    "niche_number": 4,
+    "found": "Meta BR: R$0.50-1.50 (e-commerce) a R$2.00-4.50 (financiero) segun un blog; otra fuente 0.25-1.20 USD",
+    "cac_at_3pct_cvr_usd": "no calculable sin tipo de cambio fuente",
+    "verdict": "inconcluso; competencia gratuita de la propia 99"
+   },
+   {
+    "niche_number": 5,
+    "found": "Google DE promedio ~1.04 USD / 1.32 EUR general; sin CPC del termino; Meta DE CPM 6.5-12 USD sin CPC",
+    "cac_at_3pct_cvr_usd": "~35-45 si el CPC fuera el promedio general",
+    "verdict": "no plausible por pago con lo hallado; estacionalidad enero y SEO"
+   },
+   {
+    "niche_number": 6,
+    "found": "Google DE: software 2-8 EUR, servicios financieros 3-15 EUR, legal 5-20 EUR (categorias)",
+    "cac_at_3pct_cvr_usd": "software 2-8 EUR -> ~67-267 EUR; servicios financieros 3-15 EUR -> ~100-500 EUR (en EUR, sin convertir)",
+    "verdict": "no plausible por pago; competidores de pago ya presentes (Mineko 39-69 EUR)"
+   },
+   {
+    "niche_number": 7,
+    "found": "Google IN INR 5-50 (consumo) a 20-150 (busqueda); Meta IN CPM 1.5-4 USD; sin CPC de Meta ni del termino",
+    "cac_at_3pct_cvr_usd": "no calculable sin tipo de cambio fuente",
+    "verdict": "inconcluso; CPC mas bajo del grupo junto con LATAM, pero mercado con muchas herramientas gratis y precios de INR 999-2,999/ano"
+   }
+  ],
+  "affiliate_note": "Con comision de afiliado de 30-50% sobre $20 (6-10 USD por venta, fuente SendOwl/Fungies), un canal 100% de afiliados cuesta por si solo entre 6 y 10 USD por venta, cerca o por encima del tope de CAC <= 9 USD si se paga ademas el costo de adquirir al afiliado o hay reembolsos."
+ }
+}

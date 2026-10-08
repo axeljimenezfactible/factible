@@ -1,0 +1,837 @@
+[
+ {
+  "id": "dac7-ledger-vendedores-segunda-mano",
+  "verified": "partly",
+  "checks": [
+   {
+    "claim": "Margeo: gratis al inicio, versión Pro 7,99 EUR/mes",
+    "result": "confirmed",
+    "source_url": "https://friptadium.com/blogs/actualites/margeo-avis-prix-calcul-marge-vinted",
+    "note": "Resumen de busqueda: Starter gratis de por vida (hasta 30 articulos, 3 packs de compra, 5 simulaciones/mes); Pro 7,99 EUR/mes o 69 EUR/año (5,75 EUR/mes); Business 19,99 EUR/mes; prueba de 15 dias. Margeo declara 'suivi automatique du seuil DAC7 par plateforme' (fuente del propio proveedor: margeoapp.com/blog/meilleur-app-revendeur-vinted-leboncoin). Esto lo hace competidor DIRECTO del concepto (contador de umbral DAC7 + margen), con plan anual de 69 EUR no registrado en pasada 1."
+   },
+   {
+    "claim": "Clemz (8,99 EUR/mes)",
+    "result": "confirmed",
+    "source_url": "https://friptadium.com/blogs/actualites/clemz-avis-prix-risques",
+    "note": "Grilla julio 2026: Tiroir 8,99 EUR (300 republicaciones/mes), Placard 14,99, Dressing 24,99, Entrepot 49,99; mes de prueba. IMPORTANTE: Clemz es una extension de REPUBLICACION de anuncios, no un libro de ventas ni contador DAC7; no compite en la funcion central de la idea."
+   },
+   {
+    "claim": "DoTB (5,99 EUR/mes)",
+    "result": "not_found",
+    "source_url": "https://fripio.app/blog/comparatif-outils-vinted-2026",
+    "note": "Solo la comparativa de Fripio (fuente de pasada 1, y Fripio es competidor que se auto-posiciona primero) da 5,99 EUR/mes como precio de entrada; otro articulo habla de tarifa 'variable' y no hallé grilla oficial. Sin confirmacion independiente. Tambien es herramienta de republicacion, no de contabilidad."
+   },
+   {
+    "claim": "Umbral DAC7: 2.000 EUR o 30 transacciones por plataforma (basta una condicion)",
+    "result": "confirmed",
+    "source_url": "https://www.mobiflip.de/shortnews/dac7-kleinanzeigen-erklaert-was-den-finanzbehoerden-gemeldet-wird/",
+    "note": "Kleinanzeigen (via mobiflip, DE): 30 ventas/año o 2.000 EUR, via PStTG; solo se reportan transacciones por el sistema de pago de la plataforma (efectivo/transferencia fuera no cuenta). Tambien pages.ebay.de/dac7 (oficial eBay). Fuentes francesas discrepan sobre 'y' vs 'o' y sobre fecha de entrada en vigor (2023 vs 2024); sigue siendo un riesgo de redaccion en la app. Norma italiana: D.Lgs. 32/2023 (partitaiva/ilsussidiario)."
+   },
+   {
+    "claim": "Vinted no ofrece exportacion contable a particulares",
+    "result": "confirmed",
+    "source_url": "https://margeoapp.com/blog/comment-exporter-ses-ventes-vinted-csv",
+    "note": "Resumen: export CSV existe en el panel Vinted Pro (Ventes > Export CSV); para particulares 'l'export n'est pas forcement disponible' y se aconseja guardar un PDF mensual del extracto. Fuente de proveedor competidor. Confirma entrada manual como realidad para particulares."
+   }
+  ],
+  "alternatives": [
+   {
+    "name": "Margeo Pro (incluye seguimiento umbral DAC7, margen, IA)",
+    "price_local": 7.99,
+    "currency": "EUR",
+    "model": "monthly",
+    "url": "https://friptadium.com/blogs/actualites/margeo-avis-prix-calcul-marge-vinted",
+    "as_of": "2026-07"
+   },
+   {
+    "name": "Margeo Pro plan anual",
+    "price_local": 69,
+    "currency": "EUR",
+    "model": "annual",
+    "url": "https://friptadium.com/blogs/actualites/margeo-avis-prix-calcul-marge-vinted",
+    "as_of": "2026-07"
+   },
+   {
+    "name": "Margeo Business",
+    "price_local": 19.99,
+    "currency": "EUR",
+    "model": "monthly",
+    "url": "https://friptadium.com/blogs/actualites/margeo-avis-prix-calcul-marge-vinted",
+    "as_of": "2026-07"
+   },
+   {
+    "name": "Margeo Starter (30 articulos, 3 packs, 5 simulaciones/mes)",
+    "price_local": 0,
+    "currency": "EUR",
+    "model": "freemium",
+    "url": "https://friptadium.com/blogs/actualites/margeo-avis-prix-calcul-marge-vinted",
+    "as_of": "2026-07"
+   },
+   {
+    "name": "Clemz Tiroir (republicacion de anuncios, no ledger)",
+    "price_local": 8.99,
+    "currency": "EUR",
+    "model": "monthly",
+    "url": "https://friptadium.com/blogs/actualites/clemz-avis-prix-risques",
+    "as_of": "2026-07"
+   },
+   {
+    "name": "DoTB (republicacion; precio sin confirmar)",
+    "price_local": 5.99,
+    "currency": "EUR",
+    "model": "monthly",
+    "url": "https://fripio.app/blog/comparatif-outils-vinted-2026",
+    "as_of": "2026-07"
+   },
+   {
+    "name": "Fripio (publicacion asistida por IA, desde)",
+    "price_local": 7.99,
+    "currency": "EUR",
+    "model": "monthly",
+    "url": "https://fripio.app/blog/comparatif-outils-vinted-2026",
+    "as_of": "2026-07"
+   },
+   {
+    "name": "VintedCRM Pro (existe version gratuita)",
+    "price_local": 29,
+    "currency": "EUR",
+    "model": "monthly",
+    "url": "https://margeoapp.com/blog/tableau-excel-achat-revente",
+    "as_of": "2026-07"
+   }
+  ],
+  "free_alternatives": [
+   {
+    "name": "Margeo Starter (gratis de por vida)",
+    "url": "https://friptadium.com/blogs/actualites/margeo-avis-prix-calcul-marge-vinted",
+    "note": "Margen y contador DAC7 hasta 30 articulos; el limite de 30 coincide con el umbral DAC7, asi que quien mas necesita el contador acaba en plan de pago (inferencia mia, no dicho por la fuente)."
+   },
+   {
+    "name": "Plantilla Excel gratuita de compra-reventa de Margeo",
+    "url": "https://margeoapp.com/blog/tableau-excel-achat-revente",
+    "note": "Columnas precio de compra, comisiones, margen neto, plataforma; se puede anadir suma del umbral con SOMME.SI."
+   },
+   {
+    "name": "Paginas oficiales de plataformas sobre DAC7 (eBay, Kleinanzeigen)",
+    "url": "https://pages.ebay.de/dac7",
+    "note": "Explican que se reporta y que no es un impuesto nuevo; Kleinanzeigen tiene pagina especial (via mobiflip)."
+   },
+   {
+    "name": "VintedCRM version gratuita y Vintex plan gratuito permanente",
+    "url": "https://friptadium.com/blogs/actualites/vintedcrm-avis-prix-alternatives",
+    "note": "Seguimiento de ventas Vinted gratis (alcance no verificado)."
+   },
+   {
+    "name": "Formulario DAC7 prerrellenado por Vinted",
+    "url": "https://fripio.app/blog/impots-vinted-dac7",
+    "note": "Segun guias, Vinted contacta al vendedor que alcanza el umbral con un formulario prerrellenado para validar."
+   }
+  ],
+  "pain_evidence": [
+   {
+    "url": "https://www.mobiflip.de/shortnews/dac7-kleinanzeigen-erklaert-was-den-finanzbehoerden-gemeldet-wird/",
+    "what": "Kleinanzeigen publico una pagina especial para explicar DAC7 a sus vendedores: indicio de que la pregunta es masiva (no mide dolor)",
+    "date": null
+   },
+   {
+    "url": "https://quifinanza.it/fisco-tasse/fisco-sanzioni-vendite-vinted/950876/",
+    "what": "Titular: 'Multe per chi vende su Vinted regolarmente, i limiti per non essere denunciati' (prensa generalista IT)",
+    "date": null
+   },
+   {
+    "url": "https://www.75secondes.fr/actualites/devez-vous-declarer-vos-ventes-vinted-aux-impots",
+    "what": "Articulo de prensa 'Devez-vous declarer vos ventes Vinted aux impots ?'",
+    "date": null
+   },
+   {
+    "url": "https://www.greenme.it/lifestyle/moda/vinted-attenzione-al-fisco-in-quali-casi-obbligatorio-dichiarare-vendite/",
+    "what": "Greenme IT: 'Usi Vinted? Attenzione al fisco!' sobre cuando es obligatorio declarar",
+    "date": null
+   }
+  ],
+  "regulatory_note": "Las fuentes insisten en que el umbral DAC7 solo decide si la plataforma reporta a Hacienda, no si hay obligacion tributaria; vender objetos personales usados a perdida normalmente no tributa, pero compra-reventa habitual puede ser actividad comercial desde el primer euro (FR) o requerir Gewerbe/partita IVA por habitualidad (DE/IT). Alemania: PStTG; Italia: D.Lgs. 32/2023. No encontre en busquedas ninguna fuente sobre la restriccion legal de asesoria fiscal (p. ej. ley alemana de asesoria tributaria) aplicada a una herramienta; el encuadre 'libro de ventas + contador informativo, sin dictamen de si eres profesional' es mi inferencia, no esta respaldado por fuente.",
+  "differentiator": "Posible: libro local, multi-pais (FR/DE/IT/ES), sin suscripcion y sin tope de 30 articulos (Margeo Starter se queda justo en el umbral), cuyo equivalente de pago es 69 EUR/año o 7,99 EUR/mes. Es fragil: Margeo ya tiene contador DAC7 y plantilla Excel gratis, y no verifique si cubre DE/IT/ES (parece centrado en revendedores FR).",
+  "new_confidence": "low",
+  "confidence_basis": "El competidor directo (Margeo) existe con plan gratuito y contador DAC7; Clemz/DoTB no son competidores reales (republicacion). La evidencia de dolor es solo contenido explicativo, sin quejas fechadas ni foros fiables (el hilo de info.fr fue marcado como poco fiable). WTP de pago unico no demostrada.",
+  "recommendation": "rework",
+  "recommendation_reason": "Reenfocar como contador de umbral multi-pais sin tope de articulos y sin suscripcion; hoy Margeo cubre el concepto en FR con plan gratis y plantilla Excel."
+ },
+ {
+  "id": "nebenkosten-check-mieter",
+  "verified": "partly",
+  "checks": [
+   {
+    "claim": "Nebenkostenpro (IA) 14,90 EUR por informe + borrador de carta",
+    "result": "confirmed",
+    "source_url": "https://www.finanztip.de/presse/nebenkostenabrechnung-fehler-koennen-mieter-hunderte-euro-kosten/",
+    "note": "Nota de prensa de Finanztip (ago-2026): 14,90 EUR, 'KI-gestuetzter Kurzcheck' con comparacion con el Betriebskostenspiegel y Musterschreiben. Segunda fuente (resena ki-syndikat.de, estado mayo 2026): vista previa gratis, Schnell-Check 7,90 EUR, Premium-Report con carta de objecion 14,90 EUR, datos alojados en Alemania. La pasada 1 no registro el nivel de 7,90 EUR ni la vista previa gratuita. No halle pagina del proveedor."
+   },
+   {
+    "claim": "Mineko 49-89 EUR por revision (servicio juridico)",
+    "result": "confirmed",
+    "source_url": "https://www.finanztip.de/presse/nebenkostenabrechnung-fehler-koennen-mieter-hunderte-euro-kosten/",
+    "note": "Finanztip: 49 a 89 EUR segun tamaño y servicio; test.de cita 'Wohnung pro' a 69 EUR (entrega prometida 10 dias, real 13) y 'Premium' a 89 EUR. Mineko se describe como 'spezialisierter Rechtsdienstleister'."
+   },
+   {
+    "claim": "Yourxpert 69,90 EUR (99,90 EUR con carta al casero)",
+    "result": "confirmed",
+    "source_url": "https://www.finanztip.de/presse/nebenkostenabrechnung-fehler-koennen-mieter-hunderte-euro-kosten/",
+    "note": "Misma nota de prensa de Finanztip (ago-2026); Finanztip dice que mas del 75% de las liquidaciones enviadas a Yourxpert eran erroneas (dato del proveedor)."
+   },
+   {
+    "claim": "Mineko: 86% de liquidaciones erroneas, 565 EUR pagados de mas de media",
+    "result": "confirmed",
+    "source_url": "https://www.finanztip.de/presse/nebenkostenabrechnung-fehler-koennen-mieter-hunderte-euro-kosten/",
+    "note": "Confirmado como dato del proveedor (Finanztip aclara que no es representativo). La guia de Finanztip cita en cambio 93% y 515 EUR de ahorro medio, e ImmoScout24 cita 81% de Mineko: las cifras del propio proveedor varian segun la fuente/fecha. No usar como tasa de error real."
+   },
+   {
+    "claim": "Foro Finanztip: usuario decepcionado con revision de pago (69 EUR)",
+    "result": "not_found",
+    "source_url": "https://www.finanztip.de/community/forum/thema/35801-mineko-empfehlung-von-finanztip-und-meine-erfahrung/",
+    "note": "No pude reabrir el hilo (sin acceso a la pagina). Si hay una fuente independiente equivalente: test.de probo el paquete de 69 EUR de Mineko y encontro entrega tardia (13 vs 10 dias) y 'etliche Punkte im Pruefbericht stimmen so nicht', aunque la carta tipo era 'einwandfrei' (https://www.test.de/Beratung-zur-Mietnebenkostenabrechnung-Das-leistet-das-Angebot-von-Mineko-5867384-0/)."
+   },
+   {
+    "claim": "Encuesta Immowelt: errores de calculo/datos 29%, lecturas mal tomadas 26%, partidas improcedentes 24% (entre inquilinos con disputa)",
+    "result": "confirmed",
+    "source_url": "https://www.cash-online.de/a/immowelt-nebenkostenabrechnung-313675/",
+    "note": "Encuesta representativa de Immowelt: 19% de los inquilinos tuvo disputa por la liquidacion; entre ellos 29% errores de calculo/datos, 26% lecturas mal tomadas, 24% partidas no repercutibles; ademas 5% de los inquilinos paga sin revisar. Fecha de la encuesta no visible."
+   },
+   {
+    "claim": "Plazo de objecion 'a menudo 4 semanas indicadas en la propia liquidacion' (urgency_basis)",
+    "result": "contradicted",
+    "source_url": "https://rathausnachrichten.de/?p=114442",
+    "note": "Las fuentes dan como plazo legal 12 meses desde la recepcion de la liquidacion para objetar (§ 556 Abs. 3 BGB; confirmado por Immowelt, heidelberg24, fachanwalt.de). No vi respaldo para '4 semanas' (puede ser un plazo de pago, no de objecion). Esto baja la urgencia (hay un año) pero subraya que el casero debe haber entregado la liquidacion en 12 meses tras fin del periodo. Un objecion no suspende el pago: se recomienda pagar 'unter Vorbehalt' (Verbraucherzentrale segun el resumen)."
+   }
+  ],
+  "alternatives": [
+   {
+    "name": "Nebenkostenpro Premium-Report con carta de objecion (por informe)",
+    "price_local": 14.9,
+    "currency": "EUR",
+    "model": "one-time",
+    "url": "https://www.ki-syndikat.de/tools/nebenkostenpro/",
+    "as_of": "2026-08"
+   },
+   {
+    "name": "Nebenkostenpro Schnell-Check (por informe)",
+    "price_local": 7.9,
+    "currency": "EUR",
+    "model": "one-time",
+    "url": "https://www.ki-syndikat.de/tools/nebenkostenpro/",
+    "as_of": "2026-05"
+   },
+   {
+    "name": "Mineko Wohnung pro (hasta 100 m2, informe en 10 dias)",
+    "price_local": 69,
+    "currency": "EUR",
+    "model": "one-time",
+    "url": "https://www.test.de/Beratung-zur-Mietnebenkostenabrechnung-Das-leistet-das-Angebot-von-Mineko-5867384-0/",
+    "as_of": null
+   },
+   {
+    "name": "Mineko (rango segun superficie/servicio, minimo)",
+    "price_local": 49,
+    "currency": "EUR",
+    "model": "one-time",
+    "url": "https://www.finanztip.de/presse/nebenkostenabrechnung-fehler-koennen-mieter-hunderte-euro-kosten/",
+    "as_of": "2026-08"
+   },
+   {
+    "name": "Mineko Premium",
+    "price_local": 89,
+    "currency": "EUR",
+    "model": "one-time",
+    "url": "https://www.finanztip.de/presse/nebenkostenabrechnung-fehler-koennen-mieter-hunderte-euro-kosten/",
+    "as_of": "2026-08"
+   },
+   {
+    "name": "Yourxpert revision",
+    "price_local": 69.9,
+    "currency": "EUR",
+    "model": "one-time",
+    "url": "https://www.finanztip.de/presse/nebenkostenabrechnung-fehler-koennen-mieter-hunderte-euro-kosten/",
+    "as_of": "2026-08"
+   },
+   {
+    "name": "Yourxpert revision + carta al casero",
+    "price_local": 99.9,
+    "currency": "EUR",
+    "model": "one-time",
+    "url": "https://www.finanztip.de/presse/nebenkostenabrechnung-fehler-koennen-mieter-hunderte-euro-kosten/",
+    "as_of": "2026-08"
+   }
+  ],
+  "free_alternatives": [
+   {
+    "name": "Mieterbund NRW: Betriebskosten-Check online (abierto a no miembros) y Heizkosten-Check",
+    "url": "https://www.ddorf-aktuell.de/?p=13259",
+    "note": "Primera valoracion de posibles errores y comparacion con el Heizspiegel; se presenta como orientacion que no sustituye asesoria juridica."
+   },
+   {
+    "name": "Deutscher Mieterbund + co2online: Betriebskostencheck (nacional)",
+    "url": "https://www.kuechenfibel.de/faq/wo-kann-ich-meine-nebenkostenabrechnung-kostenlos-uberprufen-lassen",
+    "note": "Compara los costes con otros inquilinos en Alemania; requiere superficie del edificio y de la vivienda."
+   },
+   {
+    "name": "miet-check.de: check de IA gratuito con control de plazos § 556 BGB",
+    "url": "https://www.miet-check.de/mietnebenkosten/",
+    "note": "Segun el resumen de busqueda; alcance no verificado."
+   },
+   {
+    "name": "Nebenkostenpro vista previa gratis",
+    "url": "https://www.ki-syndikat.de/tools/nebenkostenpro/",
+    "note": "Segun la resena de ki-syndikat; el informe util es de pago."
+   },
+   {
+    "name": "ImmoScout24 Plus: Nebenkosten-Check + carta de objecion incluidos en la membresia",
+    "url": "https://www.immobilienscout24.de/unternehmen/news-medien/news/default-title/nebenkosten-check-als-integrierter-service-der-premium-mitgliedschaft-von-immobilienscout24/",
+    "note": "No gratis para todos: va incluido en la suscripcion Premium/Plus (precio no verificado)."
+   },
+   {
+    "name": "Mieterverein local / asistencia de Rechtsschutzversicherung / primera valoracion gratuita en advocado",
+    "url": "https://www.advocado.de/ratgeber/mietrecht/nebenkostenabrechnung/nebenkostenabrechnung-pruefen-lassen-darum-lohnt-es-sich.html",
+    "note": "Mieterverein: la revision personal suele ser gratis solo para miembros; advocado ofrece primera valoracion gratis y la revision es de pago."
+   }
+  ],
+  "pain_evidence": [
+   {
+    "url": "https://www.cash-online.de/a/immowelt-nebenkostenabrechnung-313675/",
+    "what": "Encuesta representativa Immowelt: 19% de inquilinos tuvo disputa por la liquidacion; 5% paga sin revisar; entre los que disputaron: 29% errores de calculo, 26% lecturas mal tomadas, 24% partidas no repercutibles",
+    "date": null
+   },
+   {
+    "url": "https://www.test.de/Beratung-zur-Mietnebenkostenabrechnung-Das-leistet-das-Angebot-von-Mineko-5867384-0/",
+    "what": "Test independiente (Stiftung Warentest) de Mineko 69 EUR: 13 dias en vez de 10 y puntos del informe incorrectos; la carta tipo era correcta. Muestra que los servicios de pago existentes tienen calidad desigual",
+    "date": null
+   },
+   {
+    "url": "https://www.finanztip.de/presse/nebenkostenabrechnung-fehler-koennen-mieter-hunderte-euro-kosten/",
+    "what": "Finanztip ago-2026: proveedores reportan 75-93% de liquidaciones erroneas y 515-565 EUR pagados de mas; Finanztip aclara que no es representativo",
+    "date": "2026-08"
+   },
+   {
+    "url": "https://www.versicherungsbote.de/id/4798581/Mietnebenkosten-Abrechnungen/",
+    "what": "Titular: 'Neun von zehn Mietnebenkostenabrechnungen sind falsch' (cifra de proveedor, no independiente)",
+    "date": null
+   }
+  ],
+  "regulatory_note": "RDG § 2 Abs. 1: servicio juridico = actividad en asuntos concretos de terceros que exige examen juridico del caso individual (lxgesetze.de/rdg/2, via resumen de busqueda). Mineko se presenta como 'Rechtsdienstleister' y para cobros opera como servicio registrado; el BGH amplia la interpretacion de 'Inkassodienstleistung' (iww.de). No halle ninguna fuente que aplique el RDG a una app/checklist ni a Nebenkostenpro. Lo que si se ve: las herramientas existentes se encuadran como 'erste Orientierung, ersetzt keine Rechtsberatung' (Mieterbund NRW, Nebenkostenpro, ImmoScout24) y ofrecen Musterschreiben/plantillas; test.de califica de correcta la carta tipo de Mineko. Un producto de checklist generico + comparacion con el Betriebskostenspiegel + carta modelo, sin dictamen sobre el caso concreto, sigue el encuadre de mercado, pero no he visto una fuente que lo declare seguro bajo el RDG.",
+  "differentiator": "Debil. Solo plausible: aplicacion local/offline (datos de contrato no se suben), reutilizable cada año por ~18 EUR una vez frente a 14,90 EUR por informe de Nebenkostenpro; gana a partir del segundo año. Frente a las comprobaciones gratuitas del Mieterbund y la IA de 7,90-14,90 EUR no hay ventaja funcional demostrada.",
+  "new_confidence": "low",
+  "confidence_basis": "Dolor y WTP reales (19% con disputa, 14,90-99,90 EUR de mercado), pero ya existe un competidor de IA mas barato por informe (7,90/14,90) y varias comprobaciones gratuitas de Mieterbund/co2online/miet-check; plazo real de 12 meses baja la urgencia; riesgo RDG sin aclarar; tasas de error son datos de proveedores.",
+  "recommendation": "rework",
+  "recommendation_reason": "Dolor y pago estan probados pero Nebenkostenpro (14,90 EUR con carta) y checks gratuitos de Mieterbund ya cubren lo mismo; solo sobrevive como checklist offline reutilizable con foco en privacidad y plazos, evitando valoracion juridica (RDG)."
+ },
+ {
+  "id": "rechtstexte-generator-datenschutz-impressum",
+  "verified": "partly",
+  "checks": [
+   {
+    "claim": "datenschutz-generator.de: Impressum gratis en version basica; Premium para empresas a 19,90 EUR netos, uso ilimitado del documento, un año de actualizaciones, sin costes recurrentes",
+    "result": "confirmed",
+    "source_url": "https://datenschutz-generator.de/impressum/",
+    "note": "El resumen de busqueda confirma 19,90 EUR netos (Premium para Geschaeftskunden: descarga Word/PDF, 1 año de actualizaciones, uso del sello, white label, 'Haftung fuer die Inhalte der Muster'). OJO: la metadata de la pagina indica ~1.672 dias de antiguedad (aprox. 2022), asi que el precio puede estar desactualizado: as_of desconocido. La version gratuita requiere un enlace de vuelta al generador. Es una licencia por cliente/dominio."
+   },
+   {
+    "claim": "datenschutz-generator.de ya vende un pago unico en el rango de ~18 EUR (WTP)",
+    "result": "contradicted",
+    "source_url": "https://datenschutz-generator.de/",
+    "note": "El producto central del sitio, el generador de Datenschutzerklaerung, tiene Premium a 99,90 EUR netos (uso ilimitado, 1 año de actualizaciones, sin suscripcion) y es gratis para particulares y empresas con facturacion hasta 5.000 EUR brutos/año (con enlace de vuelta). Solo el Impressum esta a 19,90 EUR, y es un texto corto que tambien se obtiene gratis. El ancla de ~18 EUR no es representativa del valor de los textos legales."
+   },
+   {
+    "claim": "eRecht24 Premium: Basic 15 EUR/mes con pago anual (30 EUR mensual), Business 40, Enterprise 90, Ultimate 800 EUR/mes",
+    "result": "confirmed",
+    "source_url": "https://www.e-recht24.de/mitglieder/tarife-fuer-online-shops/",
+    "note": "La pagina oficial muestra 15/40/90/800 EUR (con precio tachado 30/80/180/1.600); ecom-tools confirma 15/40/90 EUR al mes con facturacion anual y el doble mensual. Las fuentes son de 2025-2026; el estado de precios no es fiable al 100% (verificar en e-recht24.de). Tarifas superiores incluyen Abmahnschutz, AGB de tienda y horas de abogado."
+   },
+   {
+    "claim": "Los generadores de Impressum y Datenschutz basicos de eRecht24 son gratis; para webs sencillas basta el alcance gratuito o Basic",
+    "result": "confirmed",
+    "source_url": "https://www.fastlancer.org/fastlancer-blog/erecht24-review/",
+    "note": "Fastlancer (test de afiliacion, no neutral) dice que los generadores de Impressum y Datenschutz son gratuitos de forma permanente; la pagina oficial lista ambos generadores en todos los tarifas. Abmahnschutz y AGB solo con planes de pago."
+   }
+  ],
+  "alternatives": [
+   {
+    "name": "datenschutz-generator.de Premium Impressum (por cliente/dominio, 1 año de actualizaciones)",
+    "price_local": 19.9,
+    "currency": "EUR",
+    "model": "one-time",
+    "url": "https://datenschutz-generator.de/impressum/",
+    "as_of": null
+   },
+   {
+    "name": "datenschutz-generator.de Premium Datenschutzerklaerung (precio neto, uso ilimitado, 1 año de actualizaciones)",
+    "price_local": 99.9,
+    "currency": "EUR",
+    "model": "one-time",
+    "url": "https://datenschutz-generator.de/",
+    "as_of": null
+   },
+   {
+    "name": "eRecht24 Premium Basic (15 EUR/mes facturado anualmente = 180 EUR/año, calculo propio)",
+    "price_local": 180,
+    "currency": "EUR",
+    "model": "annual",
+    "url": "https://www.e-recht24.de/mitglieder/tarife-fuer-online-shops/",
+    "as_of": null
+   },
+   {
+    "name": "eRecht24 Premium Basic con pago mensual (30 EUR/mes)",
+    "price_local": 30,
+    "currency": "EUR",
+    "model": "monthly",
+    "url": "https://www.e-recht24.de/mitglieder/tarife-fuer-online-shops/",
+    "as_of": null
+   },
+   {
+    "name": "eRecht24 Premium Business",
+    "price_local": 40,
+    "currency": "EUR",
+    "model": "monthly",
+    "url": "https://www.e-recht24.de/mitglieder/tarife-fuer-online-shops/",
+    "as_of": null
+   },
+   {
+    "name": "datenschutz-generator.de gratis (particulares y empresas hasta 5.000 EUR brutos/año, con enlace de vuelta)",
+    "price_local": 0,
+    "currency": "EUR",
+    "model": "freemium",
+    "url": "https://datenschutz-generator.de/",
+    "as_of": null
+   }
+  ],
+  "free_alternatives": [
+   {
+    "name": "datenschutz-generator.de (Dr. Thomas Schwenke, abogado): Impressum y Datenschutzerklaerung gratis",
+    "url": "https://datenschutz-generator.de/impressum/",
+    "note": "Version basica gratuita con enlace de vuelta; modulos redactados por abogado; Premium anade Word/PDF y actualizaciones."
+   },
+   {
+    "name": "eRecht24 Impressum-Generator y Datenschutz-Generator gratuitos",
+    "url": "https://www.e-recht24.de/mitglieder/tarife-fuer-online-shops/",
+    "note": "Gratis de forma permanente segun Fastlancer; Abmahnschutz y AGB solo de pago."
+   },
+   {
+    "name": "ratgeberrecht.eu Impressum + Datenschutz gratis (con enlace de vuelta)",
+    "url": "https://www.sir-apfelot.de/gratis-dsgvo-datenschutz-generator-impressum-text-kostenlos-22819/",
+    "note": "Segun resena de sir-apfelot.de; uso comercial gratis."
+   },
+   {
+    "name": "Kanzlei mth-partner.de: Impressum-Generator gratuito",
+    "url": "https://www.mth-partner.de/impressum-generator/",
+    "note": "Formulario paso a paso; aclara que no sustituye asesoria individual."
+   },
+   {
+    "name": "fuer-gruender.de Impressum-Generator (BMWK/portal de fundadores)",
+    "url": "https://www.fuer-gruender.de/wissen/unternehmen-gruenden/website-erstellen/impressumgenerator/",
+    "note": "Genera un Impressum de ejemplo; sugiere hacerlo revisar."
+   },
+   {
+    "name": "iubenda: generador de politica de privacidad (version gratuita/prueba 14 dias)",
+    "url": "https://www.iubenda.com/de/help/142013-kostenloser-privacy-policy-generator-fur-ihre-website-app/",
+    "note": "Cubre privacidad, multi-idioma; alcance de la gratuidad no verificado."
+   }
+  ],
+  "pain_evidence": [
+   {
+    "url": "https://www.e-recht24.de/impressum/13073-impressum-und-abmahnungen.html",
+    "what": "eRecht24 (incumbente, interes comercial): Abmahnung por Impressum tipica hasta ~500 EUR de costes de abogado y valor de litigio de hasta 5.000 EUR",
+    "date": null
+   },
+   {
+    "url": "https://www.haendlerbund.de/de/news/aktuelles/wissenssnack/kurz-erklaert-kein-impressum-strafe",
+    "what": "Haendlerbund: falta o error en el Impressum puede ser infraccion de competencia y causar Abmahnung; el Impressum se basa ahora en § 5 DDG (el TMG dejo de aplicarse en mayo 2024)",
+    "date": "2024-05"
+   },
+   {
+    "url": "https://www.ihk.de/potsdam/ihk-service-und-beratung/recht-merkblaetter/neuer-inhalt170606-korrektes-impressum-erstellen-3752902",
+    "what": "Merkblatt IHK Potsdam sobre como crear un Impressum correcto (existe demanda de orientacion oficial)",
+    "date": null
+   }
+  ],
+  "regulatory_note": "BGH, sentencia I ZR 113/20 de 9-sep-2021 (Smartlaw): un generador de documentos por cuestionario de opcion multiple no es 'Rechtsdienstleistung' prohibida bajo el RDG porque trabaja con casos tipo y clausulas estandar predefinidas, sin considerar las circunstancias individuales y los usuarios saben que no sustituye a un abogado (lto.de, wolterskluwer.com, wbs.legal). Limite señalado por comentaristas (Linklaters via resumen): un cuestionario tan granular que capte circunstancias individuales podria cruzar la linea. Los generadores gratuitos de abogados incluyen el aviso 'no sustituye asesoria individual' (mth-partner.de) y datenschutz-generator.de Premium incluye 'Haftung fuer die Inhalte der Muster' (responsabilidad por el contenido de los modelos). El Impressum se rige por § 5 DDG desde mayo 2024 (Haendlerbund); los textos deben actualizarse con cambios legales.",
+  "differentiator": "ninguno defendible",
+  "new_confidence": "low",
+  "confidence_basis": "Los mismos textos (Impressum y Datenschutz) se ofrecen gratis por abogados reconocidos (datenschutz-generator.de, eRecht24, mth-partner, ratgeberrecht.eu); el unico pago unico visible es de 19,90 EUR (Impressum, precio posiblemente de ~2022) y el de Datenschutz sube a 99,90 EUR neto. Un producto de ~18 EUR sin respaldo de abogado ni garantia de actualizacion no tiene ventaja; no hay datos de volumen ni quejas de usuarios.",
+  "recommendation": "drop",
+  "recommendation_reason": "Impressum y Datenschutz estan cubiertos gratis por generadores de abogados establecidos y el valor de pago (actualizaciones, Abmahnschutz, responsabilidad) exige respaldo legal que una micro-app no puede dar."
+ },
+ {
+  "id": "sepa-xml-desde-excel",
+  "verified": "partly",
+  "checks": [
+   {
+    "claim": "SEPAmacher: gratis (S), 4,99 EUR (M) y 14,99 EUR (L), por numero de cuentas de socios",
+    "result": "confirmed",
+    "source_url": "https://www.heise.de/download/product/sepamacher-93011",
+    "note": "Misma fuente que la pasada 1 (heise) releida en una busqueda nueva, no independiente. Entrada actualizada el 21-07-2024 'ohne Gewaehr'; fabricante Z-werk; genera archivo SEPA de adeudo (Lastschrift) y abono (Gutschrift) desde datos tabulares. El precio puede estar desactualizado y no se ve si cubre transferencias en lote."
+   },
+   {
+    "claim": "INtex SEPA: 79 EUR, transferencias y domiciliaciones desde texto, hojas de calculo y bases de datos",
+    "result": "confirmed",
+    "source_url": "https://www.heise.de/download/product/intex-sepa-97276",
+    "note": "Misma fuente heise releida (no independiente): 79 EUR, genera adeudos y transferencias a partir de archivos de texto, tabla y base de datos."
+   },
+   {
+    "claim": "JAM Software SEPA-Transfer importa Excel y CSV; demo gratuita, precio no localizado",
+    "result": "confirmed",
+    "source_url": "https://www.jam-software.com/sepa-transfer/excel-import.shtml",
+    "note": "Importa Excel/CSV y exporta pain.001.001.03 (transferencias) y pain.008.001.02 (adeudos) con prueba gratuita de 30 dias sin registro; cita explicitamente cobro de cuotas de socios. Precio: heise lista 35 EUR (registro del 03-08-2024, licencia 'Testversion', 'ohne Gewaehr', desactualizado); no hay precio oficial en los resultados. La pagina de JAM sigue citando las versiones pain antiguas."
+   },
+   {
+    "claim": "Akaunting app SEPA Credit Transfer (licencia de por vida, 420 USD)",
+    "result": "confirmed",
+    "source_url": "https://akaunting.com/apps/sepa",
+    "note": "La ficha en ingles muestra 420 USD de por vida (pago unico) y tambien 5 USD/mes o 3 USD/mes anual. Es un complemento del software contable Akaunting, no una herramienta autonoma: no compite con el segmento de asociaciones. La ficha dice que SEPA tiene 28 estados miembros, dato desactualizado (indicio de poco mantenimiento)."
+   },
+   {
+    "claim": "Commerzbank: max. 999 transferencias por fichero y 2,5 MB; solo se comprueba la longitud del BIC; no admite varias cuentas ordenantes",
+    "result": "not_found",
+    "source_url": null,
+    "note": "No revise de nuevo la pagina de Commerzbank en esta pasada (prioridad a competidores y alternativas). Sin evidencia a favor ni en contra."
+   },
+   {
+    "claim": "Existe una hoja Excel con macros que genera el SEPA XML (solucion casera)",
+    "result": "not_found",
+    "source_url": null,
+    "note": "No reaparecio la hoja de vialet.notion.site. Si aparecio otra: AB-SEPA.xls (Alexander Beier, listada en heise como version de prueba, precio en la pagina del fabricante) que crea un fichero de adeudo/transferencia en lote desde Excel (https://www.heise.de/download/product/ab-sepa.xls-90313)."
+   },
+   {
+    "claim": "Variantes de pain por banco y cambios de version ISO 20022 (riesgo)",
+    "result": "confirmed",
+    "source_url": "https://www.datev-community.de/t5/Betriebliches-Rechnungswesen/SEPA-Export-altes-pain-Format/m-p/539731",
+    "note": "Segun hilos de DATEV-Community y la Deutsche Bank (via resumen), la version SEPA 3.7 (pain.001.001.09 para transferencias, pain.008.001.08 para adeudos) se aplazo de noviembre de 2025 a noviembre de 2026; los formatos anteriores (pain.001.001.03 / pain.008.001.02) siguen validos hasta entonces y despues depende de acuerdos individuales con el banco. Hoy es 2026-10-08, asi que el plazo esta a ~1 mes: es un gatillo real de demanda pero tambien obliga a mantener la app al dia. No pude abrir la especificacion actual de la Bundesbank (la version hallada, de marzo de 2024, aun citaba noviembre de 2025)."
+   }
+  ],
+  "alternatives": [
+   {
+    "name": "SEPAmacher M (Z-werk)",
+    "price_local": 4.99,
+    "currency": "EUR",
+    "model": "one-time",
+    "url": "https://www.heise.de/download/product/sepamacher-93011",
+    "as_of": "2024-07"
+   },
+   {
+    "name": "SEPAmacher L (Z-werk)",
+    "price_local": 14.99,
+    "currency": "EUR",
+    "model": "one-time",
+    "url": "https://www.heise.de/download/product/sepamacher-93011",
+    "as_of": "2024-07"
+   },
+   {
+    "name": "SEPAmacher S (limite de cuentas de socios)",
+    "price_local": 0,
+    "currency": "EUR",
+    "model": "freemium",
+    "url": "https://www.heise.de/download/product/sepamacher-93011",
+    "as_of": "2024-07"
+   },
+   {
+    "name": "INtex SEPA",
+    "price_local": 79,
+    "currency": "EUR",
+    "model": "one-time",
+    "url": "https://www.heise.de/download/product/intex-sepa-97276",
+    "as_of": "2024-05"
+   },
+   {
+    "name": "JAM Software SEPA-Transfer (precio de heise, prueba 30 dias)",
+    "price_local": 35,
+    "currency": "EUR",
+    "model": "one-time",
+    "url": "https://www.heise.de/download/product/sepa-transfer-ehemals-dta-ueberweisung-41380",
+    "as_of": "2024-08"
+   },
+   {
+    "name": "Ex-SEPA (lee BIC/IBAN de Excel, genera XML; 'ab 20' en heise, version de prueba)",
+    "price_local": 20,
+    "currency": "EUR",
+    "model": "one-time",
+    "url": "https://www.heise.de/download/product/ex-sepa-sepa-lastschrift-ueberweisung-87985",
+    "as_of": null
+   },
+   {
+    "name": "Akaunting app SEPA Credit Transfer (de por vida; complemento contable)",
+    "price_local": null,
+    "currency": "USD",
+    "price_usd": 420,
+    "model": "one-time",
+    "url": "https://akaunting.com/apps/sepa",
+    "as_of": null
+   },
+   {
+    "name": "Akaunting app SEPA Credit Transfer (mensual)",
+    "price_local": 5,
+    "currency": "USD",
+    "price_usd": 5,
+    "model": "monthly",
+    "url": "https://akaunting.com/apps/sepa",
+    "as_of": null
+   }
+  ],
+  "free_alternatives": [
+   {
+    "name": "Importacion CSV de plantillas en el banca online de Volksbank/VR (p. ej. Volksbank Wuerzburg, Backnang, Berg)",
+    "url": "https://www.vr-bank-wuerzburg.de/content/dam/f1001-0/cloud-transfer/pdfs/OnlineBanking - Beitragseinzug.pdf",
+    "note": "Se rellena la plantilla CSV del banco y se importa como Sammelueberweisung/Sammellastschrift; exige el formato de columnas del propio banco, no cualquier Excel. Costes segun cuenta: no verificados."
+   },
+   {
+    "name": "Sparkasse: Sammelueberweisung por importacion en banca online/PSD2",
+    "url": "https://www.sparkasse.de/fk/produkte/konto-und-zahlungsverkehr/electronic-banking/sammelueberweisung.html",
+    "note": "Descrita sobre todo para clientes empresa; requisitos para asociaciones no verificados."
+   },
+   {
+    "name": "XMLBridge (herramienta web gratuita, ejecuta en el navegador, sin registro)",
+    "url": null,
+    "note": "Genera SEPA pain.001 desde formulario o Excel/CSV segun la ficha (resumen de busqueda); no se verifico si soporta pain.008 ni la version pain. URL exacta no clara."
+   },
+   {
+    "name": "SEPAmacher S (gratis, limitado en cuentas de socios)",
+    "url": "https://www.heise.de/download/product/sepamacher-93011",
+    "note": "Version gratuita para asociaciones pequenas."
+   },
+   {
+    "name": "pain001 (biblioteca Python, CLI)",
+    "url": "https://pypi.org/project/pain001/0.0.14/",
+    "note": "Open source; solo pain.001 (transferencias) segun la descripcion; requiere conocimientos tecnicos."
+   },
+   {
+    "name": "AB-SEPA.xls (prueba) y Ex-SEPA (prueba)",
+    "url": "https://www.heise.de/download/product/ab-sepa.xls-90313",
+    "note": "Genera lotes SEPA desde Excel; versiones de prueba con precio en la pagina del fabricante."
+   }
+  ],
+  "pain_evidence": [
+   {
+    "url": "https://www.datev-community.de/t5/Betriebliches-Rechnungswesen/SEPA-Export-altes-pain-Format/m-p/539731",
+    "what": "Hilo de DATEV-Community 'SEPA-Export altes pain-Format': usuarios preguntan por exportar en el formato pain antiguo ante el cambio de version (varios mensajes)",
+    "date": null
+   },
+   {
+    "url": "https://www.datev-community.de/t5/Unternehmen-online/SEPA-XML-Datei-neues-PAIN-Format-pain-001-001-09-wird-nicht/m-p/533847",
+    "what": "Hilo de DATEV-Community: 'SEPA-XML-Datei neues PAIN-Format pain.001.001.09 wird nicht ...' (el titulo indica que el banco no acepta el fichero nuevo)",
+    "date": null
+   },
+   {
+    "url": "https://www.datev-community.de/t5/Betriebliches-Rechnungswesen/Probleme-SEPA-Sammellastschrift-Sparkasse-FINAPI/td-p/523860",
+    "what": "Hilo de DATEV-Community: problemas con Sammellastschrift SEPA en Sparkasse/FINAPI",
+    "date": null
+   }
+  ],
+  "regulatory_note": "No es zona regulada como asesoria; la restriccion es tecnica: las versiones pain permitidas las fija el sector bancario (DK/Bundesbank/EPC). Formatos anteriores validos hasta noviembre de 2026 segun DATEV-Community y Deutsche Bank; despues depende de acuerdos con cada banco. Para adeudos hacen falta Gläubiger-ID y mandatos por socio (referencia, fecha, IBAN) segun guias de bancos; una app que genere el XML no sustituye el acuerdo de cobro (Inkassovereinbarung) que el banco exige a la asociacion.",
+  "differentiator": "Posible pero estrecho: generar pain.001.001.09 y pain.008.001.08 (formatos vigentes tras nov-2026) desde Excel/CSV, con validacion de IBAN/Glaeubiger-ID/mandato y todo en local, a un pago unico de ~18 EUR; JAM (35 EUR por heise) aun anuncia pain.001.001.03/pain.008.001.02. Pero SEPAmacher L ya cuesta 14,99 EUR, SEPAmacher S y XMLBridge son gratis y muchos bancos importan CSV sin software extra.",
+  "new_confidence": "low",
+  "confidence_basis": "Precios de heise son de 2024 y las dos herramientas baratas ya cubren el caso; hay alternativas gratuitas (SEPAmacher S, XMLBridge, importacion CSV del banco, biblioteca Python); el pico de demanda por el cambio de formato es un dato favorable pero temporal; el dolor se ve en hilos de DATEV (usuarios profesionales) sin fecha ni volumen.",
+  "recommendation": "rework",
+  "recommendation_reason": "El mercado esta maduro y barato (4,99-35 EUR) con opciones gratis; solo tendria sentido como convertidor local centrado en los formatos pain nuevos y validacion, aprovechando el cambio de nov-2026, con ventana de oportunidad corta."
+ },
+ {
+  "id": "e-rechnung-reader-offline",
+  "verified": "partly",
+  "checks": [
+   {
+    "claim": "Alemania: desde 1-ene-2025 todas las empresas, tambien Kleinunternehmer, deben poder recibir facturas electronicas",
+    "result": "confirmed",
+    "source_url": "https://kostenlose-erechnung.de/ratgeber/e-rechnung-empfangen/",
+    "note": "Varias guias (de proveedores, p. ej. kostenlose-erechnung.de) dicen que la obligacion de recepcion rige desde el 01-01-2025 sin excepciones, incluidos Kleinunternehmer (§ 19 UStG). No abri la pagina de IHK Potsdam citada en la pasada 1."
+   },
+   {
+    "claim": "Emision obligatoria en 2027 (>800.000 EUR) y 2028 (resto); Kleinunternehmer exentos de emitir; otra guia da fin del periodo transitorio el 31-12-2026 (fuentes discrepan)",
+    "result": "confirmed",
+    "source_url": "https://kostenlose-erechnung.de/ratgeber/e-rechnung-empfangen-anleitung/",
+    "note": "La misma guia dice: hasta fin de 2026 aun se puede enviar PDF/papel, 2027 obligacion de emitir para >800.000 EUR, 2028 para todos excepto Kleinunternehmer. Las dos fechas no son necesariamente contradictorias (31-12-2026 = fin del primer periodo transitorio general). Fuente de proveedor; la propia guia recomienda verificar en el escrito del BMF o con un asesor fiscal. Importante: un PDF sin XML incrustado no es e-factura."
+   },
+   {
+    "claim": "Italia: existe un visor web gratuito de XML de fattura elettronica; Windows no trae programa para mostrarlo",
+    "result": "confirmed",
+    "source_url": "https://centrofiscale.com/lettura-fattura-elettronica-xml-2026/",
+    "note": "Ademas de los visores privados, la guia (de un CAF, fuente unica) cita el visualizzatore oficial de la Agenzia delle Entrate: gratuito, sin registro, acepta .xml y .xml.p7m (assistenza.agenziaentrate.gov.it/AssistenzaContribuente/visualizzatoreFatture.html) y devuelve vista tipo PDF. El PDF de cortesia no sustituye al XML. No reverifique MIGG/AssoInvoice/avvocatoandreani."
+   },
+   {
+    "claim": "Francia: recepcion obligatoria desde 1-sep-2026 por plataforma agreada; emision desde sep-2027",
+    "result": "confirmed",
+    "source_url": "https://blog.tiime.fr/plateforme-agreee-facturation-electronique-gratuite",
+    "note": "Varias guias (casi todas de editores de software) confirman recepcion desde 01-09-2026 para todos los sujetos pasivos de IVA, incluidos los en franquicia en base, y emision/e-reporting desde 01-09-2027 para PYMES y micro. Lo que impone la ley es designar una plataforma agreada (PA) y registrarla en el annuaire central: un lector offline no cumple esa obligacion. El portal publico dejo de ofrecer intercambio gratuito en oct-2024. Un comparador cuenta 17 de 150 PA con oferta a 0 EUR; otra fuente 'al menos cinco' (cifras discrepan). Una fuente cita multa de 50 EUR por factura no conforme, con tope de 15.000 EUR/año (a verificar con texto oficial)."
+   },
+   {
+    "claim": "Polonia: Ministerio de Finanzas ofrece gratis Aplikacja Podatnika KSeF; microempresas con ventas <=10.000 PLN/mes emiten en KSeF desde 1-ene-2027",
+    "result": "confirmed",
+    "source_url": "https://pro.rp.pl/krajowy-system-e-faktur-ksef/art44052581-jak-fakturowac-w-ksef-i-za-to-nie-placic-aplikacje-od-ministerstwa-finansow",
+    "note": "Fuentes polacas (rp.pl, fakturownia.pl, fakturowo.pl, podatki.biz): hay aplicaciones gratuitas del MF (e-mikrofirma y la aplicacion KSeF); exencion temporal para microempresas con hasta 10.000 PLN brutos/mes de ventas B2B (el limite cuenta solo B2B, mes a mes); obligacion para todos desde 1-ene-2027. Una fuente de agosto 2025 puede estar desactualizada; articulos antiguos decian 2026. Como KSeF es el sistema central del Estado, una app offline no puede emitir ni recibir facturas por si sola."
+   },
+   {
+    "claim": "kostenlose-erechnung.de: plan gratis de 3 facturas/mes; exporta ZUGFeRD/XRechnung",
+    "result": "confirmed",
+    "source_url": "https://kostenlose-erechnung.de/rechnungsprogramm-kostenlos/",
+    "note": "Plan gratis: 3 facturas/mes de forma permanente (segun el proveedor, sin registro; otra pagina del proveedor habla de cuenta gratuita con registro: contradiccion). Plan Business desde 9,90 EUR/mes con archivo, escaner IA y exportacion DATEV. Generador ZUGFeRD 2.4/XRechnung 3.0.2 en el navegador (las paginas del proveedor discrepan en la version). Fuente unica: el propio proveedor."
+   },
+   {
+    "claim": "Norman Finance generador gratuito de ZUGFeRD (sin registro)",
+    "result": "confirmed",
+    "source_url": "https://norman.finance/de/tools/erechnung",
+    "note": "La pagina 'Kostenlose E-Rechnung erstellen' aparece en los resultados; no reabri detalles de registro ni de limites."
+   },
+   {
+    "claim": "BillingEngine Basic 6 EUR/mes en plan anual, 7,50 EUR mensual, incluye e-factura",
+    "result": "confirmed",
+    "source_url": "https://trusted.de/billingengine",
+    "note": "trusted.de: Basic 6,00 EUR/mes con pago anual y 7,50 EUR mensual (hasta 30 facturas y 30 presupuestos, 2 usuarios); Premium 12 EUR anual / 15 EUR mensual; plan Free de 3 facturas/mes; e-factura (ZUGFeRD/XRechnung) en todos los planes (fastlancer, OMR). heise lista Basic a 4 EUR (dato del 13-04-2025, probablemente viejo). Es software de EMISION, no lector."
+   }
+  ],
+  "alternatives": [
+   {
+    "name": "BillingEngine Basic (6 EUR/mes con pago anual = 72 EUR/año, calculo propio; emision con e-factura)",
+    "price_local": 72,
+    "currency": "EUR",
+    "model": "annual",
+    "url": "https://trusted.de/billingengine",
+    "as_of": null
+   },
+   {
+    "name": "BillingEngine Basic pago mensual",
+    "price_local": 7.5,
+    "currency": "EUR",
+    "model": "monthly",
+    "url": "https://trusted.de/billingengine",
+    "as_of": null
+   },
+   {
+    "name": "BillingEngine Premium pago mensual",
+    "price_local": 15,
+    "currency": "EUR",
+    "model": "monthly",
+    "url": "https://trusted.de/billingengine",
+    "as_of": null
+   },
+   {
+    "name": "kostenlose-erechnung.de Business (desde)",
+    "price_local": 9.9,
+    "currency": "EUR",
+    "model": "monthly",
+    "url": "https://kostenlose-erechnung.de/rechnungsprogramm-kostenlos/",
+    "as_of": null
+   },
+   {
+    "name": "kostenlose-erechnung.de plan gratuito (3 facturas/mes)",
+    "price_local": 0,
+    "currency": "EUR",
+    "model": "freemium",
+    "url": "https://kostenlose-erechnung.de/rechnungsprogramm-kostenlos/",
+    "as_of": null
+   },
+   {
+    "name": "Zervant Free (5 facturas/mes)",
+    "price_local": 0,
+    "currency": "EUR",
+    "model": "freemium",
+    "url": "https://www.fastlancer.org/fastlancer-blog/beste-rechnungssoftware-kleinunternehmer/",
+    "as_of": null
+   },
+   {
+    "name": "Lexware Office S",
+    "price_local": 7.9,
+    "currency": "EUR",
+    "model": "monthly",
+    "url": "https://www.fastlancer.org/fastlancer-blog/beste-rechnungssoftware-kleinunternehmer/",
+    "as_of": null
+   },
+   {
+    "name": "sevdesk Rechnung (desde, plan de 24 meses; 11,90 EUR sin compromiso)",
+    "price_local": 4.45,
+    "currency": "EUR",
+    "model": "monthly",
+    "url": "https://www.fastlancer.org/fastlancer-blog/beste-rechnungssoftware-kleinunternehmer/",
+    "as_of": null
+   },
+   {
+    "name": "easybill Starter (plan anual)",
+    "price_local": 9,
+    "currency": "EUR",
+    "model": "monthly",
+    "url": "https://www.fastlancer.org/fastlancer-blog/beste-rechnungssoftware-kleinunternehmer/",
+    "as_of": null
+   },
+   {
+    "name": "Papierkram S",
+    "price_local": 9.9,
+    "currency": "EUR",
+    "model": "monthly",
+    "url": "https://www.fastlancer.org/fastlancer-blog/beste-rechnungssoftware-kleinunternehmer/",
+    "as_of": null
+   }
+  ],
+  "free_alternatives": [
+   {
+    "name": "Quba-Viewer (quba-viewer.org): visor ZUGFeRD de codigo abierto, offline",
+    "url": null,
+    "note": "Gratis para Windows, macOS y Linux; muestra la parte PDF y el XML de ZUGFeRD. Competidor directo del 'lector offline' (el resumen de busqueda cita el dominio quba-viewer.org; URL exacta no confirmada)."
+   },
+   {
+    "name": "Visor oficial de e-facturas de la Finanzverwaltung (ELSTER)",
+    "url": null,
+    "note": "Gratis, sin registro, abre XML de XRechnung y lo hace legible; no valida las facturas hibridas ZUGFeRD. URL exacta no clara en los resultados."
+   },
+   {
+    "name": "clean-invoice.com e-rechnung-viewer",
+    "url": "https://www.clean-invoice.com/tools/e-rechnung-viewer",
+    "note": "Abre XRechnung/ZUGFeRD y crea PDF; segun el proveedor procesa 100% local en el navegador (sin subida)."
+   },
+   {
+    "name": "Visores de B2Brouter y sevdesk (requieren registro) y de kostenlose-erechnung.de (sube el archivo a un servidor en Alemania y lo descarta)",
+    "url": "https://www.b2brouter.net/de/zugferd-viewer/",
+    "note": "Lectura gratuita de ZUGFeRD/XRechnung."
+   },
+   {
+    "name": "Cualquier lector PDF abre la parte visible de una factura ZUGFeRD",
+    "url": "https://kostenlose-erechnung.de/ratgeber/e-rechnung-empfangen/",
+    "note": "La parte XML va incrustada; solo XRechnung (.xml) es ilegible sin herramienta."
+   },
+   {
+    "name": "Italia: visualizzatore oficial de la Agenzia delle Entrate (.xml y .p7m)",
+    "url": "https://centrofiscale.com/lettura-fattura-elettronica-xml-2026/",
+    "note": "Gratis, sin registro."
+   },
+   {
+    "name": "Polonia: e-mikrofirma y aplicacion KSeF del Ministerio de Finanzas",
+    "url": "https://pro.rp.pl/krajowy-system-e-faktur-ksef/art44052581-jak-fakturowac-w-ksef-i-za-to-nie-placic-aplikacje-od-ministerstwa-finansow",
+    "note": "Emitir y recibir facturas KSeF gratis con perfil de confianza, sin firma cualificada."
+   },
+   {
+    "name": "Francia: plataformas agreadas con oferta a 0 EUR (17 de 150 segun un comparador)",
+    "url": "https://comparateur-efacturation.fr/guide/plateforme-agreee-gratuite",
+    "note": "La recepcion legal pasa por una PA registrada; condiciones y limites varian."
+   }
+  ],
+  "pain_evidence": [
+   {
+    "url": "https://www.moneyvox.fr/banque-pro/actualites/108069/facturation-electronique-les-micro-entrepreneurs-aussi-concernes-des-2026",
+    "what": "Prensa especializada FR: 'Facturation electronique : les micro-entrepreneurs aussi concernes des 2026'",
+    "date": null
+   },
+   {
+    "url": "https://borncity.com/blog/?p=320584",
+    "what": "Blog tecnico DE: 'Loesungen zum Empfang und Erzeugen von ZUGFeRD-Rechnungen - Teil 2' (serie sobre como abrir/crear facturas), indica busqueda de soluciones",
+    "date": null
+   },
+   {
+    "url": "https://kostenlose-erechnung.de/ratgeber/e-rechnung-empfangen-kostenlos/",
+    "what": "Guia del proveedor: la XRechnung (.xml) se ve solo como codigo XML 'para personas sin herramienta casi ilegible'; ZUGFeRD se abre como PDF normal",
+    "date": null
+   },
+   {
+    "url": "https://pro.rp.pl/krajowy-system-e-faktur-ksef/art44158721-ministerstwo-finansow-poprawia-e-mikrofirme-zeby-bylo-latwiej-dzialac-w-ksef",
+    "what": "Prensa PL: el Ministerio de Finanzas mejora la app e-mikrofirma 'para que sea mas facil operar en KSeF' (el Estado ya cubre la necesidad)",
+    "date": null
+   }
+  ],
+  "regulatory_note": "No es zona de asesoria juridica, pero la arquitectura legal limita lo que una app offline puede hacer: (1) Alemania: el XML incrustado es el registro vinculante (un PDF sin XML no es e-factura) y debe archivarse sin modificar; el visor de la Finanzverwaltung no valida el XML de las hibridas. (2) Italia: el PDF de cortesia no sustituye al XML. (3) Francia: la recepcion se hace a traves de una plataforma agreada (PA) inscrita en el annuaire; un lector offline no la sustituye ni permite emitir. (4) Polonia: KSeF es un sistema central del Estado; la emision y recepcion deben pasar por el. Por tanto 'emitir factura minima en el formato del pais' solo es viable offline en Alemania. Fuentes de proveedores de software; las fechas y multas (p. ej. 50 EUR por factura en FR) deben contrastarse con textos oficiales.",
+  "differentiator": "ninguno defendible",
+  "new_confidence": "low",
+  "confidence_basis": "El lector offline ya existe gratis y de codigo abierto (Quba-Viewer), con visores oficiales en DE e IT y apps estatales gratuitas en PL; en FR la ley exige una plataforma agreada y en PL el sistema central KSeF, asi que emitir offline solo funciona en DE, donde hay generadores gratis. Sin evidencia de pago unico: el unico precio visto son suscripciones de 6-15 EUR/mes de software de emision, y no hay quejas de usuarios fechadas.",
+  "recommendation": "drop",
+  "recommendation_reason": "Los visores de e-factura son gratuitos y oficiales en DE, IT y PL, la emision offline es inviable en FR y PL por su arquitectura legal, y no hay senal de pago unico."
+ }
+]
