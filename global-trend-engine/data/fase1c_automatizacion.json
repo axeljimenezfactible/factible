@@ -1,0 +1,394 @@
+{
+ "category": "automatización y productividad",
+ "survivors": [
+  {
+   "id": "emails-a-pdf-por-lotes",
+   "gap": "Convertir en lote cientos de correos guardados (.msg de Outlook, .eml/.emlx de Apple Mail y Thunderbird) a un PDF por correo, conservando el nombre original o una plantilla fecha_remitente_asunto y sin perder los adjuntos, sin subir nada a la nube. En hilos de la comunidad de Adobe la ruta Outlook->Acrobat no conserva los nombres de archivo, omite mensajes ('Not an email message') y un usuario reporta (resumen de busqueda: jul-ago 2025) que Acrobat Pro ya no soporta el lote de .msg a PDFs individuales. Las alternativas gratuitas son linea de comandos o un complemento de Thunderbird sin adjuntos.",
+   "micro_app_idea": "App de escritorio de arrastrar y soltar: carpeta de .msg/.eml/.emlx -> un PDF por correo con plantilla de nombre, adjuntos listados/extraidos a una subcarpeta y un indice CSV opcional, todo local.",
+   "segment": "Administrativos, despachos pequenos, RR. HH., inmobiliarias, contadores y oficinas que archivan correos como PDF para expedientes o soportes de pago.",
+   "platform": "cross",
+   "proven_sellers": [
+    {
+     "name": "CubexSoft Zimbra Converter (otro producto del mismo vendedor que comercializa conversores MSG/EML a PDF)",
+     "price_usd": 299,
+     "currency": "USD",
+     "model": "one-time",
+     "traction_evidence": "AlternativeTo lo lista como compra unica (licencia perpetua) de $299 con version gratuita limitada. Solo sirve como senal del modelo de precio del vendedor; NO es el conversor MSG/EML a PDF y no vi ratings ni ventas.",
+     "url": "https://alternativeto.net/software/cubexsoft-zimbra-converter/about"
+    },
+    {
+     "name": "CubexSoft MSG to PDF Converter (Windows)",
+     "price_usd": null,
+     "currency": "USD",
+     "model": "freemium",
+     "traction_evidence": "Un listado de terceros dice que la prueba convierte solo 25 .msg por carpeta y que la version completa hace lote ilimitado con opcion de guardar adjuntos. Precio de licencia no visto, sin ratings vistos.",
+     "url": "https://feedback.repairshopr.com/forums/165658-general/suggestions/44030439-cubexsoft-msg-to-pdf-converter"
+    },
+    {
+     "name": "MSG Converter (listado SoftwareOne, Windows y Mac)",
+     "price_usd": null,
+     "currency": "USD",
+     "model": "freemium",
+     "traction_evidence": "Ofrece 11 formatos de exportacion incluido PDF, filtro por rango de fechas y una seccion 'File Naming Options' (su contenido no aparecio); hay demo gratis. Precio y traccion no vistos.",
+     "url": "https://platform.softwareone.com/product/msg-converter/PCP-2404-6145"
+    },
+    {
+     "name": "MsgToPdfConverter (listado de Capterra)",
+     "price_usd": 0,
+     "currency": "USD",
+     "model": "freemium",
+     "traction_evidence": "Capterra muestra precio inicial US$0.00, tarifa plana y version gratuita; no vi numero de resenas. Es otro vendedor distinto de CubexSoft.",
+     "url": "https://www.capterra.co.uk/software/1240622/MSG-to-PDF-Converter"
+    }
+   ],
+   "free_alternatives": [
+    {
+     "name": "ImportExportTools NG (complemento de Thunderbird)",
+     "url": "https://services.addons.thunderbird.net/rU/firefox/addon/importexporttools-ng/reviews/?page=2",
+     "what_it_covers": "Segun guias, exporta una carpeta completa a PDF con un archivo por correo, gratis y con GUI.",
+     "what_it_lacks": "Una guia dice que no convierte adjuntos; no filtra antes de exportar; para .eml hay que importarlos antes a una carpeta de Thunderbird; resenas antiguas dicen que la salida PDF esta deshabilitada en OS X; no abre .msg."
+    },
+    {
+     "name": "eml2pdf (PyPI, linea de comandos)",
+     "url": "https://pypi.org/project/eml2pdf/",
+     "what_it_covers": "Convierte .eml a PDF con nombre AAAA-MM-DD_asunto, filtra riesgos de privacidad y lista adjuntos.",
+     "what_it_lacks": "Solo CLI; necesita Pango (dificil en Windows); no se menciona .msg ni .emlx."
+    },
+    {
+     "name": "eml2pdf (npm, linea de comandos)",
+     "url": "https://npmjs.com/package/eml2pdf",
+     "what_it_covers": "Convierte un archivo o un directorio de .eml a PDF y puede fusionarlos en uno.",
+     "what_it_lacks": "Requiere Node y Chromium (puppeteer); CLI; sin GUI; no .msg."
+    },
+    {
+     "name": "Impresion manual a PDF / Acrobat desde Outlook",
+     "url": "https://community.adobe.com/t5/acrobat-discussions/acrobat-pro-no-longer-supports-batch-msg-files-to-individual-pdfs/m-p/15438125/highlight/true",
+     "what_it_covers": "Un correo a la vez; Acrobat Pro de pago ofrecia lote desde Outlook.",
+     "what_it_lacks": "Segun los hilos, no conserva nombres, omite mensajes y el lote dejo de funcionar para algunos usuarios en 2025; las respuestas de la comunidad recomiendan conversores de terceros."
+    }
+   ],
+   "gap_evidence": [
+    {
+     "url": "https://community.adobe.com/t5/acrobat-discussions/how-to-convert-msg-files-to-pdf-and-mantain-msg-file-name-instead-of-memo-style-pdf/m-p/14668914",
+     "what": "Hilo 'How to convert msg files to PDF and maintain msg file name instead of memo style PDF'. El resumen de busqueda fecha la pregunta original en feb-2025: cientos de .msg, la pestana de Outlook en Acrobat no guarda los nombres originales y reporta 'Not an email message' (mapeo fecha-URL inferido por el titulo).",
+     "date": "2025-02"
+    },
+    {
+     "url": "https://community.adobe.com/t5/acrobat-discussions/acrobat-pro-no-longer-supports-batch-msg-files-to-individual-pdfs/m-p/15438125/highlight/true",
+     "what": "Hilo 'Acrobat Pro no longer supports batch msg files to individual PDFs'. El resumen de busqueda lo situa en jul-ago 2025 (fecha exacta no vista) y cita que clic derecho en Explorer ya no convierte en bloque.",
+     "date": null
+    },
+    {
+     "url": "https://community.adobe.com/t5/acrobat-discussions/convert-batch-of-msg-files-w-attachments-as-separate-files/m-p/15569440",
+     "what": "Titulo del hilo: 'Convert batch of msg files w attachments as separate files' (contenido no visto). Mismo foro: la evidencia de necesidad viene de una sola comunidad.",
+     "date": null
+    },
+    {
+     "url": "https://community.adobe.com/t5/acrobat-discussions/batch-converting-msg-files-to-pdf/m-p/15312666",
+     "what": "Hilo 'Batch converting MSG files to PDF'; las respuestas de la comunidad recomiendan conversores de terceros y el resumen advierte que parecen publicidad (no verificado).",
+     "date": null
+    }
+   ],
+   "differentiator": "Pago unico, 100% local (sin el tope de 25 archivos de las pruebas de los conversores de vendedores de nicho SEO), plantilla de nombre configurable, adjuntos, Mac y Windows y .msg/.eml/.emlx en una sola app. Lo gratuito es CLI (eml2pdf) o un complemento de Thunderbird sin adjuntos.",
+   "price_evidence": "No encontre un precio vigente verificable del conversor MSG/EML a PDF de ningun vendedor: CubexSoft MSG a PDF no visto; MsgToPdfConverter en Capterra figura desde $0 con version gratuita; solo otro producto de CubexSoft aparece a $299 en AlternativeTo. Win2PDF Pro exige licencia para su EML a PDF por linea de comandos (precio no visto). No hay ancla directa para $20.",
+   "target_price_usd": null,
+   "build_complexity_1to5": 4,
+   "risks": "Rendering de HTML de correo con contenido remoto/seguridad; variantes del formato .msg y .emlx; fidelidad visual (imagenes inline, codificaciones); expectativas de archivo legal o forense que NO se deben prometer; competencia de vendedores de nicho con muchas paginas SEO; Adobe podria restaurar el lote; empaquetado multiplataforma.",
+   "confidence": "low",
+   "confidence_basis": "La necesidad esta documentada en varios hilos de una sola comunidad (Adobe, 2025) y la alternativa gratuita exige CLI o pierde adjuntos, pero no vi precio vigente ni traccion (ratings, ventas) de ningun producto del mismo tipo, y existe al menos un listado con version gratuita."
+  },
+  {
+   "id": "limpiador-metadatos-oficina",
+   "gap": "Quitar en lote autor, comentarios, cambios con control de cambios, texto oculto y propiedades de documento de muchos archivos Word/Excel/PowerPoint/PDF antes de enviarlos a clientes. El Inspector de documentos de Office trabaja de a un archivo; en Windows existe una herramienta de pago (BatchPurifier, desde $19) pero en Mac solo vi MetaClean (listado antiguo de Softpedia) y mat2 por linea de comandos.",
+   "micro_app_idea": "App de arrastrar y soltar con carpeta vigilada tipo 'bandeja de salida': deja copias limpias de .docx/.xlsx/.pptx/.pdf/imagenes con perfiles (interno, cliente, publico) y un informe previo de lo que se va a eliminar.",
+   "segment": "Consultores, agencias, administrativos, PYMEs y despachos que envian muchos documentos al exterior y quieren higiene de metadatos sin ser tecnicos (no es asesoria legal).",
+   "platform": "cross",
+   "proven_sellers": [
+    {
+     "name": "BatchPurifier (Digital Confidence, Windows)",
+     "price_usd": 19,
+     "currency": "USD",
+     "model": "one-time",
+     "traction_evidence": "Segun el resumen de busqueda de su pagina, 'precios desde $19 por equipo'; trabaja sin conexion, incluye archivos dentro de ZIP, edicion Professional y una demo que solo limpia JPEG. Listado en legaltechnologyhub.com. La pagina cita una valoracion de Softpedia que no vi. Modelo one-time inferido de 'por equipo' (no confirmado).",
+     "url": "https://digitalconfidence.com/BatchPurifier.html"
+    },
+    {
+     "name": "MetaClean / MetaClean Control (Mac)",
+     "price_usd": null,
+     "currency": "USD",
+     "model": null,
+     "traction_evidence": "Softpedia lo describe como utilidad de Mac OS X para ver, editar y borrar metadatos de DOC/DOCX/XLS/XLSX/PPT/PPTX/PDF con proceso por lotes; el listado es antiguo y no vi precio, ratings ni compatibilidad con macOS actual.",
+     "url": "https://mac.softpedia.com/get/Utilities/MetaClean.shtml"
+    }
+   ],
+   "free_alternatives": [
+    {
+     "name": "Inspector de documentos de Microsoft Office (integrado)",
+     "url": "https://digitalconfidence.com/BatchPurifier.html",
+     "what_it_covers": "Elimina propiedades, comentarios y datos ocultos en Word, Excel y PowerPoint (en Mac en Archivo > Informacion > Comprobar si hay problemas).",
+     "what_it_lacks": "Trabaja de a un archivo (afirmacion del vendedor de BatchPurifier, no independiente); no hay lote ni carpeta vigilada."
+    },
+    {
+     "name": "mat2 (codigo abierto)",
+     "url": "https://alternativeto.net/software/mat2",
+     "what_it_covers": "Limpia metadatos de muchos formatos; AlternativeTo lo lista para Mac, Linux y Python.",
+     "what_it_lacks": "Linea de comandos; el resumen de busqueda lo describe como la ruta realista gratuita pero solo para quien usa Terminal."
+    },
+    {
+     "name": "Quitar propiedades e informacion personal de Windows (clic derecho > Propiedades)",
+     "url": "https://digitalconfidence.com/How-to-Remove-All-Document-Properties-from-MS-Office-Files.html",
+     "what_it_covers": "Borra propiedades basicas de archivos Office.",
+     "what_it_lacks": "Segun una fuente del vendedor de BatchPurifier, no elimina comentarios, cambios con seguimiento ni texto oculto de Word."
+    },
+    {
+     "name": "3BClean (servicio web)",
+     "url": null,
+     "what_it_covers": "Quita metadatos de Office, OpenOffice y PDF.",
+     "what_it_lacks": "Exige subir documentos a un tercero, inadecuado para archivos confidenciales."
+    }
+   ],
+   "gap_evidence": [
+    {
+     "url": "https://www.macsolutionsplus.com/improve-privacy-by-removing-metadata-from-office-documents-and-pdfs/",
+     "what": "Articulo de una consultora de Mac (Buffalo, NY) 'Improve Privacy by Removing Metadata from Office Documents and PDFs'; el resumen de busqueda solo encontro pasos manuales y ninguna app Mac actual que haga lote para Office y PDF.",
+     "date": null
+    },
+    {
+     "url": "https://discussions.apple.com/thread/1940636",
+     "what": "Hilo de Apple Discussions titulado 'Metadata removal' (contenido y fecha no vistos).",
+     "date": null
+    },
+    {
+     "url": "https://alternativeto.net/software/batch-edit-office-properties",
+     "what": "Listado de 'Batch Edit Office Properties' y de Workshare Protect: los resultados de lote para propiedades de Office estan marcados como solo Windows.",
+     "date": null
+    }
+   ],
+   "differentiator": "Mac primero (en Windows ya hay un competidor a $19 y en Mac solo un titulo antiguo y una CLI), carpeta vigilada tipo bandeja de salida, perfiles por destinatario e informe previo de lo eliminado, 100% local y pago unico.",
+   "price_evidence": "BatchPurifier desde $19 por equipo (https://digitalconfidence.com/BatchPurifier.html, via resumen de busqueda); MetaClean (Mac) sin precio visto. Contexto previo del proyecto: utilidades de nicho de un solo proposito se agrupan en $10-$25 (fase1_wtp.json, price_point_findings).",
+   "target_price_usd": 19,
+   "build_complexity_1to5": 4,
+   "risks": "Falsa sensacion de seguridad si queda metadato oculto (hay que probar con inspectores y no prometer cumplimiento legal ni redaccion segura); formatos Office/PDF cambiantes; PDF tiene varias capas; Microsoft/Apple podrian integrar lote; mercado de nicho; sin traccion visible de ventas (solo existencia del producto a $19).",
+   "confidence": "low",
+   "confidence_basis": "Hay un vendedor real a $19 (solo Windows, sin cifras de ventas) y el hueco Mac solo se apoya en que no encontre una app actual; las fuentes de necesidad son un articulo de consultora, un hilo de Apple sin fecha y listados."
+  },
+  {
+   "id": "autoguardado-adjuntos-correo",
+   "gap": "Guardar automaticamente los adjuntos de correos entrantes (por remitente o asunto) en carpetas con renombrado, en Apple Mail y Outlook para Mac. Un usuario cuenta que Outlook (Mac) permitia una regla de servidor para guardar adjuntos en una carpeta del Mac y que esa opcion desaparecio; en Apple Mail la ruta es una regla con AppleScript que usuarios reportan fragil.",
+   "micro_app_idea": "App de barra de menu con reglas visuales (remitente/asunto/tipo -> carpeta + plantilla de nombre + ignorar duplicados) para Apple Mail (y Outlook Mac si es viable), sin escribir AppleScript.",
+   "segment": "Contadores, administrativos, gestores de compras y pequenos negocios que reciben facturas, extractos o planos por correo y los archivan a mano.",
+   "platform": "mac",
+   "proven_sellers": [
+    {
+     "name": "TechHit MessageSave (plugin de Outlook; hay pagina de pedido para Mac)",
+     "price_usd": 29.95,
+     "currency": "USD",
+     "model": "one-time",
+     "traction_evidence": "Pagina de pedido con niveles Standard/Pro/Ultimate: Pro incluye guardado automatico sin supervision y Ultimate guarda adjuntos como archivos. El unico precio que vi es historico (24.95 en 2004; 29.95 por licencia al lanzar la v5, fecha no vista) y probablemente desactualizado. Sin ratings vistos.",
+     "url": "https://www.techhit.com/messagesave/order_mac.html"
+    },
+    {
+     "name": "Mail Act-On (Indev, plugin de reglas para Apple Mail)",
+     "price_usd": 25,
+     "currency": "USD",
+     "model": "one-time",
+     "traction_evidence": "TidBITS reporta lanzamiento a $19.95 (subiria a $24.95) en 2008 y una resena posterior lo lista a $25; Macworld lo llamo 'complemento obligatorio para muchos usuarios de Mac'. No vi una accion nativa de guardar adjuntos (puede ejecutar AppleScript) ni el precio actual; un usuario dice que sus plugins se rompian con cada actualizacion de OS X.",
+     "url": "https://tidbits.com/2008/10/19/mail-act-on-2-supercharges-mail-rules/"
+    }
+   ],
+   "free_alternatives": [
+    {
+     "name": "Regla de Mail con AppleScript (integrada)",
+     "url": "https://www.mothsoftware.com/automatically-save-the-attachments-for-incoming-emails-in-mail",
+     "what_it_covers": "Una regla de Mail puede ejecutar un script que guarda los adjuntos de mensajes entrantes en una carpeta.",
+     "what_it_lacks": "Hay que escribir/colocar el script en Library/Application Scripts/com.apple.mail; usuarios reportan reglas que no se disparan solas y scripts que dejan de funcionar en macOS nuevos."
+    },
+    {
+     "name": "Save Attachments from Outlook (Relief, LLC)",
+     "url": "https://alternativeto.net/software/save-attachments-from-outlook/about",
+     "what_it_covers": "Herramienta gratuita que guarda adjuntos de mensajes entrantes segun reglas de Outlook.",
+     "what_it_lacks": "Solo Windows; no sirve en Mac."
+    },
+    {
+     "name": "Automatizaciones de correo de Atajos en macOS Tahoe",
+     "url": "https://macmost.com/an-introduction-to-shortcuts-automation-in-macos-tahoe.html",
+     "what_it_covers": "Dispara automatizaciones cuando llega un correo de un remitente, con ciertas palabras en el asunto, a una cuenta o a un destinatario.",
+     "what_it_lacks": "No verifique si el disparador entrega y guarda los adjuntos; el resumen no lo menciona."
+    },
+    {
+     "name": "Keyboard Maestro / Hazel sobre la carpeta de adjuntos de Mail (de pago, no gratuito)",
+     "url": "https://forum.keyboardmaestro.com/t/any-way-to-auto-save-attachments-in-outlook-365/11309",
+     "what_it_covers": "Hazel procesa los adjuntos que Mail deja en su carpeta por defecto; Keyboard Maestro permite un flujo semiautomatico.",
+     "what_it_lacks": "Cuestan $42 y $36; en el hilo de Keyboard Maestro el problema no resuelto era vigilar el correo entrante por palabra clave."
+    }
+   ],
+   "gap_evidence": [
+    {
+     "url": "https://forum.keyboardmaestro.com/t/any-way-to-auto-save-attachments-in-outlook-365/11309",
+     "what": "'Outlook (mac) used to have ability to set a rule on the server to auto save an attachment (from a specific address) to a folder on my mac'; la opcion fue eliminada. La parte dificil sin resolver: vigilar el correo entrante por palabra clave.",
+     "date": null
+    },
+    {
+     "url": "https://talk.macpowerusers.com/t/quicksave-and-rename-emails-and-attachments-like-techhit-messagesave-for-outlook-windows/22002",
+     "what": "Hilo 'Quicksave and Rename Emails and Attachments like TechHit MessageSave for Outlook/Windows': usuarios de Mac piden el equivalente de MessageSave (contenido interno no visto).",
+     "date": null
+    },
+    {
+     "url": "https://talk.automators.fm/t/mail-attachments-from-mail-automate-download-to-folder/1527",
+     "what": "Hilo largo (varias paginas) 'Mail attachments from Mail automate download to folder' en el foro de Automators.",
+     "date": null
+    },
+    {
+     "url": "https://discussions.apple.com/thread/1787732",
+     "what": "Hilo de Apple Discussions 'Mail Rule to automatically download attachments' (antiguo; fecha no vista).",
+     "date": null
+    }
+   ],
+   "differentiator": "Reglas visuales sin AppleScript y sin pagar Hazel ($42) o Keyboard Maestro ($36); pago unico; vive en la barra de menu y renombra con plantilla. Es la pieza que Mail.app y Outlook Mac no traen.",
+   "price_evidence": "Anclas indirectas y antiguas: MessageSave $24.95 (2004) y $29.95 al lanzar la v5 (fechas/vigencia no verificadas), Mail Act-On $19.95 al lanzar (2008) y $25 despues; contexto del proyecto: Hazel $42, Keyboard Maestro $36, BetterTouchTool $24 vitalicio (fase1_wtp.json). Precio actual de ningun producto de este tipo verificado.",
+   "target_price_usd": 24,
+   "build_complexity_1to5": 3,
+   "risks": "Permisos de Automatizacion y Acceso total al disco de macOS; Outlook para Mac sin API de reglas (viabilidad dudosa); las automatizaciones de correo de Atajos en Tahoe podrian cubrir parte del caso; los plugins de Mail se rompen con actualizaciones de macOS; evidencia de necesidad antigua (fechas no vistas).",
+   "confidence": "low",
+   "confidence_basis": "Cuatro hilos independientes piden o discuten el hueco, pero sin fechas verificables y sin precios vigentes ni traccion de los productos de pago comparables."
+  },
+  {
+   "id": "dividir-excel-por-columna",
+   "gap": "Dividir una tabla de Excel en un archivo por cada valor de una columna (un archivo por vendedor, sucursal, cliente o grupo), conservando formato y fórmulas y nombrando los archivos con una plantilla, sin VBA ni Power Query. Sin herramientas dedicadas gratuitas y multiplataforma: las opciones son filtrar-copiar a mano, formulas FILTER, Power Query, scripts de Python o utilidades de suites de pago.",
+   "micro_app_idea": "App de escritorio: elige un .xlsx/.csv y una columna, genera un archivo por valor unico con el formato original, plantilla de nombre y carpeta de salida, opcion de ZIP listo para enviar.",
+   "segment": "Analistas, administrativos y gerentes de ventas/RR. HH. que reparten reportes por responsable o sucursal cada semana o mes.",
+   "platform": "cross",
+   "proven_sellers": [
+    {
+     "name": "Ablebits Ultimate Suite (Split Table / Split Workbook, Windows)",
+     "price_usd": null,
+     "currency": "USD",
+     "model": null,
+     "traction_evidence": "Una resena de DataNumen dice que la herramienta de dividir no se vende por separado y hay que comprar toda la suite; precio de la suite no visto. Sin ratings vistos.",
+     "url": "https://www.ablebits.com/excel-split-table"
+    },
+    {
+     "name": "Split Sheet (complemento de Google Sheets, Ablebits)",
+     "price_usd": 33.96,
+     "currency": "USD",
+     "model": "one-time",
+     "traction_evidence": "Un sitio de cupones (no oficial) lista 12 meses a $12.75 y vitalicio a $33.96, ambos con 15% de descuento aplicado; no vi numero de instalaciones.",
+     "url": "https://www.couponzguru.com/ablebits-coupons/"
+    }
+   ],
+   "free_alternatives": [
+    {
+     "name": "Filtrar y copiar a mano / formulas FILTER",
+     "url": "https://blog.coupler.io/how-to-split-excel-sheet-into-multiple-worksheets/amp/",
+     "what_it_covers": "Sirve para 2-3 valores y conjuntos pequenos.",
+     "what_it_lacks": "Manual y propenso a errores cuando hay muchos valores; FILTER exige Excel reciente."
+    },
+    {
+     "name": "Power Query en Excel",
+     "url": "https://myonlinetraininghub.com/excel-forum/excel/splitting-file-automatically-based-on-columns-value",
+     "what_it_covers": "Un usuario del foro aprendio Power Query y genero un archivo por productor que se actualiza cada semana.",
+     "what_it_lacks": "Curva de aprendizaje; Excel para Mac no muestra la opcion 'From Folder' (ver idea rechazada sobre unir carpetas de CSV)."
+    },
+    {
+     "name": "Excel Row Splitter (itch.io, Windows)",
+     "url": "https://peterwoods.itch.io/excel-row-splitter",
+     "what_it_covers": "Crea una carpeta y un archivo por cada valor unico de la columna elegida; la pagina dice uso personal ilimitado (afirmacion del desarrollador, no verificada).",
+     "what_it_lacks": "Solo Windows y un unico desarrollador; no vi si conserva formato ni formulas."
+    },
+    {
+     "name": "ResFeci (PyPI) / scripts de Python",
+     "url": "https://pypi.org/project/resfeci",
+     "what_it_covers": "Divide una hoja por valores unicos de una columna en informes separados.",
+     "what_it_lacks": "Requiere Python, openpyxl y pandas; no transfiere formulas."
+    }
+   ],
+   "gap_evidence": [
+    {
+     "url": "https://myonlinetraininghub.com/excel-forum/excel/splitting-file-automatically-based-on-columns-value",
+     "what": "Hilo de foro 'splitting file automatically based on columns value': el usuario necesita un archivo por productor cada semana.",
+     "date": null
+    },
+    {
+     "url": "https://community.alteryx.com/discussion/1364823/splitting-an-excel-file-by-column-values",
+     "what": "Hilo de la comunidad de Alteryx 'splitting an excel file by column values' (contenido no visto).",
+     "date": null
+    },
+    {
+     "url": "https://www.datanumen.com/fr/blogs/10-best-split-excel-tools-free-download/",
+     "what": "Lista '10 best split Excel tools (2026)' de un vendedor de recuperacion de Excel (fuente con interes comercial): evidencia de que la necesidad se busca, no de demanda de pago.",
+     "date": "2026"
+    }
+   ],
+   "differentiator": "Una sola app para Mac y Windows que conserva formato, plantilla de nombre y destino; pago unico frente a la suite Ablebits (Windows) o un add-in de Google Sheets; sin VBA ni Python.",
+   "price_evidence": "Solo anclas indirectas: Split Sheet vitalicio $33.96 segun un sitio de cupones; la herramienta Excel Row Splitter es gratis en Windows; precio de la suite Ablebits no visto.",
+   "target_price_usd": null,
+   "build_complexity_1to5": 5,
+   "risks": "Conservar formato, formulas y formato condicional al dividir es dificil; la competencia gratuita (Row Splitter, Power Query, macros copiables) es abundante; la disposicion a pagar es la parte menos probada; Microsoft podria añadir la funcion.",
+   "confidence": "low",
+   "confidence_basis": "Hilos de necesidad reales pero sin fecha y sin ratings; hay herramientas gratuitas y de pago, y no vi traccion de ninguna."
+  }
+ ],
+ "rejected": [
+  {
+   "idea": "Equivalente de Hazel para Windows (reglas automaticas sobre archivos y carpetas)",
+   "reason": "Ya cubierto: DropIt es gratis y de codigo abierto (17 acciones, filtros por propiedades y regex, perfiles, escaneo programado), AutoIt y Belvedere son gratuitos y File Juggler es el producto de pago que un resenista describe como 'la misma automatizacion que Hazel en Windows' (precio no hallado). Ademas el contexto previo (fase1_wtp.json) muestra que utilidades Windows de renombrado/orden se venden bajo $15 (File Renamer X $14.99 con 22 valoraciones; Advanced Renamer gratis). Carencia de DropIt: no inspecciona contenido, sin senal de pago por ello.",
+   "covering_free_alternative": "DropIt (gratis, codigo abierto); File Juggler como referencia de pago",
+   "url": "https://alternativeto.net/software/hazel"
+  },
+  {
+   "idea": "Hazel-lite y disparadores de contexto para Mac (carpeta, correo, Wi-Fi, unidad externa, pantalla)",
+   "reason": "macOS Tahoe trajo automatizaciones de Atajos con disparadores de carpeta (agregado/modificado/eliminado), archivos, correo, unidades externas, Wi-Fi, Bluetooth, pantallas, apps y Focus. Jason Snell (Six Colors, ago-2025) lo describe como alternativa a Hazel y Dan Moren migro un flujo de Hazel a Atajos; Hazel solo sigue siendo mejor para reglas complejas y archivos solo-nube. Una app gratuita (Shortery) cubre disparadores de sistema que Apple omitio.",
+   "covering_free_alternative": "Atajos de macOS Tahoe (Automatizaciones) + Shortery",
+   "url": "https://sixcolors.com/post/2025/08/get-started-with-folder-automation-in-macos-tahoe/"
+  },
+  {
+   "idea": "Keyboard Maestro para Windows / grabador de macros sin programar",
+   "reason": "Los foros de Keyboard Maestro repiten la misma lista: AutoHotkey (gratis, potente), Pulover's Macro Creator (gratis, interfaz de apuntar y clicar sobre AutoHotkey), Actiona (lista de acciones arrastrables), AutoIt y Power Automate. Quien migra se queja de la curva de aprendizaje, pero no hay un producto de pago con traccion visible y el contexto previo indica que las utilidades de Windows de pago unico rara vez superan $15.",
+   "covering_free_alternative": "AutoHotkey + Pulover's Macro Creator; Power Automate Desktop; Actiona",
+   "url": "https://forum.keyboardmaestro.com/t/keyboard-maestro-alternatives-for-windows/35013"
+  },
+  {
+   "idea": "Expansion de texto (snippets con campos) en Mac y Windows",
+   "reason": "Saturado: TextExpander tiene plan gratuito para individuos y equipos de hasta 5; espanso (codigo abierto, local, YAML), Text Blaze (gratis) y la version gratuita de PhraseExpress cubren lo basico; Typinator es la alternativa de pago unico ($39.99 en su pagina y $49.99 segun TidBITS para la v10 con opcion de suscripcion de $29.99/ano). Cambios de TextExpander a suscripcion ya se absorbieron en este mercado.",
+   "covering_free_alternative": "espanso / Text Blaze / TextExpander plan gratis / texto sustituto de macOS",
+   "url": "https://ergonis.com/typinator/pricing"
+  },
+  {
+   "idea": "Packs de 'recetas' por oficio para Keyboard Maestro / Hazel / BetterTouchTool",
+   "reason": "No vi demanda de pago: Keyboard Maestro tiene su biblioteca de macros compartidas gratis; Design Maestro es un paquete gratuito de 15 macros; una pagina de Gumroad con ~1,400 macros esta a $0+ con 6 valoraciones; 'Tyro' parte de $9.99 con 4 valoraciones; los presets de BetterTouchTool se comparten gratis en su comunidad y en GitHub; no aparecio ningun pack de reglas de Hazel a la venta.",
+   "covering_free_alternative": "Macro Library oficial de Keyboard Maestro + presets gratuitos de la comunidad de BetterTouchTool",
+   "url": "https://wiki.keyboardmaestro.com/_export/raw/Macro_Library"
+  },
+  {
+   "idea": "Combinacion de correspondencia de Word a PDFs individuales y con adjuntos distintos por destinatario",
+   "reason": "LibreOffice Writer permite 'Guardar como documentos individuales' con nombre generado desde un campo y formato PDF (con bugs reportados en lotes grandes); el add-in gratuito Merge Tools de Doug Robbins (Windows) y macros de VBA cubren Word; para adjuntos por destinatario, SecureMailMerge (version gratuita con pie promocional, Classic/New Outlook, Mac y web), 'Mail Merge with Attachments' de Outlook Freeware y Kutools resuelven el caso. Carencia: el flujo en Word para Mac depende de cambiar de programa o de macros.",
+   "covering_free_alternative": "LibreOffice Writer (guardar como documentos individuales en PDF) + SecureMailMerge / Outlook Freeware",
+   "url": "https://books.libreoffice.org/en/WG73/WG7314-MailMerge.html"
+  },
+  {
+   "idea": "Rellenado por lotes de PDFs de formulario desde Excel/CSV (un PDF por fila)",
+   "reason": "PlainMerge (codigo abierto) mapea columnas de Excel a campos del PDF y genera un PDF por fila; FormFill procesa en local con pdf-lib; Instafill y JustFill lo hacen en la nube; PDF Batch Editor cobra $35 (2 semanas) o $96 (1 ano de actualizaciones). Salvedad: el repo de PlainMerge advierte que su codigo fuente esta desactualizado (los binarios publicados si estan al dia), pero igual hay opciones gratuitas locales que cubren el caso.",
+   "covering_free_alternative": "PlainMerge (codigo abierto) / FormFill / scripts de Python",
+   "url": "https://github.com/plainlab/plainmerge"
+  },
+  {
+   "idea": "Renombrado de documentos por contenido con IA (facturas y escaneos) local de pago unico",
+   "reason": "Mercado ya ocupado: Sorto (Windows y Mac), RenameIQ (pago unico $39.99), NameQuick ($69 o ~$12/mes, macOS 15.4+), Renamer.ai (suscripcion, 25 archivos gratis/mes), PDFZone (licencia vitalicia Mac) y Wisfile (gratis, Windows y Mac). La fuente es un blog de un competidor (renamer.ai), con sesgo. Ademas el contexto previo no encontro traccion para renombradores Windows.",
+   "covering_free_alternative": "Wisfile (gratis) y plan gratuito de Renamer.ai",
+   "url": "https://renamer.ai/best-ai-file-renamer"
+  },
+  {
+   "idea": "Unir una carpeta de CSV/XLSX en una sola tabla en Mac",
+   "reason": "La carencia es real (Excel para Mac no muestra 'From Folder' en Power Query; Microsoft recomienda un rodeo con la ventana Inmediato de VBA, jul-2025 segun el resumen) pero el techo de precio observado es bajisimo: Rowmate $4.99 y Merge Text Files $4.99 en la Mac App Store, mas el comando gratuito awk/cat y el rodeo oficial. No sostiene $20.",
+   "covering_free_alternative": "Comando awk '(NR==1)||(FNR>1)' *.csv, rodeo oficial de Power Query en Excel para Mac y apps de $4.99",
+   "url": "https://learn.microsoft.com/en-us/answers/questions/5508063/cant-find-the-option-of-from-folder-when-using-get"
+  },
+  {
+   "idea": "Disparadores sin codigo en Windows (conectar a Wi-Fi/dock/USB -> ejecutar acciones)",
+   "reason": "El Programador de tareas ya cubre el caso con disparadores de eventos (NetworkProfile, ID 10000 al conectar), aunque exige elegir registro y evento a mano; AutoHotkey y Power Automate Desktop son gratuitos. No encontre ningun producto de pago con traccion para esto, y el contexto previo indica que las utilidades Windows de pago unico no sostienen $20. Evidencia de necesidad escasa y antigua (blog de winhelponline, hilo de Seven Forums).",
+   "covering_free_alternative": "Programador de tareas de Windows con disparadores por evento",
+   "url": "https://www.winhelponline.com/blog/trigger-launch-program-script-connecting-to-specific-network/"
+  }
+ ],
+ "limitations": "1) El limite de WebSearch compartido por turno se agoto tras ~40 busquedas exitosas; las ultimas dos (demanda de correo a PDF en Apple Mail y precio de Total Mail Converter) fueron rechazadas y no se rodeo el limite. 2) Solo 4 sobrevivientes, por debajo de la meta de 6-10, y los 4 con confianza 'low': casi todo lo demas tenia gratuitos que cubren el hueco (Atajos de Tahoe, espanso, LibreOffice, PlainMerge, DropIt, PowerToys/AutoHotkey). Es un resultado, no un fallo. 3) La herramienta devuelve resumenes y no paginas completas; la asignacion de cada afirmacion a su URL es aproximada en varios casos (p. ej. la fecha de feb-2025 de los hilos de Adobe se asigno por el titulo; lo dicho sobre ImportExportTools NG se apoya en paginas de resenas y guias de terceros). No abri ninguna pagina de vendedor. 4) Casi ninguna evidencia de necesidad tiene fecha verificada (date null), y no hay ratings ni cifras de ventas de ningun producto de los sobrevivientes. 5) Precios: no verifique precio vigente de File Juggler, CubexSoft MSG a PDF, MessageSave ni Mail Act-On (solo datos historicos); BatchPurifier $19 viene del resumen de su pagina, y su modelo 'unico' esta inferido. 6) Power Automate Desktop (gratuito en Windows) y Linux no se profundizaron, y los gestores de ventanas/portapapeles se excluyeron por instruccion; no verifique cobertura de Mac para reemplazo por lotes en Word ni si Atajos de Tahoe entrega adjuntos de correo. 7) Rechazos adicionales hallados pero no listados por el tope de 10: reemplazo por lotes de texto en Word en Windows (Batch Word Replace Free Edition https://sourceforge.net/app/batch-word-replace-free-edition/ y Word Text Replacer de Gillmeister https://gillmeister-software.com/products/word-text-replacer/); impresion de carpeta vigilada (AcroTeX PDF Print Monitor gratis, https://alternativeto.net/software/acrotex-pdf-print-monitor); navegacion por teclado tipo Homerow en Windows (hunt-n-peck y Cursor Crane, gratuitos, https://alternativeto.net/software/homerow); corregir nombres invalidos/rutas largas para OneDrive/SharePoint (escaneo de Microsoft https://learn.microsoft.com/en-us/sharepointmigration/migration-assessment-scan-long-onedrive-urls y modulo gratuito Repair-SharePointNames https://www.powershellgallery.com/packages/Repair-SharePointNames/); importar CSV al Calendario de Apple (Importer for Calendar https://apps.apple.com/us/app/importer-for-calendar-csv-ics/id6443941935?mt=12); gestores de barra de menu (Ice, Thaw, Bartender 6 y el ajuste nativo 'Allow in the Menu Bar' de macOS 26, https://9to5mac.com/2026/03/11/bartender-for-mac-is-good-again-and-my-menu-bar-is-very-thankful/); Hazel para Linux (Organize, codigo abierto, https://alternativeto.net/software/hazel). 8) Segun fase1_wtp.json las utilidades de Windows de pago unico tienen techo bajo, por eso las ideas solo-Windows se rechazaron con mas facilidad."
+}

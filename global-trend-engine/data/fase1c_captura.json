@@ -1,0 +1,418 @@
+{
+ "category": "captura, anotación e imagen",
+ "survivors": [
+  {
+   "id": "steps-recorder-successor-local",
+   "gap": "Microsoft deprecó el Steps Recorder (PSR.exe; anuncio nov-2023) y solo sugiere Snipping Tool, Xbox Game Bar o Clipchamp, que no generan una guía paso a paso por clic. Lo que sí auto-genera pasos (Scribe, Tango, Guidde) es nube + suscripción ($13-$35 por asiento/mes). Las gratuitas locales son inmaduras (BetterStepsRecorder: 41 estrellas y un comentario de que ya no se actualiza; OpenSteps: lanzamiento reciente con 0 votos en Product Hunt) y lo existente de pago único en Windows es de captura manual (ScreenSnap Pro $39; Screenpresso Step Tool numera clics a mano).",
+   "micro_app_idea": "Grabador local de clics que toma una captura por paso, resalta el clic, redacta datos sensibles detectados por OCR y exporta una guía editable a HTML/PDF/Word/Markdown, sin nube ni cuenta.",
+   "segment": "Soporte técnico / helpdesk interno, administradores de TI de pymes, redactores de manuales y SOP que no pueden subir pantallas con datos de clientes a una nube, freelancers.",
+   "platform": "windows",
+   "proven_sellers": [
+    {
+     "name": "StepGrab (Mac)",
+     "price_usd": 44.99,
+     "currency": "USD",
+     "model": "freemium",
+     "traction_evidence": "Nivel gratuito + Pro $2.99/mes, $12.99/año o $44.99 pago único; exporta Markdown/HTML (espejo de Product Hunt). Sin cifras de ventas.",
+     "url": "https://webmail.hunted.space/dashboard/stepgrab"
+    },
+    {
+     "name": "Screenpresso Pro (Windows)",
+     "price_usd": 29.99,
+     "currency": "USD",
+     "model": "one-time",
+     "traction_evidence": "Página de precios oficial: Pro $29.99 por usuario pago único con 1 año de actualizaciones; licencia Enterprise $2,190 ilimitada. Step Tool numera clics a mano; una reseña francesa (fuente secundaria) menciona generador de guías PDF. Sin cifras de ventas.",
+     "url": "https://screenpresso.com/pricing"
+    },
+    {
+     "name": "ScreenSnap Pro",
+     "price_usd": 39,
+     "currency": "USD",
+     "model": "one-time",
+     "traction_evidence": "Presentado como la opción de pago único frente a Scribe/Tango (no auto-genera pasos). Fuente: blog del propio vendedor, sesgada.",
+     "url": "https://www.screensnap.pro/blog/tango-alternatives"
+    },
+    {
+     "name": "Scribe Pro Personal",
+     "price_usd": 25,
+     "currency": "USD",
+     "model": "monthly",
+     "traction_evidence": "$35/mes mensual o $25/mes facturado anual; Team $13-$17/asiento con mínimo 5. Muestra que el flujo de auto-captura se paga de forma recurrente.",
+     "url": "https://resources.rework.com/tools/productivity/best-scribe-alternatives"
+    }
+   ],
+   "free_alternatives": [
+    {
+     "name": "BetterStepsRecorder (GPL-3.0)",
+     "url": "https://alternativeto.net/software/betterstepsrecorder/about",
+     "what_it_covers": "Reemplazo moderno de PSR.exe, offline, gratis.",
+     "what_it_lacks": "AlternativeTo muestra 41 estrellas, 9 forks, 21 issues abiertos y un comentario de que no hay más actualizaciones; no vi redacción de datos sensibles ni exportación a Word/PDF."
+    },
+    {
+     "name": "OpenSteps (open source)",
+     "url": "https://www.hunted.space/product/opensteps",
+     "what_it_covers": "Graba el flujo local con resaltado de clic, permite editar/añadir pasos y exporta Markdown/HTML.",
+     "what_it_lacks": "Producto joven (0 votos y 1 comentario en el espejo de Product Hunt), sin garantías de mantenimiento ni soporte."
+    },
+    {
+     "name": "Windows Steps Recorder (PSR.exe)",
+     "url": "https://winaero.com/windows-11-deprecates-the-steps-recorder-and-tips-inbox-apps",
+     "what_it_covers": "Captura por clic con comentarios; exporta MHT/ZIP.",
+     "what_it_lacks": "Deprecado; winaero lo lista entre las funciones removidas en 24H2 (otras fuentes dicen 'se eliminará en una versión futura', discrepan); salida no editable moderna."
+    },
+    {
+     "name": "Snipping Tool / Xbox Game Bar / Clipchamp",
+     "url": "https://www.ghacks.net/2024/01/08/microsoft-is-removing-a-tool-from-windows-11-that-you-may-have-never-used/",
+     "what_it_covers": "Capturas y video; son los sustitutos que recomienda Microsoft.",
+     "what_it_lacks": "No generan guía paso a paso con una captura por clic."
+    }
+   ],
+   "gap_evidence": [
+    {
+     "url": "https://windowslatest.com/2023/11/16/microsoft-is-killing-off-windows-7-era-steps-recorder-on-windows-11",
+     "what": "Microsoft anuncia el fin del Steps Recorder de la era Windows 7 en Windows 11",
+     "date": "2023-11"
+    },
+    {
+     "url": "https://www.ghacks.net/2024/01/08/microsoft-is-removing-a-tool-from-windows-11-that-you-may-have-never-used/",
+     "what": "Microsoft elimina Steps Recorder y recomienda Snipping Tool, Game Bar o Clipchamp, que no reproducen el flujo por clic",
+     "date": "2024-01"
+    },
+    {
+     "url": "https://winaero.com/removed-features-in-windows-11-version-24h2",
+     "what": "Steps Recorder aparece entre las funciones removidas en Windows 11 24H2 (otras fuentes discrepan sobre si ya fue retirado)",
+     "date": null
+    },
+    {
+     "url": "https://www.glitter.io/blog/process-documentation/best-scribe-alternatives",
+     "what": "Quejas sobre Scribe: app de escritorio con 'blank scribes' (cero pasos), exportes PDF/HTML/Markdown bloqueados en plan gratis, cotizaciones muy por encima del precio publicado. Fuente competidora, sesgada.",
+     "date": null
+    }
+   ],
+   "differentiator": "Local-first (las pantallas con datos de clientes no salen del equipo), un clic por paso, redacción automática antes de exportar y salida editable, sin cuenta ni asiento mensual. Frente a Scribe/Tango ($25-$35/mes) es pago único; frente a OpenSteps/BetterStepsRecorder aporta mantenimiento, redacción y exportes a Word/PDF.",
+   "price_evidence": "Pago único observado: Screenpresso Pro $29.99 (página oficial), StepGrab $44.99 (Mac, espejo de Product Hunt), ScreenSnap Pro $39 (blog del vendedor). Suscripción: Scribe Pro $25-$35/mes, Guidde $19-$29/mes, Tango $15/usuario/mes según una fuente (las fuentes discrepan). $29 cae dentro del rango observado de pago único.",
+   "target_price_usd": 29,
+   "build_complexity_1to5": 3,
+   "risks": "Captura por clic requiere hooks globales de bajo nivel y firma de código (SmartScreen); antivirus/EDR pueden marcarlo; competidores nuevos y gratuitos (OpenSteps, StepGrab en Mac, StepShot Mac) pueden madurar; Microsoft podría añadir algo equivalente a Snipping Tool; estado real de la remoción en 24H2 con fuentes en conflicto.",
+   "confidence": "med",
+   "confidence_basis": "Hueco documentado por medios y por la deprecación oficial; hay precios de pago único de $29.99-$44.99 y la suscripción de Scribe/Tango valida el flujo. Pero la evidencia de demanda son artículos y comparativas (no hilos de foros que el buscador no devolvió), y aparecen sustitutos gratuitos jóvenes."
+  },
+  {
+   "id": "scanned-photo-splitter-robust",
+   "gap": "Dividir y enderezar varias fotos escaneadas juntas en un escáner plano depende de que haya huecos claros entre ellas. Un usuario reporta que AutoSplitter no reconoce nada con huecos pequeños y acierta solo 30-50% con huecos grandes; Photoshop 'Crop and Straighten' necesita un hueco blanco definido, se confunde con marcas o sombras del escáner y no permite añadir margen; el plugin gratuito de GIMP exige que las fotos no se toquen entre sí ni con los bordes del escáner.",
+   "micro_app_idea": "App de escritorio que recibe escaneos con varias fotos (incluso casi pegadas, con bordes blancos o sombras), las separa, endereza, recorta bordes y corrige orientación en lote, y guarda cada foto con margen opcional.",
+   "segment": "Familias y genealogistas que digitalizan álbumes, pequeños servicios de digitalización, archivos de asociaciones y parroquias; personas con escáner plano doméstico.",
+   "platform": "cross",
+   "proven_sellers": [
+    {
+     "name": "ScanSpeeder",
+     "price_usd": 29.95,
+     "currency": "USD",
+     "model": "one-time",
+     "traction_evidence": "Reseña de fixthephoto la lista desde $29.95 con 4.5/5 y 'gran detección automática'; AlternativeTo da $30-$40 pago único; licencia incluye actualizaciones de la versión mayor actual, hasta 5 PCs personales; ediciones Standard/Pro. Sin cifras de ventas. Windows según las fuentes.",
+     "url": "https://fixthephoto.com/scanspeeder-review.html"
+    },
+    {
+     "name": "AutoSplitter",
+     "price_usd": null,
+     "currency": "USD",
+     "model": "one-time",
+     "traction_evidence": "AlternativeTo lo lista como pago único de aproximadamente $20-$40 (rango, sin precio exacto); vendido vía FastSpring; una reseña de usuario critica la detección. Sin cifras de ventas.",
+     "url": "https://alternativeto.net/software/autosplitter/about"
+    }
+   ],
+   "free_alternatives": [
+    {
+     "name": "GIMP + plugin DivideScannedImages",
+     "url": "https://mysysadmintips.com/automatically-split-and-straighten-scanned-photos",
+     "what_it_covers": "Divide y endereza (deskew) con modo por lotes; un reseñista lo encontró más exitoso que AutoSplitter.",
+     "what_it_lacks": "Instalación manual (deskew.exe + script .scm en carpetas de GIMP) y exige que las fotos no se toquen entre sí ni con los bordes del escáner."
+    },
+    {
+     "name": "Scanned Image Extractor (open source)",
+     "url": "https://alternativeto.net/software/scanned-image-extractor/",
+     "what_it_covers": "Extrae fotos rectangulares de escaneos multi-foto; gratis y open source según AlternativeTo.",
+     "what_it_lacks": "No verifiqué sus funciones por lotes, mantenimiento ni plataformas; no vi información sobre fotos pegadas."
+    },
+    {
+     "name": "crop-scanned-photos (PyPI, open source)",
+     "url": "https://pypi.org/project/crop-scanned-photos/0.1.1/",
+     "what_it_covers": "Proyecto Python para escaneos con bordes blancos y varias fotos por página.",
+     "what_it_lacks": "Requiere Python/línea de comandos; no verifiqué su precisión con fotos pegadas."
+    },
+    {
+     "name": "AutoCropper (web)",
+     "url": "https://neura.market/ai-tools-directory/image-generators/autocropper",
+     "what_it_covers": "Detecta, endereza y separa fotos de escaneos en lote por navegador, con rotación automática.",
+     "what_it_lacks": "Requiere subir las fotos a un servicio web (privacidad de álbumes familiares); no verifiqué límites del nivel gratuito ni precisión con fotos pegadas."
+    }
+   ],
+   "gap_evidence": [
+    {
+     "url": "https://alternativeto.net/software/autosplitter/about",
+     "what": "Reseña de usuario: 'with relatively small gaps between photos it would not recognize anything at all. With huge gaps the success rate was only around 30-50%'",
+     "date": null
+    },
+    {
+     "url": "https://community.adobe.com/t5/photoshop-ecosystem-discussions/is-there-a-way-to-add-padding-to-the-automated-crop-and-straighten-photos/m-p/11387452",
+     "what": "Foro de Adobe: no hay forma de añadir margen en Crop and Straighten; expertos señalan que funciona mejor con un hueco blanco definido y que marcas/sombras del escáner confunden la detección",
+     "date": null
+    },
+    {
+     "url": "https://mysysadmintips.com/automatically-split-and-straighten-scanned-photos",
+     "what": "Guía: el plugin de GIMP funcionó mucho mejor que AutoSplitter, pero sigue exigiendo que las fotos no se toquen",
+     "date": null
+    }
+   ],
+   "differentiator": "Es una utilidad de un solo propósito que paga una vez (precio cercano a ScanSpeeder, $29.95) y procesa en local las fotos familiares, a diferencia de AutoCropper web. El valor está en tolerar fotos casi pegadas, bordes blancos y sombras, y en funcionar en Mac y Windows; los gratuitos son técnicos o dependen de huecos limpios.",
+   "price_evidence": "ScanSpeeder desde $29.95 (fixthephoto) o $30-$40 pago único (AlternativeTo); AutoSplitter ~$20-$40 pago único (AlternativeTo). Los dos son de pago único, lo que respalda $29 como precio objetivo.",
+   "target_price_usd": 29,
+   "build_complexity_1to5": 3,
+   "risks": "La propuesta de valor es la precisión con fotos pegadas: debe validarse con un conjunto de escaneos reales antes de construir. ScanSpeeder es incumbente con prueba gratuita; existe un plugin gratuito de GIMP; mercado de nicho y estacional; soporte por escaneos muy variados (álbumes, polaroids, recortes).",
+   "confidence": "med",
+   "confidence_basis": "Tres fuentes independientes (reseña de usuario en AlternativeTo, foro de Adobe, guía de sysadmin) describen el fallo de detección con huecos pequeños; dos productos de pago único en $20-$40 prueban disposición a pagar. Falta evidencia de volumen de ventas y de que una detección mejor sea alcanzable."
+  },
+  {
+   "id": "screen-recording-secret-redactor",
+   "gap": "La redacción de secretos en grabaciones de pantalla se hace en vivo (Censr, DataBlur, SafeCast) o con máscaras manuales dentro del editor que no siguen el scroll. En el hub de Screen Studio, un usuario pide una máscara que siga el contenido porque es 'la razón principal' por la que no deja Loom, y otro dice que aún exporta y desenfoca a mano en Premiere. No encontré nada que escanee una grabación ya terminada, detecte secretos con OCR en todos los frames y grabe máscaras sólidas.",
+   "micro_app_idea": "Herramienta local que abre cualquier grabación de pantalla (MP4/MOV de OBS, Loom, Cap, etc.), detecta con OCR claves API, tokens, emails y datos personales, propone cajas sólidas que siguen el texto en movimiento, y exporta un video nuevo con las máscaras quemadas y sin metadatos.",
+   "segment": "Desarrolladores y creadores de tutoriales/demos, equipos de soporte y documentación que graban pantallas con terminales, consolas y dashboards, y no quieren subir el video a una nube para limpiarlo.",
+   "platform": "cross",
+   "proven_sellers": [
+    {
+     "name": "Censr (Mac, redacción en vivo)",
+     "price_usd": 19,
+     "currency": "USD",
+     "model": "one-time",
+     "traction_evidence": "Precio fundador $19 para los primeros 100; prueba de 14 días; Mac-first, Windows en hoja de ruta. Lanzamiento reciente, sin cifras de ventas.",
+     "url": "https://www.producthunt.com/p/censr/censr"
+    },
+    {
+     "name": "DataBlur (extensión de navegador, en vivo)",
+     "price_usd": 39,
+     "currency": "USD",
+     "model": "one-time",
+     "traction_evidence": "Listados muestran compra única $39 y/o suscripción $5/mes más versión gratuita limitada. Sin cifras de usuarios.",
+     "url": "https://alternativeto.net/software/datablur/about/"
+    },
+    {
+     "name": "Screen Studio (máscaras desde v3.1)",
+     "price_usd": 29,
+     "currency": "USD",
+     "model": "monthly",
+     "traction_evidence": "Añadió 'Masks' en v3.1 (mar-2025); $29/mes o $108/año; solo macOS. Demuestra demanda de ocultar datos en grabaciones, pero las máscaras son rectángulos y se pide seguimiento.",
+     "url": "https://alternativeto.net/news/2025/3/screen-studio-3-1-adds-new-privacy-feature-masks"
+    },
+    {
+     "name": "BlurTool (Windows, fotos/video/360)",
+     "price_usd": 114,
+     "currency": "USD",
+     "model": "one-time",
+     "traction_evidence": "Licencia perpetua de $114 a $1,271 según edición; anonimiza personas y matrículas, no secretos en pantalla.",
+     "url": "https://alternativeto.net/software/blurtool/about/"
+    }
+   ],
+   "free_alternatives": [
+    {
+     "name": "DaVinci Resolve (versión gratuita)",
+     "url": "https://borisfx.com/blog/how-to-blur-part-of-a-video-in-davinci-resolve-in/",
+     "what_it_covers": "Máscara con herramienta Window + radio de desenfoque; sin marca de agua según una guía; permite ocultar rostros, matrículas e información sensible.",
+     "what_it_lacks": "Manual y curva de aprendizaje; el seguimiento de objetos móviles en la versión gratuita no pude confirmarlo; sin detección automática por OCR; el desenfoque puede ser reversible (Screen Studio lo advierte)."
+    },
+    {
+     "name": "Desenfoque durante la grabación de Loom",
+     "url": "https://hub.screen.studio/p/feature-request-blur-or-mask-sensitive-data",
+     "what_it_covers": "Según un usuario, permite pausar y desenfocar elementos dentro de la herramienta.",
+     "what_it_lacks": "Rectángulo fijo que no sigue el scroll (según la misma publicación) y solo aplica al grabar, no a videos terminados."
+    },
+    {
+     "name": "DataBlur (extensión Firefox, versión gratuita)",
+     "url": "https://addons.mozilla.org/addon/datablur/",
+     "what_it_covers": "Desenfoque local en vivo de emails, tarjetas, API keys y otros datos dentro del navegador.",
+     "what_it_lacks": "Solo actúa antes de grabar y dentro del navegador; no corrige un video ya grabado ni cubre terminal/editor."
+    },
+    {
+     "name": "SafeCast (extensión de navegador)",
+     "url": "https://addons.mozilla.org/firefox/addon/safecast/",
+     "what_it_covers": "Oculta datos privados en la página antes de que el screencast los capture.",
+     "what_it_lacks": "Detecta emails, importes, teléfonos, tarjetas, IP e IBAN; no listó claves API; solo navegador y solo en vivo."
+    }
+   ],
+   "gap_evidence": [
+    {
+     "url": "https://hub.screen.studio/p/feature-request-blur-or-mask-sensitive-data",
+     "what": "Solicitud 'Blur or mask sensitive data': el desenfoque es un rectángulo fijo que no sigue el elemento al hacer scroll; 'la razón principal' para no dejar Loom (estado In Review)",
+     "date": null
+    },
+    {
+     "url": "https://hub.screen.studio/p/adjust-sensitive-data-mask",
+     "what": "Otro usuario: aún exporta de Screen Studio y desenfoca a mano en Premiere; pide control de opacidad, intensidad y forma",
+     "date": null
+    },
+    {
+     "url": "https://screen.studio/guide/masking-sensitive-data-in-screen-recordings",
+     "what": "Guía oficial: el desenfoque puede revertirse con IA; recomienda máscaras de color sólido para datos muy sensibles",
+     "date": null
+    },
+    {
+     "url": "https://dev.to/jeancarl/do-your-tech-demos-share-too-much",
+     "what": "Artículo: las demos filtran más de lo que se piensa (autocompletar, pestañas, notificaciones, nombres de clientes)",
+     "date": null
+    }
+   ],
+   "differentiator": "Corrige grabaciones de cualquier herramienta después de grabar, de forma local y con máscaras sólidas irreversibles más metadatos eliminados, justo lo que las herramientas en vivo (Censr, DataBlur) no pueden hacer y los editores gratuitos solo permiten a mano.",
+   "price_evidence": "Pago único observado en redacción en vivo: Censr $19 fundador, DataBlur $39 (listados, también $5/mes), Blackbar $19 para capturas (Product Hunt), BlurTool $114+ para anonimizar medios. Screen Studio cobra $29/mes. $29 queda entre Censr y DataBlur.",
+   "target_price_usd": 29,
+   "build_complexity_1to5": 3,
+   "risks": "Falsos negativos del OCR dejan secretos visibles (riesgo reputacional y de falsa seguridad; hay que forzar revisión humana y avisar que una clave expuesta debe rotarse); procesar videos largos exige rendimiento (muestreo de frames + seguimiento); mercado de redacción muy activo con entrantes nuevos cada mes; Screen Studio podría mejorar sus máscaras; dependencia de ffmpeg/OCR y codecs.",
+   "confidence": "low",
+   "confidence_basis": "Hay dos solicitudes de usuarios en el hub de Screen Studio y varios productos nuevos de pago único ($19-$39) que validan el valor de ocultar datos, pero la evidencia de demanda concreta por redactar videos ya grabados es delgada (no encontré hilos de Reddit/HN ni cifras de ventas) y los editores gratuitos cubren el caso a mano."
+  },
+  {
+   "id": "face-plate-anonymizer-offline",
+   "gap": "Anonimizar rostros y matrículas en fotos y videos sin subirlos a la nube tiene un salto de precio y usabilidad: las opciones gratuitas son académicas (VideOptimize, solo rostros), de código abierto orientadas a desarrolladores (DashcamCleaner, según el buscador requiere Python/línea de comandos; no verifiqué si tiene GUI) o con límites y marca de agua (Video Blackout gratis), mientras que la herramienta offline profesional de pago único (BlurTool) cuesta de $114 a $1,271. No encontré un producto de escritorio offline por lotes a precio de consumidor.",
+   "micro_app_idea": "App de escritorio offline que detecta rostros y matrículas en carpetas de fotos y videos, deja revisar/ajustar cajas, y exporta copias con desenfoque o relleno sólido y metadatos eliminados.",
+   "segment": "Dueños de dashcam y creadores en países con protección de datos estricta (el propio DashcamCleaner nace de las leyes alemanas), fotógrafos inmobiliarios y de eventos, asociaciones y pymes que publican fotos/videos de espacios públicos.",
+   "platform": "cross",
+   "proven_sellers": [
+    {
+     "name": "BlurTool (Windows)",
+     "price_usd": 114,
+     "currency": "USD",
+     "model": "one-time",
+     "traction_evidence": "Licencia perpetua de $114 a $1,271 según edición; offline, por lotes, personas y matrículas en fotos, video y 360. Sin cifras de ventas.",
+     "url": "https://alternativeto.net/software/blurtool/about/"
+    },
+    {
+     "name": "Video Blackout (Windows)",
+     "price_usd": null,
+     "currency": "USD",
+     "model": "freemium",
+     "traction_evidence": "Gratis con marca de agua y límite de duración; planes de pago quitan marca, permiten videos largos, lotes y más dispositivos (sin importes vistos). AlternativeTo muestra 0 estrellas en GitHub, proyecto pequeño o nuevo.",
+     "url": "https://alternativeto.net/software/video-blackout/about/"
+    },
+    {
+     "name": "Identity Cloak (Facit, empresarial)",
+     "price_usd": null,
+     "currency": "GBP",
+     "model": "annual",
+     "traction_evidence": "£750/año por licencia adicional en el nivel Basic; enfoque on-premise y empresarial.",
+     "url": "https://facit.ai/identity-cloak-2-0/"
+    }
+   ],
+   "free_alternatives": [
+    {
+     "name": "DashcamCleaner (GitHub, open source)",
+     "url": "https://github.com/tfaehse/DashcamCleaner",
+     "what_it_covers": "Censura automática de rostros y matrículas en grabaciones de dashcam.",
+     "what_it_lacks": "Herramienta para desarrolladores (Python/instalación manual según las fuentes); no verifiqué una GUI para no técnicos ni su soporte en Mac."
+    },
+    {
+     "name": "VideOptimize (Universidad de Grenoble Alpes)",
+     "url": "https://videoptimize.univ-grenoble-alpes.fr/",
+     "what_it_covers": "Versión Windows autónoma y offline para desenfocar rostros en imágenes y video.",
+     "what_it_lacks": "Proyecto de investigación; solo rostros (no matrículas) y sin lotes según los resultados."
+    },
+    {
+     "name": "Video Blackout (versión gratuita)",
+     "url": "https://alternativeto.net/software/video-blackout/about/",
+     "what_it_covers": "Detecta rostros y matrículas localmente en Windows 10/11 y exporta MP4 con mosaico, desenfoque o relleno.",
+     "what_it_lacks": "Marca de agua y límite de duración en gratis; lotes en planes de pago; solo Windows; proyecto nuevo."
+    },
+    {
+     "name": "DaVinci Resolve (versión gratuita)",
+     "url": "https://borisfx.com/blog/how-to-blur-part-of-a-video-in-davinci-resolve-in/",
+     "what_it_covers": "Desenfoque manual de rostros, matrículas e información sensible, sin marca de agua según una guía.",
+     "what_it_lacks": "Manual, sin detección automática de matrículas; curva de aprendizaje."
+    }
+   ],
+   "gap_evidence": [
+    {
+     "url": "https://github.com/tfaehse/DashcamCleaner",
+     "what": "Existe porque en Alemania la ley de protección de datos exige censurar rostros y matrículas antes de publicar; la solución gratuita es una herramienta de código",
+     "date": null
+    },
+    {
+     "url": "https://alternativeto.net/software/video-blackout/about/",
+     "what": "El único offline para Windows con detección local es freemium: marca de agua y límite de duración en gratis; lotes de pago",
+     "date": null
+    },
+    {
+     "url": "https://alternativeto.net/software/blurtool/about/",
+     "what": "El equivalente offline profesional de pago único cuesta $114-$1,271",
+     "date": null
+    }
+   ],
+   "differentiator": "Precio de consumidor ($29) y GUI lista para no técnicos para una función que hoy es o académica/CLI, o profesional de $114+, con procesamiento 100% local y revisión de cajas antes de exportar; Mac y Windows.",
+   "price_evidence": "Único precio de pago único hallado: BlurTool $114-$1,271 (AlternativeTo). Video Blackout freemium sin importes visibles; Identity Cloak £750/año (empresarial). No hay evidencia directa de que $29 convierta; es una inferencia a partir del rango de otras utilidades de pago único de la pasada anterior.",
+   "target_price_usd": 29,
+   "build_complexity_1to5": 3,
+   "risks": "Detectores de rostros/matrículas fallan: un falso negativo deja datos identificables y puede tener consecuencias regulatorias (hay que revisar y advertir); verificar licencias de los modelos preentrenados; rendimiento de video sin GPU; proyectos gratuitos (DashcamCleaner, Video Blackout) podrían ganar GUI; uso estrictamente para anonimizar, no para identificar personas.",
+   "confidence": "low",
+   "confidence_basis": "El hueco se infiere de la estructura de precios y de que lo gratuito es técnico o limitado, no de quejas de usuarios; solo tres fuentes (listados y un repositorio) y sin cifras de ventas."
+  }
+ ],
+ "rejected": [
+  {
+   "idea": "Clon de CleanShot X / Xnapper / Snagit (captura + anotación + marcos y fondos) para Windows y Linux a pago único",
+   "reason": "Mercado ya servido por gratuitas maduras (ShareX, Greenshot, Flameshot, Snipping Tool de Windows 11) y por pagos baratos para Windows: Skrin, Savvyshot, WinSnap, Ashampoo Snap (~$13), FastStone ($20), Screenpresso ($29.99), Captures ($24.99), ScreenSnap Pro ($39). Snagit pasó a suscripción (~$39/año según blogs de terceros) pero los reemplazos de pago único abundan y quedan por debajo de $29-$39. No hay carencia concreta, solo versiones más bonitas.",
+   "covering_free_alternative": "ShareX (Windows, gratis, open source), Flameshot (Win/Linux/Mac), Greenshot (Win/Mac), Snipping Tool",
+   "url": "https://alternativeto.net/software/cleanshot-for-macos"
+  },
+  {
+   "idea": "Clon de Screen Studio (grabación con auto-zoom y suavizado de cursor) para Windows/Linux a pago único",
+   "reason": "Screen Studio quitó la licencia perpetua en oct-2025 (ahora $29/mes o $108/año, solo macOS) y eso genera rechazo, pero Cap (Studio Mode con auto-zoom, sin límite de tiempo en el plan gratuito según su sitio; Windows/Mac y .deb de Linux; licencia MIT según Cap, una comparativa dice AGPLv3), OpenScreen (MIT, AppImage Linux) y Recordly (fork con cursor estilo Screen Studio) ya lo cubren gratis. Además venden pago único Rapidemo ($79) y ScreenSnap Pro ($39) según un blog del vendedor.",
+   "covering_free_alternative": "Cap (Studio Mode), OpenScreen, Recordly",
+   "url": "https://alternativeto.net/news/2025/10/screen-studio-has-removed-their-non-subscription-licensing-options-for-new-customers/"
+  },
+  {
+   "idea": "Redacción automática de datos sensibles en capturas de pantalla (emails, claves API, tarjetas), offline",
+   "reason": "Saturado en 2026: Whiteout $9.99 y Redact Guard $19 (Mac), Blackbar $19 (Mac/Win/Linux, 27 detectores), SnapShield AI $39 (Windows), Snapframe $24.99, Frame (Mac), BlurData (Mac), Cloakshot/PageVeil/DataBlur (extensiones) y Censr en vivo. Además el Snipping Tool de Windows 11 ya trae 'Quick redact' gratis para emails y teléfonos. Precios de entrada por debajo del objetivo y varios entrantes nuevos por mes.",
+   "covering_free_alternative": "Snipping Tool de Windows 11 (Text Actions > Quick redact: emails y teléfonos); Cloakshot extensión; nivel gratuito de Snapframe",
+   "url": "https://pureinfotech.com/hide-text-screenshots-snipping-tool-windows-11/"
+  },
+  {
+   "idea": "Subida de capturas a almacenamiento propio (S3/R2/B2) con enlace corto, alternativa a CleanShot Cloud",
+   "reason": "En Mac lo cubre Dropshare (~$39 pago único por versión mayor; S3, B2, R2, WebDAV, SFTP; acortador propio y dominio propio). En Windows ShareX (gratis, open source; captura y subida de archivos) es el estándar; no verifiqué en esta pasada su soporte específico de S3/R2. Flameshot sube a Imgur en Linux. Sin hueco claro.",
+   "covering_free_alternative": "ShareX (Windows), Flameshot (Linux/Win/Mac); de pago Dropshare (Mac)",
+   "url": "https://dropshare.app/news/price-change-2023"
+  },
+  {
+   "idea": "Gestor/buscador de capturas por OCR (biblioteca local de screenshots)",
+   "reason": "Ya vendido a pago único barato y con opciones integradas: ScreenVault $39.99 (Mac, local), Screenotate hasta $20 (Mac/Windows), TidyShot desde $5.99 (Mac), Kaptur (Windows, local), Pizazoo (flujo gratuito) y Raycast (búsqueda de texto en capturas). Spotlight/Live Text de macOS cubre parte del caso.",
+   "covering_free_alternative": "Raycast (Search Screenshots con filtro text:), Pizazoo flujo gratuito",
+   "url": "https://manual.raycast.com/screenshots.md"
+  },
+  {
+   "idea": "Generador de capturas para tiendas de apps y mockups de dispositivos a pago único",
+   "reason": "Saturado y barato: ListingShots $15.99 (Mac/Windows, licencia de por vida), FrameLab Studio $0.99 (Mac, sin red), Shots freemium, Screenshot Design gratis con compras y Magic Mockups gratis en web. No hay carencia sin cubrir y los precios están muy por debajo de $29.",
+   "covering_free_alternative": "Shots (freemium), Magic Mockups (gratis, web)",
+   "url": "https://alternativeto.net/software/app-store-screenshot"
+  },
+  {
+   "idea": "Compresor de grabaciones de pantalla a tamaño objetivo (10/25 MB para Discord, Slack, GitHub)",
+   "reason": "HandBrake y ffmpeg (gratis, multiplataforma) lo resuelven; además existen Compress (Mac App Store, modo Discord 25 MB), CompressX (Mac, offline), Compress.mov (Mac/Win/Linux, con grabación) y el compresor local de OpenReplay (navegador). Función puntual sin diferenciador defendible.",
+   "covering_free_alternative": "HandBrake, ffmpeg, OpenReplay video compressor (navegador, local)",
+   "url": "https://canvid.com/blog/handbrake-video-converter"
+  },
+  {
+   "idea": "Editor de texto dentro de capturas (sustituir datos reales por datos falsos coherentes) para documentación y marketing",
+   "reason": "El caso de capturas ya existe gratis: Screenshot Editor (open source, en el navegador, OCR local con Tesseract.js, edita texto con ajuste de fuente) y, para páginas en vivo, PageVeil y Content Redactor (extensiones que reemplazan emails/nombres/IPs por datos falsos deterministas); Snagit lo permite manualmente. Evidencia de demanda solo en guías de documentación, no en peticiones de usuarios.",
+   "covering_free_alternative": "Screenshot Editor (open source, navegador); extensiones PageVeil y Content Redactor",
+   "url": "https://sia.hackernoon.com/how-i-built-a-free-screenshot-editor-that-lets-you-edit-text-with-perfect-font-matching"
+  },
+  {
+   "idea": "Quitafondos por lotes para fotos de producto (fondo blanco, relleno a cuadrado) offline a pago único",
+   "reason": "Saturado en Windows con precios muy por debajo de $29: AI E-commerce Visual Studio ($6-$9, preset Amazon 2000x2000, lotes de 100+), BG Remover Pro (itch.io, desde $5.99), Offline AI Background Remover ($49 de por vida), Simple Remover (prueba de 30 imágenes), Contenta Converter ($129); Snapclear (freemium, Win/Linux/Mac, offline) y BG Remover (Windows/Linux, lotes y offline) como gratuitas o freemium. Sin hueco de calidad documentado.",
+   "covering_free_alternative": "Snapclear (freemium, offline, Windows/Linux/macOS); BG Remover (Windows/Linux, lotes, offline)",
+   "url": "https://alternativeto.net/software/ai-e-commerce-visual-studio/about/"
+  },
+  {
+   "idea": "Capturas masivas de sitios web a partir de una lista de URLs, app de escritorio con GUI",
+   "reason": "Cubierto gratis por Microlink (hasta 50 URLs al día sin cuenta), las extensiones de Chrome Bulshot y Bulk URL to Full Page Screenshot (esta última con solo 83 usuarios, señal de demanda mínima) y, para técnicos, shot-scraper (CLI open source, dato del buscador y no de una fuente enlazada). El volumen se vende como API por uso en Apify (~$2-$3 por 1,000 capturas), no como app de pago único.",
+   "covering_free_alternative": "Microlink bulk screenshot (web, gratis 50/día), extensiones Bulshot / Bulk URL to Full Page Screenshot, shot-scraper (CLI)",
+   "url": "https://microlink.io/tools/website-screenshot/bulk"
+  }
+ ],
+ "limitations": "(1) WebFetch y curl bloqueados; solo usé WebSearch. Tras ~49 búsquedas el presupuesto compartido de WebSearch por turno se agotó y rechazaron las 3 últimas verificaciones (silenciador de video en Windows, estrellas/GUI de DashcamCleaner, funciones de desenfoque de Cap/OpenScreen); cierro con lo recolectado. (2) Solo vi resúmenes del buscador, no abrí páginas primarias; los resultados casi no devolvieron hilos de Reddit/HN, así que la evidencia de necesidad viene de foros de producto (Adobe Community, hub de Screen Studio), reseñas de AlternativeTo y artículos/comparativas, muchas de vendedores competidores y por tanto sesgadas. (3) Precios tomados de directorios y blogs; hay conflictos (p. ej. Screen Studio, Tango, Presentify) y ninguna cifra de ventas verificable de ScanSpeeder, AutoSplitter, StepGrab, Censr o DataBlur. (4) Fechas casi siempre null: los resultados no mostraban fecha absoluta (el hub de Screen Studio solo dice 'hace 9 meses'). (5) Estado real de la remoción de Steps Recorder en 24H2 con fuentes en conflicto; no verifiqué mantenimiento de BetterStepsRecorder ni OpenSteps más allá de listados. (6) Solo 4 sobrevivientes (2 con confianza media, 2 baja), por debajo de la meta de 6-10: el hueco de captura/anotación general está saturado por gratuitas y por entrantes baratos de 2026. (7) Ideas evaluadas y descartadas sin ocupar el cupo de 'rejected', con su razón y URL: video-a-diapositivas multiplataforma (cubierto por Video2Any en navegador y Miavisc/video2slides open source; Slide Catcher Pro en Mac sin precio visible; https://dev.to/larryxue/how-i-built-a-browser-based-video-to-powerpoint-converter-ag0); modo demo/escritorio limpio (Mac: DeskMop, DemoVeil, CleanSlate, Desktop Ghost Pro $3.99, Quick Switcher $1.99, referencias de precio <$5; Windows sin producto pero sin evidencia de disposición a pagar; https://setapp.com/de/apps/deskmop); tabla de captura a Excel (Excel 'Data from Picture' + convertidores web; https://thebricks.com/resources/guide-how-to-convert-screenshot-to-excel); anotación en vivo en Mac (Presentify ~4.99-5.49 EUR, ZoomIt nativo para Mac vía Homebrew según un boletín; https://www.appgefahren.de/?p=280333); paquete de reporte de bugs local (Jam tiene plan gratuito y DevTools exporta logs; https://alternativeto.net/software/jam-dev/about); cortador de silencios para tutoriales en Windows/Linux (Recut $99 solo Mac, TimeBolt $247-$347 y auto-editor/jumpcutter gratuitos en CLI; hallé el hueco de precio pero no evidencia independiente de demanda, y no pude completar la verificación; https://toolradar.com/tools/recut/pricing). (8) Dominios sensibles: las ideas de anonimización de rostros/matrículas son solo para ocultar identidades; no se evaluó ningún caso de vigilancia."
+}

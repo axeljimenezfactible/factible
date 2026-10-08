@@ -1,7 +1,7 @@
 ---
 tags: [proyecto, productos-digitales, fase-1]
 creado: 2026-10-08
-estado: pasada-2-completa
+estado: pasada-3-completa
 ---
 
 # Fase 1 — Minería de Datos Exhaustiva (Global Trend Engine)
@@ -164,14 +164,56 @@ Aritmética del agente (CAC = CPC ÷ conversión). Para un CAC de $9, el CPC má
 2. **Con anuncios, un producto de consumo a $20 no cuadra en EE.UU. ni Alemania** según estos benchmarks. Quedan estas palancas: afiliados (el costo es la comisión, $6–$10), contenido y SEO de cola larga, marketplaces, precios más altos en herramientas profesionales ($29–$69 según la calibración), y nichos profesionales donde el comprador paga por tiempo ahorrado (contadores con varios clientes, conversión SEPA con fecha límite). Son hipótesis a probar, no resultados.
 3. **Los 88 candidatos sin verificar probablemente siguen el patrón** de la pasada 1: omitieron competencia gratuita. Es una inferencia mía, no verificada. No los doy por buenos.
 
+## Pasada 3: enfoque invertido (2026-10-08)
+
+Cinco agentes partieron de categorías que ya venden (utilidades de propósito único, captura e imagen, IA local y desarrollo, automatización, nichos profesionales) y buscaron el hueco que dejan los gratuitos. Método obligatorio: buscar primero 3 o más alternativas gratuitas, rechazar la idea si una la cubre, y solo entonces buscar evidencia de necesidad (2 fuentes independientes) y de precio. El tope de búsquedas compartido (200 por turno) se agotó en cada agente tras ~36–49 búsquedas, así que solo el de IA local llegó a la meta de 6 sobrevivientes; los demás dejaron 4. De nuevo nadie pudo abrir páginas.
+
+### Resultado
+
+- **22 sobrevivientes y 53 rechazados.** De las 75 ideas registradas, cayó el 71%. Tablas completas: `data/candidatos_pasada3.csv` y `data/rechazados_pasada3.csv`.
+- **Confianza:** 4 media, 18 baja, ninguna alta.
+- **Precio objetivo propuesto:** mediana de $29; 16 de los 20 que tienen precio quedan entre $19 y $49.
+- **Plataforma:** 15 multiplataforma, 3 solo Mac, 3 solo Windows, 1 web.
+
+### Los cuatro de confianza media
+
+| Candidato | Objetivo | Pagos observados | Hueco | Riesgo principal |
+|---|---|---|---|---|
+| `steps-recorder-successor-local` (Windows) | $29 | Pago único: Screenpresso Pro $29.99, ScreenSnap Pro $39, StepGrab $44.99 (Mac). Suscripción: Scribe $25–35/mes, Guidde $19–29/mes | Microsoft retiró Steps Recorder. Lo que genera los pasos solo es en la nube y por suscripción; los gratuitos locales son jóvenes o inactivos | Capturar por clic exige hooks de bajo nivel y firma de código; los antivirus pueden marcarlo; aparecen competidores gratuitos nuevos |
+| `audio-anonimizador-entrevistas` | $39 | Solo referencia forense: CaseGuard ~$299/usuario/mes. MacWhisper Pro €59 como ancla de transcripción local | Hoy se silencian nombres y teléfonos a mano en Audacity; la detección automática existe solo como código de investigación | Sin comparable a precio de consumidor. La detección de nombres tuvo F1 de 0.77 en un prototipo: exige revisión humana y no se puede prometer anonimato |
+| `extractos-bancarios-local-csv` | $49 | LedgerSprout $129 pago único; varios SaaS con ingresos pequeños ($0.6k–2.3k MRR en los listados claros) | Tabula y pdfplumber fallan con filas de varias líneas y con escaneos | Mercado saturado; cada banco tiene su formato; un error en un importe es crítico |
+| `scanned-photo-splitter-robust` (Mac y Windows) | $29 | ScanSpeeder desde $29.95; AutoSplitter ~$20–40 | Un usuario reporta que AutoSplitter no reconoce nada con huecos pequeños y acierta solo 30–50% con huecos grandes | Los incumbentes tienen prueba gratuita; hay que validar la precisión con escaneos reales antes de construir |
+
+### Otros con señal de precio
+
+- `culling-ia-local-pago-unico` (fotógrafos de bodas, $79): Aftershoot ~$120/año, FilterPixel ~$180/año, Narrative Select $10–15/mes; Photo Mechanic es de pago único pero sin IA. Construcción difícil (visión por computadora y formatos RAW de muchas cámaras). Sin ventas verificadas.
+- `conciliador-payouts-etsy-csv` ($39): Link My Books $17–21/mes y A2X $29/mes. No hay pago único equivalente, lo que puede ser un hueco o falta de demanda.
+- `limpiador-metadatos-oficina` ($19): BatchPurifier cuesta $19 en Windows; en Mac solo hay un título antiguo y una herramienta de línea de comandos.
+- `takeout-photo-date-fixer-gui` ($19.99): ya hay un vendedor de pago único a ~$24–30, y la herramienta gratuita GPTH Neo está activa.
+- `cotizador-ponderado-traductores` ($39): TO3000 cuesta €75–260 y AnyCount €49+.
+- El resto, todos de confianza baja: `ia-por-lotes-tabla`, `emails-a-pdf-por-lotes`, `autoguardado-adjuntos-correo`, `dividir-excel-por-columna`, `cross-platform-filename-preflight`, `apple-photos-export-onetime`, `screen-recording-secret-redactor`, `face-plate-anonymizer-offline`, `libro-a-audio-local`, `etiquetado-fotos-ia-local`, `traductor-pdf-local-formato`, `takeoff-pdf-oficios-mac-pago-unico`, `publisher-pub-converter` (su ventana cierra: el soporte perpetuo de Publisher termina el 13-oct-2026).
+
+### Qué enseña
+
+1. **Lo que ya está cubierto.** Los rechazos incluyen clones de CleanShot, Xnapper y Snagit para Windows y Linux, DaisyDisk y Permute para Windows y Linux, Hazel y Keyboard Maestro para Windows, expansión de texto, chat con documentos y quitafondos: hay gratuitos o pagos baratos que los cubren.
+2. **El techo de $20.** Según el agente de utilidades, las utilidades de una sola función se venden a $3–$10, y MacUpdater cerró en enero de 2026 por no sostener el pago único. Los $20 se aguantan solo en flujos de varios pasos.
+3. **Nichos profesionales.** "Pagan más": respaldado, con precios de $40–$300 en pago único y $17–$120 al mes. "Se alcanzan más barato": solo indicios y ninguna cifra de costo (descuento para miembros de ProZ, beneficios de ASMP, tienda de apps de Xero, Setapp). La saturación sigue alta: 10 de las 14 ideas de ese agente cayeron, y en 2026 aparecieron herramientas gratuitas nuevas.
+4. **Matemática de portafolio (inferencia mía).** El mejor caso de tracción visto es MacWhisper, con ~57.5K descargas y ~$100K (newsletter de 2023, autodeclarado, sin verificar). Un millón de ventas equivale a unos 17 productos de ese nivel, o a 100–200 productos si cada uno vendiera 5–10 mil unidades (supuesto ilustrativo mío, sin datos). Si el portafolio es el camino, el costo de producir cada micro-app pasa a ser la variable decisiva, y eso le da sentido al diseño modular y a la automatización de las Fases 2 y 3.
+
+### Límites de esta pasada
+
+Mismos que antes: solo resúmenes de búsqueda, sin hilos de usuarios con fecha (Reddit y HN no son accesibles), precios tomados de agregadores y no de las webs de los vendedores, y casi todas las fechas en `null`. Ningún candidato llega a confianza alta.
+
 ## Para pasar de hipótesis a datos
 
-1. **Desbloquear los hosts** (HN, Stack Exchange, Google Trends, Reddit) y **aprobar las claves de la Fase 0** (DataForSEO) para tener volúmenes y CPC por término. Sin cambios: sigue pendiente.
-2. **Pasada 3 con el enfoque invertido (recomendada).** En vez de partir de quejas, partir de lo que ya vende (utilidades de un solo propósito a $10–$20, captura de pantalla a $29, herramientas de desarrollo e IA local a $29–$69, automatización a $24–$42) y buscar el hueco que dejan los gratuitos dentro de esas categorías.
-3. **Puertas falsas** solo para los candidatos "rehacer" y "mantener" que lleguen a definir un diferenciador concreto, con precios de prueba de $19, $29 y $39. Requieren cuenta publicitaria y presupuesto, que son decisiones tuyas.
-4. **Tabla de cambio fija** (`price_local` y `currency`): no la apliqué, porque la verificación reordenó la lista de todos modos. Queda para cuando se vuelva a puntuar.
+1. **Abrir la red y las credenciales.** En el menú del entorno → *Edit* → *Network access*, añadir `hn.algolia.com`, `api.stackexchange.com`, `trends.google.com` y `api.dataforseo.com` (confirmar este último en la documentación de DataForSEO). Crear la cuenta de DataForSEO con saldo y guardar sus credenciales de API como `DATAFORSEO_LOGIN` y `DATAFORSEO_PASSWORD` en *Network secrets* (o *API credentials*), o como variables de entorno. Una sesión nueva las toma. Nunca pegar claves en el chat.
+2. **Medir volúmenes y CPC por término** de los 22 sobrevivientes y los 9 "rehacer". Requiere el paso 1; es lo que falta para pasar de hipótesis a datos.
+3. **Puertas falsas**, empezando por los 4 de confianza media, con precios de prueba de $19, $29 y $39. Requieren cuenta publicitaria y presupuesto, decisiones del usuario.
+4. **Fase 2 en paralelo.** Por la matemática de portafolio, los componentes compartidos (licencias, cobro vía comerciante de registro, actualizaciones, empaquetado para Windows y Mac, telemetría con consentimiento) son lo que decide si el modelo escala. Propuesto, no iniciado.
+5. **Tabla de cambio fija** (`price_local` y `currency`): no se aplicó, porque la verificación reordenó la lista de todos modos. Queda para cuando se vuelva a puntuar.
 
 ## Archivos
 - `global-trend-engine/score.py`, `faketest.py`, `tests/` (14 pruebas)
 - `global-trend-engine/data/`: `fase1_us.json`, `fase1_eu.json`, `fase1_asia.json`, `fase1_latam.json`, `fase1_wtp.json`, `ranking_v0.csv` (antes de la penalización), `ranking.csv` (v0.1)
 - Pasada 2: `fase1b_us.json`, `fase1b_eu.json`, `fase1b_asia.json`, `fase1b_latam.json`, `fase1b_cpc.json`, `verificacion_pasada2.csv`
+- Pasada 3: `fase1c_utilidades.json`, `fase1c_captura.json`, `fase1c_ia_dev.json`, `fase1c_automatizacion.json`, `fase1c_profesional.json`, `candidatos_pasada3.csv`, `rechazados_pasada3.csv`

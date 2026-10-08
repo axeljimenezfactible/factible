@@ -1,0 +1,372 @@
+{
+ "category": "utilidades de propósito único",
+ "survivors": [
+  {
+   "id": "takeout-photo-date-fixer-gui",
+   "gap": "Al exportar con Google Takeout, la fecha real y el GPS de cada foto quedan en archivos .json aparte y los archivos pierden el orden cronológico (aparecen con la fecha de exportación). Las soluciones gratuitas son de línea de comandos (ExifTool, GPTH) y piden pasos técnicos; el usuario no técnico que migra a iCloud/OneDrive/NAS/Proton se atasca.",
+   "micro_app_idea": "App de escritorio local (sin subir nada) que lee la carpeta de Takeout, empareja cada foto/video con su .json (incluidos nombres truncados y '(1)'), escribe fecha, zona horaria y GPS en EXIF/XMP, vista previa antes de escribir, y exporta carpetas por año/álbum.",
+   "segment": "Usuarios no técnicos que dejan Google Photos (hacia iCloud, OneDrive, NAS, Proton, Ente) y archivistas familiares",
+   "platform": "cross",
+   "proven_sellers": [
+    {
+     "name": "Metadata Fixer for Google Takeout",
+     "price_usd": null,
+     "currency": "USD",
+     "model": "freemium",
+     "traction_evidence": "AlternativeTo lo lista como compra única (licencia perpetua) de $24-$30 con versión gratuita limitada, Mac y Windows; no vi número de ventas. Un usuario del foro de Icedrive recuerda haber pagado ~$25 y dice que valió la pena. El precio exacto no se confirmó en la web del vendedor.",
+     "url": "https://alternativeto.net/software/https--metadatafixer-commetadata-fixer-for-google-takeout"
+    },
+    {
+     "name": "MetaFixer (iPhone)",
+     "price_usd": null,
+     "currency": "USD",
+     "model": "freemium",
+     "traction_evidence": "App Store: gratis con compras in-app; el nivel gratuito guarda hasta 100 fotos/videos de Takeout y el premium quita el tope. No vi precio ni valoraciones.",
+     "url": "https://apps.apple.com/us/app/id6504122471"
+    }
+   ],
+   "free_alternatives": [
+    {
+     "name": "ExifTool",
+     "url": "https://exiftool.org/forum/index.php?msg=80113",
+     "what_it_covers": "Fusiona fecha y GPS desde los .json con comandos; la opción gratuita más recomendada",
+     "what_it_lacks": "Solo línea de comandos; hay que escribir comandos distintos para fechas y coordenadas; el foro documenta problemas de nombres truncados y zona horaria UTC"
+    },
+    {
+     "name": "GooglePhotosTakeoutHelper Neo (fork de TheLastGimbus)",
+     "url": "https://github.com/Xentraxx/GooglePhotosTakeoutHelper_Neo",
+     "what_it_covers": "Reordena el Takeout, corrige fechas y metadatos, varias estrategias de álbumes (atajos, hardlinks, JSON)",
+     "what_it_lacks": "Herramienta de línea de comandos; el autor avisa que los modos --transform-pixel-mp están rotos; no confirmé un instalador con interfaz gráfica"
+    },
+    {
+     "name": "google-photo-meta-fixer (gp-cleaner)",
+     "url": "https://pypi.org/project/google-photo-meta-fixer/",
+     "what_it_covers": "CLI en Python (MIT) que fusiona los .json en las fotos",
+     "what_it_lacks": "Requiere Python y terminal"
+    },
+    {
+     "name": "FixPhotoExif",
+     "url": "https://github.com/aleclerc7/FixPhotoExif",
+     "what_it_covers": "Calcula una fecha a partir del JSON y deja revisar antes de escribir",
+     "what_it_lacks": "No confirmé que tenga interfaz gráfica; se recomienda copia de seguridad previa"
+    },
+    {
+     "name": "Ente (importación de Takeout)",
+     "url": "https://help.ente.io/photos/faq/metadata-and-editing",
+     "what_it_covers": "Lee EXIF/XMP/IPTC y los JSON de Takeout al importar una carpeta",
+     "what_it_lacks": "Solo sirve si te mudas a Ente; no deja archivos corregidos en disco para otro destino"
+    }
+   ],
+   "gap_evidence": [
+    {
+     "url": "https://exiftool.org/forum/index.php?msg=75815",
+     "what": "Hilo del foro de ExifTool 'Google Takeout Date issue'",
+     "date": null
+    },
+    {
+     "url": "https://exiftool.org/forum/index.php?msg=79605",
+     "what": "Hilo 'Google takeout to OneDrive metadata issues' (dates/metadata al migrar a OneDrive)",
+     "date": null
+    },
+    {
+     "url": "https://forum.photostructure.com/t/creation-time-formatted-time-total-confusion-or-google-takeout-sidecar-files-are-misnamed/574",
+     "what": "'Google Takeout Sidecar Files Are Misnamed': los .json no coinciden con el nombre de la foto, rompe herramientas",
+     "date": null
+    },
+    {
+     "url": "https://forums.macrumors.com/threads/transition-from-google-photos-to-icloud.2147851/",
+     "what": "Hilo de MacRumors 'transition from google photos to icloud' sobre fechas tras exportar",
+     "date": null
+    }
+   ],
+   "differentiator": "Los gratuitos exigen terminal y cadenas de comandos; un pago único de ~$20 vende vista previa, informe de archivos sin JSON, corrección de zona horaria y empaquetado por año/álbum con un clic. La migración Google->otro servicio es un evento puntual, ideal para pago único (no suscripción).",
+   "price_evidence": "Metadata Fixer for Google Takeout: compra única $24-$30 según AlternativeTo (tercero), ~$25 según usuario de Icedrive (https://community.icedrive.net/t/google-photo-upload/1037). MetaFixer iOS: freemium con límite de 100 fotos (https://apps.apple.com/us/app/id6504122471).",
+   "target_price_usd": 19.99,
+   "build_complexity_1to5": 3,
+   "risks": "Ya hay un vendedor de pago único establecido (~$25) y GPTH Neo es activo y gratis; las reglas de emparejamiento de Takeout cambian y exigen mantenimiento; casos borde (Live Photos, Motion Photos de Pixel, nombres truncados a 46 caracteres, zona horaria); demanda ligada a una ola de migraciones puntual.",
+   "confidence": "low",
+   "confidence_basis": "Existe un vendedor del mismo tipo a $24-$30 y la necesidad está documentada en foros, pero ninguna evidencia tiene fecha ni vi cifras de ventas; las alternativas gratuitas cubren la función para usuarios técnicos."
+  },
+  {
+   "id": "cross-platform-filename-preflight",
+   "gap": "Al mover carpetas creadas en Mac/NAS/Windows antiguo a OneDrive/SharePoint/Dropbox (o a discos exFAT/ZIP) fallan por caracteres inválidos (< > : \" | ? * / \\), espacios al inicio/fin, nombres reservados y rutas de más de ~400 caracteres. Las guías de universidades mandan a renombrar a mano archivo por archivo desde 'View sync problems', y usuarios de Bulk Rename Utility piden un escaneo recursivo de caracteres ilegales y espacios finales.",
+   "micro_app_idea": "App local de 'pre-vuelo': escanea una carpeta con perfiles de destino (OneDrive/SharePoint, Dropbox, Windows, exFAT), lista todos los nombres/rutas problemáticos (incluye carpetas primero), propone nombres nuevos con vista previa y deshacer, y exporta un reporte CSV.",
+   "segment": "Personas y pequeñas oficinas que migran archivos de Mac/NAS a OneDrive/SharePoint o Dropbox; consultores TI independientes",
+   "platform": "cross",
+   "proven_sellers": [
+    {
+     "name": "CloudFuze (herramienta de migración que reemplaza caracteres no soportados por guion o guion bajo)",
+     "price_usd": null,
+     "currency": "USD",
+     "model": null,
+     "traction_evidence": "Página de vendedor sobre limitaciones de SharePoint; no vi precio ni tracción. Es un servicio de migración empresarial, no una utilidad de pago único; sirve solo como prueba de que el problema se vende como parte de migraciones.",
+     "url": "https://www.cloudfuze.com/overcoming-limitations-when-migrating-to-sharepoint-online/"
+    },
+    {
+     "name": "File Renamer 4 (Mac), citado por usuarios para reemplazar varios caracteres en una jerarquía",
+     "price_usd": null,
+     "currency": "USD",
+     "model": null,
+     "traction_evidence": "Solo mencionado en un hilo de usuarios; no pude verificar disponibilidad ni precio actual.",
+     "url": null
+    }
+   ],
+   "free_alternatives": [
+    {
+     "name": "Bulk Rename Utility (Windows)",
+     "url": "https://www.bulkrenameutility.co.uk/forum/viewtopic.php?p=12887",
+     "what_it_covers": "Renombrado masivo y reemplazo de caracteres",
+     "what_it_lacks": "Usuarios del foro preguntan por escaneo recursivo de caracteres ilegales y espacios finales y reportan el error 'The System cannot find the file specified' al renombrar nombres con espacios finales; interfaz densa"
+    },
+    {
+     "name": "Microsoft SharePoint Migration Tool (SPMT)",
+     "url": "https://learn.microsoft.com/en-gb/sharepointmigration/spmt-settings",
+     "what_it_covers": "Opción 'scan' que marca caracteres no soportados, rutas largas y archivos grandes, y puede reemplazar caracteres inválidos por uno elegido",
+     "what_it_lacks": "Pensada para migraciones a Microsoft 365 con CSV de orígenes; no sirve para Dropbox, NAS, exFAT ni para revisar antes sin cuenta de tenant (no verifiqué requisitos exactos)"
+    },
+    {
+     "name": "Vista 'View sync problems' de OneDrive",
+     "url": "https://bowdoin.teamdynamix.com/TDClient/1814/Portal/KB/ArticleDet?ID=41073",
+     "what_it_covers": "Muestra los archivos que no se sincronizan y abre el Finder en cada uno",
+     "what_it_lacks": "Corrección manual archivo por archivo; solo detecta después de que falla la sincronización"
+    },
+    {
+     "name": "Scripts de PowerShell/shell (sugerencia de la búsqueda, no una app)",
+     "url": null,
+     "what_it_covers": "Listar coincidencias antes de renombrar",
+     "what_it_lacks": "Exige escribir scripts; sin vista previa ni deshacer"
+    }
+   ],
+   "gap_evidence": [
+    {
+     "url": "https://services.dartmouth.edu/TDClient/KB/ArticleDet?ID=70539",
+     "what": "Guía de Dartmouth 'OneDrive Not Syncing Due to Invalid Characters'",
+     "date": null
+    },
+    {
+     "url": "https://bowdoin.teamdynamix.com/TDClient/1814/Portal/KB/ArticleDet?ID=41073",
+     "what": "Guía de Bowdoin: archivos creados en Mac con caracteres válidos en macOS pero no en Windows no suben a OneDrive; solución manual desde el icono de OneDrive",
+     "date": null
+    },
+    {
+     "url": "https://www.bulkrenameutility.co.uk/forum/viewtopic.php?p=8249",
+     "what": "Foro de Bulk Rename Utility: usuario pide reemplazar múltiples caracteres problemáticos en una sola pasada (también hilos 'Windows Illegal Character Help')",
+     "date": null
+    },
+    {
+     "url": "https://www.dropboxforum.com/t5/Files-folders/Removing-invalid-characters-in-file-names-in-bulk/td-p/258123",
+     "what": "Foro de Dropbox 'Removing invalid characters in file names in bulk': Dropbox no ofrece forma de hacerlo",
+     "date": null
+    }
+   ],
+   "differentiator": "Un pago único para una migración puntual: escaneo previo contra reglas de cada destino, carpetas primero, vista previa y deshacer, informe exportable. Lo gratuito es o una herramienta de migración empresarial o un renombrador genérico sin reglas de destino.",
+   "price_evidence": "No encontré un producto vendido equivalente ni su precio. Ancla indirecta: utilidades de renombrado/fechas de Mac se venden entre $2.99 y $7.99 en la Mac App Store (p. ej. File Date & Time Editor $7.99, https://apps.apple.com/us/app/file-date-time-editor/id6763069567?mt=12&uo=4); el precio de $20 no está respaldado.",
+   "target_price_usd": 9.99,
+   "build_complexity_1to5": 4,
+   "risks": "No hay vendedor probado; techo de precio probablemente $5-$10; Microsoft y Dropbox pueden mejorar sus avisos de sincronización; reglas de destino cambian (límite de ruta 260 vs 400, nombres reservados).",
+   "confidence": "low",
+   "confidence_basis": "Necesidad documentada en 4 fuentes independientes (guías de universidades y foros) pero sin fechas, sin vendedor de referencia y sin evidencia de precio directa."
+  },
+  {
+   "id": "apple-photos-export-onetime",
+   "gap": "Exportar una fototeca de Apple Photos (con 'Optimizar almacenamiento' los originales viven en iCloud) a carpetas por año/mes/álbum con EXIF/GPS, ediciones y Live Photos. Lo gratuito potente (osxphotos) es de terminal y la opción de pago conocida (Photos Takeout) aparece en AlternativeTo como suscripción de $9/mes, aunque en 2021 se vendía con compra in-app de $12.99 hasta 50 GB (fuentes en conflicto).",
+   "micro_app_idea": "App nativa de Mac que usa PhotoKit para descargar y exportar originales y ediciones de la fototeca a carpetas por fecha o álbum, con metadatos intactos, modo incremental y verificación; pago único sin suscripción.",
+   "segment": "Usuarios de Mac que dejan Apple Photos/iCloud (hacia NAS, Synology, Google, Ente) o quieren respaldo en carpetas legibles",
+   "platform": "mac",
+   "proven_sellers": [
+    {
+     "name": "Photos Takeout (App Initio Limited)",
+     "price_usd": 12.99,
+     "currency": "USD",
+     "model": "freemium",
+     "traction_evidence": "Reseña de 9to5Mac (2021): descarga gratis y compra in-app de $12.99 para bibliotecas de hasta 50 GB, $54.99 para mayores. AlternativeTo hoy lo describe como suscripción de $9/mes; no pude resolver el conflicto ni vi número de valoraciones.",
+     "url": "https://9to5mac.com/2021/02/08/export-icloud-photos-with-photos-takeout/"
+    }
+   ],
+   "free_alternatives": [
+    {
+     "name": "osxphotos",
+     "url": "https://pypi.org/project/osxphotos/0.67.10",
+     "what_it_covers": "Exporta originales y ediciones, Live Photos, carpetas por fecha o álbum (--export-by-date, plantillas de directorio); solo macOS",
+     "what_it_lacks": "Línea de comandos, sin interfaz gráfica"
+    },
+    {
+     "name": "Exportar desde la app Fotos (Archivo > Exportar)",
+     "url": "https://talk.tidbits.com/t/apple-photos-export-strategies/18736",
+     "what_it_covers": "Exportación integrada de originales sin modificar",
+     "what_it_lacks": "Un usuario del foro la calificó de poco manejable para bibliotecas grandes; sin estructura por álbum/fecha automática (según el hilo)"
+    },
+    {
+     "name": "Copiar originales desde el paquete .photoslibrary",
+     "url": "https://talk.tidbits.com/t/apple-photos-export-strategies/18736",
+     "what_it_covers": "Copia directa de archivos originales",
+     "what_it_lacks": "Carpetas internas desordenadas; no sirve si los originales están solo en iCloud"
+    },
+    {
+     "name": "Importar a Lightroom o Capture One",
+     "url": "https://talk.tidbits.com/t/apple-photos-export-strategies/18736",
+     "what_it_covers": "Importan desde Fotos y manejan ediciones",
+     "what_it_lacks": "Lightroom es de pago/suscripción y Capture One solo tiene demo en el hilo; no son una exportación a carpetas"
+    }
+   ],
+   "gap_evidence": [
+    {
+     "url": "https://talk.tidbits.com/t/apple-photos-export-strategies/18736",
+     "what": "Hilo de TidBITS 'Apple Photos Export Strategies?': ninguna opción cómoda para bibliotecas grandes",
+     "date": null
+    },
+    {
+     "url": "https://www.synoforum.com/threads/export-mac-photo-libraries-to-synology-photos.5974/latest",
+     "what": "Foro Synology 'Export Mac photo libraries to Synology Photos'",
+     "date": null
+    }
+   ],
+   "differentiator": "Interfaz gráfica sin terminal, pago único frente a la suscripción que lista AlternativeTo, exportación incremental y verificación; la salida a carpetas legibles es un evento de salida de plataforma.",
+   "price_evidence": "Photos Takeout: $12.99 compra in-app hasta 50 GB y $54.99 mayores (9to5Mac, 2021, https://9to5mac.com/2021/02/08/export-icloud-photos-with-photos-takeout/); AlternativeTo lo lista como suscripción $9/mes (https://alternativeto.net/software/photos-takeout/about). Sin cifras de ventas.",
+   "target_price_usd": 19.99,
+   "build_complexity_1to5": 3,
+   "risks": "Fuentes de precio en conflicto; osxphotos es gratis, activo y muy completo; cambios de Apple en PhotoKit/formato de fototeca; permisos de sandbox; Live Photos y ediciones son casos borde; demanda puntual por migración.",
+   "confidence": "low",
+   "confidence_basis": "Existe un vendedor del mismo tipo y la necesidad aparece en dos foros, pero las fuentes de precio se contradicen, no hay fechas ni valoraciones, y la alternativa gratuita técnica es fuerte."
+  },
+  {
+   "id": "publisher-pub-converter",
+   "gap": "Microsoft retiró Publisher: los suscriptores de Microsoft 365 pierden el acceso el 1-oct-2026 y las versiones perpetuas dejan de tener soporte el 13-oct-2026 (las fuentes difieren). Microsoft pide convertir antes de esa fecha; después ya no se pueden abrir ni editar los .pub. La opción gratuita (LibreOffice Draw vía libmspub) cambia el diseño y no hay convertidor fiel conocido.",
+   "micro_app_idea": "Convertidor local por lotes de .pub a PDF fiel y a formato editable (DOCX/ODG/SVG) con informe de fidelidad por archivo, sin subir nada a la nube.",
+   "segment": "Pequeños negocios, escuelas, iglesias, ONG e imprentas con archivos .pub de volantes, boletines, etiquetas y calendarios",
+   "platform": "cross",
+   "proven_sellers": [],
+   "free_alternatives": [
+    {
+     "name": "LibreOffice Draw (importa .pub con libmspub)",
+     "url": "https://ask.libreoffice.org/t/converting-ms-publisher-to-libre-office-files/8638",
+     "what_it_covers": "Abre .pub y permite guardar a .odt/PDF",
+     "what_it_lacks": "Esperar cambios de diseño; bordes, rellenos y diseños complejos son los que más se rompen (no pude confirmar la calidad actual en fuente primaria)"
+    },
+    {
+     "name": "Exportar desde el propio Publisher a PDF/Word/PowerPoint",
+     "url": "https://support.microsoft.com/en-us/publisher",
+     "what_it_covers": "Conversión oficial recomendada por Microsoft mientras haya acceso",
+     "what_it_lacks": "Solo sirve si todavía puedes abrir Publisher; tras el 1-oct-2026 los suscriptores M365 ya no pueden"
+    },
+    {
+     "name": "Conversores en línea (Zamzar, pdfonline.com)",
+     "url": null,
+     "what_it_covers": "Convierten .pub a PDF/.doc/.odt",
+     "what_it_lacks": "Recomendaciones de foros antiguos; exigen subir archivos de clientes a un tercero; calidad no verificada"
+    },
+    {
+     "name": "Scribus",
+     "url": null,
+     "what_it_covers": "Posible importación de .pub (no verificado; su FAQ de 2007 decía que no)",
+     "what_it_lacks": "Soporte no confirmado"
+    }
+   ],
+   "gap_evidence": [
+    {
+     "url": "https://windowslatest.com/2026/08/10/microsoft-says-its-committed-to-improving-microsoft-365-by-shutting-publisher-down-and-you-have-2-months-to-save-your-files/",
+     "what": "Windows Latest: 'you have 2 months to save your files' al cerrar Publisher",
+     "date": "2026-08"
+    },
+    {
+     "url": "https://uwaterloo.ca/science-computing/news/microsoft-publisher-end-support-october-2026",
+     "what": "Aviso de la Universidad de Waterloo sobre el fin de soporte de Publisher en oct-2026",
+     "date": "2026-07"
+    },
+    {
+     "url": "https://ask.libreoffice.org/t/converting-ms-publisher-to-libre-office-files/8638",
+     "what": "Hilo de LibreOffice 'Converting Ms Publisher to Libre office files' (la importación pierde elementos de diseño según consejos de la comunidad)",
+     "date": null
+    }
+   ],
+   "differentiator": "Fidelidad de diseño y lotes locales; la alternativa gratuita rompe el diseño y las conversiones en línea obligan a subir archivos.",
+   "price_evidence": "No encontré ningún convertidor de .pub vendido ni su precio; el precio objetivo es una hipótesis a validar con preventa. Microsoft ofrece guía de migración a Word/PowerPoint/Designer (https://support.microsoft.com/en-us/publisher).",
+   "target_price_usd": 14.99,
+   "build_complexity_1to5": 2,
+   "risks": "Ventana casi cerrada (hoy es 2026-10-08 y el soporte perpetuo termina el 13-oct-2026); demanda de un solo evento; el formato .pub es binario y complejo, la fidelidad depende de libmspub; LibreOffice y Microsoft pueden cubrir a la mayoría; sin vendedor probado.",
+   "confidence": "low",
+   "confidence_basis": "El evento y las fechas están bien documentados en fuentes de 2026, pero no hay evidencia de que alguien pague por convertir ni de precio, y la alternativa gratuita cubre parte del caso."
+  }
+ ],
+ "rejected": [
+  {
+   "idea": "Equivalente de DaisyDisk para Windows/Linux",
+   "reason": "Saturado de gratuitos: WinDirStat (código abierto, treemap), WizTree (gratis uso personal, muy rápido), FreeUpDisk (treemap con limpieza), TreeSize; en Linux Filelight (sunburst). Lo único que falta es pulido visual, que no justifica pago.",
+   "covering_free_alternative": "WinDirStat, WizTree, FreeUpDisk, Filelight",
+   "url": "https://alternativeto.net/software/daisydisk/"
+  },
+  {
+   "idea": "Equivalente de Permute (conversor arrastrar y soltar de audio/video/imagen) para Windows/Linux",
+   "reason": "Adapter es gratis, funciona en Mac y PC y cubre audio, video e imagen; HandBrake es gratis; Frame y FFmate gratuitos; ya hay de pago (GetCompress, Freemake). Sin hueco.",
+   "covering_free_alternative": "Adapter, HandBrake, Frame, FFmate",
+   "url": "https://alternativeto.net/software/permute"
+  },
+  {
+   "idea": "Constructor de audiolibros m4b con capítulos para Windows/Linux (equivalente de Audiobook Builder de Mac)",
+   "reason": "AudioBookConverter es gratis y de código abierto en Windows, m4b-tool/auto-m4b/m4b-merge cubren a usuarios técnicos y Audiobook Builder vende por debajo de $10 (reseña de 2024: 'sub US$10'), así que el techo de precio es bajo. La única carencia (capítulos perdidos al combinar en AudioBookConverter, Discussion #246) no justifica un producto de $20.",
+   "covering_free_alternative": "AudioBookConverter, m4b-tool, auto-m4b",
+   "url": "https://github.com/yermak/AudioBookConverter/discussions/246"
+  },
+  {
+   "idea": "Equivalente de Hazel (reglas automáticas sobre carpetas) para Windows",
+   "reason": "Mercado ya poblado: DropIt (gratis, código abierto, 17 acciones, regex), FileSorter (gratis), AutoIt, y de pago File Juggler, FilePipe, Sorterox, FileFlow, Movelooper, File Arbor; no vi precio de File Juggler.",
+   "covering_free_alternative": "DropIt, FileSorter",
+   "url": "https://alternativeto.net/software/hazel/"
+  },
+  {
+   "idea": "Sucesor de MacUpdater (actualizador de apps de Mac) tras su cierre en ene-2026",
+   "reason": "CoreCode cerró MacUpdater (vendía a $14.99 pago único) argumentando que no logró un modelo sostenible sin suscripción: señal negativa directa para pago único. Además requiere una base de datos propietaria de versiones. Gratis y recomendado: Latest; también Homebrew; de pago: App Cleaner & Uninstaller, MacUpdate Desktop ($9.99/año).",
+   "covering_free_alternative": "Latest (gratis), Homebrew",
+   "url": "https://tidbits.com/2026/01/09/macupdater-shuts-down-leaving-users-searching-for-alternatives/"
+  },
+  {
+   "idea": "Monitor de SMART/salud de disco para Mac (equivalente de DriveDx)",
+   "reason": "DriveDx vende desde ~$19.99 (Macworld 2019; un revendedor lo lista a $24.99), pero lo gratuito cubre SATA/NVMe internos y Thunderbolt: smartmontools (CLI) y GSmartControl (GUI, GPL; en Windows/Linux además CrystalDiskInfo). El valor real de DriveDx es un driver de kernel para leer SMART en discos USB, que una micro-app generada con IA no puede replicar.",
+   "covering_free_alternative": "smartmontools, GSmartControl",
+   "url": "https://www.macworld.com/article/3391395/drivedx-review.html"
+  },
+  {
+   "idea": "Estante de arrastre tipo Yoink/Dropover para Windows/Linux",
+   "reason": "Tokri (gratis, código abierto, Windows/Mac/Linux), DropPoint (gratis, código abierto, multiplataforma) y Dropshelf (freemium; un usuario de AlternativeTo dice que Pro cuesta ~4 EUR pago único). Techo de precio muy por debajo de $10.",
+   "covering_free_alternative": "Tokri, DropPoint, Dropshelf",
+   "url": "https://alternativeto.net/software/dropover"
+  },
+  {
+   "idea": "Equivalente de PopClip (barra flotante al seleccionar texto) para Windows/Linux",
+   "reason": "SnipDo (freemium, Windows) hace exactamente la ventana emergente al seleccionar texto; TextGO (Mac/Windows) y Click.to existen. Sin hueco en Windows; en Linux no vi alternativa pero el mercado de pago en Linux es mínimo.",
+   "covering_free_alternative": "SnipDo, TextGO",
+   "url": "https://alternativeto.net/software/popclip"
+  },
+  {
+   "idea": "Normalizador de volumen por lotes (LUFS) para podcasts/música, sucesor de Levelator/MP3Gain",
+   "reason": "Hay herramientas gratuitas activas multiplataforma: LUFScale (código abierto, GPL-3.0, Windows/macOS), mLoudness (Windows/macOS/Linux, con presets de podcast y audiolibro) y Audio Normalizer; Auphonic y Audacity también cubren.",
+   "covering_free_alternative": "LUFScale, mLoudness",
+   "url": "https://rekkerd.org/free-lufscale-open-source-loudness-normalization-tool/"
+  },
+  {
+   "idea": "Rastreador de crecimiento de disco ('qué creció desde el último escaneo') para Mac o Windows",
+   "reason": "DaisyDisk no compara escaneos, pero el hueco ya lo cubre StorageRadar en Mac (Gratis / $9.99 / $19.99 pago único, 2026, requiere macOS 15+) y en Windows TreeSize Professional (~46.95 EUR) y WizTree (exportar/importar CSV, donationware). En CLI, ncdu-compare y disky son gratis.",
+   "covering_free_alternative": "WizTree (CSV), ncdu-compare, disky",
+   "url": "https://storageradar.chama.pro/blog/how-to-compare-disk-usage-over-time-on-mac"
+  },
+  {
+   "idea": "Compresor de video a un tamaño objetivo (Discord/email) para Mac y Windows",
+   "reason": "Ya hay muchas apps baratas: Video Size Compressor ($4.99, tamaño exacto en MB, lotes) y Compress Any Video Pro ($4.99) en Mac, Compresso Desktop (freemium Mac/Windows, con 'Max file size' en Pro), Cisdem (de pago); Constrict es gratis en Linux y HandBrake gratis con cálculo manual de bitrate. Techo de precio de ~$5.",
+   "covering_free_alternative": "HandBrake (bitrate manual), Constrict (Linux), Compresso (freemium)",
+   "url": "https://alternativeto.net/software/fittomb"
+  },
+  {
+   "idea": "Editor masivo de fechas de creación/modificación de archivos para Mac",
+   "reason": "Saturado y barato: File Time $2.99, Touch File Date and Time $4.99, File Date & Time Editor $7.99, Miana con prueba; Restore Creation Dates es gratis; A Better Finder Attributes costaba $14.95 en 2014. El techo real está por debajo de $10.",
+   "covering_free_alternative": "Restore Creation Dates (gratis, restaura fechas), Terminal (touch/SetFile)",
+   "url": "https://alternativeto.net/feature/change-file-dates/"
+  },
+  {
+   "idea": "Catalogador offline de discos externos ('en qué disco está mi archivo') multiplataforma",
+   "reason": "Cubierto: JDiskCat (código abierto GPLv2, Java, multiplataforma), catcli/gocatcli (CLI gratis), WinCatalog (Windows, prueba 30 días), DiskCatalogMaker (Mac, pago único), Offline Disks File Searcher ($8.99) y NeoFinder (~$38-$39.99). No encontré evidencia de necesidad insatisfecha ni peticiones.",
+   "covering_free_alternative": "JDiskCat, gocatcli",
+   "url": "https://alternativeto.net/software/cdfinder"
+  }
+ ],
+ "limitations": "1) El presupuesto de WebSearch del turno (200 compartido entre agentes) se agotó tras ~36 búsquedas exitosas; una idea pendiente (escáner de apps Intel/Rosetta 2 en Mac) quedó sin verificar y no se incluye. 2) Solo 4 sobrevivientes (meta 6-10), todos con confianza baja; 13 rechazados (más de los 10 previstos, se dejaron por su valor informativo). 3) Casi ninguna evidencia de necesidad trae fecha; los precios salen sobre todo de agregadores (AlternativeTo, resúmenes de App Store, 9to5Mac 2021) y no de las webs de los vendedores; no pude confirmar precio ni ventas de Metadata Fixer, Photos Takeout (fuentes en conflicto: $12.99 in-app en 2021 vs suscripción $9/mes) ni File Juggler. 4) Hallazgo estructural: las utilidades de una sola función se venden por $3-$10 (File Time $2.99, Touch $4.99, Video Size Compressor $4.99, Offline Disks $8.99, Dropshelf ~4 EUR, Audiobook Builder <$10); $15-$20 solo se sostiene para flujos de trabajo de varios pasos o con valor percibido alto (DaisyDisk $9.99 con 2.7K valoraciones y PDF Squeezer $19.99 son la excepción), y el caso MacUpdater (cerrado en ene-2026 por no lograr un modelo sostenible sin suscripción) es una advertencia directa sobre pago único. 5) No verifiqué la exportación oficial de datos de Apple (privacy.apple.com) ni opciones nativas de Google Photos frente a las ideas de fotos. 6) El survivor del convertidor .pub tiene una ventana temporal casi cerrada y ninguna evidencia de precio. 7) WebFetch/curl no se usaron."
+}
