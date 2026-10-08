@@ -25,21 +25,36 @@ Los pasos 1 a 4 son lo único necesario para medir la demanda real de los candid
 
 ## Paso 1: abrir la red
 
-1. En la barra del título de la sesión, abre el **menú del entorno en la nube** y elige **Edit**.
-2. Entra en **Network access**.
-3. En **Allowed domains**, añade estos cuatro dominios:
+**Qué es.** Cada sesión en la nube corre en un "entorno" con un cortafuegos de lista blanca. Por defecto el nivel de acceso es **Limited**: solo deja pasar dominios de una lista (servicios de Anthropic, GitHub, GitLab, registros de contenedores y gestores de paquetes). Los cuatro dominios que necesito están fuera de esa lista; por eso recibí un error 403 al intentar usarlos. Lo que hay que hacer es **añadirlos a la lista de dominios permitidos** del entorno.
+
+**Dónde está.** Hay dos caminos y llevan al mismo cuadro de diálogo:
+- **Camino A (desde esta sesión):** en la barra del título de la sesión, pulsa el nombre del **entorno en la nube** y elige **Edit**.
+- **Camino B (desde la web):** entra a claude.ai/code, abre el selector de entornos, pasa el ratón sobre tu entorno y pulsa el **icono de ajustes** que aparece a la derecha.
+
+**Qué verás.** Un cuadro con el nombre del entorno, el **nivel de acceso a la red**, las variables de entorno y un script de configuración. Las etiquetas pueden variar un poco según la versión de la app.
+
+**Qué hacer, paso a paso.**
+1. En **Network access** deja el nivel en **Limited**. En las versiones de la app sin actualizar, esa misma opción aparece como **Custom**.
+2. Busca el campo **Allowed domains** (dominios permitidos).
+3. Añade estos cuatro dominios, solo el nombre y sin `https://`. Si el campo muestra un ejemplo de formato, sigue ese (normalmente uno por línea):
    - `hn.algolia.com` (Hacker News)
    - `api.stackexchange.com` (Stack Exchange)
    - `trends.google.com` (Google Trends)
-   - `api.dataforseo.com` (DataForSEO)
-4. Deja marcada la casilla **Allow package managers**.
+   - `api.dataforseo.com` (DataForSEO; confirma este nombre en la documentación de DataForSEO)
+4. Deja **marcada** la casilla que incluye la lista predeterminada de gestores de paquetes (**Allow package managers**), para que no se rompan las instalaciones.
 5. Guarda.
 
-Notas:
-- Hay otra opción: un nivel de acceso más amplio. Da menos control; la lista exacta de niveles puede variar. La guía oficial está en https://code.claude.com/docs/en/cloud-environments#network-access.
+**Cómo comprobar que quedó.** Los cambios los toma una **sesión nueva** (paso 4). En ella te pediré que pruebe cada dominio; si responde, está bien.
+
+**Por qué no abrir todo.** Existe la opción de un nivel de acceso más amplio que la lista blanca. Mi recomendación, que es una buena práctica y no algo que diga la documentación: no la uses. Una sesión con acceso libre a internet, que además tendrá tus credenciales de DataForSEO, tiene más superficie si alguien logra colar instrucciones en una página que se lea. La lista de cuatro dominios es suficiente.
+
+**Casos especiales.**
 - **No añadas Reddit.** Sus términos restringen este uso de los datos.
-- Si el menú no te deja editar, la política la fija el administrador de tu organización: pídele esos cuatro dominios.
-- Hasta ahora `WebFetch` falla por DNS. No sé si este cambio lo arregla.
+- **Si no ves la opción o está bloqueada,** la política la fija el administrador de tu organización. Envíale este mensaje: *"Por favor permitan estos dominios en el entorno en la nube de Claude Code para el proyecto: hn.algolia.com, api.stackexchange.com, trends.google.com y api.dataforseo.com. Son APIs públicas de consulta."*
+- **`WebFetch`** (la herramienta que abre páginas) falla por DNS desde el principio. No sé si este cambio lo arregla.
+- **Si algo no coincide con lo que ves,** dime qué opciones aparecen en el cuadro y te guío con tu pantalla.
+
+La guía oficial está en https://code.claude.com/docs/en/cloud-environments#network-access.
 
 ## Paso 2: crear la cuenta de DataForSEO
 
