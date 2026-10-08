@@ -1,0 +1,36 @@
+{
+  "id": "scanned-photo-splitter-robust",
+  "name": "Separador de fotos escaneadas (nombre provisional, sin revisión de marca)",
+  "source_candidate": "scanned-photo-splitter-robust",
+  "phase1_confidence": "med",
+  "platforms": ["windows", "mac"],
+  "price_usd": 29,
+  "license_model": "perpetual+12m-updates",
+  "privacy": {"processes_locally": true, "network_calls": ["license", "update"]},
+  "modules": [
+    {"id": "vision.contours", "config": {"tolerance": "fotos casi pegadas"}},
+    {"id": "meta.docs", "config": {"keep": ["exif"]}},
+    {"id": "batch.queue"},
+    {"id": "review.ui", "config": {"mode": "vista-previa-de-recortes"}},
+    {"id": "export.formats", "config": {"formats": ["jpg", "png"]}},
+    {"id": "io.files"}
+  ],
+  "flow": [
+    "Importar uno o varios escaneos con varias fotos cada uno",
+    "Detectar cada foto y enderezarla, aunque estén casi pegadas",
+    "Mostrar una vista previa de los recortes y permitir ajustar a mano",
+    "Guardar cada foto como archivo aparte"
+  ],
+  "review_required": false,
+  "golden_tests": [
+    {"name": "huecos-pequenos", "description": "Un escaneo de prueba con fotos separadas por menos de 2 mm se divide en el número correcto de fotos."},
+    {"name": "borde-blanco", "description": "Una foto con borde blanco o sombra se recorta sin perder la imagen."},
+    {"name": "lote", "description": "Un lote de 20 escaneos de prueba se procesa sin intervención y se puede cancelar y reanudar."}
+  ],
+  "risks": [
+    "La propuesta de valor es la precisión con fotos pegadas: hay que medirla con escaneos reales antes de construir.",
+    "El producto establecido (ScanSpeeder) tiene prueba gratuita.",
+    "Existe un complemento gratuito de GIMP, aunque de instalación manual."
+  ],
+  "validation": {"fake_door_prices_usd": [19, 29, 39], "status": "pendiente"}
+}

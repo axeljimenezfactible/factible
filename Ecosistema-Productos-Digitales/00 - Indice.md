@@ -18,9 +18,12 @@ meta: 1,000,000 de ventas x $20 USD
 |---|---|---|
 | 0 — Diagnóstico y desbloqueo de herramientas | [[02 - Fase 0 - Diagnostico y Herramientas]] | Borrador entregado. Falta tu aprobación de presupuesto y cuentas |
 | 1 — Minería de datos (Global Trend Engine) | [[03 - Fase 1 - Global Trend Engine]] | Pasadas 1 a 3 completas. Pasada 2: de 24 verificados, 1 mantener, 9 rehacer, 14 descartar. Pasada 3 (enfoque invertido): 22 sobrevivientes, 4 de confianza media. Falta: hosts y claves para medir volúmenes, y puertas falsas |
-| 2 — Arquitectura del producto (Fábrica de Micro-Apps) | [[04 - Fase 2 - Fabrica de Micro-Apps]] | Pendiente |
+| 2 — Arquitectura del producto (Fábrica de Micro-Apps) | [[04 - Fase 2 - Fabrica de Micro-Apps]] | En curso: esqueleto ejecutable (catálogo de módulos, validador, 6 especificaciones); investigación de firma, cobro y pila técnica en marcha |
 | 3 — Motor de creación automatizada | [[05 - Fase 3 - Motor de Creacion]] | Pendiente |
 | 4 — Máquina de tráfico y adquisición global | [[06 - Fase 4 - Trafico y Adquisicion]] | Pendiente |
+
+## Guías
+- [[07 - Guia - Que debes hacer tu]] — pasos exactos para abrir la red, crear la cuenta de DataForSEO y retomar en una sesión nueva.
 
 ## Respaldos
 - **Obsidian / repo:** carpeta `Ecosistema-Productos-Digitales/` en `axeljimenezfactible/factible`, rama `claude/digital-products-ecosystem-1fhahn`.

@@ -1,0 +1,36 @@
+{
+  "id": "limpiador-metadatos-oficina",
+  "name": "Limpiador de metadatos de documentos de oficina (nombre provisional, sin revisión de marca)",
+  "source_candidate": "limpiador-metadatos-oficina",
+  "phase1_confidence": "low",
+  "platforms": ["mac", "windows"],
+  "price_usd": 19,
+  "license_model": "perpetual+12m-updates",
+  "privacy": {"processes_locally": true, "network_calls": ["license", "update"]},
+  "modules": [
+    {"id": "meta.docs", "config": {"targets": ["docx", "xlsx", "pptx", "pdf"]}},
+    {"id": "io.watch_folder", "config": {"mode": "bandeja-de-salida"}},
+    {"id": "batch.queue"},
+    {"id": "doc.pdf"},
+    {"id": "export.formats", "config": {"formats": ["report"]}},
+    {"id": "io.files"}
+  ],
+  "flow": [
+    "Elegir una carpeta o dejar archivos en la carpeta vigilada",
+    "Mostrar qué metadatos, comentarios y cambios se van a quitar",
+    "Limpiar en lote con el perfil elegido para el destinatario",
+    "Guardar copias limpias y un informe de lo eliminado"
+  ],
+  "review_required": false,
+  "golden_tests": [
+    {"name": "autor-y-comentarios", "description": "Un documento de prueba con autor, comentarios y cambios con control de cambios sale sin ellos."},
+    {"name": "original-intacto", "description": "El archivo original no se modifica; se crea una copia limpia."},
+    {"name": "informe", "description": "El informe lista cada metadato eliminado por archivo."}
+  ],
+  "risks": [
+    "Falsa sensación de seguridad si queda algún metadato oculto: no prometer cumplimiento legal.",
+    "Hay un competidor de pago único a $19 en Windows.",
+    "Los formatos de Office y PDF cambian."
+  ],
+  "validation": {"fake_door_prices_usd": [19, 29], "status": "pendiente"}
+}

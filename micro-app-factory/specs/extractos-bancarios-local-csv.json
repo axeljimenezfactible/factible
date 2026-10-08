@@ -1,0 +1,39 @@
+{
+  "id": "extractos-bancarios-local-csv",
+  "name": "Extractos bancarios a hoja de cálculo, sin subir nada (nombre provisional, sin revisión de marca)",
+  "source_candidate": "extractos-bancarios-local-csv",
+  "phase1_confidence": "med",
+  "platforms": ["windows", "mac"],
+  "price_usd": 49,
+  "license_model": "perpetual+12m-updates",
+  "privacy": {"processes_locally": true, "network_calls": ["license", "update"]},
+  "modules": [
+    {"id": "doc.pdf"},
+    {"id": "vision.ocr"},
+    {"id": "rules.engine", "config": {"profiles": "uno por banco"}},
+    {"id": "data.tables"},
+    {"id": "review.ui", "config": {"mode": "lado-a-lado"}},
+    {"id": "export.formats", "config": {"formats": ["csv", "xlsx"]}},
+    {"id": "batch.queue"},
+    {"id": "io.files"}
+  ],
+  "flow": [
+    "Importar uno o varios extractos en PDF, con texto o escaneados",
+    "Extraer las filas con el perfil del banco, incluidas las descripciones de varias líneas",
+    "Comprobar que los importes suman el saldo del extracto",
+    "Revisar lado a lado el PDF y la tabla, y corregir lo dudoso",
+    "Exportar a CSV o XLSX"
+  ],
+  "review_required": true,
+  "golden_tests": [
+    {"name": "descripcion-multilinea", "description": "Un extracto de prueba con descripciones de varias líneas produce una fila por movimiento."},
+    {"name": "importes-cuadran", "description": "La suma de los movimientos extraídos coincide con el saldo final del extracto de prueba; si no, la app lo marca."},
+    {"name": "escaneo", "description": "Un extracto escaneado de prueba se extrae con OCR y marca las celdas de baja confianza."}
+  ],
+  "risks": [
+    "Cada banco tiene su formato y hay que mantener un perfil por banco.",
+    "Un error en un importe es crítico: por eso el chequeo de saldo y la revisión son obligatorios.",
+    "Mercado saturado: hay varias herramientas en la nube y una local a $129."
+  ],
+  "validation": {"fake_door_prices_usd": [29, 49, 79], "status": "pendiente"}
+}

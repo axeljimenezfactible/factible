@@ -1,0 +1,35 @@
+{
+  "id": "emails-a-pdf-por-lotes",
+  "name": "Correos a PDF por lotes (nombre provisional, sin revisión de marca)",
+  "source_candidate": "emails-a-pdf-por-lotes",
+  "phase1_confidence": "low",
+  "platforms": ["windows", "mac"],
+  "price_usd": 24,
+  "license_model": "perpetual+12m-updates",
+  "privacy": {"processes_locally": true, "network_calls": ["license", "update"]},
+  "modules": [
+    {"id": "mail.parse", "config": {"formats": ["msg", "eml", "emlx"]}},
+    {"id": "doc.pdf"},
+    {"id": "batch.queue"},
+    {"id": "io.files", "config": {"name_template": "fecha_remitente_asunto"}},
+    {"id": "export.formats", "config": {"formats": ["pdf", "report"]}}
+  ],
+  "flow": [
+    "Elegir la carpeta con los correos guardados",
+    "Leer cada correo y sus adjuntos",
+    "Generar un PDF por correo con el nombre de la plantilla elegida",
+    "Guardar los adjuntos junto al PDF y un informe de lo convertido"
+  ],
+  "review_required": false,
+  "golden_tests": [
+    {"name": "un-pdf-por-correo", "description": "Una carpeta de prueba con 30 correos produce 30 PDF con el nombre de la plantilla."},
+    {"name": "adjuntos", "description": "Los adjuntos de cada correo de prueba se guardan junto a su PDF sin perder el nombre original."},
+    {"name": "formatos", "description": "Se procesan correos de prueba en formatos msg, eml y emlx."}
+  ],
+  "risks": [
+    "El precio objetivo no está definido en la investigación; $24 es un valor de partida.",
+    "Existen opciones gratuitas de línea de comandos y complementos de Thunderbird.",
+    "El formato .msg depende de bibliotecas de terceros cuya licencia hay que revisar."
+  ],
+  "validation": {"fake_door_prices_usd": [19, 29], "status": "pendiente"}
+}
