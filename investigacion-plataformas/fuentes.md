@@ -27,6 +27,8 @@ Prueba de conectividad de la Fase 0, 2026-10-27, herramienta WebFetch. Los cuatr
 | 2026-10-27 | WebFetch | https://roo.beehiiv.com/p/gumroad-daily-traffic | `getaddrinfo ENOTFOUND roo.beehiiv.com` |
 | 2026-10-27 | WebFetch | https://www.similarweb.com/website/gumroad.com/ | `getaddrinfo ENOTFOUND www.similarweb.com` |
 | 2026-10-27 | WebFetch | https://www.etsy.com/legal/fees/ | `getaddrinfo ENOTFOUND www.etsy.com` |
+| 2026-10-27 (reintento) | WebFetch | https://www.trustpilot.com/review/gumroad.com | `getaddrinfo ENOTFOUND www.trustpilot.com` |
+| 2026-10-27 (reintento) | WebFetch | los otros 3 dominios anteriores | Mismo error `ENOTFOUND`. |
 
 ## Herramientas
 

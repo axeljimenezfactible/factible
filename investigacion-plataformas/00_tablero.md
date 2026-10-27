@@ -23,7 +23,8 @@ Fase 0, punto 2: confirmar búsqueda y lectura web. Resultado al 2026-10-27:
 
 - `WebSearch`: **disponible**. Devuelve títulos y URLs, solo EE. UU.
 - `WebFetch` (lectura de páginas): **no disponible**. Falla con `getaddrinfo ENOTFOUND` en los 4 dominios probados (ahrefs.com, roo.beehiiv.com, www.similarweb.com, www.etsy.com).
-- Diagnóstico: el proxy del entorno está activo y sin fallos de relevo, así que el bloqueo parece ser la política de red del entorno, no los sitios.
+- Segunda prueba (2026-10-27, a petición del usuario): mismo resultado. WebFetch sigue sin leer ahrefs.com, www.etsy.com, www.similarweb.com ni www.trustpilot.com. El DNS del sistema resuelve github.com pero no ahrefs.com, www.etsy.com ni www.trustpilot.com.
+- Diagnóstico: el proxy del entorno está activo y sin fallos de relevo, así que el bloqueo parece ser la política de red del entorno (lista de dominios permitidos), no los sitios.
 - Regla aplicada: el prompt manda detenerse si falta lectura web y no investigar de memoria. No se usan `curl`, espejos ni cachés para sortearlo (regla 2.2.5).
 
 ## Decisiones tomadas (diagnóstico ligero)
